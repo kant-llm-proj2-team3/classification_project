@@ -3,6 +3,7 @@
 ## 팀원
 - 권오륜
 - 송찬영
+  - [https://github.com/scy0416](https://github.com/scy0416)
 - 이정원
 - 최선영
 ## Quick Start
