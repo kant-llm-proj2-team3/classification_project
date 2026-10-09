@@ -1,0 +1,121 @@
+﻿id,text,label,group_id,source
+inquiries-v2-shipping-test-017-v1,같은 날 온 광고 우편만 거절했는데 받기로 한 주문 택배까지 수취 거부로 표시됩니다. 서로 다른 배달 기록이 섞인 건지 확인하고 싶어요.,shipping,inquiries-v2-shipping-test-017,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-016-v2,컨테이너를 안으로 들이기 전에 외부 구역에서 개봉해야 한대요. 운송 업체가 그 장소에서 인계하도록 안내를 남기려 합니다.,shipping,inquiries-v2-shipping-test-016,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-016-v1,환불 지연 때문에 결제사에 이의를 접수한 뒤 판매자가 이제 반환을 진행하겠다고 연락했습니다. 아직 실제 입금은 확인하지 못했습니다. 중복 처리가 되지 않게 두 절차를 조정할 공식 확인 순서를 알려 주세요.,refund,inquiries-v2-refund-test-016,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-005-v2,가족 묶음으로 이용하자는 초대를 받았습니다. 각자 계정은 따로 쓴다고 하는데 대표에게 어떤 정보가 보이는지 알 수 없어요. 성인 구성원의 개인 기록과 그룹 관리 정보가 구분되는지 안내받고 싶습니다.,account,inquiries-v2-account-test-005,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-019-v2,최종 옵션을 확인한 적이 없는데 제작안이 승인된 것으로 표시됩니다. 물건을 받은 상태는 아니고 주문을 철회하고 싶습니다. 제가 동의한 기록이 있는지 대조한 뒤 취소 가능 여부를 안내받으려면 어떻게 하나요?,refund,inquiries-v2-refund-test-019,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-018-v1,예전에 참여한 팀 공간이 보관 처리된 뒤 제 공간 목록에서 안 보입니다. 팀에서 탈퇴했다는 알림은 받지 않았어요. 제 회원 연결이 끊긴 것인지 보관된 공간을 따로 찾아야 하는지 확인하고 싶습니다.,account,inquiries-v2-account-test-018,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-004-v2,기기를 넘기기 전에 그 기기에서만 계정을 지우고 싶어요. 새 기기에서 쓸 회원과 자료는 유지해야 하는데 계정 제거가 탈퇴와 다른가요?,account,inquiries-v2-account-test-004,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-018-v2,팀이 공간을 보관 처리한 뒤 제 계정 목록에서 사라졌어요. 참여 권한이 끝난 건지 보관해서 숨겨진 건지 구별해 확인할 수 있나요?,account,inquiries-v2-account-test-018,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-004-v2,구매 취소 두 건을 진행한 뒤 통장에 합계로 보이는 입금 하나가 생겼습니다. 환불을 더 받으려는 것이 아니라 각 주문의 완료 여부를 알고 싶습니다. 합산 입금의 거래별 내역을 확인해 주세요.,refund,inquiries-v2-refund-test-004,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-018-v2,반품 마감일 저녁에 신청 완료 화면을 받았지만 목록에는 다음 영업일 날짜가 적혀 있습니다. 늦게 신청한 것으로 처리되어 환불 검토가 멈췄습니다. 보관한 화면으로 접수 시각을 재확인할 경로를 알려 주세요.,refund,inquiries-v2-refund-test-018,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-008-v1,가족 네 명의 이름으로 입장권을 한 번에 결제했는데 한 명만 참석하지 못합니다. 나머지 표의 좌석은 유지하려 합니다. 해당 이름의 표만 취소했을 때 다른 표가 무효가 되지 않는지 확인하고 싶습니다.,refund,inquiries-v2-refund-test-008,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-002-v2,자재 배송 차량을 현장에 전날 등록해야 해요. 실제 배정된 차량 정보를 운송사와 안전하게 확인하는 방법이 궁금합니다.,shipping,inquiries-v2-shipping-test-002,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-013-v1,서비스를 두 달 쉬는 것으로 상담하고 중지 확인을 받았는데 그 기간의 이용료가 나갔습니다. 영구 해지보다는 잘못 청구된 두 달 금액을 반환받고 싶습니다. 중지 확인 내역으로 환불 검토를 요청할 수 있나요?,refund,inquiries-v2-refund-test-013,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-017-v2,설치한 수납장 반품 견적에 해체비와 운송비가 따로 있습니다. 제품 환급액은 아직 안내받지 못했습니다. 구매 취소 전 비용별 근거와 실제 반환액을 알고 싶습니다.,refund,inquiries-v2-refund-test-017,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-007-v2,택배 수령증에 찍을 도장의 명칭이 계약 서류와 달라요. 인계 전에 어떤 확인이 필요한지 담당 업체에 문의하려 합니다.,shipping,inquiries-v2-shipping-test-007,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-019-v1,색상과 배치를 마지막에 승인하는 주문인데 제 승인 없이 기본안으로 확정됐다는 안내가 왔습니다. 완성품은 아직 받지 않았고 진행을 중단해 구매를 취소하려 합니다. 승인 기록을 확인받고 환급을 검토할 수 있나요?,refund,inquiries-v2-refund-test-019,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-015-v2,본품 봉인은 그대로인데 딸린 체험 샘플은 썼습니다. 본품을 반품하고 싶은데 사용한 샘플이 반품 조건과 환급액에 영향을 주는지 알려 주세요.,refund,inquiries-v2-refund-test-015,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-012-v1,외국인 동료가 물건을 받는데 현재 방문 안내 문자를 이해하기 어렵습니다. 운송사가 제공하는 다른 언어 안내가 있는지 확인하고 싶습니다.,shipping,inquiries-v2-shipping-test-012,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-001-v2,회원 탈퇴 후 누군가 제 이전 별명을 사용하면 옛 게시물의 작성자도 그 사람처럼 표시되나요? 계정 사용을 끝내려고 하는데 이 점이 궁금합니다. 이름을 다시 사용할 수 있는지와 과거 기록 표시를 알려 주세요.,account,inquiries-v2-account-test-001,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-001-v2,"현금 구매를 반품하려는데 종이 영수증이 없습니다. 날짜와 금액, 전자 영수증 내역은 있는데 이 자료로 구매를 확인해 환불받을 수 있나요?",refund,inquiries-v2-refund-test-001,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-019-v1,운송사가 분실 조사 중이던 상자를 찾았다고 연락했습니다. 조사 결과가 아니라 이후 어느 배송 구간으로 이어지는지 알고 싶습니다.,shipping,inquiries-v2-shipping-test-019,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-004-v1,공장 내부 하역은 사전 안전 안내를 받은 기사만 할 수 있습니다. 이번 배송의 배차 담당자와 이 조건을 협의하고 싶습니다.,shipping,inquiries-v2-shipping-test-004,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-006-v2,선물받은 사람은 안 썼다는데 모바일 상품권의 취소 화면에는 사용 완료로 나옵니다. 이용 기록을 대조해서 환불 가능한지 확인하고 싶습니다.,refund,inquiries-v2-refund-test-006,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-020-v1,배달된 봉투 겉면에 액체가 묻어 있어 운송 중 오염 기록을 남기려 합니다. 안의 물건은 아직 열지 않았고 신고 절차가 궁금합니다.,shipping,inquiries-v2-shipping-test-020,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-003-v2,"카드대금을 선납한 뒤 구매가 취소됐습니다. 다음 청구에서 차감된다지만 이후 카드 이용 계획이 없는데, 이미 낸 돈의 반환은 어디에 확인하나요?",refund,inquiries-v2-refund-test-003,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-001-v1,현금으로 산 물건을 반품하려는데 종이 영수증을 잃어버렸습니다. 구매 날짜와 금액을 알고 있고 당시 발급받은 전자 영수증 조회 내역은 있습니다. 그 자료로 환급 심사를 요청할 수 있는지 알려 주세요.,refund,inquiries-v2-refund-test-001,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-005-v1,가족 그룹에 성인 회원으로 참여하려고 합니다. 대표 회원이 그룹 관리만 하는지 제 개인 활동 내역도 볼 수 있는지 궁금해요. 개인 비밀번호는 공유하지 않을 예정인데 가입 전에 권한 범위를 확인할 수 있을까요?,account,inquiries-v2-account-test-005,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-020-v1,한동안 메일함이 가득 차서 계정 알림을 못 받았는데 지금은 공간을 비웠습니다. 회원 설정에는 이메일 배달 실패 표시가 아직 남아 있어요. 주소를 바꾸지 않고 다시 수신 가능한 상태로 확인받을 수 있을까요?,account,inquiries-v2-account-test-020,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-015-v1,장비 전원을 완전히 차단한 상태로 운송해야 한다는 제조사 안내를 받았습니다. 발송처가 그 조건을 확인했는지 알고 싶습니다.,shipping,inquiries-v2-shipping-test-015,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-014-v1,반품 상품을 보내면서 제 개인 보관 주머니도 상자에 넣은 사실을 뒤늦게 알았습니다. 주문 구성품은 아닌데 환불 심사 중이라 물건이 섞일까 걱정됩니다. 개인 물품을 따로 확인받고 구매 취소를 계속할 수 있나요?,refund,inquiries-v2-refund-test-014,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-010-v1,이메일 링크로 로그인을 요청한 뒤 메일의 버튼을 누르니 다른 브라우저가 열립니다. 처음 접속하던 창에서는 계속 기다리라는 화면만 나와요. 같은 브라우저에서 이어야 하는지와 연결 방법을 확인하고 싶습니다.,account,inquiries-v2-account-test-010,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-012-v1,팀 자료의 접근 권한 요청 버튼을 누르려는데 요청이 누구에게 가는지 표시되지 않습니다. 여러 관리자가 있는 팀이라 담당자를 먼저 알고 싶어요. 제 계정의 요청을 확인할 사람이나 전달 범위를 알 수 있나요?,account,inquiries-v2-account-test-012,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-006-v1,계정에 올린 음성 자료는 제가 계속 보관해서 듣고 싶습니다. 다만 서비스 개선에 활용하는 데 동의했던 것은 바꾸고 싶어요. 원본을 삭제하지 않고 추가 활용 동의만 철회할 수 있는지 확인 부탁드립니다.,account,inquiries-v2-account-test-006,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-005-v2,"재고가 없다며 동의 없이 다른 모델을 보내왔습니다. 개봉하지 않고 반품하려는데, 변경에 동의하지 않았던 원래 주문의 환급은 어떻게 접수하나요?",refund,inquiries-v2-refund-test-005,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-008-v2,한 거래로 산 기명 입장권 네 장 중 한 장만 환불받으려 합니다. 세 사람은 원래 좌석에서 참석할 예정입니다. 취소 대상을 특정해 나머지 입장권을 유지하는 절차를 안내해 주세요.,refund,inquiries-v2-refund-test-008,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-001-v2,받은 상자의 충격 감지 표시가 작동한 것 같아요. 기기 상태는 아직 확인 전이고 운송 구간의 사고 기록을 요청하고 싶습니다.,shipping,inquiries-v2-shipping-test-001,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-010-v1,배터리가 포함된 장비를 환불받으려고 일반 반품 접수를 했는데 운송사에서 해당 방식으로는 받지 못한다고 합니다. 임의로 다른 품목이라 적어 보내지는 않으려 합니다. 가능한 공식 반환 절차를 알려 주세요.,refund,inquiries-v2-refund-test-010,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-013-v2,제 주문 화물에 배정된 입차 번호를 다른 차량도 받았대요. 운송 담당자와 창고 사이에서 순번을 대조할 방법을 알려 주세요.,shipping,inquiries-v2-shipping-test-013,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-004-v2,물건을 받을 공장은 운송 기사에게 별도 출입 안전 절차를 요구해요. 방문 전에 배송 업체와 준비 사항을 확인하려고 합니다.,shipping,inquiries-v2-shipping-test-004,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-010-v2,메일의 로그인 링크가 요청한 브라우저와 다른 앱에서 열려 원래 창은 대기 중입니다. 어떤 환경에서 열어야 로그인이 이어지나요?,account,inquiries-v2-account-test-010,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-016-v1,회사 공간에 들어갈 때만 정해진 기간마다 비밀번호를 바꾸라는 안내가 나옵니다. 개인 공간에서는 같은 안내를 보지 못했어요. 제 계정에 적용된 조직 보안 기준인지 서비스 전체의 기준인지 확인하고 싶습니다.,account,inquiries-v2-account-test-016,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-009-v1,물품 구매 때 용기 보증금을 냈고 빈 용기를 지정 창구에 돌려줬습니다. 물품 대금을 환불하려는 것이 아니라 보증금 반환을 확인하고 싶습니다. 반납증을 어떤 결제 기록과 연결해야 하는지 알려 주세요.,refund,inquiries-v2-refund-test-009,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-003-v1,카드대금을 미리 낸 뒤 해당 구매가 취소됐습니다. 결제사 화면에는 취소액이 다음 청구에서 차감된다고만 나오지만 이후 사용할 계획이 없습니다. 이미 납부한 금액의 반환 확인은 어디에 요청해야 하나요?,refund,inquiries-v2-refund-test-003,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-003-v2,계정을 없애려는데 공동 작업 자료의 소유자라 먼저 확인하라는 메시지가 나옵니다. 자료를 함께 쓰는 구성원은 계속 이용해야 해요. 회원 탈퇴와 공동 자료 처리를 어떻게 구분해서 문의하면 될까요?,account,inquiries-v2-account-test-003,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-011-v2,회원 접속 때 키보드 대신 음성으로 입력해야 하는 상황입니다. 주변에 사람이 있어 암호를 읽는 방식은 쓰기 어렵습니다. 제 계정에 등록해 이용할 수 있는 다른 인증 방법이 있는지 확인 부탁드립니다.,account,inquiries-v2-account-test-011,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-003-v2,학교로 오는 주문이 있는데 방학이라 행정실에서 못 받습니다. 당직실 인계로 바뀐 안내를 배송 쪽에 남기는 방법을 알려 주세요.,shipping,inquiries-v2-shipping-test-003,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-018-v2,항구 보관 화물을 받아야 하는데 출고 서류 전달 상태가 안 보여요. 창고와 육상 운송 담당 사이의 접수를 확인하고 싶습니다.,shipping,inquiries-v2-shipping-test-018,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-020-v1,정해진 횟수의 방문 서비스를 결제했는데 이용 지역을 벗어나 이사했습니다. 남은 회차를 지인에게 넘기라는 안내는 받았지만 양도할 생각이 없습니다. 남은 이용료의 반환 가능 여부를 공식적으로 확인하고 싶습니다.,refund,inquiries-v2-refund-test-020,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-019-v1,제 프로필에 방문한 회원을 확인할 수 있는지 궁금합니다. 누군가 봤다고 추측해서 연락하려는 것은 아니고 서비스가 실제로 제공하는 기록 범위를 알고 싶어요. 방문자 내역이나 횟수를 볼 수 있는 기능이 있나요?,account,inquiries-v2-account-test-019,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-014-v2,물건이 도착한 뒤 보관소가 이전했다고 합니다. 기존 물품이 어디에 보관되는지 공식 안내를 확인할 수 있나요?,shipping,inquiries-v2-shipping-test-014,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-013-v1,가입한 지 얼마 안 된 회원인데 메시지를 보내다가 오늘 보낼 수 있는 횟수를 넘겼다고 나옵니다. 새 계정으로 피하려는 것은 아니에요. 제 회원에 적용되는 발송 제한과 다시 이용할 수 있는 기준을 알고 싶습니다.,account,inquiries-v2-account-test-013,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-017-v2,동일한 회원인데 전체 계정 화면과 소속 팀 화면에서 가입 날짜가 다르게 나옵니다. 기록을 고치기 전에 각 날짜가 무엇을 뜻하는지 알고 싶어요. 회원 생성일과 팀 참여일을 구분해서 확인할 수 있을까요?,account,inquiries-v2-account-test-017,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-007-v2,계정에서 공유한 사진의 위치 정보가 걱정됩니다. 사진에 찍힌 장면이 아니라 파일 안에 저장된 촬영 위치를 말하는 거예요. 다른 회원에게 전달되는 범위와 위치 정보만 제거할 수 있는지를 알고 싶습니다.,account,inquiries-v2-account-test-007,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-009-v1,회사 메일로 받은 비밀번호 재설정 링크를 제가 처음 열었는데 이미 사용된 링크라고 나옵니다. 메일 시스템에서 링크를 먼저 검사한다고 들었어요. 자동 검사와 관련이 있을 수 있는지 공식적으로 확인받고 싶습니다.,account,inquiries-v2-account-test-009,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-010-v2,배터리 장비를 반품하려는데 일반 택배로는 못 받는다고 합니다. 상품 종류에 맞는 방식으로 반환하려면 기존 환불 건에서 어디로 문의해야 하나요?,refund,inquiries-v2-refund-test-010,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-017-v1,설치된 수납장을 반품하려고 견적을 받았는데 해체 비용과 반환 운송비가 따로 적혀 있습니다. 제품의 환급 예정액은 아직 안내받지 못했습니다. 총 반환액을 판단할 수 있도록 비용 항목별 근거를 확인하고 싶습니다.,refund,inquiries-v2-refund-test-017,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-020-v2,가득 찬 메일함을 비워 일반 메일은 오는데 계정 알림은 멈췄고 배달 실패 표시도 남아 있어요. 주소를 유지하며 수신을 재개하려면 어떻게 하나요?,account,inquiries-v2-account-test-020,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-007-v1,제 회원 공간에 사진을 올렸는데 원본에 촬영 위치 정보가 들어 있던 것이 생각났습니다. 사진은 계속 보여 주되 위치는 공개하고 싶지 않아요. 다른 사람이 원본을 받을 때 그 정보도 포함되는지 확인할 수 있을까요?,account,inquiries-v2-account-test-007,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-015-v2,받을 장비에 운송 전 전원을 완전히 차단하라는 지침이 있어요. 판매자가 해당 조치를 확인하고 접수했는지 문의하려 합니다.,shipping,inquiries-v2-shipping-test-015,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-009-v2,암호 재설정 메일을 받은 뒤 한 번만 눌렀는데 사용 완료된 주소라고 표시됩니다. 회사의 메일 보안 기능이 링크를 미리 열어 보는 환경이에요. 제가 암호를 바꾼 적은 없는데 이 상황을 어디에 문의하면 될까요?,account,inquiries-v2-account-test-009,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-008-v2,도착할 물건이 상자가 아니라 긴 두루마리입니다. 조회에 나온 포장 단위와 실제 운송 개수를 대조해 주길 바랍니다.,shipping,inquiries-v2-shipping-test-008,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-012-v2,팀 자료 열람 권한을 신청하려는데 소유자만 받는지 관리자 모두가 보는지 모르겠어요. 신청 사유를 적기 전에 전달 대상을 확인할 수 있나요?,account,inquiries-v2-account-test-012,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-007-v1,기관 도장이 바뀌어서 출고 서류에 적힌 기관명과 다르게 찍힙니다. 인도 확인 때 문제가 없는지 운송 업체 기준을 확인하고 싶습니다.,shipping,inquiries-v2-shipping-test-007,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-008-v1,마우스 없이 키보드로 회원정보를 수정하고 있습니다. 입력칸은 이동할 수 있는데 마지막 저장 버튼에는 초점이 가지 않아 변경을 마치지 못해요. 키보드로 저장할 수 있는 방법이나 지원 경로가 있을까요?,account,inquiries-v2-account-test-008,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-006-v1,선물용 모바일 상품권을 취소하려는데 이미 사용됐다는 표시가 나옵니다. 선물받은 사람은 아직 쓰지 않았다고 합니다. 이용 기록을 확인해서 구매 취소가 가능한지 알려 주세요.,refund,inquiries-v2-refund-test-006,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-009-v2,투숙 전에 주문품을 호텔로 받으려 해요. 프런트의 사전 보관 동의와 배송 접수를 어떻게 연결해 확인하면 되나요?,shipping,inquiries-v2-shipping-test-009,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-013-v2,두 달 이용 중지 확인을 받았는데 그동안 요금이 나갔습니다. 나중에 다시 쓸 거라 영구 해지는 안 하고 잘못 청구된 두 달 대금만 돌려받고 싶어요.,refund,inquiries-v2-refund-test-013,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-014-v1,제 계정의 저장 공간이 가득 찼다고 나옵니다. 게시물 첨부와 개인 보관함 중 어디에서 많이 쓰는지 몰라 무작정 지우기는 어려워요. 자료 종류별 사용량을 확인하고 필요한 것부터 정리할 수 있을까요?,account,inquiries-v2-account-test-014,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-016-v2,"회사 팀에서만 비밀번호 변경 주기 알림이 나오고 개인 설정에는 없어요. 조직 기준인지 전체 기준인지, 어느 담당에게 확인하면 될까요?",account,inquiries-v2-account-test-016,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-008-v2,마우스 사용이 어려워 키보드로 회원정보를 고쳤는데 저장 버튼으로 이동할 수 없어요. 키보드로 수정 사항을 저장하는 방법이 있나요?,account,inquiries-v2-account-test-008,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-005-v2,장비 운송용 빈 박스를 업체가 보내 주기로 했어요. 그 상자가 실제 접수됐는지 어디서 확인할 수 있나요?,shipping,inquiries-v2-shipping-test-005,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-003-v1,회원 탈퇴를 진행하니 제가 소유한 공동 자료가 남아 있다는 안내로 멈춥니다. 다른 사람들이 아직 쓰는 자료를 함부로 지우고 싶지는 않아요. 탈퇴 전에 정리해야 할 계정 권한과 가능한 절차를 확인하고 싶습니다.,account,inquiries-v2-account-test-003,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-010-v2,박물관 납품 물품은 바로 내려놓을 수 없고 포장 검사가 먼저래요. 운송 업체와 대기 및 인계 절차를 맞추려 합니다.,shipping,inquiries-v2-shipping-test-010,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-003-v1,방학 기간에는 학교 행정실 대신 별도 당직실이 물품을 받습니다. 배송 담당자에게 임시 인수 창구를 전달하고 싶어요.,shipping,inquiries-v2-shipping-test-003,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-002-v2,탈퇴 완료 후 이용하지 않았는데 주간 활동 메일이 계속 와요. 계정 삭제 상태와 남은 알림 연결을 확인할 곳을 알려 주세요.,account,inquiries-v2-account-test-002,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-008-v1,길게 말린 자재를 주문했는데 운송 목록은 박스 수량으로 표시됩니다. 롤 형태의 포장 수량이 제대로 접수됐는지 확인하고 싶습니다.,shipping,inquiries-v2-shipping-test-008,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-001-v1,정밀 장비 상자에 붙인 충격 표시가 도착 시 변해 있었습니다. 상품 처리보다 먼저 운송 중 취급 이력을 확인하는 절차를 알고 싶습니다.,shipping,inquiries-v2-shipping-test-001,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-014-v2,환급받을 상품을 보낸 상자에 제 소유의 주머니가 함께 들어갔습니다. 판매한 제품의 구성품은 아닙니다. 개인 물품 반환 문의와 기존 반품 검수를 구분해 담당자에게 전달하는 절차를 알려 주세요.,refund,inquiries-v2-refund-test-014,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-005-v1,판매자가 원래 상품 재고가 없다며 다른 모델을 보냈지만 저는 대체 발송에 동의한 적이 없습니다. 포장은 개봉하지 않았습니다. 대체품을 그대로 돌려보내고 원래 주문을 취소할 절차를 알려 주세요.,refund,inquiries-v2-refund-test-005,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-016-v2,환불이 늦어 결제사에 이의를 냈는데 판매자가 반환 예정이라고 연락했습니다. 아직 입금 전인데 중복 처리되지 않게 두 절차를 어떻게 확인하나요?,refund,inquiries-v2-refund-test-016,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-017-v1,제 프로필의 가입일과 팀 명단에서 보이는 가입일이 서로 다릅니다. 하나는 예전 날짜이고 다른 하나는 팀에 들어온 날 같아요. 날짜가 잘못된 건지 서비스 회원 가입과 팀 참가를 따로 표시하는지 궁금합니다.,account,inquiries-v2-account-test-017,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-001-v1,탈퇴하기 전에 제가 쓰던 별명이 나중에 다른 회원에게 다시 배정될 수 있는지 알고 싶습니다. 예전에 남긴 글과 새 회원의 글이 같은 사람 것으로 보일까 걱정돼요. 별명 재사용과 작성자 구별 기준을 확인해 주세요.,account,inquiries-v2-account-test-001,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-017-v2,광고물만 거절했는데 주문한 택배도 수령 거절로 보입니다. 서로 다른 배달 건의 기록을 구분해 확인해 주세요.,shipping,inquiries-v2-shipping-test-017,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-002-v2,현금 구매를 취소해 반환 금액을 매장에서 받기로 안내받았습니다. 방문이 어려워 다른 사람이 대신 갈 수 있는지 궁금합니다. 계좌 변경 요청은 아니고 현장 환급 수령의 위임 조건을 확인하고 싶습니다.,refund,inquiries-v2-refund-test-002,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-013-v2,새 회원으로 팀원들에게 연락하던 중 메시지 발송이 제한됐습니다. 화면에는 횟수를 초과했다고만 표시돼요. 계정별 이용 한도와 확인할 공식 안내를 알려 주시면 그 기준에 맞게 이용하려고 합니다.,account,inquiries-v2-account-test-013,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-020-v2,이용 지역 밖으로 이사해 방문 서비스 횟수가 남았습니다. 지인에게 양도하라는 안내 대신 환급을 원합니다. 남은 회차의 반환 가능 여부를 확인할 절차가 있나요?,refund,inquiries-v2-refund-test-020,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-012-v2,주문 제작 원단을 두 건 함께 결제했고 판매자는 한 건만 재단 중이라고 알려 왔습니다. 미착수한 건은 구매를 철회하고 싶습니다. 이미 작업 중인 것과 나누어 부분 취소를 심사받는 방법을 알려 주세요.,refund,inquiries-v2-refund-test-012,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-006-v2,상자 규격 재측정 때문에 운송 차량을 바꾼대요. 새 배차가 정해졌는지와 다음 배송 안내를 알고 싶습니다.,shipping,inquiries-v2-shipping-test-006,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-014-v2,계정 용량이 꽉 차 업로드가 막혔는데 전체 용량만 보입니다. 무작정 지우지 않고 어떤 자료가 공간을 쓰는지 종류별로 확인할 수 있나요?,account,inquiries-v2-account-test-014,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-015-v1,본품 구매 때 딸린 일회용 체험 샘플은 사용했지만 본품 봉인은 그대로입니다. 본품을 돌려보내고 싶습니다. 사용한 샘플이 있다는 사실을 설명하고 반품 가능 여부와 환급 범위를 확인받을 수 있나요?,refund,inquiries-v2-refund-test-015,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-018-v1,항만 창고에서 물건을 내보내려면 출고증을 운송사에 전달해야 한다고 합니다. 발급된 서류가 기사에게 연결됐는지 확인하려 합니다.,shipping,inquiries-v2-shipping-test-018,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-020-v2,택배 봉투 바깥이 젖어 있고 안의 물건은 아직 열지 않았습니다. 배송 상태를 보존하고 운송 사고 확인을 접수하는 방법을 알려 주세요.,shipping,inquiries-v2-shipping-test-020,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-004-v1,태블릿을 다른 사람에게 주기 전에 이 기기에서만 제 계정을 빼려고 합니다. 서비스 회원과 저장해 둔 자료는 계속 사용해야 해요. 화면의 계정 제거가 기기 연결만 끊는 것인지 회원 탈퇴인지 구별하고 싶습니다.,account,inquiries-v2-account-test-004,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-011-v1,직접 조립한 가구가 공간에 맞지 않아 반품 가능 여부를 문의합니다. 부품을 버리지는 않았지만 일부 조립 자국은 있습니다. 미사용품이라고 적지 않고 현재 상태를 설명해 환불 심사를 받으려면 어떻게 하나요?,refund,inquiries-v2-refund-test-011,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-010-v1,수장고에 들일 물건은 반입 전 포장 상태 검사를 받아야 합니다. 배송 차량이 어느 검사 구간에서 기다릴지 협의하고 싶습니다.,shipping,inquiries-v2-shipping-test-010,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-009-v2,내용물은 썼고 보증금을 낸 다회용 용기는 지정 창구에 반납했습니다. 물품 값 대신 용기 보증금을 돌려받으려면 반납증을 어디에 제출하나요?,refund,inquiries-v2-refund-test-009,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-009-v1,호텔에 묵기 전에 물건을 보내려는데 호텔 측의 사전 보관 동의가 필요하다고 합니다. 택배를 접수하기 전 확인할 전달 절차가 궁금합니다.,shipping,inquiries-v2-shipping-test-009,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-019-v2,회원 소개 페이지의 열람 내역을 확인하고 싶습니다. 접속한 사람까지 보여 주는지 단순 조회 수만 제공하는지 모르겠어요. 다른 이용자의 정보를 임의로 찾지 않고 공식적으로 확인 가능한 항목을 알려 주세요.,account,inquiries-v2-account-test-019,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-006-v2,저장한 녹음은 계속 보관하되 서비스 개선용 활용 동의만 철회하고 싶어요. 원본 삭제 없이 보관과 활용 동의를 따로 관리할 수 있나요?,account,inquiries-v2-account-test-006,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-019-v2,찾지 못하던 택배가 발견됐다는 안내를 받았어요. 이제 누가 인계받아 배달하는지 후속 운송 절차를 확인하고 싶습니다.,shipping,inquiries-v2-shipping-test-019,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-018-v1,접수 가능 마지막 날 밤에 반품 신청을 제출했고 완료 화면을 저장했습니다. 다음 영업일에 등록된 날짜로 표시돼 기간 초과라는 안내가 왔습니다. 실제 제출 시각을 대조해 구매 취소 심사를 요청하고 싶습니다.,refund,inquiries-v2-refund-test-018,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-004-v1,서로 다른 두 주문을 각각 취소했는데 은행에는 두 환급을 합한 듯한 금액이 한 번 들어왔습니다. 어느 주문이 완료됐는지 구분하고 싶습니다. 입금액과 각 취소 건을 연결한 반환 내역을 받을 수 있나요?,refund,inquiries-v2-refund-test-004,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-012-v1,길이를 지정해 주문한 원단 두 묶음 중 한 묶음만 재단이 시작됐다고 합니다. 아직 손대지 않은 다른 묶음은 취소하려 합니다. 제작 단계가 다른 두 품목을 구분해 반환 가능한 금액을 확인할 수 있나요?,refund,inquiries-v2-refund-test-012,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-011-v1,손으로 입력하기 어려워 평소 음성 입력을 사용합니다. 로그인 비밀번호까지 소리 내어 말하고 싶지는 않은데 다른 접속 수단을 지원하나요? 인증을 생략하려는 것이 아니라 이용할 수 있는 방법을 알고 싶어요.,account,inquiries-v2-account-test-011,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-012-v2,수령인이 한국어 배송 문자를 읽기 어려워합니다. 정해진 안내 언어 옵션을 확인해 방문 연락을 받을 수 있게 하고 싶어요.,shipping,inquiries-v2-shipping-test-012,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-007-v1,일반 참가비 외에 우선 예약 서비스를 추가로 결제했는데 우선 접수 시간이 별도로 운영되지 않았습니다. 행사에는 참가할 예정입니다. 참가비는 유지하고 제공되지 않은 추가 서비스 비용만 반환 요청할 수 있나요?,refund,inquiries-v2-refund-test-007,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-011-v2,화물을 내리는 역이 처음 안내와 달라졌습니다. 역에서 최종 수령 장소로 넘기는 구간도 함께 바뀌는지 문의합니다.,shipping,inquiries-v2-shipping-test-011,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-005-v1,점검 보낼 장비를 담을 빈 상자가 먼저 온다고 안내받았습니다. 제품 주문이 아니라 포장 상자 발송 건의 조회 방법을 알고 싶습니다.,shipping,inquiries-v2-shipping-test-005,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-015-v2,동일한 계정 메모가 두 기기에서 서로 다르게 수정됐습니다. 한 기기는 오프라인이었다가 지금 연결했어요. 자동으로 한쪽을 버리기 전에 각 버전을 살펴보고 선택할 수 있는지 확인 부탁드립니다.,account,inquiries-v2-account-test-015,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-002-v1,회원 탈퇴는 완료됐다고 확인했는데 지난주에도 제 활동 요약 메일이 왔습니다. 새로 가입하거나 구독을 신청하지는 않았어요. 계정과 메일 수신 목록이 따로 남아 있는지 확인하고 더 받지 않도록 문의하려 합니다.,account,inquiries-v2-account-test-002,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-account-test-015-v1,연결이 끊긴 기기에서 회원 메모를 수정했고 다른 기기에서도 같은 메모를 고쳤습니다. 다시 연결하니 충돌 안내가 나와요. 어느 쪽도 바로 덮어쓰지 않고 두 내용을 확인한 뒤 계정에 반영할 방법이 있을까요?,account,inquiries-v2-account-test-015,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-006-v1,택배사에서 크기를 다시 측정한 뒤 다른 차량에 실어야 한다고 합니다. 재배차 진행 상황을 확인할 수 있는 창구가 있나요?,shipping,inquiries-v2-shipping-test-006,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-007-v2,유료 우선 예약 옵션을 샀지만 따로 먼저 접수하는 시간은 없었습니다. 행사에는 참가합니다. 일반 참가비는 두고 미제공 옵션 비용만 돌려받을 수 있나요?,refund,inquiries-v2-refund-test-007,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-011-v1,철도 화물로 보내는 물건의 도착역이 조정됐다는 연락을 받았습니다. 이후 목적지까지 이어지는 운송 담당을 확인하고 싶어요.,shipping,inquiries-v2-shipping-test-011,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-002-v1,반품을 승인받았고 원래 현금으로 낸 대금을 매장에서 받으라는 안내를 받았습니다. 제가 방문할 수 없어 대리인이 받을 수 있는지 확인하려 합니다. 환급금을 대신 수령할 때 필요한 공식 절차를 알려 주세요.,refund,inquiries-v2-refund-test-002,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-014-v1,이용하던 택배 보관소가 새 건물로 옮겼습니다. 이전 전에 도착한 제 물건도 새 장소로 이동했는지 확인하고 싶어요.,shipping,inquiries-v2-shipping-test-014,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-016-v1,시설 규정상 운송 컨테이너는 건물 밖 지정 구역에서 열어야 합니다. 물건 인도 전에 기사와 이 규정을 공유하고 싶어요.,shipping,inquiries-v2-shipping-test-016,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-refund-test-011-v2,공간에 안 맞아 조립한 가구를 반품하려 합니다. 부품은 다 있지만 조립 흔적이 있어요. 이런 상태에서 반품 가능한지 어떤 자료로 확인받나요?,refund,inquiries-v2-refund-test-011,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-002-v1,공사 현장으로 자재를 보내는데 운송 차량 허가증을 전날 접수해야 한다고 합니다. 배차 정보를 공식적으로 받을 경로가 필요합니다.,shipping,inquiries-v2-shipping-test-002,original-synthetic:synthetic-ko-v2.0
+inquiries-v2-shipping-test-013-v1,창고에서 받은 차량 진입 순번이 다른 납품 차량과 겹칩니다. 물건을 실은 배송 차량의 대기 순서를 다시 확인해야 합니다.,shipping,inquiries-v2-shipping-test-013,original-synthetic:synthetic-ko-v2.0
