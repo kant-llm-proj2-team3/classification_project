@@ -1,601 +1,301 @@
 ﻿id,text,label,group_id,source
-inquiries-hard-v1-g001-v1,환불 안내 메일은 예전 주문에 대한 것이고 이번 주문은 그대로 받고 싶어요. 그런데 이번 배송 조회에도 취소된 주문의 운송장이 연결되어 있습니다. 이번 상품이 어느 운송 기록으로 이동 중인지 확인하는 방법을 알려 주세요.,shipping,inquiries-hard-v1-g001,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g001-v2,"환불 안내 메일은 예전 주문에 대한 것이고 이번 주문은 그대로 받고 싶어요.
-그런데 이번 배송 조회에도 취소된 주문의 운송장이 연결되어 있습니다.
-이번 상품이 어느 운송 기록으로 이동 중인지 확인하는 방법을 알려 주세요.",shipping,inquiries-hard-v1-g001,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g001-v3,"- 환불 안내 메일은 예전 주문에 대한 것이고 이번 주문은 그대로 받고 싶어요.
-- 그런데 이번 배송 조회에도 취소된 주문의 운송장이 연결되어 있습니다.
-- 이번 상품이 어느 운송 기록으로 이동 중인지 확인하는 방법을 알려 주세요.",shipping,inquiries-hard-v1-g001,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g001-v4,환불 안내 메일은 예전 주문에 대한 것이고 이번 주문은 그대로 받고 싶습니다. 그런데 이번 배송 조회에도 취소된 주문의 운송장이 연결되어 있습니다. 이번 상품이 어느 운송 기록으로 이동 중인지 확인하는 방법을 안내해 주세요.,shipping,inquiries-hard-v1-g001,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g002-v1,로그인은 되고 주문 내역도 볼 수 있어서 계정 문제는 아닙니다. 물건 두 상자 중 하나만 왔는데 둘 다 수령 완료로 표시돼요. 받지 못한 상자의 인도 상태를 확인하고 싶습니다.,shipping,inquiries-hard-v1-g002,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g002-v2,"로그인은 되고 주문 내역도 볼 수 있어서 계정 문제는 아닙니다.
-물건 두 상자 중 하나만 왔는데 둘 다 수령 완료로 표시돼요.
-받지 못한 상자의 인도 상태를 확인하고 싶습니다.",shipping,inquiries-hard-v1-g002,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g002-v3,"- 로그인은 되고 주문 내역도 볼 수 있어서 계정 문제는 아닙니다.
-- 물건 두 상자 중 하나만 왔는데 둘 다 수령 완료로 표시돼요.
-- 받지 못한 상자의 인도 상태를 확인하고 싶습니다.",shipping,inquiries-hard-v1-g002,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g002-v4,현재 문의 상황은 다음과 같습니다. 로그인은 되고 주문 내역도 볼 수 있어서 계정 문제는 아닙니다. 물건 두 상자 중 하나만 왔는데 둘 다 수령 완료로 표시돼요. 받지 못한 상자의 인도 상태를 확인하고 싶습니다.,shipping,inquiries-hard-v1-g002,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g003-v1,반품 신청은 하지 않았고 상품도 필요합니다. 새 제품을 보내기 전에 기존 포장재를 회수한다는데 기사님이 상품까지 가져가셨습니다. 회수된 상품이 어디로 이동했는지 운송 경로를 확인하고 싶어요.,shipping,inquiries-hard-v1-g003,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g003-v2,"반품 신청은 하지 않았고 상품도 필요합니다.
-새 제품을 보내기 전에 기존 포장재를 회수한다는데 기사님이 상품까지 가져가셨습니다.
-회수된 상품이 어디로 이동했는지 운송 경로를 확인하고 싶어요.",shipping,inquiries-hard-v1-g003,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g003-v3,"- 반품 신청은 하지 않았고 상품도 필요합니다.
-- 새 제품을 보내기 전에 기존 포장재를 회수한다는데 기사님이 상품까지 가져가셨습니다.
-- 회수된 상품이 어디로 이동했는지 운송 경로를 확인하고 싶어요.",shipping,inquiries-hard-v1-g003,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g003-v4,반품 신청은 하지 않았고 상품도 필요합니다. 새 제품을 보내기 전에 기존 포장재를 회수한다는데 기사님이 상품까지 가져가셨습니다. 회수된 상품이 어디로 이동했는지 운송 경로를 확인하고 싶습니다.,shipping,inquiries-hard-v1-g003,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g004-v1,주소록의 기본 주소는 바꾸지 않으려 합니다. 이번 주문만 출장 중인 장소에서 받아야 하는데 출고가 시작됐는지 모르겠어요. 이미 접수된 배송 건의 수령지를 조정할 수 있는지 확인하고 싶습니다.,shipping,inquiries-hard-v1-g004,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g004-v2,"주소록의 기본 주소는 바꾸지 않으려 합니다.
-이번 주문만 출장 중인 장소에서 받아야 하는데 출고가 시작됐는지 모르겠어요.
-이미 접수된 배송 건의 수령지를 조정할 수 있는지 확인하고 싶습니다.",shipping,inquiries-hard-v1-g004,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g004-v3,"- 주소록의 기본 주소는 바꾸지 않으려 합니다.
-- 이번 주문만 출장 중인 장소에서 받아야 하는데 출고가 시작됐는지 모르겠어요.
-- 이미 접수된 배송 건의 수령지를 조정할 수 있는지 확인하고 싶습니다.",shipping,inquiries-hard-v1-g004,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g004-v4,현재 문의 상황은 다음과 같습니다. 주소록의 기본 주소는 바꾸지 않으려 합니다. 이번 주문만 출장 중인 장소에서 받아야 하는데 출고가 시작됐는지 모르겠어요. 이미 접수된 배송 건의 수령지를 조정할 수 있는지 확인하고 싶습니다.,shipping,inquiries-hard-v1-g004,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g005-v1,취소 수수료는 알고 있고 취소할 생각은 없습니다. 배송 기사님이 방문했다는 시각에 건물 출입 기록이 없어요. 실제 방문 여부와 재방문 안내를 어디에서 확인해야 하나요?,shipping,inquiries-hard-v1-g005,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g005-v2,"취소 수수료는 알고 있고 취소할 생각은 없습니다.
-배송 기사님이 방문했다는 시각에 건물 출입 기록이 없어요.
-실제 방문 여부와 재방문 안내를 어디에서 확인해야 하나요?",shipping,inquiries-hard-v1-g005,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g005-v3,"- 취소 수수료는 알고 있고 취소할 생각은 없습니다.
-- 배송 기사님이 방문했다는 시각에 건물 출입 기록이 없어요.
-- 실제 방문 여부와 재방문 안내를 어디에서 확인해야 하나요?",shipping,inquiries-hard-v1-g005,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g005-v4,현재 문의 상황은 다음과 같습니다. 취소 수수료는 알고 있고 취소할 생각은 없습니다. 배송 기사님이 방문했다는 시각에 건물 출입 기록이 없어요. 실제 방문 여부와 재방문 안내를 어디에서 확인해야 하나요?,shipping,inquiries-hard-v1-g005,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g006-v1,회원 이름은 정상이고 결제도 완료됐습니다. 운송장에는 이름이 같지만 연락처 끝자리가 다른 수령인이 적혀 있어 제 물품인지 판단하기 어렵습니다. 배송 건의 실제 수령 대상이 누구인지 확인하고 싶어요.,shipping,inquiries-hard-v1-g006,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g006-v2,"회원 이름은 정상이고 결제도 완료됐습니다.
-운송장에는 이름이 같지만 연락처 끝자리가 다른 수령인이 적혀 있어 제 물품인지 판단하기 어렵습니다.
-배송 건의 실제 수령 대상이 누구인지 확인하고 싶어요.",shipping,inquiries-hard-v1-g006,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g006-v3,"- 회원 이름은 정상이고 결제도 완료됐습니다.
-- 운송장에는 이름이 같지만 연락처 끝자리가 다른 수령인이 적혀 있어 제 물품인지 판단하기 어렵습니다.
-- 배송 건의 실제 수령 대상이 누구인지 확인하고 싶어요.",shipping,inquiries-hard-v1-g006,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g006-v4,회원 이름은 정상이고 결제도 완료됐습니다. 운송장에는 이름이 같지만 연락처 끝자리가 다른 수령인이 적혀 있어 제 물품인지 판단하기 어렵습니다. 배송 건의 실제 수령 대상이 누구인지 확인하고 싶습니다.,shipping,inquiries-hard-v1-g006,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g007-v1,예약 상품의 환불 규정은 이미 확인했지만 계속 기다리겠습니다. 일반 상품과 묶여 한 운송장만 나왔는데 일반 상품만 먼저 도착했어요. 예약 상품이 따로 발송되는지 배송 기록을 확인하고 싶습니다.,shipping,inquiries-hard-v1-g007,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g007-v2,"예약 상품의 환불 규정은 이미 확인했지만 계속 기다리겠습니다.
-일반 상품과 묶여 한 운송장만 나왔는데 일반 상품만 먼저 도착했어요.
-예약 상품이 따로 발송되는지 배송 기록을 확인하고 싶습니다.",shipping,inquiries-hard-v1-g007,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g007-v3,"- 예약 상품의 환불 규정은 이미 확인했지만 계속 기다리겠습니다.
-- 일반 상품과 묶여 한 운송장만 나왔는데 일반 상품만 먼저 도착했어요.
-- 예약 상품이 따로 발송되는지 배송 기록을 확인하고 싶습니다.",shipping,inquiries-hard-v1-g007,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g007-v4,현재 문의 상황은 다음과 같습니다. 예약 상품의 환불 규정은 이미 확인했지만 계속 기다리겠습니다. 일반 상품과 묶여 한 운송장만 나왔는데 일반 상품만 먼저 도착했어요. 예약 상품이 따로 발송되는지 배송 기록을 확인하고 싶습니다.,shipping,inquiries-hard-v1-g007,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g008-v1,반환 금액을 묻는 게 아니고 주문을 취소한 적도 없습니다. 통관 조회에 발송인에게 되돌아간다고 표시됐는데 판매자는 배송 중이라고 합니다. 서로 다른 안내 중 실제 운송 상태를 확인할 공식 경로가 필요해요.,shipping,inquiries-hard-v1-g008,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g008-v2,"반환 금액을 묻는 게 아니고 주문을 취소한 적도 없습니다.
-통관 조회에 발송인에게 되돌아간다고 표시됐는데 판매자는 배송 중이라고 합니다.
-서로 다른 안내 중 실제 운송 상태를 확인할 공식 경로가 필요해요.",shipping,inquiries-hard-v1-g008,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g008-v3,"- 반환 금액을 묻는 게 아니고 주문을 취소한 적도 없습니다.
-- 통관 조회에 발송인에게 되돌아간다고 표시됐는데 판매자는 배송 중이라고 합니다.
-- 서로 다른 안내 중 실제 운송 상태를 확인할 공식 경로가 필요해요.",shipping,inquiries-hard-v1-g008,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g008-v4,현재 문의 상황은 다음과 같습니다. 반환 금액을 묻는 게 아니고 주문을 취소한 적도 없습니다. 통관 조회에 발송인에게 되돌아간다고 표시됐는데 판매자는 배송 중이라고 합니다. 서로 다른 안내 중 실제 운송 상태를 확인할 공식 경로가 필요해요.,shipping,inquiries-hard-v1-g008,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g009-v1,계정에서 전화번호를 바꾸려는 건 아닙니다. 이번 배송의 현장 연락만 건물 관리인에게 부탁하고 싶은데 운송장에는 제 번호만 있습니다. 배송 건에 한해 연락 대상을 전달할 수 있는지 확인하고 싶어요.,shipping,inquiries-hard-v1-g009,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g009-v2,"계정에서 전화번호를 바꾸려는 건 아닙니다.
-이번 배송의 현장 연락만 건물 관리인에게 부탁하고 싶은데 운송장에는 제 번호만 있습니다.
-배송 건에 한해 연락 대상을 전달할 수 있는지 확인하고 싶어요.",shipping,inquiries-hard-v1-g009,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g009-v3,"- 계정에서 전화번호를 바꾸려는 건 아닙니다.
-- 이번 배송의 현장 연락만 건물 관리인에게 부탁하고 싶은데 운송장에는 제 번호만 있습니다.
-- 배송 건에 한해 연락 대상을 전달할 수 있는지 확인하고 싶어요.",shipping,inquiries-hard-v1-g009,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g009-v4,계정에서 전화번호를 바꾸려는 건 아닙니다. 이번 배송의 현장 연락만 건물 관리인에게 부탁하고 싶은데 운송장에는 제 번호만 있습니다. 배송 건에 한해 연락 대상을 전달할 수 있는지 확인하고 싶습니다.,shipping,inquiries-hard-v1-g009,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g010-v1,상품은 받았지만 교환이나 환불을 원하는 것은 아닙니다. 설치에 필요한 부속 상자가 별도 도착 예정이라는데 운송 번호가 없어요. 남은 상자의 인도 예정 상태를 공식 배송 경로에서 확인하고 싶습니다.,shipping,inquiries-hard-v1-g010,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g010-v2,"상품은 받았지만 교환이나 환불을 원하는 것은 아닙니다.
-설치에 필요한 부속 상자가 별도 도착 예정이라는데 운송 번호가 없어요.
-남은 상자의 인도 예정 상태를 공식 배송 경로에서 확인하고 싶습니다.",shipping,inquiries-hard-v1-g010,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g010-v3,"- 상품은 받았지만 교환이나 환불을 원하는 것은 아닙니다.
-- 설치에 필요한 부속 상자가 별도 도착 예정이라는데 운송 번호가 없어요.
-- 남은 상자의 인도 예정 상태를 공식 배송 경로에서 확인하고 싶습니다.",shipping,inquiries-hard-v1-g010,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g010-v4,현재 문의 상황은 다음과 같습니다. 상품은 받았지만 교환이나 환불을 원하는 것은 아닙니다. 설치에 필요한 부속 상자가 별도 도착 예정이라는데 운송 번호가 없어요. 남은 상자의 인도 예정 상태를 공식 배송 경로에서 확인하고 싶습니다.,shipping,inquiries-hard-v1-g010,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g011-v1,결제를 취소하라는 안내가 떠도 물건이 필요해서 아직 취소하지 않았습니다. 배송 조회는 접수만 되어 있고 판매자는 택배사가 가져갔다고 해요. 실물 인계 여부를 어디에서 확인할 수 있나요?,shipping,inquiries-hard-v1-g011,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g011-v2,"결제를 취소하라는 안내가 떠도 물건이 필요해서 아직 취소하지 않았습니다.
-배송 조회는 접수만 되어 있고 판매자는 택배사가 가져갔다고 해요.
-실물 인계 여부를 어디에서 확인할 수 있나요?",shipping,inquiries-hard-v1-g011,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g011-v3,"- 결제를 취소하라는 안내가 떠도 물건이 필요해서 아직 취소하지 않았습니다.
-- 배송 조회는 접수만 되어 있고 판매자는 택배사가 가져갔다고 해요.
-- 실물 인계 여부를 어디에서 확인할 수 있나요?",shipping,inquiries-hard-v1-g011,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g011-v4,현재 문의 상황은 다음과 같습니다. 결제를 취소하라는 안내가 떠도 물건이 필요해서 아직 취소하지 않았습니다. 배송 조회는 접수만 되어 있고 판매자는 택배사가 가져갔다고 해요. 실물 인계 여부를 어디에서 확인할 수 있나요?,shipping,inquiries-hard-v1-g011,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g012-v1,회원정보의 주소는 그대로 유지하려 합니다. 택배를 받는 층의 승강기가 고장 나서 이번 배송만 지상 안내 데스크에서 받고 싶어요. 배송 업체가 그곳에 인도할 수 있는지 확인하는 방법을 알려 주세요.,shipping,inquiries-hard-v1-g012,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g012-v2,"회원정보의 주소는 그대로 유지하려 합니다.
-택배를 받는 층의 승강기가 고장 나서 이번 배송만 지상 안내 데스크에서 받고 싶어요.
-배송 업체가 그곳에 인도할 수 있는지 확인하는 방법을 알려 주세요.",shipping,inquiries-hard-v1-g012,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g012-v3,"- 회원정보의 주소는 그대로 유지하려 합니다.
-- 택배를 받는 층의 승강기가 고장 나서 이번 배송만 지상 안내 데스크에서 받고 싶어요.
-- 배송 업체가 그곳에 인도할 수 있는지 확인하는 방법을 알려 주세요.",shipping,inquiries-hard-v1-g012,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g012-v4,회원정보의 주소는 그대로 유지하려 합니다. 택배를 받는 층의 승강기가 고장 나서 이번 배송만 지상 안내 데스크에서 받고 싶습니다. 배송 업체가 그곳에 인도할 수 있는지 확인하는 방법을 안내해 주세요.,shipping,inquiries-hard-v1-g012,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g013-v1,반품용 수거와 새 주문의 배송이 같은 날 예정되어 있어요. 새 주문은 취소하지 않을 건데 기사님 안내에는 수거 일정만 적혀 있습니다. 새 상품을 받는 방문 일정이 별도로 있는지 확인하고 싶습니다.,shipping,inquiries-hard-v1-g013,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g013-v2,"반품용 수거와 새 주문의 배송이 같은 날 예정되어 있어요.
-새 주문은 취소하지 않을 건데 기사님 안내에는 수거 일정만 적혀 있습니다.
-새 상품을 받는 방문 일정이 별도로 있는지 확인하고 싶습니다.",shipping,inquiries-hard-v1-g013,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g013-v3,"- 반품용 수거와 새 주문의 배송이 같은 날 예정되어 있어요.
-- 새 주문은 취소하지 않을 건데 기사님 안내에는 수거 일정만 적혀 있습니다.
-- 새 상품을 받는 방문 일정이 별도로 있는지 확인하고 싶습니다.",shipping,inquiries-hard-v1-g013,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g013-v4,현재 문의 상황은 다음과 같습니다. 반품용 수거와 새 주문의 배송이 같은 날 예정되어 있어요. 새 주문은 취소하지 않을 건데 기사님 안내에는 수거 일정만 적혀 있습니다. 새 상품을 받는 방문 일정이 별도로 있는지 확인하고 싶습니다.,shipping,inquiries-hard-v1-g013,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g014-v1,로그인 알림은 정상적으로 오는데 배송 알림의 수령 사진이 전혀 다른 건물입니다. 돈을 돌려달라는 요청은 아직 아닙니다. 제 주문의 실제 인도 장소를 확인하고 싶어요.,shipping,inquiries-hard-v1-g014,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g014-v2,"로그인 알림은 정상적으로 오는데 배송 알림의 수령 사진이 전혀 다른 건물입니다.
-돈을 돌려달라는 요청은 아직 아닙니다.
-제 주문의 실제 인도 장소를 확인하고 싶어요.",shipping,inquiries-hard-v1-g014,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g014-v3,"- 로그인 알림은 정상적으로 오는데 배송 알림의 수령 사진이 전혀 다른 건물입니다.
-- 돈을 돌려달라는 요청은 아직 아닙니다.
-- 제 주문의 실제 인도 장소를 확인하고 싶어요.",shipping,inquiries-hard-v1-g014,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g014-v4,로그인 알림은 정상적으로 오는데 배송 알림의 수령 사진이 전혀 다른 건물입니다. 돈을 돌려달라는 요청은 아직 아닙니다. 제 주문의 실제 인도 장소를 확인하고 싶습니다.,shipping,inquiries-hard-v1-g014,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g015-v1,판매자가 환불도 가능하다고 했지만 우선 제품을 받겠습니다. 배송 조회에는 냉장 보관 중이라고만 나오고 인도 시도 기록이 없습니다. 냉장 상태를 단정해 달라는 게 아니라 인도 진행 상황을 확인하는 경로가 궁금합니다.,shipping,inquiries-hard-v1-g015,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g015-v2,"판매자가 환불도 가능하다고 했지만 우선 제품을 받겠습니다.
-배송 조회에는 냉장 보관 중이라고만 나오고 인도 시도 기록이 없습니다.
-냉장 상태를 단정해 달라는 게 아니라 인도 진행 상황을 확인하는 경로가 궁금합니다.",shipping,inquiries-hard-v1-g015,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g015-v3,"- 판매자가 환불도 가능하다고 했지만 우선 제품을 받겠습니다.
-- 배송 조회에는 냉장 보관 중이라고만 나오고 인도 시도 기록이 없습니다.
-- 냉장 상태를 단정해 달라는 게 아니라 인도 진행 상황을 확인하는 경로가 궁금합니다.",shipping,inquiries-hard-v1-g015,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g015-v4,판매자가 환불도 가능하다고 했지만 우선 제품을 받겠습니다. 배송 조회에는 냉장 보관 중이라고만 나오고 인도 시도 기록이 없습니다. 냉장 상태를 단정해 달라는 게 아니라 인도 진행 상황을 확인하는 경로가 알고 싶습니다.,shipping,inquiries-hard-v1-g015,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g016-v1,예전 회원 주소를 삭제할 필요는 없습니다. 주문할 때 선택한 지점과 택배 안내에 적힌 수령 지점의 지역이 달라요. 이번 물품이 어느 지점으로 배달되는지 확인하고 싶습니다.,shipping,inquiries-hard-v1-g016,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g016-v2,"예전 회원 주소를 삭제할 필요는 없습니다.
-주문할 때 선택한 지점과 택배 안내에 적힌 수령 지점의 지역이 달라요.
-이번 물품이 어느 지점으로 배달되는지 확인하고 싶습니다.",shipping,inquiries-hard-v1-g016,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g016-v3,"- 예전 회원 주소를 삭제할 필요는 없습니다.
-- 주문할 때 선택한 지점과 택배 안내에 적힌 수령 지점의 지역이 달라요.
-- 이번 물품이 어느 지점으로 배달되는지 확인하고 싶습니다.",shipping,inquiries-hard-v1-g016,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g016-v4,현재 문의 상황은 다음과 같습니다. 예전 회원 주소를 삭제할 필요는 없습니다. 주문할 때 선택한 지점과 택배 안내에 적힌 수령 지점의 지역이 달라요. 이번 물품이 어느 지점으로 배달되는지 확인하고 싶습니다.,shipping,inquiries-hard-v1-g016,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g017-v1,배송이 늦어도 취소하지 않고 기다릴 생각입니다. 운송 조회에 출고 보류라고 뜨는데 필요한 추가 정보가 무엇인지 안내가 없어요. 보류 이유와 제가 제공해야 할 사항을 공식 배송 지원에서 확인하고 싶습니다.,shipping,inquiries-hard-v1-g017,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g017-v2,"배송이 늦어도 취소하지 않고 기다릴 생각입니다.
-운송 조회에 출고 보류라고 뜨는데 필요한 추가 정보가 무엇인지 안내가 없어요.
-보류 이유와 제가 제공해야 할 사항을 공식 배송 지원에서 확인하고 싶습니다.",shipping,inquiries-hard-v1-g017,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g017-v3,"- 배송이 늦어도 취소하지 않고 기다릴 생각입니다.
-- 운송 조회에 출고 보류라고 뜨는데 필요한 추가 정보가 무엇인지 안내가 없어요.
-- 보류 이유와 제가 제공해야 할 사항을 공식 배송 지원에서 확인하고 싶습니다.",shipping,inquiries-hard-v1-g017,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g017-v4,현재 문의 상황은 다음과 같습니다. 배송이 늦어도 취소하지 않고 기다릴 생각입니다. 운송 조회에 출고 보류라고 뜨는데 필요한 추가 정보가 무엇인지 안내가 없어요. 보류 이유와 제가 제공해야 할 사항을 공식 배송 지원에서 확인하고 싶습니다.,shipping,inquiries-hard-v1-g017,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g018-v1,반품 접수는 다른 상품에 대한 것입니다. 이번 새 상품의 배송 사진에 반품 수거 라벨이 붙은 상자가 찍혀 있습니다. 실제로 어느 물품이 인도되었는지 배송 기록을 확인하고 싶어요.,shipping,inquiries-hard-v1-g018,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g018-v2,"반품 접수는 다른 상품에 대한 것입니다.
-이번 새 상품의 배송 사진에 반품 수거 라벨이 붙은 상자가 찍혀 있습니다.
-실제로 어느 물품이 인도되었는지 배송 기록을 확인하고 싶어요.",shipping,inquiries-hard-v1-g018,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g018-v3,"- 반품 접수는 다른 상품에 대한 것입니다.
-- 이번 새 상품의 배송 사진에 반품 수거 라벨이 붙은 상자가 찍혀 있습니다.
-- 실제로 어느 물품이 인도되었는지 배송 기록을 확인하고 싶어요.",shipping,inquiries-hard-v1-g018,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g018-v4,반품 접수는 다른 상품에 대한 것입니다. 이번 새 상품의 배송 사진에 반품 수거 라벨이 붙은 상자가 찍혀 있습니다. 실제로 어느 물품이 인도되었는지 배송 기록을 확인하고 싶습니다.,shipping,inquiries-hard-v1-g018,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g019-v1,계정 권한 변경은 필요 없고 주문 조회도 가능합니다. 기숙사 공동 보관실로 배송됐다고 하는데 관리자는 그날 입고 기록이 없다고 합니다. 물품이 누구에게 인계됐는지 확인하는 방법이 필요해요.,shipping,inquiries-hard-v1-g019,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g019-v2,"계정 권한 변경은 필요 없고 주문 조회도 가능합니다.
-기숙사 공동 보관실로 배송됐다고 하는데 관리자는 그날 입고 기록이 없다고 합니다.
-물품이 누구에게 인계됐는지 확인하는 방법이 필요해요.",shipping,inquiries-hard-v1-g019,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g019-v3,"- 계정 권한 변경은 필요 없고 주문 조회도 가능합니다.
-- 기숙사 공동 보관실로 배송됐다고 하는데 관리자는 그날 입고 기록이 없다고 합니다.
-- 물품이 누구에게 인계됐는지 확인하는 방법이 필요해요.",shipping,inquiries-hard-v1-g019,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g019-v4,현재 문의 상황은 다음과 같습니다. 계정 권한 변경은 필요 없고 주문 조회도 가능합니다. 기숙사 공동 보관실로 배송됐다고 하는데 관리자는 그날 입고 기록이 없다고 합니다. 물품이 누구에게 인계됐는지 확인하는 방법이 필요해요.,shipping,inquiries-hard-v1-g019,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g020-v1,환급받은 이전 주문과 새로 결제한 주문이 따로 있습니다. 새 주문의 배송 알림에는 이전 주문 번호가 표시돼요. 이번 결제 상품에 연결된 운송장을 정확히 확인하고 싶습니다.,shipping,inquiries-hard-v1-g020,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g020-v2,"환급받은 이전 주문과 새로 결제한 주문이 따로 있습니다.
-새 주문의 배송 알림에는 이전 주문 번호가 표시돼요.
-이번 결제 상품에 연결된 운송장을 정확히 확인하고 싶습니다.",shipping,inquiries-hard-v1-g020,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g020-v3,"- 환급받은 이전 주문과 새로 결제한 주문이 따로 있습니다.
-- 새 주문의 배송 알림에는 이전 주문 번호가 표시돼요.
-- 이번 결제 상품에 연결된 운송장을 정확히 확인하고 싶습니다.",shipping,inquiries-hard-v1-g020,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g020-v4,현재 문의 상황은 다음과 같습니다. 환급받은 이전 주문과 새로 결제한 주문이 따로 있습니다. 새 주문의 배송 알림에는 이전 주문 번호가 표시돼요. 이번 결제 상품에 연결된 운송장을 정확히 확인하고 싶습니다.,shipping,inquiries-hard-v1-g020,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g021-v1,수령 안내에 일회용 인도 코드가 필요하다고 적혀 있습니다. 회원 로그인 인증 문제가 아니라 택배를 받을 때 필요한 안내를 못 받은 상황입니다. 공식 배송 문의 경로에서 수령 방법을 확인하고 싶어요.,shipping,inquiries-hard-v1-g021,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g021-v2,"수령 안내에 일회용 인도 코드가 필요하다고 적혀 있습니다.
-회원 로그인 인증 문제가 아니라 택배를 받을 때 필요한 안내를 못 받은 상황입니다.
-공식 배송 문의 경로에서 수령 방법을 확인하고 싶어요.",shipping,inquiries-hard-v1-g021,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g021-v3,"- 수령 안내에 일회용 인도 코드가 필요하다고 적혀 있습니다.
-- 회원 로그인 인증 문제가 아니라 택배를 받을 때 필요한 안내를 못 받은 상황입니다.
-- 공식 배송 문의 경로에서 수령 방법을 확인하고 싶어요.",shipping,inquiries-hard-v1-g021,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g021-v4,수령 안내에 일회용 인도 코드가 필요하다고 적혀 있습니다. 회원 로그인 인증 문제가 아니라 택배를 받을 때 필요한 안내를 못 받은 상황입니다. 공식 배송 문의 경로에서 수령 방법을 확인하고 싶습니다.,shipping,inquiries-hard-v1-g021,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g022-v1,제품 취소나 회원 탈퇴를 원하는 건 아닙니다. 발송된 물품이 행사장 물류실에 도착했다고 하는데 인수 담당자 이름이 비어 있습니다. 실제 인계가 완료됐는지 확인하고 싶습니다.,shipping,inquiries-hard-v1-g022,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g022-v2,"제품 취소나 회원 탈퇴를 원하는 건 아닙니다.
-발송된 물품이 행사장 물류실에 도착했다고 하는데 인수 담당자 이름이 비어 있습니다.
-실제 인계가 완료됐는지 확인하고 싶습니다.",shipping,inquiries-hard-v1-g022,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g022-v3,"- 제품 취소나 회원 탈퇴를 원하는 건 아닙니다.
-- 발송된 물품이 행사장 물류실에 도착했다고 하는데 인수 담당자 이름이 비어 있습니다.
-- 실제 인계가 완료됐는지 확인하고 싶습니다.",shipping,inquiries-hard-v1-g022,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g022-v4,현재 문의 상황은 다음과 같습니다. 제품 취소나 회원 탈퇴를 원하는 건 아닙니다. 발송된 물품이 행사장 물류실에 도착했다고 하는데 인수 담당자 이름이 비어 있습니다. 실제 인계가 완료됐는지 확인하고 싶습니다.,shipping,inquiries-hard-v1-g022,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g023-v1,지연 보상 금액을 묻기 전에 배송 상태부터 알고 싶어요. 운송 기록이 같은 두 지점을 계속 왕복한 것으로 표시됩니다. 물품이 실제로 재이동한 건지 조회 기록만 반복된 건지 확인하는 방법을 알려 주세요.,shipping,inquiries-hard-v1-g023,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g023-v2,"지연 보상 금액을 묻기 전에 배송 상태부터 알고 싶어요.
-운송 기록이 같은 두 지점을 계속 왕복한 것으로 표시됩니다.
-물품이 실제로 재이동한 건지 조회 기록만 반복된 건지 확인하는 방법을 알려 주세요.",shipping,inquiries-hard-v1-g023,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g023-v3,"- 지연 보상 금액을 묻기 전에 배송 상태부터 알고 싶어요.
-- 운송 기록이 같은 두 지점을 계속 왕복한 것으로 표시됩니다.
-- 물품이 실제로 재이동한 건지 조회 기록만 반복된 건지 확인하는 방법을 알려 주세요.",shipping,inquiries-hard-v1-g023,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g023-v4,지연 보상 금액을 묻기 전에 배송 상태부터 알고 싶습니다. 운송 기록이 같은 두 지점을 계속 왕복한 것으로 표시됩니다. 물품이 실제로 재이동한 건지 조회 기록만 반복된 건지 확인하는 방법을 안내해 주세요.,shipping,inquiries-hard-v1-g023,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g024-v1,회원 설정이나 결제 취소를 요청하는 건 아닙니다. 친환경 합배송을 선택했는데 묶음 중 한 상품의 예약 출고일이 연기됐어요. 다른 상품까지 그 날짜에 맞춰 출고가 미뤄지는지 이번 주문의 운송 계획을 확인하고 싶습니다.,shipping,inquiries-hard-v1-g024,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g024-v2,"회원 설정이나 결제 취소를 요청하는 건 아닙니다.
-친환경 합배송을 선택했는데 묶음 중 한 상품의 예약 출고일이 연기됐어요.
-다른 상품까지 그 날짜에 맞춰 출고가 미뤄지는지 이번 주문의 운송 계획을 확인하고 싶습니다.",shipping,inquiries-hard-v1-g024,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g024-v3,"- 회원 설정이나 결제 취소를 요청하는 건 아닙니다.
-- 친환경 합배송을 선택했는데 묶음 중 한 상품의 예약 출고일이 연기됐어요.
-- 다른 상품까지 그 날짜에 맞춰 출고가 미뤄지는지 이번 주문의 운송 계획을 확인하고 싶습니다.",shipping,inquiries-hard-v1-g024,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g024-v4,현재 문의 상황은 다음과 같습니다. 회원 설정이나 결제 취소를 요청하는 건 아닙니다. 친환경 합배송을 선택했는데 묶음 중 한 상품의 예약 출고일이 연기됐어요. 다른 상품까지 그 날짜에 맞춰 출고가 미뤄지는지 이번 주문의 운송 계획을 확인하고 싶습니다.,shipping,inquiries-hard-v1-g024,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g025-v1,환불이 가능하더라도 지금은 받는 쪽으로 진행하고 싶습니다. 택배 조회에는 목적지 근처까지 왔다가 발송지로 되돌아가는 이동 기록이 보입니다. 반송이 확정된 건지 일시적인 운송 경로인지 공식 확인을 받고 싶어요.,shipping,inquiries-hard-v1-g025,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g025-v2,"환불이 가능하더라도 지금은 받는 쪽으로 진행하고 싶습니다.
-택배 조회에는 목적지 근처까지 왔다가 발송지로 되돌아가는 이동 기록이 보입니다.
-반송이 확정된 건지 일시적인 운송 경로인지 공식 확인을 받고 싶어요.",shipping,inquiries-hard-v1-g025,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g025-v3,"- 환불이 가능하더라도 지금은 받는 쪽으로 진행하고 싶습니다.
-- 택배 조회에는 목적지 근처까지 왔다가 발송지로 되돌아가는 이동 기록이 보입니다.
-- 반송이 확정된 건지 일시적인 운송 경로인지 공식 확인을 받고 싶어요.",shipping,inquiries-hard-v1-g025,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g025-v4,환불이 가능하더라도 지금은 받는 쪽으로 진행하고 싶습니다. 택배 조회에는 목적지 근처까지 왔다가 발송지로 되돌아가는 이동 기록이 보입니다. 반송이 확정된 건지 일시적인 운송 경로인지 공식 확인을 받고 싶습니다.,shipping,inquiries-hard-v1-g025,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g026-v1,로그인은 정상이고 주문 내역에도 접근할 수 있습니다. 출발 전 취소를 눌렀지만 배송 알림이 뒤늦게 왔어요. 물품 위치보다 취소 접수가 유지되는지와 결제 반환 절차를 확인하고 싶습니다.,refund,inquiries-hard-v1-g026,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g026-v2,"로그인은 정상이고 주문 내역에도 접근할 수 있습니다.
-출발 전 취소를 눌렀지만 배송 알림이 뒤늦게 왔어요.
-물품 위치보다 취소 접수가 유지되는지와 결제 반환 절차를 확인하고 싶습니다.",refund,inquiries-hard-v1-g026,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g026-v3,"- 로그인은 정상이고 주문 내역에도 접근할 수 있습니다.
-- 출발 전 취소를 눌렀지만 배송 알림이 뒤늦게 왔어요.
-- 물품 위치보다 취소 접수가 유지되는지와 결제 반환 절차를 확인하고 싶습니다.",refund,inquiries-hard-v1-g026,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g026-v4,현재 문의 상황은 다음과 같습니다. 로그인은 정상이고 주문 내역에도 접근할 수 있습니다. 출발 전 취소를 눌렀지만 배송 알림이 뒤늦게 왔어요. 물품 위치보다 취소 접수가 유지되는지와 결제 반환 절차를 확인하고 싶습니다.,refund,inquiries-hard-v1-g026,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g027-v1,배송 기사님이 물건을 찾아준다고 했지만 이제는 구매를 유지하지 않겠습니다. 아직 받지 못한 주문을 취소하고 싶은데 운송 중이라고 뜹니다. 이 상태에서 취소 또는 반환 요청을 접수할 공식 경로를 알려 주세요.,refund,inquiries-hard-v1-g027,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g027-v2,"배송 기사님이 물건을 찾아준다고 했지만 이제는 구매를 유지하지 않겠습니다.
-아직 받지 못한 주문을 취소하고 싶은데 운송 중이라고 뜹니다.
-이 상태에서 취소 또는 반환 요청을 접수할 공식 경로를 알려 주세요.",refund,inquiries-hard-v1-g027,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g027-v3,"- 배송 기사님이 물건을 찾아준다고 했지만 이제는 구매를 유지하지 않겠습니다.
-- 아직 받지 못한 주문을 취소하고 싶은데 운송 중이라고 뜹니다.
-- 이 상태에서 취소 또는 반환 요청을 접수할 공식 경로를 알려 주세요.",refund,inquiries-hard-v1-g027,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g027-v4,배송 기사님이 물건을 찾아준다고 했지만 이제는 구매를 유지하지 않겠습니다. 아직 받지 못한 주문을 취소하고 싶은데 운송 중이라고 뜹니다. 이 상태에서 취소 또는 반환 요청을 접수할 공식 경로를 안내해 주세요.,refund,inquiries-hard-v1-g027,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g028-v1,회원 탈퇴나 계정 권한 변경만을 요청하는 건 아닙니다. 자료 이용권을 잘못 결제했지만 아직 자료를 열거나 내려받지는 않았어요. 이용권 구매 자체를 취소하고 결제 금액을 반환받을 수 있는지 공식 기준을 확인하고 싶습니다.,refund,inquiries-hard-v1-g028,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g028-v2,"회원 탈퇴나 계정 권한 변경만을 요청하는 건 아닙니다.
-자료 이용권을 잘못 결제했지만 아직 자료를 열거나 내려받지는 않았어요.
-이용권 구매 자체를 취소하고 결제 금액을 반환받을 수 있는지 공식 기준을 확인하고 싶습니다.",refund,inquiries-hard-v1-g028,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g028-v3,"- 회원 탈퇴나 계정 권한 변경만을 요청하는 건 아닙니다.
-- 자료 이용권을 잘못 결제했지만 아직 자료를 열거나 내려받지는 않았어요.
-- 이용권 구매 자체를 취소하고 결제 금액을 반환받을 수 있는지 공식 기준을 확인하고 싶습니다.",refund,inquiries-hard-v1-g028,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g028-v4,현재 문의 상황은 다음과 같습니다. 회원 탈퇴나 계정 권한 변경만을 요청하는 건 아닙니다. 자료 이용권을 잘못 결제했지만 아직 자료를 열거나 내려받지는 않았어요. 이용권 구매 자체를 취소하고 결제 금액을 반환받을 수 있는지 공식 기준을 확인하고 싶습니다.,refund,inquiries-hard-v1-g028,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g029-v1,수령 주소를 바꾸려는 요청은 아닙니다. 잘못 주문한 상품이 도착해 포장은 개봉했지만 사용하지 않았어요. 수령 후 7일 안인데 반품 접수와 상태 확인 절차를 알고 싶습니다.,refund,inquiries-hard-v1-g029,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g029-v2,"수령 주소를 바꾸려는 요청은 아닙니다.
-잘못 주문한 상품이 도착해 포장은 개봉했지만 사용하지 않았어요.
-수령 후 7일 안인데 반품 접수와 상태 확인 절차를 알고 싶습니다.",refund,inquiries-hard-v1-g029,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g029-v3,"- 수령 주소를 바꾸려는 요청은 아닙니다.
-- 잘못 주문한 상품이 도착해 포장은 개봉했지만 사용하지 않았어요.
-- 수령 후 7일 안인데 반품 접수와 상태 확인 절차를 알고 싶습니다.",refund,inquiries-hard-v1-g029,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g029-v4,현재 문의 상황은 다음과 같습니다. 수령 주소를 바꾸려는 요청은 아닙니다. 잘못 주문한 상품이 도착해 포장은 개봉했지만 사용하지 않았어요. 수령 후 7일 안인데 반품 접수와 상태 확인 절차를 알고 싶습니다.,refund,inquiries-hard-v1-g029,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g030-v1,배송 완료 기록은 맞고 제품도 가지고 있습니다. 제품을 반품 접수했더니 승인됐다는 말 없이 수거 신청만 완료됐다고 나와요. 수거 접수와 반품 승인이 다른 건지 처리 상태를 확인하고 싶습니다.,refund,inquiries-hard-v1-g030,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g030-v2,"배송 완료 기록은 맞고 제품도 가지고 있습니다.
-제품을 반품 접수했더니 승인됐다는 말 없이 수거 신청만 완료됐다고 나와요.
-수거 접수와 반품 승인이 다른 건지 처리 상태를 확인하고 싶습니다.",refund,inquiries-hard-v1-g030,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g030-v3,"- 배송 완료 기록은 맞고 제품도 가지고 있습니다.
-- 제품을 반품 접수했더니 승인됐다는 말 없이 수거 신청만 완료됐다고 나와요.
-- 수거 접수와 반품 승인이 다른 건지 처리 상태를 확인하고 싶습니다.",refund,inquiries-hard-v1-g030,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g030-v4,현재 문의 상황은 다음과 같습니다. 배송 완료 기록은 맞고 제품도 가지고 있습니다. 제품을 반품 접수했더니 승인됐다는 말 없이 수거 신청만 완료됐다고 나와요. 수거 접수와 반품 승인이 다른 건지 처리 상태를 확인하고 싶습니다.,refund,inquiries-hard-v1-g030,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g031-v1,비밀번호를 바꾼 뒤에도 계정에는 정상 접속됩니다. 취소한 주문의 반환 예정 금액에 일부 옵션 가격이 빠져 있어요. 환급 계산에 포함된 항목과 제외 이유를 공식 경로에서 확인하고 싶습니다.,refund,inquiries-hard-v1-g031,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g031-v2,"비밀번호를 바꾼 뒤에도 계정에는 정상 접속됩니다.
-취소한 주문의 반환 예정 금액에 일부 옵션 가격이 빠져 있어요.
-환급 계산에 포함된 항목과 제외 이유를 공식 경로에서 확인하고 싶습니다.",refund,inquiries-hard-v1-g031,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g031-v3,"- 비밀번호를 바꾼 뒤에도 계정에는 정상 접속됩니다.
-- 취소한 주문의 반환 예정 금액에 일부 옵션 가격이 빠져 있어요.
-- 환급 계산에 포함된 항목과 제외 이유를 공식 경로에서 확인하고 싶습니다.",refund,inquiries-hard-v1-g031,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g031-v4,현재 문의 상황은 다음과 같습니다. 비밀번호를 바꾼 뒤에도 계정에는 정상 접속됩니다. 취소한 주문의 반환 예정 금액에 일부 옵션 가격이 빠져 있어요. 환급 계산에 포함된 항목과 제외 이유를 공식 경로에서 확인하고 싶습니다.,refund,inquiries-hard-v1-g031,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g032-v1,운송장 조회를 대신해 달라는 건 아닙니다. 반품 물품을 접수한 뒤 추가 공제 안내를 받았는데 무엇 때문에 공제되는지 설명이 없어요. 반환 금액 산정 근거를 확인할 방법을 알려 주세요.,refund,inquiries-hard-v1-g032,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g032-v2,"운송장 조회를 대신해 달라는 건 아닙니다.
-반품 물품을 접수한 뒤 추가 공제 안내를 받았는데 무엇 때문에 공제되는지 설명이 없어요.
-반환 금액 산정 근거를 확인할 방법을 알려 주세요.",refund,inquiries-hard-v1-g032,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g032-v3,"- 운송장 조회를 대신해 달라는 건 아닙니다.
-- 반품 물품을 접수한 뒤 추가 공제 안내를 받았는데 무엇 때문에 공제되는지 설명이 없어요.
-- 반환 금액 산정 근거를 확인할 방법을 알려 주세요.",refund,inquiries-hard-v1-g032,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g032-v4,운송장 조회를 대신해 달라는 건 아닙니다. 반품 물품을 접수한 뒤 추가 공제 안내를 받았는데 무엇 때문에 공제되는지 설명이 없어요. 반환 금액 산정 근거를 확인할 방법을 안내해 주세요.,refund,inquiries-hard-v1-g032,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g033-v1,계정에 등록한 카드를 삭제할 생각은 없습니다. 할부로 구매한 주문을 전부 취소했는데 일부 회차의 청구 예정액이 아직 남아 있어요. 취소가 할부 결제 전체에 반영됐는지 공식 환급 처리 상태를 확인하고 싶습니다.,refund,inquiries-hard-v1-g033,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g033-v2,"계정에 등록한 카드를 삭제할 생각은 없습니다.
-할부로 구매한 주문을 전부 취소했는데 일부 회차의 청구 예정액이 아직 남아 있어요.
-취소가 할부 결제 전체에 반영됐는지 공식 환급 처리 상태를 확인하고 싶습니다.",refund,inquiries-hard-v1-g033,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g033-v3,"- 계정에 등록한 카드를 삭제할 생각은 없습니다.
-- 할부로 구매한 주문을 전부 취소했는데 일부 회차의 청구 예정액이 아직 남아 있어요.
-- 취소가 할부 결제 전체에 반영됐는지 공식 환급 처리 상태를 확인하고 싶습니다.",refund,inquiries-hard-v1-g033,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g033-v4,현재 문의 상황은 다음과 같습니다. 계정에 등록한 카드를 삭제할 생각은 없습니다. 할부로 구매한 주문을 전부 취소했는데 일부 회차의 청구 예정액이 아직 남아 있어요. 취소가 할부 결제 전체에 반영됐는지 공식 환급 처리 상태를 확인하고 싶습니다.,refund,inquiries-hard-v1-g033,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g034-v1,교환 상품을 보내겠다는 배송 연락이 왔지만 저는 교환을 신청하지 않았습니다. 원래 요청은 구매 취소와 반환이었습니다. 반품 요청이 교환으로 처리된 건지 확인하고 환불 요청을 전달하는 공식 경로가 필요합니다.,refund,inquiries-hard-v1-g034,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g034-v2,"교환 상품을 보내겠다는 배송 연락이 왔지만 저는 교환을 신청하지 않았습니다.
-원래 요청은 구매 취소와 반환이었습니다.
-반품 요청이 교환으로 처리된 건지 확인하고 환불 요청을 전달하는 공식 경로가 필요합니다.",refund,inquiries-hard-v1-g034,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g034-v3,"- 교환 상품을 보내겠다는 배송 연락이 왔지만 저는 교환을 신청하지 않았습니다.
-- 원래 요청은 구매 취소와 반환이었습니다.
-- 반품 요청이 교환으로 처리된 건지 확인하고 환불 요청을 전달하는 공식 경로가 필요합니다.",refund,inquiries-hard-v1-g034,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g034-v4,현재 문의 상황은 다음과 같습니다. 교환 상품을 보내겠다는 배송 연락이 왔지만 저는 교환을 신청하지 않았습니다. 원래 요청은 구매 취소와 반환이었습니다. 반품 요청이 교환으로 처리된 건지 확인하고 환불 요청을 전달하는 공식 경로가 필요합니다.,refund,inquiries-hard-v1-g034,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g035-v1,회원 이름 수정은 이미 끝났습니다. 그런데 취소 결제의 반환 확인서에는 예전 이름이 남아 있어요. 계정 이름을 다시 바꾸는 게 아니라 이번 환급 증빙을 정정하는 경로를 알고 싶습니다.,refund,inquiries-hard-v1-g035,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g035-v2,"회원 이름 수정은 이미 끝났습니다.
-그런데 취소 결제의 반환 확인서에는 예전 이름이 남아 있어요.
-계정 이름을 다시 바꾸는 게 아니라 이번 환급 증빙을 정정하는 경로를 알고 싶습니다.",refund,inquiries-hard-v1-g035,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g035-v3,"- 회원 이름 수정은 이미 끝났습니다.
-- 그런데 취소 결제의 반환 확인서에는 예전 이름이 남아 있어요.
-- 계정 이름을 다시 바꾸는 게 아니라 이번 환급 증빙을 정정하는 경로를 알고 싶습니다.",refund,inquiries-hard-v1-g035,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g035-v4,현재 문의 상황은 다음과 같습니다. 회원 이름 수정은 이미 끝났습니다. 그런데 취소 결제의 반환 확인서에는 예전 이름이 남아 있어요. 계정 이름을 다시 바꾸는 게 아니라 이번 환급 증빙을 정정하는 경로를 알고 싶습니다.,refund,inquiries-hard-v1-g035,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g036-v1,배송받은 날짜는 확실하고 수령 후 7일 안에 반품을 접수했습니다. 담당자는 검토 중이라고 했는데 화면에는 접수 기록이 사라졌어요. 접수 사실과 승인 여부를 구분해서 반품 처리 상태를 확인하고 싶습니다.,refund,inquiries-hard-v1-g036,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g036-v2,"배송받은 날짜는 확실하고 수령 후 7일 안에 반품을 접수했습니다.
-담당자는 검토 중이라고 했는데 화면에는 접수 기록이 사라졌어요.
-접수 사실과 승인 여부를 구분해서 반품 처리 상태를 확인하고 싶습니다.",refund,inquiries-hard-v1-g036,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g036-v3,"- 배송받은 날짜는 확실하고 수령 후 7일 안에 반품을 접수했습니다.
-- 담당자는 검토 중이라고 했는데 화면에는 접수 기록이 사라졌어요.
-- 접수 사실과 승인 여부를 구분해서 반품 처리 상태를 확인하고 싶습니다.",refund,inquiries-hard-v1-g036,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g036-v4,현재 문의 상황은 다음과 같습니다. 배송받은 날짜는 확실하고 수령 후 7일 안에 반품을 접수했습니다. 담당자는 검토 중이라고 했는데 화면에는 접수 기록이 사라졌어요. 접수 사실과 승인 여부를 구분해서 반품 처리 상태를 확인하고 싶습니다.,refund,inquiries-hard-v1-g036,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g037-v1,계정에 저장된 포인트 내역을 정리하려는 것이 아닙니다. 포인트와 카드로 나눠 결제한 주문을 취소했는데 카드 반환 안내만 있습니다. 취소 건의 각 결제분이 어떻게 되돌아오는지 확인하고 싶어요.,refund,inquiries-hard-v1-g037,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g037-v2,"계정에 저장된 포인트 내역을 정리하려는 것이 아닙니다.
-포인트와 카드로 나눠 결제한 주문을 취소했는데 카드 반환 안내만 있습니다.
-취소 건의 각 결제분이 어떻게 되돌아오는지 확인하고 싶어요.",refund,inquiries-hard-v1-g037,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g037-v3,"- 계정에 저장된 포인트 내역을 정리하려는 것이 아닙니다.
-- 포인트와 카드로 나눠 결제한 주문을 취소했는데 카드 반환 안내만 있습니다.
-- 취소 건의 각 결제분이 어떻게 되돌아오는지 확인하고 싶어요.",refund,inquiries-hard-v1-g037,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g037-v4,계정에 저장된 포인트 내역을 정리하려는 것이 아닙니다. 포인트와 카드로 나눠 결제한 주문을 취소했는데 카드 반환 안내만 있습니다. 취소 건의 각 결제분이 어떻게 되돌아오는지 확인하고 싶습니다.,refund,inquiries-hard-v1-g037,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g038-v1,상품을 어디에 배송할지 정하려는 건 아닙니다. 반품 접수 화면에 새 배송 주문을 만들라는 안내가 떠서 별도 비용이 생길까 걱정입니다. 공식 반품 접수에 필요한 절차와 비용 조건을 확인하고 싶습니다.,refund,inquiries-hard-v1-g038,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g038-v2,"상품을 어디에 배송할지 정하려는 건 아닙니다.
-반품 접수 화면에 새 배송 주문을 만들라는 안내가 떠서 별도 비용이 생길까 걱정입니다.
-공식 반품 접수에 필요한 절차와 비용 조건을 확인하고 싶습니다.",refund,inquiries-hard-v1-g038,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g038-v3,"- 상품을 어디에 배송할지 정하려는 건 아닙니다.
-- 반품 접수 화면에 새 배송 주문을 만들라는 안내가 떠서 별도 비용이 생길까 걱정입니다.
-- 공식 반품 접수에 필요한 절차와 비용 조건을 확인하고 싶습니다.",refund,inquiries-hard-v1-g038,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g038-v4,현재 문의 상황은 다음과 같습니다. 상품을 어디에 배송할지 정하려는 건 아닙니다. 반품 접수 화면에 새 배송 주문을 만들라는 안내가 떠서 별도 비용이 생길까 걱정입니다. 공식 반품 접수에 필요한 절차와 비용 조건을 확인하고 싶습니다.,refund,inquiries-hard-v1-g038,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g039-v1,회원 탈퇴 전에 주문 취소부터 처리하려 합니다. 계정 삭제 요청은 아직 하지 않았고 결제된 상품 한 건만 취소하고 싶어요. 해당 주문의 취소 신청과 환급 상태 확인 경로를 알려 주세요.,refund,inquiries-hard-v1-g039,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g039-v2,"회원 탈퇴 전에 주문 취소부터 처리하려 합니다.
-계정 삭제 요청은 아직 하지 않았고 결제된 상품 한 건만 취소하고 싶어요.
-해당 주문의 취소 신청과 환급 상태 확인 경로를 알려 주세요.",refund,inquiries-hard-v1-g039,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g039-v3,"- 회원 탈퇴 전에 주문 취소부터 처리하려 합니다.
-- 계정 삭제 요청은 아직 하지 않았고 결제된 상품 한 건만 취소하고 싶어요.
-- 해당 주문의 취소 신청과 환급 상태 확인 경로를 알려 주세요.",refund,inquiries-hard-v1-g039,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g039-v4,회원 탈퇴 전에 주문 취소부터 처리하려 합니다. 계정 삭제 요청은 아직 하지 않았고 결제된 상품 한 건만 취소하고 싶습니다. 해당 주문의 취소 신청과 환급 상태 확인 경로를 안내해 주세요.,refund,inquiries-hard-v1-g039,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g040-v1,배송 지연 문의에 판매자가 기다리거나 취소하라고 답했습니다. 이번에는 기다리지 않고 주문을 취소하기로 했어요. 취소 요청이 접수되었는지와 이후 반환 절차를 확인하고 싶습니다.,refund,inquiries-hard-v1-g040,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g040-v2,"배송 지연 문의에 판매자가 기다리거나 취소하라고 답했습니다.
-이번에는 기다리지 않고 주문을 취소하기로 했어요.
-취소 요청이 접수되었는지와 이후 반환 절차를 확인하고 싶습니다.",refund,inquiries-hard-v1-g040,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g040-v3,"- 배송 지연 문의에 판매자가 기다리거나 취소하라고 답했습니다.
-- 이번에는 기다리지 않고 주문을 취소하기로 했어요.
-- 취소 요청이 접수되었는지와 이후 반환 절차를 확인하고 싶습니다.",refund,inquiries-hard-v1-g040,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g040-v4,현재 문의 상황은 다음과 같습니다. 배송 지연 문의에 판매자가 기다리거나 취소하라고 답했습니다. 이번에는 기다리지 않고 주문을 취소하기로 했어요. 취소 요청이 접수되었는지와 이후 반환 절차를 확인하고 싶습니다.,refund,inquiries-hard-v1-g040,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g041-v1,비밀번호나 연락처는 문제없습니다. 반품을 접수한 뒤 검수 결과를 알려주지 않고 일부 금액만 반환됐어요. 부분 환급의 근거와 남은 금액의 처리 상태를 확인하려 합니다.,refund,inquiries-hard-v1-g041,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g041-v2,"비밀번호나 연락처는 문제없습니다.
-반품을 접수한 뒤 검수 결과를 알려주지 않고 일부 금액만 반환됐어요.
-부분 환급의 근거와 남은 금액의 처리 상태를 확인하려 합니다.",refund,inquiries-hard-v1-g041,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g041-v3,"- 비밀번호나 연락처는 문제없습니다.
-- 반품을 접수한 뒤 검수 결과를 알려주지 않고 일부 금액만 반환됐어요.
-- 부분 환급의 근거와 남은 금액의 처리 상태를 확인하려 합니다.",refund,inquiries-hard-v1-g041,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g041-v4,현재 문의 상황은 다음과 같습니다. 비밀번호나 연락처는 문제없습니다. 반품을 접수한 뒤 검수 결과를 알려주지 않고 일부 금액만 반환됐어요. 부분 환급의 근거와 남은 금액의 처리 상태를 확인하려 합니다.,refund,inquiries-hard-v1-g041,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g042-v1,받은 물건은 더 이상 사용할 계획이 없고 수령 후 7일은 지났습니다. 기간이 지났다고 바로 거절되는지 단정해 달라는 것은 아닙니다. 상품 상태를 설명하고 반품 가능 여부를 공식적으로 문의할 경로를 알려 주세요.,refund,inquiries-hard-v1-g042,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g042-v2,"받은 물건은 더 이상 사용할 계획이 없고 수령 후 7일은 지났습니다.
-기간이 지났다고 바로 거절되는지 단정해 달라는 것은 아닙니다.
-상품 상태를 설명하고 반품 가능 여부를 공식적으로 문의할 경로를 알려 주세요.",refund,inquiries-hard-v1-g042,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g042-v3,"- 받은 물건은 더 이상 사용할 계획이 없고 수령 후 7일은 지났습니다.
-- 기간이 지났다고 바로 거절되는지 단정해 달라는 것은 아닙니다.
-- 상품 상태를 설명하고 반품 가능 여부를 공식적으로 문의할 경로를 알려 주세요.",refund,inquiries-hard-v1-g042,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g042-v4,받은 물건은 더 이상 사용할 계획이 없고 수령 후 7일은 지났습니다. 기간이 지났다고 바로 거절되는지 단정해 달라는 것은 아닙니다. 상품 상태를 설명하고 반품 가능 여부를 공식적으로 문의할 경로를 안내해 주세요.,refund,inquiries-hard-v1-g042,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g043-v1,배송 주소를 변경한 일은 있지만 그 수정은 이미 끝났습니다. 이후 구매를 취소했는데 취소 화면에는 반품비만 표시되고 반환 총액이 안 나옵니다. 최종 환급액을 산정한 내역을 확인하고 싶어요.,refund,inquiries-hard-v1-g043,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g043-v2,"배송 주소를 변경한 일은 있지만 그 수정은 이미 끝났습니다.
-이후 구매를 취소했는데 취소 화면에는 반품비만 표시되고 반환 총액이 안 나옵니다.
-최종 환급액을 산정한 내역을 확인하고 싶어요.",refund,inquiries-hard-v1-g043,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g043-v3,"- 배송 주소를 변경한 일은 있지만 그 수정은 이미 끝났습니다.
-- 이후 구매를 취소했는데 취소 화면에는 반품비만 표시되고 반환 총액이 안 나옵니다.
-- 최종 환급액을 산정한 내역을 확인하고 싶어요.",refund,inquiries-hard-v1-g043,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g043-v4,배송 주소를 변경한 일은 있지만 그 수정은 이미 끝났습니다. 이후 구매를 취소했는데 취소 화면에는 반품비만 표시되고 반환 총액이 안 나옵니다. 최종 환급액을 산정한 내역을 확인하고 싶습니다.,refund,inquiries-hard-v1-g043,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g044-v1,회원 등급을 낮추려는 요청이 아닙니다. 유료 등급 상품을 잘못 결제해서 이번 결제만 취소하려고 합니다. 결제 취소 접수와 환급 조건을 확인하는 방법을 알려 주세요.,refund,inquiries-hard-v1-g044,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g044-v2,"회원 등급을 낮추려는 요청이 아닙니다.
-유료 등급 상품을 잘못 결제해서 이번 결제만 취소하려고 합니다.
-결제 취소 접수와 환급 조건을 확인하는 방법을 알려 주세요.",refund,inquiries-hard-v1-g044,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g044-v3,"- 회원 등급을 낮추려는 요청이 아닙니다.
-- 유료 등급 상품을 잘못 결제해서 이번 결제만 취소하려고 합니다.
-- 결제 취소 접수와 환급 조건을 확인하는 방법을 알려 주세요.",refund,inquiries-hard-v1-g044,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g044-v4,회원 등급을 낮추려는 요청이 아닙니다. 유료 등급 상품을 잘못 결제해서 이번 결제만 취소하려고 합니다. 결제 취소 접수와 환급 조건을 확인하는 방법을 안내해 주세요.,refund,inquiries-hard-v1-g044,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g045-v1,반품 수거 날짜를 변경할 필요는 없습니다. 이미 접수한 반품을 판매자가 주문 취소로 기록해 반환 금액이 달라졌어요. 요청 유형과 환급 계산이 맞는지 확인할 공식 문의 경로가 필요합니다.,refund,inquiries-hard-v1-g045,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g045-v2,"반품 수거 날짜를 변경할 필요는 없습니다.
-이미 접수한 반품을 판매자가 주문 취소로 기록해 반환 금액이 달라졌어요.
-요청 유형과 환급 계산이 맞는지 확인할 공식 문의 경로가 필요합니다.",refund,inquiries-hard-v1-g045,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g045-v3,"- 반품 수거 날짜를 변경할 필요는 없습니다.
-- 이미 접수한 반품을 판매자가 주문 취소로 기록해 반환 금액이 달라졌어요.
-- 요청 유형과 환급 계산이 맞는지 확인할 공식 문의 경로가 필요합니다.",refund,inquiries-hard-v1-g045,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g045-v4,현재 문의 상황은 다음과 같습니다. 반품 수거 날짜를 변경할 필요는 없습니다. 이미 접수한 반품을 판매자가 주문 취소로 기록해 반환 금액이 달라졌어요. 요청 유형과 환급 계산이 맞는지 확인할 공식 문의 경로가 필요합니다.,refund,inquiries-hard-v1-g045,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g046-v1,대여 물품은 이미 반납했고 배송이나 수거를 다시 신청할 필요는 없습니다. 대여료와 보증금을 함께 냈는데 반납 후 반환 안내에는 대여료 금액이 적혀 있어요. 보증금 반환 건과 대여료 환급 건이 혼동된 것인지 결제 반환 내역을 확인하고 싶습니다.,refund,inquiries-hard-v1-g046,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g046-v2,"대여 물품은 이미 반납했고 배송이나 수거를 다시 신청할 필요는 없습니다.
-대여료와 보증금을 함께 냈는데 반납 후 반환 안내에는 대여료 금액이 적혀 있어요.
-보증금 반환 건과 대여료 환급 건이 혼동된 것인지 결제 반환 내역을 확인하고 싶습니다.",refund,inquiries-hard-v1-g046,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g046-v3,"- 대여 물품은 이미 반납했고 배송이나 수거를 다시 신청할 필요는 없습니다.
-- 대여료와 보증금을 함께 냈는데 반납 후 반환 안내에는 대여료 금액이 적혀 있어요.
-- 보증금 반환 건과 대여료 환급 건이 혼동된 것인지 결제 반환 내역을 확인하고 싶습니다.",refund,inquiries-hard-v1-g046,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g046-v4,현재 문의 상황은 다음과 같습니다. 대여 물품은 이미 반납했고 배송이나 수거를 다시 신청할 필요는 없습니다. 대여료와 보증금을 함께 냈는데 반납 후 반환 안내에는 대여료 금액이 적혀 있어요. 보증금 반환 건과 대여료 환급 건이 혼동된 것인지 결제 반환 내역을 확인하고 싶습니다.,refund,inquiries-hard-v1-g046,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g047-v1,계정 로그인은 되고 인증도 완료했습니다. 같은 주문의 결제가 두 번 잡혔는데 상품을 추가로 산 적은 없습니다. 추가 결제분을 취소하고 돌려받는 요청을 어디에 해야 하나요?,refund,inquiries-hard-v1-g047,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g047-v2,"계정 로그인은 되고 인증도 완료했습니다.
-같은 주문의 결제가 두 번 잡혔는데 상품을 추가로 산 적은 없습니다.
-추가 결제분을 취소하고 돌려받는 요청을 어디에 해야 하나요?",refund,inquiries-hard-v1-g047,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g047-v3,"- 계정 로그인은 되고 인증도 완료했습니다.
-- 같은 주문의 결제가 두 번 잡혔는데 상품을 추가로 산 적은 없습니다.
-- 추가 결제분을 취소하고 돌려받는 요청을 어디에 해야 하나요?",refund,inquiries-hard-v1-g047,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g047-v4,현재 문의 상황은 다음과 같습니다. 계정 로그인은 되고 인증도 완료했습니다. 같은 주문의 결제가 두 번 잡혔는데 상품을 추가로 산 적은 없습니다. 추가 결제분을 취소하고 돌려받는 요청을 어디에 해야 하나요?,refund,inquiries-hard-v1-g047,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g048-v1,물품 배송을 재개하라는 요청은 아닙니다. 취소한 주문이 예약 주문이라 지금 반환이 안 되고 출고 후 처리한다고 안내받았어요. 취소 건의 환급 보류 근거와 공식 처리 상태를 확인하고 싶습니다.,refund,inquiries-hard-v1-g048,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g048-v2,"물품 배송을 재개하라는 요청은 아닙니다.
-취소한 주문이 예약 주문이라 지금 반환이 안 되고 출고 후 처리한다고 안내받았어요.
-취소 건의 환급 보류 근거와 공식 처리 상태를 확인하고 싶습니다.",refund,inquiries-hard-v1-g048,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g048-v3,"- 물품 배송을 재개하라는 요청은 아닙니다.
-- 취소한 주문이 예약 주문이라 지금 반환이 안 되고 출고 후 처리한다고 안내받았어요.
-- 취소 건의 환급 보류 근거와 공식 처리 상태를 확인하고 싶습니다.",refund,inquiries-hard-v1-g048,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g048-v4,현재 문의 상황은 다음과 같습니다. 물품 배송을 재개하라는 요청은 아닙니다. 취소한 주문이 예약 주문이라 지금 반환이 안 되고 출고 후 처리한다고 안내받았어요. 취소 건의 환급 보류 근거와 공식 처리 상태를 확인하고 싶습니다.,refund,inquiries-hard-v1-g048,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g049-v1,회원정보에 적힌 연락처를 바꾸려는 건 아닙니다. 반품 접수 후 승인 연락을 받았다고 생각했는데 실제 문구는 심사 접수였어요. 반품이 승인된 상태인지와 환급 절차가 시작됐는지 확인하고 싶습니다.,refund,inquiries-hard-v1-g049,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g049-v2,"회원정보에 적힌 연락처를 바꾸려는 건 아닙니다.
-반품 접수 후 승인 연락을 받았다고 생각했는데 실제 문구는 심사 접수였어요.
-반품이 승인된 상태인지와 환급 절차가 시작됐는지 확인하고 싶습니다.",refund,inquiries-hard-v1-g049,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g049-v3,"- 회원정보에 적힌 연락처를 바꾸려는 건 아닙니다.
-- 반품 접수 후 승인 연락을 받았다고 생각했는데 실제 문구는 심사 접수였어요.
-- 반품이 승인된 상태인지와 환급 절차가 시작됐는지 확인하고 싶습니다.",refund,inquiries-hard-v1-g049,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g049-v4,현재 문의 상황은 다음과 같습니다. 회원정보에 적힌 연락처를 바꾸려는 건 아닙니다. 반품 접수 후 승인 연락을 받았다고 생각했는데 실제 문구는 심사 접수였어요. 반품이 승인된 상태인지와 환급 절차가 시작됐는지 확인하고 싶습니다.,refund,inquiries-hard-v1-g049,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g050-v1,택배가 아직 이동 중이지만 물건을 더 기다릴 생각은 없습니다. 다른 판매처에서 구입했으니 이 주문의 구매를 취소하려 합니다. 운송 중 취소 접수 가능 여부와 반환 절차를 공식 지원에서 확인하고 싶습니다.,refund,inquiries-hard-v1-g050,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g050-v2,"택배가 아직 이동 중이지만 물건을 더 기다릴 생각은 없습니다.
-다른 판매처에서 구입했으니 이 주문의 구매를 취소하려 합니다.
-운송 중 취소 접수 가능 여부와 반환 절차를 공식 지원에서 확인하고 싶습니다.",refund,inquiries-hard-v1-g050,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g050-v3,"- 택배가 아직 이동 중이지만 물건을 더 기다릴 생각은 없습니다.
-- 다른 판매처에서 구입했으니 이 주문의 구매를 취소하려 합니다.
-- 운송 중 취소 접수 가능 여부와 반환 절차를 공식 지원에서 확인하고 싶습니다.",refund,inquiries-hard-v1-g050,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g050-v4,현재 문의 상황은 다음과 같습니다. 택배가 아직 이동 중이지만 물건을 더 기다릴 생각은 없습니다. 다른 판매처에서 구입했으니 이 주문의 구매를 취소하려 합니다. 운송 중 취소 접수 가능 여부와 반환 절차를 공식 지원에서 확인하고 싶습니다.,refund,inquiries-hard-v1-g050,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g051-v1,환불 건의 금액은 이미 확인했고 추가 반환은 필요 없습니다. 환급 기록을 볼 때마다 제 계정에서 다른 가족의 주문도 함께 보여요. 결제 처리보다 계정에 연결된 사용자 자료 범위를 확인하고 싶습니다.,account,inquiries-hard-v1-g051,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g051-v2,"환불 건의 금액은 이미 확인했고 추가 반환은 필요 없습니다.
-환급 기록을 볼 때마다 제 계정에서 다른 가족의 주문도 함께 보여요.
-결제 처리보다 계정에 연결된 사용자 자료 범위를 확인하고 싶습니다.",account,inquiries-hard-v1-g051,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g051-v3,"- 환불 건의 금액은 이미 확인했고 추가 반환은 필요 없습니다.
-- 환급 기록을 볼 때마다 제 계정에서 다른 가족의 주문도 함께 보여요.
-- 결제 처리보다 계정에 연결된 사용자 자료 범위를 확인하고 싶습니다.",account,inquiries-hard-v1-g051,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g051-v4,현재 문의 상황은 다음과 같습니다. 환불 건의 금액은 이미 확인했고 추가 반환은 필요 없습니다. 환급 기록을 볼 때마다 제 계정에서 다른 가족의 주문도 함께 보여요. 결제 처리보다 계정에 연결된 사용자 자료 범위를 확인하고 싶습니다.,account,inquiries-hard-v1-g051,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g052-v1,배송지는 이번 주문에 맞게 입력되어 있어서 배송 변경은 필요 없습니다. 회원 프로필의 직장 주소만 오래된 정보로 남아 있어요. 이미 접수된 주문은 유지하면서 회원정보만 수정하는 공식 경로가 궁금합니다.,account,inquiries-hard-v1-g052,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g052-v2,"배송지는 이번 주문에 맞게 입력되어 있어서 배송 변경은 필요 없습니다.
-회원 프로필의 직장 주소만 오래된 정보로 남아 있어요.
-이미 접수된 주문은 유지하면서 회원정보만 수정하는 공식 경로가 궁금합니다.",account,inquiries-hard-v1-g052,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g052-v3,"- 배송지는 이번 주문에 맞게 입력되어 있어서 배송 변경은 필요 없습니다.
-- 회원 프로필의 직장 주소만 오래된 정보로 남아 있어요.
-- 이미 접수된 주문은 유지하면서 회원정보만 수정하는 공식 경로가 궁금합니다.",account,inquiries-hard-v1-g052,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g052-v4,배송지는 이번 주문에 맞게 입력되어 있어서 배송 변경은 필요 없습니다. 회원 프로필의 직장 주소만 오래된 정보로 남아 있어요. 이미 접수된 주문은 유지하면서 회원정보만 수정하는 공식 경로가 알고 싶습니다.,account,inquiries-hard-v1-g052,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g053-v1,주문 취소가 아니라 회원 탈퇴를 하려는 것입니다. 구매 내역을 확인할 권한이 필요한 공동 사용자와 제 계정이 연결되어 있습니다. 탈퇴 전에 계정 연결과 자료 접근이 어떻게 처리되는지 확인하고 싶어요.,account,inquiries-hard-v1-g053,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g053-v2,"주문 취소가 아니라 회원 탈퇴를 하려는 것입니다.
-구매 내역을 확인할 권한이 필요한 공동 사용자와 제 계정이 연결되어 있습니다.
-탈퇴 전에 계정 연결과 자료 접근이 어떻게 처리되는지 확인하고 싶어요.",account,inquiries-hard-v1-g053,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g053-v3,"- 주문 취소가 아니라 회원 탈퇴를 하려는 것입니다.
-- 구매 내역을 확인할 권한이 필요한 공동 사용자와 제 계정이 연결되어 있습니다.
-- 탈퇴 전에 계정 연결과 자료 접근이 어떻게 처리되는지 확인하고 싶어요.",account,inquiries-hard-v1-g053,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g053-v4,주문 취소가 아니라 회원 탈퇴를 하려는 것입니다. 구매 내역을 확인할 권한이 필요한 공동 사용자와 제 계정이 연결되어 있습니다. 탈퇴 전에 계정 연결과 자료 접근이 어떻게 처리되는지 확인하고 싶습니다.,account,inquiries-hard-v1-g053,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g054-v1,반품을 신청할 생각은 없고 제품도 계속 쓸 겁니다. 상품 설명 자료를 보는 권한이 제 계정에는 없는데 같은 팀 사람은 볼 수 있어요. 구매 내역이 아니라 회원의 자료 접근 권한을 확인하고 싶습니다.,account,inquiries-hard-v1-g054,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g054-v2,"반품을 신청할 생각은 없고 제품도 계속 쓸 겁니다.
-상품 설명 자료를 보는 권한이 제 계정에는 없는데 같은 팀 사람은 볼 수 있어요.
-구매 내역이 아니라 회원의 자료 접근 권한을 확인하고 싶습니다.",account,inquiries-hard-v1-g054,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g054-v3,"- 반품을 신청할 생각은 없고 제품도 계속 쓸 겁니다.
-- 상품 설명 자료를 보는 권한이 제 계정에는 없는데 같은 팀 사람은 볼 수 있어요.
-- 구매 내역이 아니라 회원의 자료 접근 권한을 확인하고 싶습니다.",account,inquiries-hard-v1-g054,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g054-v4,현재 문의 상황은 다음과 같습니다. 반품을 신청할 생각은 없고 제품도 계속 쓸 겁니다. 상품 설명 자료를 보는 권한이 제 계정에는 없는데 같은 팀 사람은 볼 수 있어요. 구매 내역이 아니라 회원의 자료 접근 권한을 확인하고 싶습니다.,account,inquiries-hard-v1-g054,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g055-v1,배송 완료 알림은 정상적으로 받았습니다. 하지만 새 기기에서 로그인하면 제가 등록하지 않은 복구 이메일이 나타납니다. 계정 보안 정보를 공식적으로 확인하고 정정하는 방법을 알려 주세요.,account,inquiries-hard-v1-g055,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g055-v2,"배송 완료 알림은 정상적으로 받았습니다.
-하지만 새 기기에서 로그인하면 제가 등록하지 않은 복구 이메일이 나타납니다.
-계정 보안 정보를 공식적으로 확인하고 정정하는 방법을 알려 주세요.",account,inquiries-hard-v1-g055,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g055-v3,"- 배송 완료 알림은 정상적으로 받았습니다.
-- 하지만 새 기기에서 로그인하면 제가 등록하지 않은 복구 이메일이 나타납니다.
-- 계정 보안 정보를 공식적으로 확인하고 정정하는 방법을 알려 주세요.",account,inquiries-hard-v1-g055,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g055-v4,배송 완료 알림은 정상적으로 받았습니다. 하지만 새 기기에서 로그인하면 제가 등록하지 않은 복구 이메일이 나타납니다. 계정 보안 정보를 공식적으로 확인하고 정정하는 방법을 안내해 주세요.,account,inquiries-hard-v1-g055,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g056-v1,주문 취소나 배송 날짜 변경은 필요 없습니다. 회원정보의 생일을 음력으로 등록했는데 프로필에는 양력 날짜로 표시되고 있어요. 계정에 저장된 생일과 달력 구분이 맞는지 확인하고 정정할 공식 경로를 알고 싶습니다.,account,inquiries-hard-v1-g056,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g056-v2,"주문 취소나 배송 날짜 변경은 필요 없습니다.
-회원정보의 생일을 음력으로 등록했는데 프로필에는 양력 날짜로 표시되고 있어요.
-계정에 저장된 생일과 달력 구분이 맞는지 확인하고 정정할 공식 경로를 알고 싶습니다.",account,inquiries-hard-v1-g056,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g056-v3,"- 주문 취소나 배송 날짜 변경은 필요 없습니다.
-- 회원정보의 생일을 음력으로 등록했는데 프로필에는 양력 날짜로 표시되고 있어요.
-- 계정에 저장된 생일과 달력 구분이 맞는지 확인하고 정정할 공식 경로를 알고 싶습니다.",account,inquiries-hard-v1-g056,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g056-v4,현재 문의 상황은 다음과 같습니다. 주문 취소나 배송 날짜 변경은 필요 없습니다. 회원정보의 생일을 음력으로 등록했는데 프로필에는 양력 날짜로 표시되고 있어요. 계정에 저장된 생일과 달력 구분이 맞는지 확인하고 정정할 공식 경로를 알고 싶습니다.,account,inquiries-hard-v1-g056,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g057-v1,상품을 배송받을 이름은 그대로 두려 합니다. 게시판에서 사용하는 회원 표시 이름만 실명으로 노출되지 않게 바꾸고 싶습니다. 계정 프로필에서 어떤 정보를 관리할 수 있는지 공식 경로를 알려 주세요.,account,inquiries-hard-v1-g057,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g057-v2,"상품을 배송받을 이름은 그대로 두려 합니다.
-게시판에서 사용하는 회원 표시 이름만 실명으로 노출되지 않게 바꾸고 싶습니다.
-계정 프로필에서 어떤 정보를 관리할 수 있는지 공식 경로를 알려 주세요.",account,inquiries-hard-v1-g057,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g057-v3,"- 상품을 배송받을 이름은 그대로 두려 합니다.
-- 게시판에서 사용하는 회원 표시 이름만 실명으로 노출되지 않게 바꾸고 싶습니다.
-- 계정 프로필에서 어떤 정보를 관리할 수 있는지 공식 경로를 알려 주세요.",account,inquiries-hard-v1-g057,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g057-v4,상품을 배송받을 이름은 그대로 두려 합니다. 게시판에서 사용하는 회원 표시 이름만 실명으로 노출되지 않게 바꾸고 싶습니다. 계정 프로필에서 어떤 정보를 관리할 수 있는지 공식 경로를 안내해 주세요.,account,inquiries-hard-v1-g057,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g058-v1,환급을 위한 결제 확인은 끝났습니다. 지원 상담이 종료됐는데 상담 담당자의 계정 접근 권한이 계속 남는지 궁금해요. 내 계정의 연결 권한과 해제 가능 여부를 확인하려 합니다.,account,inquiries-hard-v1-g058,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g058-v2,"환급을 위한 결제 확인은 끝났습니다.
-지원 상담이 종료됐는데 상담 담당자의 계정 접근 권한이 계속 남는지 궁금해요.
-내 계정의 연결 권한과 해제 가능 여부를 확인하려 합니다.",account,inquiries-hard-v1-g058,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g058-v3,"- 환급을 위한 결제 확인은 끝났습니다.
-- 지원 상담이 종료됐는데 상담 담당자의 계정 접근 권한이 계속 남는지 궁금해요.
-- 내 계정의 연결 권한과 해제 가능 여부를 확인하려 합니다.",account,inquiries-hard-v1-g058,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g058-v4,현재 문의 상황은 다음과 같습니다. 환급을 위한 결제 확인은 끝났습니다. 지원 상담이 종료됐는데 상담 담당자의 계정 접근 권한이 계속 남는지 궁금해요. 내 계정의 연결 권한과 해제 가능 여부를 확인하려 합니다.,account,inquiries-hard-v1-g058,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g059-v1,배송 알림을 전부 끄려는 것은 아닙니다. 누군가 로그인했다는 보안 알림이 와서 내 계정의 접속 기록을 확인하고 싶어요. 배송 상태와 관계없이 계정 보호를 위한 공식 확인 방법이 필요합니다.,account,inquiries-hard-v1-g059,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g059-v2,"배송 알림을 전부 끄려는 것은 아닙니다.
-누군가 로그인했다는 보안 알림이 와서 내 계정의 접속 기록을 확인하고 싶어요.
-배송 상태와 관계없이 계정 보호를 위한 공식 확인 방법이 필요합니다.",account,inquiries-hard-v1-g059,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g059-v3,"- 배송 알림을 전부 끄려는 것은 아닙니다.
-- 누군가 로그인했다는 보안 알림이 와서 내 계정의 접속 기록을 확인하고 싶어요.
-- 배송 상태와 관계없이 계정 보호를 위한 공식 확인 방법이 필요합니다.",account,inquiries-hard-v1-g059,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g059-v4,배송 알림을 전부 끄려는 것은 아닙니다. 누군가 로그인했다는 보안 알림이 와서 내 계정의 접속 기록을 확인하고 싶습니다. 배송 상태와 관계없이 계정 보호를 위한 공식 확인 방법이 필요합니다.,account,inquiries-hard-v1-g059,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g060-v1,반품 상품의 접수 상태는 정상적으로 조회됩니다. 그런데 예전에 공동으로 쓰던 기기에서 제 회원정보를 아직 볼 수 있다고 해요. 그 기기의 계정 접속을 관리할 수 있는지 확인하고 싶습니다.,account,inquiries-hard-v1-g060,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g060-v2,"반품 상품의 접수 상태는 정상적으로 조회됩니다.
-그런데 예전에 공동으로 쓰던 기기에서 제 회원정보를 아직 볼 수 있다고 해요.
-그 기기의 계정 접속을 관리할 수 있는지 확인하고 싶습니다.",account,inquiries-hard-v1-g060,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g060-v3,"- 반품 상품의 접수 상태는 정상적으로 조회됩니다.
-- 그런데 예전에 공동으로 쓰던 기기에서 제 회원정보를 아직 볼 수 있다고 해요.
-- 그 기기의 계정 접속을 관리할 수 있는지 확인하고 싶습니다.",account,inquiries-hard-v1-g060,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g060-v4,현재 문의 상황은 다음과 같습니다. 반품 상품의 접수 상태는 정상적으로 조회됩니다. 그런데 예전에 공동으로 쓰던 기기에서 제 회원정보를 아직 볼 수 있다고 해요. 그 기기의 계정 접속을 관리할 수 있는지 확인하고 싶습니다.,account,inquiries-hard-v1-g060,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g061-v1,이번 주문의 배송 연락처는 올바릅니다. 회원 본인 확인에 쓰이는 번호는 회사 공용 번호라 개인 번호로 변경하고 싶어요. 주문 내용을 바꾸지 않고 계정 인증 정보를 수정하는 공식 방법을 알려 주세요.,account,inquiries-hard-v1-g061,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g061-v2,"이번 주문의 배송 연락처는 올바릅니다.
-회원 본인 확인에 쓰이는 번호는 회사 공용 번호라 개인 번호로 변경하고 싶어요.
-주문 내용을 바꾸지 않고 계정 인증 정보를 수정하는 공식 방법을 알려 주세요.",account,inquiries-hard-v1-g061,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g061-v3,"- 이번 주문의 배송 연락처는 올바릅니다.
-- 회원 본인 확인에 쓰이는 번호는 회사 공용 번호라 개인 번호로 변경하고 싶어요.
-- 주문 내용을 바꾸지 않고 계정 인증 정보를 수정하는 공식 방법을 알려 주세요.",account,inquiries-hard-v1-g061,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g061-v4,이번 주문의 배송 연락처는 올바릅니다. 회원 본인 확인에 쓰이는 번호는 회사 공용 번호라 개인 번호로 변경하고 싶습니다. 주문 내용을 바꾸지 않고 계정 인증 정보를 수정하는 공식 방법을 안내해 주세요.,account,inquiries-hard-v1-g061,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g062-v1,결제 취소를 요청한 적은 없습니다. 오래 사용하지 않은 계정에 다시 들어가려니 사용 제한 사유가 표시되지 않습니다. 회원 계정의 제한 상태와 복구 요청 경로를 확인하고 싶습니다.,account,inquiries-hard-v1-g062,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g062-v2,"결제 취소를 요청한 적은 없습니다.
-오래 사용하지 않은 계정에 다시 들어가려니 사용 제한 사유가 표시되지 않습니다.
-회원 계정의 제한 상태와 복구 요청 경로를 확인하고 싶습니다.",account,inquiries-hard-v1-g062,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g062-v3,"- 결제 취소를 요청한 적은 없습니다.
-- 오래 사용하지 않은 계정에 다시 들어가려니 사용 제한 사유가 표시되지 않습니다.
-- 회원 계정의 제한 상태와 복구 요청 경로를 확인하고 싶습니다.",account,inquiries-hard-v1-g062,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g062-v4,현재 문의 상황은 다음과 같습니다. 결제 취소를 요청한 적은 없습니다. 오래 사용하지 않은 계정에 다시 들어가려니 사용 제한 사유가 표시되지 않습니다. 회원 계정의 제한 상태와 복구 요청 경로를 확인하고 싶습니다.,account,inquiries-hard-v1-g062,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g063-v1,물건을 받는 데 필요한 택배 인증이 아닙니다. 회원 가입을 마치려는데 이미 다른 계정에 연결된 이메일이라고 표시돼요. 내 이메일의 계정 연결 상태를 확인하는 공식 경로가 필요합니다.,account,inquiries-hard-v1-g063,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g063-v2,"물건을 받는 데 필요한 택배 인증이 아닙니다.
-회원 가입을 마치려는데 이미 다른 계정에 연결된 이메일이라고 표시돼요.
-내 이메일의 계정 연결 상태를 확인하는 공식 경로가 필요합니다.",account,inquiries-hard-v1-g063,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g063-v3,"- 물건을 받는 데 필요한 택배 인증이 아닙니다.
-- 회원 가입을 마치려는데 이미 다른 계정에 연결된 이메일이라고 표시돼요.
-- 내 이메일의 계정 연결 상태를 확인하는 공식 경로가 필요합니다.",account,inquiries-hard-v1-g063,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g063-v4,현재 문의 상황은 다음과 같습니다. 물건을 받는 데 필요한 택배 인증이 아닙니다. 회원 가입을 마치려는데 이미 다른 계정에 연결된 이메일이라고 표시돼요. 내 이메일의 계정 연결 상태를 확인하는 공식 경로가 필요합니다.,account,inquiries-hard-v1-g063,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g064-v1,환불받을 계좌를 입력하려는 것이 아닙니다. 가입 때 남긴 선택 정보 중 소속 기관을 더 이상 공개하고 싶지 않아요. 계정 프로필의 공개 범위를 관리할 수 있는지 확인하려 합니다.,account,inquiries-hard-v1-g064,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g064-v2,"환불받을 계좌를 입력하려는 것이 아닙니다.
-가입 때 남긴 선택 정보 중 소속 기관을 더 이상 공개하고 싶지 않아요.
-계정 프로필의 공개 범위를 관리할 수 있는지 확인하려 합니다.",account,inquiries-hard-v1-g064,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g064-v3,"- 환불받을 계좌를 입력하려는 것이 아닙니다.
-- 가입 때 남긴 선택 정보 중 소속 기관을 더 이상 공개하고 싶지 않아요.
-- 계정 프로필의 공개 범위를 관리할 수 있는지 확인하려 합니다.",account,inquiries-hard-v1-g064,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g064-v4,현재 문의 상황은 다음과 같습니다. 환불받을 계좌를 입력하려는 것이 아닙니다. 가입 때 남긴 선택 정보 중 소속 기관을 더 이상 공개하고 싶지 않아요. 계정 프로필의 공개 범위를 관리할 수 있는지 확인하려 합니다.,account,inquiries-hard-v1-g064,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g065-v1,구매한 자료의 환급은 원하지 않습니다. 개인 계정으로 산 자료를 회사 공동 계정에서 보려고 했더니 권한이 없다고 나옵니다. 계정 사이에서 이용 권한을 연결할 수 있는지 공식 지원에 확인하고 싶어요.,account,inquiries-hard-v1-g065,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g065-v2,"구매한 자료의 환급은 원하지 않습니다.
-개인 계정으로 산 자료를 회사 공동 계정에서 보려고 했더니 권한이 없다고 나옵니다.
-계정 사이에서 이용 권한을 연결할 수 있는지 공식 지원에 확인하고 싶어요.",account,inquiries-hard-v1-g065,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g065-v3,"- 구매한 자료의 환급은 원하지 않습니다.
-- 개인 계정으로 산 자료를 회사 공동 계정에서 보려고 했더니 권한이 없다고 나옵니다.
-- 계정 사이에서 이용 권한을 연결할 수 있는지 공식 지원에 확인하고 싶어요.",account,inquiries-hard-v1-g065,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g065-v4,구매한 자료의 환급은 원하지 않습니다. 개인 계정으로 산 자료를 회사 공동 계정에서 보려고 했더니 권한이 없다고 나옵니다. 계정 사이에서 이용 권한을 연결할 수 있는지 공식 지원에 확인하고 싶습니다.,account,inquiries-hard-v1-g065,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g066-v1,배송 상태 조회는 잘 되는데 회원 로그인 비밀번호를 잊었습니다. 자동 로그인 중인 기기에서 나가기 전에 계정 접근 방법을 다시 설정하고 싶어요. 안전한 비밀번호 재설정 안내를 부탁드립니다.,account,inquiries-hard-v1-g066,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g066-v2,"배송 상태 조회는 잘 되는데 회원 로그인 비밀번호를 잊었습니다.
-자동 로그인 중인 기기에서 나가기 전에 계정 접근 방법을 다시 설정하고 싶어요.
-안전한 비밀번호 재설정 안내를 부탁드립니다.",account,inquiries-hard-v1-g066,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g066-v3,"- 배송 상태 조회는 잘 되는데 회원 로그인 비밀번호를 잊었습니다.
-- 자동 로그인 중인 기기에서 나가기 전에 계정 접근 방법을 다시 설정하고 싶어요.
-- 안전한 비밀번호 재설정 안내를 부탁드립니다.",account,inquiries-hard-v1-g066,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g066-v4,배송 상태 조회는 잘 되는데 회원 로그인 비밀번호를 잊었습니다. 자동 로그인 중인 기기에서 나가기 전에 계정 접근 방법을 다시 설정하고 싶습니다. 안전한 비밀번호 재설정 안내를 부탁드립니다.,account,inquiries-hard-v1-g066,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g067-v1,반품이 끝났다고 회원 탈퇴까지 처리해 달라는 뜻은 아니었습니다. 계정 화면에 탈퇴 대기라고 표시돼 있어 이용을 계속할 수 있을지 걱정입니다. 계정 탈퇴 요청 여부와 취소 가능 여부를 공식적으로 확인하고 싶어요.,account,inquiries-hard-v1-g067,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g067-v2,"반품이 끝났다고 회원 탈퇴까지 처리해 달라는 뜻은 아니었습니다.
-계정 화면에 탈퇴 대기라고 표시돼 있어 이용을 계속할 수 있을지 걱정입니다.
-계정 탈퇴 요청 여부와 취소 가능 여부를 공식적으로 확인하고 싶어요.",account,inquiries-hard-v1-g067,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g067-v3,"- 반품이 끝났다고 회원 탈퇴까지 처리해 달라는 뜻은 아니었습니다.
-- 계정 화면에 탈퇴 대기라고 표시돼 있어 이용을 계속할 수 있을지 걱정입니다.
-- 계정 탈퇴 요청 여부와 취소 가능 여부를 공식적으로 확인하고 싶어요.",account,inquiries-hard-v1-g067,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g067-v4,반품이 끝났다고 회원 탈퇴까지 처리해 달라는 뜻은 아니었습니다. 계정 화면에 탈퇴 대기라고 표시돼 있어 이용을 계속할 수 있을지 걱정입니다. 계정 탈퇴 요청 여부와 취소 가능 여부를 공식적으로 확인하고 싶습니다.,account,inquiries-hard-v1-g067,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g068-v1,이번 상품의 수령 담당자를 바꾸려는 것은 아닙니다. 회사 공동 계정의 관리자가 퇴사해서 새 직원에게 관리 권한을 넘기려 합니다. 계정 관리자 변경에 필요한 확인 절차를 알려 주세요.,account,inquiries-hard-v1-g068,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g068-v2,"이번 상품의 수령 담당자를 바꾸려는 것은 아닙니다.
-회사 공동 계정의 관리자가 퇴사해서 새 직원에게 관리 권한을 넘기려 합니다.
-계정 관리자 변경에 필요한 확인 절차를 알려 주세요.",account,inquiries-hard-v1-g068,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g068-v3,"- 이번 상품의 수령 담당자를 바꾸려는 것은 아닙니다.
-- 회사 공동 계정의 관리자가 퇴사해서 새 직원에게 관리 권한을 넘기려 합니다.
-- 계정 관리자 변경에 필요한 확인 절차를 알려 주세요.",account,inquiries-hard-v1-g068,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g068-v4,이번 상품의 수령 담당자를 바꾸려는 것은 아닙니다. 회사 공동 계정의 관리자가 퇴사해서 새 직원에게 관리 권한을 넘기려 합니다. 계정 관리자 변경에 필요한 확인 절차를 안내해 주세요.,account,inquiries-hard-v1-g068,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g069-v1,반환 금액이 맞는지는 확인했고 주문 관련 문의는 없습니다. 계정 자료 삭제 요청이 결제 기록까지 포함하는지 알고 싶어요. 회원 자료의 삭제 범위와 보관 대상에 대해 공식 확인을 받고 싶습니다.,account,inquiries-hard-v1-g069,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g069-v2,"반환 금액이 맞는지는 확인했고 주문 관련 문의는 없습니다.
-계정 자료 삭제 요청이 결제 기록까지 포함하는지 알고 싶어요.
-회원 자료의 삭제 범위와 보관 대상에 대해 공식 확인을 받고 싶습니다.",account,inquiries-hard-v1-g069,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g069-v3,"- 반환 금액이 맞는지는 확인했고 주문 관련 문의는 없습니다.
-- 계정 자료 삭제 요청이 결제 기록까지 포함하는지 알고 싶어요.
-- 회원 자료의 삭제 범위와 보관 대상에 대해 공식 확인을 받고 싶습니다.",account,inquiries-hard-v1-g069,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g069-v4,반환 금액이 맞는지는 확인했고 주문 관련 문의는 없습니다. 계정 자료 삭제 요청이 결제 기록까지 포함하는지 알고 싶습니다. 회원 자료의 삭제 범위와 보관 대상에 대해 공식 확인을 받고 싶습니다.,account,inquiries-hard-v1-g069,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g070-v1,배송 안내 메일은 받아야 하지만 회원 프로필의 이메일을 변경할 필요가 생겼습니다. 기존 이메일을 더 이상 사용할 수 없는데 로그인은 유지되고 있어요. 계정 연락 정보를 바꾸는 공식 확인 경로를 알려 주세요.,account,inquiries-hard-v1-g070,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g070-v2,"배송 안내 메일은 받아야 하지만 회원 프로필의 이메일을 변경할 필요가 생겼습니다.
-기존 이메일을 더 이상 사용할 수 없는데 로그인은 유지되고 있어요.
-계정 연락 정보를 바꾸는 공식 확인 경로를 알려 주세요.",account,inquiries-hard-v1-g070,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g070-v3,"- 배송 안내 메일은 받아야 하지만 회원 프로필의 이메일을 변경할 필요가 생겼습니다.
-- 기존 이메일을 더 이상 사용할 수 없는데 로그인은 유지되고 있어요.
-- 계정 연락 정보를 바꾸는 공식 확인 경로를 알려 주세요.",account,inquiries-hard-v1-g070,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g070-v4,배송 안내 메일은 받아야 하지만 회원 프로필의 이메일을 변경할 필요가 생겼습니다. 기존 이메일을 더 이상 사용할 수 없는데 로그인은 유지되고 있어요. 계정 연락 정보를 바꾸는 공식 확인 경로를 안내해 주세요.,account,inquiries-hard-v1-g070,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g071-v1,상품 정기 결제 해지가 아니라 회원 가입 자체를 중단하려는 요청입니다. 가입 확인 전에 입력한 자료가 남아 있는지 모르겠어요. 가입 미완료 계정의 자료 처리와 철회 방법을 확인하고 싶습니다.,account,inquiries-hard-v1-g071,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g071-v2,"상품 정기 결제 해지가 아니라 회원 가입 자체를 중단하려는 요청입니다.
-가입 확인 전에 입력한 자료가 남아 있는지 모르겠어요.
-가입 미완료 계정의 자료 처리와 철회 방법을 확인하고 싶습니다.",account,inquiries-hard-v1-g071,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g071-v3,"- 상품 정기 결제 해지가 아니라 회원 가입 자체를 중단하려는 요청입니다.
-- 가입 확인 전에 입력한 자료가 남아 있는지 모르겠어요.
-- 가입 미완료 계정의 자료 처리와 철회 방법을 확인하고 싶습니다.",account,inquiries-hard-v1-g071,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g071-v4,현재 문의 상황은 다음과 같습니다. 상품 정기 결제 해지가 아니라 회원 가입 자체를 중단하려는 요청입니다. 가입 확인 전에 입력한 자료가 남아 있는지 모르겠어요. 가입 미완료 계정의 자료 처리와 철회 방법을 확인하고 싶습니다.,account,inquiries-hard-v1-g071,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g072-v1,반품 상담에서 자료를 보내 달라고 했지만 여기에서 인증코드를 알려주려는 건 아닙니다. 내 계정의 본인 확인 기록을 공식 지원에 전달할 수 있는지 궁금합니다. 민감한 인증정보를 공개하지 않고 계정 확인을 진행할 방법을 알려 주세요.,account,inquiries-hard-v1-g072,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g072-v2,"반품 상담에서 자료를 보내 달라고 했지만 여기에서 인증코드를 알려주려는 건 아닙니다.
-내 계정의 본인 확인 기록을 공식 지원에 전달할 수 있는지 궁금합니다.
-민감한 인증정보를 공개하지 않고 계정 확인을 진행할 방법을 알려 주세요.",account,inquiries-hard-v1-g072,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g072-v3,"- 반품 상담에서 자료를 보내 달라고 했지만 여기에서 인증코드를 알려주려는 건 아닙니다.
-- 내 계정의 본인 확인 기록을 공식 지원에 전달할 수 있는지 궁금합니다.
-- 민감한 인증정보를 공개하지 않고 계정 확인을 진행할 방법을 알려 주세요.",account,inquiries-hard-v1-g072,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g072-v4,반품 상담에서 자료를 보내 달라고 했지만 여기에서 인증코드를 알려주려는 건 아닙니다. 내 계정의 본인 확인 기록을 공식 지원에 전달할 수 있는지 알고 싶습니다. 민감한 인증정보를 공개하지 않고 계정 확인을 진행할 방법을 안내해 주세요.,account,inquiries-hard-v1-g072,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g073-v1,택배를 다시 보내 달라는 요청은 없습니다. 예전 조직에서 탈퇴했는데 계정에 그 조직의 내부 문서가 계속 표시됩니다. 조직 연결과 회원 자료 접근 권한을 정리할 공식 경로를 알고 싶습니다.,account,inquiries-hard-v1-g073,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g073-v2,"택배를 다시 보내 달라는 요청은 없습니다.
-예전 조직에서 탈퇴했는데 계정에 그 조직의 내부 문서가 계속 표시됩니다.
-조직 연결과 회원 자료 접근 권한을 정리할 공식 경로를 알고 싶습니다.",account,inquiries-hard-v1-g073,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g073-v3,"- 택배를 다시 보내 달라는 요청은 없습니다.
-- 예전 조직에서 탈퇴했는데 계정에 그 조직의 내부 문서가 계속 표시됩니다.
-- 조직 연결과 회원 자료 접근 권한을 정리할 공식 경로를 알고 싶습니다.",account,inquiries-hard-v1-g073,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g073-v4,현재 문의 상황은 다음과 같습니다. 택배를 다시 보내 달라는 요청은 없습니다. 예전 조직에서 탈퇴했는데 계정에 그 조직의 내부 문서가 계속 표시됩니다. 조직 연결과 회원 자료 접근 권한을 정리할 공식 경로를 알고 싶습니다.,account,inquiries-hard-v1-g073,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g074-v1,결제한 상품과 환급 기록은 정상입니다. 다른 계정에서 작성한 평가가 내 프로필에 연결된 것으로 보여요. 회원 활동 자료의 잘못된 연결을 확인하고 정정 요청을 하고 싶습니다.,account,inquiries-hard-v1-g074,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g074-v2,"결제한 상품과 환급 기록은 정상입니다.
-다른 계정에서 작성한 평가가 내 프로필에 연결된 것으로 보여요.
-회원 활동 자료의 잘못된 연결을 확인하고 정정 요청을 하고 싶습니다.",account,inquiries-hard-v1-g074,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g074-v3,"- 결제한 상품과 환급 기록은 정상입니다.
-- 다른 계정에서 작성한 평가가 내 프로필에 연결된 것으로 보여요.
-- 회원 활동 자료의 잘못된 연결을 확인하고 정정 요청을 하고 싶습니다.",account,inquiries-hard-v1-g074,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g074-v4,현재 문의 상황은 다음과 같습니다. 결제한 상품과 환급 기록은 정상입니다. 다른 계정에서 작성한 평가가 내 프로필에 연결된 것으로 보여요. 회원 활동 자료의 잘못된 연결을 확인하고 정정 요청을 하고 싶습니다.,account,inquiries-hard-v1-g074,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g075-v1,배송 조회를 위해 접속했다가 비밀번호가 맞지 않는다는 안내를 받았습니다. 주문 운송 상태보다 먼저 회원 로그인 접근을 복구하려 합니다. 비밀번호 재설정을 어디에서 진행해야 하는지 안전하게 안내해 주세요.,account,inquiries-hard-v1-g075,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g075-v2,"배송 조회를 위해 접속했다가 비밀번호가 맞지 않는다는 안내를 받았습니다.
-주문 운송 상태보다 먼저 회원 로그인 접근을 복구하려 합니다.
-비밀번호 재설정을 어디에서 진행해야 하는지 안전하게 안내해 주세요.",account,inquiries-hard-v1-g075,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g075-v3,"- 배송 조회를 위해 접속했다가 비밀번호가 맞지 않는다는 안내를 받았습니다.
-- 주문 운송 상태보다 먼저 회원 로그인 접근을 복구하려 합니다.
-- 비밀번호 재설정을 어디에서 진행해야 하는지 안전하게 안내해 주세요.",account,inquiries-hard-v1-g075,team-added-synthetic:inquiries-hard-v1
-inquiries-hard-v1-g075-v4,현재 문의 상황은 다음과 같습니다. 배송 조회를 위해 접속했다가 비밀번호가 맞지 않는다는 안내를 받았습니다. 주문 운송 상태보다 먼저 회원 로그인 접근을 복구하려 합니다. 비밀번호 재설정을 어디에서 진행해야 하는지 안전하게 안내해 주세요.,account,inquiries-hard-v1-g075,team-added-synthetic:inquiries-hard-v1
+basic-78b7357b293c6d237c6c,창고 예약 번호를 운송장 메모에 빠뜨렸습니다. 아직 이동 중인 화물의 반입 번호를 추가해 주세요.,shipping,basic-case-78b7357b293c6d237c6c,team-added-synthetic:basic-independent-v2
+basic-c1e0475f07e588fb613a,읍면 지역 택배가 마을회관까지만 배달되는지 집까지 오는지 모르겠습니다. 이번 주소의 인도 범위를 확인해 주세요.,shipping,basic-case-c1e0475f07e588fb613a,team-added-synthetic:basic-independent-v2
+basic-f0f44d1e6639dc28479d,가장 최근에 바꾼 회원 연락처가 모바일 앱에는 반영되지 않습니다. 실제 등록된 연락처를 확인해 주세요.,account,basic-case-f0f44d1e6639dc28479d,team-added-synthetic:basic-independent-v2
+basic-258e2d3fd1a5a5f6fa4e,회원 담당자 교체 안내를 받았는데 제가 새 담당자로 등록됐는지 모르겠습니다. 관리 권한 상태를 확인해 주세요.,account,basic-case-258e2d3fd1a5a5f6fa4e,team-added-synthetic:basic-independent-v2
+basic-03365fbf3eceefdac45e,회원 초대를 수락할 때 별명 대신 실명을 넣었습니다. 가입 뒤 표시 이름을 수정하고 싶습니다.,account,basic-case-03365fbf3eceefdac45e,team-added-synthetic:basic-independent-v2
+basic-c6f0176e122a6e751d4a,묶어서 발송하기로 한 자료가 따로 배송 출발했습니다. 남은 물품의 발송 계획을 확인해 주세요.,shipping,basic-case-c6f0176e122a6e751d4a,team-added-synthetic:basic-independent-v2
+basic-71320535fd31a6d3725c,서비스 예약 취소 확인 메일을 잃어버렸습니다. 대금 반환 상태를 확인할 접수번호를 다시 받고 싶습니다.,refund,basic-case-71320535fd31a6d3725c,team-added-synthetic:basic-independent-v2
+basic-8e3390c86d521b7bb658,기사님이 공동현관 호출 방법을 모른다고 합니다. 출입 방법을 전달할 연락 창구를 안내해 주세요.,shipping,basic-case-8e3390c86d521b7bb658,team-added-synthetic:basic-independent-v2
+basic-4f3d940fe275e996c3c9,퇴근 뒤 받을 수 있도록 야간 배송을 신청했는데 낮 방문으로 잡혔습니다. 예약 시간대를 확인해 주세요.,shipping,basic-case-4f3d940fe275e996c3c9,team-added-synthetic:basic-independent-v2
+basic-41d845763cf44ae29a8b,학원 문을 열기 전에 배송이 온다고 합니다. 건물 관리인에게 인계하도록 지정할 수 있나요?,shipping,basic-case-41d845763cf44ae29a8b,team-added-synthetic:basic-independent-v2
+basic-56000e89dc998305cb88,회원 정보에서 성별 공개를 중단하고 싶습니다. 내부 등록 정보와 외부 공개 범위를 따로 바꿀 수 있나요?,account,basic-case-56000e89dc998305cb88,team-added-synthetic:basic-independent-v2
+basic-d829e5f659d7ae16ecd3,기숙사 입실 전 물건이 도착할 예정입니다. 도착일을 입실 이후로 늦출 수 있는지 문의합니다.,shipping,basic-case-d829e5f659d7ae16ecd3,team-added-synthetic:basic-independent-v2
+basic-8d387205d6029956aea7,공용 기기에서 제 계정 정보가 자동으로 채워집니다. 저장된 로그인 연결을 없애는 방법을 문의합니다.,account,basic-case-8d387205d6029956aea7,team-added-synthetic:basic-independent-v2
+basic-5306f832de9c72b6f4b9,물품이 특정 시간에만 열리는 시장 점포로 올 예정입니다. 문이 닫힌 경우의 보관 방법을 협의하고 싶습니다.,shipping,basic-case-5306f832de9c72b6f4b9,team-added-synthetic:basic-independent-v2
+basic-3d3140520691958c8810,배송 중인 반려식물의 포장에 환기구를 열지 말라는 표시가 있는지 궁금합니다. 운송 취급 메모를 확인해 주세요.,shipping,basic-case-3d3140520691958c8810,team-added-synthetic:basic-independent-v2
+basic-1ad9285ee6b4286bf090,이체한 금액이 다른 주문번호로 연결됐습니다. 필요 없는 주문의 대금으로 처리된 금액을 돌려받고 싶습니다.,refund,basic-case-1ad9285ee6b4286bf090,team-added-synthetic:basic-independent-v2
+basic-62db655218f572c1659d,무료 체험으로 알고 신청했는데 첫 달 요금이 나갔습니다. 사용하지 않은 청구분 취소를 요청합니다.,refund,basic-case-62db655218f572c1659d,team-added-synthetic:basic-independent-v2
+basic-bfa6609acbf76cf5e6f3,직접 수령으로 바꾼 뒤에도 기사 배달 출발 문자가 왔습니다. 어느 인도 방식으로 처리되고 있나요?,shipping,basic-case-bfa6609acbf76cf5e6f3,team-added-synthetic:basic-independent-v2
+basic-591eb28ea33e840241d4,집하 예약을 했는데 기사님이 수거할 상자 개수를 한 개로 알고 있습니다. 세 개로 수정해 주세요.,shipping,basic-case-591eb28ea33e840241d4,team-added-synthetic:basic-independent-v2
+basic-a5b80737306221a60f2b,제 회원 아이디가 공개 게시물 주소에 포함됩니다. 주소 노출을 줄일 수 있는 계정 설정이 궁금합니다.,account,basic-case-a5b80737306221a60f2b,team-added-synthetic:basic-independent-v2
+basic-480e327d0a38a2300632,기간 한정 체험을 이용할 수 없어 개시 전에 취소하려 합니다. 반환액과 신청 마감을 알려 주세요.,refund,basic-case-480e327d0a38a2300632,team-added-synthetic:basic-independent-v2
+basic-fce8d47138874806e30e,회원 정보 정정 신청을 했는데 접수번호가 없습니다. 신청이 저장됐는지 조회하고 싶습니다.,account,basic-case-fce8d47138874806e30e,team-added-synthetic:basic-independent-v2
+basic-7b32e12eab1cdc9d4408,비밀번호 변경 확인 메일이 본인 모르게 왔습니다. 제 계정의 변경 이력을 확인하고 접근을 보호하고 싶습니다.,account,basic-case-7b32e12eab1cdc9d4408,team-added-synthetic:basic-independent-v2
+basic-355edaba04b2b25b8ff9,가족이 사용하는 기기에서 제 계정을 로그아웃하려 합니다. 그 기기의 접속 상태만 끝내는 방법을 안내해 주세요.,account,basic-case-355edaba04b2b25b8ff9,team-added-synthetic:basic-independent-v2
+basic-229f08504a8aefe0f561,계정의 로그인 유지 시간을 줄이고 싶습니다. 일정 시간이 지나면 접속이 끝나도록 설정할 수 있나요?,account,basic-case-229f08504a8aefe0f561,team-added-synthetic:basic-independent-v2
+basic-8372866d6b2bf1d352c2,기관 구매 승인이 취소돼 출고 전 주문을 철회하려 합니다. 법인 결제 취소에 필요한 서류를 알려 주세요.,refund,basic-case-8372866d6b2bf1d352c2,team-added-synthetic:basic-independent-v2
+basic-4ec4cc5784a485e5c74f,예약 취소 대금이 포인트로 들어왔습니다. 현금 결제분을 어떤 수단으로 반환하기로 했는지 확인해 주세요.,refund,basic-case-4ec4cc5784a485e5c74f,team-added-synthetic:basic-independent-v2
+basic-22a8b20c0e6ea116a0f9,발송 전에 포장이 다시 필요하다는 연락을 받았습니다. 재포장 때문에 바뀌는 출발일을 알려 주세요.,shipping,basic-case-22a8b20c0e6ea116a0f9,team-added-synthetic:basic-independent-v2
+basic-7fdb6c9b9f68f53105ea,선물 받은 물건을 반환하려는데 결제자와 제가 다릅니다. 누가 환급 신청을 해야 하는지 알려 주세요.,refund,basic-case-7fdb6c9b9f68f53105ea,team-added-synthetic:basic-independent-v2
+basic-d9a89760e481ac6d29e4,반품 신청한 주문이 구매 확정으로 변경돼 접수번호가 사라졌습니다. 기존 취소 요청을 확인해 주세요.,refund,basic-case-d9a89760e481ac6d29e4,team-added-synthetic:basic-independent-v2
+basic-71f84965ece27f533bb4,반품 승인 뒤에도 할부 청구가 계속됩니다. 카드 취소 정보와 할부 정산 상태를 확인해 주세요.,refund,basic-case-71f84965ece27f533bb4,team-added-synthetic:basic-independent-v2
+basic-d7b2d86414b7e383f2ee,가입 화면에서 입력한 전화번호가 일부 가려져 보입니다. 정확한 번호가 저장됐는지 확인하는 방법을 알려 주세요.,account,basic-case-d7b2d86414b7e383f2ee,team-added-synthetic:basic-independent-v2
+basic-bf3cacd769fabd36ee5a,아이디에 사용할 수 없는 문자가 있다는 안내가 나옵니다. 회원가입에서 허용하는 아이디 형식이 궁금합니다.,account,basic-case-bf3cacd769fabd36ee5a,team-added-synthetic:basic-independent-v2
+basic-8913d2f218ed89593874,빈 포장 상자가 도착해 구매 취소를 요청하려 합니다. 물품 미수령 확인과 대금 반환 절차를 알려 주세요.,refund,basic-case-8913d2f218ed89593874,team-added-synthetic:basic-independent-v2
+basic-f1a743d88c468e4aa343,택배가 도착하면 현장에서 수량을 셀 시간이 필요합니다. 인도 시 검수 대기가 가능한지 문의합니다.,shipping,basic-case-f1a743d88c468e4aa343,team-added-synthetic:basic-independent-v2
+basic-76542fdde5655ecec876,회원탈퇴 버튼을 눌렀지만 처리 완료 화면이 안 나옵니다. 현재 탈퇴 신청 상태를 알려 주세요.,account,basic-case-76542fdde5655ecec876,team-added-synthetic:basic-independent-v2
+basic-263bba104c0cde51b346,판매처가 품절로 취소한다고 했는데 제 결제는 그대로 남아 있습니다. 취소 거래가 등록됐는지 확인해 주세요.,refund,basic-case-263bba104c0cde51b346,team-added-synthetic:basic-independent-v2
+basic-ca42b80a3b18ffd7afbe,안내된 인도 장소가 보안 구역이라 택배 기사에게 출입증이 필요합니다. 방문자 등록 절차를 전달하고 싶습니다.,shipping,basic-case-ca42b80a3b18ffd7afbe,team-added-synthetic:basic-independent-v2
+basic-c59b708be8b304b002f7,회수 기사가 반품 물건을 잃어버렸다고 합니다. 회수 접수 증빙으로 대금 취소 심사를 진행할 수 있나요?,refund,basic-case-c59b708be8b304b002f7,team-added-synthetic:basic-independent-v2
+basic-60c779cbc930571ed70e,주문 물품이 여러 창고에 나뉘어 있다고 합니다. 각 창고의 출고 예정일을 알 수 있을까요?,shipping,basic-case-60c779cbc930571ed70e,team-added-synthetic:basic-independent-v2
+basic-3b62a29100f75ba365c6,영수증의 취소 금액이 원결제보다 적습니다. 할인과 배송비를 구분한 환급 계산을 확인하고 싶습니다.,refund,basic-case-3b62a29100f75ba365c6,team-added-synthetic:basic-independent-v2
+basic-a62ed673bd6c80cc97a2,반품한 물품이 판매자 창고가 아닌 다른 주소로 도착했습니다. 환급 처리에 필요한 도착 증빙을 제출하려 합니다.,refund,basic-case-a62ed673bd6c80cc97a2,team-added-synthetic:basic-independent-v2
+basic-cd3bd8a8e93c0a3bce1d,운송 보험 가입 사실을 인수 전에 확인해야 합니다. 이번 화물의 가입 확인서를 어디에서 받나요?,shipping,basic-case-cd3bd8a8e93c0a3bce1d,team-added-synthetic:basic-independent-v2
+basic-3c4a2ceabfb3961b0468,게시판 닉네임을 바꿨는데 회원 소개에는 예전 이름이 보입니다. 공개 회원 이름을 갱신하고 싶습니다.,account,basic-case-3c4a2ceabfb3961b0468,team-added-synthetic:basic-independent-v2
+basic-40d0c655e3651fc2175a,온라인 상담이 연결되지 않아 서비스를 받지 못했습니다. 결제한 상담료 반환을 신청하고 싶습니다.,refund,basic-case-40d0c655e3651fc2175a,team-added-synthetic:basic-independent-v2
+basic-db58bdcf88a1b4758c72,제 회원 프로필을 검색할 수 없도록 설정하고 싶습니다. 다른 이용자에게 보이는 범위를 조정하려 합니다.,account,basic-case-db58bdcf88a1b4758c72,team-added-synthetic:basic-independent-v2
+basic-334b3af15803e41230a2,아이디를 바꾸면 이전 게시글의 작성자 연결도 유지되는지 궁금합니다. 회원 아이디 변경 조건을 알려 주세요.,account,basic-case-334b3af15803e41230a2,team-added-synthetic:basic-independent-v2
+basic-90e438ad5254d3165365,운송 계약에는 두 사람이 인도한다고 적혀 있습니다. 실제 배차에 보조 인력이 포함됐는지 확인해 주세요.,shipping,basic-case-90e438ad5254d3165365,team-added-synthetic:basic-independent-v2
+basic-629e0573b8182e760afa,송장에 기재된 상자 규격 때문에 반입 예약이 안 됩니다. 운송사가 측정한 가로와 높이를 확인해 주세요.,shipping,basic-case-629e0573b8182e760afa,team-added-synthetic:basic-independent-v2
+basic-604042a0ec56a6b5a3ad,취소한 부품의 대금이 새 주문 할인으로 처리됐습니다. 원결제 반환으로 신청한 내용이 반영됐는지 확인해 주세요.,refund,basic-case-604042a0ec56a6b5a3ad,team-added-synthetic:basic-independent-v2
+basic-7be49457b7b3e8a79f90,다른 건물 안내 데스크에 맡겼다는 연락을 받았습니다. 이동 전에 그곳에서 물건을 보관하고 있는지 확인해 주세요.,shipping,basic-case-7be49457b7b3e8a79f90,team-added-synthetic:basic-independent-v2
+basic-9e20f5bfee405e20a3f5,로그인할 때 추가 확인을 건너뛴 기기 목록을 보고 싶습니다. 회원 보안에서 확인할 메뉴를 알려 주세요.,account,basic-case-9e20f5bfee405e20a3f5,team-added-synthetic:basic-independent-v2
+basic-d6eca95d0fc082f3c755,우체국 보관 기간이 끝나기 전에 하루 늦게 찾으려 합니다. 보관 연장을 어디에 요청하면 되나요?,shipping,basic-case-d6eca95d0fc082f3c755,team-added-synthetic:basic-independent-v2
+basic-a4db1a415d2fffc08cd6,로그인 기록을 내려받을 수 있는지 궁금합니다. 제 계정의 접속 이력 확인을 요청합니다.,account,basic-case-a4db1a415d2fffc08cd6,team-added-synthetic:basic-independent-v2
+basic-e050dde745662d5c6cd1,체험 행사 신청을 취소했는데 취소 확인 버튼이 작동하지 않습니다. 등록비 반환을 공식 접수하고 싶습니다.,refund,basic-case-e050dde745662d5c6cd1,team-added-synthetic:basic-independent-v2
+basic-9c9a2da0e1b0d5211c38,회원가입 확인 메일의 버튼을 눌렀더니 잘못된 요청이라고 나옵니다. 가입 인증을 새로 진행하고 싶습니다.,account,basic-case-9c9a2da0e1b0d5211c38,team-added-synthetic:basic-independent-v2
+basic-6fdadd29655feb5f7eaa,일부 이용일이 시설 점검으로 취소됐습니다. 그 기간에 해당하는 이용료 반환 기준을 안내해 주세요.,refund,basic-case-6fdadd29655feb5f7eaa,team-added-synthetic:basic-independent-v2
+basic-96136862c5bf576911db,택배 도착 알림을 문자 대신 전화로 받고 싶습니다. 이번 운송의 연락 방식을 바꿀 수 있나요?,shipping,basic-case-96136862c5bf576911db,team-added-synthetic:basic-independent-v2
+basic-158c6a2daa6d016645be,회사에서 만든 회원인데 담당자 연락처를 제 번호로 바꾸려 합니다. 본인 확인과 변경 절차를 알려 주세요.,account,basic-case-158c6a2daa6d016645be,team-added-synthetic:basic-independent-v2
+basic-c3b06a60c4be11680b5d,운송 중 외부 검사 때문에 봉인이 교체됐습니다. 인수할 때 확인할 새 봉인 번호를 안내받고 싶습니다.,shipping,basic-case-c3b06a60c4be11680b5d,team-added-synthetic:basic-independent-v2
+basic-0199a86f8a9ca0a24fba,가입 인증 문자의 발신 번호를 차단해 두었습니다. 차단은 풀었는데 인증 문자를 다시 받을 수 있나요?,account,basic-case-0199a86f8a9ca0a24fba,team-added-synthetic:basic-independent-v2
+basic-11f1fe21b79a82b625db,반품 택배 접수만 했는데 쇼핑몰은 환불 완료로 표시합니다. 실제 대금 취소 여부를 확인해 주세요.,refund,basic-case-11f1fe21b79a82b625db,team-added-synthetic:basic-independent-v2
+basic-dd617d00422fb3992eab,가입 때 전화번호 국가 코드를 잘못 선택했습니다. 회원 인증 번호를 올바르게 정정하고 싶습니다.,account,basic-case-dd617d00422fb3992eab,team-added-synthetic:basic-independent-v2
+basic-234fcacf9153e7c919ca,선물 배송의 받는 사람이 오늘부터 병원에 입원했습니다. 병실로 인도 가능한지 운송 담당자에게 문의합니다.,shipping,basic-case-234fcacf9153e7c919ca,team-added-synthetic:basic-independent-v2
+basic-38193ea207927513ac31,판매자가 발송을 취소했는데 간편결제 이용료까지 반환되는지 모르겠습니다. 취소 항목별 금액이 궁금합니다.,refund,basic-case-38193ea207927513ac31,team-added-synthetic:basic-independent-v2
+basic-499b3a0bb16c812e68a3,대금 반환 요청에 적은 이름이 입금자 이름과 다릅니다. 환급 확인 정보를 수정하려 합니다.,refund,basic-case-499b3a0bb16c812e68a3,team-added-synthetic:basic-independent-v2
+basic-5db5ccf2cb4c7855e419,회원탈퇴 시 작성한 공개 소개만 삭제하고 이용 기록은 보관되는지 궁금합니다. 계정 삭제 범위를 확인하고 싶습니다.,account,basic-case-5db5ccf2cb4c7855e419,team-added-synthetic:basic-independent-v2
+basic-1bc17086cb3607830c7f,수령지를 무인 보관소로 지정했는데 규격이 맞지 않는다고 합니다. 다른 인도 방법을 정하고 싶습니다.,shipping,basic-case-1bc17086cb3607830c7f,team-added-synthetic:basic-independent-v2
+basic-c422a62be74736401577,대금을 돌려받았는데 추가 주문까지 취소됐습니다. 잘못 취소된 거래의 정산을 확인하고 싶습니다.,refund,basic-case-c422a62be74736401577,team-added-synthetic:basic-independent-v2
+basic-0dbcd8698c1480d5af8b,발송 안내에는 택배사 이름이 빠져 있습니다. 운송장 번호를 조회할 업체를 알려 주세요.,shipping,basic-case-0dbcd8698c1480d5af8b,team-added-synthetic:basic-independent-v2
+basic-4d7fde97e780cc616fc1,결제 대행 화면에는 취소인데 판매처 화면에는 구매 확정입니다. 대금 취소 상태를 대조해 주세요.,refund,basic-case-4d7fde97e780cc616fc1,team-added-synthetic:basic-independent-v2
+basic-06f1182404be1a32f538,계정 정보에서 사용할 수 없는 이메일로 변경하려다 멈췄습니다. 이전 주소가 유지됐는지 확인해 주세요.,account,basic-case-06f1182404be1a32f538,team-added-synthetic:basic-independent-v2
+basic-b272619809c07c06b69d,자동 갱신된 강의가 기존 강의와 같은 내용입니다. 새 갱신 기간은 이용하지 않았고 그 비용 취소를 원합니다.,refund,basic-case-b272619809c07c06b69d,team-added-synthetic:basic-independent-v2
+basic-0cf179862ea08bc38629,실제 납품 수량보다 많은 수량에 대해 결제됐습니다. 납품 확인서 기준으로 초과 지급액 반환을 요청합니다.,refund,basic-case-0cf179862ea08bc38629,team-added-synthetic:basic-independent-v2
+basic-0883b4833f069fe45436,배송 완료 알림은 왔지만 가족 중 받은 사람이 없습니다. 인도 시각과 수령인을 확인해 주세요.,shipping,basic-case-0883b4833f069fe45436,team-added-synthetic:basic-independent-v2
+basic-12e4bdc60789962a8a1e,장마로 창고 반입이 제한됐다고 연락받았습니다. 제 주문의 임시 보관 장소를 확인하고 싶습니다.,shipping,basic-case-12e4bdc60789962a8a1e,team-added-synthetic:basic-independent-v2
+basic-a22f8c96281241f33bc0,접수한 소포가 반입 금지 품목 확인 중이라고 합니다. 어떤 운송 제한 항목이 적용됐는지 알려 주세요.,shipping,basic-case-a22f8c96281241f33bc0,team-added-synthetic:basic-independent-v2
+basic-260eabe2cd4aac7fb5c4,내일 출발하는 여행이 취소돼 미사용 여행용품을 반품하려 합니다. 반품 가능 조건과 신청 경로를 알려 주세요.,refund,basic-case-260eabe2cd4aac7fb5c4,team-added-synthetic:basic-independent-v2
+basic-4f8c57b559071824df70,보관 요청한 택배를 찾아올 사람이 바뀌었습니다. 수령 위임 정보를 수정하고 싶습니다.,shipping,basic-case-4f8c57b559071824df70,team-added-synthetic:basic-independent-v2
+basic-0f98c8b6e385797f298b,품절 취소된 주문의 사은품 비용이 청구됐습니다. 물건을 받지 않았는데 비용 정산을 확인하고 싶습니다.,refund,basic-case-0f98c8b6e385797f298b,team-added-synthetic:basic-independent-v2
+basic-bccd1aa9f8a222b014bb,같은 주문에 운송장 두 개가 등록됐다가 하나가 사라졌습니다. 어느 번호로 실제 발송됐나요?,shipping,basic-case-bccd1aa9f8a222b014bb,team-added-synthetic:basic-independent-v2
+basic-297ed8fc700b9efc63ab,취소된 행사 등록비 중 자료집 비용만 공제됐습니다. 자료집을 받지 않았는데 공제 내역을 확인해 주세요.,refund,basic-case-297ed8fc700b9efc63ab,team-added-synthetic:basic-independent-v2
+basic-671e8e858663bba9755b,온라인 인쇄 주문의 색상이 승인 견본과 다릅니다. 재인쇄 없이 취소할 수 있는지 심사받고 싶습니다.,refund,basic-case-671e8e858663bba9755b,team-added-synthetic:basic-independent-v2
+basic-190c21289f5ab467865b,제 회원정보를 수정하면 저장 전 값으로 돌아갑니다. 정보 변경 요청이 접수되는지 확인하고 싶습니다.,account,basic-case-190c21289f5ab467865b,team-added-synthetic:basic-independent-v2
+basic-a3201bb1e12501ab5e07,상품 포장에 다른 제품의 보증서가 들어 있어 구매 취소를 원합니다. 증빙 사진으로 반품 접수를 할 수 있나요?,refund,basic-case-a3201bb1e12501ab5e07,team-added-synthetic:basic-independent-v2
+basic-799eca53063d4d36b4db,로그인용 이메일과 안내 수신용 이메일을 따로 지정할 수 있나요? 제 회원정보에서 설정하고 싶습니다.,account,basic-case-799eca53063d4d36b4db,team-added-synthetic:basic-independent-v2
+basic-6de2e8427c33f088e128,회원 자격 확인서를 발급받고 싶습니다. 현재 유효한 회원 상태를 증명하는 메뉴가 있나요?,account,basic-case-6de2e8427c33f088e128,team-added-synthetic:basic-independent-v2
+basic-5916f027bfef13634389,배송 영수증에 주문과 다른 수취인 전화번호가 적혀 있습니다. 이번 운송에 연결된 번호를 정정해 주세요.,shipping,basic-case-5916f027bfef13634389,team-added-synthetic:basic-independent-v2
+basic-653320eb02797750346f,반납 시 납부한 지연료가 보증금에서도 빠졌습니다. 중복 공제한 금액을 돌려받으려 합니다.,refund,basic-case-653320eb02797750346f,team-added-synthetic:basic-independent-v2
+basic-8f09adb7dc40aef66811,신청한 이용권이 중복 등록돼 하나를 쓸 수 없습니다. 사용할 수 없는 이용권 대금을 취소하고 싶습니다.,refund,basic-case-8f09adb7dc40aef66811,team-added-synthetic:basic-independent-v2
+basic-2d326cf7c59c5719741f,업체가 작업을 맡을 수 없다고 선금 반환을 약속했습니다. 반환 거래번호와 처리 여부를 확인하고 싶습니다.,refund,basic-case-2d326cf7c59c5719741f,team-added-synthetic:basic-independent-v2
+basic-11fff3437db506f035fc,현관에는 상자를 둘 공간이 없어 지정한 옆문으로 받으려 합니다. 이번 배달의 인도 위치를 바꿔 주세요.,shipping,basic-case-11fff3437db506f035fc,team-added-synthetic:basic-independent-v2
+basic-c98cc02485cc5544b784,판매자가 반품을 승인하면서 재고 확인을 기다리라고 합니다. 승인과 실제 대금 지급의 처리 단계를 알고 싶습니다.,refund,basic-case-c98cc02485cc5544b784,team-added-synthetic:basic-independent-v2
+basic-e97a66839ebc0e67a575,항공 화물의 도착 공항이 주문한 곳과 다르게 안내됐습니다. 최종 인도 공항을 확인해 주세요.,shipping,basic-case-e97a66839ebc0e67a575,team-added-synthetic:basic-independent-v2
+basic-429b29ffad2683c63256,가입 안내를 받았는데 제 이름으로 회원 등록이 끝났는지 모르겠습니다. 현재 가입 상태를 확인해 주세요.,account,basic-case-429b29ffad2683c63256,team-added-synthetic:basic-independent-v2
+basic-05a4a9c3f740129258f8,시공 자재를 주문했지만 현장 규격과 맞지 않습니다. 절단하지 않은 자재의 반품 조건을 알고 싶습니다.,refund,basic-case-05a4a9c3f740129258f8,team-added-synthetic:basic-independent-v2
+basic-d0b463a43101c223f201,발송한 선물이 수신인에게 바로 연락되지 않도록 요청했습니다. 해당 전달 조건이 반영됐는지 확인해 주세요.,shipping,basic-case-d0b463a43101c223f201,team-added-synthetic:basic-independent-v2
+basic-b72833bb0af14f78648d,회원번호를 잊었습니다. 제가 가입한 계정을 본인 확인으로 찾는 방법을 알려 주세요.,account,basic-case-b72833bb0af14f78648d,team-added-synthetic:basic-independent-v2
+basic-0b570607c48c7af4efec,기사님이 빈 상자만 도착했다고 합니다. 내용물 분리 포장 여부와 실제 발송 수량을 확인해 주세요.,shipping,basic-case-0b570607c48c7af4efec,team-added-synthetic:basic-independent-v2
+basic-591e7fc8bfb2700f9c8f,회원 등록을 취소하고 싶은데 아직 이메일 인증 전입니다. 미완료 가입 정보를 삭제할 수 있나요?,account,basic-case-591e7fc8bfb2700f9c8f,team-added-synthetic:basic-independent-v2
+basic-5b0593c6696668fea10c,가족이 제 계정의 알림 설정을 바꿨습니다. 회원 설정을 이전 상태로 복구할 수 있나요?,account,basic-case-5b0593c6696668fea10c,team-added-synthetic:basic-independent-v2
+basic-08bc874713c22ea7445f,국제 운송물의 국내 수취인 확인이 미완료라고 합니다. 확인 요청을 다시 받아 제출하고 싶습니다.,shipping,basic-case-08bc874713c22ea7445f,team-added-synthetic:basic-independent-v2
+basic-bf528dd10d01744063d6,회원가입에 쓸 이메일 주소를 두 개 입력한 것 같습니다. 실제 등록된 기본 주소를 확인해 주세요.,account,basic-case-bf528dd10d01744063d6,team-added-synthetic:basic-independent-v2
+basic-3c94bf2ca2cdf2b372f8,한 주문을 두 번 결제한 사실을 발견했습니다. 정상 주문 하나는 유지하고 중복 결제만 돌려받고 싶습니다.,refund,basic-case-3c94bf2ca2cdf2b372f8,team-added-synthetic:basic-independent-v2
+basic-7689aefe788163157df8,수령 시 현금으로 낼 운송비가 있는지 안내되지 않았습니다. 이번 배송의 비용 수납 방식을 확인해 주세요.,shipping,basic-case-7689aefe788163157df8,team-added-synthetic:basic-independent-v2
+basic-082d5cc71c9c12a4d3a1,주문 물품이 판매자 매장에서 출발하는지 물류센터에서 출발하는지 궁금합니다. 실제 발송 장소를 확인해 주세요.,shipping,basic-case-082d5cc71c9c12a4d3a1,team-added-synthetic:basic-independent-v2
+basic-4ad6a4afb97bd55e07c7,배달 중 물품이 다른 트럭으로 옮겨졌다고 합니다. 이후에도 같은 운송장으로 조회하면 되나요?,shipping,basic-case-4ad6a4afb97bd55e07c7,team-added-synthetic:basic-independent-v2
+basic-ef5d91c0d083ff75af30,결제 직후 옵션을 잘못 골랐다는 걸 알았습니다. 아직 준비 전인 주문을 취소하고 싶습니다.,refund,basic-case-ef5d91c0d083ff75af30,team-added-synthetic:basic-independent-v2
+basic-8c55d64c656aaa8aa49f,사업자가 폐업 안내를 보내 예약 작업을 중단했습니다. 맡긴 예약금의 반환 담당 창구를 알려 주세요.,refund,basic-case-8c55d64c656aaa8aa49f,team-added-synthetic:basic-independent-v2
+basic-531d4d609e8330c3bf4c,회원 인증을 시도하면 예전 가족 번호의 끝자리가 나옵니다. 제 본인 확인 정보와 연결된 번호를 확인하고 싶습니다.,account,basic-case-531d4d609e8330c3bf4c,team-added-synthetic:basic-independent-v2
+basic-a2ee8a3ef006eb13463d,배송 예약을 전화로 했지만 주문 화면에는 예약 없음으로 나옵니다. 전화 접수와 주문의 연결을 확인해 주세요.,shipping,basic-case-a2ee8a3ef006eb13463d,team-added-synthetic:basic-independent-v2
+basic-7b5d5a522e9ad5b53da7,가구 배송 전에 주차 공간을 확보해야 합니다. 차량 크기와 예상 정차 시간을 알려 주세요.,shipping,basic-case-7b5d5a522e9ad5b53da7,team-added-synthetic:basic-independent-v2
+basic-6f52b1ef1b139309e550,구입한 교환권의 사용 장소가 폐쇄됐습니다. 미사용 교환권 대금 반환 창구를 안내해 주세요.,refund,basic-case-6f52b1ef1b139309e550,team-added-synthetic:basic-independent-v2
+basic-c082f41f1299e8a34c38,삭제한 프로필 소개 문구가 다른 화면에 남아 있습니다. 회원 소개 정보의 저장 상태를 확인해 주세요.,account,basic-case-c082f41f1299e8a34c38,team-added-synthetic:basic-independent-v2
+basic-801468a6935f3fde5451,공구를 반품했는데 보증금과 구매 대금을 한 금액으로 안내합니다. 각각의 반환 항목을 구분해 주세요.,refund,basic-case-801468a6935f3fde5451,team-added-synthetic:basic-independent-v2
+basic-fc03362b018f5fcfb9c1,배송 기사에게 제품 포장째 무게를 전달해야 합니다. 운송 접수에 등록된 포장 중량을 확인하고 싶습니다.,shipping,basic-case-fc03362b018f5fcfb9c1,team-added-synthetic:basic-independent-v2
+basic-4bb70fe32168036acb0b,받는 사람이 이름을 바꿔서 신분증과 송장 이름이 다릅니다. 등기 인수에 필요한 확인 자료가 궁금합니다.,shipping,basic-case-4bb70fe32168036acb0b,team-added-synthetic:basic-independent-v2
+basic-e14a1e597de9998836a4,계정 이름이 다른 언어로 표시돼 읽기 어렵습니다. 회원 화면의 표시 언어를 변경하려 합니다.,account,basic-case-e14a1e597de9998836a4,team-added-synthetic:basic-independent-v2
+basic-a3aabc38576437c5f3c1,회원 소개 사진을 바꾸려는데 파일 형식 오류가 납니다. 업로드할 수 있는 형식과 크기를 안내해 주세요.,account,basic-case-a3aabc38576437c5f3c1,team-added-synthetic:basic-independent-v2
+basic-e9fb844105ce41ad9bb2,미사용 수강권 환급을 신청했는데 이용한 것으로 처리됐습니다. 출석 기록과 대조해 심사를 다시 받고 싶습니다.,refund,basic-case-e9fb844105ce41ad9bb2,team-added-synthetic:basic-independent-v2
+basic-11a0da7f6bf7d6edb19d,기관 계정의 추가 사용자를 등록하려는데 초대 버튼이 없습니다. 제 회원 권한으로 초대할 수 있는지 확인해 주세요.,account,basic-case-11a0da7f6bf7d6edb19d,team-added-synthetic:basic-independent-v2
+basic-f56d6dbfde6cf2bee7b3,사용 중단한 문자 발송 서비스에 충전한 유료 잔액이 남았습니다. 남은 잔액 반환 절차를 알려 주세요.,refund,basic-case-f56d6dbfde6cf2bee7b3,team-added-synthetic:basic-independent-v2
+basic-1911dcc3a0fa4ca5b126,예약금을 내고 주문한 물건의 제작이 취소됐습니다. 예약금 전액을 돌려받는 접수 방법을 안내해 주세요.,refund,basic-case-1911dcc3a0fa4ca5b126,team-added-synthetic:basic-independent-v2
+basic-3a6e9fcea6d13028367f,상품을 두 번 반송한 것으로 기록돼 운송비가 두 번 빠졌습니다. 회수 기록과 정산을 대조해 주세요.,refund,basic-case-3a6e9fcea6d13028367f,team-added-synthetic:basic-independent-v2
+basic-94866ff6b90c37cfa1ed,기간을 잘못 선택한 보험 연계 상품의 주문 취소를 요청하려 합니다. 판매처의 취소 접수 절차를 알려 주세요.,refund,basic-case-94866ff6b90c37cfa1ed,team-added-synthetic:basic-independent-v2
+basic-f9314a991f31db0342d2,프로필을 비공개로 바꿨는데 친구 목록은 계속 보입니다. 회원 공개 설정의 적용 항목을 확인해 주세요.,account,basic-case-f9314a991f31db0342d2,team-added-synthetic:basic-independent-v2
+basic-bdc5675b33b045a69e24,정기 구독을 중단했지만 다음 배송분 대금이 먼저 청구됐습니다. 출고 전 청구분을 취소하고 싶습니다.,refund,basic-case-bdc5675b33b045a69e24,team-added-synthetic:basic-independent-v2
+basic-8042398007d3c4fabc16,환급 신청을 마쳤는데 진행 상태가 서류 미제출입니다. 제출한 증빙이 올바른 건에 연결됐는지 확인해 주세요.,refund,basic-case-8042398007d3c4fabc16,team-added-synthetic:basic-independent-v2
+basic-329b0779e4a7d8f196e2,회원가입 때 적은 우편 수신 주소를 수정하려 합니다. 주문 배송지가 아닌 회원 기본 정보 변경입니다.,account,basic-case-329b0779e4a7d8f196e2,team-added-synthetic:basic-independent-v2
+basic-2b9520df7fe83aaddae5,배송 경로가 출발 창고로 되돌아갔습니다. 반송인지 단순 경유인지 확인하고 싶습니다.,shipping,basic-case-2b9520df7fe83aaddae5,team-added-synthetic:basic-independent-v2
+basic-fe0234a7f8c0ea52a11f,해외 배송 주소에 아파트 이름을 현지 문자로 넣으려 합니다. 출고 전 주소 보완 방법을 안내해 주세요.,shipping,basic-case-fe0234a7f8c0ea52a11f,team-added-synthetic:basic-independent-v2
+basic-995ebb78e0fdf56e0e97,승인된 운송업체만 들어갈 수 있는 시설입니다. 배차 업체의 이름을 미리 알려 주세요.,shipping,basic-case-995ebb78e0fdf56e0e97,team-added-synthetic:basic-independent-v2
+basic-80074de86c463523d634,항공편 취소로 배송이 늦어진다고 합니다. 다른 출발편으로 연결되는지 현재 운송 계획이 궁금합니다.,shipping,basic-case-80074de86c463523d634,team-added-synthetic:basic-independent-v2
+basic-8c5341a456a66de06bef,받은 식기가 깨져 사진을 보냈습니다. 교환 대신 구매 대금을 돌려받는 절차를 안내해 주세요.,refund,basic-case-8c5341a456a66de06bef,team-added-synthetic:basic-independent-v2
+basic-8b68255ec8c5b79e7e0e,이름을 입력해도 가입 확인 화면에서 다음 단계로 넘어가지 않습니다. 회원 등록 오류를 확인해 주세요.,account,basic-case-8b68255ec8c5b79e7e0e,team-added-synthetic:basic-independent-v2
+basic-2b85bb65d19b39fae7ea,대여 기기를 조기 반납했습니다. 계약상 남은 일수의 대여료 반환 조건을 확인해 주세요.,refund,basic-case-2b85bb65d19b39fae7ea,team-added-synthetic:basic-independent-v2
+basic-74e1ab3f9b8a5b3c2ea6,주문 취소 뒤 발급된 환급 확인서에 카드번호가 잘못 적혔습니다. 취소 대상 거래를 확인해 주세요.,refund,basic-case-74e1ab3f9b8a5b3c2ea6,team-added-synthetic:basic-independent-v2
+basic-c0fa2db00954bfc0a815,탈퇴 신청을 취소했는데 계속 탈퇴 예정으로 표시됩니다. 회원 유지 요청의 처리 상태를 알려 주세요.,account,basic-case-c0fa2db00954bfc0a815,team-added-synthetic:basic-independent-v2
+basic-347fdff281614b7e5a60,우편함에 등기 배달 안내지가 없습니다. 배달 시도 기록과 재방문 신청 방법을 확인하고 싶습니다.,shipping,basic-case-347fdff281614b7e5a60,team-added-synthetic:basic-independent-v2
+basic-7731ebaa21dcbbb14caf,웹에서 계정 로그아웃을 눌러도 이름이 계속 표시됩니다. 접속이 실제로 종료됐는지 확인하고 싶습니다.,account,basic-case-7731ebaa21dcbbb14caf,team-added-synthetic:basic-independent-v2
+basic-5097de353357545d94fa,로그인 화면에서 아이디와 이메일 중 무엇을 넣어야 하는지 모르겠습니다. 제 계정의 로그인 형식을 확인해 주세요.,account,basic-case-5097de353357545d94fa,team-added-synthetic:basic-independent-v2
+basic-123b0339cdbe2bafae7a,온라인 주문을 매장에서 반품해도 같은 결제수단으로 취소되는지 궁금합니다. 접수 가능한 창구를 알려 주세요.,refund,basic-case-123b0339cdbe2bafae7a,team-added-synthetic:basic-independent-v2
+basic-aa558519d416c55b21cf,반품 신청을 철회했는데 카드 취소가 이미 진행됐습니다. 해당 거래의 반환 상태를 확인하고 싶습니다.,refund,basic-case-aa558519d416c55b21cf,team-added-synthetic:basic-independent-v2
+basic-8fdf98beb99e5633ea00,한글 아이디로 가입한 뒤 영문만 입력하라는 로그인 화면이 나옵니다. 계정에 맞는 접속 방법을 알려 주세요.,account,basic-case-8fdf98beb99e5633ea00,team-added-synthetic:basic-independent-v2
+basic-6c306d877f9863804597,회원 가입 시 선택한 관심 분야를 다시 설정하려 합니다. 추천 내용에 쓰이는 회원 설정을 바꾸고 싶습니다.,account,basic-case-6c306d877f9863804597,team-added-synthetic:basic-independent-v2
+basic-ec169f7ddc15098ba328,택배를 직접 찾으러 영업소에 갔는데 다른 지점에서 보관 중이라고 합니다. 정확한 보관 지점을 알려 주세요.,shipping,basic-case-ec169f7ddc15098ba328,team-added-synthetic:basic-independent-v2
+basic-2dae0dc791180150c9ec,회원 소개에 적은 연락처가 공개되는지 모르겠습니다. 공개되는 항목을 확인하고 범위를 바꾸고 싶습니다.,account,basic-case-2dae0dc791180150c9ec,team-added-synthetic:basic-independent-v2
+basic-3829bdffe1a5cd0e39f1,대관 취소 시 청소비도 함께 청구 취소되는지 궁금합니다. 이용하지 않은 항목의 환급 범위를 확인해 주세요.,refund,basic-case-3829bdffe1a5cd0e39f1,team-added-synthetic:basic-independent-v2
+basic-f07c1f82eafd48f9f392,졸업생도 학교 자료 서비스의 회원으로 가입할 수 있는지 궁금합니다. 가입 자격과 필요한 확인 자료를 알려 주세요.,account,basic-case-f07c1f82eafd48f9f392,team-added-synthetic:basic-independent-v2
+basic-1d7d31b598aaf6bba0cc,학회 참가 등록을 잘못된 행사에 결제했습니다. 참가 전 취소 가능 여부와 반환 신청 방법을 알고 싶습니다.,refund,basic-case-1d7d31b598aaf6bba0cc,team-added-synthetic:basic-independent-v2
+basic-5b0b190794b5434f0e4c,행사장에 올 상자를 부스 번호별로 전달받으려 합니다. 여러 인도 지점으로 나눌 수 있나요?,shipping,basic-case-5b0b190794b5434f0e4c,team-added-synthetic:basic-independent-v2
+basic-37919e12173b054547cd,차량 진입이 안 되는 골목으로 대형 물품이 올 예정입니다. 도로변에서 인수하는 방법을 협의하고 싶습니다.,shipping,basic-case-37919e12173b054547cd,team-added-synthetic:basic-independent-v2
+basic-8a7440077aae0c1f25ef,제 이메일에 다른 사람의 회원 로그인 안내가 옵니다. 잘못 등록된 알림 주소를 확인해 주세요.,account,basic-case-8a7440077aae0c1f25ef,team-added-synthetic:basic-independent-v2
+basic-6d3671d18a58be7d386d,비대면 인도를 신청했지만 택배사가 신분증 확인이 필요하다고 합니다. 이번 물품의 인수 조건이 무엇인가요?,shipping,basic-case-6d3671d18a58be7d386d,team-added-synthetic:basic-independent-v2
+basic-19e9825bf802652b5ee6,반품한 조립품의 일부 부속을 나중에 따로 보냈습니다. 추가 도착 확인 뒤 환급 재심사가 가능한가요?,refund,basic-case-19e9825bf802652b5ee6,team-added-synthetic:basic-independent-v2
+basic-8be682cbf1e40f812359,회원 정보에 등록한 사업장 번호를 잘못 입력했습니다. 기관 회원 정보의 정정 절차를 문의합니다.,account,basic-case-8be682cbf1e40f812359,team-added-synthetic:basic-independent-v2
+basic-dc267b7404fb8282d4ec,택배 기사님이 도로명 주소와 지번 주소가 다르다고 합니다. 주문서 주소를 어느 기준으로 확인하면 되나요?,shipping,basic-case-dc267b7404fb8282d4ec,team-added-synthetic:basic-independent-v2
+basic-f52987a4f403c3643853,회원 소개를 개인별 링크로 공유하려 합니다. 공개 프로필 주소를 생성할 수 있는 메뉴를 알려 주세요.,account,basic-case-f52987a4f403c3643853,team-added-synthetic:basic-independent-v2
+basic-538919fcb7a92af3c287,새로 가입한 회원의 확인 메일이 스팸함에도 없습니다. 가입 이메일이 정확히 저장됐는지 확인해 주세요.,account,basic-case-538919fcb7a92af3c287,team-added-synthetic:basic-independent-v2
+basic-b48e60eb4eef5aa29ff6,옆집과 호수가 비슷해 자주 혼동됩니다. 이번 배달의 호수 확인 메모를 기사님에게 전달하려 합니다.,shipping,basic-case-b48e60eb4eef5aa29ff6,team-added-synthetic:basic-independent-v2
+basic-816520a305014abfaf4e,선결제한 정비 서비스의 작업이 시작되지 않았습니다. 예약을 철회하고 선결제액을 반환받고 싶습니다.,refund,basic-case-816520a305014abfaf4e,team-added-synthetic:basic-independent-v2
+basic-f41b78873e5d47a6bbe3,결제 실패라고 안내받아 다시 냈는데 첫 결제도 출금됐습니다. 실패 거래로 처리된 금액의 반환을 요청합니다.,refund,basic-case-f41b78873e5d47a6bbe3,team-added-synthetic:basic-independent-v2
+basic-5eee922a19a54b104fe5,배송비를 포함해 취소 승인됐는데 카드에는 상품값만 취소됐습니다. 빠진 금액을 확인해 주세요.,refund,basic-case-5eee922a19a54b104fe5,team-added-synthetic:basic-independent-v2
+basic-dc924eb976fe52102dac,회원 정보 수정에 필요한 인증 문자만 오지 않습니다. 로그인은 되며 연락처 변경 승인을 받고 싶습니다.,account,basic-case-dc924eb976fe52102dac,team-added-synthetic:basic-independent-v2
+basic-080efff4e94700bae087,기관 계정의 서브 사용자를 중지하려는데 삭제만 보입니다. 일시적인 접근 중지 설정이 가능한가요?,account,basic-case-080efff4e94700bae087,team-added-synthetic:basic-independent-v2
+basic-6fad4f5f4d124af7205e,예약 상품이 판매자 사정으로 다른 제품으로 바뀌었습니다. 변경 제품은 받지 않고 주문 대금을 반환받고 싶습니다.,refund,basic-case-6fad4f5f4d124af7205e,team-added-synthetic:basic-independent-v2
+basic-d52a3e2d8a4ab3884d75,반납한 공유 장비의 보증금 중 일부만 돌아왔습니다. 어떤 항목이 공제됐는지 명세를 요청합니다.,refund,basic-case-d52a3e2d8a4ab3884d75,team-added-synthetic:basic-independent-v2
+basic-d43e17064bcca4ac95b3,계좌 환급 신청서에 통장 사본을 첨부하지 못했습니다. 보완 제출 방법을 안내해 주세요.,refund,basic-case-d43e17064bcca4ac95b3,team-added-synthetic:basic-independent-v2
+basic-a58177743cffba5b3ae8,운송사가 배송 지역 변경으로 새 운송장을 발급했다고 합니다. 이전 번호와 새 번호를 연결해 확인하고 싶습니다.,shipping,basic-case-a58177743cffba5b3ae8,team-added-synthetic:basic-independent-v2
+basic-0e2547a9c679377e3372,회원가입 당시 이름을 영문으로 적었습니다. 본인 인증용 한글 이름을 추가할 수 있나요?,account,basic-case-0e2547a9c679377e3372,team-added-synthetic:basic-independent-v2
+basic-2bd23b3d8c9ec0d17fdf,사전 승인 없이 청구된 추가 포장비가 있습니다. 상품은 받되 추가 요금 반환을 요청합니다.,refund,basic-case-2bd23b3d8c9ec0d17fdf,team-added-synthetic:basic-independent-v2
+basic-57f7f5adc3c8a001a1a1,반품 심사에 필요한 사진을 다른 주문에 첨부했습니다. 맞는 반품 건으로 자료를 옮겨 제출하고 싶습니다.,refund,basic-case-57f7f5adc3c8a001a1a1,team-added-synthetic:basic-independent-v2
+basic-012207e22b8a217d6d0b,배송 확인서에 필요한 회사 도장을 준비하려 합니다. 기사님이 인수 서류를 가져오는지 확인하고 싶습니다.,shipping,basic-case-012207e22b8a217d6d0b,team-added-synthetic:basic-independent-v2
+basic-3ff7d4c155c0c33f8351,사서함으로 보낸 문서가 주소 불명 처리됐습니다. 사서함 번호는 맞는데 배달 주소 형식을 확인하고 싶습니다.,shipping,basic-case-3ff7d4c155c0c33f8351,team-added-synthetic:basic-independent-v2
+basic-1d1a988f3fb0db253e19,회원 알림을 받을 시간대를 설정하려 합니다. 야간 알림 제한이 가능한 회원 설정을 알려 주세요.,account,basic-case-1d1a988f3fb0db253e19,team-added-synthetic:basic-independent-v2
+basic-94d4a5c3dbe0ec923b15,자동 로그인 해제를 선택했는데 앱을 다시 열면 로그인됩니다. 회원 보안 설정이 반영됐는지 확인해 주세요.,account,basic-case-94d4a5c3dbe0ec923b15,team-added-synthetic:basic-independent-v2
+basic-6b66bc0852002ef17456,공연장 반입구에서 물품 수령 확인이 필요합니다. 기사님이 제공할 전달 증빙 형식을 알고 싶습니다.,shipping,basic-case-6b66bc0852002ef17456,team-added-synthetic:basic-independent-v2
+basic-f980950692957f83fe7a,가입 약관에 동의했지만 다시 동의 화면이 나옵니다. 회원 등록 단계가 어디에서 멈췄는지 알려 주세요.,account,basic-case-f980950692957f83fe7a,team-added-synthetic:basic-independent-v2
+basic-98ebf0f7c846f46be1fc,반품한 상품 대신 다른 주문을 취소한 것 같습니다. 원결제 식별번호로 취소 대상을 대조하고 싶습니다.,refund,basic-case-98ebf0f7c846f46be1fc,team-added-synthetic:basic-independent-v2
+basic-027ea7789c6b51d232fd,계정에 보이는 최근 접속 날짜가 실제 이용일과 다릅니다. 로그인 이력의 기준을 확인해 주세요.,account,basic-case-027ea7789c6b51d232fd,team-added-synthetic:basic-independent-v2
+basic-353cfd9a1ade7583f2fb,직접 찾을 물품이 너무 커서 차량을 빌려야 합니다. 보관 영업소의 적재 지원 여부를 알려 주세요.,shipping,basic-case-353cfd9a1ade7583f2fb,team-added-synthetic:basic-independent-v2
+basic-8918f129ad728bcce2b7,회사 이전으로 현장 수령 담당 부서가 바뀌었습니다. 이번 배송의 부서명만 정정하고 싶습니다.,shipping,basic-case-8918f129ad728bcce2b7,team-added-synthetic:basic-independent-v2
+basic-b40b2d6206b531269711,화물 인수 장소를 창고 안으로 선택했는데 문 앞 인도라고 기사님이 안내했습니다. 계약한 인도 범위를 확인해 주세요.,shipping,basic-case-b40b2d6206b531269711,team-added-synthetic:basic-independent-v2
+basic-3293b462cbd7ccf11cb2,분리 배송된 주문의 첫 상자만 운송 알림이 옵니다. 두 번째 상자 알림을 받을 수 있게 조회 방법을 알려 주세요.,shipping,basic-case-3293b462cbd7ccf11cb2,team-added-synthetic:basic-independent-v2
+basic-1fec07f8883d9506774b,환급 계좌의 은행 코드를 틀리게 입력했습니다. 지급 실패 건을 정정해 다시 반환받고 싶습니다.,refund,basic-case-1fec07f8883d9506774b,team-added-synthetic:basic-independent-v2
+basic-90b343ae95894f0dfc09,비밀번호 변경 화면의 저장 버튼이 회색으로 되어 있습니다. 회원 비밀번호 규칙에 맞는지 확인하고 싶습니다.,account,basic-case-90b343ae95894f0dfc09,team-added-synthetic:basic-independent-v2
+basic-ce8d7060bc4211a58f56,상품 불량으로 취소했는데 고객 변심 운송비가 차감됐습니다. 반품 사유에 맞는 비용 정산을 요청합니다.,refund,basic-case-ce8d7060bc4211a58f56,team-added-synthetic:basic-independent-v2
+basic-258ab58a140728dbfaad,도로 통제로 차량 우회가 필요합니다. 배송 예약에 새 진입 경로 안내를 추가하려 합니다.,shipping,basic-case-258ab58a140728dbfaad,team-added-synthetic:basic-independent-v2
+basic-525daecfe0162d7a232b,동일 제품을 묶음으로 샀다가 모두 반품했습니다. 수량 일부만 취소된 거래를 바로잡아 주세요.,refund,basic-case-525daecfe0162d7a232b,team-added-synthetic:basic-independent-v2
+basic-78c50a2bce046c7ec3a1,기관명으로 가입한 회원을 부서별로 나눠 관리하려 합니다. 하위 그룹을 만들 수 있는 설정을 안내해 주세요.,account,basic-case-78c50a2bce046c7ec3a1,team-added-synthetic:basic-independent-v2
+basic-126acfff26b49d987b64,회원 가입에 필요한 보호자 이메일을 잘못 적었습니다. 승인 메일을 보내기 전에 주소를 정정하려 합니다.,account,basic-case-126acfff26b49d987b64,team-added-synthetic:basic-independent-v2
+basic-1973c020b91c240a0e55,계정에 등록한 홈페이지 주소가 잘못돼 있습니다. 공개 프로필의 링크를 수정하려 합니다.,account,basic-case-1973c020b91c240a0e55,team-added-synthetic:basic-independent-v2
+basic-c2776dd626a417d27c1e,회원 정보 수정 화면에 제 생년월일이 빈칸입니다. 본인 확인 후 누락 정보를 등록하려 합니다.,account,basic-case-c2776dd626a417d27c1e,team-added-synthetic:basic-independent-v2
+basic-9fe6aa0b16555d20951d,운송장에 발신인 연락처만 있고 수신인 연락처가 없습니다. 배달 전 수신인 번호를 보완해 주세요.,shipping,basic-case-9fe6aa0b16555d20951d,team-added-synthetic:basic-independent-v2
+basic-0176dc16f5851b50f87b,수령인에게 보낸 배송 링크가 열리지 않습니다. 물품 상태를 확인할 다른 조회 경로가 있나요?,shipping,basic-case-0176dc16f5851b50f87b,team-added-synthetic:basic-independent-v2
+basic-f0a11f17bd89814c9e9b,야외 적치가 안 되는 물품인데 운송장에는 외부 보관으로 적혀 있습니다. 실내 인도 요청이 반영됐는지 확인해 주세요.,shipping,basic-case-f0a11f17bd89814c9e9b,team-added-synthetic:basic-independent-v2
+basic-d65b9357406f9961ffef,집하한 상자가 새벽까지만 운영하는 터미널에 있습니다. 인수 전에 필요한 예약 시간을 알려 주세요.,shipping,basic-case-d65b9357406f9961ffef,team-added-synthetic:basic-independent-v2
+basic-7a88e14ef14d6d685e49,기사 방문 전에 포장 완충재를 준비하라고 연락받았습니다. 운송 업체가 제공하는 재료 범위를 확인하고 싶습니다.,shipping,basic-case-7a88e14ef14d6d685e49,team-added-synthetic:basic-independent-v2
+basic-cfa39bef4765d7d78e8b,물품을 받아 줄 사람이 바뀌어 배송 연락을 다른 번호로 받아야 합니다. 이번 주문의 연락처만 변경합니다.,shipping,basic-case-cfa39bef4765d7d78e8b,team-added-synthetic:basic-independent-v2
+basic-be629855f930cdd51595,배송받은 상품이 유통기한을 넘겼습니다. 사진을 제출하고 반품 대금 반환을 요청하려 합니다.,refund,basic-case-be629855f930cdd51595,team-added-synthetic:basic-independent-v2
+basic-1c8abdf08ab15fdf4301,이름만 같은 다른 회원의 활동 기록이 제 화면에 보입니다. 계정과 자료의 연결 오류를 확인해 주세요.,account,basic-case-1c8abdf08ab15fdf4301,team-added-synthetic:basic-independent-v2
+basic-4634276fc373dc8d5f76,회사 회원의 이름이 상호 변경 전 이름으로 표시됩니다. 새 상호로 정정할 확인 자료를 알려 주세요.,account,basic-case-4634276fc373dc8d5f76,team-added-synthetic:basic-independent-v2
+basic-8ab49e7e978b15bd46d8,창고에서 물건을 찾았다며 보류를 풀었다고 합니다. 운송 조회는 아직 보류 상태라 실제 출발 여부가 궁금합니다.,shipping,basic-case-8ab49e7e978b15bd46d8,team-added-synthetic:basic-independent-v2
+basic-b9e747b2b04fa6a9abda,해외 배송을 신청할 때 우편번호 한 자리를 빠뜨렸습니다. 통관 전 주소 정보를 보완하려 합니다.,shipping,basic-case-b9e747b2b04fa6a9abda,team-added-synthetic:basic-independent-v2
+basic-de72a33e36d3947ab81f,작업 현장의 반입 담당자가 장비 철수로 자리를 비웁니다. 다른 담당자에게 인계되도록 운송 메모를 바꿔 주세요.,shipping,basic-case-de72a33e36d3947ab81f,team-added-synthetic:basic-independent-v2
+basic-15d98f746cdbc74ece87,배달을 일시 중지했는데 해제 버튼을 찾지 못하겠습니다. 보관 중인 주문의 배달을 다시 시작하고 싶습니다.,shipping,basic-case-15d98f746cdbc74ece87,team-added-synthetic:basic-independent-v2
+basic-dd0c7854a05218330a4d,행사용 현수막의 인쇄 문구가 주문 시안과 다릅니다. 다시 만들지 말고 대금 반환을 신청하려 합니다.,refund,basic-case-dd0c7854a05218330a4d,team-added-synthetic:basic-independent-v2
+basic-9395f12621e00799c6e2,상품 회수는 끝났지만 판매처에서 다시 회수 신청을 하라고 합니다. 기존 반품 건으로 환급이 진행되는지 확인해 주세요.,refund,basic-case-9395f12621e00799c6e2,team-added-synthetic:basic-independent-v2
+basic-ed12e6b1879b02b5976a,비회원 주문만 하다가 회원으로 가입했습니다. 제 주문 기록을 회원 계정에 연결하는 방법이 궁금합니다.,account,basic-case-ed12e6b1879b02b5976a,team-added-synthetic:basic-independent-v2
+basic-6de7f116208d1f76d203,동일한 지역명이 두 군데 있어 운송사가 수령 지역을 묻습니다. 행정구역을 확인해 전달하고 싶습니다.,shipping,basic-case-6de7f116208d1f76d203,team-added-synthetic:basic-independent-v2
+basic-4a328be246a9c6eec395,지정한 날짜에 꽃 배달이 안 돼 주문 취소를 접수했습니다. 취소 승인 여부와 반환 금액을 확인해 주세요.,refund,basic-case-4a328be246a9c6eec395,team-added-synthetic:basic-independent-v2
+basic-f22fbb72e273847ca3f4,출장지 호텔로 발송했는데 체크아웃 전에 못 받을 것 같습니다. 호텔 프런트 인도 가능 여부를 확인해 주세요.,shipping,basic-case-f22fbb72e273847ca3f4,team-added-synthetic:basic-independent-v2
+basic-c557abfb47da1179a33c,이메일 주소를 수정하자 회원정보가 두 개로 보입니다. 하나의 회원에 연결된 정보인지 확인해 주세요.,account,basic-case-c557abfb47da1179a33c,team-added-synthetic:basic-independent-v2
+basic-0e30849ca1384623fde8,로그인 오류 신고에 첨부할 회원 식별 정보를 찾고 있습니다. 비밀번호 없이 제공할 수 있는 계정 번호를 알려 주세요.,account,basic-case-0e30849ca1384623fde8,team-added-synthetic:basic-independent-v2
+basic-f3966b2ec83a8df43456,소액 결제 취소가 휴대전화 청구서에 반영되지 않았습니다. 취소 요청이 통신사에 전달됐는지 확인해 주세요.,refund,basic-case-f3966b2ec83a8df43456,team-added-synthetic:basic-independent-v2
+basic-fd6a1ad6a34735037282,지급 예정일이 지나도 환급이 대기로 남아 있습니다. 지급 담당 부서와 보류 사유를 확인해 주세요.,refund,basic-case-fd6a1ad6a34735037282,team-added-synthetic:basic-independent-v2
+basic-3e30cb1b3d7a93596906,배달 기사님이 주문자만 인수할 수 있다고 합니다. 결제자와 받는 사람이 다른 선물 주문의 인수 조건을 알려 주세요.,shipping,basic-case-3e30cb1b3d7a93596906,team-added-synthetic:basic-independent-v2
+basic-6c94520f6ef4202f99c9,회원 목록에 제가 두 번 초대돼 있습니다. 아직 가입하지 않은 중복 초대를 정리하고 싶습니다.,account,basic-case-6c94520f6ef4202f99c9,team-added-synthetic:basic-independent-v2
+basic-9fcd5a80f19f016dd7f2,개봉 전 확인해야 하는 운송 봉인 번호가 안내되지 않았습니다. 배송 담당자가 기록한 번호를 알려 주세요.,shipping,basic-case-9fcd5a80f19f016dd7f2,team-added-synthetic:basic-independent-v2
+basic-8f5fd2cf270e1e2b1a2d,회원으로 가입했지만 일부 기능이 미인증 회원이라고 막힙니다. 완료하지 않은 인증 단계가 무엇인지 알려 주세요.,account,basic-case-8f5fd2cf270e1e2b1a2d,team-added-synthetic:basic-independent-v2
+basic-8ea5d5d53bb5eb0335da,반품한 책에 손상이 있다며 환급액을 줄였습니다. 손상 사진과 공제 기준을 확인할 방법이 있나요?,refund,basic-case-8ea5d5d53bb5eb0335da,team-added-synthetic:basic-independent-v2
+basic-f735e06cab35652465dc,선적 예정인 물품이 한 컨테이너에 실리는지 확인해야 합니다. 이번 화물의 컨테이너 번호를 알려 주세요.,shipping,basic-case-f735e06cab35652465dc,team-added-synthetic:basic-independent-v2
+basic-0156605d1ea2de20674d,새 휴대전화에 앱을 설치했는데 회원 로그인 화면이 계속 닫힙니다. 계정 접속을 위한 지원 방법을 알려 주세요.,account,basic-case-0156605d1ea2de20674d,team-added-synthetic:basic-independent-v2
+basic-bef2f282d2259fee0b67,계정 활동 요약을 매주 받아 보고 싶습니다. 알림 수신 주기를 선택할 수 있는 회원 메뉴가 있나요?,account,basic-case-bef2f282d2259fee0b67,team-added-synthetic:basic-independent-v2
+basic-6a36e96715607cdb3159,발송된 화물의 수취인 이름에 오타가 있습니다. 인도 전에 이름을 바로잡을 수 있을까요?,shipping,basic-case-6a36e96715607cdb3159,team-added-synthetic:basic-independent-v2
+basic-5ccaaabfa8af867c4252,휴가 동안 우편물을 잠시 보관해 주는 서비스를 신청하고 싶습니다. 이미 발송된 우편에도 가능한가요?,shipping,basic-case-5ccaaabfa8af867c4252,team-added-synthetic:basic-independent-v2
+basic-9cabff9877d6cbd56a9e,가입한 서비스가 통합돼 새로운 로그인 화면이 열립니다. 기존 회원으로 접속하는 방법을 알려 주세요.,account,basic-case-9cabff9877d6cbd56a9e,team-added-synthetic:basic-independent-v2
+basic-05168aa025dc1cd2531e,회원 정보 변경 승인 메일의 요청을 취소하려 합니다. 아직 승인하지 않은 변경을 중단할 방법이 있나요?,account,basic-case-05168aa025dc1cd2531e,team-added-synthetic:basic-independent-v2
+basic-66981e25bbd63506df84,집하 주소와 회신 주소를 반대로 적었습니다. 기사 수거 전에 실제 출발지를 정정하고 싶습니다.,shipping,basic-case-66981e25bbd63506df84,team-added-synthetic:basic-independent-v2
+basic-a51652c121b34ee21d8a,대학 건물의 수령 가능 시간이 시험 기간에 바뀌었습니다. 배송 기사에게 새로운 반입 시간을 전달해 주세요.,shipping,basic-case-a51652c121b34ee21d8a,team-added-synthetic:basic-independent-v2
+basic-3d1469d25c5c3e894cc9,인증 요청을 너무 많이 보냈다고 가입이 제한됐습니다. 회원 등록을 다시 시도할 수 있는 조건을 알려 주세요.,account,basic-case-3d1469d25c5c3e894cc9,team-added-synthetic:basic-independent-v2
+basic-1d65ad997c84fbbeb865,계정 등록 날짜가 실제 가입일과 다릅니다. 이전 서비스의 가입 기록이 연결됐는지 확인해 주세요.,account,basic-case-1d65ad997c84fbbeb865,team-added-synthetic:basic-independent-v2
+basic-9a04fcec843ee2c5ec53,참가자가 주최 측 실수로 중복 등록됐습니다. 행사 신청 하나는 유지하고 추가 등록비를 반환받으려 합니다.,refund,basic-case-9a04fcec843ee2c5ec53,team-added-synthetic:basic-independent-v2
+basic-5ea7d903f1e809d53ca0,쇼핑몰에서 픽업 완료 알림을 보냈지만 제가 찾으러 간 적은 없습니다. 실제 픽업 증빙을 확인해 주세요.,shipping,basic-case-5ea7d903f1e809d53ca0,team-added-synthetic:basic-independent-v2
+basic-4060006c21c690fc8070,해외 발송 우편을 추적하려는데 접수 영수증과 조회 번호가 서로 다릅니다. 사용할 번호를 알려 주세요.,shipping,basic-case-4060006c21c690fc8070,team-added-synthetic:basic-independent-v2
+basic-f81db7cc3a0c34c4b8cf,계약한 배송일과 택배사 안내 날짜가 이틀 차이 납니다. 실제 방문 예약이 어느 날인지 확인해 주세요.,shipping,basic-case-f81db7cc3a0c34c4b8cf,team-added-synthetic:basic-independent-v2
+basic-fecbe7399a6f5a518e09,반품 물건을 판매자가 수령한 뒤 연락이 없습니다. 환급 심사가 접수됐는지 조회하고 싶습니다.,refund,basic-case-fecbe7399a6f5a518e09,team-added-synthetic:basic-independent-v2
+basic-acf7130d9acedfae8525,착오로 받은 제품을 판매자 지시에 따라 돌려보냈습니다. 원래 주문 대금 반환 접수를 진행하고 싶습니다.,refund,basic-case-acf7130d9acedfae8525,team-added-synthetic:basic-independent-v2
+basic-177e139e07f4b605ff3f,쇼핑몰 취소 수량을 한 개 대신 두 개로 입력했습니다. 실제 반품 수량에 맞게 환급 신청을 수정해 주세요.,refund,basic-case-177e139e07f4b605ff3f,team-added-synthetic:basic-independent-v2
+basic-d25bfd820fd6aefe514c,수령인을 확인하려는 전화가 외국어로 와서 응답하지 못했습니다. 배송 확인을 다시 진행할 연락 경로를 알려 주세요.,shipping,basic-case-d25bfd820fd6aefe514c,team-added-synthetic:basic-independent-v2
+basic-94204bbaa489d42a8aba,예약료 취소를 철회했는데 이미 현금이 반환됐습니다. 반환된 예약료 정산을 어느 담당자와 확인해야 하나요?,refund,basic-case-94204bbaa489d42a8aba,team-added-synthetic:basic-independent-v2
+basic-ebd52a2cc5dc83d5ea1a,대금은 정상 납부했는데 주소 확인 대기로 발송이 멈췄습니다. 주소 확인 요청이 어디로 왔는지 궁금합니다.,shipping,basic-case-ebd52a2cc5dc83d5ea1a,team-added-synthetic:basic-independent-v2
+basic-f148d485e35adca7fb4e,출고 안내 날짜가 휴무일로 표시됐습니다. 실제 창고가 운영하는 출고일인지 확인해 주세요.,shipping,basic-case-f148d485e35adca7fb4e,team-added-synthetic:basic-independent-v2
+basic-888e2491f63cf52aabfa,제가 등록한 아이디의 대소문자를 기억하지 못합니다. 본인 회원정보에서 확인할 방법이 있나요?,account,basic-case-888e2491f63cf52aabfa,team-added-synthetic:basic-independent-v2
+basic-688b2a3a21c7c8f7ce40,회원정보에서 직장을 바꾸려는데 이전 기관 항목이 삭제되지 않습니다. 소속 정보 수정 절차를 알려 주세요.,account,basic-case-688b2a3a21c7c8f7ce40,team-added-synthetic:basic-independent-v2
+basic-4877aa2eb6a06b223298,다른 사람이 제 이메일을 회원 주소로 입력한 것 같습니다. 이메일 소유를 확인하고 잘못된 연결을 해제하고 싶습니다.,account,basic-case-4877aa2eb6a06b223298,team-added-synthetic:basic-independent-v2
+basic-630302c3a5fb7712c922,반품 접수는 했지만 상품을 아직 보내지 못했습니다. 회수 지연이 환급 심사에 영향을 주는지 확인해 주세요.,refund,basic-case-630302c3a5fb7712c922,team-added-synthetic:basic-independent-v2
+basic-037dbd3f91ee2f710bbe,수리 불가 판정을 받아 유료 수리 접수를 취소했습니다. 선결제한 수리비의 반환액을 알려 주세요.,refund,basic-case-037dbd3f91ee2f710bbe,team-added-synthetic:basic-independent-v2
+basic-900dc1cea6f77ecda3e6,반환 안내 문자를 받았는데 은행 입금 내역은 없습니다. 계좌 환급의 실제 지급 정보를 확인하고 싶습니다.,refund,basic-case-900dc1cea6f77ecda3e6,team-added-synthetic:basic-independent-v2
+basic-90ba11be258436e0244f,가입 완료 뒤 환영 메일만 왔고 회원번호가 없습니다. 회원번호를 확인할 메뉴를 알려 주세요.,account,basic-case-90ba11be258436e0244f,team-added-synthetic:basic-independent-v2
+basic-5dd3eb4172ca8caaeb7e,인도 예정 건물의 지하 주차장이 침수됐습니다. 지상 출입구로 배달하도록 전달해 주세요.,shipping,basic-case-5dd3eb4172ca8caaeb7e,team-added-synthetic:basic-independent-v2
+basic-c0dcec781c73c3af34db,상자 표면에 적힌 동 번호가 주문서와 다릅니다. 발송 창고에서 라벨을 다시 확인해 주세요.,shipping,basic-case-c0dcec781c73c3af34db,team-added-synthetic:basic-independent-v2
+basic-02408728ec7094a0f6d6,구입한 중고 장비의 기능이 판매 설명과 다릅니다. 설명 자료를 제출해 반품 심사를 요청하려 합니다.,refund,basic-case-02408728ec7094a0f6d6,team-added-synthetic:basic-independent-v2
+basic-d6e57986f6799cd7d2fb,손상된 액자를 판매자 요청대로 반송했습니다. 검수 완료 뒤 대금 취소가 접수됐는지 확인해 주세요.,refund,basic-case-d6e57986f6799cd7d2fb,team-added-synthetic:basic-independent-v2
+basic-e70746e771f1cb2c3cde,운송 조회에 수취 거절이 등록됐지만 저희는 거절하지 않았습니다. 거절 기록을 확인하고 정상 인도를 요청합니다.,shipping,basic-case-e70746e771f1cb2c3cde,team-added-synthetic:basic-independent-v2
+basic-e972636a403226032ac4,운송사가 서명한 인수증의 수량이 실제 상자 수보다 적습니다. 운송 접수 수량을 확인해 주세요.,shipping,basic-case-e972636a403226032ac4,team-added-synthetic:basic-independent-v2
+basic-6aef83b207cb63f0b4ac,회원 설정에 저장한 이름이 모바일과 웹에서 다르게 보입니다. 어느 정보가 현재 등록값인가요?,account,basic-case-6aef83b207cb63f0b4ac,team-added-synthetic:basic-independent-v2
+basic-4f193363fe76386cb4e5,제 계정의 동의 기록을 열면 오류가 납니다. 이전에 선택한 항목을 확인하고 변경할 방법을 알려 주세요.,account,basic-case-4f193363fe76386cb4e5,team-added-synthetic:basic-independent-v2
+basic-da973f00338ff7359519,이메일 인증 전에 가입 창을 닫았습니다. 미완료 회원 등록을 이어서 진행할 수 있나요?,account,basic-case-da973f00338ff7359519,team-added-synthetic:basic-independent-v2
+basic-5e44020aa880bb66753b,아이디 찾기에서 제가 아는 계정 대신 낯선 이름이 나옵니다. 본인 확인 정보와 회원 연결을 확인해 주세요.,account,basic-case-5e44020aa880bb66753b,team-added-synthetic:basic-independent-v2
+basic-b8d939f2cd6ddfd97c1d,예약 취소 날짜가 실제 접수 날짜보다 늦게 기록됐습니다. 수수료 계산에 쓴 날짜를 정정해 주세요.,refund,basic-case-b8d939f2cd6ddfd97c1d,team-added-synthetic:basic-independent-v2
+basic-7733174c0cb7f16eec73,로그인 제한 안내에 적힌 해제 시간이 지나도 오류가 같습니다. 제 계정의 제한 기록을 확인하고 싶습니다.,account,basic-case-7733174c0cb7f16eec73,team-added-synthetic:basic-independent-v2
+basic-8cd76f1334caccb8715e,반품 접수 때 선택한 취소 사유를 잘못 입력했습니다. 환급 심사 전에 사유를 수정할 수 있나요?,refund,basic-case-8cd76f1334caccb8715e,team-added-synthetic:basic-independent-v2
+basic-4b41904afc5e79105edb,오늘 수령할 상자의 외부 바코드 사진이 필요합니다. 물류센터에서 운송 라벨을 확인할 수 있을까요?,shipping,basic-case-4b41904afc5e79105edb,team-added-synthetic:basic-independent-v2
+basic-fee0a1ca6624b3891a66,회원 등급이 예상과 다르게 표시됩니다. 가입 기간과 활동 이력에 따른 회원 상태를 확인해 주세요.,account,basic-case-fee0a1ca6624b3891a66,team-added-synthetic:basic-independent-v2
+basic-0c6e91b233ea00186548,기관 회원으로 가입하려는데 개인 회원 화면만 나옵니다. 기관 가입 유형을 선택하는 방법이 궁금합니다.,account,basic-case-0c6e91b233ea00186548,team-added-synthetic:basic-independent-v2
+basic-3057d29ca0d828b7d963,출고 창고에서 포장 일부가 빠졌다고 합니다. 배송이 다시 시작되는 시점을 알려 주세요.,shipping,basic-case-3057d29ca0d828b7d963,team-added-synthetic:basic-independent-v2
+basic-5273fcfec21a2becdffa,중지된 예약의 반환금이 우편환으로 지급된다고 합니다. 수령인이 직접 확인해야 할 지급 정보가 궁금합니다.,refund,basic-case-5273fcfec21a2becdffa,team-added-synthetic:basic-independent-v2
+basic-c2d70971bf3203c60f15,결제 취소가 일괄 정산된다고 합니다. 제 주문이 정산 대상에 포함됐는지 확인해 주세요.,refund,basic-case-c2d70971bf3203c60f15,team-added-synthetic:basic-independent-v2
+basic-b89a704764f083742b62,기관 초대 메일을 개인 계정으로 열었습니다. 해당 초대가 어느 회원에 연결됐는지 확인하고 싶습니다.,account,basic-case-b89a704764f083742b62,team-added-synthetic:basic-independent-v2
+basic-afe25273c6048d3d1c83,대금 반환을 신청했는데 계약자 확인 서류가 누락됐습니다. 심사를 계속하려면 어떤 서류를 보완해야 하나요?,refund,basic-case-afe25273c6048d3d1c83,team-added-synthetic:basic-independent-v2
+basic-b747beb4f1a7bf766349,변경된 공연 시간이 맞지 않아 관람할 수 없습니다. 일정 변경에 따른 취소 수수료 기준을 확인해 주세요.,refund,basic-case-b747beb4f1a7bf766349,team-added-synthetic:basic-independent-v2
+basic-af8acbd4364ca1e0c3a0,앱을 재설치한 뒤 다른 사람의 회원 이름이 보입니다. 제 계정으로 올바르게 접속됐는지 확인해 주세요.,account,basic-case-af8acbd4364ca1e0c3a0,team-added-synthetic:basic-independent-v2
+basic-12fffd7d0aceddbac4dd,익명 수령이 가능한 주문인데 송장에 실명이 공개돼 있습니다. 발송 전 수령 표기를 확인하고 싶습니다.,shipping,basic-case-12fffd7d0aceddbac4dd,team-added-synthetic:basic-independent-v2
+basic-232a5ef9cf1817eb39f8,회원 설정에 로그인용 별칭을 추가할 수 있다고 안내받았습니다. 기존 이메일을 유지하면서 별칭을 등록하고 싶습니다.,account,basic-case-232a5ef9cf1817eb39f8,team-added-synthetic:basic-independent-v2
+basic-1492ac53450fc6ece0cb,로그인할 때 기기 등록 한도를 넘었다는 안내가 나옵니다. 사용하지 않는 기기 등록을 지우고 싶습니다.,account,basic-case-1492ac53450fc6ece0cb,team-added-synthetic:basic-independent-v2
+basic-1f66c40e0d1f8e7d647e,반품 승인은 났지만 회수비가 얼마인지 안내가 없습니다. 받을 환급액에서 어떤 비용이 빠지는지 궁금합니다.,refund,basic-case-1f66c40e0d1f8e7d647e,team-added-synthetic:basic-independent-v2
+basic-db41f88cedb12e09779c,브라우저에서 회원 로그인을 하면 빈 화면만 나옵니다. 앱에서는 접속이 되는데 웹 접근 문제를 확인하고 싶습니다.,account,basic-case-db41f88cedb12e09779c,team-added-synthetic:basic-independent-v2
+basic-1608f2fc5a1e3764dd5e,사용하지 않는 SNS 계정을 로그인 수단에서 제거하고 싶습니다. 회원의 다른 로그인 수단은 유지합니다.,account,basic-case-1608f2fc5a1e3764dd5e,team-added-synthetic:basic-independent-v2
+basic-7a6b4f7c6766b60df3df,가입을 도와준 사람이 자신의 연락처를 넣었습니다. 제 연락처로 회원 인증 정보를 정정하고 싶습니다.,account,basic-case-7a6b4f7c6766b60df3df,team-added-synthetic:basic-independent-v2
+basic-890fba26d21c2cf097eb,예약 운송 기사에게 전달할 현장 사진을 첨부하려 합니다. 배송 요청에 사진을 보낼 수 있나요?,shipping,basic-case-890fba26d21c2cf097eb,team-added-synthetic:basic-independent-v2
+basic-28b644d7fdbbafb08231,인증 번호를 붙여넣으면 마지막 글자가 사라집니다. 회원 인증 입력 문제를 해결할 방법을 알려 주세요.,account,basic-case-28b644d7fdbbafb08231,team-added-synthetic:basic-independent-v2
+basic-e131b39250d50eb92f30,금액 반환을 위한 본인 확인 링크가 만료됐습니다. 해당 환급 건의 확인 절차를 다시 진행하고 싶습니다.,refund,basic-case-e131b39250d50eb92f30,team-added-synthetic:basic-independent-v2
+basic-b6a2b40d14bcfa7d061e,서비스 해지 확인서는 받았지만 선납 요금 정산서는 없습니다. 사용분을 공제한 반환 계산을 요청합니다.,refund,basic-case-b6a2b40d14bcfa7d061e,team-added-synthetic:basic-independent-v2
+basic-35f58378bad95848f9c8,초대받은 그룹을 나갔는데 회원 프로필에 그룹명이 남아 있습니다. 소속 표시를 해제하고 싶습니다.,account,basic-case-35f58378bad95848f9c8,team-added-synthetic:basic-independent-v2
+basic-3c12c9d1acbee5d456f7,계약서에 적힌 환급 계좌와 취소 신청서의 계좌가 다릅니다. 반환 전에 적용할 계좌를 확인해 주세요.,refund,basic-case-3c12c9d1acbee5d456f7,team-added-synthetic:basic-independent-v2
+basic-188be559d06ba13c600b,추가 구매하지 않은 연장 보증료가 결제됐습니다. 해당 부가 서비스 청구만 취소하고 싶습니다.,refund,basic-case-188be559d06ba13c600b,team-added-synthetic:basic-independent-v2
+basic-64ec296a2a612917ba6c,취소한 계좌이체 주문의 입금증을 제출하라고 합니다. 환급 확인에 필요한 표시 항목을 알려 주세요.,refund,basic-case-64ec296a2a612917ba6c,team-added-synthetic:basic-independent-v2
+basic-ceb8920d4390426f2acb,개봉한 제품이 설명된 구성과 다릅니다. 구성 오류로 반품 심사를 받으려면 무엇을 제출해야 하나요?,refund,basic-case-ceb8920d4390426f2acb,team-added-synthetic:basic-independent-v2
+basic-572b4e8df5b39defca1e,기관 계정에 두 명의 공동 관리자를 지정하려 합니다. 관리자 수와 역할 설정 조건을 알려 주세요.,account,basic-case-572b4e8df5b39defca1e,team-added-synthetic:basic-independent-v2
+basic-0b524eb02882f4a1bfdc,낡은 건물이라 승강기를 사용할 수 없습니다. 이번 가전 배송에 계단 운반이 포함됐는지 궁금합니다.,shipping,basic-case-0b524eb02882f4a1bfdc,team-added-synthetic:basic-independent-v2
+basic-a796750e01b5d534e8d1,예약 주문 가격이 잘못 청구됐다고 판매자가 인정했습니다. 차액 반환을 요청할 자료가 무엇인가요?,refund,basic-case-a796750e01b5d534e8d1,team-added-synthetic:basic-independent-v2
+basic-c4e8c91637df56810e5a,전화 인증과 이메일 인증에서 다른 회원번호가 나옵니다. 제 신원과 연결된 계정을 정리하고 싶습니다.,account,basic-case-c4e8c91637df56810e5a,team-added-synthetic:basic-independent-v2
+basic-73d95c60084ebfe9b6f4,회원 주소록에 등록된 오래된 연락처를 삭제하려 합니다. 현재 사용하는 인증 번호는 유지하겠습니다.,account,basic-case-73d95c60084ebfe9b6f4,team-added-synthetic:basic-independent-v2
+basic-32215e20920bd2afbd7f,밤사이 수령함 이용이 중단돼 상자를 꺼낼 수 없습니다. 보관 물품을 다른 창구에서 받을 수 있나요?,shipping,basic-case-32215e20920bd2afbd7f,team-added-synthetic:basic-independent-v2
+basic-aad6a023ac2f6da062d7,이웃이 대신 수령해도 되는 물품인지 알고 싶습니다. 이번 배송의 대리 인수 허용 조건을 알려 주세요.,shipping,basic-case-aad6a023ac2f6da062d7,team-added-synthetic:basic-independent-v2
+basic-82643bedf2f12b7293b7,취소한 온라인 행사 비용이 외국 은행 계좌로 반환된다고 합니다. 지급 경로와 필요한 계좌 정보를 확인해 주세요.,refund,basic-case-82643bedf2f12b7293b7,team-added-synthetic:basic-independent-v2
+basic-7f3e5b12e0ef838e85b6,운송장 조회에는 완료지만 창고 반입 시스템에는 미도착입니다. 창고의 인수 기록과 대조해 주세요.,shipping,basic-case-7f3e5b12e0ef838e85b6,team-added-synthetic:basic-independent-v2
+basic-fb6f2812749463728f60,인증 메일을 열면 앱의 가입 화면이 초기화됩니다. 인증 결과가 회원 등록에 반영되는지 확인해 주세요.,account,basic-case-fb6f2812749463728f60,team-added-synthetic:basic-independent-v2
+basic-1842c8a19918168f4d47,반품 대금은 돌려받았는데 현금영수증은 구매 금액으로 남아 있습니다. 환급에 따른 증빙 취소를 확인해 주세요.,refund,basic-case-1842c8a19918168f4d47,team-added-synthetic:basic-independent-v2

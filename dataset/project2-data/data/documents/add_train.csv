@@ -1,601 +1,301 @@
 ﻿id,text,label,group_id,source
-documents-hard-v1-g001-v1,지난 운영회의에서 시험실 예약 방식을 검토했으나 전면 변경은 확정하지 않았습니다. 다음 주부터 야간 예약자에게만 입실 확인 문자가 발송됩니다. 주간 이용자는 기존 예약 화면을 그대로 사용하며 문자 수신 여부로 예약 취소를 판단하지 마세요.,announcement,documents-hard-v1-g001,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g001-v2,"지난 운영회의에서 시험실 예약 방식을 검토했으나 전면 변경은 확정하지 않았습니다.
-다음 주부터 야간 예약자에게만 입실 확인 문자가 발송됩니다.
-주간 이용자는 기존 예약 화면을 그대로 사용하며 문자 수신 여부로 예약 취소를 판단하지 마세요.",announcement,documents-hard-v1-g001,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g001-v3,"- 지난 운영회의에서 시험실 예약 방식을 검토했으나 전면 변경은 확정하지 않았습니다.
-- 다음 주부터 야간 예약자에게만 입실 확인 문자가 발송됩니다.
-- 주간 이용자는 기존 예약 화면을 그대로 사용하며 문자 수신 여부로 예약 취소를 판단하지 마세요.",announcement,documents-hard-v1-g001,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g001-v4,지난 운영회의에서 시험실 예약 방식을 검토했으나 전면 변경은 확아직 정하지 않았습니다. 다음 주부터 야간 예약자에게만 입실 확인 문자가 발송됩니다. 주간 이용자는 기존 예약 화면을 그대로 사용하며 문자 수신 여부로 예약 취소를 판단하지 마세요.,announcement,documents-hard-v1-g001,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g002-v1,보안 점검 보고서에 계정 잠금 절차가 실려 있어 문의가 많았습니다. 이번 주 외부 협력사의 임시 계정만 재확인 대상입니다. 내부 직원은 재신청할 필요가 없으며 확인되지 않은 임시 계정의 종료일은 별도 안내합니다.,announcement,documents-hard-v1-g002,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g002-v2,"보안 점검 보고서에 계정 잠금 절차가 실려 있어 문의가 많았습니다.
-이번 주 외부 협력사의 임시 계정만 재확인 대상입니다.
-내부 직원은 재신청할 필요가 없으며 확인되지 않은 임시 계정의 종료일은 별도 안내합니다.",announcement,documents-hard-v1-g002,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g002-v3,"- 보안 점검 보고서에 계정 잠금 절차가 실려 있어 문의가 많았습니다.
-- 이번 주 외부 협력사의 임시 계정만 재확인 대상입니다.
-- 내부 직원은 재신청할 필요가 없으며 확인되지 않은 임시 계정의 종료일은 별도 안내합니다.",announcement,documents-hard-v1-g002,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g002-v4,내용을 다음과 같이 정리합니다. 보안 점검 보고서에 계정 잠금 절차가 실려 있어 문의가 많았습니다. 이번 주 외부 협력사의 임시 계정만 재확인 대상입니다. 내부 직원은 재신청할 필요가 없으며 확인되지 않은 임시 계정의 종료일은 별도 안내합니다.,announcement,documents-hard-v1-g002,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g003-v1,지난 간담회에서는 독서모임 폐지를 제안한 의견도 있었습니다. 이번 달에는 진행자 부재로 수요일 모임만 쉽니다. 금요일 모임은 예정대로 열리며 다음 달 운영 여부는 아직 정하지 않았습니다.,announcement,documents-hard-v1-g003,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g003-v2,"지난 간담회에서는 독서모임 폐지를 제안한 의견도 있었습니다.
-이번 달에는 진행자 부재로 수요일 모임만 쉽니다.
-금요일 모임은 예정대로 열리며 다음 달 운영 여부는 아직 정하지 않았습니다.",announcement,documents-hard-v1-g003,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g003-v3,"- 지난 간담회에서는 독서모임 폐지를 제안한 의견도 있었습니다.
-- 이번 달에는 진행자 부재로 수요일 모임만 쉽니다.
-- 금요일 모임은 예정대로 열리며 다음 달 운영 여부는 아직 정하지 않았습니다.",announcement,documents-hard-v1-g003,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g003-v4,지난 간담회에서는 독서모임 폐지를 제안한 의견도 있었습니다. 이번 달에는 진행자 부재로 수요일 모임만 쉽니다. 금요일 모임은 예정대로 열리며 다음 달 운영 여부는 아직 아직 정하지 않았습니다.,announcement,documents-hard-v1-g003,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g004-v1,검사 장비의 교정 방법은 기존 사용 지침에서 확인할 수 있습니다. 이번 교정 기간에는 분석실 B의 장비만 사용이 제한됩니다. 분석실 A의 예약은 유지되며 B의 재개일은 교정 결과를 확인한 뒤 알립니다.,announcement,documents-hard-v1-g004,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g004-v2,"검사 장비의 교정 방법은 기존 사용 지침에서 확인할 수 있습니다.
-이번 교정 기간에는 분석실 B의 장비만 사용이 제한됩니다.
-분석실 A의 예약은 유지되며 B의 재개일은 교정 결과를 확인한 뒤 알립니다.",announcement,documents-hard-v1-g004,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g004-v3,"- 검사 장비의 교정 방법은 기존 사용 지침에서 확인할 수 있습니다.
-- 이번 교정 기간에는 분석실 B의 장비만 사용이 제한됩니다.
-- 분석실 A의 예약은 유지되며 B의 재개일은 교정 결과를 확인한 뒤 알립니다.",announcement,documents-hard-v1-g004,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g004-v4,내용을 다음과 같이 정리합니다. 검사 장비의 교정 방법은 기존 사용 지침에서 확인할 수 있습니다. 이번 교정 기간에는 분석실 B의 장비만 사용이 제한됩니다. 분석실 A의 예약은 유지되며 B의 재개일은 교정 결과를 확인한 뒤 알립니다.,announcement,documents-hard-v1-g004,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g005-v1,평가회의에서 수료증 발급 조건을 완화하자는 의견이 나왔지만 채택되지 않았습니다. 이번 기수 수료자는 금요일까지 이름 표기를 확인해 주세요. 표기 확인은 수료 여부 재심사가 아니며 조건 미충족자의 발급을 보장하지 않습니다.,announcement,documents-hard-v1-g005,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g005-v2,"평가회의에서 수료증 발급 조건을 완화하자는 의견이 나왔지만 채택되지 않았습니다.
-이번 기수 수료자는 금요일까지 이름 표기를 확인해 주세요.
-표기 확인은 수료 여부 재심사가 아니며 조건 미충족자의 발급을 보장하지 않습니다.",announcement,documents-hard-v1-g005,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g005-v3,"- 평가회의에서 수료증 발급 조건을 완화하자는 의견이 나왔지만 채택되지 않았습니다.
-- 이번 기수 수료자는 금요일까지 이름 표기를 확인해 주세요.
-- 표기 확인은 수료 여부 재심사가 아니며 조건 미충족자의 발급을 보장하지 않습니다.",announcement,documents-hard-v1-g005,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g005-v4,평가회의에서 수료증 발급 조건을 완화하자는 의견이 나왔지만 채택되지 않았습니다. 이번 기수 수료자는 금요일까지 이름 표기를 확인하여 주세요. 표기 확인은 수료 여부 재심사가 아니며 조건 미충족자의 발급을 보장하지 않습니다.,announcement,documents-hard-v1-g005,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g006-v1,모바일 출입증 발급 순서는 안내 화면에 이미 게시되어 있습니다. 오는 월요일 오전에는 시스템 이전으로 신규 발급만 중단됩니다. 이미 발급된 출입증과 종이 방문증은 계속 사용할 수 있습니다.,announcement,documents-hard-v1-g006,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g006-v2,"모바일 출입증 발급 순서는 안내 화면에 이미 게시되어 있습니다.
-오는 월요일 오전에는 시스템 이전으로 신규 발급만 중단됩니다.
-이미 발급된 출입증과 종이 방문증은 계속 사용할 수 있습니다.",announcement,documents-hard-v1-g006,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g006-v3,"- 모바일 출입증 발급 순서는 안내 화면에 이미 게시되어 있습니다.
-- 오는 월요일 오전에는 시스템 이전으로 신규 발급만 중단됩니다.
-- 이미 발급된 출입증과 종이 방문증은 계속 사용할 수 있습니다.",announcement,documents-hard-v1-g006,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g006-v4,내용을 다음과 같이 정리합니다. 모바일 출입증 발급 순서는 안내 화면에 이미 게시되어 있습니다. 오는 월요일 오전에는 시스템 이전으로 신규 발급만 중단됩니다. 이미 발급된 출입증과 종이 방문증은 계속 사용할 수 있습니다.,announcement,documents-hard-v1-g006,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g007-v1,창작실 재료비 정산 방식은 담당자 회의에서 검토 중입니다. 이번 공지는 미제출 영수증의 접수 기한이 목요일이라는 사실을 알리기 위한 것입니다. 기한 내 제출하더라도 비용 인정 여부는 별도 검토하며 전액 지급이 확정된 것은 아닙니다.,announcement,documents-hard-v1-g007,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g007-v2,"창작실 재료비 정산 방식은 담당자 회의에서 검토 중입니다.
-이번 공지는 미제출 영수증의 접수 기한이 목요일이라는 사실을 알리기 위한 것입니다.
-기한 내 제출하더라도 비용 인정 여부는 별도 검토하며 전액 지급이 확정된 것은 아닙니다.",announcement,documents-hard-v1-g007,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g007-v3,"- 창작실 재료비 정산 방식은 담당자 회의에서 검토 중입니다.
-- 이번 공지는 미제출 영수증의 접수 기한이 목요일이라는 사실을 알리기 위한 것입니다.
-- 기한 내 제출하더라도 비용 인정 여부는 별도 검토하며 전액 지급이 확정된 것은 아닙니다.",announcement,documents-hard-v1-g007,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g007-v4,내용을 다음과 같이 정리합니다. 창작실 재료비 정산 방식은 담당자 회의에서 검토 중입니다. 이번 공지는 미제출 영수증의 접수 기한이 목요일이라는 사실을 알리기 위한 것입니다. 기한 내 제출하더라도 비용 인정 여부는 별도 검토하며 전액 지급이 확정된 것은 아닙니다.,announcement,documents-hard-v1-g007,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g008-v1,후원물품 배부 회의에서 물품 수가 부족하다는 의견이 있었습니다. 오늘은 사전 신청한 단체 가운데 수령 연락을 받은 단체만 방문해 주세요. 연락을 받지 못한 단체는 방문 순서와 관계없이 오늘 수령 대상이 아닙니다.,announcement,documents-hard-v1-g008,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g008-v2,"후원물품 배부 회의에서 물품 수가 부족하다는 의견이 있었습니다.
-오늘은 사전 신청한 단체 가운데 수령 연락을 받은 단체만 방문해 주세요.
-연락을 받지 못한 단체는 방문 순서와 관계없이 오늘 수령 대상이 아닙니다.",announcement,documents-hard-v1-g008,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g008-v3,"- 후원물품 배부 회의에서 물품 수가 부족하다는 의견이 있었습니다.
-- 오늘은 사전 신청한 단체 가운데 수령 연락을 받은 단체만 방문해 주세요.
-- 연락을 받지 못한 단체는 방문 순서와 관계없이 오늘 수령 대상이 아닙니다.",announcement,documents-hard-v1-g008,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g008-v4,후원물품 배부 회의에서 물품 수가 부족하다는 의견이 있었습니다. 오늘은 사전 신청한 단체 가운데 수령 연락을 받은 단체만 방문하여 주세요. 연락을 받지 못한 단체는 방문 순서와 관계없이 오늘 수령 대상이 아닙니다.,announcement,documents-hard-v1-g008,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g009-v1,사진 공모전의 파일 변환 방법은 기존 안내서를 참고할 수 있습니다. 접수 마감은 유지하되 서버 오류가 확인된 신청자에게만 다음 날 재제출을 허용합니다. 모든 신청자의 기한이 연장되는 것은 아니며 오류 확인 방법은 지원 창구에서 안내합니다.,announcement,documents-hard-v1-g009,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g009-v2,"사진 공모전의 파일 변환 방법은 기존 안내서를 참고할 수 있습니다.
-접수 마감은 유지하되 서버 오류가 확인된 신청자에게만 다음 날 재제출을 허용합니다.
-모든 신청자의 기한이 연장되는 것은 아니며 오류 확인 방법은 지원 창구에서 안내합니다.",announcement,documents-hard-v1-g009,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g009-v3,"- 사진 공모전의 파일 변환 방법은 기존 안내서를 참고할 수 있습니다.
-- 접수 마감은 유지하되 서버 오류가 확인된 신청자에게만 다음 날 재제출을 허용합니다.
-- 모든 신청자의 기한이 연장되는 것은 아니며 오류 확인 방법은 지원 창구에서 안내합니다.",announcement,documents-hard-v1-g009,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g009-v4,내용을 다음과 같이 정리합니다. 사진 공모전의 파일 변환 방법은 기존 안내서를 참고할 수 있습니다. 접수 마감은 유지하되 서버 오류가 확인된 신청자에게만 다음 날 재제출을 허용합니다. 모든 신청자의 기한이 연장되는 것은 아니며 오류 확인 방법은 지원 창구에서 안내합니다.,announcement,documents-hard-v1-g009,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g010-v1,공동 주방의 세척 순서는 바뀌지 않았습니다. 이번 토요일에는 수도 검사 때문에 오전 이용자만 다른 층 주방을 사용해 주세요. 오후 재개는 검사 결과에 따라 달라질 수 있으므로 이용 전 최신 안내를 확인해 주세요.,announcement,documents-hard-v1-g010,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g010-v2,"공동 주방의 세척 순서는 바뀌지 않았습니다.
-이번 토요일에는 수도 검사 때문에 오전 이용자만 다른 층 주방을 사용해 주세요.
-오후 재개는 검사 결과에 따라 달라질 수 있으므로 이용 전 최신 안내를 확인해 주세요.",announcement,documents-hard-v1-g010,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g010-v3,"- 공동 주방의 세척 순서는 바뀌지 않았습니다.
-- 이번 토요일에는 수도 검사 때문에 오전 이용자만 다른 층 주방을 사용해 주세요.
-- 오후 재개는 검사 결과에 따라 달라질 수 있으므로 이용 전 최신 안내를 확인해 주세요.",announcement,documents-hard-v1-g010,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g010-v4,공동 주방의 세척 순서는 바뀌지 않았습니다. 이번 토요일에는 수도 검사 때문에 오전 이용자만 다른 층 주방을 사용하여 주세요. 오후 재개는 검사 결과에 따라 달라질 수 있으므로 이용 전 최신 안내를 확인하여 주세요.,announcement,documents-hard-v1-g010,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g011-v1,장학 심사 회의에서 증빙 간소화를 논의했으나 이번 접수에는 적용하지 않습니다. 서류 보완 요청을 받은 신청자는 다음 화요일까지 누락 자료를 제출해 주세요. 보완 요청은 선정 통보가 아니며 요청을 받지 않은 사람에게 추가 제출을 요구하는 공지도 아닙니다.,announcement,documents-hard-v1-g011,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g011-v2,"장학 심사 회의에서 증빙 간소화를 논의했으나 이번 접수에는 적용하지 않습니다.
-서류 보완 요청을 받은 신청자는 다음 화요일까지 누락 자료를 제출해 주세요.
-보완 요청은 선정 통보가 아니며 요청을 받지 않은 사람에게 추가 제출을 요구하는 공지도 아닙니다.",announcement,documents-hard-v1-g011,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g011-v3,"- 장학 심사 회의에서 증빙 간소화를 논의했으나 이번 접수에는 적용하지 않습니다.
-- 서류 보완 요청을 받은 신청자는 다음 화요일까지 누락 자료를 제출해 주세요.
-- 보완 요청은 선정 통보가 아니며 요청을 받지 않은 사람에게 추가 제출을 요구하는 공지도 아닙니다.",announcement,documents-hard-v1-g011,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g011-v4,장학 심사 회의에서 증빙 간소화를 논의했으나 이번 접수에는 적용하지 않습니다. 서류 보완 요청을 받은 신청자는 다음 화요일까지 누락 자료를 제출하여 주세요. 보완 요청은 선정 통보가 아니며 요청을 받지 않은 사람에게 추가 제출을 요구하는 공지도 아닙니다.,announcement,documents-hard-v1-g011,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g012-v1,새 번역 도구의 설치 방법은 시범 참여자에게 개별 제공되었습니다. 이번 주 배포 대상은 사전 동의한 연구팀으로 제한합니다. 일반 이용자 배포일은 미정이며 공유 링크를 받았다고 참여자로 등록되는 것은 아닙니다.,announcement,documents-hard-v1-g012,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g012-v2,"새 번역 도구의 설치 방법은 시범 참여자에게 개별 제공되었습니다.
-이번 주 배포 대상은 사전 동의한 연구팀으로 제한합니다.
-일반 이용자 배포일은 미정이며 공유 링크를 받았다고 참여자로 등록되는 것은 아닙니다.",announcement,documents-hard-v1-g012,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g012-v3,"- 새 번역 도구의 설치 방법은 시범 참여자에게 개별 제공되었습니다.
-- 이번 주 배포 대상은 사전 동의한 연구팀으로 제한합니다.
-- 일반 이용자 배포일은 미정이며 공유 링크를 받았다고 참여자로 등록되는 것은 아닙니다.",announcement,documents-hard-v1-g012,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g012-v4,내용을 다음과 같이 정리합니다. 새 번역 도구의 설치 방법은 시범 참여자에게 개별 제공되었습니다. 이번 주 배포 대상은 사전 동의한 연구팀으로 제한합니다. 일반 이용자 배포일은 미정이며 공유 링크를 받았다고 참여자로 등록되는 것은 아닙니다.,announcement,documents-hard-v1-g012,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g013-v1,활동비 지급 절차를 간담회에서 설명한 뒤 여러 문의가 접수되었습니다. 이번 안내의 대상은 계좌 확인 요청을 받은 활동자입니다. 계좌 확인 완료와 지급 완료는 다르며 실제 지급일은 아직 확정하지 않았습니다.,announcement,documents-hard-v1-g013,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g013-v2,"활동비 지급 절차를 간담회에서 설명한 뒤 여러 문의가 접수되었습니다.
-이번 안내의 대상은 계좌 확인 요청을 받은 활동자입니다.
-계좌 확인 완료와 지급 완료는 다르며 실제 지급일은 아직 확정하지 않았습니다.",announcement,documents-hard-v1-g013,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g013-v3,"- 활동비 지급 절차를 간담회에서 설명한 뒤 여러 문의가 접수되었습니다.
-- 이번 안내의 대상은 계좌 확인 요청을 받은 활동자입니다.
-- 계좌 확인 완료와 지급 완료는 다르며 실제 지급일은 아직 확정하지 않았습니다.",announcement,documents-hard-v1-g013,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g013-v4,활동비 지급 절차를 간담회에서 설명한 뒤 여러 문의가 접수되었습니다. 이번 안내의 대상은 계좌 확인 요청을 받은 활동자입니다. 계좌 확인 완료와 지급 완료는 다르며 실제 지급일은 아직 확아직 정하지 않았습니다.,announcement,documents-hard-v1-g013,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g014-v1,대관위원회가 공간 통합을 검토했지만 결정은 보류했습니다. 이번 달 마지막 주에는 음향 공사로 소극장 공연 예약만 조정됩니다. 로비 전시 예약은 유지하며 대체 공연장은 예약자별로 협의합니다.,announcement,documents-hard-v1-g014,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g014-v2,"대관위원회가 공간 통합을 검토했지만 결정은 보류했습니다.
-이번 달 마지막 주에는 음향 공사로 소극장 공연 예약만 조정됩니다.
-로비 전시 예약은 유지하며 대체 공연장은 예약자별로 협의합니다.",announcement,documents-hard-v1-g014,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g014-v3,"- 대관위원회가 공간 통합을 검토했지만 결정은 보류했습니다.
-- 이번 달 마지막 주에는 음향 공사로 소극장 공연 예약만 조정됩니다.
-- 로비 전시 예약은 유지하며 대체 공연장은 예약자별로 협의합니다.",announcement,documents-hard-v1-g014,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g014-v4,대관위원회가 공간 통합을 검토했지만 결정은 보류하였습니다. 이번 달 마지막 주에는 음향 공사로 소극장 공연 예약만 조정됩니다. 로비 전시 예약은 유지하며 대체 공연장은 예약자별로 협의합니다.,announcement,documents-hard-v1-g014,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g015-v1,온라인 투표의 조작 순서는 기존 도움말과 같습니다. 휴면 상태였던 회원은 투표 시작 전 본인 확인을 마쳐야 이번 투표에 참여할 수 있습니다. 일반 회원에게 재확인을 요구하는 것은 아니며 본인 확인만으로 후보 등록이 완료되지는 않습니다.,announcement,documents-hard-v1-g015,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g015-v2,"온라인 투표의 조작 순서는 기존 도움말과 같습니다.
-휴면 상태였던 회원은 투표 시작 전 본인 확인을 마쳐야 이번 투표에 참여할 수 있습니다.
-일반 회원에게 재확인을 요구하는 것은 아니며 본인 확인만으로 후보 등록이 완료되지는 않습니다.",announcement,documents-hard-v1-g015,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g015-v3,"- 온라인 투표의 조작 순서는 기존 도움말과 같습니다.
-- 휴면 상태였던 회원은 투표 시작 전 본인 확인을 마쳐야 이번 투표에 참여할 수 있습니다.
-- 일반 회원에게 재확인을 요구하는 것은 아니며 본인 확인만으로 후보 등록이 완료되지는 않습니다.",announcement,documents-hard-v1-g015,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g015-v4,내용을 다음과 같이 정리합니다. 온라인 투표의 조작 순서는 기존 도움말과 같습니다. 휴면 상태였던 회원은 투표 시작 전 본인 확인을 마쳐야 이번 투표에 참여할 수 있습니다. 일반 회원에게 재확인을 요구하는 것은 아니며 본인 확인만으로 후보 등록이 완료되지는 않습니다.,announcement,documents-hard-v1-g015,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g026-v1,회의에서 요청한 익명 설문 결과를 내보낼 때에는 먼저 응답자 식별 항목을 해제합니다. 미리보기에서 이름과 연락처가 남아 있는지 확인한 뒤 내보내기를 실행합니다. 식별 항목이 계속 보이면 결과를 공유하지 말고 권한 담당자에게 확인합니다.,manual,documents-hard-v1-g026,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g026-v2,"회의에서 요청한 익명 설문 결과를 내보낼 때에는 먼저 응답자 식별 항목을 해제합니다.
-미리보기에서 이름과 연락처가 남아 있는지 확인한 뒤 내보내기를 실행합니다.
-식별 항목이 계속 보이면 결과를 공유하지 말고 권한 담당자에게 확인합니다.",manual,documents-hard-v1-g026,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g026-v3,"- 회의에서 요청한 익명 설문 결과를 내보낼 때에는 먼저 응답자 식별 항목을 해제합니다.
-- 미리보기에서 이름과 연락처가 남아 있는지 확인한 뒤 내보내기를 실행합니다.
-- 식별 항목이 계속 보이면 결과를 공유하지 말고 권한 담당자에게 확인합니다.",manual,documents-hard-v1-g026,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g026-v4,회의에서 요청한 익명 설문 결과를 내보낼 때에는 먼저 응답자 식별 항목을 해제합니다. 미리보기에서 이름과 연락처가 남아 있는지 확인한 뒤 내보내기를 실행합니다. 식별 항목이 계속 보이면 결과를 공유하지 말고 권한 담당자에게 확인하도록 합니다.,manual,documents-hard-v1-g026,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g027-v1,배터리 교체 안내를 받았더라도 기기가 작동 중이면 교체를 시작하지 않습니다. 작업을 저장하고 전원을 끈 다음 상태 표시등이 꺼졌는지 확인합니다. 표시등이 남아 있으면 덮개를 열지 말고 담당자에게 점검을 요청합니다.,manual,documents-hard-v1-g027,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g027-v2,"배터리 교체 안내를 받았더라도 기기가 작동 중이면 교체를 시작하지 않습니다.
-작업을 저장하고 전원을 끈 다음 상태 표시등이 꺼졌는지 확인합니다.
-표시등이 남아 있으면 덮개를 열지 말고 담당자에게 점검을 요청합니다.",manual,documents-hard-v1-g027,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g027-v3,"- 배터리 교체 안내를 받았더라도 기기가 작동 중이면 교체를 시작하지 않습니다.
-- 작업을 저장하고 전원을 끈 다음 상태 표시등이 꺼졌는지 확인합니다.
-- 표시등이 남아 있으면 덮개를 열지 말고 담당자에게 점검을 요청합니다.",manual,documents-hard-v1-g027,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g027-v4,배터리 교체 안내를 받았더라도 기기가 작동 중이면 교체를 시작하지 않습니다. 작업을 저장하고 전원을 끈 다음 상태 표시등이 꺼졌는지 확인하도록 합니다. 표시등이 남아 있으면 덮개를 열지 말고 담당자에게 점검을 요청합니다.,manual,documents-hard-v1-g027,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g028-v1,반납 기한 알림을 받은 공유 태블릿은 먼저 대여 번호와 기기 번호를 대조합니다. 일치하는 경우 개인 계정을 로그아웃하고 반납 화면에 번호를 입력합니다. 번호가 다르면 임의로 초기화하지 않고 대여 담당자에게 확인합니다.,manual,documents-hard-v1-g028,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g028-v2,"반납 기한 알림을 받은 공유 태블릿은 먼저 대여 번호와 기기 번호를 대조합니다.
-일치하는 경우 개인 계정을 로그아웃하고 반납 화면에 번호를 입력합니다.
-번호가 다르면 임의로 초기화하지 않고 대여 담당자에게 확인합니다.",manual,documents-hard-v1-g028,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g028-v3,"- 반납 기한 알림을 받은 공유 태블릿은 먼저 대여 번호와 기기 번호를 대조합니다.
-- 일치하는 경우 개인 계정을 로그아웃하고 반납 화면에 번호를 입력합니다.
-- 번호가 다르면 임의로 초기화하지 않고 대여 담당자에게 확인합니다.",manual,documents-hard-v1-g028,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g028-v4,반납 기한 알림을 받은 공유 태블릿은 먼저 대여 번호와 기기 번호를 대조합니다. 일치하는 경우 개인 계정을 로그아웃하고 반납 화면에 번호를 입력합니다. 번호가 다르면 임의로 초기화하지 않고 대여 담당자에게 확인하도록 합니다.,manual,documents-hard-v1-g028,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g029-v1,회의 결정문을 게시하려면 먼저 확정본인지 검토 중인 초안인지 확인합니다. 확정본만 공개 폴더에 올리고 검토 중인 문서는 내부 폴더에 보관합니다. 파일 이름에 최종이라는 말이 있어도 승인 기록이 없으면 공개하지 않습니다.,manual,documents-hard-v1-g029,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g029-v2,"회의 결정문을 게시하려면 먼저 확정본인지 검토 중인 초안인지 확인합니다.
-확정본만 공개 폴더에 올리고 검토 중인 문서는 내부 폴더에 보관합니다.
-파일 이름에 최종이라는 말이 있어도 승인 기록이 없으면 공개하지 않습니다.",manual,documents-hard-v1-g029,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g029-v3,"- 회의 결정문을 게시하려면 먼저 확정본인지 검토 중인 초안인지 확인합니다.
-- 확정본만 공개 폴더에 올리고 검토 중인 문서는 내부 폴더에 보관합니다.
-- 파일 이름에 최종이라는 말이 있어도 승인 기록이 없으면 공개하지 않습니다.",manual,documents-hard-v1-g029,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g029-v4,회의 결정문을 게시하려면 먼저 확정본인지 검토 중인 초안인지 확인하도록 합니다. 확정본만 공개 폴더에 올리고 검토 중인 문서는 내부 폴더에 보관합니다. 파일 이름에 최종이라는 말이 있어도 승인 기록이 없으면 공개하지 않습니다.,manual,documents-hard-v1-g029,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g030-v1,관람객 입장 변경 공지를 수정할 때에는 기존 공지를 복사하기 전에 적용 날짜를 확인합니다. 새 일정과 예외 대상이 확인되면 내용을 고치고 미리보기에서 이전 날짜가 남지 않았는지 점검합니다. 예외 대상이 미정이면 임의로 정하지 말고 담당자의 확인을 받은 뒤 게시합니다.,manual,documents-hard-v1-g030,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g030-v2,"관람객 입장 변경 공지를 수정할 때에는 기존 공지를 복사하기 전에 적용 날짜를 확인합니다.
-새 일정과 예외 대상이 확인되면 내용을 고치고 미리보기에서 이전 날짜가 남지 않았는지 점검합니다.
-예외 대상이 미정이면 임의로 정하지 말고 담당자의 확인을 받은 뒤 게시합니다.",manual,documents-hard-v1-g030,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g030-v3,"- 관람객 입장 변경 공지를 수정할 때에는 기존 공지를 복사하기 전에 적용 날짜를 확인합니다.
-- 새 일정과 예외 대상이 확인되면 내용을 고치고 미리보기에서 이전 날짜가 남지 않았는지 점검합니다.
-- 예외 대상이 미정이면 임의로 정하지 말고 담당자의 확인을 받은 뒤 게시합니다.",manual,documents-hard-v1-g030,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g030-v4,관람객 입장 변경 공지를 수정할 때에는 기존 공지를 복사하기 전에 적용 날짜를 확인하도록 합니다. 새 일정과 예외 대상이 확인되면 내용을 고치고 미리보기에서 이전 날짜가 남지 않았는지 점검합니다. 예외 대상이 미정이면 임의로 정하지 말고 담당자의 확인을 받은 뒤 게시합니다.,manual,documents-hard-v1-g030,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g031-v1,검사 결과가 보류로 표시된 시료는 완료 시료 보관함으로 옮기지 않습니다. 접수 번호를 기록한 뒤 보류 구역에 두고 재검 요청 여부를 확인합니다. 재검 지시가 없으면 새 검사 번호를 임의로 발급하지 않습니다.,manual,documents-hard-v1-g031,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g031-v2,"검사 결과가 보류로 표시된 시료는 완료 시료 보관함으로 옮기지 않습니다.
-접수 번호를 기록한 뒤 보류 구역에 두고 재검 요청 여부를 확인합니다.
-재검 지시가 없으면 새 검사 번호를 임의로 발급하지 않습니다.",manual,documents-hard-v1-g031,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g031-v3,"- 검사 결과가 보류로 표시된 시료는 완료 시료 보관함으로 옮기지 않습니다.
-- 접수 번호를 기록한 뒤 보류 구역에 두고 재검 요청 여부를 확인합니다.
-- 재검 지시가 없으면 새 검사 번호를 임의로 발급하지 않습니다.",manual,documents-hard-v1-g031,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g031-v4,검사 결과가 보류로 표시된 시료는 완료 시료 보관함으로 옮기지 않습니다. 접수 번호를 기록한 뒤 보류 구역에 두고 재검 요청 여부를 확인하도록 합니다. 재검 지시가 없으면 새 검사 번호를 임의로 발급하지 않습니다.,manual,documents-hard-v1-g031,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g032-v1,회원명 변경을 의결한 기록을 찾을 때에는 먼저 회차와 의결 날짜로 검색 범위를 좁힙니다. 검색 결과에서 제안 내용과 최종 의결 문구를 따로 확인합니다. 제안 문구만 발견되면 그것을 확정된 회원명으로 입력하지 않습니다.,manual,documents-hard-v1-g032,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g032-v2,"회원명 변경을 의결한 기록을 찾을 때에는 먼저 회차와 의결 날짜로 검색 범위를 좁힙니다.
-검색 결과에서 제안 내용과 최종 의결 문구를 따로 확인합니다.
-제안 문구만 발견되면 그것을 확정된 회원명으로 입력하지 않습니다.",manual,documents-hard-v1-g032,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g032-v3,"- 회원명 변경을 의결한 기록을 찾을 때에는 먼저 회차와 의결 날짜로 검색 범위를 좁힙니다.
-- 검색 결과에서 제안 내용과 최종 의결 문구를 따로 확인합니다.
-- 제안 문구만 발견되면 그것을 확정된 회원명으로 입력하지 않습니다.",manual,documents-hard-v1-g032,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g032-v4,회원명 변경을 의결한 기록을 찾을 때에는 먼저 회차와 의결 날짜로 검색 범위를 좁힙니다. 검색 결과에서 제안 내용과 최종 의결 문구를 따로 확인하도록 합니다. 제안 문구만 발견되면 그것을 확정된 회원명으로 입력하지 않습니다.,manual,documents-hard-v1-g032,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g033-v1,교육 참가자에게 취소 안내를 보내기 전 신청 상태를 확인합니다. 승인된 신청 중 취소 대상만 선택하고 발송 전 수신자 목록을 검토합니다. 대기자까지 선택되어 있으면 발송을 멈추고 목록을 수정합니다.,manual,documents-hard-v1-g033,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g033-v2,"교육 참가자에게 취소 안내를 보내기 전 신청 상태를 확인합니다.
-승인된 신청 중 취소 대상만 선택하고 발송 전 수신자 목록을 검토합니다.
-대기자까지 선택되어 있으면 발송을 멈추고 목록을 수정합니다.",manual,documents-hard-v1-g033,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g033-v3,"- 교육 참가자에게 취소 안내를 보내기 전 신청 상태를 확인합니다.
-- 승인된 신청 중 취소 대상만 선택하고 발송 전 수신자 목록을 검토합니다.
-- 대기자까지 선택되어 있으면 발송을 멈추고 목록을 수정합니다.",manual,documents-hard-v1-g033,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g033-v4,교육 참가자에게 취소 안내를 보내기 전 신청 상태를 확인하도록 합니다. 승인된 신청 중 취소 대상만 선택하고 발송 전 수신자 목록을 검토합니다. 대기자까지 선택되어 있으면 발송을 멈추고 목록을 수정합니다.,manual,documents-hard-v1-g033,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g034-v1,합의된 예산표를 수정하려면 변경 승인 번호를 먼저 확인합니다. 승인 범위에 포함된 항목만 수정하고 이전 파일은 별도 버전으로 남깁니다. 회의에서 금액을 언급했더라도 승인 번호가 없으면 확정 금액을 덮어쓰지 않습니다.,manual,documents-hard-v1-g034,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g034-v2,"합의된 예산표를 수정하려면 변경 승인 번호를 먼저 확인합니다.
-승인 범위에 포함된 항목만 수정하고 이전 파일은 별도 버전으로 남깁니다.
-회의에서 금액을 언급했더라도 승인 번호가 없으면 확정 금액을 덮어쓰지 않습니다.",manual,documents-hard-v1-g034,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g034-v3,"- 합의된 예산표를 수정하려면 변경 승인 번호를 먼저 확인합니다.
-- 승인 범위에 포함된 항목만 수정하고 이전 파일은 별도 버전으로 남깁니다.
-- 회의에서 금액을 언급했더라도 승인 번호가 없으면 확정 금액을 덮어쓰지 않습니다.",manual,documents-hard-v1-g034,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g034-v4,합의된 예산표를 수정하려면 변경 승인 번호를 먼저 확인하도록 합니다. 승인 범위에 포함된 항목만 수정하고 이전 파일은 별도 버전으로 남깁니다. 회의에서 금액을 언급했더라도 승인 번호가 없으면 확정 금액을 덮어쓰지 않습니다.,manual,documents-hard-v1-g034,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g035-v1,측정값 누락 알림이 나오면 원본 기록의 시간대부터 확인합니다. 같은 시간대의 장비 기록이 있으면 그 기록을 연결하고 출처를 남깁니다. 기록이 없으면 앞뒤 수치의 평균으로 채우지 말고 누락 상태를 표시합니다.,manual,documents-hard-v1-g035,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g035-v2,"측정값 누락 알림이 나오면 원본 기록의 시간대부터 확인합니다.
-같은 시간대의 장비 기록이 있으면 그 기록을 연결하고 출처를 남깁니다.
-기록이 없으면 앞뒤 수치의 평균으로 채우지 말고 누락 상태를 표시합니다.",manual,documents-hard-v1-g035,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g035-v3,"- 측정값 누락 알림이 나오면 원본 기록의 시간대부터 확인합니다.
-- 같은 시간대의 장비 기록이 있으면 그 기록을 연결하고 출처를 남깁니다.
-- 기록이 없으면 앞뒤 수치의 평균으로 채우지 말고 누락 상태를 표시합니다.",manual,documents-hard-v1-g035,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g035-v4,측정값 누락 알림이 나오면 원본 기록의 시간대부터 확인하도록 합니다. 같은 시간대의 장비 기록이 있으면 그 기록을 연결하고 출처를 남깁니다. 기록이 없으면 앞뒤 수치의 평균으로 채우지 말고 누락 상태를 표시합니다.,manual,documents-hard-v1-g035,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g036-v1,긴급 연락망 갱신 공지를 받으면 등록된 담당 역할부터 확인합니다. 본인이 담당하는 역할의 연락처만 수정한 뒤 확인 요청을 제출합니다. 다른 사람의 연락처가 잘못되어 보여도 추측해서 바꾸지 말고 해당 담당자에게 전달합니다.,manual,documents-hard-v1-g036,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g036-v2,"긴급 연락망 갱신 공지를 받으면 등록된 담당 역할부터 확인합니다.
-본인이 담당하는 역할의 연락처만 수정한 뒤 확인 요청을 제출합니다.
-다른 사람의 연락처가 잘못되어 보여도 추측해서 바꾸지 말고 해당 담당자에게 전달합니다.",manual,documents-hard-v1-g036,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g036-v3,"- 긴급 연락망 갱신 공지를 받으면 등록된 담당 역할부터 확인합니다.
-- 본인이 담당하는 역할의 연락처만 수정한 뒤 확인 요청을 제출합니다.
-- 다른 사람의 연락처가 잘못되어 보여도 추측해서 바꾸지 말고 해당 담당자에게 전달합니다.",manual,documents-hard-v1-g036,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g036-v4,긴급 연락망 갱신 공지를 받으면 등록된 담당 역할부터 확인하도록 합니다. 본인이 담당하는 역할의 연락처만 수정한 뒤 확인 요청을 제출합니다. 다른 사람의 연락처가 잘못되어 보여도 추측해서 바꾸지 말고 해당 담당자에게 전달합니다.,manual,documents-hard-v1-g036,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g037-v1,입찰 설명회 자료를 수정할 때에는 먼저 질의 답변 중 확정된 변경 사항을 찾습니다. 확정 항목만 본문에 반영하고 검토 중인 질의는 별도 목록으로 남깁니다. 발표자가 가능성을 언급한 내용을 확정 조건으로 바꾸지 않습니다.,manual,documents-hard-v1-g037,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g037-v2,"입찰 설명회 자료를 수정할 때에는 먼저 질의 답변 중 확정된 변경 사항을 찾습니다.
-확정 항목만 본문에 반영하고 검토 중인 질의는 별도 목록으로 남깁니다.
-발표자가 가능성을 언급한 내용을 확정 조건으로 바꾸지 않습니다.",manual,documents-hard-v1-g037,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g037-v3,"- 입찰 설명회 자료를 수정할 때에는 먼저 질의 답변 중 확정된 변경 사항을 찾습니다.
-- 확정 항목만 본문에 반영하고 검토 중인 질의는 별도 목록으로 남깁니다.
-- 발표자가 가능성을 언급한 내용을 확정 조건으로 바꾸지 않습니다.",manual,documents-hard-v1-g037,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g037-v4,내용을 다음과 같이 정리합니다. 입찰 설명회 자료를 수정할 때에는 먼저 질의 답변 중 확정된 변경 사항을 찾습니다. 확정 항목만 본문에 반영하고 검토 중인 질의는 별도 목록으로 남깁니다. 발표자가 가능성을 언급한 내용을 확정 조건으로 바꾸지 않습니다.,manual,documents-hard-v1-g037,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g038-v1,오프라인 지도에 경로 변경 공지를 반영하려면 최신 변경 번호를 확인합니다. 수정 대상 구간만 갱신한 뒤 연결되는 기존 구간이 끊기지 않았는지 살펴봅니다. 우회 경로가 확정되지 않았으면 임의로 새 길을 표시하지 않습니다.,manual,documents-hard-v1-g038,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g038-v2,"오프라인 지도에 경로 변경 공지를 반영하려면 최신 변경 번호를 확인합니다.
-수정 대상 구간만 갱신한 뒤 연결되는 기존 구간이 끊기지 않았는지 살펴봅니다.
-우회 경로가 확정되지 않았으면 임의로 새 길을 표시하지 않습니다.",manual,documents-hard-v1-g038,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g038-v3,"- 오프라인 지도에 경로 변경 공지를 반영하려면 최신 변경 번호를 확인합니다.
-- 수정 대상 구간만 갱신한 뒤 연결되는 기존 구간이 끊기지 않았는지 살펴봅니다.
-- 우회 경로가 확정되지 않았으면 임의로 새 길을 표시하지 않습니다.",manual,documents-hard-v1-g038,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g038-v4,오프라인 지도에 경로 변경 공지를 반영하려면 최신 변경 번호를 확인하도록 합니다. 수정 대상 구간만 갱신한 뒤 연결되는 기존 구간이 끊기지 않았는지 살펴봅니다. 우회 경로가 확정되지 않았으면 임의로 새 길을 표시하지 않습니다.,manual,documents-hard-v1-g038,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g039-v1,회의 녹음의 공개 요청을 처리할 때에는 참석자의 공개 동의 범위를 확인합니다. 동의된 구간만 복사하고 비공개 구간이 포함되지 않았는지 재생하여 점검합니다. 일부 참석자만 동의했다면 전체 녹음 파일을 공개하지 않습니다.,manual,documents-hard-v1-g039,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g039-v2,"회의 녹음의 공개 요청을 처리할 때에는 참석자의 공개 동의 범위를 확인합니다.
-동의된 구간만 복사하고 비공개 구간이 포함되지 않았는지 재생하여 점검합니다.
-일부 참석자만 동의했다면 전체 녹음 파일을 공개하지 않습니다.",manual,documents-hard-v1-g039,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g039-v3,"- 회의 녹음의 공개 요청을 처리할 때에는 참석자의 공개 동의 범위를 확인합니다.
-- 동의된 구간만 복사하고 비공개 구간이 포함되지 않았는지 재생하여 점검합니다.
-- 일부 참석자만 동의했다면 전체 녹음 파일을 공개하지 않습니다.",manual,documents-hard-v1-g039,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g039-v4,회의 녹음의 공개 요청을 처리할 때에는 참석자의 공개 동의 범위를 확인하도록 합니다. 동의된 구간만 복사하고 비공개 구간이 포함되지 않았는지 재생하여 점검합니다. 일부 참석자만 동의했다면 전체 녹음 파일을 공개하지 않습니다.,manual,documents-hard-v1-g039,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g040-v1,평가 항목 변경 통보를 받은 양식은 사용 중인 평가 차수를 먼저 확인합니다. 새 기준이 적용되는 차수에만 양식을 교체하고 기존 작성본의 기준 버전을 기록합니다. 이전 차수까지 소급 적용하라는 확인이 없으면 점수를 일괄 재계산하지 않습니다.,manual,documents-hard-v1-g040,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g040-v2,"평가 항목 변경 통보를 받은 양식은 사용 중인 평가 차수를 먼저 확인합니다.
-새 기준이 적용되는 차수에만 양식을 교체하고 기존 작성본의 기준 버전을 기록합니다.
-이전 차수까지 소급 적용하라는 확인이 없으면 점수를 일괄 재계산하지 않습니다.",manual,documents-hard-v1-g040,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g040-v3,"- 평가 항목 변경 통보를 받은 양식은 사용 중인 평가 차수를 먼저 확인합니다.
-- 새 기준이 적용되는 차수에만 양식을 교체하고 기존 작성본의 기준 버전을 기록합니다.
-- 이전 차수까지 소급 적용하라는 확인이 없으면 점수를 일괄 재계산하지 않습니다.",manual,documents-hard-v1-g040,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g040-v4,평가 항목 변경 통보를 받은 양식은 사용 중인 평가 차수를 먼저 확인하도록 합니다. 새 기준이 적용되는 차수에만 양식을 교체하고 기존 작성본의 기준 버전을 기록합니다. 이전 차수까지 소급 적용하라는 확인이 없으면 점수를 일괄 재계산하지 않습니다.,manual,documents-hard-v1-g040,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g051-v1,음성 안내 도입을 논의하면서 전 구역에 동시에 설치하자는 의견과 한 구역에서 시험하자는 의견이 나왔습니다. 참석자들은 북쪽 입구에서만 시험 운영하기로 합의했습니다. 전체 확대와 예산 증액은 시험 결과를 보고 다시 검토하기로 했습니다.,minutes,documents-hard-v1-g051,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g051-v2,"음성 안내 도입을 논의하면서 전 구역에 동시에 설치하자는 의견과 한 구역에서 시험하자는 의견이 나왔습니다.
-참석자들은 북쪽 입구에서만 시험 운영하기로 합의했습니다.
-전체 확대와 예산 증액은 시험 결과를 보고 다시 검토하기로 했습니다.",minutes,documents-hard-v1-g051,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g051-v3,"- 음성 안내 도입을 논의하면서 전 구역에 동시에 설치하자는 의견과 한 구역에서 시험하자는 의견이 나왔습니다.
-- 참석자들은 북쪽 입구에서만 시험 운영하기로 합의했습니다.
-- 전체 확대와 예산 증액은 시험 결과를 보고 다시 검토하기로 했습니다.",minutes,documents-hard-v1-g051,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g051-v4,음성 안내 도입을 논의하면서 전 구역에 동시에 설치하자는 의견과 한 구역에서 시험하자는 의견이 나왔습니다. 참석자들은 북쪽 입구에서만 시험 운영하기로 합의하였습니다. 전체 확대와 예산 증액은 시험 결과를 보고 다시 검토하기로 하였습니다.,minutes,documents-hard-v1-g051,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g052-v1,출입증 발급 절차를 줄이자는 제안에 대해 보안 담당자가 본인 확인 단계는 유지해야 한다고 설명했습니다. 사진 재제출 단계만 없애기로 결정했습니다. 본인 확인 면제는 채택하지 않았고 적용일은 시스템 담당자가 검토하기로 했습니다.,minutes,documents-hard-v1-g052,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g052-v2,"출입증 발급 절차를 줄이자는 제안에 대해 보안 담당자가 본인 확인 단계는 유지해야 한다고 설명했습니다.
-사진 재제출 단계만 없애기로 결정했습니다.
-본인 확인 면제는 채택하지 않았고 적용일은 시스템 담당자가 검토하기로 했습니다.",minutes,documents-hard-v1-g052,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g052-v3,"- 출입증 발급 절차를 줄이자는 제안에 대해 보안 담당자가 본인 확인 단계는 유지해야 한다고 설명했습니다.
-- 사진 재제출 단계만 없애기로 결정했습니다.
-- 본인 확인 면제는 채택하지 않았고 적용일은 시스템 담당자가 검토하기로 했습니다.",minutes,documents-hard-v1-g052,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g052-v4,출입증 발급 절차를 줄이자는 제안에 대해 보안 담당자가 본인 확인 단계는 유지해야 한다고 설명하였습니다. 사진 재제출 단계만 없애기로 결정하였습니다. 본인 확인 면제는 채택하지 않았고 적용일은 시스템 담당자가 검토하기로 하였습니다.,minutes,documents-hard-v1-g052,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g053-v1,자료 공개 공지의 문구를 검토하면서 모든 자료를 즉시 공개하자는 의견이 제시되었습니다. 저작권 확인이 끝난 자료만 먼저 공개하기로 했습니다. 확인이 안 된 자료의 공개 시점은 정하지 않았습니다.,minutes,documents-hard-v1-g053,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g053-v2,"자료 공개 공지의 문구를 검토하면서 모든 자료를 즉시 공개하자는 의견이 제시되었습니다.
-저작권 확인이 끝난 자료만 먼저 공개하기로 했습니다.
-확인이 안 된 자료의 공개 시점은 정하지 않았습니다.",minutes,documents-hard-v1-g053,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g053-v3,"- 자료 공개 공지의 문구를 검토하면서 모든 자료를 즉시 공개하자는 의견이 제시되었습니다.
-- 저작권 확인이 끝난 자료만 먼저 공개하기로 했습니다.
-- 확인이 안 된 자료의 공개 시점은 정하지 않았습니다.",minutes,documents-hard-v1-g053,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g053-v4,자료 공개 공지의 문구를 검토하면서 모든 자료를 즉시 공개하자는 의견이 제시되었습니다. 저작권 확인이 끝난 자료만 먼저 공개하기로 하였습니다. 확인이 안 된 자료의 공개 시점은 아직 정하지 않았습니다.,minutes,documents-hard-v1-g053,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g054-v1,실험 장비 사용 순서를 논의하면서 예약 없이 사용하는 방안도 제안되었습니다. 예약은 유지하되 짧은 점검 작업을 위한 별도 시간을 두기로 했습니다. 별도 시간의 길이와 시작일은 담당자가 조사한 뒤 다시 논의하기로 했습니다.,minutes,documents-hard-v1-g054,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g054-v2,"실험 장비 사용 순서를 논의하면서 예약 없이 사용하는 방안도 제안되었습니다.
-예약은 유지하되 짧은 점검 작업을 위한 별도 시간을 두기로 했습니다.
-별도 시간의 길이와 시작일은 담당자가 조사한 뒤 다시 논의하기로 했습니다.",minutes,documents-hard-v1-g054,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g054-v3,"- 실험 장비 사용 순서를 논의하면서 예약 없이 사용하는 방안도 제안되었습니다.
-- 예약은 유지하되 짧은 점검 작업을 위한 별도 시간을 두기로 했습니다.
-- 별도 시간의 길이와 시작일은 담당자가 조사한 뒤 다시 논의하기로 했습니다.",minutes,documents-hard-v1-g054,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g054-v4,실험 장비 사용 순서를 논의하면서 예약 없이 사용하는 방안도 제안되었습니다. 예약은 유지하되 짧은 점검 작업을 위한 별도 시간을 두기로 하였습니다. 별도 시간의 길이와 시작일은 담당자가 조사한 뒤 다시 논의하기로 하였습니다.,minutes,documents-hard-v1-g054,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g055-v1,기부자 명단 게시 방법을 검토한 자리에서 이름과 금액을 함께 알리자는 의견이 나왔습니다. 공개 동의한 이름만 게시하고 금액은 싣지 않기로 결정했습니다. 익명 기부자의 공개 동의 여부는 실무자가 확인하기로 했습니다.,minutes,documents-hard-v1-g055,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g055-v2,"기부자 명단 게시 방법을 검토한 자리에서 이름과 금액을 함께 알리자는 의견이 나왔습니다.
-공개 동의한 이름만 게시하고 금액은 싣지 않기로 결정했습니다.
-익명 기부자의 공개 동의 여부는 실무자가 확인하기로 했습니다.",minutes,documents-hard-v1-g055,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g055-v3,"- 기부자 명단 게시 방법을 검토한 자리에서 이름과 금액을 함께 알리자는 의견이 나왔습니다.
-- 공개 동의한 이름만 게시하고 금액은 싣지 않기로 결정했습니다.
-- 익명 기부자의 공개 동의 여부는 실무자가 확인하기로 했습니다.",minutes,documents-hard-v1-g055,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g055-v4,기부자 명단 게시 방법을 검토한 자리에서 이름과 금액을 함께 알리자는 의견이 나왔습니다. 공개 동의한 이름만 게시하고 금액은 싣지 않기로 결정하였습니다. 익명 기부자의 공개 동의 여부는 실무자가 확인하기로 하였습니다.,minutes,documents-hard-v1-g055,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g056-v1,분실물 인계 방법을 논의하면서 신분증 사본을 받자는 제안이 있었습니다. 사본 보관은 하지 않고 현장에서 물품 특징을 확인하는 방식을 유지하기로 했습니다. 대리 수령 절차는 추가 검토 대상으로 남겼습니다.,minutes,documents-hard-v1-g056,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g056-v2,"분실물 인계 방법을 논의하면서 신분증 사본을 받자는 제안이 있었습니다.
-사본 보관은 하지 않고 현장에서 물품 특징을 확인하는 방식을 유지하기로 했습니다.
-대리 수령 절차는 추가 검토 대상으로 남겼습니다.",minutes,documents-hard-v1-g056,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g056-v3,"- 분실물 인계 방법을 논의하면서 신분증 사본을 받자는 제안이 있었습니다.
-- 사본 보관은 하지 않고 현장에서 물품 특징을 확인하는 방식을 유지하기로 했습니다.
-- 대리 수령 절차는 추가 검토 대상으로 남겼습니다.",minutes,documents-hard-v1-g056,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g056-v4,분실물 인계 방법을 논의하면서 신분증 사본을 받자는 제안이 있었습니다. 사본 보관은 하지 않고 현장에서 물품 특징을 확인하는 방식을 유지하기로 하였습니다. 대리 수령 절차는 추가 검토 대상으로 남겼습니다.,minutes,documents-hard-v1-g056,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g057-v1,직원 교육 공지 초안을 검토하며 결석자에게 불이익을 주자는 의견이 나왔습니다. 이번 교육에는 녹화 시청으로 참여를 인정하기로 했습니다. 불이익 적용은 결정하지 않았으며 녹화 제공 기간은 담당자가 제안하기로 했습니다.,minutes,documents-hard-v1-g057,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g057-v2,"직원 교육 공지 초안을 검토하며 결석자에게 불이익을 주자는 의견이 나왔습니다.
-이번 교육에는 녹화 시청으로 참여를 인정하기로 했습니다.
-불이익 적용은 결정하지 않았으며 녹화 제공 기간은 담당자가 제안하기로 했습니다.",minutes,documents-hard-v1-g057,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g057-v3,"- 직원 교육 공지 초안을 검토하며 결석자에게 불이익을 주자는 의견이 나왔습니다.
-- 이번 교육에는 녹화 시청으로 참여를 인정하기로 했습니다.
-- 불이익 적용은 결정하지 않았으며 녹화 제공 기간은 담당자가 제안하기로 했습니다.",minutes,documents-hard-v1-g057,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g057-v4,직원 교육 공지 초안을 검토하며 결석자에게 불이익을 주자는 의견이 나왔습니다. 이번 교육에는 녹화 시청으로 참여를 인정하기로 하였습니다. 불이익 적용은 결정하지 않았으며 녹화 제공 기간은 담당자가 제안하기로 하였습니다.,minutes,documents-hard-v1-g057,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g058-v1,공동 구매의 환급 절차를 점검하면서 잔액을 다음 구매에 쓰자는 제안이 있었습니다. 참여자에게 잔액을 돌려주는 원칙을 유지하기로 했습니다. 송금 비용 부담 방식은 합의되지 않아 다음 논의로 넘겼습니다.,minutes,documents-hard-v1-g058,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g058-v2,"공동 구매의 환급 절차를 점검하면서 잔액을 다음 구매에 쓰자는 제안이 있었습니다.
-참여자에게 잔액을 돌려주는 원칙을 유지하기로 했습니다.
-송금 비용 부담 방식은 합의되지 않아 다음 논의로 넘겼습니다.",minutes,documents-hard-v1-g058,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g058-v3,"- 공동 구매의 환급 절차를 점검하면서 잔액을 다음 구매에 쓰자는 제안이 있었습니다.
-- 참여자에게 잔액을 돌려주는 원칙을 유지하기로 했습니다.
-- 송금 비용 부담 방식은 합의되지 않아 다음 논의로 넘겼습니다.",minutes,documents-hard-v1-g058,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g058-v4,공동 구매의 환급 절차를 점검하면서 잔액을 다음 구매에 쓰자는 제안이 있었습니다. 참여자에게 잔액을 돌려주는 원칙을 유지하기로 하였습니다. 송금 비용 부담 방식은 합의되지 않아 다음 논의로 넘겼습니다.,minutes,documents-hard-v1-g058,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g059-v1,견학 신청 안내를 고치는 회의에서 선착순 선발과 추첨을 비교했습니다. 신청자가 정원을 넘을 때에만 추첨하기로 결정했습니다. 정원 이내 신청자에게도 추첨을 적용하자는 의견은 채택하지 않았습니다.,minutes,documents-hard-v1-g059,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g059-v2,"견학 신청 안내를 고치는 회의에서 선착순 선발과 추첨을 비교했습니다.
-신청자가 정원을 넘을 때에만 추첨하기로 결정했습니다.
-정원 이내 신청자에게도 추첨을 적용하자는 의견은 채택하지 않았습니다.",minutes,documents-hard-v1-g059,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g059-v3,"- 견학 신청 안내를 고치는 회의에서 선착순 선발과 추첨을 비교했습니다.
-- 신청자가 정원을 넘을 때에만 추첨하기로 결정했습니다.
-- 정원 이내 신청자에게도 추첨을 적용하자는 의견은 채택하지 않았습니다.",minutes,documents-hard-v1-g059,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g059-v4,견학 신청 안내를 고치는 회의에서 선착순 선발과 추첨을 비교하였습니다. 신청자가 정원을 넘을 때에만 추첨하기로 결정하였습니다. 정원 이내 신청자에게도 추첨을 적용하자는 의견은 채택하지 않았습니다.,minutes,documents-hard-v1-g059,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g060-v1,제작실 사고 대응 순서를 검토하며 누구나 장비를 재가동하게 하자는 의견이 나왔습니다. 재가동은 점검 담당자가 확인한 뒤에만 허용하기로 했습니다. 일반 이용자의 재가동 권한은 부여하지 않았고 점검 담당자 지정은 보류했습니다.,minutes,documents-hard-v1-g060,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g060-v2,"제작실 사고 대응 순서를 검토하며 누구나 장비를 재가동하게 하자는 의견이 나왔습니다.
-재가동은 점검 담당자가 확인한 뒤에만 허용하기로 했습니다.
-일반 이용자의 재가동 권한은 부여하지 않았고 점검 담당자 지정은 보류했습니다.",minutes,documents-hard-v1-g060,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g060-v3,"- 제작실 사고 대응 순서를 검토하며 누구나 장비를 재가동하게 하자는 의견이 나왔습니다.
-- 재가동은 점검 담당자가 확인한 뒤에만 허용하기로 했습니다.
-- 일반 이용자의 재가동 권한은 부여하지 않았고 점검 담당자 지정은 보류했습니다.",minutes,documents-hard-v1-g060,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g060-v4,제작실 사고 대응 순서를 검토하며 누구나 장비를 재가동하게 하자는 의견이 나왔습니다. 재가동은 점검 담당자가 확인한 뒤에만 허용하기로 하였습니다. 일반 이용자의 재가동 권한은 부여하지 않았고 점검 담당자 지정은 보류하였습니다.,minutes,documents-hard-v1-g060,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g061-v1,문서 보관 기한을 논의하면서 모든 초안을 즉시 삭제하자는 의견이 제시되었습니다. 의사결정 근거가 담긴 초안은 따로 보관하기로 했습니다. 일반 초안의 보관 기간은 법무 검토 후 정하기로 했습니다.,minutes,documents-hard-v1-g061,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g061-v2,"문서 보관 기한을 논의하면서 모든 초안을 즉시 삭제하자는 의견이 제시되었습니다.
-의사결정 근거가 담긴 초안은 따로 보관하기로 했습니다.
-일반 초안의 보관 기간은 법무 검토 후 정하기로 했습니다.",minutes,documents-hard-v1-g061,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g061-v3,"- 문서 보관 기한을 논의하면서 모든 초안을 즉시 삭제하자는 의견이 제시되었습니다.
-- 의사결정 근거가 담긴 초안은 따로 보관하기로 했습니다.
-- 일반 초안의 보관 기간은 법무 검토 후 정하기로 했습니다.",minutes,documents-hard-v1-g061,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g061-v4,문서 보관 기한을 논의하면서 모든 초안을 즉시 삭제하자는 의견이 제시되었습니다. 의사결정 근거가 담긴 초안은 따로 보관하기로 하였습니다. 일반 초안의 보관 기간은 법무 검토 후 정하기로 하였습니다.,minutes,documents-hard-v1-g061,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g062-v1,연구 지원 공지에서 선정 가능성을 어떻게 표현할지 논의했습니다. 접수 완료 문구와 선정 확정 문구를 구분하기로 했습니다. 선정 인원과 결과 발표일은 예산 확인 전까지 확정하지 않기로 했습니다.,minutes,documents-hard-v1-g062,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g062-v2,"연구 지원 공지에서 선정 가능성을 어떻게 표현할지 논의했습니다.
-접수 완료 문구와 선정 확정 문구를 구분하기로 했습니다.
-선정 인원과 결과 발표일은 예산 확인 전까지 확정하지 않기로 했습니다.",minutes,documents-hard-v1-g062,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g062-v3,"- 연구 지원 공지에서 선정 가능성을 어떻게 표현할지 논의했습니다.
-- 접수 완료 문구와 선정 확정 문구를 구분하기로 했습니다.
-- 선정 인원과 결과 발표일은 예산 확인 전까지 확정하지 않기로 했습니다.",minutes,documents-hard-v1-g062,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g062-v4,연구 지원 공지에서 선정 가능성을 어떻게 표현할지 논의하였습니다. 접수 완료 문구와 선정 확정 문구를 구분하기로 하였습니다. 선정 인원과 결과 발표일은 예산 확인 전까지 확정하지 않기로 하였습니다.,minutes,documents-hard-v1-g062,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g063-v1,출석 확인 방법에 대해 모바일 위치 정보와 현장 서명을 비교했습니다. 위치 정보 수집 없이 현장 서명을 받는 방식을 선택했습니다. 온라인 참여자의 출석 기준은 별도 논의가 필요하다는 데 동의했습니다.,minutes,documents-hard-v1-g063,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g063-v2,"출석 확인 방법에 대해 모바일 위치 정보와 현장 서명을 비교했습니다.
-위치 정보 수집 없이 현장 서명을 받는 방식을 선택했습니다.
-온라인 참여자의 출석 기준은 별도 논의가 필요하다는 데 동의했습니다.",minutes,documents-hard-v1-g063,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g063-v3,"- 출석 확인 방법에 대해 모바일 위치 정보와 현장 서명을 비교했습니다.
-- 위치 정보 수집 없이 현장 서명을 받는 방식을 선택했습니다.
-- 온라인 참여자의 출석 기준은 별도 논의가 필요하다는 데 동의했습니다.",minutes,documents-hard-v1-g063,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g063-v4,출석 확인 방법에 대해 모바일 위치 정보와 현장 서명을 비교하였습니다. 위치 정보 수집 없이 현장 서명을 받는 방식을 선택하였습니다. 온라인 참여자의 출석 기준은 별도 논의가 필요하다는 데 동의하였습니다.,minutes,documents-hard-v1-g063,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g064-v1,개인정보 요청 처리 순서를 검토하며 모든 요청을 자동 승인하자는 의견이 나왔습니다. 요청자의 권한을 확인한 뒤 담당자가 처리하도록 결정했습니다. 자동 승인 도입은 채택하지 않았고 처리 기한 변경은 보류했습니다.,minutes,documents-hard-v1-g064,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g064-v2,"개인정보 요청 처리 순서를 검토하며 모든 요청을 자동 승인하자는 의견이 나왔습니다.
-요청자의 권한을 확인한 뒤 담당자가 처리하도록 결정했습니다.
-자동 승인 도입은 채택하지 않았고 처리 기한 변경은 보류했습니다.",minutes,documents-hard-v1-g064,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g064-v3,"- 개인정보 요청 처리 순서를 검토하며 모든 요청을 자동 승인하자는 의견이 나왔습니다.
-- 요청자의 권한을 확인한 뒤 담당자가 처리하도록 결정했습니다.
-- 자동 승인 도입은 채택하지 않았고 처리 기한 변경은 보류했습니다.",minutes,documents-hard-v1-g064,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g064-v4,개인정보 요청 처리 순서를 검토하며 모든 요청을 자동 승인하자는 의견이 나왔습니다. 요청자의 권한을 확인한 뒤 담당자가 처리하도록 결정하였습니다. 자동 승인 도입은 채택하지 않았고 처리 기한 변경은 보류하였습니다.,minutes,documents-hard-v1-g064,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g065-v1,물품 검수 결과를 알리는 양식에 대해 정상과 불량만 표기하자는 제안이 있었습니다. 확인 대기 상태를 추가하여 미검수 물품을 정상으로 오해하지 않게 하기로 했습니다. 양식 배포는 담당자의 검토 후 진행하며 배포일은 정하지 않았습니다.,minutes,documents-hard-v1-g065,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g065-v2,"물품 검수 결과를 알리는 양식에 대해 정상과 불량만 표기하자는 제안이 있었습니다.
-확인 대기 상태를 추가하여 미검수 물품을 정상으로 오해하지 않게 하기로 했습니다.
-양식 배포는 담당자의 검토 후 진행하며 배포일은 정하지 않았습니다.",minutes,documents-hard-v1-g065,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g065-v3,"- 물품 검수 결과를 알리는 양식에 대해 정상과 불량만 표기하자는 제안이 있었습니다.
-- 확인 대기 상태를 추가하여 미검수 물품을 정상으로 오해하지 않게 하기로 했습니다.
-- 양식 배포는 담당자의 검토 후 진행하며 배포일은 정하지 않았습니다.",minutes,documents-hard-v1-g065,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g065-v4,물품 검수 결과를 알리는 양식에 대해 정상과 불량만 표기하자는 제안이 있었습니다. 확인 대기 상태를 추가하여 미검수 물품을 정상으로 오해하지 않게 하기로 하였습니다. 양식 배포는 담당자의 검토 후 진행하며 배포일은 아직 정하지 않았습니다.,minutes,documents-hard-v1-g065,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g016-v1,점검회의에서는 데이터 공개 범위를 줄이자는 제안이 나왔습니다. 현재 공개된 자료는 유지하되 신규 자료의 공개만 이번 주 잠시 멈춥니다. 새 공개 기준과 재개일은 확정 후 별도 안내합니다.,announcement,documents-hard-v1-g016,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g016-v2,"점검회의에서는 데이터 공개 범위를 줄이자는 제안이 나왔습니다.
-현재 공개된 자료는 유지하되 신규 자료의 공개만 이번 주 잠시 멈춥니다.
-새 공개 기준과 재개일은 확정 후 별도 안내합니다.",announcement,documents-hard-v1-g016,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g016-v3,"- 점검회의에서는 데이터 공개 범위를 줄이자는 제안이 나왔습니다.
-- 현재 공개된 자료는 유지하되 신규 자료의 공개만 이번 주 잠시 멈춥니다.
-- 새 공개 기준과 재개일은 확정 후 별도 안내합니다.",announcement,documents-hard-v1-g016,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g016-v4,내용을 다음과 같이 정리합니다. 점검회의에서는 데이터 공개 범위를 줄이자는 제안이 나왔습니다. 현재 공개된 자료는 유지하되 신규 자료의 공개만 이번 주 잠시 멈춥니다. 새 공개 기준과 재개일은 확정 후 별도 안내합니다.,announcement,documents-hard-v1-g016,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g017-v1,강사 연수의 실습 자료를 내려받는 방법은 변경하지 않았습니다. 이번 기수에서는 청강 신청자에게 실습실 좌석을 제공하지 않습니다. 정규 등록자는 기존 좌석을 이용하며 청강자의 온라인 참관은 계속 가능합니다.,announcement,documents-hard-v1-g017,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g017-v2,"강사 연수의 실습 자료를 내려받는 방법은 변경하지 않았습니다.
-이번 기수에서는 청강 신청자에게 실습실 좌석을 제공하지 않습니다.
-정규 등록자는 기존 좌석을 이용하며 청강자의 온라인 참관은 계속 가능합니다.",announcement,documents-hard-v1-g017,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g017-v3,"- 강사 연수의 실습 자료를 내려받는 방법은 변경하지 않았습니다.
-- 이번 기수에서는 청강 신청자에게 실습실 좌석을 제공하지 않습니다.
-- 정규 등록자는 기존 좌석을 이용하며 청강자의 온라인 참관은 계속 가능합니다.",announcement,documents-hard-v1-g017,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g017-v4,내용을 다음과 같이 정리합니다. 강사 연수의 실습 자료를 내려받는 방법은 변경하지 않았습니다. 이번 기수에서는 청강 신청자에게 실습실 좌석을 제공하지 않습니다. 정규 등록자는 기존 좌석을 이용하며 청강자의 온라인 참관은 계속 가능합니다.,announcement,documents-hard-v1-g017,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g018-v1,재난 대응 훈련 회의에서 전원 대피를 제안했지만 이번 훈련 범위에는 포함하지 않았습니다. 수요일 훈련에는 동관 근무자만 참여합니다. 서관은 정상 운영하며 실제 경보가 발생하면 훈련 안내보다 현장 지시를 우선합니다.,announcement,documents-hard-v1-g018,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g018-v2,"재난 대응 훈련 회의에서 전원 대피를 제안했지만 이번 훈련 범위에는 포함하지 않았습니다.
-수요일 훈련에는 동관 근무자만 참여합니다.
-서관은 정상 운영하며 실제 경보가 발생하면 훈련 안내보다 현장 지시를 우선합니다.",announcement,documents-hard-v1-g018,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g018-v3,"- 재난 대응 훈련 회의에서 전원 대피를 제안했지만 이번 훈련 범위에는 포함하지 않았습니다.
-- 수요일 훈련에는 동관 근무자만 참여합니다.
-- 서관은 정상 운영하며 실제 경보가 발생하면 훈련 안내보다 현장 지시를 우선합니다.",announcement,documents-hard-v1-g018,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g018-v4,내용을 다음과 같이 정리합니다. 재난 대응 훈련 회의에서 전원 대피를 제안했지만 이번 훈련 범위에는 포함하지 않았습니다. 수요일 훈련에는 동관 근무자만 참여합니다. 서관은 정상 운영하며 실제 경보가 발생하면 훈련 안내보다 현장 지시를 우선합니다.,announcement,documents-hard-v1-g018,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g019-v1,복지 포인트 사용 방법은 안내 페이지에서 확인할 수 있습니다. 이번 안내는 계약 종료 예정자에게만 남은 포인트 확인을 요청합니다. 잔액 확인은 현금 환급 신청이 아니며 자동 환급도 제공하지 않습니다.,announcement,documents-hard-v1-g019,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g019-v2,"복지 포인트 사용 방법은 안내 페이지에서 확인할 수 있습니다.
-이번 안내는 계약 종료 예정자에게만 남은 포인트 확인을 요청합니다.
-잔액 확인은 현금 환급 신청이 아니며 자동 환급도 제공하지 않습니다.",announcement,documents-hard-v1-g019,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g019-v3,"- 복지 포인트 사용 방법은 안내 페이지에서 확인할 수 있습니다.
-- 이번 안내는 계약 종료 예정자에게만 남은 포인트 확인을 요청합니다.
-- 잔액 확인은 현금 환급 신청이 아니며 자동 환급도 제공하지 않습니다.",announcement,documents-hard-v1-g019,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g019-v4,내용을 다음과 같이 정리합니다. 복지 포인트 사용 방법은 안내 페이지에서 확인할 수 있습니다. 이번 안내는 계약 종료 예정자에게만 남은 포인트 확인을 요청합니다. 잔액 확인은 현금 환급 신청이 아니며 자동 환급도 제공하지 않습니다.,announcement,documents-hard-v1-g019,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g020-v1,기록 전시의 공개 여부를 협의한 회의는 종료되었습니다. 이번 공개 대상은 이용 동의가 확인된 인터뷰 원고뿐입니다. 녹음 파일은 공개 대상에서 제외하며 추가 동의가 들어온 원고의 공개일은 추후 알립니다.,announcement,documents-hard-v1-g020,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g020-v2,"기록 전시의 공개 여부를 협의한 회의는 종료되었습니다.
-이번 공개 대상은 이용 동의가 확인된 인터뷰 원고뿐입니다.
-녹음 파일은 공개 대상에서 제외하며 추가 동의가 들어온 원고의 공개일은 추후 알립니다.",announcement,documents-hard-v1-g020,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g020-v3,"- 기록 전시의 공개 여부를 협의한 회의는 종료되었습니다.
-- 이번 공개 대상은 이용 동의가 확인된 인터뷰 원고뿐입니다.
-- 녹음 파일은 공개 대상에서 제외하며 추가 동의가 들어온 원고의 공개일은 추후 알립니다.",announcement,documents-hard-v1-g020,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g020-v4,내용을 다음과 같이 정리합니다. 기록 전시의 공개 여부를 협의한 회의는 종료되었습니다. 이번 공개 대상은 이용 동의가 확인된 인터뷰 원고뿐입니다. 녹음 파일은 공개 대상에서 제외하며 추가 동의가 들어온 원고의 공개일은 추후 알립니다.,announcement,documents-hard-v1-g020,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g041-v1,관측 데이터의 단위를 변환할 때에는 원본 단위와 목표 단위를 먼저 대조합니다. 변환식이 확인된 항목에만 계산을 적용하고 원본 열은 남겨 둡니다. 단위 표시가 없는 값은 주변 값으로 추정하여 변환하지 않습니다.,manual,documents-hard-v1-g041,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g041-v2,"관측 데이터의 단위를 변환할 때에는 원본 단위와 목표 단위를 먼저 대조합니다.
-변환식이 확인된 항목에만 계산을 적용하고 원본 열은 남겨 둡니다.
-단위 표시가 없는 값은 주변 값으로 추정하여 변환하지 않습니다.",manual,documents-hard-v1-g041,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g041-v3,"- 관측 데이터의 단위를 변환할 때에는 원본 단위와 목표 단위를 먼저 대조합니다.
-- 변환식이 확인된 항목에만 계산을 적용하고 원본 열은 남겨 둡니다.
-- 단위 표시가 없는 값은 주변 값으로 추정하여 변환하지 않습니다.",manual,documents-hard-v1-g041,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g041-v4,내용을 다음과 같이 정리합니다. 관측 데이터의 단위를 변환할 때에는 원본 단위와 목표 단위를 먼저 대조합니다. 변환식이 확인된 항목에만 계산을 적용하고 원본 열은 남겨 둡니다. 단위 표시가 없는 값은 주변 값으로 추정하여 변환하지 않습니다.,manual,documents-hard-v1-g041,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g042-v1,고장 경보를 받은 저온 보관함은 문을 열기 전에 외부 온도 표시를 기록합니다. 대체 보관 장소가 확보되면 담당자 지시에 따라 물품을 옮기고 이동 시각을 남깁니다. 표시가 정상으로 돌아와도 점검 확인 전에는 경보 기록을 삭제하지 않습니다.,manual,documents-hard-v1-g042,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g042-v2,"고장 경보를 받은 저온 보관함은 문을 열기 전에 외부 온도 표시를 기록합니다.
-대체 보관 장소가 확보되면 담당자 지시에 따라 물품을 옮기고 이동 시각을 남깁니다.
-표시가 정상으로 돌아와도 점검 확인 전에는 경보 기록을 삭제하지 않습니다.",manual,documents-hard-v1-g042,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g042-v3,"- 고장 경보를 받은 저온 보관함은 문을 열기 전에 외부 온도 표시를 기록합니다.
-- 대체 보관 장소가 확보되면 담당자 지시에 따라 물품을 옮기고 이동 시각을 남깁니다.
-- 표시가 정상으로 돌아와도 점검 확인 전에는 경보 기록을 삭제하지 않습니다.",manual,documents-hard-v1-g042,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g042-v4,내용을 다음과 같이 정리합니다. 고장 경보를 받은 저온 보관함은 문을 열기 전에 외부 온도 표시를 기록합니다. 대체 보관 장소가 확보되면 담당자 지시에 따라 물품을 옮기고 이동 시각을 남깁니다. 표시가 정상으로 돌아와도 점검 확인 전에는 경보 기록을 삭제하지 않습니다.,manual,documents-hard-v1-g042,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g043-v1,보조금 반납액을 입력하려면 먼저 확정 통지와 임시 계산서를 구분합니다. 확정 통지의 항목별 금액을 입력한 뒤 합계와 대조합니다. 임시 계산서만 있으면 반납 완료로 표시하지 않고 확인 대기 상태로 둡니다.,manual,documents-hard-v1-g043,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g043-v2,"보조금 반납액을 입력하려면 먼저 확정 통지와 임시 계산서를 구분합니다.
-확정 통지의 항목별 금액을 입력한 뒤 합계와 대조합니다.
-임시 계산서만 있으면 반납 완료로 표시하지 않고 확인 대기 상태로 둡니다.",manual,documents-hard-v1-g043,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g043-v3,"- 보조금 반납액을 입력하려면 먼저 확정 통지와 임시 계산서를 구분합니다.
-- 확정 통지의 항목별 금액을 입력한 뒤 합계와 대조합니다.
-- 임시 계산서만 있으면 반납 완료로 표시하지 않고 확인 대기 상태로 둡니다.",manual,documents-hard-v1-g043,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g043-v4,내용을 다음과 같이 정리합니다. 보조금 반납액을 입력하려면 먼저 확정 통지와 임시 계산서를 구분합니다. 확정 통지의 항목별 금액을 입력한 뒤 합계와 대조합니다. 임시 계산서만 있으면 반납 완료로 표시하지 않고 확인 대기 상태로 둡니다.,manual,documents-hard-v1-g043,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g044-v1,전자 서명 요청이 도착하면 문서 버전과 서명 대상자를 확인합니다. 자신에게 배정된 서명란만 처리하고 완료 화면에서 버전을 다시 확인합니다. 수정 전 버전이라면 다른 서명자의 동의가 있어도 서명을 진행하지 않습니다.,manual,documents-hard-v1-g044,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g044-v2,"전자 서명 요청이 도착하면 문서 버전과 서명 대상자를 확인합니다.
-자신에게 배정된 서명란만 처리하고 완료 화면에서 버전을 다시 확인합니다.
-수정 전 버전이라면 다른 서명자의 동의가 있어도 서명을 진행하지 않습니다.",manual,documents-hard-v1-g044,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g044-v3,"- 전자 서명 요청이 도착하면 문서 버전과 서명 대상자를 확인합니다.
-- 자신에게 배정된 서명란만 처리하고 완료 화면에서 버전을 다시 확인합니다.
-- 수정 전 버전이라면 다른 서명자의 동의가 있어도 서명을 진행하지 않습니다.",manual,documents-hard-v1-g044,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g044-v4,전자 서명 요청이 도착하면 문서 버전과 서명 대상자를 확인하도록 합니다. 자신에게 배정된 서명란만 처리하고 완료 화면에서 버전을 다시 확인하도록 합니다. 수정 전 버전이라면 다른 서명자의 동의가 있어도 서명을 진행하지 않습니다.,manual,documents-hard-v1-g044,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g045-v1,경로 접근 오류가 발생하면 먼저 본인의 프로젝트 배정 상태를 확인합니다. 배정이 유효하면 오류 발생 시각과 경로를 기록하여 권한 담당자에게 전달합니다. 다른 사용자의 계정을 빌리거나 비밀번호를 요청하여 접근하지 않습니다.,manual,documents-hard-v1-g045,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g045-v2,"경로 접근 오류가 발생하면 먼저 본인의 프로젝트 배정 상태를 확인합니다.
-배정이 유효하면 오류 발생 시각과 경로를 기록하여 권한 담당자에게 전달합니다.
-다른 사용자의 계정을 빌리거나 비밀번호를 요청하여 접근하지 않습니다.",manual,documents-hard-v1-g045,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g045-v3,"- 경로 접근 오류가 발생하면 먼저 본인의 프로젝트 배정 상태를 확인합니다.
-- 배정이 유효하면 오류 발생 시각과 경로를 기록하여 권한 담당자에게 전달합니다.
-- 다른 사용자의 계정을 빌리거나 비밀번호를 요청하여 접근하지 않습니다.",manual,documents-hard-v1-g045,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g045-v4,경로 접근 오류가 발생하면 먼저 본인의 프로젝트 배정 상태를 확인하도록 합니다. 배정이 유효하면 오류 발생 시각과 경로를 기록하여 권한 담당자에게 전달합니다. 다른 사용자의 계정을 빌리거나 비밀번호를 요청하여 접근하지 않습니다.,manual,documents-hard-v1-g045,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g066-v1,온라인 전시의 관람료를 논의하면서 전면 무료와 일부 유료 방안을 비교했습니다. 교육용 관람은 무료로 유지하기로 합의했습니다. 일반 관람료와 결제 방식은 아직 결정하지 않았습니다.,minutes,documents-hard-v1-g066,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g066-v2,"온라인 전시의 관람료를 논의하면서 전면 무료와 일부 유료 방안을 비교했습니다.
-교육용 관람은 무료로 유지하기로 합의했습니다.
-일반 관람료와 결제 방식은 아직 결정하지 않았습니다.",minutes,documents-hard-v1-g066,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g066-v3,"- 온라인 전시의 관람료를 논의하면서 전면 무료와 일부 유료 방안을 비교했습니다.
-- 교육용 관람은 무료로 유지하기로 합의했습니다.
-- 일반 관람료와 결제 방식은 아직 결정하지 않았습니다.",minutes,documents-hard-v1-g066,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g066-v4,온라인 전시의 관람료를 논의하면서 전면 무료와 일부 유료 방안을 비교하였습니다. 교육용 관람은 무료로 유지하기로 합의하였습니다. 일반 관람료와 결제 방식은 아직 결아직 정하지 않았습니다.,minutes,documents-hard-v1-g066,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g067-v1,시료 운송의 포장 순서를 검토한 자리에서 냉매를 줄이자는 제안이 나왔습니다. 온도 시험이 끝나기 전에는 기존 냉매량을 유지하기로 했습니다. 시험 비용과 운송 업체 변경은 담당자가 확인한 뒤 다시 검토하기로 했습니다.,minutes,documents-hard-v1-g067,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g067-v2,"시료 운송의 포장 순서를 검토한 자리에서 냉매를 줄이자는 제안이 나왔습니다.
-온도 시험이 끝나기 전에는 기존 냉매량을 유지하기로 했습니다.
-시험 비용과 운송 업체 변경은 담당자가 확인한 뒤 다시 검토하기로 했습니다.",minutes,documents-hard-v1-g067,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g067-v3,"- 시료 운송의 포장 순서를 검토한 자리에서 냉매를 줄이자는 제안이 나왔습니다.
-- 온도 시험이 끝나기 전에는 기존 냉매량을 유지하기로 했습니다.
-- 시험 비용과 운송 업체 변경은 담당자가 확인한 뒤 다시 검토하기로 했습니다.",minutes,documents-hard-v1-g067,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g067-v4,시료 운송의 포장 순서를 검토한 자리에서 냉매를 줄이자는 제안이 나왔습니다. 온도 시험이 끝나기 전에는 기존 냉매량을 유지하기로 하였습니다. 시험 비용과 운송 업체 변경은 담당자가 확인한 뒤 다시 검토하기로 하였습니다.,minutes,documents-hard-v1-g067,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g068-v1,번역 검수 결과를 알리는 문구에서 기계 번역 완료를 최종 검수 완료로 표시해도 되는지 논의했습니다. 두 상태를 분리하고 사람의 검수가 끝난 경우에만 최종 완료로 표시하기로 했습니다. 검수 담당자 충원은 예산 문제로 보류되었습니다.,minutes,documents-hard-v1-g068,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g068-v2,"번역 검수 결과를 알리는 문구에서 기계 번역 완료를 최종 검수 완료로 표시해도 되는지 논의했습니다.
-두 상태를 분리하고 사람의 검수가 끝난 경우에만 최종 완료로 표시하기로 했습니다.
-검수 담당자 충원은 예산 문제로 보류되었습니다.",minutes,documents-hard-v1-g068,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g068-v3,"- 번역 검수 결과를 알리는 문구에서 기계 번역 완료를 최종 검수 완료로 표시해도 되는지 논의했습니다.
-- 두 상태를 분리하고 사람의 검수가 끝난 경우에만 최종 완료로 표시하기로 했습니다.
-- 검수 담당자 충원은 예산 문제로 보류되었습니다.",minutes,documents-hard-v1-g068,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g068-v4,번역 검수 결과를 알리는 문구에서 기계 번역 완료를 최종 검수 완료로 표시해도 되는지 논의하였습니다. 두 상태를 분리하고 사람의 검수가 끝난 경우에만 최종 완료로 표시하기로 하였습니다. 검수 담당자 충원은 예산 문제로 보류되었습니다.,minutes,documents-hard-v1-g068,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g069-v1,방문객 이동 안내를 논의하면서 안내 인력 없이 자유 이동을 허용하자는 의견이 나왔습니다. 장비 구역에는 안내자가 동행하는 원칙을 유지하기로 했습니다. 일반 휴게 구역의 안내 방식은 다음 회의에서 검토하기로 했습니다.,minutes,documents-hard-v1-g069,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g069-v2,"방문객 이동 안내를 논의하면서 안내 인력 없이 자유 이동을 허용하자는 의견이 나왔습니다.
-장비 구역에는 안내자가 동행하는 원칙을 유지하기로 했습니다.
-일반 휴게 구역의 안내 방식은 다음 회의에서 검토하기로 했습니다.",minutes,documents-hard-v1-g069,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g069-v3,"- 방문객 이동 안내를 논의하면서 안내 인력 없이 자유 이동을 허용하자는 의견이 나왔습니다.
-- 장비 구역에는 안내자가 동행하는 원칙을 유지하기로 했습니다.
-- 일반 휴게 구역의 안내 방식은 다음 회의에서 검토하기로 했습니다.",minutes,documents-hard-v1-g069,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g069-v4,방문객 이동 안내를 논의하면서 안내 인력 없이 자유 이동을 허용하자는 의견이 나왔습니다. 장비 구역에는 안내자가 동행하는 원칙을 유지하기로 하였습니다. 일반 휴게 구역의 안내 방식은 다음 회의에서 검토하기로 하였습니다.,minutes,documents-hard-v1-g069,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g070-v1,성과 보고서 작성 방법을 검토하며 목표값을 실적란에 미리 넣자는 제안이 있었습니다. 확인된 실적만 기입하고 미확인 항목은 공란 사유를 남기기로 했습니다. 목표값을 실적으로 대신 쓰는 방안은 채택하지 않았습니다.,minutes,documents-hard-v1-g070,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g070-v2,"성과 보고서 작성 방법을 검토하며 목표값을 실적란에 미리 넣자는 제안이 있었습니다.
-확인된 실적만 기입하고 미확인 항목은 공란 사유를 남기기로 했습니다.
-목표값을 실적으로 대신 쓰는 방안은 채택하지 않았습니다.",minutes,documents-hard-v1-g070,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g070-v3,"- 성과 보고서 작성 방법을 검토하며 목표값을 실적란에 미리 넣자는 제안이 있었습니다.
-- 확인된 실적만 기입하고 미확인 항목은 공란 사유를 남기기로 했습니다.
-- 목표값을 실적으로 대신 쓰는 방안은 채택하지 않았습니다.",minutes,documents-hard-v1-g070,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g070-v4,성과 보고서 작성 방법을 검토하며 목표값을 실적란에 미리 넣자는 제안이 있었습니다. 확인된 실적만 기입하고 미확인 항목은 공란 사유를 남기기로 하였습니다. 목표값을 실적으로 대신 쓰는 방안은 채택하지 않았습니다.,minutes,documents-hard-v1-g070,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g021-v1,실험 참가 절차의 순서는 종전과 같습니다. 이번 차수는 색각 검사 조건에 해당하는 지원자에게만 추가 일정이 배정됩니다. 추가 일정 배정은 최종 참여 확정이 아니며 다른 지원자의 방문 일정은 유지됩니다.,announcement,documents-hard-v1-g021,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g021-v2,"실험 참가 절차의 순서는 종전과 같습니다.
-이번 차수는 색각 검사 조건에 해당하는 지원자에게만 추가 일정이 배정됩니다.
-추가 일정 배정은 최종 참여 확정이 아니며 다른 지원자의 방문 일정은 유지됩니다.",announcement,documents-hard-v1-g021,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g021-v3,"- 실험 참가 절차의 순서는 종전과 같습니다.
-- 이번 차수는 색각 검사 조건에 해당하는 지원자에게만 추가 일정이 배정됩니다.
-- 추가 일정 배정은 최종 참여 확정이 아니며 다른 지원자의 방문 일정은 유지됩니다.",announcement,documents-hard-v1-g021,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g021-v4,내용을 다음과 같이 정리합니다. 실험 참가 절차의 순서는 종전과 같습니다. 이번 차수는 색각 검사 조건에 해당하는 지원자에게만 추가 일정이 배정됩니다. 추가 일정 배정은 최종 참여 확정이 아니며 다른 지원자의 방문 일정은 유지됩니다.,announcement,documents-hard-v1-g021,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g022-v1,환경 분과는 텃밭 구역을 통합하자는 의견을 아직 결정하지 않았습니다. 폭염 예보가 있는 내일은 신규 모종 배부만 연기합니다. 기존 텃밭 출입은 유지하고 모종 배부일은 기온을 확인한 뒤 안내합니다.,announcement,documents-hard-v1-g022,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g022-v2,"환경 분과는 텃밭 구역을 통합하자는 의견을 아직 결정하지 않았습니다.
-폭염 예보가 있는 내일은 신규 모종 배부만 연기합니다.
-기존 텃밭 출입은 유지하고 모종 배부일은 기온을 확인한 뒤 안내합니다.",announcement,documents-hard-v1-g022,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g022-v3,"- 환경 분과는 텃밭 구역을 통합하자는 의견을 아직 결정하지 않았습니다.
-- 폭염 예보가 있는 내일은 신규 모종 배부만 연기합니다.
-- 기존 텃밭 출입은 유지하고 모종 배부일은 기온을 확인한 뒤 안내합니다.",announcement,documents-hard-v1-g022,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g022-v4,환경 분과는 텃밭 구역을 통합하자는 의견을 아직 결아직 정하지 않았습니다. 폭염 예보가 있는 내일은 신규 모종 배부만 연기합니다. 기존 텃밭 출입은 유지하고 모종 배부일은 기온을 확인한 뒤 안내합니다.,announcement,documents-hard-v1-g022,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g023-v1,연구비 변경 신청의 작성 요령은 기존 문서를 사용합니다. 종료 보고서를 이미 제출한 과제는 이번 변경 신청 대상이 아닙니다. 진행 중인 과제는 이번 금요일까지 접수할 수 있으나 접수와 승인 여부는 구분됩니다.,announcement,documents-hard-v1-g023,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g023-v2,"연구비 변경 신청의 작성 요령은 기존 문서를 사용합니다.
-종료 보고서를 이미 제출한 과제는 이번 변경 신청 대상이 아닙니다.
-진행 중인 과제는 이번 금요일까지 접수할 수 있으나 접수와 승인 여부는 구분됩니다.",announcement,documents-hard-v1-g023,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g023-v3,"- 연구비 변경 신청의 작성 요령은 기존 문서를 사용합니다.
-- 종료 보고서를 이미 제출한 과제는 이번 변경 신청 대상이 아닙니다.
-- 진행 중인 과제는 이번 금요일까지 접수할 수 있으나 접수와 승인 여부는 구분됩니다.",announcement,documents-hard-v1-g023,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g023-v4,내용을 다음과 같이 정리합니다. 연구비 변경 신청의 작성 요령은 기존 문서를 사용합니다. 종료 보고서를 이미 제출한 과제는 이번 변경 신청 대상이 아닙니다. 진행 중인 과제는 이번 금요일까지 접수할 수 있으나 접수와 승인 여부는 구분됩니다.,announcement,documents-hard-v1-g023,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g024-v1,상담 운영회의에서 대면 상담 확대를 제안했지만 인력 배정은 미정입니다. 이번 주 예약 변경은 상담사 교체 연락을 받은 이용자에게만 적용됩니다. 나머지 예약은 유지하며 변경 대상자는 지원 창구에서 가능한 시간을 확인해 주세요.,announcement,documents-hard-v1-g024,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g024-v2,"상담 운영회의에서 대면 상담 확대를 제안했지만 인력 배정은 미정입니다.
-이번 주 예약 변경은 상담사 교체 연락을 받은 이용자에게만 적용됩니다.
-나머지 예약은 유지하며 변경 대상자는 지원 창구에서 가능한 시간을 확인해 주세요.",announcement,documents-hard-v1-g024,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g024-v3,"- 상담 운영회의에서 대면 상담 확대를 제안했지만 인력 배정은 미정입니다.
-- 이번 주 예약 변경은 상담사 교체 연락을 받은 이용자에게만 적용됩니다.
-- 나머지 예약은 유지하며 변경 대상자는 지원 창구에서 가능한 시간을 확인해 주세요.",announcement,documents-hard-v1-g024,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g024-v4,상담 운영회의에서 대면 상담 확대를 제안했지만 인력 배정은 미정입니다. 이번 주 예약 변경은 상담사 교체 연락을 받은 이용자에게만 적용됩니다. 나머지 예약은 유지하며 변경 대상자는 지원 창구에서 가능한 시간을 확인하여 주세요.,announcement,documents-hard-v1-g024,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g025-v1,관측소 정비 방법은 담당자용 지침에 따릅니다. 이번 달 공개 관측 행사는 기상 악화로 취소되었습니다. 정기 연구 관측까지 중단하는 것은 아니며 행사 참가비 처리 방식은 별도로 알립니다.,announcement,documents-hard-v1-g025,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g025-v2,"관측소 정비 방법은 담당자용 지침에 따릅니다.
-이번 달 공개 관측 행사는 기상 악화로 취소되었습니다.
-정기 연구 관측까지 중단하는 것은 아니며 행사 참가비 처리 방식은 별도로 알립니다.",announcement,documents-hard-v1-g025,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g025-v3,"- 관측소 정비 방법은 담당자용 지침에 따릅니다.
-- 이번 달 공개 관측 행사는 기상 악화로 취소되었습니다.
-- 정기 연구 관측까지 중단하는 것은 아니며 행사 참가비 처리 방식은 별도로 알립니다.",announcement,documents-hard-v1-g025,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g025-v4,내용을 다음과 같이 정리합니다. 관측소 정비 방법은 담당자용 지침에 따릅니다. 이번 달 공개 관측 행사는 기상 악화로 취소되었습니다. 정기 연구 관측까지 중단하는 것은 아니며 행사 참가비 처리 방식은 별도로 알립니다.,announcement,documents-hard-v1-g025,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g046-v1,발아 실험 기록을 합칠 때에는 먼저 같은 실험 회차인지 확인합니다. 회차가 같으면 관찰 날짜 순으로 정리하고 실패 기록도 남깁니다. 품종이 같더라도 회차가 다르면 한 실험 결과로 합산하지 않습니다.,manual,documents-hard-v1-g046,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g046-v2,"발아 실험 기록을 합칠 때에는 먼저 같은 실험 회차인지 확인합니다.
-회차가 같으면 관찰 날짜 순으로 정리하고 실패 기록도 남깁니다.
-품종이 같더라도 회차가 다르면 한 실험 결과로 합산하지 않습니다.",manual,documents-hard-v1-g046,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g046-v3,"- 발아 실험 기록을 합칠 때에는 먼저 같은 실험 회차인지 확인합니다.
-- 회차가 같으면 관찰 날짜 순으로 정리하고 실패 기록도 남깁니다.
-- 품종이 같더라도 회차가 다르면 한 실험 결과로 합산하지 않습니다.",manual,documents-hard-v1-g046,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g046-v4,발아 실험 기록을 합칠 때에는 먼저 같은 실험 회차인지 확인하도록 합니다. 회차가 같으면 관찰 날짜 순으로 정리하고 실패 기록도 남깁니다. 품종이 같더라도 회차가 다르면 한 실험 결과로 합산하지 않습니다.,manual,documents-hard-v1-g046,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g047-v1,자막 수정 요청을 반영하려면 원영상의 해당 시점을 먼저 재생합니다. 발화와 대조하여 자막만 수정하고 화면에 표시된 수치도 일치하는지 확인합니다. 말이 불명확하면 의미를 만들어 넣지 말고 확인이 필요한 구간으로 표시합니다.,manual,documents-hard-v1-g047,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g047-v2,"자막 수정 요청을 반영하려면 원영상의 해당 시점을 먼저 재생합니다.
-발화와 대조하여 자막만 수정하고 화면에 표시된 수치도 일치하는지 확인합니다.
-말이 불명확하면 의미를 만들어 넣지 말고 확인이 필요한 구간으로 표시합니다.",manual,documents-hard-v1-g047,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g047-v3,"- 자막 수정 요청을 반영하려면 원영상의 해당 시점을 먼저 재생합니다.
-- 발화와 대조하여 자막만 수정하고 화면에 표시된 수치도 일치하는지 확인합니다.
-- 말이 불명확하면 의미를 만들어 넣지 말고 확인이 필요한 구간으로 표시합니다.",manual,documents-hard-v1-g047,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g047-v4,자막 수정 요청을 반영하려면 원영상의 해당 시점을 먼저 재생합니다. 발화와 대조하여 자막만 수정하고 화면에 표시된 수치도 일치하는지 확인하도록 합니다. 말이 불명확하면 의미를 만들어 넣지 말고 확인이 필요한 구간으로 표시합니다.,manual,documents-hard-v1-g047,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g048-v1,물품 폐기 결정을 집행하기 전 목록의 승인 상태와 자산 번호를 대조합니다. 승인된 번호의 물품만 분리하고 담당자가 인수한 내역을 기록합니다. 검토 대상이라는 메모만 있는 물품은 폐기 구역으로 옮기지 않습니다.,manual,documents-hard-v1-g048,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g048-v2,"물품 폐기 결정을 집행하기 전 목록의 승인 상태와 자산 번호를 대조합니다.
-승인된 번호의 물품만 분리하고 담당자가 인수한 내역을 기록합니다.
-검토 대상이라는 메모만 있는 물품은 폐기 구역으로 옮기지 않습니다.",manual,documents-hard-v1-g048,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g048-v3,"- 물품 폐기 결정을 집행하기 전 목록의 승인 상태와 자산 번호를 대조합니다.
-- 승인된 번호의 물품만 분리하고 담당자가 인수한 내역을 기록합니다.
-- 검토 대상이라는 메모만 있는 물품은 폐기 구역으로 옮기지 않습니다.",manual,documents-hard-v1-g048,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g048-v4,내용을 다음과 같이 정리합니다. 물품 폐기 결정을 집행하기 전 목록의 승인 상태와 자산 번호를 대조합니다. 승인된 번호의 물품만 분리하고 담당자가 인수한 내역을 기록합니다. 검토 대상이라는 메모만 있는 물품은 폐기 구역으로 옮기지 않습니다.,manual,documents-hard-v1-g048,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g049-v1,위임 투표를 등록할 때에는 위임장의 유효 기간과 해당 안건을 확인합니다. 두 조건이 맞으면 위임 사실을 등록하고 본인 투표와 중복되지 않는지 점검합니다. 다른 안건의 위임장을 이번 투표에 그대로 적용하지 않습니다.,manual,documents-hard-v1-g049,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g049-v2,"위임 투표를 등록할 때에는 위임장의 유효 기간과 해당 안건을 확인합니다.
-두 조건이 맞으면 위임 사실을 등록하고 본인 투표와 중복되지 않는지 점검합니다.
-다른 안건의 위임장을 이번 투표에 그대로 적용하지 않습니다.",manual,documents-hard-v1-g049,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g049-v3,"- 위임 투표를 등록할 때에는 위임장의 유효 기간과 해당 안건을 확인합니다.
-- 두 조건이 맞으면 위임 사실을 등록하고 본인 투표와 중복되지 않는지 점검합니다.
-- 다른 안건의 위임장을 이번 투표에 그대로 적용하지 않습니다.",manual,documents-hard-v1-g049,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g049-v4,위임 투표를 등록할 때에는 위임장의 유효 기간과 해당 안건을 확인하도록 합니다. 두 조건이 맞으면 위임 사실을 등록하고 본인 투표와 중복되지 않는지 점검합니다. 다른 안건의 위임장을 이번 투표에 그대로 적용하지 않습니다.,manual,documents-hard-v1-g049,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g050-v1,공동 계측 결과를 전달하려면 장비 교정 상태부터 확인합니다. 교정이 유효한 측정값을 정리하고 제외한 값의 이유를 별도로 남깁니다. 교정 기간이 지난 값은 결과가 비슷하더라도 검증된 값으로 표시하지 않습니다.,manual,documents-hard-v1-g050,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g050-v2,"공동 계측 결과를 전달하려면 장비 교정 상태부터 확인합니다.
-교정이 유효한 측정값을 정리하고 제외한 값의 이유를 별도로 남깁니다.
-교정 기간이 지난 값은 결과가 비슷하더라도 검증된 값으로 표시하지 않습니다.",manual,documents-hard-v1-g050,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g050-v3,"- 공동 계측 결과를 전달하려면 장비 교정 상태부터 확인합니다.
-- 교정이 유효한 측정값을 정리하고 제외한 값의 이유를 별도로 남깁니다.
-- 교정 기간이 지난 값은 결과가 비슷하더라도 검증된 값으로 표시하지 않습니다.",manual,documents-hard-v1-g050,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g050-v4,공동 계측 결과를 전달하려면 장비 교정 상태부터 확인하도록 합니다. 교정이 유효한 측정값을 정리하고 제외한 값의 이유를 별도로 남깁니다. 교정 기간이 지난 값은 결과가 비슷하더라도 검증된 값으로 표시하지 않습니다.,manual,documents-hard-v1-g050,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g071-v1,공동 정원의 급수 시간을 논의하면서 매일 같은 양을 공급하자는 의견이 나왔습니다. 토양 상태를 확인한 뒤 급수량을 정하는 방식을 시험하기로 했습니다. 전 구역 적용은 시험 결과가 나온 뒤 판단하기로 했습니다.,minutes,documents-hard-v1-g071,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g071-v2,"공동 정원의 급수 시간을 논의하면서 매일 같은 양을 공급하자는 의견이 나왔습니다.
-토양 상태를 확인한 뒤 급수량을 정하는 방식을 시험하기로 했습니다.
-전 구역 적용은 시험 결과가 나온 뒤 판단하기로 했습니다.",minutes,documents-hard-v1-g071,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g071-v3,"- 공동 정원의 급수 시간을 논의하면서 매일 같은 양을 공급하자는 의견이 나왔습니다.
-- 토양 상태를 확인한 뒤 급수량을 정하는 방식을 시험하기로 했습니다.
-- 전 구역 적용은 시험 결과가 나온 뒤 판단하기로 했습니다.",minutes,documents-hard-v1-g071,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g071-v4,공동 정원의 급수 시간을 논의하면서 매일 같은 양을 공급하자는 의견이 나왔습니다. 토양 상태를 확인한 뒤 급수량을 정하는 방식을 시험하기로 하였습니다. 전 구역 적용은 시험 결과가 나온 뒤 판단하기로 하였습니다.,minutes,documents-hard-v1-g071,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g072-v1,청소년 행사 참가 동의서의 제출 방법을 검토했습니다. 보호자 확인이 가능한 전자 제출을 허용하기로 했습니다. 동의서 제출 자체를 면제하는 방안은 채택하지 않았으며 사용 플랫폼은 미정입니다.,minutes,documents-hard-v1-g072,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g072-v2,"청소년 행사 참가 동의서의 제출 방법을 검토했습니다.
-보호자 확인이 가능한 전자 제출을 허용하기로 했습니다.
-동의서 제출 자체를 면제하는 방안은 채택하지 않았으며 사용 플랫폼은 미정입니다.",minutes,documents-hard-v1-g072,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g072-v3,"- 청소년 행사 참가 동의서의 제출 방법을 검토했습니다.
-- 보호자 확인이 가능한 전자 제출을 허용하기로 했습니다.
-- 동의서 제출 자체를 면제하는 방안은 채택하지 않았으며 사용 플랫폼은 미정입니다.",minutes,documents-hard-v1-g072,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g072-v4,청소년 행사 참가 동의서의 제출 방법을 검토하였습니다. 보호자 확인이 가능한 전자 제출을 허용하기로 하였습니다. 동의서 제출 자체를 면제하는 방안은 채택하지 않았으며 사용 플랫폼은 미정입니다.,minutes,documents-hard-v1-g072,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g073-v1,장비 수리 결과의 공개 범위를 두고 고장 원인까지 공개하자는 의견과 요약만 공개하자는 의견이 나왔습니다. 이용자에게는 이용 가능 여부와 제한 사항을 먼저 알리기로 했습니다. 상세 원인 공개는 계약 조건을 확인한 뒤 결정하기로 했습니다.,minutes,documents-hard-v1-g073,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g073-v2,"장비 수리 결과의 공개 범위를 두고 고장 원인까지 공개하자는 의견과 요약만 공개하자는 의견이 나왔습니다.
-이용자에게는 이용 가능 여부와 제한 사항을 먼저 알리기로 했습니다.
-상세 원인 공개는 계약 조건을 확인한 뒤 결정하기로 했습니다.",minutes,documents-hard-v1-g073,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g073-v3,"- 장비 수리 결과의 공개 범위를 두고 고장 원인까지 공개하자는 의견과 요약만 공개하자는 의견이 나왔습니다.
-- 이용자에게는 이용 가능 여부와 제한 사항을 먼저 알리기로 했습니다.
-- 상세 원인 공개는 계약 조건을 확인한 뒤 결정하기로 했습니다.",minutes,documents-hard-v1-g073,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g073-v4,장비 수리 결과의 공개 범위를 두고 고장 원인까지 공개하자는 의견과 요약만 공개하자는 의견이 나왔습니다. 이용자에게는 이용 가능 여부와 제한 사항을 먼저 알리기로 하였습니다. 상세 원인 공개는 계약 조건을 확인한 뒤 결정하기로 하였습니다.,minutes,documents-hard-v1-g073,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g074-v1,토론 기록의 편집 방식을 검토하면서 반대 의견을 삭제하자는 제안이 있었습니다. 결정 사항과 함께 반대 의견의 요지도 남기기로 합의했습니다. 개인 이름 공개 여부는 당사자 확인 전까지 보류하기로 했습니다.,minutes,documents-hard-v1-g074,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g074-v2,"토론 기록의 편집 방식을 검토하면서 반대 의견을 삭제하자는 제안이 있었습니다.
-결정 사항과 함께 반대 의견의 요지도 남기기로 합의했습니다.
-개인 이름 공개 여부는 당사자 확인 전까지 보류하기로 했습니다.",minutes,documents-hard-v1-g074,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g074-v3,"- 토론 기록의 편집 방식을 검토하면서 반대 의견을 삭제하자는 제안이 있었습니다.
-- 결정 사항과 함께 반대 의견의 요지도 남기기로 합의했습니다.
-- 개인 이름 공개 여부는 당사자 확인 전까지 보류하기로 했습니다.",minutes,documents-hard-v1-g074,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g074-v4,토론 기록의 편집 방식을 검토하면서 반대 의견을 삭제하자는 제안이 있었습니다. 결정 사항과 함께 반대 의견의 요지도 남기기로 합의하였습니다. 개인 이름 공개 여부는 당사자 확인 전까지 보류하기로 하였습니다.,minutes,documents-hard-v1-g074,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g075-v1,상담 사례 교육자료를 만드는 순서를 논의하며 실제 기록을 그대로 쓰자는 제안이 나왔습니다. 개인 식별 정보를 제거하고 교육 목적에 필요한 내용만 남기기로 했습니다. 외부 배포는 별도 검토 대상으로 두었으며 이번 합의에 포함하지 않았습니다.,minutes,documents-hard-v1-g075,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g075-v2,"상담 사례 교육자료를 만드는 순서를 논의하며 실제 기록을 그대로 쓰자는 제안이 나왔습니다.
-개인 식별 정보를 제거하고 교육 목적에 필요한 내용만 남기기로 했습니다.
-외부 배포는 별도 검토 대상으로 두었으며 이번 합의에 포함하지 않았습니다.",minutes,documents-hard-v1-g075,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g075-v3,"- 상담 사례 교육자료를 만드는 순서를 논의하며 실제 기록을 그대로 쓰자는 제안이 나왔습니다.
-- 개인 식별 정보를 제거하고 교육 목적에 필요한 내용만 남기기로 했습니다.
-- 외부 배포는 별도 검토 대상으로 두었으며 이번 합의에 포함하지 않았습니다.",minutes,documents-hard-v1-g075,team-added-synthetic:documents-hard-v1
-documents-hard-v1-g075-v4,상담 사례 교육자료를 만드는 순서를 논의하며 실제 기록을 그대로 쓰자는 제안이 나왔습니다. 개인 식별 정보를 제거하고 교육 목적에 필요한 내용만 남기기로 하였습니다. 외부 배포는 별도 검토 대상으로 두었으며 이번 합의에 포함하지 않았습니다.,minutes,documents-hard-v1-g075,team-added-synthetic:documents-hard-v1
+basic-6871b1997607b4ba1b35,어린이 체험관에 낮은 높이의 접수대를 마련했습니다. 보호자 없이도 직원에게 이용 안내를 받을 수 있습니다.,announcement,basic-case-6871b1997607b4ba1b35,team-added-synthetic:basic-independent-v2
+basic-6ac157bc7f82a7201c54,복지관 점심 배식 장소를 지하 식당으로 변경합니다. 이동이 어려운 분은 직원에게 도움을 요청해 주세요.,announcement,basic-case-6ac157bc7f82a7201c54,team-added-synthetic:basic-independent-v2
+basic-7cd80b01bf7edb1881e4,문화 행사팀은 홍보물의 날짜 오류를 확인했다. 배포 전 최종 검수 담당자를 지정했다.,minutes,basic-case-7cd80b01bf7edb1881e4,team-added-synthetic:basic-independent-v2
+basic-ee87459029678eb2845d,봉사팀은 담당자가 바뀌면 미완료 업무를 문서로 전달하기로 했다. 공통 인계 양식을 만든다.,minutes,basic-case-ee87459029678eb2845d,team-added-synthetic:basic-independent-v2
+basic-647adfb4909c7ce61ba8,연극 모임은 소품 정리 위치를 장면별로 나누기로 했다. 무대 담당이 배치도를 만든다.,minutes,basic-case-647adfb4909c7ce61ba8,team-added-synthetic:basic-independent-v2
+basic-97df8d05ffb40d0a6b15,야외 전시의 일부 작품은 일몰 전에 관람을 마쳐야 합니다. 관람 가능한 구역을 현장 지도에서 확인해 주세요.,announcement,basic-case-97df8d05ffb40d0a6b15,team-added-synthetic:basic-independent-v2
+basic-4b36e547747d5eda8bf9,빔 화면을 내릴 때 아래 공간을 비웁니다. 걸림이 느껴지면 당기지 말고 장치를 점검합니다.,manual,basic-case-4b36e547747d5eda8bf9,team-added-synthetic:basic-independent-v2
+basic-3381ebe6f2bc0433827b,동네 공방의 가족 체험반은 이번 달 신청이 마감됐습니다. 추가 회차가 생기면 다시 안내합니다.,announcement,basic-case-3381ebe6f2bc0433827b,team-added-synthetic:basic-independent-v2
+basic-1225ae4f931243fe1066,문화관 로비의 유실물은 금요일까지 안내실에서 확인할 수 있습니다. 본인 물건을 구별할 정보를 준비해 주세요.,announcement,basic-case-1225ae4f931243fe1066,team-added-synthetic:basic-independent-v2
+basic-2d50f530c3fa38fcaa3f,체육관 출입 확인 방식이 카드 인식으로 바뀝니다. 기존 이용자는 안내 데스크에서 카드를 받을 수 있습니다.,announcement,basic-case-2d50f530c3fa38fcaa3f,team-added-synthetic:basic-independent-v2
+basic-298376d3daba628cd483,문화센터 운영자는 이용자 의견함을 잘 보이는 곳으로 옮기기로 했다. 제출된 의견은 매주 모은다.,minutes,basic-case-298376d3daba628cd483,team-added-synthetic:basic-independent-v2
+basic-97a4aaf9df88c8444887,야외 장기 두기 행사는 폭염으로 실내 강당에서 열립니다. 시작 시간은 변동 없습니다.,announcement,basic-case-97a4aaf9df88c8444887,team-added-synthetic:basic-independent-v2
+basic-42edfda09b06f60144fe,학습 모임은 진행자를 매달 바꿔 맡기로 했다. 다음 진행자가 활동안을 준비한다.,minutes,basic-case-42edfda09b06f60144fe,team-added-synthetic:basic-independent-v2
+basic-9061a34bcb467d78505f,시립 합창 공연의 관람권 배부는 금요일 오후에 시작합니다. 수령 장소는 문화관 안내실입니다.,announcement,basic-case-9061a34bcb467d78505f,team-added-synthetic:basic-independent-v2
+basic-7b01c3365505888bade9,주민회관에서 전동 보조기 충전 공간을 제공합니다. 이용 전에 직원에게 연결 가능 여부를 확인해 주세요.,announcement,basic-case-7b01c3365505888bade9,team-added-synthetic:basic-independent-v2
+basic-25a0034ad1ee59becc91,공용 충전기를 대여할 때 연결 규격을 확인합니다. 맞지 않는 단자를 억지로 끼우지 않습니다.,manual,basic-case-25a0034ad1ee59becc91,team-added-synthetic:basic-independent-v2
+basic-c754d9ad97b16c9685b1,조별 활동 번호표는 서로 다른 색상으로 나눕니다. 색을 구별하기 어려우면 숫자도 함께 표시합니다.,manual,basic-case-c754d9ad97b16c9685b1,team-added-synthetic:basic-independent-v2
+basic-8fde90a110bbee7e6876,공동 사무실의 개인 사물함 신규 신청을 받습니다. 기존 사용자의 연장 신청과 구분해 제출해 주세요.,announcement,basic-case-8fde90a110bbee7e6876,team-added-synthetic:basic-independent-v2
+basic-0c557d0bd005087894fe,동아리 발표 순서를 안내 페이지에 올렸습니다. 대표자는 집결 시각을 확인해 주세요.,announcement,basic-case-0c557d0bd005087894fe,team-added-synthetic:basic-independent-v2
+basic-b7edd02e978f101c8065,독서 교육팀은 어린이의 관심 분야를 조사하기로 했다. 결과를 다음 도서 선정에 참고한다.,minutes,basic-case-b7edd02e978f101c8065,team-added-synthetic:basic-independent-v2
+basic-4e2284fc00c75d476de9,방문 예정 명단을 만들 때 날짜별로 정리합니다. 취소 연락이 온 신청에는 상태를 표시합니다.,manual,basic-case-4e2284fc00c75d476de9,team-added-synthetic:basic-independent-v2
+basic-1fc1922039a5a0ce956f,청년 행사팀은 현장 안내의 표현을 통일하기로 했다. 참가 유형별 안내 문장을 정리한다.,minutes,basic-case-1fc1922039a5a0ce956f,team-added-synthetic:basic-independent-v2
+basic-670a8585badf8e271745,공방 모임은 남은 재료를 다른 활동에 쓰기로 했다. 재료 담당이 종류와 양을 기록한다.,minutes,basic-case-670a8585badf8e271745,team-added-synthetic:basic-independent-v2
+basic-7bbd5254f2069404cbb0,강연 준비팀은 질문지를 미리 받기로 했다. 사회자가 비슷한 질문을 정리한다.,minutes,basic-case-7bbd5254f2069404cbb0,team-added-synthetic:basic-independent-v2
+basic-7e5ca43627b62e922bc6,자료 배부팀은 어린이 안내지를 성인 자료와 분리하기로 했다. 신청할 때 연령대별 필요 수량을 받는다.,minutes,basic-case-7e5ca43627b62e922bc6,team-added-synthetic:basic-independent-v2
+basic-98a7706dba9c7f7cd259,잔여 예산을 계산할 때 이미 확정된 지출도 확인합니다. 미집행액을 사용 가능한 돈으로 바로 계산하지 않습니다.,manual,basic-case-98a7706dba9c7f7cd259,team-added-synthetic:basic-independent-v2
+basic-286f908326f913565772,활동 일지를 작성할 때 진행 시간과 참여 인원을 구분합니다. 취소된 활동은 별도 표시합니다.,manual,basic-case-286f908326f913565772,team-added-synthetic:basic-independent-v2
+basic-50f8050a62e92997ec61,주민 동아리실의 연장 사용 신청을 다음 주까지 접수합니다. 이전 신청 내용도 다시 확인해 주세요.,announcement,basic-case-50f8050a62e92997ec61,team-added-synthetic:basic-independent-v2
+basic-1a5c305b2791d411f0be,출력용 종이는 안내된 방향으로 넣습니다. 서로 다른 크기의 종이를 같은 칸에 섞지 않습니다.,manual,basic-case-1a5c305b2791d411f0be,team-added-synthetic:basic-independent-v2
+basic-7cc8bf9dfb6478450d1b,재료 구매 목록은 필요한 양과 보유량을 비교합니다. 이미 있는 재료를 중복 주문하지 않습니다.,manual,basic-case-7cc8bf9dfb6478450d1b,team-added-synthetic:basic-independent-v2
+basic-dd8f10a63586fb049925,관찰 결과를 기록할 때 본 시간과 장소를 적습니다. 나중에 들은 설명은 별도 칸에 적습니다.,manual,basic-case-dd8f10a63586fb049925,team-added-synthetic:basic-independent-v2
+basic-7f9bea60e57ea6618890,탐방 준비팀은 이동 시간 계산이 부족했다고 보고했다. 답사 결과로 다음 일정을 조정한다.,minutes,basic-case-7f9bea60e57ea6618890,team-added-synthetic:basic-independent-v2
+basic-658f8b9656be9f7c59fc,기록팀은 인터뷰 녹음 파일이 일부 누락됐다고 보고했다. 제출 목록과 보관 파일을 대조하기로 했다.,minutes,basic-case-658f8b9656be9f7c59fc,team-added-synthetic:basic-independent-v2
+basic-54bfa79f5ead0aafd580,색연필을 반납받으면 수량을 셉니다. 부족한 색은 다음 대여 전에 기록합니다.,manual,basic-case-54bfa79f5ead0aafd580,team-added-synthetic:basic-independent-v2
+basic-e164827e6a69408aea76,지역 박람회 참가 안내서를 배부합니다. 신청서와 안내서는 다른 자료이므로 각각 확인해 주세요.,announcement,basic-case-e164827e6a69408aea76,team-added-synthetic:basic-independent-v2
+basic-c7730f9b23a4edb662a8,전시팀은 관람 동선이 겹치는 지점을 확인했다. 입구 안내 위치를 옮겨 보기로 했다.,minutes,basic-case-c7730f9b23a4edb662a8,team-added-synthetic:basic-independent-v2
+basic-c23ac8cd7cd16b9d91b1,참가자 명찰은 이름과 소속을 대조해 배부합니다. 정보가 틀렸으면 수정한 명찰을 사용합니다.,manual,basic-case-c23ac8cd7cd16b9d91b1,team-added-synthetic:basic-independent-v2
+basic-858333b1f89478dd92a0,공예 실습에 필요한 안전 안경은 현장에서 제공합니다. 개인 안경을 사용하려면 강사에게 확인해 주세요.,announcement,basic-case-858333b1f89478dd92a0,team-added-synthetic:basic-independent-v2
+basic-da29778f6a6120249c8f,활동 신청 안내를 보낼 때 대상 명단을 확인합니다. 이미 취소한 참가자는 따로 구분합니다.,manual,basic-case-da29778f6a6120249c8f,team-added-synthetic:basic-independent-v2
+basic-6ed1a43d6a4cb4813b8c,생태 교육관의 실내 관람은 이번 주 무료입니다. 유료 체험 활동은 별도 신청이 필요합니다.,announcement,basic-case-6ed1a43d6a4cb4813b8c,team-added-synthetic:basic-independent-v2
+basic-ccef8e9ace5a40db270e,작업대 사용을 마치면 도구를 원래 위치에 둡니다. 남은 재료는 지정 상자에 정리합니다.,manual,basic-case-ccef8e9ace5a40db270e,team-added-synthetic:basic-independent-v2
+basic-db68648a91d08553ec4d,어린이용 가위를 배부하기 전에 손잡이와 날 상태를 살핍니다. 손상된 도구는 별도로 치웁니다.,manual,basic-case-db68648a91d08553ec4d,team-added-synthetic:basic-independent-v2
+basic-9fbeea43e1c3f6845cee,지역 탐방 버스 출발 장소를 역 앞 광장으로 변경했습니다. 탑승 확인은 출발 전에 진행합니다.,announcement,basic-case-9fbeea43e1c3f6845cee,team-added-synthetic:basic-independent-v2
+basic-cd79a1108afd3e94d958,마을 기록팀은 장소 이름의 표기를 맞추기로 했다. 오래된 이름은 별도 설명으로 남긴다.,minutes,basic-case-cd79a1108afd3e94d958,team-added-synthetic:basic-independent-v2
+basic-2abec5914ac48e62a546,행사 접수대 자료는 이름순으로 정리합니다. 같은 이름이 있으면 신청번호로 구분합니다.,manual,basic-case-2abec5914ac48e62a546,team-added-synthetic:basic-independent-v2
+basic-2519d681118154e3669e,독서 동아리는 새 책을 고를 때 회원 의견을 먼저 받기로 했다. 진행자가 후보 목록을 모은다.,minutes,basic-case-2519d681118154e3669e,team-added-synthetic:basic-independent-v2
+basic-85066b31b684a1678513,행사 운영자는 출입 인원을 정확히 세기 어렵다고 보고했다. 출구에서도 퇴장 기록을 남기기로 했다.,minutes,basic-case-85066b31b684a1678513,team-added-synthetic:basic-independent-v2
+basic-6c7bb58d7ab5ee472457,복지관 컴퓨터 교실은 수준별 상담 뒤 반을 배정합니다. 상담 예약 안내를 먼저 확인해 주세요.,announcement,basic-case-6c7bb58d7ab5ee472457,team-added-synthetic:basic-independent-v2
+basic-a99ffb1287ceb691b25b,공동 작업실의 방학 중 이용 신청을 시작합니다. 사용할 장비와 기간을 적어 주세요.,announcement,basic-case-a99ffb1287ceb691b25b,team-added-synthetic:basic-independent-v2
+basic-813588023c87bd881e1f,외부 자료를 인용할 때 출처와 작성 날짜를 적습니다. 수정한 설명은 원문과 구분합니다.,manual,basic-case-813588023c87bd881e1f,team-added-synthetic:basic-independent-v2
+basic-01237d5a72d5c60a04b1,지역 장인 초청 행사에 통역이 필요한 분은 사전 신청 때 요청해 주세요. 요청 내용을 확인해 개별 연락합니다.,announcement,basic-case-01237d5a72d5c60a04b1,team-added-synthetic:basic-independent-v2
+basic-8a81aff38c6348c2e6bd,동아리 대표들은 공동 행사의 이름을 투표로 정하기로 했다. 후보 접수 기간을 마련한다.,minutes,basic-case-8a81aff38c6348c2e6bd,team-added-synthetic:basic-independent-v2
+basic-b8448637e2cfeea6d1c4,전통 놀이 체험은 이번 주 우천 예보로 취소합니다. 이미 신청한 분께 재신청 방법을 알립니다.,announcement,basic-case-b8448637e2cfeea6d1c4,team-added-synthetic:basic-independent-v2
+basic-312b1556eb50a6c46888,주민회는 행사 신청자의 연락처 오류가 많다고 보고했다. 접수 뒤 확인 문자를 보내기로 했다.,minutes,basic-case-312b1556eb50a6c46888,team-added-synthetic:basic-independent-v2
+basic-232c139ca965cfee181d,시설 고장 신고에는 장소와 증상을 적습니다. 확인하지 못한 원인은 추측해 쓰지 않습니다.,manual,basic-case-232c139ca965cfee181d,team-added-synthetic:basic-independent-v2
+basic-0b95def7a6b74ac8ff6f,학생 모임은 발표 순서를 추첨으로 정하기로 했다. 기록 담당이 결과를 참가자에게 알린다.,minutes,basic-case-0b95def7a6b74ac8ff6f,team-added-synthetic:basic-independent-v2
+basic-51005cc44451da71c8be,천 재료를 자르기 전에 필요한 폭을 표시합니다. 다른 사람이 준비한 표시와 혼동하지 않게 구분합니다.,manual,basic-case-51005cc44451da71c8be,team-added-synthetic:basic-independent-v2
+basic-bd35b0694248fb68d642,어린이 미술 작품의 반환일이 정해졌습니다. 보호자가 대신 수령할 때는 작품 번호를 알려 주세요.,announcement,basic-case-bd35b0694248fb68d642,team-added-synthetic:basic-independent-v2
+basic-2e0f13877890e72be419,청년 모임은 의견 제출을 말하기와 글쓰기 두 방식으로 받기로 했다. 진행자가 익명 의견도 함께 정리한다.,minutes,basic-case-2e0f13877890e72be419,team-added-synthetic:basic-independent-v2
+basic-01b1d8f9b64eaab12597,전시 오디오 안내는 개인 휴대전화로도 들을 수 있습니다. 이어폰은 관람객이 준비해 주세요.,announcement,basic-case-01b1d8f9b64eaab12597,team-added-synthetic:basic-independent-v2
+basic-139c70194d652d2104d3,교육팀은 실습 자료 배부가 늦어진 원인을 살펴봤다. 수업 전날 자료를 조별로 준비하기로 했다.,minutes,basic-case-139c70194d652d2104d3,team-added-synthetic:basic-independent-v2
+basic-6238a89a85cdf70cd793,손전등을 빌리기 전에 전원을 켜 봅니다. 빛이 약하면 충전 상태를 확인합니다.,manual,basic-case-6238a89a85cdf70cd793,team-added-synthetic:basic-independent-v2
+basic-7fa180092255531a90dd,주민회는 정기 모임에 새 참가자 소개 시간을 추가하기로 했다. 진행 순서를 수정한다.,minutes,basic-case-7fa180092255531a90dd,team-added-synthetic:basic-independent-v2
+basic-514ad898c3949a4b32db,초등 독서교실은 보호자 설명회를 먼저 진행합니다. 학생 수업의 시작일은 별도로 안내합니다.,announcement,basic-case-514ad898c3949a4b32db,team-added-synthetic:basic-independent-v2
+basic-be2e9aaa4b6ac9c5d2b2,소형 전시물을 이동할 때 양손으로 받칩니다. 이동 경로를 비운 뒤 옮깁니다.,manual,basic-case-be2e9aaa4b6ac9c5d2b2,team-added-synthetic:basic-independent-v2
+basic-9753b2ea73e14358f487,클립으로 묶은 자료를 분리할 때 종이가 찢어지지 않게 잡습니다. 손상된 클립은 다시 쓰지 않습니다.,manual,basic-case-9753b2ea73e14358f487,team-added-synthetic:basic-independent-v2
+basic-5cd395b5400bcd98d556,교육 담당자들은 수업 종료 안내가 들리지 않는다는 의견을 받았다. 화면 안내를 함께 표시하기로 했다.,minutes,basic-case-5cd395b5400bcd98d556,team-added-synthetic:basic-independent-v2
+basic-6f880736653a3a5bdc26,역사 강연 녹화 영상은 다음 주에 공개됩니다. 현장 참가자에게도 같은 링크를 보냅니다.,announcement,basic-case-6f880736653a3a5bdc26,team-added-synthetic:basic-independent-v2
+basic-a4ba5c3d777031e4c5dc,온라인 강의 접속 주소는 발송 전에 시험합니다. 잘못 연결되면 담당자에게 수정 요청을 합니다.,manual,basic-case-a4ba5c3d777031e4c5dc,team-added-synthetic:basic-independent-v2
+basic-391615660c7d9f55db0e,공용 악기 연습실의 예약 화면을 변경했습니다. 기존 예약은 새 화면에서도 확인할 수 있습니다.,announcement,basic-case-391615660c7d9f55db0e,team-added-synthetic:basic-independent-v2
+basic-eb3bcf9aa1d976b8f639,표지판을 설치한 뒤 방문객의 이동 방향에서 살펴봅니다. 다른 물품에 가려지면 위치를 조정합니다.,manual,basic-case-eb3bcf9aa1d976b8f639,team-added-synthetic:basic-independent-v2
+basic-29c51bcc0c41886c7935,교육팀은 활동 속도가 빠르다는 의견을 들었다. 중간 확인 질문을 넣기로 했다.,minutes,basic-case-29c51bcc0c41886c7935,team-added-synthetic:basic-independent-v2
+basic-e47cab375a11107e92b6,교실 책상을 배치할 때 출입문까지의 통로를 남깁니다. 배치가 끝나면 실제로 지나가 봅니다.,manual,basic-case-e47cab375a11107e92b6,team-added-synthetic:basic-independent-v2
+basic-6efbcab4afbc90b48e0a,공동 사용 우산은 펼쳐서 말린 뒤 꽂습니다. 파손된 우산은 대여용에서 분리합니다.,manual,basic-case-6efbcab4afbc90b48e0a,team-added-synthetic:basic-independent-v2
+basic-24178cc7060e693a422d,공원 분수는 동절기 동안 가동하지 않습니다. 주변 산책 공간은 계속 이용할 수 있습니다.,announcement,basic-case-24178cc7060e693a422d,team-added-synthetic:basic-independent-v2
+basic-9e150c4bc5b758c902f1,주말 벼룩시장의 책 교환 부스가 추가됐습니다. 물품 판매 신청과 책 교환 신청은 따로 받습니다.,announcement,basic-case-9e150c4bc5b758c902f1,team-added-synthetic:basic-independent-v2
+basic-e3cf201e777ba9279082,청소년센터 여름 캠프의 참가비 납부 안내를 발송했습니다. 승인된 신청자만 안내된 방법으로 납부해 주세요.,announcement,basic-case-e3cf201e777ba9279082,team-added-synthetic:basic-independent-v2
+basic-bf9efc793b8b141d055d,마이크를 사용하려면 케이블을 연결하고 음량을 낮춥니다. 시험 소리를 확인한 뒤 필요한 수준으로 올립니다.,manual,basic-case-bf9efc793b8b141d055d,team-added-synthetic:basic-independent-v2
+basic-fc39f3a51cfdacef3dad,지역 공예품 전시는 화요일에 작품 교체를 진행합니다. 교체 중인 구역은 잠시 관람을 제한합니다.,announcement,basic-case-fc39f3a51cfdacef3dad,team-added-synthetic:basic-independent-v2
+basic-fb8a4e8bba66f8a758b7,모임 정산에 영수증을 붙일 때 지출 번호를 적습니다. 금액이 같아도 다른 거래는 따로 보관합니다.,manual,basic-case-fb8a4e8bba66f8a758b7,team-added-synthetic:basic-independent-v2
+basic-a35b8485207824f3956e,도서 반납함 위치를 서쪽 출입구로 옮겼습니다. 야간 반납도 새 반납함을 이용해 주세요.,announcement,basic-case-a35b8485207824f3956e,team-added-synthetic:basic-independent-v2
+basic-11216f058333d4af9708,기록 메일을 보관할 때 날짜와 주제를 기준으로 정리합니다. 첨부 파일도 같은 기록에 연결합니다.,manual,basic-case-11216f058333d4af9708,team-added-synthetic:basic-independent-v2
+basic-dbf7d5b917ffb666ff1d,배포 자료의 연락처를 바꿨으면 모든 쪽을 검색합니다. 표지와 마지막 안내도 함께 확인합니다.,manual,basic-case-dbf7d5b917ffb666ff1d,team-added-synthetic:basic-independent-v2
+basic-9ba66e0ca32ecd39a10e,청소년 모임은 활동 사진 공개 여부를 먼저 묻기로 했다. 진행자가 동의 항목을 준비한다.,minutes,basic-case-9ba66e0ca32ecd39a10e,team-added-synthetic:basic-independent-v2
+basic-9320ef9ac1a01cf58e7d,행사 안내 방송은 원고를 확인한 뒤 읽습니다. 미확정된 일정을 확정된 것처럼 덧붙이지 않습니다.,manual,basic-case-9320ef9ac1a01cf58e7d,team-added-synthetic:basic-independent-v2
+basic-503449df700a037a47f5,주민 대표들은 안내문 연락처를 하나로 통일하기로 했다. 부서별 문의는 접수 뒤 연결한다.,minutes,basic-case-503449df700a037a47f5,team-added-synthetic:basic-independent-v2
+basic-62be4a056bcf5e74e76e,사진 전시팀은 같은 사진의 여러 인화본 중 한 부만 전시하기로 했다. 작가에게 사용할 판본을 확인한다.,minutes,basic-case-62be4a056bcf5e74e76e,team-added-synthetic:basic-independent-v2
+basic-65dbb7d186a01d0c6e4d,공공 수장고 견학은 정원을 줄여 운영합니다. 확정 안내를 받은 신청자만 입장할 수 있습니다.,announcement,basic-case-65dbb7d186a01d0c6e4d,team-added-synthetic:basic-independent-v2
+basic-0b77903bf649370cd467,보관 중인 행사 배너는 사용 날짜를 표시합니다. 다시 쓸 수 있는 것과 폐기 대상을 구분합니다.,manual,basic-case-0b77903bf649370cd467,team-added-synthetic:basic-independent-v2
+basic-ad155ef12cc7a8bef67c,회원증 사진을 촬영할 때 얼굴이 가려지지 않게 합니다. 본인이 사진을 확인한 뒤 저장합니다.,manual,basic-case-ad155ef12cc7a8bef67c,team-added-synthetic:basic-independent-v2
+basic-85693fa011e4745b51d5,스피커 위치를 바꿀 때 전원을 끕니다. 옮긴 뒤 케이블이 통로를 가리지 않는지 봅니다.,manual,basic-case-85693fa011e4745b51d5,team-added-synthetic:basic-independent-v2
+basic-3104d940dcf75d2432f0,어린이 놀이방의 바닥 보수로 이번 주 이용을 중단합니다. 다른 놀이 공간 정보는 안내실에서 제공합니다.,announcement,basic-case-3104d940dcf75d2432f0,team-added-synthetic:basic-independent-v2
+basic-22d142ea255fa8a07c90,참가자가 바뀐 조 명단은 즉시 수정합니다. 이전 명단에는 사용 중단 표시를 남깁니다.,manual,basic-case-22d142ea255fa8a07c90,team-added-synthetic:basic-independent-v2
+basic-76a875ef866190a895fb,공원 야간 조명을 교체하는 동안 일부 구역이 어둡습니다. 밝게 표시된 통로를 이용해 주세요.,announcement,basic-case-76a875ef866190a895fb,team-added-synthetic:basic-independent-v2
+basic-7cd2b450b2d2883e6eba,학교 운영팀은 행사 후 자료 정리가 부족하다고 보고했다. 활동별 보관 담당을 지정했다.,minutes,basic-case-7cd2b450b2d2883e6eba,team-added-synthetic:basic-independent-v2
+basic-3392d1340a004d337643,수업 자료를 읽기 쉽게 만들 때 제목부터 구분합니다. 본문 글자가 작으면 분량을 나눕니다.,manual,basic-case-3392d1340a004d337643,team-added-synthetic:basic-independent-v2
+basic-3f3344682100f6e604ec,정원 해설 프로그램에 어린이용 안내 자료가 추가됐습니다. 필요한 수량을 예약 때 알려 주세요.,announcement,basic-case-3f3344682100f6e604ec,team-added-synthetic:basic-independent-v2
+basic-867fd69b1372391ea941,공예 동아리는 초보자에게 도구 설명 시간이 부족하다고 보고했다. 첫 활동에 별도 안내 시간을 두기로 했다.,minutes,basic-case-867fd69b1372391ea941,team-added-synthetic:basic-independent-v2
+basic-ef251bc1375cdecfa195,노인 건강 활동의 신규 참여자 상담은 월요일에 진행합니다. 상담 결과에 따라 활동 시간을 배정합니다.,announcement,basic-case-ef251bc1375cdecfa195,team-added-synthetic:basic-independent-v2
+basic-c12a040d4abddfd8ef41,공방 운영자는 사용 시간 중 청소 구간을 마련하자고 제안했다. 마지막 십 분을 정리 시간으로 정했다.,minutes,basic-case-c12a040d4abddfd8ef41,team-added-synthetic:basic-independent-v2
+basic-32e2536b05da179b1de7,전시 운영팀은 작품 보호선이 보이지 않는다는 의견을 받았다. 표시 색을 바꿔 비교하기로 했다.,minutes,basic-case-32e2536b05da179b1de7,team-added-synthetic:basic-independent-v2
+basic-3cd75bd81dea2cf5b9b6,기록 사진 전시의 개막 행사는 참석 신청을 받지 않습니다. 일반 관람 시간은 전시 안내에 표시돼 있습니다.,announcement,basic-case-3cd75bd81dea2cf5b9b6,team-added-synthetic:basic-independent-v2
+basic-50c2838d825015e1c405,마을 안내팀은 새로운 길 안내 지도를 시험 배부하기로 했다. 이용자에게 어려운 지점을 묻는다.,minutes,basic-case-50c2838d825015e1c405,team-added-synthetic:basic-independent-v2
+basic-835cafedbb6cee7272ef,기증 도서는 상태를 확인한 뒤 등록합니다. 등록 전에는 다른 대출 도서와 섞지 않습니다.,manual,basic-case-835cafedbb6cee7272ef,team-added-synthetic:basic-independent-v2
+basic-40719d49fc51c1c4cbbd,주민 영화 토론 모임은 이번 회차에 온라인으로 진행합니다. 접속 주소를 신청자에게 보냅니다.,announcement,basic-case-40719d49fc51c1c4cbbd,team-added-synthetic:basic-independent-v2
+basic-3878c49644b6ccd2ce6c,주민들이 만든 생활 지도를 안내실에서 배부합니다. 지도 내용 정정 의견도 함께 받고 있습니다.,announcement,basic-case-3878c49644b6ccd2ce6c,team-added-synthetic:basic-independent-v2
+basic-0a4fd3d5f717617d8e5a,공용 복합기 이용권의 새 발급을 안내실에서 받습니다. 이전 이용권의 잔여 횟수는 담당자에게 확인해 주세요.,announcement,basic-case-0a4fd3d5f717617d8e5a,team-added-synthetic:basic-independent-v2
+basic-3921fb6be5c87be06129,문서 파일을 보낼 때 제목과 첨부 파일 이름을 대조합니다. 다른 문서가 붙었으면 발송 전에 교체합니다.,manual,basic-case-3921fb6be5c87be06129,team-added-synthetic:basic-independent-v2
+basic-89182c8d08674855723e,전시 도록 상자를 열면 판본과 수량을 확인합니다. 다른 판본은 별도 상자에 둡니다.,manual,basic-case-89182c8d08674855723e,team-added-synthetic:basic-independent-v2
+basic-4df5bdc8a55e31d531cf,모임 참석자들은 회의 시작 시각을 지키기로 했다. 늦은 참석자는 기록을 확인하도록 했다.,minutes,basic-case-4df5bdc8a55e31d531cf,team-added-synthetic:basic-independent-v2
+basic-0cb8bfa0060693443c75,민원 안내 창구의 금요일 종료 시간이 바뀝니다. 방문 전에 새로운 운영 시간을 확인해 주세요.,announcement,basic-case-0cb8bfa0060693443c75,team-added-synthetic:basic-independent-v2
+basic-39fb8c9d3a1e182a6e60,학교 교복 나눔의 기증 접수를 시작합니다. 세탁한 물품을 지정 장소에 제출해 주세요.,announcement,basic-case-39fb8c9d3a1e182a6e60,team-added-synthetic:basic-independent-v2
+basic-fca89fee36dc50642086,날짜 도장을 찍기 전에 설정 날짜를 확인합니다. 시험 날인 뒤 원서에 찍습니다.,manual,basic-case-fca89fee36dc50642086,team-added-synthetic:basic-independent-v2
+basic-b185436f915778e3b318,행사 대표들은 참여 업체의 준비 상태를 이틀 전에 확인하기로 했다. 현장팀이 연락을 맡는다.,minutes,basic-case-b185436f915778e3b318,team-added-synthetic:basic-independent-v2
+basic-719ca6766f6067461143,체험용 스탬프는 사용 뒤 잉크를 닦습니다. 모양별 받침에 놓고 뚜껑을 닫습니다.,manual,basic-case-719ca6766f6067461143,team-added-synthetic:basic-independent-v2
+basic-5199e5e8b8c17290b74a,회관 보일러 점검으로 온수 사용이 잠시 중단됩니다. 난방 운영은 현장 안내를 확인해 주세요.,announcement,basic-case-5199e5e8b8c17290b74a,team-added-synthetic:basic-independent-v2
+basic-473406ad580547807c26,공동 육아 놀이 모임은 참가 아동 수에 따라 조를 나눕니다. 신청 때 아동의 연령을 적어 주세요.,announcement,basic-case-473406ad580547807c26,team-added-synthetic:basic-independent-v2
+basic-187263f1799abd10dd72,모임 대표들은 회비 납부 내역을 매달 확인하기로 했다. 회계 담당이 미확인 입금을 정리한다.,minutes,basic-case-187263f1799abd10dd72,team-added-synthetic:basic-independent-v2
+basic-51d67e8113dbfb691b65,전시 제작팀은 설명문 초안을 해설자에게 먼저 보여 주기로 했다. 이해하기 어려운 문구를 검토받는다.,minutes,basic-case-51d67e8113dbfb691b65,team-added-synthetic:basic-independent-v2
+basic-184d10dcf260a066c764,강의 녹음은 참여자의 동의를 확인한 뒤 시작합니다. 녹음 종료 시각을 기록합니다.,manual,basic-case-184d10dcf260a066c764,team-added-synthetic:basic-independent-v2
+basic-2771c3b360d63a8aef55,음악 수업 담당자는 악보를 미리 나눠 주기로 했다. 변경된 악보는 판본을 표시한다.,minutes,basic-case-2771c3b360d63a8aef55,team-added-synthetic:basic-independent-v2
+basic-76549a3a677cd41b6e7c,안내 책자를 접을 때 페이지 순서를 확인합니다. 완성된 한 부를 펼쳐 본 뒤 나머지를 작업합니다.,manual,basic-case-76549a3a677cd41b6e7c,team-added-synthetic:basic-independent-v2
+basic-36c6d85a744686a30d1a,교구를 세척한 뒤 완전히 말립니다. 젖은 상태로 뚜껑 있는 상자에 넣지 않습니다.,manual,basic-case-36c6d85a744686a30d1a,team-added-synthetic:basic-independent-v2
+basic-de504cd10b8df19aea0a,망원경을 보관할 때 렌즈 덮개를 닫습니다. 습기가 있으면 안내된 방법으로 건조한 뒤 넣습니다.,manual,basic-case-de504cd10b8df19aea0a,team-added-synthetic:basic-independent-v2
+basic-5add746340c27dcfdd69,전시 물품 사진을 찍을 때 식별 번호를 함께 기록합니다. 비슷한 물품은 번호로 구별합니다.,manual,basic-case-5add746340c27dcfdd69,team-added-synthetic:basic-independent-v2
+basic-6d54bf7661ff135868dc,과학 수업팀은 관찰 도구가 부족하다고 보고했다. 조별 사용 순서를 정하기로 했다.,minutes,basic-case-6d54bf7661ff135868dc,team-added-synthetic:basic-independent-v2
+basic-c61f6258b5bb3914059b,공용 펀치의 종이 가이드를 맞춥니다. 구멍 위치를 시험한 뒤 전체 자료를 처리합니다.,manual,basic-case-c61f6258b5bb3914059b,team-added-synthetic:basic-independent-v2
+basic-ceed675cb0a9cb8f7364,강당 문을 열기 전에 객석 통로를 확인합니다. 장애물이 없으면 입장을 시작합니다.,manual,basic-case-ceed675cb0a9cb8f7364,team-added-synthetic:basic-independent-v2
+basic-3cb85010763953e85218,수업 담당자들은 교재 그림이 작다는 의견을 들었다. 다음 인쇄에서 일부 그림을 확대하기로 했다.,minutes,basic-case-3cb85010763953e85218,team-added-synthetic:basic-independent-v2
+basic-fea8e6d6b259a4602fca,공동 수선실에 재봉틀을 새로 배치했습니다. 장비 안내를 받은 이용자부터 대여할 수 있습니다.,announcement,basic-case-fea8e6d6b259a4602fca,team-added-synthetic:basic-independent-v2
+basic-1f8d403ffcba9fc8b33c,문화 행사 자막 화면의 위치를 앞쪽으로 옮겼습니다. 현장에서 자막을 볼 수 있는 좌석을 안내합니다.,announcement,basic-case-1f8d403ffcba9fc8b33c,team-added-synthetic:basic-independent-v2
+basic-822cb19f3fcd4aec98d5,공공 강의실 출입문 교체로 토요일 오전 입실이 제한됩니다. 예약자는 운영팀의 연락을 확인해 주세요.,announcement,basic-case-822cb19f3fcd4aec98d5,team-added-synthetic:basic-independent-v2
+basic-f9fe89fedfce960be024,도서관 이야기를 듣는 어린이 행사의 정원을 늘렸습니다. 추가 신청은 기존 접수 페이지에서 받습니다.,announcement,basic-case-f9fe89fedfce960be024,team-added-synthetic:basic-independent-v2
+basic-29a7d91c290181951e66,회람 문서는 읽은 뒤 확인 표시를 남깁니다. 원본 내용을 바꿔야 하면 작성자에게 요청합니다.,manual,basic-case-29a7d91c290181951e66,team-added-synthetic:basic-independent-v2
+basic-9deb736a44e2e6d25d4c,주민 운영팀은 행사 안내 문자가 길다는 의견을 검토했다. 날짜와 장소를 먼저 표시하기로 했다.,minutes,basic-case-9deb736a44e2e6d25d4c,team-added-synthetic:basic-independent-v2
+basic-d3bbfedb7762dab8c0b6,참가비 납부는 신청번호를 기준으로 확인합니다. 입금자 이름만으로 다른 신청에 연결하지 않습니다.,manual,basic-case-d3bbfedb7762dab8c0b6,team-added-synthetic:basic-independent-v2
+basic-954594474ac4e2813c42,무대 소품은 장면별 번호를 붙여 놓습니다. 실제 사용할 순서대로 배치합니다.,manual,basic-case-954594474ac4e2813c42,team-added-synthetic:basic-independent-v2
+basic-455aab869f69f3af60f6,동아리들은 공용 물품을 빌릴 때 기록을 남기기로 했다. 담당자가 대여 서식을 만든다.,minutes,basic-case-455aab869f69f3af60f6,team-added-synthetic:basic-independent-v2
+basic-f3e38434a345dd7bd9b1,청년 취업 설명회에 참여할 기업 목록을 공개했습니다. 기업별 상담은 별도로 예약해야 합니다.,announcement,basic-case-f3e38434a345dd7bd9b1,team-added-synthetic:basic-independent-v2
+basic-64d5863d28e0933bb306,공연팀은 출연자 대기 장소를 분리하기로 했다. 현장 담당이 사용할 방을 확인한다.,minutes,basic-case-64d5863d28e0933bb306,team-added-synthetic:basic-independent-v2
+basic-637619c8c362664747d8,도서관 직원들은 반납함 주변 혼잡을 논의했다. 대기 위치를 표시한 뒤 상황을 확인하기로 했다.,minutes,basic-case-637619c8c362664747d8,team-added-synthetic:basic-independent-v2
+basic-858b4b77c7260e20b94e,액자 번호는 작품 목록과 맞춰 붙입니다. 작품 표면에 직접 번호표를 붙이지 않습니다.,manual,basic-case-858b4b77c7260e20b94e,team-added-synthetic:basic-independent-v2
+basic-a65506093f02a2fd98b2,공용 냉장고에 음식을 넣을 때 이름을 표시합니다. 보관 날짜도 함께 적습니다.,manual,basic-case-a65506093f02a2fd98b2,team-added-synthetic:basic-independent-v2
+basic-8a3771e91594f05dcf9e,강사 모임은 실습 성공 여부만 평가하지 않기로 했다. 참가자의 시도 과정도 확인한다.,minutes,basic-case-8a3771e91594f05dcf9e,team-added-synthetic:basic-independent-v2
+basic-c702ed16e3789b745c4d,캠프 운영팀은 이동 차량별 인원 확인 담당을 정했다. 출발과 도착 때 명단을 대조한다.,minutes,basic-case-c702ed16e3789b745c4d,team-added-synthetic:basic-independent-v2
+basic-ebf8e87e73b91084bdf0,작은 전시관의 관람 예약은 방문 하루 전까지 받습니다. 예약 확인 문자를 받은 뒤 방문해 주세요.,announcement,basic-case-ebf8e87e73b91084bdf0,team-added-synthetic:basic-independent-v2
+basic-13082f87be9dd8a3d9c4,박람회 준비팀은 부스 이름을 크게 표시하기로 했다. 디자인 담당이 새 안내판을 만든다.,minutes,basic-case-13082f87be9dd8a3d9c4,team-added-synthetic:basic-independent-v2
+basic-41bf6b4bae299bf79a96,도구를 청소할 때 전원 연결을 먼저 해제합니다. 안내된 부분만 닦고 내부를 임의로 열지 않습니다.,manual,basic-case-41bf6b4bae299bf79a96,team-added-synthetic:basic-independent-v2
+basic-a2d6bf73a7d7ec9168aa,지역 독서회는 책 한 권을 두 달에 나눠 읽기로 했다. 진행자가 다음 모임의 읽을 범위를 정한다.,minutes,basic-case-a2d6bf73a7d7ec9168aa,team-added-synthetic:basic-independent-v2
+basic-a64a278752bbeafc5af4,게시판에 안내문을 붙일 때 적용 기간을 확인합니다. 기간이 지난 문서는 먼저 제거합니다.,manual,basic-case-a64a278752bbeafc5af4,team-added-synthetic:basic-independent-v2
+basic-a9d6e9ab63f437b55d11,청소년 활동센터에 휴대전화 보관함을 설치했습니다. 사용을 원하면 안내 직원에게 열쇠를 받아 주세요.,announcement,basic-case-a9d6e9ab63f437b55d11,team-added-synthetic:basic-independent-v2
+basic-181e9392d9e3298e5f54,장애인 체육 프로그램의 신규 이용 상담을 받습니다. 희망 활동과 필요한 지원을 알려 주세요.,announcement,basic-case-181e9392d9e3298e5f54,team-added-synthetic:basic-independent-v2
+basic-f71f4952b907242b866f,주민 교육팀은 안내 신청서의 중복 질문을 검토했다. 같은 정보를 묻는 항목을 합치기로 했다.,minutes,basic-case-f71f4952b907242b866f,team-added-synthetic:basic-independent-v2
+basic-004fc760d4f6d9ddf5b2,마을 안전 지도 제작에 참여할 주민을 모집합니다. 현장 조사에 함께할 날짜를 적어 주세요.,announcement,basic-case-004fc760d4f6d9ddf5b2,team-added-synthetic:basic-independent-v2
+basic-19b9babf472dcc217323,촬영 삼각대를 펼친 뒤 다리 잠금을 확인합니다. 카메라를 올리기 전에 흔들림을 점검합니다.,manual,basic-case-19b9babf472dcc217323,team-added-synthetic:basic-independent-v2
+basic-abcd059a6d0df6e08427,문화 모임은 신규 회원에게 활동 일정을 먼저 설명하기로 했다. 대표가 안내 자료를 준비한다.,minutes,basic-case-abcd059a6d0df6e08427,team-added-synthetic:basic-independent-v2
+basic-333714c511466e6b0711,이번 달 주민 그림책 모임은 어린이도 함께 참여할 수 있습니다. 신청할 때 동반 인원을 적어 주세요.,announcement,basic-case-333714c511466e6b0711,team-added-synthetic:basic-independent-v2
+basic-2bf06a4d2bd0917d622a,체험 운영팀은 대여 장비 분실 사례를 검토했다. 반납 때 번호를 대조하기로 했다.,minutes,basic-case-2bf06a4d2bd0917d622a,team-added-synthetic:basic-independent-v2
+basic-1995c439808d29fe1617,동아리 대표들은 공동 물품 구입을 맡을 사람을 정했다. 회계 담당이 구매 목록을 취합한다.,minutes,basic-case-1995c439808d29fe1617,team-added-synthetic:basic-independent-v2
+basic-7f59515ba1e4504b1f9c,시민 시 낭독회 참가 작품을 모집합니다. 작품 제목과 낭독 예상 시간을 함께 제출해 주세요.,announcement,basic-case-7f59515ba1e4504b1f9c,team-added-synthetic:basic-independent-v2
+basic-802e991bdfce71f40d22,책 커버를 씌우기 전에 책의 크기를 잽니다. 본문을 가리지 않게 커버를 접습니다.,manual,basic-case-802e991bdfce71f40d22,team-added-synthetic:basic-independent-v2
+basic-6f698cc82baae155e270,공유 파일을 수정하기 전에 사용 중인 사람이 있는지 확인합니다. 수정 뒤 변경 내용을 알려 줍니다.,manual,basic-case-6f698cc82baae155e270,team-added-synthetic:basic-independent-v2
+basic-bdc01c2016c392ab8e9d,소모품 수량을 셀 때 개봉한 묶음은 따로 셉니다. 포장에 적힌 수량으로 대신하지 않습니다.,manual,basic-case-bdc01c2016c392ab8e9d,team-added-synthetic:basic-independent-v2
+basic-2f361c8fca20b479edfb,청소년 모임은 활동 후 짧은 소감을 남기기로 했다. 긴 보고서 작성은 요구하지 않는다.,minutes,basic-case-2f361c8fca20b479edfb,team-added-synthetic:basic-independent-v2
+basic-0c72ec87e94d18108ec7,기록 모임은 사진 설명이 없는 자료를 별도 분류하기로 했다. 작성자에게 정보 보완을 요청한다.,minutes,basic-case-0c72ec87e94d18108ec7,team-added-synthetic:basic-independent-v2
+basic-65e23f80e38422e267af,야외 활동 지도를 배부하기 전에 집결 위치를 확인합니다. 실제 경로와 다른 지점은 수정합니다.,manual,basic-case-65e23f80e38422e267af,team-added-synthetic:basic-independent-v2
+basic-dc39b9eb3c429b92ee11,물품 대여 기간을 연장하려면 반납일 전에 신청합니다. 승인 여부를 확인한 뒤 새 기한을 기록합니다.,manual,basic-case-dc39b9eb3c429b92ee11,team-added-synthetic:basic-independent-v2
+basic-39c929b46005b3aed05c,원고 검수에서 숫자와 단위를 함께 확인합니다. 원자료와 값이 다르면 작성자에게 묻습니다.,manual,basic-case-39c929b46005b3aed05c,team-added-synthetic:basic-independent-v2
+basic-e8476a0b3f60640c92d4,공동 주방의 냉장고 정리일을 안내합니다. 개인 음식에는 소유자 이름과 보관 날짜를 붙여 주세요.,announcement,basic-case-e8476a0b3f60640c92d4,team-added-synthetic:basic-independent-v2
+basic-de172e8254b809375e19,강연 준비자는 발표자의 장비 요청을 미리 받기로 했다. 기술 담당이 사용할 장비를 대조한다.,minutes,basic-case-de172e8254b809375e19,team-added-synthetic:basic-independent-v2
+basic-12cad284645a72560827,프로그램 신청 메일을 받으면 첨부 서류를 확인합니다. 누락 항목은 신청자에게 안내합니다.,manual,basic-case-12cad284645a72560827,team-added-synthetic:basic-independent-v2
+basic-3eb5095b754b70f86857,어린이 활동 결과물은 참가자별로 분리합니다. 보호자에게 전달할 때 이름을 대조합니다.,manual,basic-case-3eb5095b754b70f86857,team-added-synthetic:basic-independent-v2
+basic-43f7950361f5474a2768,문화센터 계단 난간 공사 중에는 반대쪽 계단을 이용해 주세요. 승강기는 정상 운행합니다.,announcement,basic-case-43f7950361f5474a2768,team-added-synthetic:basic-independent-v2
+basic-0ad9be8d0e757b29402d,커뮤니티실의 정기 청소는 매주 목요일 아침에 진행합니다. 청소 시간에는 입실을 잠시 기다려 주세요.,announcement,basic-case-0ad9be8d0e757b29402d,team-added-synthetic:basic-independent-v2
+basic-8d7731f91a4413bc828d,문학 모임은 작품 낭독 뒤 바로 평가하지 않기로 했다. 작성자의 설명을 먼저 듣는다.,minutes,basic-case-8d7731f91a4413bc828d,team-added-synthetic:basic-independent-v2
+basic-e2c68a485b2033ec8864,학습팀은 온라인 자료를 찾기 어렵다는 의견을 받았다. 자료 목록을 한 페이지에 모으기로 했다.,minutes,basic-case-e2c68a485b2033ec8864,team-added-synthetic:basic-independent-v2
+basic-fd2c94098ac89c10bd49,주민 상담회에서는 녹음하지 않은 대화도 기록을 남길 수 있습니다. 기록을 원하지 않는 분은 상담 전에 알려 주세요.,announcement,basic-case-fd2c94098ac89c10bd49,team-added-synthetic:basic-independent-v2
+basic-30c7b4aee3ca1d4a5e58,전시 설명팀은 어린이 질문을 모아 자료로 만들기로 했다. 해설 담당이 답변을 정리한다.,minutes,basic-case-30c7b4aee3ca1d4a5e58,team-added-synthetic:basic-independent-v2
+basic-9c4beb65b2c866102f48,잠금 장치의 번호를 바꿀 때 새 번호로 열리는지 시험합니다. 관리 기록도 함께 수정합니다.,manual,basic-case-9c4beb65b2c866102f48,team-added-synthetic:basic-independent-v2
+basic-1ccfa5f4d5e132069006,요리 교실 담당자들은 도구 배부 순서를 정하기로 했다. 조별 대표가 준비물을 받아 가도록 했다.,minutes,basic-case-1ccfa5f4d5e132069006,team-added-synthetic:basic-independent-v2
+basic-d41686ef8e3d85d3620c,지역 어린이 기자단에 지원할 학생을 모집합니다. 활동 계획과 보호자 확인서를 제출해 주세요.,announcement,basic-case-d41686ef8e3d85d3620c,team-added-synthetic:basic-independent-v2
+basic-b112768a38de45cefd68,지역 영화제 자원활동가 신청을 이번 주부터 받습니다. 활동 가능한 날짜를 함께 제출해 주세요.,announcement,basic-case-b112768a38de45cefd68,team-added-synthetic:basic-independent-v2
+basic-d93aed7182d3d72b6ae6,주민 인문학 강좌의 교재는 첫 수업 때 배부합니다. 별도로 구입하지 않아도 됩니다.,announcement,basic-case-d93aed7182d3d72b6ae6,team-added-synthetic:basic-independent-v2
+basic-3d61493220e05b486c32,청소년 상담 행사에는 개별 대화 공간을 마련했습니다. 사전 신청 여부는 접수 안내를 확인해 주세요.,announcement,basic-case-3d61493220e05b486c32,team-added-synthetic:basic-independent-v2
+basic-e3326dc467ebc07c0eb0,활동실 온도를 기록할 때 같은 위치의 기기를 봅니다. 창문 개방 여부도 함께 적습니다.,manual,basic-case-e3326dc467ebc07c0eb0,team-added-synthetic:basic-independent-v2
+basic-f4f2c20a4303990877af,공방팀은 재료 보관 상자에 내용물을 표시하기로 했다. 담당자가 오래된 라벨을 갱신한다.,minutes,basic-case-f4f2c20a4303990877af,team-added-synthetic:basic-independent-v2
+basic-47acbaa382217c22c8d7,사진을 인화하기 전에 원하는 크기를 설정합니다. 시험 출력으로 잘리는 부분을 확인합니다.,manual,basic-case-47acbaa382217c22c8d7,team-added-synthetic:basic-independent-v2
+basic-b26652589483d288eb11,주민 설문에 종이 응답함을 추가 설치했습니다. 이미 온라인으로 응답한 분은 다시 제출하지 마세요.,announcement,basic-case-b26652589483d288eb11,team-added-synthetic:basic-independent-v2
+basic-e6197654b5c4c15deb71,캠프 짐표는 참가자 번호와 연결합니다. 연락처를 외부에 그대로 공개하지 않습니다.,manual,basic-case-e6197654b5c4c15deb71,team-added-synthetic:basic-independent-v2
+basic-14d690bfad76bd21bfe5,자료실 직원들은 파일 이름이 불규칙하다고 보고했다. 공통 이름 규칙을 만들기로 했다.,minutes,basic-case-14d690bfad76bd21bfe5,team-added-synthetic:basic-independent-v2
+basic-02aed6d9a9b154fbab51,주민 운영자는 장비 고장 보고가 늦어진 문제를 검토했다. 발견 즉시 기록하는 창구를 마련한다.,minutes,basic-case-02aed6d9a9b154fbab51,team-added-synthetic:basic-independent-v2
+basic-189615705810ca099e6f,체육 운영팀은 참가자 명단 변경을 한 담당자가 취합하기로 했다. 변경 사항은 매일 확인한다.,minutes,basic-case-189615705810ca099e6f,team-added-synthetic:basic-independent-v2
+basic-05c4f9c1a0520a43e49e,캠프 담당자는 참가자 짐표가 없다는 문제를 보고했다. 출발 전에 번호표를 나눠 주기로 했다.,minutes,basic-case-05c4f9c1a0520a43e49e,team-added-synthetic:basic-independent-v2
+basic-88b0a5f8dd8344b9b4c5,공용 잔디 운동장은 비가 온 뒤 상태를 확인하고 개방합니다. 개방 표시가 없을 때는 들어가지 말아 주세요.,announcement,basic-case-88b0a5f8dd8344b9b4c5,team-added-synthetic:basic-independent-v2
+basic-da193b871e5d7f4ce41a,청소년 정책 제안 접수에 영상 제출 방식을 추가했습니다. 파일 용량 기준을 확인해 주세요.,announcement,basic-case-da193b871e5d7f4ce41a,team-added-synthetic:basic-independent-v2
+basic-fb21f8cafcc4eb664477,자원활동가 교육 장소를 본관에서 별관으로 옮깁니다. 출석 확인도 별관에서 진행합니다.,announcement,basic-case-fb21f8cafcc4eb664477,team-added-synthetic:basic-independent-v2
+basic-3802758646cffb417e05,대학 공개 강연의 현장 좌석은 사전 신청자에게 우선 제공합니다. 남은 좌석은 행사 당일 안내합니다.,announcement,basic-case-3802758646cffb417e05,team-added-synthetic:basic-independent-v2
+basic-837a9f90e5d13193f0fe,공연장 외부 촬영 신청은 행사 사흘 전까지 받습니다. 승인 여부를 확인한 뒤 장비를 반입해 주세요.,announcement,basic-case-837a9f90e5d13193f0fe,team-added-synthetic:basic-independent-v2
+basic-772bd92e955f595b4435,시민 작품집에 실을 글의 교정본을 발송했습니다. 작성자는 정정할 부분을 지정 날짜까지 보내 주세요.,announcement,basic-case-772bd92e955f595b4435,team-added-synthetic:basic-independent-v2
+basic-983f86738377daf77951,수업 평가를 정리할 때 같은 참가자의 중복 응답을 확인합니다. 집계 기준을 정한 뒤 계산합니다.,manual,basic-case-983f86738377daf77951,team-added-synthetic:basic-independent-v2
+basic-fc95bdbc8360f88a8ee7,박물관 교육팀은 설명 시간이 길다는 의견을 들었다. 질문과 관찰 시간을 나눠 운영하기로 했다.,minutes,basic-case-fc95bdbc8360f88a8ee7,team-added-synthetic:basic-independent-v2
+basic-6f425c5ea9050f98750d,주민 교육자는 신청서를 모바일에서도 읽기 쉽게 만들기로 했다. 담당자가 항목 배치를 점검한다.,minutes,basic-case-6f425c5ea9050f98750d,team-added-synthetic:basic-independent-v2
+basic-3d53cc0e0a0c1b2b8798,서예 교실은 강사 일정으로 이번 주 한 차례 쉽니다. 보강 날짜는 수강생에게 따로 알립니다.,announcement,basic-case-3d53cc0e0a0c1b2b8798,team-added-synthetic:basic-independent-v2
+basic-ada0de51d2a6c7460ff1,주민센터에 문서 작성용 컴퓨터를 추가 설치했습니다. 사용 시간이 필요한 분은 안내 데스크에 신청해 주세요.,announcement,basic-case-ada0de51d2a6c7460ff1,team-added-synthetic:basic-independent-v2
+basic-993bdada467e3f51795c,주민 사진 촬영실은 오늘 배경지 교체 작업을 합니다. 작업 종료 뒤 예약 이용을 시작합니다.,announcement,basic-case-993bdada467e3f51795c,team-added-synthetic:basic-independent-v2
+basic-8e83394ec19b7c96bb74,문화 유산 답사 사진을 참여자에게 공유합니다. 사진에 본인이 나온 경우 공개 범위 변경을 요청할 수 있습니다.,announcement,basic-case-8e83394ec19b7c96bb74,team-added-synthetic:basic-independent-v2
+basic-eb8f393be12c360d7cf2,종이 신청서를 접수하면 접수 시각을 적습니다. 신청자에게 해당 접수번호를 알려 줍니다.,manual,basic-case-eb8f393be12c360d7cf2,team-added-synthetic:basic-independent-v2
+basic-97611477ad58dbd8d5b8,도구함 안의 칼날은 보호 덮개를 씌워 둡니다. 다른 도구를 꺼낼 때 날에 닿지 않게 배치합니다.,manual,basic-case-97611477ad58dbd8d5b8,team-added-synthetic:basic-independent-v2
+basic-22ba810f043ce5c410b0,독서 수업 담당자들은 활동지를 너무 많이 사용한다고 보고했다. 다음 수업은 두 장으로 줄이기로 했다.,minutes,basic-case-22ba810f043ce5c410b0,team-added-synthetic:basic-independent-v2
+basic-381b6654ca8c2465a864,올해 동네 기록집 배부를 시작합니다. 가구별 수령 수량은 현장 안내에 따라 주세요.,announcement,basic-case-381b6654ca8c2465a864,team-added-synthetic:basic-independent-v2
+basic-1ed19f701854b424a933,프레젠테이션을 시작하기 전에 마지막 장까지 넘겨 봅니다. 빠진 이미지가 있으면 원본 파일을 확인합니다.,manual,basic-case-1ed19f701854b424a933,team-added-synthetic:basic-independent-v2
+basic-efa75471229a4844ce4c,영상 편집 기초 수업의 준비 파일을 공개했습니다. 수업 전에 내려받아 주세요.,announcement,basic-case-efa75471229a4844ce4c,team-added-synthetic:basic-independent-v2
+basic-3827bc9784fb4d0b2f68,탐방팀은 걷는 속도 차이로 대열이 나뉘는 문제를 검토했다. 중간 집결 장소를 추가하기로 했다.,minutes,basic-case-3827bc9784fb4d0b2f68,team-added-synthetic:basic-independent-v2
+basic-8cc677261da3e988f553,강당 운영팀은 좌석 번호가 지워진 문제를 보고했다. 시설 담당이 다시 표시하기로 했다.,minutes,basic-case-8cc677261da3e988f553,team-added-synthetic:basic-independent-v2
+basic-184fed23dead1fa4530d,행사 손목띠를 배부할 때 참가 유형을 확인합니다. 유형별 색상을 혼동하지 않게 정리합니다.,manual,basic-case-184fed23dead1fa4530d,team-added-synthetic:basic-independent-v2
+basic-87d2b9f26961eb58ea96,전시 유리문을 닫은 뒤 잠금 상태를 확인합니다. 잠기지 않으면 관리 담당자에게 알립니다.,manual,basic-case-87d2b9f26961eb58ea96,team-added-synthetic:basic-independent-v2
+basic-b35efb75095f29f6636b,주민 응급 대응 교육에 실습 시간이 포함됩니다. 편하게 움직일 수 있는 복장으로 참여해 주세요.,announcement,basic-case-b35efb75095f29f6636b,team-added-synthetic:basic-independent-v2
+basic-934147cdac1c9ac02850,봉사 모임은 활동 확인서 요청이 누락되는 사례를 살펴봤다. 접수 목록에 발급 상태를 추가하기로 했다.,minutes,basic-case-934147cdac1c9ac02850,team-added-synthetic:basic-independent-v2
+basic-414dd88ca43415eec254,시민회관 주차장 일부를 행사 장비 구역으로 사용합니다. 차량은 안내된 빈 구역에 주차해 주세요.,announcement,basic-case-414dd88ca43415eec254,team-added-synthetic:basic-independent-v2
+basic-28f5452dcc3f16e0d087,주민 협의회는 안내문을 읽기 어려운 분께 구두 안내도 제공하기로 했다. 상담 담당이 지원한다.,minutes,basic-case-28f5452dcc3f16e0d087,team-added-synthetic:basic-independent-v2
+basic-b34b2447e523c3700275,활동 자료를 나눠 줄 때 조별 수량을 계산합니다. 남은 자료는 배부 기록과 함께 보관합니다.,manual,basic-case-b34b2447e523c3700275,team-added-synthetic:basic-independent-v2
+basic-393ad3dbccfe1f673e05,공공 연습실의 피아노 조율일에는 해당 악기를 사용할 수 없습니다. 다른 악기 대여는 정상 운영합니다.,announcement,basic-case-393ad3dbccfe1f673e05,team-added-synthetic:basic-independent-v2
+basic-2f9edca0c41465700274,마을 모임은 회의 알림을 늦게 받는 문제를 확인했다. 다음 회의부터 일주일 전에 연락하기로 했다.,minutes,basic-case-2f9edca0c41465700274,team-added-synthetic:basic-independent-v2
+basic-3c633e59f072e801bb76,공연팀은 음향 시험을 실제 무대에서 진행하기로 했다. 기술 담당이 시험 시간을 정한다.,minutes,basic-case-3c633e59f072e801bb76,team-added-synthetic:basic-independent-v2
+basic-d331a0b62e8ef2eca250,청소년 사진실의 토요일 운영을 다음 달부터 시작합니다. 처음 이용하는 분은 안내 교육을 신청해 주세요.,announcement,basic-case-d331a0b62e8ef2eca250,team-added-synthetic:basic-independent-v2
+basic-362b890a6e393e54a164,도서관 복사기가 수리 중입니다. 당분간 자료 복사가 필요한 분은 직원에게 문의해 주세요.,announcement,basic-case-362b890a6e393e54a164,team-added-synthetic:basic-independent-v2
+basic-66382706ee6c9041a687,전시 해설팀은 자주 묻는 질문을 함께 정리하기로 했다. 새로운 질문은 목록에 계속 추가한다.,minutes,basic-case-66382706ee6c9041a687,team-added-synthetic:basic-independent-v2
+basic-ece785d40a0f1160b106,행사 회계팀은 소액 지출의 영수증이 부족하다고 보고했다. 지출 즉시 증빙을 모으기로 했다.,minutes,basic-case-ece785d40a0f1160b106,team-added-synthetic:basic-independent-v2
+basic-9aeac3b02238fac5c609,반려동물 동반 산책 행사에 안전 거리 안내를 추가했습니다. 신청자는 참가 전 내용을 확인해 주세요.,announcement,basic-case-9aeac3b02238fac5c609,team-added-synthetic:basic-independent-v2
+basic-54d6b1f0980a3c593e11,청년 작가와의 대화는 신청 없이 참석할 수 있습니다. 좌석이 차면 현장 안내에 따라 주세요.,announcement,basic-case-54d6b1f0980a3c593e11,team-added-synthetic:basic-independent-v2
+basic-6667e8e36a3ecb1af0d0,모임 대표들은 참가 취소 연락을 한 곳에서 받기로 했다. 진행자가 상태 목록을 갱신한다.,minutes,basic-case-6667e8e36a3ecb1af0d0,team-added-synthetic:basic-independent-v2
+basic-6b006c98ff54fbe007a9,주민 동아리는 모임에 필요한 물품을 먼저 빌려 보기로 했다. 구매는 이용 결과를 본 뒤 결정한다.,minutes,basic-case-6b006c98ff54fbe007a9,team-added-synthetic:basic-independent-v2
+basic-09ff380ab276de4b5c85,교육용 자석은 금속 도구와 떨어진 상자에 넣습니다. 강한 자석에는 취급 표시를 남깁니다.,manual,basic-case-09ff380ab276de4b5c85,team-added-synthetic:basic-independent-v2
+basic-50f556ff55243595cd4b,아이디어 공모의 심사 결과 발표가 늦어집니다. 변경된 발표일은 접수자에게 문자로 알립니다.,announcement,basic-case-50f556ff55243595cd4b,team-added-synthetic:basic-independent-v2
+basic-e8261e79639a9282b907,지역 음악 자료의 기증 상담을 받습니다. 물품을 보내기 전에 목록을 담당자에게 전달해 주세요.,announcement,basic-case-e8261e79639a9282b907,team-added-synthetic:basic-independent-v2
+basic-195d957e6a146f2e8e98,박물관 방학 프로그램 중 발굴 체험만 추가 회차를 엽니다. 다른 프로그램 일정은 유지됩니다.,announcement,basic-case-195d957e6a146f2e8e98,team-added-synthetic:basic-independent-v2
+basic-fc89c5283b4de16672ef,공용 계산기를 사용하기 전에 이전 입력을 지웁니다. 필요한 계산 결과는 별도로 적습니다.,manual,basic-case-fc89c5283b4de16672ef,team-added-synthetic:basic-independent-v2
+basic-40f6ee3820d6acf2baf5,확대경은 렌즈를 확인한 뒤 케이스에서 꺼냅니다. 사용 후 부드러운 천으로 닦아 넣습니다.,manual,basic-case-40f6ee3820d6acf2baf5,team-added-synthetic:basic-independent-v2
+basic-5f2e2919d383f746afb1,일회용 실습 재료는 준비 수량을 확인해 나눕니다. 남은 재료는 사용한 재료와 섞지 않습니다.,manual,basic-case-5f2e2919d383f746afb1,team-added-synthetic:basic-independent-v2
+basic-75c77cd5cc0c622c76ed,도서 기증은 이번 달 잡지류를 제외하고 받습니다. 기증 전 접수 가능한 종류를 확인해 주세요.,announcement,basic-case-75c77cd5cc0c622c76ed,team-added-synthetic:basic-independent-v2
+basic-b52e646f187c0f0fddde,의자를 옮기기 전에 바닥의 장애물을 치웁니다. 여러 의자를 무리하게 한 번에 들지 않습니다.,manual,basic-case-b52e646f187c0f0fddde,team-added-synthetic:basic-independent-v2
+basic-87cc569b186ecabc73cf,마을 우물 정비 기간에는 주변 쉼터를 이용할 수 없습니다. 옆 정자의 휴식 공간은 개방합니다.,announcement,basic-case-87cc569b186ecabc73cf,team-added-synthetic:basic-independent-v2
+basic-bd12946ad13bcd8b09af,우쿨렐레 입문반은 악기 대여 수량이 제한됩니다. 대여가 필요한 분은 신청서에 표시해 주세요.,announcement,basic-case-bd12946ad13bcd8b09af,team-added-synthetic:basic-independent-v2
+basic-e5267e946186fe208def,봉사팀은 현장 업무를 구분해 맡기로 했다. 대표가 역할 목록을 정리한다.,minutes,basic-case-e5267e946186fe208def,team-added-synthetic:basic-independent-v2
+basic-65e444f3efbab391dc94,사진 동아리는 촬영 후 결과 비교 시간을 늘리기로 했다. 진행자가 비교할 사진을 모은다.,minutes,basic-case-65e444f3efbab391dc94,team-added-synthetic:basic-independent-v2
+basic-5fc4aa5fbc3f04f03072,체육 동아리는 준비 운동을 함께 진행하기로 했다. 담당 순서를 매달 바꾸기로 했다.,minutes,basic-case-5fc4aa5fbc3f04f03072,team-added-synthetic:basic-independent-v2
+basic-92d066a94a14857e4a9c,동영상 자료를 등록할 때 제목과 재생 시간을 적습니다. 끝부분까지 정상 재생되는지 확인합니다.,manual,basic-case-92d066a94a14857e4a9c,team-added-synthetic:basic-independent-v2
+basic-0581c794d3646725c698,증서에 이름을 인쇄하기 전에 최종 명단을 대조합니다. 오타가 있으면 원자료를 정정합니다.,manual,basic-case-0581c794d3646725c698,team-added-synthetic:basic-independent-v2
+basic-91d846394e9bb31189aa,전시 설명서를 배치할 때 작품 번호를 대조합니다. 설명과 다른 작품 앞에 놓지 않습니다.,manual,basic-case-91d846394e9bb31189aa,team-added-synthetic:basic-independent-v2
+basic-a84fc9b9bd304850eaf2,공동 작업실 운영팀은 반납 도구의 오염 문제를 살펴봤다. 반납 확인에 청소 상태를 추가했다.,minutes,basic-case-a84fc9b9bd304850eaf2,team-added-synthetic:basic-independent-v2
+basic-21b0afdb1533a6b8a159,시민회관 입구에 행사별 안내판을 설치했습니다. 참가자는 행사 이름에 맞는 이동 방향을 확인해 주세요.,announcement,basic-case-21b0afdb1533a6b8a159,team-added-synthetic:basic-independent-v2
+basic-c92b0e96590d62cdafb3,시민 합주단 신규 단원을 모집합니다. 오디션 시간은 신청자에게 개별 연락합니다.,announcement,basic-case-c92b0e96590d62cdafb3,team-added-synthetic:basic-independent-v2
+basic-7b513b06e9329870e05a,회수한 설문지는 응답 여부를 확인합니다. 빈 설문지는 집계 대상에서 따로 구분합니다.,manual,basic-case-7b513b06e9329870e05a,team-added-synthetic:basic-independent-v2
+basic-0feb09f3ec76887b9590,공용 칠판을 지울 때 지정 지우개를 사용합니다. 남은 글씨에 다른 약품을 임의로 바르지 않습니다.,manual,basic-case-0feb09f3ec76887b9590,team-added-synthetic:basic-independent-v2
+basic-eb8b1fd42473a39aff86,자연 관찰 기록 공모는 종이에 작성한 자료도 접수합니다. 제출한 원본의 반환 여부를 접수 때 확인해 주세요.,announcement,basic-case-eb8b1fd42473a39aff86,team-added-synthetic:basic-independent-v2
+basic-0e7f35c3fbb04a82a96c,봉사활동 확인서 발급 신청은 활동 종료 후 받습니다. 등록한 연락처로 발급 안내를 보냅니다.,announcement,basic-case-0e7f35c3fbb04a82a96c,team-added-synthetic:basic-independent-v2
+basic-264d22fd030c8546fbf9,지역 조사팀은 인터뷰 장소가 시끄럽다는 문제를 논의했다. 조용한 대체 공간을 찾아보기로 했다.,minutes,basic-case-264d22fd030c8546fbf9,team-added-synthetic:basic-independent-v2
+basic-17aff3e58e991c15d2b3,연극 운영팀은 공연 소품의 소유자를 구분하기로 했다. 빌린 물품의 반환 목록을 만든다.,minutes,basic-case-17aff3e58e991c15d2b3,team-added-synthetic:basic-independent-v2
+basic-caf482eca3cb6ff8b38e,소모임 대표들은 공간 사용 후 사진을 남기기로 했다. 정리 상태를 확인하는 기록으로 사용한다.,minutes,basic-case-caf482eca3cb6ff8b38e,team-added-synthetic:basic-independent-v2
+basic-3d3a9a094a8cca7d3721,도예 모임은 작품 반환 연락 방법을 논의했다. 완료된 작품부터 개별 연락하기로 했다.,minutes,basic-case-3d3a9a094a8cca7d3721,team-added-synthetic:basic-independent-v2
+basic-8bcd6fc38e2050d4dac5,표본을 촬영할 때 배경을 단순하게 둡니다. 크기 기준이 되는 자를 함께 놓습니다.,manual,basic-case-8bcd6fc38e2050d4dac5,team-added-synthetic:basic-independent-v2
+basic-350fd14e3a89723c48a1,주민센터 직원들은 안내실 문의가 집중되는 시간을 확인했다. 해당 시간에 지원 인력을 배치하기로 했다.,minutes,basic-case-350fd14e3a89723c48a1,team-added-synthetic:basic-independent-v2
+basic-1bda7739baf89f353953,보관함을 잠그기 전에 내부에 다른 이용자의 물품이 없는지 봅니다. 열쇠 번호를 대여 기록에 적습니다.,manual,basic-case-1bda7739baf89f353953,team-added-synthetic:basic-independent-v2
+basic-cb12118edc24f0925c9c,아파트 주민 음악회는 광장에서 진행합니다. 개인 의자를 가져오는 분은 이동 통로를 비워 주세요.,announcement,basic-case-cb12118edc24f0925c9c,team-added-synthetic:basic-independent-v2
+basic-17265ffeeee50e7a62b0,합주팀은 연습 시작 전에 조율 시간을 두기로 했다. 파트 대표가 악기 상태를 확인한다.,minutes,basic-case-17265ffeeee50e7a62b0,team-added-synthetic:basic-independent-v2
+basic-eceff173055137376abb,자료 정리팀은 내용이 같은 인쇄물이 많다고 보고했다. 보관할 부수와 처리할 부수를 구분하기로 했다.,minutes,basic-case-eceff173055137376abb,team-added-synthetic:basic-independent-v2
+basic-cd5b8df84f0fda5cb6d5,개방형 강당의 무대 조명 점검으로 낮에도 조명이 켜질 수 있습니다. 점검 구역에는 들어가지 말아 주세요.,announcement,basic-case-cd5b8df84f0fda5cb6d5,team-added-synthetic:basic-independent-v2
+basic-4f62a9236e2b50f051d9,보관 상자의 내용물을 바꿨으면 외부 목록을 갱신합니다. 이전 목록은 현재 내용과 구분해 둡니다.,manual,basic-case-4f62a9236e2b50f051d9,team-added-synthetic:basic-independent-v2
+basic-0437b6a4c744f5caca03,낭독용 책갈피는 읽는 쪽의 모서리에 끼웁니다. 접착제로 본문에 붙이지 않습니다.,manual,basic-case-0437b6a4c744f5caca03,team-added-synthetic:basic-independent-v2
+basic-c7ddb090ac52cb1ea3ef,학교 행사팀은 보호자 대기 공간을 늘리기로 했다. 사용 가능한 교실을 확인한다.,minutes,basic-case-c7ddb090ac52cb1ea3ef,team-added-synthetic:basic-independent-v2
+basic-0de7051419dd2bbe9835,수업 중 사용하는 물컵은 참가자별로 구분합니다. 사용 후에는 정해진 세척 장소에 모읍니다.,manual,basic-case-0de7051419dd2bbe9835,team-added-synthetic:basic-independent-v2
+basic-2f60a51d6b3b46f76f7c,합주 악보는 파트 이름을 확인해 배부합니다. 남은 부수와 부족한 파트를 기록합니다.,manual,basic-case-2f60a51d6b3b46f76f7c,team-added-synthetic:basic-independent-v2
+basic-19676610710bcbc4a03b,도서 모임은 책 반납을 다음 활동 시작 전에 확인하기로 했다. 대표가 대여 목록을 관리한다.,minutes,basic-case-19676610710bcbc4a03b,team-added-synthetic:basic-independent-v2
+basic-3db9a9bc623b3a8b9589,지역 공공자료 활용 교육을 신청할 수 있습니다. 수강료는 없으며 개인 노트북 지참 여부를 알려 주세요.,announcement,basic-case-3db9a9bc623b3a8b9589,team-added-synthetic:basic-independent-v2
+basic-8b5fadcb2cbec0d92dde,행사팀은 분실한 안내기기의 위치를 확인했다. 보관실에서 찾은 기기를 충전한 뒤 다시 배부하기로 했다.,minutes,basic-case-8b5fadcb2cbec0d92dde,team-added-synthetic:basic-independent-v2
+basic-ad41cd069a4a8ab8112d,합창 운영팀은 쉬는 시간이 짧다는 의견을 들었다. 연습 중간 휴식을 늘리기로 했다.,minutes,basic-case-ad41cd069a4a8ab8112d,team-added-synthetic:basic-independent-v2
+basic-b0fdc55b4faf95ca1846,교육용 카드를 정리할 때 번호 순서대로 놓습니다. 빠진 번호는 목록에 표시합니다.,manual,basic-case-b0fdc55b4faf95ca1846,team-added-synthetic:basic-independent-v2
+basic-ef1fb8291ab575669aa7,전시 준비팀은 작품 높이를 조정할 필요가 있다고 의견을 모았다. 설치 담당이 견본 배치를 만든다.,minutes,basic-case-ef1fb8291ab575669aa7,team-added-synthetic:basic-independent-v2
+basic-56a0bd1dd6b783556c0b,주민회의는 결정 사항을 짧게 정리해 게시하기로 했다. 기록 담당이 공개용 문안을 작성한다.,minutes,basic-case-56a0bd1dd6b783556c0b,team-added-synthetic:basic-independent-v2
+basic-72fb98c4d90ca23433d2,사진 수업 담당자는 촬영 주제를 하나로 제한하지 않기로 했다. 공통 조건만 안내한다.,minutes,basic-case-72fb98c4d90ca23433d2,team-added-synthetic:basic-independent-v2
+basic-902cff2d4b2fbd8f22ee,시민 체육대회 종목별 참가 명단을 게시했습니다. 이름이 빠진 경우 접수 담당자에게 연락해 주세요.,announcement,basic-case-902cff2d4b2fbd8f22ee,team-added-synthetic:basic-independent-v2
+basic-ceb47aa9162dbc466e39,작품집 제작팀은 원고 마감 후 수정 요청이 많다는 문제를 검토했다. 교정 기간을 따로 두기로 했다.,minutes,basic-case-ceb47aa9162dbc466e39,team-added-synthetic:basic-independent-v2
+basic-7504ff08960dc3e13d52,접이식 행사용 탁자는 고정핀을 확인한 뒤 펼칩니다. 손이 접히는 부분에 끼지 않게 주의합니다.,manual,basic-case-7504ff08960dc3e13d52,team-added-synthetic:basic-independent-v2
+basic-104a93200cb55ea69a94,행사 종료 뒤 이름표를 수거할 때 개인정보가 보이는 면을 가립니다. 보관 또는 폐기 기준에 따라 처리합니다.,manual,basic-case-104a93200cb55ea69a94,team-added-synthetic:basic-independent-v2
+basic-0c8d62914db60c254889,강연 담당자는 좌석 부족 상황을 검토했다. 추가 의자 배치 전에 통로 안전을 확인하기로 했다.,minutes,basic-case-0c8d62914db60c254889,team-added-synthetic:basic-independent-v2
+basic-03c91ad96dea59cbdba0,공용 사물함의 물품을 정리할 때 소유자를 확인합니다. 확인되지 않은 물건을 임의로 버리지 않습니다.,manual,basic-case-03c91ad96dea59cbdba0,team-added-synthetic:basic-independent-v2
+basic-47e57aa2b24a2cb3b234,피아노 덮개를 열 때 주변에 놓인 물건을 치웁니다. 사용 뒤에는 덮개를 천천히 닫습니다.,manual,basic-case-47e57aa2b24a2cb3b234,team-added-synthetic:basic-independent-v2
+basic-1d1b4f27ad0989c5a4ec,방문증을 회수하면 발급 번호를 대조합니다. 반납하지 않은 번호는 따로 표시합니다.,manual,basic-case-1d1b4f27ad0989c5a4ec,team-added-synthetic:basic-independent-v2
+basic-7c7fe7e134a5918161fa,우편물을 분류할 때 수신 부서를 확인합니다. 부서가 불명확하면 안내실에 문의합니다.,manual,basic-case-7c7fe7e134a5918161fa,team-added-synthetic:basic-independent-v2
+basic-c8fd67afadb6f35a363c,공예 교육팀은 재료 설명에 실물 견본을 추가하기로 했다. 강사가 종류별 견본을 준비한다.,minutes,basic-case-c8fd67afadb6f35a363c,team-added-synthetic:basic-independent-v2
+basic-ce21e48f8d00d8c10f7b,주민 텃밭 신청 결과를 접수번호로 게시했습니다. 선정된 분은 지정 기간에 이용 의사를 회신해 주세요.,announcement,basic-case-ce21e48f8d00d8c10f7b,team-added-synthetic:basic-independent-v2
+basic-6a93b37fbbe28074dde4,종이 자료를 묶을 때 같은 판본인지 확인합니다. 수정 전 자료는 따로 구분해 둡니다.,manual,basic-case-6a93b37fbbe28074dde4,team-added-synthetic:basic-independent-v2
+basic-c7e89b6647ef0e7b8de6,문화 모임은 활동 결과물을 공동 전시하기로 했다. 공개를 원하지 않는 작품은 제외한다.,minutes,basic-case-c7e89b6647ef0e7b8de6,team-added-synthetic:basic-independent-v2
+basic-e635fce39ce11814f448,주민센터 운영팀은 폐강 연락이 늦었다고 보고했다. 변경 결정 직후 수강생에게 알리기로 했다.,minutes,basic-case-e635fce39ce11814f448,team-added-synthetic:basic-independent-v2
+basic-7f96a959fdf4dc884684,공원 안내소의 연락처가 바뀌었습니다. 시설 이용 문의는 새 번호를 이용해 주세요.,announcement,basic-case-7f96a959fdf4dc884684,team-added-synthetic:basic-independent-v2
+basic-6bb92a3505789c001a57,가을 운동회 참가 팀은 이름과 대표 연락처를 제출해 주세요. 제출 마감은 다음 주 화요일입니다.,announcement,basic-case-6bb92a3505789c001a57,team-added-synthetic:basic-independent-v2
+basic-9362cdc2644f5ee590f1,접수 취소 연락을 받으면 해당 신청번호를 찾습니다. 다른 신청의 상태를 바꾸지 않습니다.,manual,basic-case-9362cdc2644f5ee590f1,team-added-synthetic:basic-independent-v2
+basic-47d4ef392a2fddad5bbb,식물 교환 장터는 해충이 없는 화분만 접수합니다. 참가 전에 화분 상태를 확인해 주세요.,announcement,basic-case-47d4ef392a2fddad5bbb,team-added-synthetic:basic-independent-v2
+basic-9ee4270fc8f52263e2f9,체험 강사들은 재료 사용량이 다르다는 의견을 나눴다. 참가 인원에 맞춘 기본 수량을 정하기로 했다.,minutes,basic-case-9ee4270fc8f52263e2f9,team-added-synthetic:basic-independent-v2
+basic-83eb83a4b2ac748300a0,전시 조명을 켜기 전에 주변에 가연성 물품이 없는지 살핍니다. 이상이 있으면 담당자에게 확인합니다.,manual,basic-case-83eb83a4b2ac748300a0,team-added-synthetic:basic-independent-v2
