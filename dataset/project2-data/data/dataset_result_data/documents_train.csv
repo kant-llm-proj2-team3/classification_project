@@ -719,303 +719,303 @@ documents-v2-announcement-train-044-v1,"- 기상 상황에 대비해 야외 관�
 - 실제 연기 여부는 활동 전날 오후에 안내합니다.
 - 예비일을 정했다고 원래 일정이 취소된 것은 아닙니다.",announcement,documents-v2-announcement-train-044,original-synthetic:synthetic-ko-v2.0
 documents-v2-manual-train-017-v1,나눔 물품을 교환할 때에는 받은 물품과 내놓은 물품을 서로 다른 칸에 적는다. 교환이 이루어진 뒤에만 완료 표시를 한다. 가져가기만 한 물품은 교환 건수와 구분해 기록한다.,manual,documents-v2-manual-train-017,original-synthetic:synthetic-ko-v2.0
-basic-6871b1997607b4ba1b35,어린이 체험관에 낮은 높이의 접수대를 마련했습니다. 보호자 없이도 직원에게 이용 안내를 받을 수 있습니다.,announcement,basic-case-6871b1997607b4ba1b35,team-added-synthetic:basic-independent-v2
-basic-6ac157bc7f82a7201c54,복지관 점심 배식 장소를 지하 식당으로 변경합니다. 이동이 어려운 분은 직원에게 도움을 요청해 주세요.,announcement,basic-case-6ac157bc7f82a7201c54,team-added-synthetic:basic-independent-v2
-basic-7cd80b01bf7edb1881e4,문화 행사팀은 홍보물의 날짜 오류를 확인했다. 배포 전 최종 검수 담당자를 지정했다.,minutes,basic-case-7cd80b01bf7edb1881e4,team-added-synthetic:basic-independent-v2
-basic-ee87459029678eb2845d,봉사팀은 담당자가 바뀌면 미완료 업무를 문서로 전달하기로 했다. 공통 인계 양식을 만든다.,minutes,basic-case-ee87459029678eb2845d,team-added-synthetic:basic-independent-v2
-basic-647adfb4909c7ce61ba8,연극 모임은 소품 정리 위치를 장면별로 나누기로 했다. 무대 담당이 배치도를 만든다.,minutes,basic-case-647adfb4909c7ce61ba8,team-added-synthetic:basic-independent-v2
-basic-97df8d05ffb40d0a6b15,야외 전시의 일부 작품은 일몰 전에 관람을 마쳐야 합니다. 관람 가능한 구역을 현장 지도에서 확인해 주세요.,announcement,basic-case-97df8d05ffb40d0a6b15,team-added-synthetic:basic-independent-v2
-basic-4b36e547747d5eda8bf9,빔 화면을 내릴 때 아래 공간을 비웁니다. 걸림이 느껴지면 당기지 말고 장치를 점검합니다.,manual,basic-case-4b36e547747d5eda8bf9,team-added-synthetic:basic-independent-v2
-basic-3381ebe6f2bc0433827b,동네 공방의 가족 체험반은 이번 달 신청이 마감됐습니다. 추가 회차가 생기면 다시 안내합니다.,announcement,basic-case-3381ebe6f2bc0433827b,team-added-synthetic:basic-independent-v2
-basic-1225ae4f931243fe1066,문화관 로비의 유실물은 금요일까지 안내실에서 확인할 수 있습니다. 본인 물건을 구별할 정보를 준비해 주세요.,announcement,basic-case-1225ae4f931243fe1066,team-added-synthetic:basic-independent-v2
-basic-2d50f530c3fa38fcaa3f,체육관 출입 확인 방식이 카드 인식으로 바뀝니다. 기존 이용자는 안내 데스크에서 카드를 받을 수 있습니다.,announcement,basic-case-2d50f530c3fa38fcaa3f,team-added-synthetic:basic-independent-v2
-basic-298376d3daba628cd483,문화센터 운영자는 이용자 의견함을 잘 보이는 곳으로 옮기기로 했다. 제출된 의견은 매주 모은다.,minutes,basic-case-298376d3daba628cd483,team-added-synthetic:basic-independent-v2
-basic-97a4aaf9df88c8444887,야외 장기 두기 행사는 폭염으로 실내 강당에서 열립니다. 시작 시간은 변동 없습니다.,announcement,basic-case-97a4aaf9df88c8444887,team-added-synthetic:basic-independent-v2
-basic-42edfda09b06f60144fe,학습 모임은 진행자를 매달 바꿔 맡기로 했다. 다음 진행자가 활동안을 준비한다.,minutes,basic-case-42edfda09b06f60144fe,team-added-synthetic:basic-independent-v2
-basic-9061a34bcb467d78505f,시립 합창 공연의 관람권 배부는 금요일 오후에 시작합니다. 수령 장소는 문화관 안내실입니다.,announcement,basic-case-9061a34bcb467d78505f,team-added-synthetic:basic-independent-v2
-basic-7b01c3365505888bade9,주민회관에서 전동 보조기 충전 공간을 제공합니다. 이용 전에 직원에게 연결 가능 여부를 확인해 주세요.,announcement,basic-case-7b01c3365505888bade9,team-added-synthetic:basic-independent-v2
-basic-25a0034ad1ee59becc91,공용 충전기를 대여할 때 연결 규격을 확인합니다. 맞지 않는 단자를 억지로 끼우지 않습니다.,manual,basic-case-25a0034ad1ee59becc91,team-added-synthetic:basic-independent-v2
-basic-c754d9ad97b16c9685b1,조별 활동 번호표는 서로 다른 색상으로 나눕니다. 색을 구별하기 어려우면 숫자도 함께 표시합니다.,manual,basic-case-c754d9ad97b16c9685b1,team-added-synthetic:basic-independent-v2
-basic-8fde90a110bbee7e6876,공동 사무실의 개인 사물함 신규 신청을 받습니다. 기존 사용자의 연장 신청과 구분해 제출해 주세요.,announcement,basic-case-8fde90a110bbee7e6876,team-added-synthetic:basic-independent-v2
-basic-0c557d0bd005087894fe,동아리 발표 순서를 안내 페이지에 올렸습니다. 대표자는 집결 시각을 확인해 주세요.,announcement,basic-case-0c557d0bd005087894fe,team-added-synthetic:basic-independent-v2
-basic-b7edd02e978f101c8065,독서 교육팀은 어린이의 관심 분야를 조사하기로 했다. 결과를 다음 도서 선정에 참고한다.,minutes,basic-case-b7edd02e978f101c8065,team-added-synthetic:basic-independent-v2
-basic-4e2284fc00c75d476de9,방문 예정 명단을 만들 때 날짜별로 정리합니다. 취소 연락이 온 신청에는 상태를 표시합니다.,manual,basic-case-4e2284fc00c75d476de9,team-added-synthetic:basic-independent-v2
-basic-1fc1922039a5a0ce956f,청년 행사팀은 현장 안내의 표현을 통일하기로 했다. 참가 유형별 안내 문장을 정리한다.,minutes,basic-case-1fc1922039a5a0ce956f,team-added-synthetic:basic-independent-v2
-basic-670a8585badf8e271745,공방 모임은 남은 재료를 다른 활동에 쓰기로 했다. 재료 담당이 종류와 양을 기록한다.,minutes,basic-case-670a8585badf8e271745,team-added-synthetic:basic-independent-v2
-basic-7bbd5254f2069404cbb0,강연 준비팀은 질문지를 미리 받기로 했다. 사회자가 비슷한 질문을 정리한다.,minutes,basic-case-7bbd5254f2069404cbb0,team-added-synthetic:basic-independent-v2
-basic-7e5ca43627b62e922bc6,자료 배부팀은 어린이 안내지를 성인 자료와 분리하기로 했다. 신청할 때 연령대별 필요 수량을 받는다.,minutes,basic-case-7e5ca43627b62e922bc6,team-added-synthetic:basic-independent-v2
-basic-98a7706dba9c7f7cd259,잔여 예산을 계산할 때 이미 확정된 지출도 확인합니다. 미집행액을 사용 가능한 돈으로 바로 계산하지 않습니다.,manual,basic-case-98a7706dba9c7f7cd259,team-added-synthetic:basic-independent-v2
-basic-286f908326f913565772,활동 일지를 작성할 때 진행 시간과 참여 인원을 구분합니다. 취소된 활동은 별도 표시합니다.,manual,basic-case-286f908326f913565772,team-added-synthetic:basic-independent-v2
-basic-50f8050a62e92997ec61,주민 동아리실의 연장 사용 신청을 다음 주까지 접수합니다. 이전 신청 내용도 다시 확인해 주세요.,announcement,basic-case-50f8050a62e92997ec61,team-added-synthetic:basic-independent-v2
-basic-1a5c305b2791d411f0be,출력용 종이는 안내된 방향으로 넣습니다. 서로 다른 크기의 종이를 같은 칸에 섞지 않습니다.,manual,basic-case-1a5c305b2791d411f0be,team-added-synthetic:basic-independent-v2
-basic-7cc8bf9dfb6478450d1b,재료 구매 목록은 필요한 양과 보유량을 비교합니다. 이미 있는 재료를 중복 주문하지 않습니다.,manual,basic-case-7cc8bf9dfb6478450d1b,team-added-synthetic:basic-independent-v2
-basic-dd8f10a63586fb049925,관찰 결과를 기록할 때 본 시간과 장소를 적습니다. 나중에 들은 설명은 별도 칸에 적습니다.,manual,basic-case-dd8f10a63586fb049925,team-added-synthetic:basic-independent-v2
-basic-7f9bea60e57ea6618890,탐방 준비팀은 이동 시간 계산이 부족했다고 보고했다. 답사 결과로 다음 일정을 조정한다.,minutes,basic-case-7f9bea60e57ea6618890,team-added-synthetic:basic-independent-v2
-basic-658f8b9656be9f7c59fc,기록팀은 인터뷰 녹음 파일이 일부 누락됐다고 보고했다. 제출 목록과 보관 파일을 대조하기로 했다.,minutes,basic-case-658f8b9656be9f7c59fc,team-added-synthetic:basic-independent-v2
-basic-54bfa79f5ead0aafd580,색연필을 반납받으면 수량을 셉니다. 부족한 색은 다음 대여 전에 기록합니다.,manual,basic-case-54bfa79f5ead0aafd580,team-added-synthetic:basic-independent-v2
-basic-e164827e6a69408aea76,지역 박람회 참가 안내서를 배부합니다. 신청서와 안내서는 다른 자료이므로 각각 확인해 주세요.,announcement,basic-case-e164827e6a69408aea76,team-added-synthetic:basic-independent-v2
-basic-c7730f9b23a4edb662a8,전시팀은 관람 동선이 겹치는 지점을 확인했다. 입구 안내 위치를 옮겨 보기로 했다.,minutes,basic-case-c7730f9b23a4edb662a8,team-added-synthetic:basic-independent-v2
-basic-c23ac8cd7cd16b9d91b1,참가자 명찰은 이름과 소속을 대조해 배부합니다. 정보가 틀렸으면 수정한 명찰을 사용합니다.,manual,basic-case-c23ac8cd7cd16b9d91b1,team-added-synthetic:basic-independent-v2
-basic-858333b1f89478dd92a0,공예 실습에 필요한 안전 안경은 현장에서 제공합니다. 개인 안경을 사용하려면 강사에게 확인해 주세요.,announcement,basic-case-858333b1f89478dd92a0,team-added-synthetic:basic-independent-v2
-basic-da29778f6a6120249c8f,활동 신청 안내를 보낼 때 대상 명단을 확인합니다. 이미 취소한 참가자는 따로 구분합니다.,manual,basic-case-da29778f6a6120249c8f,team-added-synthetic:basic-independent-v2
-basic-6ed1a43d6a4cb4813b8c,생태 교육관의 실내 관람은 이번 주 무료입니다. 유료 체험 활동은 별도 신청이 필요합니다.,announcement,basic-case-6ed1a43d6a4cb4813b8c,team-added-synthetic:basic-independent-v2
-basic-ccef8e9ace5a40db270e,작업대 사용을 마치면 도구를 원래 위치에 둡니다. 남은 재료는 지정 상자에 정리합니다.,manual,basic-case-ccef8e9ace5a40db270e,team-added-synthetic:basic-independent-v2
-basic-db68648a91d08553ec4d,어린이용 가위를 배부하기 전에 손잡이와 날 상태를 살핍니다. 손상된 도구는 별도로 치웁니다.,manual,basic-case-db68648a91d08553ec4d,team-added-synthetic:basic-independent-v2
-basic-9fbeea43e1c3f6845cee,지역 탐방 버스 출발 장소를 역 앞 광장으로 변경했습니다. 탑승 확인은 출발 전에 진행합니다.,announcement,basic-case-9fbeea43e1c3f6845cee,team-added-synthetic:basic-independent-v2
-basic-cd79a1108afd3e94d958,마을 기록팀은 장소 이름의 표기를 맞추기로 했다. 오래된 이름은 별도 설명으로 남긴다.,minutes,basic-case-cd79a1108afd3e94d958,team-added-synthetic:basic-independent-v2
-basic-2abec5914ac48e62a546,행사 접수대 자료는 이름순으로 정리합니다. 같은 이름이 있으면 신청번호로 구분합니다.,manual,basic-case-2abec5914ac48e62a546,team-added-synthetic:basic-independent-v2
-basic-2519d681118154e3669e,독서 동아리는 새 책을 고를 때 회원 의견을 먼저 받기로 했다. 진행자가 후보 목록을 모은다.,minutes,basic-case-2519d681118154e3669e,team-added-synthetic:basic-independent-v2
-basic-85066b31b684a1678513,행사 운영자는 출입 인원을 정확히 세기 어렵다고 보고했다. 출구에서도 퇴장 기록을 남기기로 했다.,minutes,basic-case-85066b31b684a1678513,team-added-synthetic:basic-independent-v2
-basic-6c7bb58d7ab5ee472457,복지관 컴퓨터 교실은 수준별 상담 뒤 반을 배정합니다. 상담 예약 안내를 먼저 확인해 주세요.,announcement,basic-case-6c7bb58d7ab5ee472457,team-added-synthetic:basic-independent-v2
-basic-a99ffb1287ceb691b25b,공동 작업실의 방학 중 이용 신청을 시작합니다. 사용할 장비와 기간을 적어 주세요.,announcement,basic-case-a99ffb1287ceb691b25b,team-added-synthetic:basic-independent-v2
-basic-813588023c87bd881e1f,외부 자료를 인용할 때 출처와 작성 날짜를 적습니다. 수정한 설명은 원문과 구분합니다.,manual,basic-case-813588023c87bd881e1f,team-added-synthetic:basic-independent-v2
-basic-01237d5a72d5c60a04b1,지역 장인 초청 행사에 통역이 필요한 분은 사전 신청 때 요청해 주세요. 요청 내용을 확인해 개별 연락합니다.,announcement,basic-case-01237d5a72d5c60a04b1,team-added-synthetic:basic-independent-v2
-basic-8a81aff38c6348c2e6bd,동아리 대표들은 공동 행사의 이름을 투표로 정하기로 했다. 후보 접수 기간을 마련한다.,minutes,basic-case-8a81aff38c6348c2e6bd,team-added-synthetic:basic-independent-v2
-basic-b8448637e2cfeea6d1c4,전통 놀이 체험은 이번 주 우천 예보로 취소합니다. 이미 신청한 분께 재신청 방법을 알립니다.,announcement,basic-case-b8448637e2cfeea6d1c4,team-added-synthetic:basic-independent-v2
-basic-312b1556eb50a6c46888,주민회는 행사 신청자의 연락처 오류가 많다고 보고했다. 접수 뒤 확인 문자를 보내기로 했다.,minutes,basic-case-312b1556eb50a6c46888,team-added-synthetic:basic-independent-v2
-basic-232c139ca965cfee181d,시설 고장 신고에는 장소와 증상을 적습니다. 확인하지 못한 원인은 추측해 쓰지 않습니다.,manual,basic-case-232c139ca965cfee181d,team-added-synthetic:basic-independent-v2
-basic-0b95def7a6b74ac8ff6f,학생 모임은 발표 순서를 추첨으로 정하기로 했다. 기록 담당이 결과를 참가자에게 알린다.,minutes,basic-case-0b95def7a6b74ac8ff6f,team-added-synthetic:basic-independent-v2
-basic-51005cc44451da71c8be,천 재료를 자르기 전에 필요한 폭을 표시합니다. 다른 사람이 준비한 표시와 혼동하지 않게 구분합니다.,manual,basic-case-51005cc44451da71c8be,team-added-synthetic:basic-independent-v2
-basic-bd35b0694248fb68d642,어린이 미술 작품의 반환일이 정해졌습니다. 보호자가 대신 수령할 때는 작품 번호를 알려 주세요.,announcement,basic-case-bd35b0694248fb68d642,team-added-synthetic:basic-independent-v2
-basic-2e0f13877890e72be419,청년 모임은 의견 제출을 말하기와 글쓰기 두 방식으로 받기로 했다. 진행자가 익명 의견도 함께 정리한다.,minutes,basic-case-2e0f13877890e72be419,team-added-synthetic:basic-independent-v2
-basic-01b1d8f9b64eaab12597,전시 오디오 안내는 개인 휴대전화로도 들을 수 있습니다. 이어폰은 관람객이 준비해 주세요.,announcement,basic-case-01b1d8f9b64eaab12597,team-added-synthetic:basic-independent-v2
-basic-139c70194d652d2104d3,교육팀은 실습 자료 배부가 늦어진 원인을 살펴봤다. 수업 전날 자료를 조별로 준비하기로 했다.,minutes,basic-case-139c70194d652d2104d3,team-added-synthetic:basic-independent-v2
-basic-6238a89a85cdf70cd793,손전등을 빌리기 전에 전원을 켜 봅니다. 빛이 약하면 충전 상태를 확인합니다.,manual,basic-case-6238a89a85cdf70cd793,team-added-synthetic:basic-independent-v2
-basic-7fa180092255531a90dd,주민회는 정기 모임에 새 참가자 소개 시간을 추가하기로 했다. 진행 순서를 수정한다.,minutes,basic-case-7fa180092255531a90dd,team-added-synthetic:basic-independent-v2
-basic-514ad898c3949a4b32db,초등 독서교실은 보호자 설명회를 먼저 진행합니다. 학생 수업의 시작일은 별도로 안내합니다.,announcement,basic-case-514ad898c3949a4b32db,team-added-synthetic:basic-independent-v2
-basic-be2e9aaa4b6ac9c5d2b2,소형 전시물을 이동할 때 양손으로 받칩니다. 이동 경로를 비운 뒤 옮깁니다.,manual,basic-case-be2e9aaa4b6ac9c5d2b2,team-added-synthetic:basic-independent-v2
-basic-9753b2ea73e14358f487,클립으로 묶은 자료를 분리할 때 종이가 찢어지지 않게 잡습니다. 손상된 클립은 다시 쓰지 않습니다.,manual,basic-case-9753b2ea73e14358f487,team-added-synthetic:basic-independent-v2
-basic-5cd395b5400bcd98d556,교육 담당자들은 수업 종료 안내가 들리지 않는다는 의견을 받았다. 화면 안내를 함께 표시하기로 했다.,minutes,basic-case-5cd395b5400bcd98d556,team-added-synthetic:basic-independent-v2
-basic-6f880736653a3a5bdc26,역사 강연 녹화 영상은 다음 주에 공개됩니다. 현장 참가자에게도 같은 링크를 보냅니다.,announcement,basic-case-6f880736653a3a5bdc26,team-added-synthetic:basic-independent-v2
-basic-a4ba5c3d777031e4c5dc,온라인 강의 접속 주소는 발송 전에 시험합니다. 잘못 연결되면 담당자에게 수정 요청을 합니다.,manual,basic-case-a4ba5c3d777031e4c5dc,team-added-synthetic:basic-independent-v2
-basic-391615660c7d9f55db0e,공용 악기 연습실의 예약 화면을 변경했습니다. 기존 예약은 새 화면에서도 확인할 수 있습니다.,announcement,basic-case-391615660c7d9f55db0e,team-added-synthetic:basic-independent-v2
-basic-eb3bcf9aa1d976b8f639,표지판을 설치한 뒤 방문객의 이동 방향에서 살펴봅니다. 다른 물품에 가려지면 위치를 조정합니다.,manual,basic-case-eb3bcf9aa1d976b8f639,team-added-synthetic:basic-independent-v2
-basic-29c51bcc0c41886c7935,교육팀은 활동 속도가 빠르다는 의견을 들었다. 중간 확인 질문을 넣기로 했다.,minutes,basic-case-29c51bcc0c41886c7935,team-added-synthetic:basic-independent-v2
-basic-e47cab375a11107e92b6,교실 책상을 배치할 때 출입문까지의 통로를 남깁니다. 배치가 끝나면 실제로 지나가 봅니다.,manual,basic-case-e47cab375a11107e92b6,team-added-synthetic:basic-independent-v2
-basic-6efbcab4afbc90b48e0a,공동 사용 우산은 펼쳐서 말린 뒤 꽂습니다. 파손된 우산은 대여용에서 분리합니다.,manual,basic-case-6efbcab4afbc90b48e0a,team-added-synthetic:basic-independent-v2
-basic-24178cc7060e693a422d,공원 분수는 동절기 동안 가동하지 않습니다. 주변 산책 공간은 계속 이용할 수 있습니다.,announcement,basic-case-24178cc7060e693a422d,team-added-synthetic:basic-independent-v2
-basic-9e150c4bc5b758c902f1,주말 벼룩시장의 책 교환 부스가 추가됐습니다. 물품 판매 신청과 책 교환 신청은 따로 받습니다.,announcement,basic-case-9e150c4bc5b758c902f1,team-added-synthetic:basic-independent-v2
-basic-e3cf201e777ba9279082,청소년센터 여름 캠프의 참가비 납부 안내를 발송했습니다. 승인된 신청자만 안내된 방법으로 납부해 주세요.,announcement,basic-case-e3cf201e777ba9279082,team-added-synthetic:basic-independent-v2
-basic-bf9efc793b8b141d055d,마이크를 사용하려면 케이블을 연결하고 음량을 낮춥니다. 시험 소리를 확인한 뒤 필요한 수준으로 올립니다.,manual,basic-case-bf9efc793b8b141d055d,team-added-synthetic:basic-independent-v2
-basic-fc39f3a51cfdacef3dad,지역 공예품 전시는 화요일에 작품 교체를 진행합니다. 교체 중인 구역은 잠시 관람을 제한합니다.,announcement,basic-case-fc39f3a51cfdacef3dad,team-added-synthetic:basic-independent-v2
-basic-fb8a4e8bba66f8a758b7,모임 정산에 영수증을 붙일 때 지출 번호를 적습니다. 금액이 같아도 다른 거래는 따로 보관합니다.,manual,basic-case-fb8a4e8bba66f8a758b7,team-added-synthetic:basic-independent-v2
-basic-a35b8485207824f3956e,도서 반납함 위치를 서쪽 출입구로 옮겼습니다. 야간 반납도 새 반납함을 이용해 주세요.,announcement,basic-case-a35b8485207824f3956e,team-added-synthetic:basic-independent-v2
-basic-11216f058333d4af9708,기록 메일을 보관할 때 날짜와 주제를 기준으로 정리합니다. 첨부 파일도 같은 기록에 연결합니다.,manual,basic-case-11216f058333d4af9708,team-added-synthetic:basic-independent-v2
-basic-dbf7d5b917ffb666ff1d,배포 자료의 연락처를 바꿨으면 모든 쪽을 검색합니다. 표지와 마지막 안내도 함께 확인합니다.,manual,basic-case-dbf7d5b917ffb666ff1d,team-added-synthetic:basic-independent-v2
-basic-9ba66e0ca32ecd39a10e,청소년 모임은 활동 사진 공개 여부를 먼저 묻기로 했다. 진행자가 동의 항목을 준비한다.,minutes,basic-case-9ba66e0ca32ecd39a10e,team-added-synthetic:basic-independent-v2
-basic-9320ef9ac1a01cf58e7d,행사 안내 방송은 원고를 확인한 뒤 읽습니다. 미확정된 일정을 확정된 것처럼 덧붙이지 않습니다.,manual,basic-case-9320ef9ac1a01cf58e7d,team-added-synthetic:basic-independent-v2
-basic-503449df700a037a47f5,주민 대표들은 안내문 연락처를 하나로 통일하기로 했다. 부서별 문의는 접수 뒤 연결한다.,minutes,basic-case-503449df700a037a47f5,team-added-synthetic:basic-independent-v2
-basic-62be4a056bcf5e74e76e,사진 전시팀은 같은 사진의 여러 인화본 중 한 부만 전시하기로 했다. 작가에게 사용할 판본을 확인한다.,minutes,basic-case-62be4a056bcf5e74e76e,team-added-synthetic:basic-independent-v2
-basic-65dbb7d186a01d0c6e4d,공공 수장고 견학은 정원을 줄여 운영합니다. 확정 안내를 받은 신청자만 입장할 수 있습니다.,announcement,basic-case-65dbb7d186a01d0c6e4d,team-added-synthetic:basic-independent-v2
-basic-0b77903bf649370cd467,보관 중인 행사 배너는 사용 날짜를 표시합니다. 다시 쓸 수 있는 것과 폐기 대상을 구분합니다.,manual,basic-case-0b77903bf649370cd467,team-added-synthetic:basic-independent-v2
-basic-ad155ef12cc7a8bef67c,회원증 사진을 촬영할 때 얼굴이 가려지지 않게 합니다. 본인이 사진을 확인한 뒤 저장합니다.,manual,basic-case-ad155ef12cc7a8bef67c,team-added-synthetic:basic-independent-v2
-basic-85693fa011e4745b51d5,스피커 위치를 바꿀 때 전원을 끕니다. 옮긴 뒤 케이블이 통로를 가리지 않는지 봅니다.,manual,basic-case-85693fa011e4745b51d5,team-added-synthetic:basic-independent-v2
-basic-3104d940dcf75d2432f0,어린이 놀이방의 바닥 보수로 이번 주 이용을 중단합니다. 다른 놀이 공간 정보는 안내실에서 제공합니다.,announcement,basic-case-3104d940dcf75d2432f0,team-added-synthetic:basic-independent-v2
-basic-22d142ea255fa8a07c90,참가자가 바뀐 조 명단은 즉시 수정합니다. 이전 명단에는 사용 중단 표시를 남깁니다.,manual,basic-case-22d142ea255fa8a07c90,team-added-synthetic:basic-independent-v2
-basic-76a875ef866190a895fb,공원 야간 조명을 교체하는 동안 일부 구역이 어둡습니다. 밝게 표시된 통로를 이용해 주세요.,announcement,basic-case-76a875ef866190a895fb,team-added-synthetic:basic-independent-v2
-basic-7cd2b450b2d2883e6eba,학교 운영팀은 행사 후 자료 정리가 부족하다고 보고했다. 활동별 보관 담당을 지정했다.,minutes,basic-case-7cd2b450b2d2883e6eba,team-added-synthetic:basic-independent-v2
-basic-3392d1340a004d337643,수업 자료를 읽기 쉽게 만들 때 제목부터 구분합니다. 본문 글자가 작으면 분량을 나눕니다.,manual,basic-case-3392d1340a004d337643,team-added-synthetic:basic-independent-v2
-basic-3f3344682100f6e604ec,정원 해설 프로그램에 어린이용 안내 자료가 추가됐습니다. 필요한 수량을 예약 때 알려 주세요.,announcement,basic-case-3f3344682100f6e604ec,team-added-synthetic:basic-independent-v2
-basic-867fd69b1372391ea941,공예 동아리는 초보자에게 도구 설명 시간이 부족하다고 보고했다. 첫 활동에 별도 안내 시간을 두기로 했다.,minutes,basic-case-867fd69b1372391ea941,team-added-synthetic:basic-independent-v2
-basic-ef251bc1375cdecfa195,노인 건강 활동의 신규 참여자 상담은 월요일에 진행합니다. 상담 결과에 따라 활동 시간을 배정합니다.,announcement,basic-case-ef251bc1375cdecfa195,team-added-synthetic:basic-independent-v2
-basic-c12a040d4abddfd8ef41,공방 운영자는 사용 시간 중 청소 구간을 마련하자고 제안했다. 마지막 십 분을 정리 시간으로 정했다.,minutes,basic-case-c12a040d4abddfd8ef41,team-added-synthetic:basic-independent-v2
-basic-32e2536b05da179b1de7,전시 운영팀은 작품 보호선이 보이지 않는다는 의견을 받았다. 표시 색을 바꿔 비교하기로 했다.,minutes,basic-case-32e2536b05da179b1de7,team-added-synthetic:basic-independent-v2
-basic-3cd75bd81dea2cf5b9b6,기록 사진 전시의 개막 행사는 참석 신청을 받지 않습니다. 일반 관람 시간은 전시 안내에 표시돼 있습니다.,announcement,basic-case-3cd75bd81dea2cf5b9b6,team-added-synthetic:basic-independent-v2
-basic-50c2838d825015e1c405,마을 안내팀은 새로운 길 안내 지도를 시험 배부하기로 했다. 이용자에게 어려운 지점을 묻는다.,minutes,basic-case-50c2838d825015e1c405,team-added-synthetic:basic-independent-v2
-basic-835cafedbb6cee7272ef,기증 도서는 상태를 확인한 뒤 등록합니다. 등록 전에는 다른 대출 도서와 섞지 않습니다.,manual,basic-case-835cafedbb6cee7272ef,team-added-synthetic:basic-independent-v2
-basic-40719d49fc51c1c4cbbd,주민 영화 토론 모임은 이번 회차에 온라인으로 진행합니다. 접속 주소를 신청자에게 보냅니다.,announcement,basic-case-40719d49fc51c1c4cbbd,team-added-synthetic:basic-independent-v2
-basic-3878c49644b6ccd2ce6c,주민들이 만든 생활 지도를 안내실에서 배부합니다. 지도 내용 정정 의견도 함께 받고 있습니다.,announcement,basic-case-3878c49644b6ccd2ce6c,team-added-synthetic:basic-independent-v2
-basic-0a4fd3d5f717617d8e5a,공용 복합기 이용권의 새 발급을 안내실에서 받습니다. 이전 이용권의 잔여 횟수는 담당자에게 확인해 주세요.,announcement,basic-case-0a4fd3d5f717617d8e5a,team-added-synthetic:basic-independent-v2
-basic-3921fb6be5c87be06129,문서 파일을 보낼 때 제목과 첨부 파일 이름을 대조합니다. 다른 문서가 붙었으면 발송 전에 교체합니다.,manual,basic-case-3921fb6be5c87be06129,team-added-synthetic:basic-independent-v2
-basic-89182c8d08674855723e,전시 도록 상자를 열면 판본과 수량을 확인합니다. 다른 판본은 별도 상자에 둡니다.,manual,basic-case-89182c8d08674855723e,team-added-synthetic:basic-independent-v2
-basic-4df5bdc8a55e31d531cf,모임 참석자들은 회의 시작 시각을 지키기로 했다. 늦은 참석자는 기록을 확인하도록 했다.,minutes,basic-case-4df5bdc8a55e31d531cf,team-added-synthetic:basic-independent-v2
-basic-0cb8bfa0060693443c75,민원 안내 창구의 금요일 종료 시간이 바뀝니다. 방문 전에 새로운 운영 시간을 확인해 주세요.,announcement,basic-case-0cb8bfa0060693443c75,team-added-synthetic:basic-independent-v2
-basic-39fb8c9d3a1e182a6e60,학교 교복 나눔의 기증 접수를 시작합니다. 세탁한 물품을 지정 장소에 제출해 주세요.,announcement,basic-case-39fb8c9d3a1e182a6e60,team-added-synthetic:basic-independent-v2
-basic-fca89fee36dc50642086,날짜 도장을 찍기 전에 설정 날짜를 확인합니다. 시험 날인 뒤 원서에 찍습니다.,manual,basic-case-fca89fee36dc50642086,team-added-synthetic:basic-independent-v2
-basic-b185436f915778e3b318,행사 대표들은 참여 업체의 준비 상태를 이틀 전에 확인하기로 했다. 현장팀이 연락을 맡는다.,minutes,basic-case-b185436f915778e3b318,team-added-synthetic:basic-independent-v2
-basic-719ca6766f6067461143,체험용 스탬프는 사용 뒤 잉크를 닦습니다. 모양별 받침에 놓고 뚜껑을 닫습니다.,manual,basic-case-719ca6766f6067461143,team-added-synthetic:basic-independent-v2
-basic-5199e5e8b8c17290b74a,회관 보일러 점검으로 온수 사용이 잠시 중단됩니다. 난방 운영은 현장 안내를 확인해 주세요.,announcement,basic-case-5199e5e8b8c17290b74a,team-added-synthetic:basic-independent-v2
-basic-473406ad580547807c26,공동 육아 놀이 모임은 참가 아동 수에 따라 조를 나눕니다. 신청 때 아동의 연령을 적어 주세요.,announcement,basic-case-473406ad580547807c26,team-added-synthetic:basic-independent-v2
-basic-187263f1799abd10dd72,모임 대표들은 회비 납부 내역을 매달 확인하기로 했다. 회계 담당이 미확인 입금을 정리한다.,minutes,basic-case-187263f1799abd10dd72,team-added-synthetic:basic-independent-v2
-basic-51d67e8113dbfb691b65,전시 제작팀은 설명문 초안을 해설자에게 먼저 보여 주기로 했다. 이해하기 어려운 문구를 검토받는다.,minutes,basic-case-51d67e8113dbfb691b65,team-added-synthetic:basic-independent-v2
-basic-184d10dcf260a066c764,강의 녹음은 참여자의 동의를 확인한 뒤 시작합니다. 녹음 종료 시각을 기록합니다.,manual,basic-case-184d10dcf260a066c764,team-added-synthetic:basic-independent-v2
-basic-2771c3b360d63a8aef55,음악 수업 담당자는 악보를 미리 나눠 주기로 했다. 변경된 악보는 판본을 표시한다.,minutes,basic-case-2771c3b360d63a8aef55,team-added-synthetic:basic-independent-v2
-basic-76549a3a677cd41b6e7c,안내 책자를 접을 때 페이지 순서를 확인합니다. 완성된 한 부를 펼쳐 본 뒤 나머지를 작업합니다.,manual,basic-case-76549a3a677cd41b6e7c,team-added-synthetic:basic-independent-v2
-basic-36c6d85a744686a30d1a,교구를 세척한 뒤 완전히 말립니다. 젖은 상태로 뚜껑 있는 상자에 넣지 않습니다.,manual,basic-case-36c6d85a744686a30d1a,team-added-synthetic:basic-independent-v2
-basic-de504cd10b8df19aea0a,망원경을 보관할 때 렌즈 덮개를 닫습니다. 습기가 있으면 안내된 방법으로 건조한 뒤 넣습니다.,manual,basic-case-de504cd10b8df19aea0a,team-added-synthetic:basic-independent-v2
-basic-5add746340c27dcfdd69,전시 물품 사진을 찍을 때 식별 번호를 함께 기록합니다. 비슷한 물품은 번호로 구별합니다.,manual,basic-case-5add746340c27dcfdd69,team-added-synthetic:basic-independent-v2
-basic-6d54bf7661ff135868dc,과학 수업팀은 관찰 도구가 부족하다고 보고했다. 조별 사용 순서를 정하기로 했다.,minutes,basic-case-6d54bf7661ff135868dc,team-added-synthetic:basic-independent-v2
-basic-c61f6258b5bb3914059b,공용 펀치의 종이 가이드를 맞춥니다. 구멍 위치를 시험한 뒤 전체 자료를 처리합니다.,manual,basic-case-c61f6258b5bb3914059b,team-added-synthetic:basic-independent-v2
-basic-ceed675cb0a9cb8f7364,강당 문을 열기 전에 객석 통로를 확인합니다. 장애물이 없으면 입장을 시작합니다.,manual,basic-case-ceed675cb0a9cb8f7364,team-added-synthetic:basic-independent-v2
-basic-3cb85010763953e85218,수업 담당자들은 교재 그림이 작다는 의견을 들었다. 다음 인쇄에서 일부 그림을 확대하기로 했다.,minutes,basic-case-3cb85010763953e85218,team-added-synthetic:basic-independent-v2
-basic-fea8e6d6b259a4602fca,공동 수선실에 재봉틀을 새로 배치했습니다. 장비 안내를 받은 이용자부터 대여할 수 있습니다.,announcement,basic-case-fea8e6d6b259a4602fca,team-added-synthetic:basic-independent-v2
-basic-1f8d403ffcba9fc8b33c,문화 행사 자막 화면의 위치를 앞쪽으로 옮겼습니다. 현장에서 자막을 볼 수 있는 좌석을 안내합니다.,announcement,basic-case-1f8d403ffcba9fc8b33c,team-added-synthetic:basic-independent-v2
-basic-822cb19f3fcd4aec98d5,공공 강의실 출입문 교체로 토요일 오전 입실이 제한됩니다. 예약자는 운영팀의 연락을 확인해 주세요.,announcement,basic-case-822cb19f3fcd4aec98d5,team-added-synthetic:basic-independent-v2
-basic-f9fe89fedfce960be024,도서관 이야기를 듣는 어린이 행사의 정원을 늘렸습니다. 추가 신청은 기존 접수 페이지에서 받습니다.,announcement,basic-case-f9fe89fedfce960be024,team-added-synthetic:basic-independent-v2
-basic-29a7d91c290181951e66,회람 문서는 읽은 뒤 확인 표시를 남깁니다. 원본 내용을 바꿔야 하면 작성자에게 요청합니다.,manual,basic-case-29a7d91c290181951e66,team-added-synthetic:basic-independent-v2
-basic-9deb736a44e2e6d25d4c,주민 운영팀은 행사 안내 문자가 길다는 의견을 검토했다. 날짜와 장소를 먼저 표시하기로 했다.,minutes,basic-case-9deb736a44e2e6d25d4c,team-added-synthetic:basic-independent-v2
-basic-d3bbfedb7762dab8c0b6,참가비 납부는 신청번호를 기준으로 확인합니다. 입금자 이름만으로 다른 신청에 연결하지 않습니다.,manual,basic-case-d3bbfedb7762dab8c0b6,team-added-synthetic:basic-independent-v2
-basic-954594474ac4e2813c42,무대 소품은 장면별 번호를 붙여 놓습니다. 실제 사용할 순서대로 배치합니다.,manual,basic-case-954594474ac4e2813c42,team-added-synthetic:basic-independent-v2
-basic-455aab869f69f3af60f6,동아리들은 공용 물품을 빌릴 때 기록을 남기기로 했다. 담당자가 대여 서식을 만든다.,minutes,basic-case-455aab869f69f3af60f6,team-added-synthetic:basic-independent-v2
-basic-f3e38434a345dd7bd9b1,청년 취업 설명회에 참여할 기업 목록을 공개했습니다. 기업별 상담은 별도로 예약해야 합니다.,announcement,basic-case-f3e38434a345dd7bd9b1,team-added-synthetic:basic-independent-v2
-basic-64d5863d28e0933bb306,공연팀은 출연자 대기 장소를 분리하기로 했다. 현장 담당이 사용할 방을 확인한다.,minutes,basic-case-64d5863d28e0933bb306,team-added-synthetic:basic-independent-v2
-basic-637619c8c362664747d8,도서관 직원들은 반납함 주변 혼잡을 논의했다. 대기 위치를 표시한 뒤 상황을 확인하기로 했다.,minutes,basic-case-637619c8c362664747d8,team-added-synthetic:basic-independent-v2
-basic-858b4b77c7260e20b94e,액자 번호는 작품 목록과 맞춰 붙입니다. 작품 표면에 직접 번호표를 붙이지 않습니다.,manual,basic-case-858b4b77c7260e20b94e,team-added-synthetic:basic-independent-v2
-basic-a65506093f02a2fd98b2,공용 냉장고에 음식을 넣을 때 이름을 표시합니다. 보관 날짜도 함께 적습니다.,manual,basic-case-a65506093f02a2fd98b2,team-added-synthetic:basic-independent-v2
-basic-8a3771e91594f05dcf9e,강사 모임은 실습 성공 여부만 평가하지 않기로 했다. 참가자의 시도 과정도 확인한다.,minutes,basic-case-8a3771e91594f05dcf9e,team-added-synthetic:basic-independent-v2
-basic-c702ed16e3789b745c4d,캠프 운영팀은 이동 차량별 인원 확인 담당을 정했다. 출발과 도착 때 명단을 대조한다.,minutes,basic-case-c702ed16e3789b745c4d,team-added-synthetic:basic-independent-v2
-basic-ebf8e87e73b91084bdf0,작은 전시관의 관람 예약은 방문 하루 전까지 받습니다. 예약 확인 문자를 받은 뒤 방문해 주세요.,announcement,basic-case-ebf8e87e73b91084bdf0,team-added-synthetic:basic-independent-v2
-basic-13082f87be9dd8a3d9c4,박람회 준비팀은 부스 이름을 크게 표시하기로 했다. 디자인 담당이 새 안내판을 만든다.,minutes,basic-case-13082f87be9dd8a3d9c4,team-added-synthetic:basic-independent-v2
-basic-41bf6b4bae299bf79a96,도구를 청소할 때 전원 연결을 먼저 해제합니다. 안내된 부분만 닦고 내부를 임의로 열지 않습니다.,manual,basic-case-41bf6b4bae299bf79a96,team-added-synthetic:basic-independent-v2
-basic-a2d6bf73a7d7ec9168aa,지역 독서회는 책 한 권을 두 달에 나눠 읽기로 했다. 진행자가 다음 모임의 읽을 범위를 정한다.,minutes,basic-case-a2d6bf73a7d7ec9168aa,team-added-synthetic:basic-independent-v2
-basic-a64a278752bbeafc5af4,게시판에 안내문을 붙일 때 적용 기간을 확인합니다. 기간이 지난 문서는 먼저 제거합니다.,manual,basic-case-a64a278752bbeafc5af4,team-added-synthetic:basic-independent-v2
-basic-a9d6e9ab63f437b55d11,청소년 활동센터에 휴대전화 보관함을 설치했습니다. 사용을 원하면 안내 직원에게 열쇠를 받아 주세요.,announcement,basic-case-a9d6e9ab63f437b55d11,team-added-synthetic:basic-independent-v2
-basic-181e9392d9e3298e5f54,장애인 체육 프로그램의 신규 이용 상담을 받습니다. 희망 활동과 필요한 지원을 알려 주세요.,announcement,basic-case-181e9392d9e3298e5f54,team-added-synthetic:basic-independent-v2
-basic-f71f4952b907242b866f,주민 교육팀은 안내 신청서의 중복 질문을 검토했다. 같은 정보를 묻는 항목을 합치기로 했다.,minutes,basic-case-f71f4952b907242b866f,team-added-synthetic:basic-independent-v2
-basic-004fc760d4f6d9ddf5b2,마을 안전 지도 제작에 참여할 주민을 모집합니다. 현장 조사에 함께할 날짜를 적어 주세요.,announcement,basic-case-004fc760d4f6d9ddf5b2,team-added-synthetic:basic-independent-v2
-basic-19b9babf472dcc217323,촬영 삼각대를 펼친 뒤 다리 잠금을 확인합니다. 카메라를 올리기 전에 흔들림을 점검합니다.,manual,basic-case-19b9babf472dcc217323,team-added-synthetic:basic-independent-v2
-basic-abcd059a6d0df6e08427,문화 모임은 신규 회원에게 활동 일정을 먼저 설명하기로 했다. 대표가 안내 자료를 준비한다.,minutes,basic-case-abcd059a6d0df6e08427,team-added-synthetic:basic-independent-v2
-basic-333714c511466e6b0711,이번 달 주민 그림책 모임은 어린이도 함께 참여할 수 있습니다. 신청할 때 동반 인원을 적어 주세요.,announcement,basic-case-333714c511466e6b0711,team-added-synthetic:basic-independent-v2
-basic-2bf06a4d2bd0917d622a,체험 운영팀은 대여 장비 분실 사례를 검토했다. 반납 때 번호를 대조하기로 했다.,minutes,basic-case-2bf06a4d2bd0917d622a,team-added-synthetic:basic-independent-v2
-basic-1995c439808d29fe1617,동아리 대표들은 공동 물품 구입을 맡을 사람을 정했다. 회계 담당이 구매 목록을 취합한다.,minutes,basic-case-1995c439808d29fe1617,team-added-synthetic:basic-independent-v2
-basic-7f59515ba1e4504b1f9c,시민 시 낭독회 참가 작품을 모집합니다. 작품 제목과 낭독 예상 시간을 함께 제출해 주세요.,announcement,basic-case-7f59515ba1e4504b1f9c,team-added-synthetic:basic-independent-v2
-basic-802e991bdfce71f40d22,책 커버를 씌우기 전에 책의 크기를 잽니다. 본문을 가리지 않게 커버를 접습니다.,manual,basic-case-802e991bdfce71f40d22,team-added-synthetic:basic-independent-v2
-basic-6f698cc82baae155e270,공유 파일을 수정하기 전에 사용 중인 사람이 있는지 확인합니다. 수정 뒤 변경 내용을 알려 줍니다.,manual,basic-case-6f698cc82baae155e270,team-added-synthetic:basic-independent-v2
-basic-bdc01c2016c392ab8e9d,소모품 수량을 셀 때 개봉한 묶음은 따로 셉니다. 포장에 적힌 수량으로 대신하지 않습니다.,manual,basic-case-bdc01c2016c392ab8e9d,team-added-synthetic:basic-independent-v2
-basic-2f361c8fca20b479edfb,청소년 모임은 활동 후 짧은 소감을 남기기로 했다. 긴 보고서 작성은 요구하지 않는다.,minutes,basic-case-2f361c8fca20b479edfb,team-added-synthetic:basic-independent-v2
-basic-0c72ec87e94d18108ec7,기록 모임은 사진 설명이 없는 자료를 별도 분류하기로 했다. 작성자에게 정보 보완을 요청한다.,minutes,basic-case-0c72ec87e94d18108ec7,team-added-synthetic:basic-independent-v2
-basic-65e23f80e38422e267af,야외 활동 지도를 배부하기 전에 집결 위치를 확인합니다. 실제 경로와 다른 지점은 수정합니다.,manual,basic-case-65e23f80e38422e267af,team-added-synthetic:basic-independent-v2
-basic-dc39b9eb3c429b92ee11,물품 대여 기간을 연장하려면 반납일 전에 신청합니다. 승인 여부를 확인한 뒤 새 기한을 기록합니다.,manual,basic-case-dc39b9eb3c429b92ee11,team-added-synthetic:basic-independent-v2
-basic-39c929b46005b3aed05c,원고 검수에서 숫자와 단위를 함께 확인합니다. 원자료와 값이 다르면 작성자에게 묻습니다.,manual,basic-case-39c929b46005b3aed05c,team-added-synthetic:basic-independent-v2
-basic-e8476a0b3f60640c92d4,공동 주방의 냉장고 정리일을 안내합니다. 개인 음식에는 소유자 이름과 보관 날짜를 붙여 주세요.,announcement,basic-case-e8476a0b3f60640c92d4,team-added-synthetic:basic-independent-v2
-basic-de172e8254b809375e19,강연 준비자는 발표자의 장비 요청을 미리 받기로 했다. 기술 담당이 사용할 장비를 대조한다.,minutes,basic-case-de172e8254b809375e19,team-added-synthetic:basic-independent-v2
-basic-12cad284645a72560827,프로그램 신청 메일을 받으면 첨부 서류를 확인합니다. 누락 항목은 신청자에게 안내합니다.,manual,basic-case-12cad284645a72560827,team-added-synthetic:basic-independent-v2
-basic-3eb5095b754b70f86857,어린이 활동 결과물은 참가자별로 분리합니다. 보호자에게 전달할 때 이름을 대조합니다.,manual,basic-case-3eb5095b754b70f86857,team-added-synthetic:basic-independent-v2
-basic-43f7950361f5474a2768,문화센터 계단 난간 공사 중에는 반대쪽 계단을 이용해 주세요. 승강기는 정상 운행합니다.,announcement,basic-case-43f7950361f5474a2768,team-added-synthetic:basic-independent-v2
-basic-0ad9be8d0e757b29402d,커뮤니티실의 정기 청소는 매주 목요일 아침에 진행합니다. 청소 시간에는 입실을 잠시 기다려 주세요.,announcement,basic-case-0ad9be8d0e757b29402d,team-added-synthetic:basic-independent-v2
-basic-8d7731f91a4413bc828d,문학 모임은 작품 낭독 뒤 바로 평가하지 않기로 했다. 작성자의 설명을 먼저 듣는다.,minutes,basic-case-8d7731f91a4413bc828d,team-added-synthetic:basic-independent-v2
-basic-e2c68a485b2033ec8864,학습팀은 온라인 자료를 찾기 어렵다는 의견을 받았다. 자료 목록을 한 페이지에 모으기로 했다.,minutes,basic-case-e2c68a485b2033ec8864,team-added-synthetic:basic-independent-v2
-basic-fd2c94098ac89c10bd49,주민 상담회에서는 녹음하지 않은 대화도 기록을 남길 수 있습니다. 기록을 원하지 않는 분은 상담 전에 알려 주세요.,announcement,basic-case-fd2c94098ac89c10bd49,team-added-synthetic:basic-independent-v2
-basic-30c7b4aee3ca1d4a5e58,전시 설명팀은 어린이 질문을 모아 자료로 만들기로 했다. 해설 담당이 답변을 정리한다.,minutes,basic-case-30c7b4aee3ca1d4a5e58,team-added-synthetic:basic-independent-v2
-basic-9c4beb65b2c866102f48,잠금 장치의 번호를 바꿀 때 새 번호로 열리는지 시험합니다. 관리 기록도 함께 수정합니다.,manual,basic-case-9c4beb65b2c866102f48,team-added-synthetic:basic-independent-v2
-basic-1ccfa5f4d5e132069006,요리 교실 담당자들은 도구 배부 순서를 정하기로 했다. 조별 대표가 준비물을 받아 가도록 했다.,minutes,basic-case-1ccfa5f4d5e132069006,team-added-synthetic:basic-independent-v2
-basic-d41686ef8e3d85d3620c,지역 어린이 기자단에 지원할 학생을 모집합니다. 활동 계획과 보호자 확인서를 제출해 주세요.,announcement,basic-case-d41686ef8e3d85d3620c,team-added-synthetic:basic-independent-v2
-basic-b112768a38de45cefd68,지역 영화제 자원활동가 신청을 이번 주부터 받습니다. 활동 가능한 날짜를 함께 제출해 주세요.,announcement,basic-case-b112768a38de45cefd68,team-added-synthetic:basic-independent-v2
-basic-d93aed7182d3d72b6ae6,주민 인문학 강좌의 교재는 첫 수업 때 배부합니다. 별도로 구입하지 않아도 됩니다.,announcement,basic-case-d93aed7182d3d72b6ae6,team-added-synthetic:basic-independent-v2
-basic-3d61493220e05b486c32,청소년 상담 행사에는 개별 대화 공간을 마련했습니다. 사전 신청 여부는 접수 안내를 확인해 주세요.,announcement,basic-case-3d61493220e05b486c32,team-added-synthetic:basic-independent-v2
-basic-e3326dc467ebc07c0eb0,활동실 온도를 기록할 때 같은 위치의 기기를 봅니다. 창문 개방 여부도 함께 적습니다.,manual,basic-case-e3326dc467ebc07c0eb0,team-added-synthetic:basic-independent-v2
-basic-f4f2c20a4303990877af,공방팀은 재료 보관 상자에 내용물을 표시하기로 했다. 담당자가 오래된 라벨을 갱신한다.,minutes,basic-case-f4f2c20a4303990877af,team-added-synthetic:basic-independent-v2
-basic-47acbaa382217c22c8d7,사진을 인화하기 전에 원하는 크기를 설정합니다. 시험 출력으로 잘리는 부분을 확인합니다.,manual,basic-case-47acbaa382217c22c8d7,team-added-synthetic:basic-independent-v2
-basic-b26652589483d288eb11,주민 설문에 종이 응답함을 추가 설치했습니다. 이미 온라인으로 응답한 분은 다시 제출하지 마세요.,announcement,basic-case-b26652589483d288eb11,team-added-synthetic:basic-independent-v2
-basic-e6197654b5c4c15deb71,캠프 짐표는 참가자 번호와 연결합니다. 연락처를 외부에 그대로 공개하지 않습니다.,manual,basic-case-e6197654b5c4c15deb71,team-added-synthetic:basic-independent-v2
-basic-14d690bfad76bd21bfe5,자료실 직원들은 파일 이름이 불규칙하다고 보고했다. 공통 이름 규칙을 만들기로 했다.,minutes,basic-case-14d690bfad76bd21bfe5,team-added-synthetic:basic-independent-v2
-basic-02aed6d9a9b154fbab51,주민 운영자는 장비 고장 보고가 늦어진 문제를 검토했다. 발견 즉시 기록하는 창구를 마련한다.,minutes,basic-case-02aed6d9a9b154fbab51,team-added-synthetic:basic-independent-v2
-basic-189615705810ca099e6f,체육 운영팀은 참가자 명단 변경을 한 담당자가 취합하기로 했다. 변경 사항은 매일 확인한다.,minutes,basic-case-189615705810ca099e6f,team-added-synthetic:basic-independent-v2
-basic-05c4f9c1a0520a43e49e,캠프 담당자는 참가자 짐표가 없다는 문제를 보고했다. 출발 전에 번호표를 나눠 주기로 했다.,minutes,basic-case-05c4f9c1a0520a43e49e,team-added-synthetic:basic-independent-v2
-basic-88b0a5f8dd8344b9b4c5,공용 잔디 운동장은 비가 온 뒤 상태를 확인하고 개방합니다. 개방 표시가 없을 때는 들어가지 말아 주세요.,announcement,basic-case-88b0a5f8dd8344b9b4c5,team-added-synthetic:basic-independent-v2
-basic-da193b871e5d7f4ce41a,청소년 정책 제안 접수에 영상 제출 방식을 추가했습니다. 파일 용량 기준을 확인해 주세요.,announcement,basic-case-da193b871e5d7f4ce41a,team-added-synthetic:basic-independent-v2
-basic-fb21f8cafcc4eb664477,자원활동가 교육 장소를 본관에서 별관으로 옮깁니다. 출석 확인도 별관에서 진행합니다.,announcement,basic-case-fb21f8cafcc4eb664477,team-added-synthetic:basic-independent-v2
-basic-3802758646cffb417e05,대학 공개 강연의 현장 좌석은 사전 신청자에게 우선 제공합니다. 남은 좌석은 행사 당일 안내합니다.,announcement,basic-case-3802758646cffb417e05,team-added-synthetic:basic-independent-v2
-basic-837a9f90e5d13193f0fe,공연장 외부 촬영 신청은 행사 사흘 전까지 받습니다. 승인 여부를 확인한 뒤 장비를 반입해 주세요.,announcement,basic-case-837a9f90e5d13193f0fe,team-added-synthetic:basic-independent-v2
-basic-772bd92e955f595b4435,시민 작품집에 실을 글의 교정본을 발송했습니다. 작성자는 정정할 부분을 지정 날짜까지 보내 주세요.,announcement,basic-case-772bd92e955f595b4435,team-added-synthetic:basic-independent-v2
-basic-983f86738377daf77951,수업 평가를 정리할 때 같은 참가자의 중복 응답을 확인합니다. 집계 기준을 정한 뒤 계산합니다.,manual,basic-case-983f86738377daf77951,team-added-synthetic:basic-independent-v2
-basic-fc95bdbc8360f88a8ee7,박물관 교육팀은 설명 시간이 길다는 의견을 들었다. 질문과 관찰 시간을 나눠 운영하기로 했다.,minutes,basic-case-fc95bdbc8360f88a8ee7,team-added-synthetic:basic-independent-v2
-basic-6f425c5ea9050f98750d,주민 교육자는 신청서를 모바일에서도 읽기 쉽게 만들기로 했다. 담당자가 항목 배치를 점검한다.,minutes,basic-case-6f425c5ea9050f98750d,team-added-synthetic:basic-independent-v2
-basic-3d53cc0e0a0c1b2b8798,서예 교실은 강사 일정으로 이번 주 한 차례 쉽니다. 보강 날짜는 수강생에게 따로 알립니다.,announcement,basic-case-3d53cc0e0a0c1b2b8798,team-added-synthetic:basic-independent-v2
-basic-ada0de51d2a6c7460ff1,주민센터에 문서 작성용 컴퓨터를 추가 설치했습니다. 사용 시간이 필요한 분은 안내 데스크에 신청해 주세요.,announcement,basic-case-ada0de51d2a6c7460ff1,team-added-synthetic:basic-independent-v2
-basic-993bdada467e3f51795c,주민 사진 촬영실은 오늘 배경지 교체 작업을 합니다. 작업 종료 뒤 예약 이용을 시작합니다.,announcement,basic-case-993bdada467e3f51795c,team-added-synthetic:basic-independent-v2
-basic-8e83394ec19b7c96bb74,문화 유산 답사 사진을 참여자에게 공유합니다. 사진에 본인이 나온 경우 공개 범위 변경을 요청할 수 있습니다.,announcement,basic-case-8e83394ec19b7c96bb74,team-added-synthetic:basic-independent-v2
-basic-eb8f393be12c360d7cf2,종이 신청서를 접수하면 접수 시각을 적습니다. 신청자에게 해당 접수번호를 알려 줍니다.,manual,basic-case-eb8f393be12c360d7cf2,team-added-synthetic:basic-independent-v2
-basic-97611477ad58dbd8d5b8,도구함 안의 칼날은 보호 덮개를 씌워 둡니다. 다른 도구를 꺼낼 때 날에 닿지 않게 배치합니다.,manual,basic-case-97611477ad58dbd8d5b8,team-added-synthetic:basic-independent-v2
-basic-22ba810f043ce5c410b0,독서 수업 담당자들은 활동지를 너무 많이 사용한다고 보고했다. 다음 수업은 두 장으로 줄이기로 했다.,minutes,basic-case-22ba810f043ce5c410b0,team-added-synthetic:basic-independent-v2
-basic-381b6654ca8c2465a864,올해 동네 기록집 배부를 시작합니다. 가구별 수령 수량은 현장 안내에 따라 주세요.,announcement,basic-case-381b6654ca8c2465a864,team-added-synthetic:basic-independent-v2
-basic-1ed19f701854b424a933,프레젠테이션을 시작하기 전에 마지막 장까지 넘겨 봅니다. 빠진 이미지가 있으면 원본 파일을 확인합니다.,manual,basic-case-1ed19f701854b424a933,team-added-synthetic:basic-independent-v2
-basic-efa75471229a4844ce4c,영상 편집 기초 수업의 준비 파일을 공개했습니다. 수업 전에 내려받아 주세요.,announcement,basic-case-efa75471229a4844ce4c,team-added-synthetic:basic-independent-v2
-basic-3827bc9784fb4d0b2f68,탐방팀은 걷는 속도 차이로 대열이 나뉘는 문제를 검토했다. 중간 집결 장소를 추가하기로 했다.,minutes,basic-case-3827bc9784fb4d0b2f68,team-added-synthetic:basic-independent-v2
-basic-8cc677261da3e988f553,강당 운영팀은 좌석 번호가 지워진 문제를 보고했다. 시설 담당이 다시 표시하기로 했다.,minutes,basic-case-8cc677261da3e988f553,team-added-synthetic:basic-independent-v2
-basic-184fed23dead1fa4530d,행사 손목띠를 배부할 때 참가 유형을 확인합니다. 유형별 색상을 혼동하지 않게 정리합니다.,manual,basic-case-184fed23dead1fa4530d,team-added-synthetic:basic-independent-v2
-basic-87d2b9f26961eb58ea96,전시 유리문을 닫은 뒤 잠금 상태를 확인합니다. 잠기지 않으면 관리 담당자에게 알립니다.,manual,basic-case-87d2b9f26961eb58ea96,team-added-synthetic:basic-independent-v2
-basic-b35efb75095f29f6636b,주민 응급 대응 교육에 실습 시간이 포함됩니다. 편하게 움직일 수 있는 복장으로 참여해 주세요.,announcement,basic-case-b35efb75095f29f6636b,team-added-synthetic:basic-independent-v2
-basic-934147cdac1c9ac02850,봉사 모임은 활동 확인서 요청이 누락되는 사례를 살펴봤다. 접수 목록에 발급 상태를 추가하기로 했다.,minutes,basic-case-934147cdac1c9ac02850,team-added-synthetic:basic-independent-v2
-basic-414dd88ca43415eec254,시민회관 주차장 일부를 행사 장비 구역으로 사용합니다. 차량은 안내된 빈 구역에 주차해 주세요.,announcement,basic-case-414dd88ca43415eec254,team-added-synthetic:basic-independent-v2
-basic-28f5452dcc3f16e0d087,주민 협의회는 안내문을 읽기 어려운 분께 구두 안내도 제공하기로 했다. 상담 담당이 지원한다.,minutes,basic-case-28f5452dcc3f16e0d087,team-added-synthetic:basic-independent-v2
-basic-b34b2447e523c3700275,활동 자료를 나눠 줄 때 조별 수량을 계산합니다. 남은 자료는 배부 기록과 함께 보관합니다.,manual,basic-case-b34b2447e523c3700275,team-added-synthetic:basic-independent-v2
-basic-393ad3dbccfe1f673e05,공공 연습실의 피아노 조율일에는 해당 악기를 사용할 수 없습니다. 다른 악기 대여는 정상 운영합니다.,announcement,basic-case-393ad3dbccfe1f673e05,team-added-synthetic:basic-independent-v2
-basic-2f9edca0c41465700274,마을 모임은 회의 알림을 늦게 받는 문제를 확인했다. 다음 회의부터 일주일 전에 연락하기로 했다.,minutes,basic-case-2f9edca0c41465700274,team-added-synthetic:basic-independent-v2
-basic-3c633e59f072e801bb76,공연팀은 음향 시험을 실제 무대에서 진행하기로 했다. 기술 담당이 시험 시간을 정한다.,minutes,basic-case-3c633e59f072e801bb76,team-added-synthetic:basic-independent-v2
-basic-d331a0b62e8ef2eca250,청소년 사진실의 토요일 운영을 다음 달부터 시작합니다. 처음 이용하는 분은 안내 교육을 신청해 주세요.,announcement,basic-case-d331a0b62e8ef2eca250,team-added-synthetic:basic-independent-v2
-basic-362b890a6e393e54a164,도서관 복사기가 수리 중입니다. 당분간 자료 복사가 필요한 분은 직원에게 문의해 주세요.,announcement,basic-case-362b890a6e393e54a164,team-added-synthetic:basic-independent-v2
-basic-66382706ee6c9041a687,전시 해설팀은 자주 묻는 질문을 함께 정리하기로 했다. 새로운 질문은 목록에 계속 추가한다.,minutes,basic-case-66382706ee6c9041a687,team-added-synthetic:basic-independent-v2
-basic-ece785d40a0f1160b106,행사 회계팀은 소액 지출의 영수증이 부족하다고 보고했다. 지출 즉시 증빙을 모으기로 했다.,minutes,basic-case-ece785d40a0f1160b106,team-added-synthetic:basic-independent-v2
-basic-9aeac3b02238fac5c609,반려동물 동반 산책 행사에 안전 거리 안내를 추가했습니다. 신청자는 참가 전 내용을 확인해 주세요.,announcement,basic-case-9aeac3b02238fac5c609,team-added-synthetic:basic-independent-v2
-basic-54d6b1f0980a3c593e11,청년 작가와의 대화는 신청 없이 참석할 수 있습니다. 좌석이 차면 현장 안내에 따라 주세요.,announcement,basic-case-54d6b1f0980a3c593e11,team-added-synthetic:basic-independent-v2
-basic-6667e8e36a3ecb1af0d0,모임 대표들은 참가 취소 연락을 한 곳에서 받기로 했다. 진행자가 상태 목록을 갱신한다.,minutes,basic-case-6667e8e36a3ecb1af0d0,team-added-synthetic:basic-independent-v2
-basic-6b006c98ff54fbe007a9,주민 동아리는 모임에 필요한 물품을 먼저 빌려 보기로 했다. 구매는 이용 결과를 본 뒤 결정한다.,minutes,basic-case-6b006c98ff54fbe007a9,team-added-synthetic:basic-independent-v2
-basic-09ff380ab276de4b5c85,교육용 자석은 금속 도구와 떨어진 상자에 넣습니다. 강한 자석에는 취급 표시를 남깁니다.,manual,basic-case-09ff380ab276de4b5c85,team-added-synthetic:basic-independent-v2
-basic-50f556ff55243595cd4b,아이디어 공모의 심사 결과 발표가 늦어집니다. 변경된 발표일은 접수자에게 문자로 알립니다.,announcement,basic-case-50f556ff55243595cd4b,team-added-synthetic:basic-independent-v2
-basic-e8261e79639a9282b907,지역 음악 자료의 기증 상담을 받습니다. 물품을 보내기 전에 목록을 담당자에게 전달해 주세요.,announcement,basic-case-e8261e79639a9282b907,team-added-synthetic:basic-independent-v2
-basic-195d957e6a146f2e8e98,박물관 방학 프로그램 중 발굴 체험만 추가 회차를 엽니다. 다른 프로그램 일정은 유지됩니다.,announcement,basic-case-195d957e6a146f2e8e98,team-added-synthetic:basic-independent-v2
-basic-fc89c5283b4de16672ef,공용 계산기를 사용하기 전에 이전 입력을 지웁니다. 필요한 계산 결과는 별도로 적습니다.,manual,basic-case-fc89c5283b4de16672ef,team-added-synthetic:basic-independent-v2
-basic-40f6ee3820d6acf2baf5,확대경은 렌즈를 확인한 뒤 케이스에서 꺼냅니다. 사용 후 부드러운 천으로 닦아 넣습니다.,manual,basic-case-40f6ee3820d6acf2baf5,team-added-synthetic:basic-independent-v2
-basic-5f2e2919d383f746afb1,일회용 실습 재료는 준비 수량을 확인해 나눕니다. 남은 재료는 사용한 재료와 섞지 않습니다.,manual,basic-case-5f2e2919d383f746afb1,team-added-synthetic:basic-independent-v2
-basic-75c77cd5cc0c622c76ed,도서 기증은 이번 달 잡지류를 제외하고 받습니다. 기증 전 접수 가능한 종류를 확인해 주세요.,announcement,basic-case-75c77cd5cc0c622c76ed,team-added-synthetic:basic-independent-v2
-basic-b52e646f187c0f0fddde,의자를 옮기기 전에 바닥의 장애물을 치웁니다. 여러 의자를 무리하게 한 번에 들지 않습니다.,manual,basic-case-b52e646f187c0f0fddde,team-added-synthetic:basic-independent-v2
-basic-87cc569b186ecabc73cf,마을 우물 정비 기간에는 주변 쉼터를 이용할 수 없습니다. 옆 정자의 휴식 공간은 개방합니다.,announcement,basic-case-87cc569b186ecabc73cf,team-added-synthetic:basic-independent-v2
-basic-bd12946ad13bcd8b09af,우쿨렐레 입문반은 악기 대여 수량이 제한됩니다. 대여가 필요한 분은 신청서에 표시해 주세요.,announcement,basic-case-bd12946ad13bcd8b09af,team-added-synthetic:basic-independent-v2
-basic-e5267e946186fe208def,봉사팀은 현장 업무를 구분해 맡기로 했다. 대표가 역할 목록을 정리한다.,minutes,basic-case-e5267e946186fe208def,team-added-synthetic:basic-independent-v2
-basic-65e444f3efbab391dc94,사진 동아리는 촬영 후 결과 비교 시간을 늘리기로 했다. 진행자가 비교할 사진을 모은다.,minutes,basic-case-65e444f3efbab391dc94,team-added-synthetic:basic-independent-v2
-basic-5fc4aa5fbc3f04f03072,체육 동아리는 준비 운동을 함께 진행하기로 했다. 담당 순서를 매달 바꾸기로 했다.,minutes,basic-case-5fc4aa5fbc3f04f03072,team-added-synthetic:basic-independent-v2
-basic-92d066a94a14857e4a9c,동영상 자료를 등록할 때 제목과 재생 시간을 적습니다. 끝부분까지 정상 재생되는지 확인합니다.,manual,basic-case-92d066a94a14857e4a9c,team-added-synthetic:basic-independent-v2
-basic-0581c794d3646725c698,증서에 이름을 인쇄하기 전에 최종 명단을 대조합니다. 오타가 있으면 원자료를 정정합니다.,manual,basic-case-0581c794d3646725c698,team-added-synthetic:basic-independent-v2
-basic-91d846394e9bb31189aa,전시 설명서를 배치할 때 작품 번호를 대조합니다. 설명과 다른 작품 앞에 놓지 않습니다.,manual,basic-case-91d846394e9bb31189aa,team-added-synthetic:basic-independent-v2
-basic-a84fc9b9bd304850eaf2,공동 작업실 운영팀은 반납 도구의 오염 문제를 살펴봤다. 반납 확인에 청소 상태를 추가했다.,minutes,basic-case-a84fc9b9bd304850eaf2,team-added-synthetic:basic-independent-v2
-basic-21b0afdb1533a6b8a159,시민회관 입구에 행사별 안내판을 설치했습니다. 참가자는 행사 이름에 맞는 이동 방향을 확인해 주세요.,announcement,basic-case-21b0afdb1533a6b8a159,team-added-synthetic:basic-independent-v2
-basic-c92b0e96590d62cdafb3,시민 합주단 신규 단원을 모집합니다. 오디션 시간은 신청자에게 개별 연락합니다.,announcement,basic-case-c92b0e96590d62cdafb3,team-added-synthetic:basic-independent-v2
-basic-7b513b06e9329870e05a,회수한 설문지는 응답 여부를 확인합니다. 빈 설문지는 집계 대상에서 따로 구분합니다.,manual,basic-case-7b513b06e9329870e05a,team-added-synthetic:basic-independent-v2
-basic-0feb09f3ec76887b9590,공용 칠판을 지울 때 지정 지우개를 사용합니다. 남은 글씨에 다른 약품을 임의로 바르지 않습니다.,manual,basic-case-0feb09f3ec76887b9590,team-added-synthetic:basic-independent-v2
-basic-eb8b1fd42473a39aff86,자연 관찰 기록 공모는 종이에 작성한 자료도 접수합니다. 제출한 원본의 반환 여부를 접수 때 확인해 주세요.,announcement,basic-case-eb8b1fd42473a39aff86,team-added-synthetic:basic-independent-v2
-basic-0e7f35c3fbb04a82a96c,봉사활동 확인서 발급 신청은 활동 종료 후 받습니다. 등록한 연락처로 발급 안내를 보냅니다.,announcement,basic-case-0e7f35c3fbb04a82a96c,team-added-synthetic:basic-independent-v2
-basic-264d22fd030c8546fbf9,지역 조사팀은 인터뷰 장소가 시끄럽다는 문제를 논의했다. 조용한 대체 공간을 찾아보기로 했다.,minutes,basic-case-264d22fd030c8546fbf9,team-added-synthetic:basic-independent-v2
-basic-17aff3e58e991c15d2b3,연극 운영팀은 공연 소품의 소유자를 구분하기로 했다. 빌린 물품의 반환 목록을 만든다.,minutes,basic-case-17aff3e58e991c15d2b3,team-added-synthetic:basic-independent-v2
-basic-caf482eca3cb6ff8b38e,소모임 대표들은 공간 사용 후 사진을 남기기로 했다. 정리 상태를 확인하는 기록으로 사용한다.,minutes,basic-case-caf482eca3cb6ff8b38e,team-added-synthetic:basic-independent-v2
-basic-3d3a9a094a8cca7d3721,도예 모임은 작품 반환 연락 방법을 논의했다. 완료된 작품부터 개별 연락하기로 했다.,minutes,basic-case-3d3a9a094a8cca7d3721,team-added-synthetic:basic-independent-v2
-basic-8bcd6fc38e2050d4dac5,표본을 촬영할 때 배경을 단순하게 둡니다. 크기 기준이 되는 자를 함께 놓습니다.,manual,basic-case-8bcd6fc38e2050d4dac5,team-added-synthetic:basic-independent-v2
-basic-350fd14e3a89723c48a1,주민센터 직원들은 안내실 문의가 집중되는 시간을 확인했다. 해당 시간에 지원 인력을 배치하기로 했다.,minutes,basic-case-350fd14e3a89723c48a1,team-added-synthetic:basic-independent-v2
-basic-1bda7739baf89f353953,보관함을 잠그기 전에 내부에 다른 이용자의 물품이 없는지 봅니다. 열쇠 번호를 대여 기록에 적습니다.,manual,basic-case-1bda7739baf89f353953,team-added-synthetic:basic-independent-v2
-basic-cb12118edc24f0925c9c,아파트 주민 음악회는 광장에서 진행합니다. 개인 의자를 가져오는 분은 이동 통로를 비워 주세요.,announcement,basic-case-cb12118edc24f0925c9c,team-added-synthetic:basic-independent-v2
-basic-17265ffeeee50e7a62b0,합주팀은 연습 시작 전에 조율 시간을 두기로 했다. 파트 대표가 악기 상태를 확인한다.,minutes,basic-case-17265ffeeee50e7a62b0,team-added-synthetic:basic-independent-v2
-basic-eceff173055137376abb,자료 정리팀은 내용이 같은 인쇄물이 많다고 보고했다. 보관할 부수와 처리할 부수를 구분하기로 했다.,minutes,basic-case-eceff173055137376abb,team-added-synthetic:basic-independent-v2
-basic-cd5b8df84f0fda5cb6d5,개방형 강당의 무대 조명 점검으로 낮에도 조명이 켜질 수 있습니다. 점검 구역에는 들어가지 말아 주세요.,announcement,basic-case-cd5b8df84f0fda5cb6d5,team-added-synthetic:basic-independent-v2
-basic-4f62a9236e2b50f051d9,보관 상자의 내용물을 바꿨으면 외부 목록을 갱신합니다. 이전 목록은 현재 내용과 구분해 둡니다.,manual,basic-case-4f62a9236e2b50f051d9,team-added-synthetic:basic-independent-v2
-basic-0437b6a4c744f5caca03,낭독용 책갈피는 읽는 쪽의 모서리에 끼웁니다. 접착제로 본문에 붙이지 않습니다.,manual,basic-case-0437b6a4c744f5caca03,team-added-synthetic:basic-independent-v2
-basic-c7ddb090ac52cb1ea3ef,학교 행사팀은 보호자 대기 공간을 늘리기로 했다. 사용 가능한 교실을 확인한다.,minutes,basic-case-c7ddb090ac52cb1ea3ef,team-added-synthetic:basic-independent-v2
-basic-0de7051419dd2bbe9835,수업 중 사용하는 물컵은 참가자별로 구분합니다. 사용 후에는 정해진 세척 장소에 모읍니다.,manual,basic-case-0de7051419dd2bbe9835,team-added-synthetic:basic-independent-v2
-basic-2f60a51d6b3b46f76f7c,합주 악보는 파트 이름을 확인해 배부합니다. 남은 부수와 부족한 파트를 기록합니다.,manual,basic-case-2f60a51d6b3b46f76f7c,team-added-synthetic:basic-independent-v2
-basic-19676610710bcbc4a03b,도서 모임은 책 반납을 다음 활동 시작 전에 확인하기로 했다. 대표가 대여 목록을 관리한다.,minutes,basic-case-19676610710bcbc4a03b,team-added-synthetic:basic-independent-v2
-basic-3db9a9bc623b3a8b9589,지역 공공자료 활용 교육을 신청할 수 있습니다. 수강료는 없으며 개인 노트북 지참 여부를 알려 주세요.,announcement,basic-case-3db9a9bc623b3a8b9589,team-added-synthetic:basic-independent-v2
-basic-8b5fadcb2cbec0d92dde,행사팀은 분실한 안내기기의 위치를 확인했다. 보관실에서 찾은 기기를 충전한 뒤 다시 배부하기로 했다.,minutes,basic-case-8b5fadcb2cbec0d92dde,team-added-synthetic:basic-independent-v2
-basic-ad41cd069a4a8ab8112d,합창 운영팀은 쉬는 시간이 짧다는 의견을 들었다. 연습 중간 휴식을 늘리기로 했다.,minutes,basic-case-ad41cd069a4a8ab8112d,team-added-synthetic:basic-independent-v2
-basic-b0fdc55b4faf95ca1846,교육용 카드를 정리할 때 번호 순서대로 놓습니다. 빠진 번호는 목록에 표시합니다.,manual,basic-case-b0fdc55b4faf95ca1846,team-added-synthetic:basic-independent-v2
-basic-ef1fb8291ab575669aa7,전시 준비팀은 작품 높이를 조정할 필요가 있다고 의견을 모았다. 설치 담당이 견본 배치를 만든다.,minutes,basic-case-ef1fb8291ab575669aa7,team-added-synthetic:basic-independent-v2
-basic-56a0bd1dd6b783556c0b,주민회의는 결정 사항을 짧게 정리해 게시하기로 했다. 기록 담당이 공개용 문안을 작성한다.,minutes,basic-case-56a0bd1dd6b783556c0b,team-added-synthetic:basic-independent-v2
-basic-72fb98c4d90ca23433d2,사진 수업 담당자는 촬영 주제를 하나로 제한하지 않기로 했다. 공통 조건만 안내한다.,minutes,basic-case-72fb98c4d90ca23433d2,team-added-synthetic:basic-independent-v2
-basic-902cff2d4b2fbd8f22ee,시민 체육대회 종목별 참가 명단을 게시했습니다. 이름이 빠진 경우 접수 담당자에게 연락해 주세요.,announcement,basic-case-902cff2d4b2fbd8f22ee,team-added-synthetic:basic-independent-v2
-basic-ceb47aa9162dbc466e39,작품집 제작팀은 원고 마감 후 수정 요청이 많다는 문제를 검토했다. 교정 기간을 따로 두기로 했다.,minutes,basic-case-ceb47aa9162dbc466e39,team-added-synthetic:basic-independent-v2
-basic-7504ff08960dc3e13d52,접이식 행사용 탁자는 고정핀을 확인한 뒤 펼칩니다. 손이 접히는 부분에 끼지 않게 주의합니다.,manual,basic-case-7504ff08960dc3e13d52,team-added-synthetic:basic-independent-v2
-basic-104a93200cb55ea69a94,행사 종료 뒤 이름표를 수거할 때 개인정보가 보이는 면을 가립니다. 보관 또는 폐기 기준에 따라 처리합니다.,manual,basic-case-104a93200cb55ea69a94,team-added-synthetic:basic-independent-v2
-basic-0c8d62914db60c254889,강연 담당자는 좌석 부족 상황을 검토했다. 추가 의자 배치 전에 통로 안전을 확인하기로 했다.,minutes,basic-case-0c8d62914db60c254889,team-added-synthetic:basic-independent-v2
-basic-03c91ad96dea59cbdba0,공용 사물함의 물품을 정리할 때 소유자를 확인합니다. 확인되지 않은 물건을 임의로 버리지 않습니다.,manual,basic-case-03c91ad96dea59cbdba0,team-added-synthetic:basic-independent-v2
-basic-47e57aa2b24a2cb3b234,피아노 덮개를 열 때 주변에 놓인 물건을 치웁니다. 사용 뒤에는 덮개를 천천히 닫습니다.,manual,basic-case-47e57aa2b24a2cb3b234,team-added-synthetic:basic-independent-v2
-basic-1d1b4f27ad0989c5a4ec,방문증을 회수하면 발급 번호를 대조합니다. 반납하지 않은 번호는 따로 표시합니다.,manual,basic-case-1d1b4f27ad0989c5a4ec,team-added-synthetic:basic-independent-v2
-basic-7c7fe7e134a5918161fa,우편물을 분류할 때 수신 부서를 확인합니다. 부서가 불명확하면 안내실에 문의합니다.,manual,basic-case-7c7fe7e134a5918161fa,team-added-synthetic:basic-independent-v2
-basic-c8fd67afadb6f35a363c,공예 교육팀은 재료 설명에 실물 견본을 추가하기로 했다. 강사가 종류별 견본을 준비한다.,minutes,basic-case-c8fd67afadb6f35a363c,team-added-synthetic:basic-independent-v2
-basic-ce21e48f8d00d8c10f7b,주민 텃밭 신청 결과를 접수번호로 게시했습니다. 선정된 분은 지정 기간에 이용 의사를 회신해 주세요.,announcement,basic-case-ce21e48f8d00d8c10f7b,team-added-synthetic:basic-independent-v2
-basic-6a93b37fbbe28074dde4,종이 자료를 묶을 때 같은 판본인지 확인합니다. 수정 전 자료는 따로 구분해 둡니다.,manual,basic-case-6a93b37fbbe28074dde4,team-added-synthetic:basic-independent-v2
-basic-c7e89b6647ef0e7b8de6,문화 모임은 활동 결과물을 공동 전시하기로 했다. 공개를 원하지 않는 작품은 제외한다.,minutes,basic-case-c7e89b6647ef0e7b8de6,team-added-synthetic:basic-independent-v2
-basic-e635fce39ce11814f448,주민센터 운영팀은 폐강 연락이 늦었다고 보고했다. 변경 결정 직후 수강생에게 알리기로 했다.,minutes,basic-case-e635fce39ce11814f448,team-added-synthetic:basic-independent-v2
-basic-7f96a959fdf4dc884684,공원 안내소의 연락처가 바뀌었습니다. 시설 이용 문의는 새 번호를 이용해 주세요.,announcement,basic-case-7f96a959fdf4dc884684,team-added-synthetic:basic-independent-v2
-basic-6bb92a3505789c001a57,가을 운동회 참가 팀은 이름과 대표 연락처를 제출해 주세요. 제출 마감은 다음 주 화요일입니다.,announcement,basic-case-6bb92a3505789c001a57,team-added-synthetic:basic-independent-v2
-basic-9362cdc2644f5ee590f1,접수 취소 연락을 받으면 해당 신청번호를 찾습니다. 다른 신청의 상태를 바꾸지 않습니다.,manual,basic-case-9362cdc2644f5ee590f1,team-added-synthetic:basic-independent-v2
-basic-47d4ef392a2fddad5bbb,식물 교환 장터는 해충이 없는 화분만 접수합니다. 참가 전에 화분 상태를 확인해 주세요.,announcement,basic-case-47d4ef392a2fddad5bbb,team-added-synthetic:basic-independent-v2
-basic-9ee4270fc8f52263e2f9,체험 강사들은 재료 사용량이 다르다는 의견을 나눴다. 참가 인원에 맞춘 기본 수량을 정하기로 했다.,minutes,basic-case-9ee4270fc8f52263e2f9,team-added-synthetic:basic-independent-v2
-basic-83eb83a4b2ac748300a0,전시 조명을 켜기 전에 주변에 가연성 물품이 없는지 살핍니다. 이상이 있으면 담당자에게 확인합니다.,manual,basic-case-83eb83a4b2ac748300a0,team-added-synthetic:basic-independent-v2
+documents-v2-announcement-train-061-v1,실내 빛 관찰실의 해당 활동을 이용하실 분께 안내드립니다. 변경이 있으면 이전 계획보다 실제 적용 안내를 우선 확인해 주세요. 지속적인 지원이 필요한 참가자는 신청 전에 담당자와 협의할 수 있습니다.,announcement,documents-v2-announcement-train-061,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-061-v2,실내 빛 관찰실에서 다음 내용을 안내합니다. 빛 관찰표의 주말 교육은 보호자와 참가자의 역할을 나눠 운영합니다. 보호자가 학생의 작업을 대신하는 방식은 받지 않습니다. 미리 정해 둔 계획과 현장에 적용된 조건을 따로 표시합니다.,announcement,documents-v2-announcement-train-061,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-062-v1,인형극 학교의 공개 연습은 학생 가족에게만 개방합니다. 일반 관객의 공연 관람은 다음 달 정식 발표에서 신청할 수 있습니다.,announcement,documents-v2-announcement-train-062,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-062-v2,이번 연습 참관은 재학생의 가족 확인이 필요합니다. 인형극 공연표를 예매했던 사람도 일반 참관자로 들어갈 수는 없습니다.,announcement,documents-v2-announcement-train-062,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-063-v1,시계탑 내부를 예약했더라도 종소리가 울리는 시간은 바뀌지 않습니다. 소리 시연만 듣는 방문객은 광장에서 참여할 수 있습니다.,announcement,documents-v2-announcement-train-063,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-063-v2,시계탑 종의 소리 시연은 토요일 정오에만 진행합니다. 탑 내부 계단 관람과는 다른 프로그램이므로 신청 항목을 확인해 주세요.,announcement,documents-v2-announcement-train-063,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-064-v1,손잡이 견본을 주제로 한 공개 대화는 예약 없이 참여합니다. 도자기 손잡이실에서 진행하는 이번 프로그램에는 일반 관람 시간과 대화 시작 시각은 다를 수 있습니다. 이용자가 원치 않는 공개 범위는 승인 항목에서 제외합니다.,announcement,documents-v2-announcement-train-064,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-064-v2,전체 동의로 받지 않은 자료는 항목별로 허락받은 부분만 사용합니다. 발언 참여를 원하지 않는 방문객은 청중석에서 듣기만 할 수 있습니다. 도자기 손잡이실 참가자는 신청 내용과 별도로 이 조건을 확인해야 합니다.,announcement,documents-v2-announcement-train-064,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-065-v1,한지 인쇄실의 새 운영 기준입니다. 한지 인쇄 견본의 상세 자료는 연구 설명 시간에만 공개합니다. 기본 전시 설명은 일반 방문객도 읽을 수 있습니다. 기관이 대신 신청해도 실제 이용자는 별도로 확인합니다.,announcement,documents-v2-announcement-train-065,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-065-v2,한지 인쇄실 방문 시 참고해 주세요. 이용자의 이름이 바뀌면 대표자는 기존 신청에 정정을 요청해야 합니다. 공개하지 않은 정보가 필요한 경우에는 자료 이용 요청을 별도로 제출해 주세요. 해당 안내는 이번 운영에 적용됩니다.,announcement,documents-v2-announcement-train-065,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-066-v1,타자기 기록실에 방문하기 전 확인해 주세요. 개인 타자기 시연 신청을 잠시 중단합니다. 전시 장치의 직원 시연은 계속 진행합니다.,announcement,documents-v2-announcement-train-066,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-066-v2,현재 타자기 기록실 운영에 관해 알립니다. 중단 기간의 새 신청은 대기 등록만 받습니다. 해당 범위는 현장에서도 확인할 수 있습니다.,announcement,documents-v2-announcement-train-066,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-067-v1,전통 신발관의 해당 활동을 이용하실 분께 안내드립니다. 전체 동의로 받지 않은 자료는 항목별로 허락받은 부분만 사용합니다. 경험을 적지 않은 신청자는 현장 확인 뒤 활동 구역을 배정합니다.,announcement,documents-v2-announcement-train-067,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-067-v2,전통 신발관에서 다음 내용을 안내합니다. 신발 치수 자료 교육은 초보 참가자와 경험자의 좌석을 나눕니다. 신청할 때 관련 활동 경험을 적어 주세요. 이용자가 원치 않는 공개 범위는 승인 항목에서 제외합니다.,announcement,documents-v2-announcement-train-067,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-068-v1,진흙 조형관에 방문하기 전 확인해 주세요. 조형 작품 목록의 새 전자판을 공개합니다. 인쇄본과 내용이 다른 부분은 수정 표시로 구분했습니다. 동반 참가자가 있는 신청은 동반자의 역할을 함께 적어야 합니다.,announcement,documents-v2-announcement-train-068,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-068-v2,현재 진흙 조형관 운영에 관해 알립니다. 참관과 직접 활동의 제공 범위가 다르므로 신청 유형을 확인해 주세요. 기존 인쇄본을 가진 이용자는 수정 목록만 따로 확인할 수 있습니다. 해당 범위는 현장에서도 확인할 수 있습니다.,announcement,documents-v2-announcement-train-068,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-069-v1,이번 달 관찰실 이용에는 변경된 조건이 적용됩니다. 달 표면 기록 설명회에는 질문용 보조 자료를 제공합니다. 행사 뒤 개인 질문의 답변을 모두 공개하지는 않습니다. 확인 자료를 다시 받으면 이전 자료와 연결해 보관합니다.,announcement,documents-v2-announcement-train-069,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-069-v2,달 관찰실의 새 안내에서 구분할 사항은 다음과 같습니다. 수정본이 들어왔어도 이전에 안내한 근거를 지우지 않습니다. 개인 사정이 포함된 질문은 별도 지원 경로를 안내받을 수 있습니다.,announcement,documents-v2-announcement-train-069,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-070-v1,마을 향기실의 새 안내에서 구분할 사항은 다음과 같습니다. 제공 승인은 확인한 목적에만 적용되며 다른 활용은 따로 문의합니다. 해설 예약이 없어도 일반 전시 공간에는 입장할 수 있습니다.,announcement,documents-v2-announcement-train-070,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-070-v2,이번 마을 향기실 이용에는 변경된 조건이 적용됩니다. 향기 관찰 카드 전시 중 설명 없는 관람 시간도 운영합니다. 별도 해설은 신청한 회차에만 참여할 수 있습니다. 한 신청에 여러 목적이 있으면 주된 이용 목적을 밝혀야 합니다.,announcement,documents-v2-announcement-train-070,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-071-v1,이번 우체통 역사관 운영에서는 기간이 끝난 안내를 현재 조건으로 사용하는 일이 없도록 날짜를 표시합니다. 경험을 적지 않은 신청자는 현장 확인 뒤 활동 구역을 배정합니다. 방문 전에 해당 범위를 확인해 주세요.,announcement,documents-v2-announcement-train-071,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-071-v2,우체통 역사관 이용자께 알립니다. 우체통 사진 교육은 초보 참가자와 경험자의 좌석을 나눕니다. 신청할 때 관련 활동 경험을 적어 주세요. 정해진 기간의 적용 여부는 시작일과 종료일을 함께 확인합니다.,announcement,documents-v2-announcement-train-071,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-072-v1,기상 표지관의 새 안내에서 구분할 사항은 다음과 같습니다. 제공 승인은 확인한 목적에만 적용되며 다른 활용은 따로 문의합니다. 공개하지 않은 정보가 필요한 경우에는 자료 이용 요청을 별도로 제출해 주세요.,announcement,documents-v2-announcement-train-072,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-072-v2,이번 기상 표지관 이용에는 변경된 조건이 적용됩니다. 기상 기호 설명의 상세 자료는 연구 설명 시간에만 공개합니다. 기본 전시 설명은 일반 방문객도 읽을 수 있습니다. 한 신청에 여러 목적이 있으면 주된 이용 목적을 밝혀야 합니다.,announcement,documents-v2-announcement-train-072,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-073-v1,등불 도안의 체험용 사본을 새로 배부합니다. 종이 등불관에서 진행하는 이번 프로그램에는 사본은 활동 목적 범위에서만 사용할 수 있습니다. 현장 안내를 읽기 어려운 분은 문자 안내를 요청할 수 있습니다.,announcement,documents-v2-announcement-train-073,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-073-v2,대체 설명이 필요한 경우에는 신청 단계에서 필요한 형태를 알려 주세요. 원본에 포함된 일부 비공개 내용은 사본에서 제외했습니다. 종이 등불관 참가자는 신청 내용과 별도로 이 조건을 확인해야 합니다.,announcement,documents-v2-announcement-train-073,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-074-v1,버섯 그림실 이용자께 알립니다. 버섯 삽화 교육은 초보 참가자와 경험자의 좌석을 나눕니다. 신청할 때 관련 활동 경험을 적어 주세요. 외부 제공 자료가 포함된 항목은 이용 허락 범위를 먼저 확인합니다.,announcement,documents-v2-announcement-train-074,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-074-v2,이번 버섯 그림실 운영에서는 기관이 보관하고 있다는 사실만으로 다른 곳에 배포할 수 있는 것은 아닙니다. 경험을 적지 않은 신청자는 현장 확인 뒤 활동 구역을 배정합니다. 방문 전에 해당 범위를 확인해 주세요.,announcement,documents-v2-announcement-train-074,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-075-v1,악보 주석을 주제로 한 공개 대화는 예약 없이 참여합니다. 악보 편집실에서 진행하는 이번 프로그램에는 일반 관람 시간과 대화 시작 시각은 다를 수 있습니다. 현장 안내를 읽기 어려운 분은 문자 안내를 요청할 수 있습니다.,announcement,documents-v2-announcement-train-075,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-075-v2,대체 설명이 필요한 경우에는 신청 단계에서 필요한 형태를 알려 주세요. 발언 참여를 원하지 않는 방문객은 청중석에서 듣기만 할 수 있습니다. 악보 편집실 참가자는 신청 내용과 별도로 이 조건을 확인해야 합니다.,announcement,documents-v2-announcement-train-075,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-076-v1,이번 저수지 역사실 이용에는 변경된 조건이 적용됩니다. 저수지 공사 기록의 연구 이용 신청은 목적 설명을 함께 받습니다. 접수 뒤 자료 상태를 확인해 제공 여부를 알립니다. 한 신청에 여러 목적이 있으면 주된 이용 목적을 밝혀야 합니다.,announcement,documents-v2-announcement-train-076,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-076-v2,저수지 역사실의 새 안내에서 구분할 사항은 다음과 같습니다. 제공 승인은 확인한 목적에만 적용되며 다른 활용은 따로 문의합니다. 신청을 마쳤다고 모든 원본의 열람이 승인되는 것은 아닙니다.,announcement,documents-v2-announcement-train-076,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-077-v1,피아노 역사관의 해당 활동을 이용하실 분께 안내드립니다. 확인이 늦어도 신청을 여러 번 제출하지 말고 기존 번호로 문의해 주세요. 마르지 않은 결과물은 직원이 안내하는 임시 포장을 이용할 수 있습니다.,announcement,documents-v2-announcement-train-077,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-077-v2,피아노 역사관에서 다음 내용을 안내합니다. 피아노 구조 그림 체험의 결과물은 현장에서 보관하지 않습니다. 참가자는 활동이 끝나면 가져가셔야 합니다. 신청을 제출한 시각과 담당자가 확인한 시각은 구분해 기록합니다.,announcement,documents-v2-announcement-train-077,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-078-v1,그림자 연극실 이용자께 알립니다. 그림자 대본 소개 자료를 문자와 음성 두 형태로 제공합니다. 방문자는 편한 형태를 선택해 이용할 수 있습니다. 외부 제공 자료가 포함된 항목은 이용 허락 범위를 먼저 확인합니다.,announcement,documents-v2-announcement-train-078,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-078-v2,이번 그림자 연극실 운영에서는 기관이 보관하고 있다는 사실만으로 다른 곳에 배포할 수 있는 것은 아닙니다. 음성 설명을 듣지 않아도 동일한 핵심 정보를 문자판에서 확인할 수 있습니다. 방문 전에 해당 범위를 확인해 주세요.,announcement,documents-v2-announcement-train-078,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-079-v1,강물 지도관의 해당 활동을 이용하실 분께 안내드립니다. 뒤 담당자는 앞 담당자의 예정 작업을 완료된 일로 표시하지 않습니다. 전체 자료를 새로 받기 어려운 이용자는 정정표만 받을 수 있습니다.,announcement,documents-v2-announcement-train-079,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-079-v2,강물 지도관에서 다음 내용을 안내합니다. 물길 변화 지도의 기존 배포본에 있는 표기 오류를 정정합니다. 수정된 위치는 별도 목록에 표시했습니다. 작업자가 바뀐 경우에는 마지막 확인 단계부터 인계합니다.,announcement,documents-v2-announcement-train-079,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-080-v1,정보가 비어 있다는 이유만으로 해당 항목이 존재하지 않는다고 정리하지 않습니다. 원본에 포함된 일부 비공개 내용은 사본에서 제외했습니다. 철제 공예관 참가자는 신청 내용과 별도로 이 조건을 확인해야 합니다.,announcement,documents-v2-announcement-train-080,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-080-v2,철제 작품 목록의 체험용 사본을 새로 배부합니다. 철제 공예관에서 진행하는 이번 프로그램에는 사본은 활동 목적 범위에서만 사용할 수 있습니다. 현재 확인할 수 없는 부분은 미확인으로 남겨 안내합니다.,announcement,documents-v2-announcement-train-080,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-081-v1,전통 장신구실의 새 운영 기준입니다. 장신구 설명 설명회는 회차마다 5명까지 받습니다. 참가자는 시작 전에 이름 확인을 마쳐야 합니다. 외부 제공 자료가 포함된 항목은 이용 허락 범위를 먼저 확인합니다.,announcement,documents-v2-announcement-train-081,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-081-v2,전통 장신구실 방문 시 참고해 주세요. 기관이 보관하고 있다는 사실만으로 다른 곳에 배포할 수 있는 것은 아닙니다. 예약하지 않은 동행자는 설명회 구역 밖에서 기다려야 합니다. 해당 안내는 이번 운영에 적용됩니다.,announcement,documents-v2-announcement-train-081,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-082-v1,이번 실내 소리실 운영에서는 기간이 끝난 안내를 현재 조건으로 사용하는 일이 없도록 날짜를 표시합니다. 개인 방문자의 일반 전시는 다른 요일에도 운영합니다. 방문 전에 해당 범위를 확인해 주세요.,announcement,documents-v2-announcement-train-082,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-082-v2,실내 소리실 이용자께 알립니다. 잔향 관찰표의 단체 열람은 수요일에만 접수합니다. 예약 대표는 실제 방문 인원을 먼저 확인해야 합니다. 정해진 기간의 적용 여부는 시작일과 종료일을 함께 확인합니다.,announcement,documents-v2-announcement-train-082,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-083-v1,이번 종이 길 연구관 이용에는 변경된 조건이 적용됩니다. 종이 유통 기록 전시 중 설명 없는 관람 시간도 운영합니다. 별도 해설은 신청한 회차에만 참여할 수 있습니다. 작업자가 바뀐 경우에는 마지막 확인 단계부터 인계합니다.,announcement,documents-v2-announcement-train-083,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-083-v2,종이 길 연구관의 새 안내에서 구분할 사항은 다음과 같습니다. 뒤 담당자는 앞 담당자의 예정 작업을 완료된 일로 표시하지 않습니다. 해설 예약이 없어도 일반 전시 공간에는 입장할 수 있습니다.,announcement,documents-v2-announcement-train-083,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-084-v1,옥상 정원관에 방문하기 전 확인해 주세요. 뿌리 전시 구역은 정비 후 재개방합니다. 정비 동안 화분 이동을 요청할 수 없습니다.,announcement,documents-v2-announcement-train-084,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-084-v2,현재 옥상 정원관 운영에 관해 알립니다. 일반 정원 통로는 정상 이용 가능합니다. 해당 범위는 현장에서도 확인할 수 있습니다.,announcement,documents-v2-announcement-train-084,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-085-v1,레이스 공예관의 새 운영 기준입니다. 바늘 레이스 시연은 오후에만 제공합니다. 아침 방문자는 실물 전시만 관람합니다.,announcement,documents-v2-announcement-train-085,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-085-v2,레이스 공예관 방문 시 참고해 주세요. 시연 자리에는 어린이용 확대 화면도 설치했습니다. 해당 안내는 이번 운영에 적용됩니다.,announcement,documents-v2-announcement-train-085,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-086-v1,기상 기록관은 태풍 기록 특별 열람을 연구 예약자로 제한합니다. 일반 날씨 연보는 종전대로 공개합니다.,announcement,documents-v2-announcement-train-086,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-086-v2,태풍 원본 기록을 찾는 분은 자료 번호를 적어 예약해야 합니다. 날씨 연보를 읽기 위한 방문에는 특별 열람 승인이 필요 없습니다.,announcement,documents-v2-announcement-train-086,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-087-v1,줄 악기 관찰실 방문 시 참고해 주세요. 대체 설명이 필요한 경우에는 신청 단계에서 필요한 형태를 알려 주세요. 원본의 실제 상태 확인은 별도 자료 열람 조건을 따라야 합니다. 해당 안내는 이번 운영에 적용됩니다.,announcement,documents-v2-announcement-train-087,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-087-v2,줄 악기 관찰실의 새 운영 기준입니다. 현 진동 기록을 비교하는 전시는 원본이 아닌 참고 이미지를 사용합니다. 이미지는 크기나 색이 실물과 다를 수 있습니다. 현장 안내를 읽기 어려운 분은 문자 안내를 요청할 수 있습니다.,announcement,documents-v2-announcement-train-087,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-088-v1,별자리 지도관 방문 시 참고해 주세요. 한 문화권의 별자리를 전체 공통 명칭으로 설명하지 않습니다. 해당 안내는 이번 운영에 적용됩니다.,announcement,documents-v2-announcement-train-088,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-088-v2,별자리 지도관의 새 운영 기준입니다. 고대 별자리 소개는 문화권별 회차로 나눕니다. 다른 회차는 각각 신청해야 합니다.,announcement,documents-v2-announcement-train-088,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-089-v1,유리 공방의 햇빛 관찰 수업은 맑은 날에만 야외에서 진행합니다. 흐린 날 신청자는 실내 색 조합 수업을 들을 수 있습니다.,announcement,documents-v2-announcement-train-089,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-089-v2,날씨 때문에 야외 관찰을 못 해도 공방 수업은 취소되지 않습니다. 대체 수업을 원하지 않는 분은 참가 조건을 먼저 문의해 주세요.,announcement,documents-v2-announcement-train-089,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-090-v1,보충 설명이 원래 자료에 적힌 내용이라고 인용하지 않도록 확인해 주세요. 기존 인쇄본을 가진 이용자는 수정 목록만 따로 확인할 수 있습니다. 민요 채록실 참가자는 신청 내용과 별도로 이 조건을 확인해야 합니다.,announcement,documents-v2-announcement-train-090,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-090-v2,민요 채록 원고의 새 전자판을 공개합니다. 민요 채록실에서 진행하는 이번 프로그램에는 인쇄본과 내용이 다른 부분은 수정 표시로 구분했습니다. 원문과 보충 설명은 자료에서 서로 다른 항목으로 표시합니다.,announcement,documents-v2-announcement-train-090,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-091-v1,전통 모자실 이용자께 알립니다. 모자 치수 자료 체험의 결과물은 현장에서 보관하지 않습니다. 참가자는 활동이 끝나면 가져가셔야 합니다. 대면 참여와 자료만 받는 신청은 같은 접수로 처리하지 않습니다.,announcement,documents-v2-announcement-train-091,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-091-v2,이번 전통 모자실 운영에서는 자료 제공만 신청한 이용자는 현장 좌석을 배정받은 것으로 볼 수 없습니다. 마르지 않은 결과물은 직원이 안내하는 임시 포장을 이용할 수 있습니다. 방문 전에 해당 범위를 확인해 주세요.,announcement,documents-v2-announcement-train-091,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-092-v1,치즈 문화관에서 다음 내용을 안내합니다. 숙성 단계 사진 소개 자료를 문자와 음성 두 형태로 제공합니다. 방문자는 편한 형태를 선택해 이용할 수 있습니다. 이용자가 원치 않는 공개 범위는 승인 항목에서 제외합니다.,announcement,documents-v2-announcement-train-092,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-092-v2,치즈 문화관의 해당 활동을 이용하실 분께 안내드립니다. 전체 동의로 받지 않은 자료는 항목별로 허락받은 부분만 사용합니다. 음성 설명을 듣지 않아도 동일한 핵심 정보를 문자판에서 확인할 수 있습니다.,announcement,documents-v2-announcement-train-092,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-093-v1,향료 문화실 이용자께 알립니다. 향료 설명 카드 소개 자료를 문자와 음성 두 형태로 제공합니다. 방문자는 편한 형태를 선택해 이용할 수 있습니다. 정해진 기간의 적용 여부는 시작일과 종료일을 함께 확인합니다.,announcement,documents-v2-announcement-train-093,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-093-v2,이번 향료 문화실 운영에서는 기간이 끝난 안내를 현재 조건으로 사용하는 일이 없도록 날짜를 표시합니다. 음성 설명을 듣지 않아도 동일한 핵심 정보를 문자판에서 확인할 수 있습니다. 방문 전에 해당 범위를 확인해 주세요.,announcement,documents-v2-announcement-train-093,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-094-v1,모자이크 교육실에서 다음 내용을 안내합니다. 공동 벽화의 개인 조각 반환은 받지 않습니다. 참가 전에 공동 전시 조건을 확인해야 합니다.,announcement,documents-v2-announcement-train-094,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-094-v2,모자이크 교육실의 해당 활동을 이용하실 분께 안내드립니다. 개인 연습 조각은 체험 뒤 가져갈 수 있습니다.,announcement,documents-v2-announcement-train-094,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-095-v1,이번 지구본 자료관 운영에서는 일반 지구본 관람은 계속 자유 입장입니다. 방문 전에 해당 범위를 확인해 주세요.,announcement,documents-v2-announcement-train-095,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-095-v2,지구본 자료관 이용자께 알립니다. 해양 지명 특별 해설을 예약제로 전환합니다. 단체도 인원별 예약 확인이 필요합니다.,announcement,documents-v2-announcement-train-095,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-096-v1,새 깃털실의 새 운영 기준입니다. 깃털 사진 설명회에는 질문용 보조 자료를 제공합니다. 행사 뒤 개인 질문의 답변을 모두 공개하지는 않습니다. 현재 확인할 수 없는 부분은 미확인으로 남겨 안내합니다.,announcement,documents-v2-announcement-train-096,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-096-v2,새 깃털실 방문 시 참고해 주세요. 정보가 비어 있다는 이유만으로 해당 항목이 존재하지 않는다고 정리하지 않습니다. 개인 사정이 포함된 질문은 별도 지원 경로를 안내받을 수 있습니다. 해당 안내는 이번 운영에 적용됩니다.,announcement,documents-v2-announcement-train-096,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-097-v1,돛 설계실 방문 시 참고해 주세요. 대표 신청 하나가 동행 전원의 별도 요청을 대신하지는 않습니다. 해설 예약이 없어도 일반 전시 공간에는 입장할 수 있습니다. 해당 안내는 이번 운영에 적용됩니다.,announcement,documents-v2-announcement-train-097,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-097-v2,돛 설계실의 새 운영 기준입니다. 돛 구조 설명 전시 중 설명 없는 관람 시간도 운영합니다. 별도 해설은 신청한 회차에만 참여할 수 있습니다. 신청 대상이 개인인지 단체인지 확인한 뒤 제공 범위를 정합니다.,announcement,documents-v2-announcement-train-097,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-098-v1,도시 장면실의 새 안내에서 구분할 사항은 다음과 같습니다. 참관과 직접 활동의 제공 범위가 다르므로 신청 유형을 확인해 주세요. 개인 사정이 포함된 질문은 별도 지원 경로를 안내받을 수 있습니다.,announcement,documents-v2-announcement-train-098,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-098-v2,이번 도시 장면실 이용에는 변경된 조건이 적용됩니다. 거리 풍경 기록 설명회에는 질문용 보조 자료를 제공합니다. 행사 뒤 개인 질문의 답변을 모두 공개하지는 않습니다. 동반 참가자가 있는 신청은 동반자의 역할을 함께 적어야 합니다.,announcement,documents-v2-announcement-train-098,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-099-v1,바람 소리관의 새 안내에서 구분할 사항은 다음과 같습니다. 확인이 늦어도 신청을 여러 번 제출하지 말고 기존 번호로 문의해 주세요. 예약하지 않은 동행자는 설명회 구역 밖에서 기다려야 합니다.,announcement,documents-v2-announcement-train-099,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-099-v2,이번 바람 소리관 이용에는 변경된 조건이 적용됩니다. 바람 음원 설명회는 회차마다 5명까지 받습니다. 참가자는 시작 전에 이름 확인을 마쳐야 합니다. 신청을 제출한 시각과 담당자가 확인한 시각은 구분해 기록합니다.,announcement,documents-v2-announcement-train-099,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-100-v1,이번 지도 기호실 이용에는 변경된 조건이 적용됩니다. 지도 기호표 관련 질문을 행사 전날까지 받습니다. 현장에서는 미리 받은 질문을 중심으로 설명합니다. 신청을 제출한 시각과 담당자가 확인한 시각은 구분해 기록합니다.,announcement,documents-v2-announcement-train-100,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-100-v2,지도 기호실의 새 안내에서 구분할 사항은 다음과 같습니다. 확인이 늦어도 신청을 여러 번 제출하지 말고 기존 번호로 문의해 주세요. 개인 자료의 감정이나 금전 가치 판단은 해당 설명회에서 제공하지 않습니다.,announcement,documents-v2-announcement-train-100,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-101-v1,전통 배 교육실 방문 시 참고해 주세요. 이용자의 이름이 바뀌면 대표자는 기존 신청에 정정을 요청해야 합니다. 신청을 마쳤다고 모든 원본의 열람이 승인되는 것은 아닙니다. 해당 안내는 이번 운영에 적용됩니다.,announcement,documents-v2-announcement-train-101,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-101-v2,전통 배 교육실의 새 운영 기준입니다. 배 모형 목록의 연구 이용 신청은 목적 설명을 함께 받습니다. 접수 뒤 자료 상태를 확인해 제공 여부를 알립니다. 기관이 대신 신청해도 실제 이용자는 별도로 확인합니다.,announcement,documents-v2-announcement-train-101,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-102-v1,문장 부호관에서 다음 내용을 안내합니다. 구두점 자료 체험의 결과물은 현장에서 보관하지 않습니다. 참가자는 활동이 끝나면 가져가셔야 합니다. 함께 제출한 여러 항목은 각각의 확인 상태를 표시합니다.,announcement,documents-v2-announcement-train-102,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-102-v2,문장 부호관의 해당 활동을 이용하실 분께 안내드립니다. 한 항목을 확인했다고 전체 자료가 검토된 것으로 안내하지 않습니다. 마르지 않은 결과물은 직원이 안내하는 임시 포장을 이용할 수 있습니다.,announcement,documents-v2-announcement-train-102,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-103-v1,도서 장정실 이용자께 알립니다. 장정 방식 견본 체험의 결과물은 현장에서 보관하지 않습니다. 참가자는 활동이 끝나면 가져가셔야 합니다. 외부 제공 자료가 포함된 항목은 이용 허락 범위를 먼저 확인합니다.,announcement,documents-v2-announcement-train-103,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-103-v2,이번 도서 장정실 운영에서는 기관이 보관하고 있다는 사실만으로 다른 곳에 배포할 수 있는 것은 아닙니다. 마르지 않은 결과물은 직원이 안내하는 임시 포장을 이용할 수 있습니다. 방문 전에 해당 범위를 확인해 주세요.,announcement,documents-v2-announcement-train-103,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-104-v1,이번 모래 지형관 운영에서는 전시 설명을 읽는 데에는 대기표가 필요 없습니다. 방문 전에 해당 범위를 확인해 주세요.,announcement,documents-v2-announcement-train-104,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-104-v2,모래 지형관 이용자께 알립니다. 파도 모형 체험은 회차마다 참가 수를 제한합니다. 대기표는 입구에서 당일 받습니다.,announcement,documents-v2-announcement-train-104,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-105-v1,염전 생활관 이용자께 알립니다. 소금 결정 기록의 단체 열람은 월요일에만 접수합니다. 예약 대표는 실제 방문 인원을 먼저 확인해야 합니다. 동반 참가자가 있는 신청은 동반자의 역할을 함께 적어야 합니다.,announcement,documents-v2-announcement-train-105,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-105-v2,이번 염전 생활관 운영에서는 참관과 직접 활동의 제공 범위가 다르므로 신청 유형을 확인해 주세요. 개인 방문자의 일반 전시는 다른 요일에도 운영합니다. 방문 전에 해당 범위를 확인해 주세요.,announcement,documents-v2-announcement-train-105,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-106-v1,목각 동물실 방문 시 참고해 주세요. 대표 신청 하나가 동행 전원의 별도 요청을 대신하지는 않습니다. 개인 자료의 감정이나 금전 가치 판단은 해당 설명회에서 제공하지 않습니다. 해당 안내는 이번 운영에 적용됩니다.,announcement,documents-v2-announcement-train-106,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-106-v2,목각 동물실의 새 운영 기준입니다. 목각 견본 관련 질문을 행사 전날까지 받습니다. 현장에서는 미리 받은 질문을 중심으로 설명합니다. 신청 대상이 개인인지 단체인지 확인한 뒤 제공 범위를 정합니다.,announcement,documents-v2-announcement-train-106,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-107-v1,새벽 소리실 방문 시 참고해 주세요. 보충 설명이 원래 자료에 적힌 내용이라고 인용하지 않도록 확인해 주세요. 원본의 실제 상태 확인은 별도 자료 열람 조건을 따라야 합니다. 해당 안내는 이번 운영에 적용됩니다.,announcement,documents-v2-announcement-train-107,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-107-v2,새벽 소리실의 새 운영 기준입니다. 새벽 녹음 자료를 비교하는 전시는 원본이 아닌 참고 이미지를 사용합니다. 이미지는 크기나 색이 실물과 다를 수 있습니다. 원문과 보충 설명은 자료에서 서로 다른 항목으로 표시합니다.,announcement,documents-v2-announcement-train-107,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-108-v1,현재 조류 소리관 운영에 관해 알립니다. 제공 승인은 확인한 목적에만 적용되며 다른 활용은 따로 문의합니다. 발언 참여를 원하지 않는 방문객은 청중석에서 듣기만 할 수 있습니다. 해당 범위는 현장에서도 확인할 수 있습니다.,announcement,documents-v2-announcement-train-108,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-108-v2,조류 소리관에 방문하기 전 확인해 주세요. 새소리 음원을 주제로 한 공개 대화는 예약 없이 참여합니다. 일반 관람 시간과 대화 시작 시각은 다를 수 있습니다. 한 신청에 여러 목적이 있으면 주된 이용 목적을 밝혀야 합니다.,announcement,documents-v2-announcement-train-108,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-109-v1,도시 간판관에서 다음 내용을 안내합니다. 간판 사진의 기존 배포본에 있는 표기 오류를 정정합니다. 수정된 위치는 별도 목록에 표시했습니다. 신청을 제출한 시각과 담당자가 확인한 시각은 구분해 기록합니다.,announcement,documents-v2-announcement-train-109,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-109-v2,도시 간판관의 해당 활동을 이용하실 분께 안내드립니다. 확인이 늦어도 신청을 여러 번 제출하지 말고 기존 번호로 문의해 주세요. 전체 자료를 새로 받기 어려운 이용자는 정정표만 받을 수 있습니다.,announcement,documents-v2-announcement-train-109,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-110-v1,이번 활자 체험실 운영에서는 시험용 결과는 실제 운영 기록에 포함하지 않고 별도 목록에 둡니다. 사본 이용을 원하는 경우에는 별도의 허용 범위를 문의해 주세요. 방문 전에 해당 범위를 확인해 주세요.,announcement,documents-v2-announcement-train-110,team-added-synthetic:basic-paired-v2
+documents-v2-announcement-train-110-v2,활자 체험실 이용자께 알립니다. 활자 인쇄본의 외부 반출을 이번 달에는 받지 않습니다. 현장 열람은 예약한 시간에만 가능합니다. 자료를 시험하는 용도와 공식 배포 용도를 구분합니다.,announcement,documents-v2-announcement-train-110,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-061-v1,새벽 소리실 담당자가 새벽 녹음 자료의 인수 기록할 때 따를 순서입니다. 새벽 녹음 자료의 변경 근거를 사유별로 모아 먼저 읽습니다. 인계한 수량과 실제 수량을 비교합니다. 차이가 난 항목은 서명 전에 적습니다.,manual,documents-v2-manual-train-061,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-061-v2,새벽 녹음 자료의 인수 기록을 수행하는 중에는 확인하지 않은 새벽 녹음 자료까지 인수 완료로 쓰지 마세요. 기록자에게 미확인 항목을 전달합니다. 새벽 녹음 자료의 변화가 같은 이유라고 단정하지 말고 근거마다 확인하세요. 검토 없이 완료로 표시하지 않습니다.,manual,documents-v2-manual-train-061,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-062-v1,철제 작품 목록의 인용 확인은 다음 방법으로 수행합니다. 철제 작품 목록의 일부분만 받은 경우 받은 범위를 기록합니다. 인용한 범위를 원자료에서 찾습니다. 앞뒤의 조건이 빠지지 않았는지 봅니다.,manual,documents-v2-manual-train-062,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-062-v2,철제 공예관에서 철제 작품 목록의 인용 확인할 때의 주의 단계입니다. 뜻이 달라진 철제 작품 목록 인용은 배포하지 마세요. 관리자의 재검토를 받은 범위만 사용합니다. 일부 철제 작품 목록 확인으로 전체 작업이 끝났다고 표시하지 마세요. 필요한 확인을 마친 뒤 결과를 보관하세요.,manual,documents-v2-manual-train-062,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-063-v1,진흙 조형관 작업 방법: 조형 작품 목록의 작업 완료 표시에서 조형 작품 목록은 보관본과 현장 사용본을 나란히 확인합니다. 실제로 끝난 단계와 남은 일을 나눕니다. 다음으로 남은 단계의 담당과 확인 항목을 적습니다.,manual,documents-v2-manual-train-063,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-063-v2,조형 작품 목록의 작업 완료 표시 과정에서 오류를 막으려면 예정 작업을 이미 끝난 조형 작품 목록 작업으로 쓰지 마세요. 교육팀의 확인 전에는 진행 중 상태를 유지합니다. 보관본에 없는 변경 사항은 조형 작품 목록의 사용 기록에서 찾고 따로 적으세요. 작업 기록에 확인 여부를 남기세요.,manual,documents-v2-manual-train-063,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-064-v1,달 관찰실 작업자는 달 표면 기록의 상태 사진 작성 때 이 기준을 적용합니다. 확대 사진만으로 달 표면 기록 전체 상태를 단정하지 마세요. 교육팀에게 전체 사진도 함께 전달합니다. 표시한 범위 밖의 달 표면 기록까지 확인 완료로 등록하지 마세요.,manual,documents-v2-manual-train-064,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-064-v2,달 표면 기록의 상태 사진 작성을 진행하려면 달 표면 기록의 검토 범위를 작업 시작 전에 표시합니다. 전체 모습부터 촬영합니다. 그런 다음 확인이 필요한 부분은 확대해 기록합니다.,manual,documents-v2-manual-train-064,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-065-v1,새 깃털실 담당자가 깃털 사진의 출처 등록할 때 따를 순서입니다. 깃털 사진의 일부분만 받은 경우 받은 범위를 기록합니다. 받은 경로와 제공자를 구분해 적습니다. 확인한 문서의 번호를 연결합니다.,manual,documents-v2-manual-train-065,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-065-v2,깃털 사진의 출처 등록을 수행하는 중에는 제공자를 제작자로 자동 등록하지 마세요. 깃털 사진의 제작 근거는 관찰 담당에게 따로 확인합니다. 일부 깃털 사진 확인으로 전체 작업이 끝났다고 표시하지 마세요. 검토 없이 완료로 표시하지 않습니다.,manual,documents-v2-manual-train-065,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-066-v1,종소리의 길이를 잴 때 녹음 시작점과 마지막 울림을 구분해 표시합니다. 주변 소리로 끝이 가려졌으면 불확실 구간을 적습니다.,manual,documents-v2-manual-train-066,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-066-v2,소리 측정에는 첫 충격과 잔향의 시간을 따로 남기세요. 다른 장소에서 녹음한 값을 같은 측정 조건으로 합산하지 않습니다.,manual,documents-v2-manual-train-066,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-067-v1,저수지 공사 기록의 인용 확인을 진행하려면 저수지 공사 기록의 제출 대상이 바뀌면 제공 범위를 다시 읽습니다. 인용한 범위를 원자료에서 찾습니다. 그런 다음 앞뒤의 조건이 빠지지 않았는지 봅니다.,manual,documents-v2-manual-train-067,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-067-v2,저수지 역사실 작업자는 저수지 공사 기록의 인용 확인 때 이 기준을 적용합니다. 뜻이 달라진 저수지 공사 기록 인용은 배포하지 마세요. 자료원의 재검토를 받은 범위만 사용합니다. 이전 대상의 승인으로 새 대상에게 저수지 공사 기록을 자동 배포하지 마세요.,manual,documents-v2-manual-train-067,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-068-v1,바람 음원의 누락 확인을 진행하려면 바람 음원은 보관본과 현장 사용본을 나란히 확인합니다. 필수 항목의 목록부터 읽습니다. 그런 다음 기록에서 빠진 항목을 따로 표시합니다.,manual,documents-v2-manual-train-068,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-068-v2,바람 소리관 작업자는 바람 음원의 누락 확인 때 이 기준을 적용합니다. 정보가 없는 바람 음원 칸을 해당 없음으로 채우지 마세요. 해설사에게 미확인과 제외의 차이를 문의합니다. 보관본에 없는 변경 사항은 바람 음원의 사용 기록에서 찾고 따로 적으세요.,manual,documents-v2-manual-train-068,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-069-v1,지도 기호표의 누락 확인을 진행하려면 지도 기호표의 기초 정보가 없는 경우 그 항목부터 확인합니다. 필수 항목의 목록부터 읽습니다. 그런 다음 기록에서 빠진 항목을 따로 표시합니다.,manual,documents-v2-manual-train-069,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-069-v2,지도 기호실 작업자는 지도 기호표의 누락 확인 때 이 기준을 적용합니다. 정보가 없는 지도 기호표 칸을 해당 없음으로 채우지 마세요. 자료원에게 미확인과 제외의 차이를 문의합니다. 지도 기호표의 추정 정보를 확정 칸에 넣지 마세요. 자료원이 확인한 근거만 사용합니다.,manual,documents-v2-manual-train-069,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-070-v1,구형 지도 경선 비교 과정에서 오류를 막으려면 지명이 같아도 경도 기준을 추측해 합치지 마세요. 작업 기록에 확인 여부를 남기세요.,manual,documents-v2-manual-train-070,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-070-v2,지구본 자료관 작업 방법: 구형 지도 경선 비교에서 기준 자오선을 먼저 찾습니다. 다음으로 경선 번호를 따라 차이를 적습니다.,manual,documents-v2-manual-train-070,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-071-v1,전통 장신구실 담당자가 장신구 설명의 위치 기록할 때 따를 순서입니다. 장신구 설명의 원기록과 새 요청이 다르면 차이 난 항목부터 적습니다. 현재 보관 위치를 직접 확인합니다. 이동 전후의 위치를 연결합니다.,manual,documents-v2-manual-train-071,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-071-v2,장신구 설명의 위치 기록을 수행하는 중에는 옮겨진 장신구 설명을 예전 자리에 있는 것으로 남기지 마세요. 학예팀이 실제 위치를 확인한 기록을 씁니다. 추가로 들어온 정보는 장신구 설명의 원기록과 섞지 말고 출처를 표시하세요. 검토 없이 완료로 표시하지 않습니다.,manual,documents-v2-manual-train-071,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-072-v1,타자 인쇄 상태 점검을 진행하려면 같은 글자를 여러 줄 입력합니다. 그런 다음 줄마다 잉크 농도를 기록합니다.,manual,documents-v2-manual-train-072,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-072-v2,타자기 기록실 작업자는 타자 인쇄 상태 점검 때 이 기준을 적용합니다. 종이를 세게 당겨 이동시키지 마세요.,manual,documents-v2-manual-train-072,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-073-v1,돛 설계실 담당자가 돛 구조 설명의 이름 연결할 때 따를 순서입니다. 돛 구조 설명에 두 담당자의 기록이 있으면 확인 순서를 정합니다. 원래 표기와 현재 검색 표기를 구분합니다. 둘을 연결하는 근거를 적습니다.,manual,documents-v2-manual-train-073,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-073-v2,돛 구조 설명의 이름 연결을 수행하는 중에는 돛 구조 설명의 옛 이름을 지워 새 이름만 남기지 마세요. 확인되지 않은 별칭은 학예팀의 검토를 받습니다. 어느 담당자가 확인했는지 불명확한 부분은 학예팀에게 재검토를 요청하세요. 검토 없이 완료로 표시하지 않습니다.,manual,documents-v2-manual-train-073,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-074-v1,한지 인쇄실 담당자가 한지 인쇄 견본의 비교 준비할 때 따를 순서입니다. 한지 인쇄 견본의 일부분만 받은 경우 받은 범위를 기록합니다. 비교 기준이 같은 자료끼리 모읍니다. 다른 조건의 자료는 목록을 나눕니다.,manual,documents-v2-manual-train-074,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-074-v2,한지 인쇄 견본의 비교 준비를 수행하는 중에는 조건을 확인하지 못한 한지 인쇄 견본은 직접 비교에서 제외합니다. 작업 담당의 확인 뒤 비교 목록에 넣으세요. 일부 한지 인쇄 견본 확인으로 전체 작업이 끝났다고 표시하지 마세요. 검토 없이 완료로 표시하지 않습니다.,manual,documents-v2-manual-train-074,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-075-v1,신발 치수 자료의 제공 범위 표시 작업 중 확인할 사항입니다. 학예팀의 승인 전에는 신발 치수 자료 전체를 공개 자료로 표시하지 마세요. 항목별 확인 날짜도 남깁니다. 신발 치수 자료의 변화가 같은 이유라고 단정하지 말고 근거마다 확인하세요. 확인 후 다음 단계로 진행하세요.,manual,documents-v2-manual-train-075,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-075-v2,전통 신발관의 신발 치수 자료의 제공 범위 표시 절차입니다. 신발 치수 자료의 변경 근거를 사유별로 모아 먼저 읽습니다. 공개 승인된 항목부터 구분합니다. 미확인 항목에는 검토 상태를 적습니다.,manual,documents-v2-manual-train-075,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-076-v1,도시 장면실 작업자는 거리 풍경 기록의 열람 목록 구성 때 이 기준을 적용합니다. 대상이 다른 거리 풍경 기록 요청을 같은 승인으로 처리하지 마세요. 사진 담당에게 신청별 범위를 확인합니다. 표시한 범위 밖의 거리 풍경 기록까지 확인 완료로 등록하지 마세요.,manual,documents-v2-manual-train-076,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-076-v2,거리 풍경 기록의 열람 목록 구성을 진행하려면 거리 풍경 기록의 검토 범위를 작업 시작 전에 표시합니다. 열람 승인 항목을 먼저 고릅니다. 그런 다음 비공개 정보가 섞인 부분을 표시합니다.,manual,documents-v2-manual-train-076,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-077-v1,인형을 시험한 뒤 손잡이가 움직인 위치를 적어 두세요. 입이 열리지 않으면 천을 잡아당기지 말고 내부 연결을 확인합니다.,manual,documents-v2-manual-train-077,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-077-v2,손 인형의 움직임을 시험할 때 손가락 위치부터 맞춥니다. 대사를 읽기 전에 입 모양이 잘 보이는 높이를 찾아 표시합니다.,manual,documents-v2-manual-train-077,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-078-v1,레이스 공예관의 해당 작업을 마치기 전 흐트러진 실을 원래 짜임으로 임의 복원하지 마세요. 이상이 있으면 확인한 내용을 기록합니다.,manual,documents-v2-manual-train-078,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-078-v2,레이스 짜임 확대 기록의 준비와 확인 순서입니다. 실의 교차 방향을 확인합니다. 구멍 크기를 기준선과 비교합니다.,manual,documents-v2-manual-train-078,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-079-v1,줄 악기 관찰실 담당자가 현 진동 기록의 작업 완료 표시할 때 따를 순서입니다. 현 진동 기록의 일부분만 받은 경우 받은 범위를 기록합니다. 실제로 끝난 단계와 남은 일을 나눕니다. 남은 단계의 담당과 확인 항목을 적습니다.,manual,documents-v2-manual-train-079,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-079-v2,현 진동 기록의 작업 완료 표시를 수행하는 중에는 예정 작업을 이미 끝난 현 진동 기록 작업으로 쓰지 마세요. 실습 조교의 확인 전에는 진행 중 상태를 유지합니다. 일부 현 진동 기록 확인으로 전체 작업이 끝났다고 표시하지 마세요. 검토 없이 완료로 표시하지 않습니다.,manual,documents-v2-manual-train-079,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-080-v1,피아노 역사관의 피아노 구조 그림의 위치 기록 절차입니다. 피아노 구조 그림의 기초 정보가 없는 경우 그 항목부터 확인합니다. 현재 보관 위치를 직접 확인합니다. 이동 전후의 위치를 연결합니다.,manual,documents-v2-manual-train-080,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-080-v2,피아노 구조 그림의 위치 기록 작업 중 확인할 사항입니다. 옮겨진 피아노 구조 그림을 예전 자리에 있는 것으로 남기지 마세요. 해설사가 실제 위치를 확인한 기록을 씁니다. 피아노 구조 그림의 추정 정보를 확정 칸에 넣지 마세요. 해설사가 확인한 근거만 사용합니다. 확인 후 다음 단계로 진행하세요.,manual,documents-v2-manual-train-080,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-081-v1,입력한 기압을 대조할 때 소수점 위치를 확인하세요. 원본 숫자가 불명확하면 주변 값으로 추측하지 말고 판독 대기로 남깁니다.,manual,documents-v2-manual-train-081,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-081-v2,기압 기록을 입력할 때 장치에서 쓴 단위를 먼저 읽습니다. 다른 단위로 바꾼 값은 원래 값 옆의 별도 칸에 적습니다.,manual,documents-v2-manual-train-081,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-082-v1,전통 배 교육실 담당자가 배 모형 목록의 비교 준비할 때 따를 순서입니다. 배 모형 목록을 확인한 도구나 파일 판본도 기록합니다. 비교 기준이 같은 자료끼리 모읍니다. 다른 조건의 자료는 목록을 나눕니다.,manual,documents-v2-manual-train-082,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-082-v2,배 모형 목록의 비교 준비를 수행하는 중에는 조건을 확인하지 못한 배 모형 목록은 직접 비교에서 제외합니다. 지도자의 확인 뒤 비교 목록에 넣으세요. 도구 조건이 바뀐 배 모형 목록 결과는 이전 조건과 분리해서 설명하세요. 검토 없이 완료로 표시하지 않습니다.,manual,documents-v2-manual-train-082,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-083-v1,향료 설명 카드의 단위 대조의 준비와 확인 순서입니다. 향료 설명 카드의 원기록과 새 요청이 다르면 차이 난 항목부터 적습니다. 값 옆의 단위 표시를 읽습니다. 변환한 값은 원래 값과 나란히 적습니다.,manual,documents-v2-manual-train-083,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-083-v2,향료 문화실의 해당 작업을 마치기 전 향료 설명 카드에 쓰인 단위를 모르면 임의 환산하지 마세요. 해설 담당에게 원기록의 기준을 요청합니다. 추가로 들어온 정보는 향료 설명 카드의 원기록과 섞지 말고 출처를 표시하세요. 이상이 있으면 확인한 내용을 기록합니다.,manual,documents-v2-manual-train-083,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-084-v1,종이 등불관에서 등불 도안의 판본 확인할 때의 주의 단계입니다. 같은 이름만 보고 다른 판본을 한 건으로 합치지 마세요. 불명확한 판본은 공방 담당에게 확인합니다. 해결되지 않은 등불 도안 문제는 넘긴 담당자와 필요한 확인을 함께 적으세요. 필요한 확인을 마친 뒤 결과를 보관하세요.,manual,documents-v2-manual-train-084,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-084-v2,등불 도안의 판본 확인은 다음 방법으로 수행합니다. 등불 도안의 불명확한 항목은 표시한 뒤 다음 항목을 검토합니다. 표지의 이름과 발행 정보를 대조합니다. 수정 여부를 별도 항목으로 남깁니다.,manual,documents-v2-manual-train-084,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-085-v1,빛 관찰표의 수정 이력 작성 작업 중 확인할 사항입니다. 빛 관찰표의 수정자를 확인할 수 없으면 완료로 표시하지 마세요. 실습 담당에게 기록 확인을 요청합니다. 실습 담당에게 보낼 때 검토한 범위와 입력만 한 범위를 구분하세요. 확인 후 다음 단계로 진행하세요.,manual,documents-v2-manual-train-085,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-085-v2,실내 빛 관찰실의 빛 관찰표의 수정 이력 작성 절차입니다. 빛 관찰표의 검토자와 입력자가 다른지 확인합니다. 바뀐 항목의 이전 값을 남깁니다. 새 값과 변경 사유를 다른 칸에 적습니다.,manual,documents-v2-manual-train-085,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-086-v1,손잡이 견본의 사진 설명 검수는 다음 방법으로 수행합니다. 손잡이 견본의 작업 중단 지점을 표시하고 사유를 적습니다. 설명에서 장소와 대상을 찾습니다. 원자료의 정보와 하나씩 대조합니다.,manual,documents-v2-manual-train-086,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-086-v2,도자기 손잡이실에서 손잡이 견본의 사진 설명 검수할 때의 주의 단계입니다. 손잡이 견본에 없는 설명은 사실로 확정하지 마세요. 확인되지 않은 구절은 관리자의 검토 대상으로 표시합니다. 재개할 때 손잡이 견본의 확인되지 않은 단계를 건너뛰지 마세요. 필요한 확인을 마친 뒤 결과를 보관하세요.,manual,documents-v2-manual-train-086,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-087-v1,모자이크 위치 등록은 다음 방법으로 수행합니다. 배치도에 조각 번호를 표시합니다. 색보다 번호로 자리를 대조합니다.,manual,documents-v2-manual-train-087,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-087-v2,모자이크 교육실에서 모자이크 위치 등록할 때의 주의 단계입니다. 이미 붙인 조각을 확인 없이 떼지 마세요. 필요한 확인을 마친 뒤 결과를 보관하세요.,manual,documents-v2-manual-train-087,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-088-v1,목각 견본의 이름 연결을 수행하는 중에는 목각 견본의 옛 이름을 지워 새 이름만 남기지 마세요. 확인되지 않은 별칭은 작업 담당의 검토를 받습니다. 표시한 범위 밖의 목각 견본까지 확인 완료로 등록하지 마세요. 검토 없이 완료로 표시하지 않습니다.,manual,documents-v2-manual-train-088,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-088-v2,목각 동물실 담당자가 목각 견본의 이름 연결할 때 따를 순서입니다. 목각 견본의 검토 범위를 작업 시작 전에 표시합니다. 원래 표기와 현재 검색 표기를 구분합니다. 둘을 연결하는 근거를 적습니다.,manual,documents-v2-manual-train-088,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-089-v1,전통 모자실의 해당 작업을 마치기 전 외형이 비슷한 모자 치수 자료도 번호가 다르면 별도로 둡니다. 학예팀의 확인 없이 항목을 삭제하지 마세요. 기준이 다른 참고 설명으로 모자 치수 자료의 원래 값을 덮어쓰지 마세요. 이상이 있으면 확인한 내용을 기록합니다.,manual,documents-v2-manual-train-089,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-089-v2,모자 치수 자료의 중복 등록 검토의 준비와 확인 순서입니다. 모자 치수 자료의 외부 참고 자료는 작성 날짜부터 확인합니다. 등록 번호와 실제 대상을 함께 비교합니다. 일치가 확인된 항목에 연결 기록을 남깁니다.,manual,documents-v2-manual-train-089,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-090-v1,실내 소리실의 해당 작업을 마치기 전 잔향 관찰표에 쓰인 단위를 모르면 임의 환산하지 마세요. 연구자에게 원기록의 기준을 요청합니다. 수정 전후의 잔향 관찰표를 같은 결과로 묶지 말고 연결 번호를 남기세요. 이상이 있으면 확인한 내용을 기록합니다.,manual,documents-v2-manual-train-090,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-090-v2,잔향 관찰표의 단위 대조의 준비와 확인 순서입니다. 잔향 관찰표에 수정 요청이 남아 있는 항목을 먼저 분리합니다. 값 옆의 단위 표시를 읽습니다. 변환한 값은 원래 값과 나란히 적습니다.,manual,documents-v2-manual-train-090,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-091-v1,간판 사진의 위치 기록 작업 중 확인할 사항입니다. 옮겨진 간판 사진을 예전 자리에 있는 것으로 남기지 마세요. 학예사가 실제 위치를 확인한 기록을 씁니다. 수정 전후의 간판 사진을 같은 결과로 묶지 말고 연결 번호를 남기세요. 확인 후 다음 단계로 진행하세요.,manual,documents-v2-manual-train-091,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-091-v2,도시 간판관의 간판 사진의 위치 기록 절차입니다. 간판 사진에 수정 요청이 남아 있는 항목을 먼저 분리합니다. 현재 보관 위치를 직접 확인합니다. 이동 전후의 위치를 연결합니다.,manual,documents-v2-manual-train-091,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-092-v1,모래 지형관 작업 방법: 모래층 사진 비교에서 용기 옆면에 높이 기준을 붙입니다. 다음으로 파도 전후의 경계를 촬영합니다.,manual,documents-v2-manual-train-092,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-092-v2,모래층 사진 비교 과정에서 오류를 막으려면 관찰 중 모래를 손으로 다시 평평하게 만들지 마세요. 작업 기록에 확인 여부를 남기세요.,manual,documents-v2-manual-train-092,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-093-v1,구두점 자료의 날짜 정리 작업 중 확인할 사항입니다. 날짜를 확인하지 못한 구두점 자료를 최근 자료로 추정하지 마세요. 연구원이 확인한 근거만 등록합니다. 구두점 자료의 추정 정보를 확정 칸에 넣지 마세요. 연구원이 확인한 근거만 사용합니다. 확인 후 다음 단계로 진행하세요.,manual,documents-v2-manual-train-093,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-093-v2,문장 부호관의 구두점 자료의 날짜 정리 절차입니다. 구두점 자료의 기초 정보가 없는 경우 그 항목부터 확인합니다. 작성일과 수집일을 따로 찾습니다. 각 날짜의 뜻을 목록에 표시합니다.,manual,documents-v2-manual-train-093,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-094-v1,그림자 연극실의 해당 작업을 마치기 전 사본 그림자 대본을 원본 실물로 등록하지 마세요. 복제 범위가 불명확하면 지도 강사의 검토를 받습니다. 어느 담당자가 확인했는지 불명확한 부분은 지도 강사에게 재검토를 요청하세요. 이상이 있으면 확인한 내용을 기록합니다.,manual,documents-v2-manual-train-094,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-094-v2,그림자 대본의 사본 식별의 준비와 확인 순서입니다. 그림자 대본에 두 담당자의 기록이 있으면 확인 순서를 정합니다. 원본의 등록 번호를 확인합니다. 사본에 복제 시점과 번호를 붙입니다.,manual,documents-v2-manual-train-094,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-095-v1,별자리 선 비교의 준비와 확인 순서입니다. 같은 기준 별을 먼저 맞춥니다. 선을 잇는 방식의 차이를 표시합니다.,manual,documents-v2-manual-train-095,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-095-v2,별자리 지도관의 해당 작업을 마치기 전 별 위치가 비슷하다고 같은 별자리로 합치지 마세요. 이상이 있으면 확인한 내용을 기록합니다.,manual,documents-v2-manual-train-095,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-096-v1,악보 편집실에서 악보 주석의 판본 확인할 때의 주의 단계입니다. 같은 이름만 보고 다른 판본을 한 건으로 합치지 마세요. 불명확한 판본은 편집자에게 확인합니다. 일부 악보 주석 확인으로 전체 작업이 끝났다고 표시하지 마세요. 필요한 확인을 마친 뒤 결과를 보관하세요.,manual,documents-v2-manual-train-096,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-096-v2,악보 주석의 판본 확인은 다음 방법으로 수행합니다. 악보 주석의 일부분만 받은 경우 받은 범위를 기록합니다. 표지의 이름과 발행 정보를 대조합니다. 수정 여부를 별도 항목으로 남깁니다.,manual,documents-v2-manual-train-096,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-097-v1,버섯 삽화의 사본 식별의 준비와 확인 순서입니다. 버섯 삽화의 검토 범위를 작업 시작 전에 표시합니다. 원본의 등록 번호를 확인합니다. 사본에 복제 시점과 번호를 붙입니다.,manual,documents-v2-manual-train-097,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-097-v2,버섯 그림실의 해당 작업을 마치기 전 사본 버섯 삽화를 원본 실물로 등록하지 마세요. 복제 범위가 불명확하면 교육팀의 검토를 받습니다. 표시한 범위 밖의 버섯 삽화까지 확인 완료로 등록하지 마세요. 이상이 있으면 확인한 내용을 기록합니다.,manual,documents-v2-manual-train-097,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-098-v1,장정 방식 견본의 사본 식별의 준비와 확인 순서입니다. 장정 방식 견본의 원기록과 새 요청이 다르면 차이 난 항목부터 적습니다. 원본의 등록 번호를 확인합니다. 사본에 복제 시점과 번호를 붙입니다.,manual,documents-v2-manual-train-098,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-098-v2,도서 장정실의 해당 작업을 마치기 전 사본 장정 방식 견본을 원본 실물로 등록하지 마세요. 복제 범위가 불명확하면 관리 담당의 검토를 받습니다. 추가로 들어온 정보는 장정 방식 견본의 원기록과 섞지 말고 출처를 표시하세요. 이상이 있으면 확인한 내용을 기록합니다.,manual,documents-v2-manual-train-098,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-099-v1,옥상 정원관 작업자는 투명 화분 관찰 때 이 기준을 적용합니다. 뿌리를 꺼내 색을 확인하지 마세요.,manual,documents-v2-manual-train-099,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-099-v2,투명 화분 관찰을 진행하려면 관찰할 면을 정해 표시합니다. 그런 다음 새 뿌리와 기존 뿌리를 구분해 기록합니다.,manual,documents-v2-manual-train-099,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-100-v1,민요 채록 원고의 열람 목록 구성은 다음 방법으로 수행합니다. 민요 채록 원고의 원기록과 새 요청이 다르면 차이 난 항목부터 적습니다. 열람 승인 항목을 먼저 고릅니다. 비공개 정보가 섞인 부분을 표시합니다.,manual,documents-v2-manual-train-100,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-100-v2,민요 채록실에서 민요 채록 원고의 열람 목록 구성할 때의 주의 단계입니다. 대상이 다른 민요 채록 원고 요청을 같은 승인으로 처리하지 마세요. 기록자에게 신청별 범위를 확인합니다. 추가로 들어온 정보는 민요 채록 원고의 원기록과 섞지 말고 출처를 표시하세요. 필요한 확인을 마친 뒤 결과를 보관하세요.,manual,documents-v2-manual-train-100,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-101-v1,우체통 역사관의 해당 작업을 마치기 전 우체통 사진에 쓰인 단위를 모르면 임의 환산하지 마세요. 학예사에게 원기록의 기준을 요청합니다. 어느 담당자가 확인했는지 불명확한 부분은 학예사에게 재검토를 요청하세요. 이상이 있으면 확인한 내용을 기록합니다.,manual,documents-v2-manual-train-101,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-101-v2,우체통 사진의 단위 대조의 준비와 확인 순서입니다. 우체통 사진에 두 담당자의 기록이 있으면 확인 순서를 정합니다. 값 옆의 단위 표시를 읽습니다. 변환한 값은 원래 값과 나란히 적습니다.,manual,documents-v2-manual-train-101,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-102-v1,숙성 단계 사진의 제공 범위 표시 작업 중 확인할 사항입니다. 교육자의 승인 전에는 숙성 단계 사진 전체를 공개 자료로 표시하지 마세요. 항목별 확인 날짜도 남깁니다. 이전 대상의 승인으로 새 대상에게 숙성 단계 사진을 자동 배포하지 마세요. 확인 후 다음 단계로 진행하세요.,manual,documents-v2-manual-train-102,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-102-v2,치즈 문화관의 숙성 단계 사진의 제공 범위 표시 절차입니다. 숙성 단계 사진의 제출 대상이 바뀌면 제공 범위를 다시 읽습니다. 공개 승인된 항목부터 구분합니다. 미확인 항목에는 검토 상태를 적습니다.,manual,documents-v2-manual-train-102,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-103-v1,종이 유통 기록의 파일 점검을 진행하려면 종이 유통 기록의 변경 근거를 사유별로 모아 먼저 읽습니다. 실제로 열리는 파일을 확인합니다. 그런 다음 깨진 위치와 필요한 프로그램 정보를 기록합니다.,manual,documents-v2-manual-train-103,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-103-v2,종이 길 연구관 작업자는 종이 유통 기록의 파일 점검 때 이 기준을 적용합니다. 열리지 않는 종이 유통 기록을 빈 자료로 처리하지 마세요. 연구팀에게 원본과 호환 정보를 확인받습니다. 종이 유통 기록의 변화가 같은 이유라고 단정하지 말고 근거마다 확인하세요.,manual,documents-v2-manual-train-103,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-104-v1,새소리 음원의 인수 기록 과정에서 오류를 막으려면 확인하지 않은 새소리 음원까지 인수 완료로 쓰지 마세요. 연구원에게 미확인 항목을 전달합니다. 기준이 다른 참고 설명으로 새소리 음원의 원래 값을 덮어쓰지 마세요. 작업 기록에 확인 여부를 남기세요.,manual,documents-v2-manual-train-104,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-104-v2,조류 소리관 작업 방법: 새소리 음원의 인수 기록에서 새소리 음원의 외부 참고 자료는 작성 날짜부터 확인합니다. 인계한 수량과 실제 수량을 비교합니다. 다음으로 차이가 난 항목은 서명 전에 적습니다.,manual,documents-v2-manual-train-104,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-105-v1,색유리 조각을 비교할 때 배경의 흰 종이를 같은 위치에 둡니다. 겹친 조각과 한 장만 놓은 조각을 나누어 표시합니다.,manual,documents-v2-manual-train-105,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-105-v2,유리 색 비교표에는 사용한 조명도 적으세요. 햇빛에서 만든 견본과 실내등에서 만든 견본을 같은 조건처럼 섞지 않습니다.,manual,documents-v2-manual-train-105,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-106-v1,염전 생활관의 해당 작업을 마치기 전 같은 이름만 보고 다른 판본을 한 건으로 합치지 마세요. 불명확한 판본은 해설사에게 확인합니다. 추가로 들어온 정보는 소금 결정 기록의 원기록과 섞지 말고 출처를 표시하세요. 이상이 있으면 확인한 내용을 기록합니다.,manual,documents-v2-manual-train-106,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-106-v2,소금 결정 기록의 판본 확인의 준비와 확인 순서입니다. 소금 결정 기록의 원기록과 새 요청이 다르면 차이 난 항목부터 적습니다. 표지의 이름과 발행 정보를 대조합니다. 수정 여부를 별도 항목으로 남깁니다.,manual,documents-v2-manual-train-106,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-107-v1,물길 변화 지도의 비교 준비 작업 중 확인할 사항입니다. 조건을 확인하지 못한 물길 변화 지도는 직접 비교에서 제외합니다. 연구팀의 확인 뒤 비교 목록에 넣으세요. 이전 대상의 승인으로 새 대상에게 물길 변화 지도를 자동 배포하지 마세요. 확인 후 다음 단계로 진행하세요.,manual,documents-v2-manual-train-107,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-107-v2,강물 지도관의 물길 변화 지도의 비교 준비 절차입니다. 물길 변화 지도의 제출 대상이 바뀌면 제공 범위를 다시 읽습니다. 비교 기준이 같은 자료끼리 모읍니다. 다른 조건의 자료는 목록을 나눕니다.,manual,documents-v2-manual-train-107,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-108-v1,활자 체험실의 해당 작업을 마치기 전 활자 인쇄본에 없는 설명은 사실로 확정하지 마세요. 확인되지 않은 구절은 작업 담당의 검토 대상으로 표시합니다. 기준이 다른 참고 설명으로 활자 인쇄본의 원래 값을 덮어쓰지 마세요. 이상이 있으면 확인한 내용을 기록합니다.,manual,documents-v2-manual-train-108,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-108-v2,활자 인쇄본의 사진 설명 검수의 준비와 확인 순서입니다. 활자 인쇄본의 외부 참고 자료는 작성 날짜부터 확인합니다. 설명에서 장소와 대상을 찾습니다. 원자료의 정보와 하나씩 대조합니다.,manual,documents-v2-manual-train-108,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-109-v1,기상 기호 설명의 인용 확인을 진행하려면 기상 기호 설명의 검토자와 입력자가 다른지 확인합니다. 인용한 범위를 원자료에서 찾습니다. 그런 다음 앞뒤의 조건이 빠지지 않았는지 봅니다.,manual,documents-v2-manual-train-109,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-109-v2,기상 표지관 작업자는 기상 기호 설명의 인용 확인 때 이 기준을 적용합니다. 뜻이 달라진 기상 기호 설명 인용은 배포하지 마세요. 자료 담당의 재검토를 받은 범위만 사용합니다. 자료 담당에게 보낼 때 검토한 범위와 입력만 한 범위를 구분하세요.,manual,documents-v2-manual-train-109,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-110-v1,향기 관찰 카드의 인용 확인을 진행하려면 향기 관찰 카드의 변경 근거를 사유별로 모아 먼저 읽습니다. 인용한 범위를 원자료에서 찾습니다. 그런 다음 앞뒤의 조건이 빠지지 않았는지 봅니다.,manual,documents-v2-manual-train-110,team-added-synthetic:basic-paired-v2
+documents-v2-manual-train-110-v2,마을 향기실 작업자는 향기 관찰 카드의 인용 확인 때 이 기준을 적용합니다. 뜻이 달라진 향기 관찰 카드 인용은 배포하지 마세요. 교육자의 재검토를 받은 범위만 사용합니다. 향기 관찰 카드의 변화가 같은 이유라고 단정하지 말고 근거마다 확인하세요.,manual,documents-v2-manual-train-110,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-061-v1,모래 지형관 논의에서는 담당 업무를 다음처럼 정했다. 교육자가 미세 변화 예시를 모으기로 했다. 한편 결과를 크게 만들도록 파도를 강화하는 안은 제외했다.,minutes,documents-v2-minutes-train-061,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-061-v2,모래 지형관 평가회의에서 변화가 작으면 결과 없음으로 기록됐다. 참석자들은 작은 변화도 높이 차이로 남기기로 했다.,minutes,documents-v2-minutes-train-061,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-062-v1,도시 간판관 회의에서 간판 사진의 설명이 확인과 추정을 섞었다는 지적이 나왔다. 외부 기관의 안내를 그대로 옮긴 부분도 검토 대상이 됐다. 이에 참석자들은 근거 수준을 항목별로 표시하기로 했다.,minutes,documents-v2-minutes-train-062,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-062-v2,도시 간판관 협의 기록: 우리 운영 조건에 실제 적용되는지 확인한 뒤 인용하기로 했다. 학예사가 추정 표현의 범위를 정리하기로 했다. 추정 항목을 모두 확정 문장으로 바꾸지 않기로 했다. 이 내용은 이번 회의의 처리 결과다.,minutes,documents-v2-minutes-train-062,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-063-v1,회의에서 정한 철제 공예관 후속 업무는 다음과 같다. 담당자는 빠진 정보 때문에 생긴 문의를 따로 수집하기로 했다. 관리자가 실제 대상을 번호로 대조하기로 했다. 이름만 같다는 이유로 항목을 합치지는 않기로 했다.,minutes,documents-v2-minutes-train-063,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-063-v2,철제 공예관 운영진은 철제 작품 목록의 이름이 다른 부서 자료와 일치하지 않았다. 참석자들은 설명을 생략한 항목의 실제 영향도 검토했다. 검토 끝에 명칭 대응표를 먼저 만들기로 했다.,minutes,documents-v2-minutes-train-063,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-064-v1,돛 설계실의 해당 논의 결과를 기록한다. 편집 담당은 내용의 실제 변경 여부를 수정 기록에 따로 적기로 했다. 학예팀이 갱신 담당 목록을 만들기로 했다. 확인하지 않은 자료를 최신으로 표시하는 안은 제외됐다.,minutes,documents-v2-minutes-train-064,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-064-v2,돛 설계실 검토회의에서는 돛 구조 설명의 최신 상태를 알기 어렵다는 보고가 있었다. 표현을 바꾸는 일과 기준을 바꾸는 일이 혼동됐다는 의견이 있었다. 그래서 확인 날짜를 설명에 함께 넣기로 했다.,minutes,documents-v2-minutes-train-064,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-065-v1,전통 신발관 회의에서 신발 치수 자료의 설명을 변경할 책임자가 모호하다고 논의했다. 참석자들은 종이 안내와 전자 안내에서 차이가 난 부분을 함께 살폈다. 이에 참석자들은 내용 검토와 게시 승인을 구분하기로 했다.,minutes,documents-v2-minutes-train-065,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-065-v2,전통 신발관 협의 기록: 기록 담당은 두 제공 형태가 다른 경우를 별도 목록에 남기기로 했다. 학예팀이 역할 배치안을 작성하기로 했다. 모든 직원에게 같은 승인 권한을 주는 안은 보류했다. 이 내용은 이번 회의의 처리 결과다.,minutes,documents-v2-minutes-train-065,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-066-v1,이번 별자리 지도관 회의의 결론에 따른 기록이다. 연구팀이 확인된 전승 자료를 모으기로 했다. 그림 유사도만으로 연대를 정하지 않기로 했다.,minutes,documents-v2-minutes-train-066,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-066-v2,별자리 지도관의 협의 결과를 남긴다. 그림 모양만으로 전승 관계를 단정했다. 문헌 근거와 모양 비교를 나누기로 했다.,minutes,documents-v2-minutes-train-066,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-067-v1,치즈 문화관 회의에서 숙성 단계 사진의 누적 기록을 모두 같은 조건으로 비교한 오류를 검토했다. 참석자들은 종이 안내와 전자 안내에서 차이가 난 부분을 함께 살폈다. 이에 참석자들은 조건이 바뀐 구간을 따로 나누기로 했다.,minutes,documents-v2-minutes-train-067,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-067-v2,치즈 문화관 협의 기록: 기록 담당은 두 제공 형태가 다른 경우를 별도 목록에 남기기로 했다. 교육자가 변경 시점의 자료를 조사하기로 했다. 이전 조건의 자료를 일괄 폐기하지 않기로 했다. 이 내용은 이번 회의의 처리 결과다.,minutes,documents-v2-minutes-train-067,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-068-v1,회의에서 정한 종이 등불관 후속 업무는 다음과 같다. 진행팀은 시험 결과를 공식 운영 성과로 합산하지 않기로 했다. 공방 담당이 주요 이용 질문을 조사하기로 했다. 표지 이름을 바로 바꾸자는 안은 보류했다.,minutes,documents-v2-minutes-train-068,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-068-v2,종이 등불관 운영진은 등불 도안의 설명이 실제 이용 목적과 다르다는 의견이 나왔다. 확정된 기준과 아직 시험 중인 기준이 함께 사용됐다고 보고됐다. 검토 끝에 이용자가 찾는 정보를 먼저 배치하기로 했다.,minutes,documents-v2-minutes-train-068,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-069-v1,새벽 소리실의 해당 논의 결과를 기록한다. 기존 합의의 적용 범위를 확인하기 전에는 새 규정으로 안내하지 않기로 했다. 기록자가 잘못 배포된 판본을 조사하기로 했다. 내부본 전체를 공개하는 안은 채택하지 않았다.,minutes,documents-v2-minutes-train-069,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-069-v2,새벽 소리실 검토회의에서는 새벽 녹음 자료의 공개본과 내부본을 혼동한 사례를 확인했다. 이전 회차의 합의가 새 회차에도 적용되는지 의견이 갈렸다. 그래서 판본의 이용 범위를 표시하기로 했다.,minutes,documents-v2-minutes-train-069,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-070-v1,타자기 기록실 회의의 후속 작업과 보류 사항을 정리했다. 관리자가 점검 기록 양식을 고치기로 했다. 흐린 인쇄물을 전부 폐기하는 안은 보류했다.,minutes,documents-v2-minutes-train-070,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-070-v2,이번 타자기 기록실 논의의 쟁점은 다음과 같았다. 글자 흐림과 장치 고장이 같은 항목에 기록됐다. 증상과 추정 원인을 나누기로 했다.,minutes,documents-v2-minutes-train-070,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-071-v1,옥상 정원관 회의의 후속 작업과 보류 사항을 정리했다. 관리팀이 관찰 항목의 시안을 만들기로 했다. 모든 화분을 즉시 교체하는 안은 보류했다.,minutes,documents-v2-minutes-train-071,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-071-v2,이번 옥상 정원관 논의의 쟁점은 다음과 같았다. 식물 키만으로 생장 상태를 설명했다. 뿌리 관찰 기록도 함께 보기로 했다.,minutes,documents-v2-minutes-train-071,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-072-v1,유리 공방은 어린 참가자가 색을 고를 시간이 부족했다고 돌아봤다. 재단 전에 견본 조합 시간을 따로 두기로 했다.,minutes,documents-v2-minutes-train-072,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-072-v2,수업 개편에서 더 많은 색을 강사가 미리 정해 주는 안은 선택하지 않았다. 보조 강사가 조합에 필요한 작은 견본을 준비한다.,minutes,documents-v2-minutes-train-072,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-073-v1,바람 소리관 회의의 후속 작업과 보류 사항을 정리했다. 우리 운영 조건에 실제 적용되는지 확인한 뒤 인용하기로 했다. 해설사가 중간 인계 기록을 준비하기로 했다. 확인 없이 모든 업무를 자동화하는 안은 보류했다.,minutes,documents-v2-minutes-train-073,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-073-v2,이번 바람 소리관 논의의 쟁점은 다음과 같았다. 바람 음원의 작업이 특정 담당자에게 몰렸다고 논의했다. 외부 기관의 안내를 그대로 옮긴 부분도 검토 대상이 됐다. 단계별로 역할을 나누어 시험하기로 했다.,minutes,documents-v2-minutes-train-073,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-074-v1,이번 도서 장정실 회의의 결론에 따른 기록이다. 중단 사유와 이후 조치를 기록 양식의 다른 칸에 적기로 했다. 관리 담당이 실제 대상을 번호로 대조하기로 했다. 이름만 같다는 이유로 항목을 합치지는 않기로 했다.,minutes,documents-v2-minutes-train-074,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-074-v2,도서 장정실의 협의 결과를 남긴다. 장정 방식 견본의 이름이 다른 부서 자료와 일치하지 않았다. 예정대로 진행하지 못한 구간의 사유가 남지 않았다고 보고했다. 명칭 대응표를 먼저 만들기로 했다.,minutes,documents-v2-minutes-train-074,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-075-v1,회의에서 정한 악보 편집실 후속 업무는 다음과 같다. 진행팀은 시험 결과를 공식 운영 성과로 합산하지 않기로 했다. 편집자가 당시 업무 일지를 대조하기로 했다. 미기록을 이용 없음으로 일괄 처리하지 않기로 했다.,minutes,documents-v2-minutes-train-075,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-075-v2,악보 편집실 운영진은 악보 주석의 이용 기록이 누락된 구간을 검토했다. 확정된 기준과 아직 시험 중인 기준이 함께 사용됐다고 보고됐다. 검토 끝에 기록이 없는 이유를 따로 조사하기로 했다.,minutes,documents-v2-minutes-train-075,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-076-v1,도자기 손잡이실 운영진은 손잡이 견본의 숫자가 서로 다른 집계에서 사용됐다고 확인했다. 참석자들은 종이 안내와 전자 안내에서 차이가 난 부분을 함께 살폈다. 검토 끝에 집계 대상과 기간을 함께 적기로 했다.,minutes,documents-v2-minutes-train-076,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-076-v2,회의에서 정한 도자기 손잡이실 후속 업무는 다음과 같다. 기록 담당은 두 제공 형태가 다른 경우를 별도 목록에 남기기로 했다. 관리자가 기존 수치의 산정 기준을 조사하기로 했다. 기준이 다른 수치를 합치는 안은 제외됐다.,minutes,documents-v2-minutes-train-076,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-077-v1,이번 달 관찰실 논의의 쟁점은 다음과 같았다. 달 표면 기록의 확인 전에 완료 안내가 나간 사례를 공유했다. 전달받은 자료에 날짜 근거가 없다는 보고가 추가로 나왔다. 검수 완료 뒤 안내하는 기준을 정하기로 했다.,minutes,documents-v2-minutes-train-077,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-077-v2,달 관찰실 회의의 후속 작업과 보류 사항을 정리했다. 일정 판단에 필요한 기록을 더 받은 뒤 해당 부분을 확정하기로 했다. 교육팀이 안내 시각과 검수 시각을 대조하기로 했다. 예정 시각에 자동 완료를 알리는 안은 보류됐다.,minutes,documents-v2-minutes-train-077,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-078-v1,이번 도시 장면실 논의의 쟁점은 다음과 같았다. 거리 풍경 기록의 제공 조건이 구두로만 전달됐다고 확인했다. 한 사람이 여러 역할을 맡아 확인 순서가 바뀐 사례도 공유했다. 조건의 근거를 문서로 남기기로 했다.,minutes,documents-v2-minutes-train-078,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-078-v2,도시 장면실 회의의 후속 작업과 보류 사항을 정리했다. 담당 배치가 바뀐 구간은 그 이유와 실제 처리 순서를 기록하기로 했다. 사진 담당이 확인 가능한 기준을 모으기로 했다. 과거 승인만으로 모든 요청을 받지는 않기로 했다.,minutes,documents-v2-minutes-train-078,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-079-v1,이번 종이 길 연구관 논의의 쟁점은 다음과 같았다. 종이 유통 기록의 설명이 실제 이용 목적과 다르다는 의견이 나왔다. 논의에서는 원자료의 정보와 담당자의 해석을 나누어 살폈다. 이용자가 찾는 정보를 먼저 배치하기로 했다.,minutes,documents-v2-minutes-train-079,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-079-v2,종이 길 연구관 회의의 후속 작업과 보류 사항을 정리했다. 다음 자료에는 확인한 근거와 해석의 범위를 함께 남기기로 했다. 연구팀이 주요 이용 질문을 조사하기로 했다. 표지 이름을 바로 바꾸자는 안은 보류했다.,minutes,documents-v2-minutes-train-079,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-080-v1,줄 악기 관찰실 검토회의에서는 현 진동 기록의 결과를 설명할 때 실패 원인을 단정한 문제를 살폈다. 확정된 기준과 아직 시험 중인 기준이 함께 사용됐다고 보고됐다. 그래서 관찰한 현상과 가능한 원인을 나누기로 했다.,minutes,documents-v2-minutes-train-080,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-080-v2,줄 악기 관찰실의 해당 논의 결과를 기록한다. 진행팀은 시험 결과를 공식 운영 성과로 합산하지 않기로 했다. 실습 조교가 확인 근거가 있는 사례를 수집하기로 했다. 자료 없이 원인을 하나로 정하는 제안은 제외됐다.,minutes,documents-v2-minutes-train-080,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-081-v1,실내 소리실의 협의 결과를 남긴다. 잔향 관찰표의 이용 기록이 누락된 구간을 검토했다. 검토에서는 신규 이용자와 기존 이용자가 묻는 내용도 비교했다. 기록이 없는 이유를 따로 조사하기로 했다.,minutes,documents-v2-minutes-train-081,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-081-v2,이번 실내 소리실 회의의 결론에 따른 기록이다. 후속 확인은 신규 이용자가 이해하기 어려운 항목부터 진행하기로 했다. 연구자가 당시 업무 일지를 대조하기로 했다. 미기록을 이용 없음으로 일괄 처리하지 않기로 했다.,minutes,documents-v2-minutes-train-081,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-082-v1,이번 그림자 연극실 회의의 결론에 따른 기록이다. 중단 사유와 이후 조치를 기록 양식의 다른 칸에 적기로 했다. 지도 강사가 당시 업무 일지를 대조하기로 했다. 미기록을 이용 없음으로 일괄 처리하지 않기로 했다.,minutes,documents-v2-minutes-train-082,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-082-v2,그림자 연극실의 협의 결과를 남긴다. 그림자 대본의 이용 기록이 누락된 구간을 검토했다. 예정대로 진행하지 못한 구간의 사유가 남지 않았다고 보고했다. 기록이 없는 이유를 따로 조사하기로 했다.,minutes,documents-v2-minutes-train-082,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-083-v1,전통 장신구실의 해당 논의 결과를 기록한다. 중단 사유와 이후 조치를 기록 양식의 다른 칸에 적기로 했다. 학예팀이 잘못 배포된 판본을 조사하기로 했다. 내부본 전체를 공개하는 안은 채택하지 않았다.,minutes,documents-v2-minutes-train-083,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-083-v2,전통 장신구실 검토회의에서는 장신구 설명의 공개본과 내부본을 혼동한 사례를 확인했다. 예정대로 진행하지 못한 구간의 사유가 남지 않았다고 보고했다. 그래서 판본의 이용 범위를 표시하기로 했다.,minutes,documents-v2-minutes-train-083,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-084-v1,이번 염전 생활관 회의의 결론에 따른 기록이다. 담당 배치가 바뀐 구간은 그 이유와 실제 처리 순서를 기록하기로 했다. 해설사가 주요 이용 질문을 조사하기로 했다. 표지 이름을 바로 바꾸자는 안은 보류했다.,minutes,documents-v2-minutes-train-084,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-084-v2,염전 생활관의 협의 결과를 남긴다. 소금 결정 기록의 설명이 실제 이용 목적과 다르다는 의견이 나왔다. 한 사람이 여러 역할을 맡아 확인 순서가 바뀐 사례도 공유했다. 이용자가 찾는 정보를 먼저 배치하기로 했다.,minutes,documents-v2-minutes-train-084,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-085-v1,진흙 조형관 논의에서는 담당 업무를 다음처럼 정했다. 기존 합의의 적용 범위를 확인하기 전에는 새 규정으로 안내하지 않기로 했다. 교육팀이 역할 배치안을 작성하기로 했다. 한편 모든 직원에게 같은 승인 권한을 주는 안은 보류했다.,minutes,documents-v2-minutes-train-085,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-085-v2,진흙 조형관 평가회의에서 조형 작품 목록의 설명을 변경할 책임자가 모호하다고 논의했다. 이전 회차의 합의가 새 회차에도 적용되는지 의견이 갈렸다. 참석자들은 내용 검토와 게시 승인을 구분하기로 했다.,minutes,documents-v2-minutes-train-085,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-086-v1,지도 기호실 회의의 후속 작업과 보류 사항을 정리했다. 우리 운영 조건에 실제 적용되는지 확인한 뒤 인용하기로 했다. 자료원이 기존 수치의 산정 기준을 조사하기로 했다. 기준이 다른 수치를 합치는 안은 제외됐다.,minutes,documents-v2-minutes-train-086,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-086-v2,이번 지도 기호실 논의의 쟁점은 다음과 같았다. 지도 기호표의 숫자가 서로 다른 집계에서 사용됐다고 확인했다. 외부 기관의 안내를 그대로 옮긴 부분도 검토 대상이 됐다. 집계 대상과 기간을 함께 적기로 했다.,minutes,documents-v2-minutes-train-086,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-087-v1,이번 레이스 공예관 회의의 결론에 따른 기록이다. 강사가 비교 도안을 준비하기로 했다. 모든 표본을 해체하는 제안은 거절됐다.,minutes,documents-v2-minutes-train-087,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-087-v2,레이스 공예관의 협의 결과를 남긴다. 짜임 이름만으로 제작법이 전달되지 않았다. 교차 방향 그림을 함께 소개하기로 했다.,minutes,documents-v2-minutes-train-087,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-088-v1,모자이크 교육실 운영진은 연습 작품과 공동 작품의 구분이 부족했다. 검토 끝에 반환 조건을 제작 전 알리기로 했다.,minutes,documents-v2-minutes-train-088,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-088-v2,회의에서 정한 모자이크 교육실 후속 업무는 다음과 같다. 진행자가 배부 자료에 구분표를 넣기로 했다. 공동 작품을 모두 분리하는 안은 제외됐다.,minutes,documents-v2-minutes-train-088,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-089-v1,피아노 역사관 회의에서 피아노 구조 그림의 연습 자료가 실제 업무 기록과 섞였다고 보고했다. 외부 기관의 안내를 그대로 옮긴 부분도 검토 대상이 됐다. 이에 참석자들은 연습용 표식을 명확히 붙이기로 했다.,minutes,documents-v2-minutes-train-089,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-089-v2,피아노 역사관 협의 기록: 우리 운영 조건에 실제 적용되는지 확인한 뒤 인용하기로 했다. 해설사가 기존 목록에서 연습 자료를 분리하기로 했다. 실습 결과를 실제 운영 성과로 집계하는 안은 배제했다. 이 내용은 이번 회의의 처리 결과다.,minutes,documents-v2-minutes-train-089,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-090-v1,활자 체험실의 협의 결과를 남긴다. 활자 인쇄본의 작업이 특정 담당자에게 몰렸다고 논의했다. 논의에서 현장 확인과 원격 확인의 범위가 다르다는 설명이 있었다. 단계별로 역할을 나누어 시험하기로 했다.,minutes,documents-v2-minutes-train-090,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-090-v2,이번 활자 체험실 회의의 결론에 따른 기록이다. 다음 검토에서는 두 확인 방식의 결과를 나누어 비교하기로 했다. 작업 담당이 중간 인계 기록을 준비하기로 했다. 확인 없이 모든 업무를 자동화하는 안은 보류했다.,minutes,documents-v2-minutes-train-090,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-091-v1,이번 향료 문화실 회의의 결론에 따른 기록이다. 후속 확인은 신규 이용자가 이해하기 어려운 항목부터 진행하기로 했다. 해설 담당이 주요 이용 질문을 조사하기로 했다. 표지 이름을 바로 바꾸자는 안은 보류했다.,minutes,documents-v2-minutes-train-091,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-091-v2,향료 문화실의 협의 결과를 남긴다. 향료 설명 카드의 설명이 실제 이용 목적과 다르다는 의견이 나왔다. 검토에서는 신규 이용자와 기존 이용자가 묻는 내용도 비교했다. 이용자가 찾는 정보를 먼저 배치하기로 했다.,minutes,documents-v2-minutes-train-091,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-092-v1,인형극 지도자들은 뒤쪽 학생이 시범 동작을 보기 어렵다고 평가했다. 동작을 옆에서도 보여 주는 연습 순서를 도입하기로 했다.,minutes,documents-v2-minutes-train-092,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-092-v2,시범 지도 논의에서는 무대 전체 확대 대신 두 방향 시연을 선택했다. 조교가 다음 수업에서 관찰 위치별 이해도를 확인한다.,minutes,documents-v2-minutes-train-092,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-093-v1,이번 전통 모자실 회의의 결론에 따른 기록이다. 적용 대상을 확정하기 전에는 일괄 변경 안내를 보내지 않기로 했다. 학예팀이 중간 인계 기록을 준비하기로 했다. 확인 없이 모든 업무를 자동화하는 안은 보류했다.,minutes,documents-v2-minutes-train-093,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-093-v2,전통 모자실의 협의 결과를 남긴다. 모자 치수 자료의 작업이 특정 담당자에게 몰렸다고 논의했다. 회의에서는 변경이 모든 대상에 적용되는지 추가로 질문했다. 단계별로 역할을 나누어 시험하기로 했다.,minutes,documents-v2-minutes-train-093,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-094-v1,기상 표지관 회의의 후속 작업과 보류 사항을 정리했다. 자료 담당은 확인한 대상과 확인하지 못한 대상을 구분하기로 했다. 자료 담당이 기존 참조의 유효성을 확인하기로 했다. 출처 불명 항목을 임의 자료에 연결하지 않기로 했다.,minutes,documents-v2-minutes-train-094,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-094-v2,이번 기상 표지관 논의의 쟁점은 다음과 같았다. 기상 기호 설명의 원자료를 찾기 어렵다는 의견을 검토했다. 일부 이용자의 사례만 전체 의견처럼 정리됐다는 지적을 받았다. 원자료 번호를 설명과 연결하기로 했다.,minutes,documents-v2-minutes-train-094,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-095-v1,우체통 역사관의 협의 결과를 남긴다. 우체통 사진의 원자료를 찾기 어렵다는 의견을 검토했다. 검토에서는 신규 이용자와 기존 이용자가 묻는 내용도 비교했다. 원자료 번호를 설명과 연결하기로 했다.,minutes,documents-v2-minutes-train-095,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-095-v2,이번 우체통 역사관 회의의 결론에 따른 기록이다. 후속 확인은 신규 이용자가 이해하기 어려운 항목부터 진행하기로 했다. 학예사가 기존 참조의 유효성을 확인하기로 했다. 출처 불명 항목을 임의 자료에 연결하지 않기로 했다.,minutes,documents-v2-minutes-train-095,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-096-v1,버섯 그림실의 협의 결과를 남긴다. 버섯 삽화의 이용 중단 사유가 충분히 전달되지 않았다고 보고했다. 예정대로 진행하지 못한 구간의 사유가 남지 않았다고 보고했다. 중단 사유와 대체 이용을 따로 안내하기로 했다.,minutes,documents-v2-minutes-train-096,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-096-v2,이번 버섯 그림실 회의의 결론에 따른 기록이다. 중단 사유와 이후 조치를 기록 양식의 다른 칸에 적기로 했다. 교육팀이 제공 가능한 대체 자료를 확인하기로 했다. 아직 확정하지 않은 재개 날짜는 쓰지 않기로 했다.,minutes,documents-v2-minutes-train-096,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-097-v1,회의에서 정한 민요 채록실 후속 업무는 다음과 같다. 기존 합의의 적용 범위를 확인하기 전에는 새 규정으로 안내하지 않기로 했다. 기록자가 기존 수치의 산정 기준을 조사하기로 했다. 기준이 다른 수치를 합치는 안은 제외됐다.,minutes,documents-v2-minutes-train-097,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-097-v2,민요 채록실 운영진은 민요 채록 원고의 숫자가 서로 다른 집계에서 사용됐다고 확인했다. 이전 회차의 합의가 새 회차에도 적용되는지 의견이 갈렸다. 검토 끝에 집계 대상과 기간을 함께 적기로 했다.,minutes,documents-v2-minutes-train-097,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-098-v1,강물 지도관 협의 기록: 다음 자료에는 확인한 근거와 해석의 범위를 함께 남기기로 했다. 연구팀이 예외 사례를 다시 검수하기로 했다. 예외를 삭제해 문장을 줄이는 안은 받아들이지 않았다. 이 내용은 이번 회의의 처리 결과다.,minutes,documents-v2-minutes-train-098,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-098-v2,강물 지도관 회의에서 물길 변화 지도의 설명 중 예외가 눈에 띄지 않는다고 평가했다. 논의에서는 원자료의 정보와 담당자의 해석을 나누어 살폈다. 이에 참석자들은 적용 조건과 예외를 같은 화면에 놓기로 했다.,minutes,documents-v2-minutes-train-098,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-099-v1,한지 인쇄실 검토회의에서는 한지 인쇄 견본의 준비 완료와 제공 승인이 혼용됐다는 지적이 있었다. 같은 이름의 다른 대상을 하나로 집계한 사례를 함께 확인했다. 그래서 두 상태를 나누어 표시하기로 했다.,minutes,documents-v2-minutes-train-099,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-099-v2,한지 인쇄실의 해당 논의 결과를 기록한다. 기록팀은 대상 번호를 대조한 뒤 결과표를 수정하기로 했다. 작업 담당이 상태별 확인 책임을 정리하기로 했다. 준비됐다는 이유로 즉시 공개하는 안은 채택되지 않았다.,minutes,documents-v2-minutes-train-099,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-100-v1,실내 빛 관찰실 회의에서 빛 관찰표의 누적 기록을 모두 같은 조건으로 비교한 오류를 검토했다. 확인 요청을 보낸 것과 답을 받은 것이 같은 상태로 표시됐다고 지적했다. 이에 참석자들은 조건이 바뀐 구간을 따로 나누기로 했다.,minutes,documents-v2-minutes-train-100,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-100-v2,실내 빛 관찰실 협의 기록: 진행자는 답변 대기와 확인 완료를 나누어 갱신하기로 했다. 실습 담당이 변경 시점의 자료를 조사하기로 했다. 이전 조건의 자료를 일괄 폐기하지 않기로 했다. 이 내용은 이번 회의의 처리 결과다.,minutes,documents-v2-minutes-train-100,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-101-v1,목각 동물실 검토회의에서는 목각 견본의 설명이 확인과 추정을 섞었다는 지적이 나왔다. 논의에서는 원자료의 정보와 담당자의 해석을 나누어 살폈다. 그래서 근거 수준을 항목별로 표시하기로 했다.,minutes,documents-v2-minutes-train-101,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-101-v2,목각 동물실의 해당 논의 결과를 기록한다. 다음 자료에는 확인한 근거와 해석의 범위를 함께 남기기로 했다. 작업 담당이 추정 표현의 범위를 정리하기로 했다. 추정 항목을 모두 확정 문장으로 바꾸지 않기로 했다.,minutes,documents-v2-minutes-train-101,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-102-v1,마을 향기실 회의의 후속 작업과 보류 사항을 정리했다. 자료 담당은 확인한 대상과 확인하지 못한 대상을 구분하기로 했다. 교육자가 당시 업무 일지를 대조하기로 했다. 미기록을 이용 없음으로 일괄 처리하지 않기로 했다.,minutes,documents-v2-minutes-train-102,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-102-v2,이번 마을 향기실 논의의 쟁점은 다음과 같았다. 향기 관찰 카드의 이용 기록이 누락된 구간을 검토했다. 일부 이용자의 사례만 전체 의견처럼 정리됐다는 지적을 받았다. 기록이 없는 이유를 따로 조사하기로 했다.,minutes,documents-v2-minutes-train-102,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-103-v1,기상 기록팀은 장치 점검일의 값도 정상 관측으로 합산한 오류를 확인했다. 점검 구간을 따로 표시해 분석에서 구분하기로 했다.,minutes,documents-v2-minutes-train-103,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-103-v2,관측값 검토에서는 점검일 전체 삭제 대신 영향을 받은 구간만 분리했다. 분석 담당이 점검 일지와 관측 시각을 연결해 목록을 만든다.,minutes,documents-v2-minutes-train-103,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-104-v1,종소리 검토에서는 음원 차이를 종 자체의 변화로 단정하지 않았다. 연구원이 녹음 지점의 배치도를 다음 회의에 제출한다.,minutes,documents-v2-minutes-train-104,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-104-v2,시계탑 연구팀은 녹음마다 잔향 길이가 다른 원인을 논의했다. 거리와 주변 건물 조건을 먼저 조사하기로 했다.,minutes,documents-v2-minutes-train-104,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-105-v1,문장 부호관 협의 기록: 회의 기록자는 추가 자료를 받을 역할과 완료 확인 역할을 구분하기로 했다. 연구원이 잘못 배포된 판본을 조사하기로 했다. 내부본 전체를 공개하는 안은 채택하지 않았다. 이 내용은 이번 회의의 처리 결과다.,minutes,documents-v2-minutes-train-105,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-105-v2,문장 부호관 회의에서 구두점 자료의 공개본과 내부본을 혼동한 사례를 확인했다. 기존 기록에 보완 자료를 붙일 담당이 정해지지 않았다고 확인했다. 이에 참석자들은 판본의 이용 범위를 표시하기로 했다.,minutes,documents-v2-minutes-train-105,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-106-v1,조류 소리관 논의에서는 담당 업무를 다음처럼 정했다. 자료 담당은 확인한 대상과 확인하지 못한 대상을 구분하기로 했다. 연구원이 갱신 담당 목록을 만들기로 했다. 한편 확인하지 않은 자료를 최신으로 표시하는 안은 제외됐다.,minutes,documents-v2-minutes-train-106,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-106-v2,조류 소리관 평가회의에서 새소리 음원의 최신 상태를 알기 어렵다는 보고가 있었다. 일부 이용자의 사례만 전체 의견처럼 정리됐다는 지적을 받았다. 참석자들은 확인 날짜를 설명에 함께 넣기로 했다.,minutes,documents-v2-minutes-train-106,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-107-v1,새 깃털실 검토회의에서는 깃털 사진의 누적 기록을 모두 같은 조건으로 비교한 오류를 검토했다. 참석자들은 설명을 생략한 항목의 실제 영향도 검토했다. 그래서 조건이 바뀐 구간을 따로 나누기로 했다.,minutes,documents-v2-minutes-train-107,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-107-v2,새 깃털실의 해당 논의 결과를 기록한다. 담당자는 빠진 정보 때문에 생긴 문의를 따로 수집하기로 했다. 관찰 담당이 변경 시점의 자료를 조사하기로 했다. 이전 조건의 자료를 일괄 폐기하지 않기로 했다.,minutes,documents-v2-minutes-train-107,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-108-v1,지구본 자료관 논의에서는 담당 업무를 다음처럼 정했다. 자료원이 판본별 기준을 조사하기로 했다. 한편 현재 기준으로 원본 숫자를 고치는 안은 제외됐다.,minutes,documents-v2-minutes-train-108,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-108-v2,지구본 자료관 평가회의에서 옛 경도 기준이 설명에서 빠졌다. 참석자들은 기준 자오선을 그림에 표시하기로 했다.,minutes,documents-v2-minutes-train-108,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-109-v1,저수지 역사실 회의의 후속 작업과 보류 사항을 정리했다. 자료 담당은 확인한 대상과 확인하지 못한 대상을 구분하기로 했다. 자료원이 실제 대상을 번호로 대조하기로 했다. 이름만 같다는 이유로 항목을 합치지는 않기로 했다.,minutes,documents-v2-minutes-train-109,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-109-v2,이번 저수지 역사실 논의의 쟁점은 다음과 같았다. 저수지 공사 기록의 이름이 다른 부서 자료와 일치하지 않았다. 일부 이용자의 사례만 전체 의견처럼 정리됐다는 지적을 받았다. 명칭 대응표를 먼저 만들기로 했다.,minutes,documents-v2-minutes-train-109,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-110-v1,전통 배 교육실의 해당 논의 결과를 기록한다. 기록팀은 대상 번호를 대조한 뒤 결과표를 수정하기로 했다. 지도자가 예외 사례를 다시 검수하기로 했다. 예외를 삭제해 문장을 줄이는 안은 받아들이지 않았다.,minutes,documents-v2-minutes-train-110,team-added-synthetic:basic-paired-v2
+documents-v2-minutes-train-110-v2,전통 배 교육실 검토회의에서는 배 모형 목록의 설명 중 예외가 눈에 띄지 않는다고 평가했다. 같은 이름의 다른 대상을 하나로 집계한 사례를 함께 확인했다. 그래서 적용 조건과 예외를 같은 화면에 놓기로 했다.,minutes,documents-v2-minutes-train-110,team-added-synthetic:basic-paired-v2
