@@ -90,7 +90,9 @@ source = { virtual = "." }
 dependencies = [
     { name = "fastapi" },
     { name = "httpx" },
+    { name = "huggingface-hub" },
     { name = "langchain-core" },
+    { name = "laya" },
     { name = "numpy" },
     { name = "openai" },
     { name = "pydantic" },
@@ -112,7 +114,9 @@ dev = [
 requires-dist = [
     { name = "fastapi", specifier = ">=0.115,<1" },
     { name = "httpx", specifier = ">=0.28,<1" },
+    { name = "huggingface-hub", specifier = ">=0.36.2" },
     { name = "langchain-core", specifier = ">=0.3.60,<2" },
+    { name = "laya", specifier = ">=0.4.4" },
     { name = "numpy", specifier = ">=2,<3" },
     { name = "openai", specifier = ">=2,<3" },
     { name = "pydantic", specifier = ">=2.10,<3" },
@@ -520,6 +524,22 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/15/e0/d21f5bf6248575d358b388bc60808ad36f3cb02305ab3265137a27ad52e4/langsmith-0.14.2.tar.gz", hash = "sha256:2df33ebe2ff20461b1f818895b8f15cbfd6e5b95be9d9e754ab3045cc6fe6f53", size = 4966727, upload-time = "2026-09-30T14:41:33.472Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/73/bd/5ca2364649170fce2fa7a5db22de6b7b375d0e320162bb62c2837368c3de/langsmith-0.14.2-py3-none-any.whl", hash = "sha256:9e3dda3df013514b919acf3b147fcecc1758b8ef04a764b6cb61052991617ee2", size = 813720, upload-time = "2026-09-30T14:41:31.669Z" },
+]
+
+[[package]]
+name = "laya"
+version = "0.4.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "huggingface-hub" },
+    { name = "numpy" },
+    { name = "safetensors" },
+    { name = "torch" },
+    { name = "transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/20/a2/ea4980cad1413e8d8799acaf1f2896be85c1a6ed2813b509f99669f3386e/laya-0.4.4.tar.gz", hash = "sha256:047e61f8f823b61b424cc655d41d76b6cd8f8bb9f2a6a973874fca7b06d2b027", size = 1148141, upload-time = "2026-10-12T03:58:31.415Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f1/6d/50f830ed4b3870a679bd10ad36a11c65583d4282fc2ad68819bc69025b35/laya-0.4.4-py3-none-any.whl", hash = "sha256:4c34362b2acc9bd7a00b780c40526a88e80c3e290115e6619859fc905755e206", size = 390776, upload-time = "2026-10-12T03:58:29.787Z" },
 ]
 
 [[package]]
