@@ -13,6 +13,9 @@ import csv
 import json
 from pathlib import Path
 
+from path_extractor import extract_path
+from common_args import common_parser
+
 QID = "label"
 # 추가할 지시문
 INSTRUCTIONS = {
@@ -26,9 +29,7 @@ TOPICS = ("documents", "inquiries")
 REQUIRED_COLS = {"id", "text", "label", "group_id", "source"}
 # 프로젝트 루트 디렉토리 및 디렉토리 지정
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
-DATASET_DIR = BASE_DIR / Path("dataset")
-NORMAL_DATASET_DIR = DATASET_DIR / "project2-data"
-ADVANCED_DATASET_DIR = DATASET_DIR / "project2-advanced-data"
+#DATASET_DIR = BASE_DIR / Path("dataset")
 
 
 # csv 검사 및 읽기
@@ -42,19 +43,9 @@ def read_csv(path: Path):
         return list(reader)
 
 
-# 토픽 유추 함수
-def guess_topic(topic_dir: Path, file: Path):
-    if topic_dir.name in TOPICS:
-        return topic_dir.name
-    for t in TOPICS:
-        if t in file.name:
-            return t
-    return None
-
-
 # laya가 학습할 수 있는 데이터 형식에 필요한 필드를 정의하는 함수
-def load_questions(topic_dir: Path, topic: str):
-    lj = json.loads((topic_dir / "labels.json").read_text(encoding="utf-8"))
+def load_questions(dir: Path, topic: str):
+    lj = json.loads((dir / "labels.json").read_text(encoding="utf-8"))
     labels = lj["labels"]
     criteria = {k: lj["descriptions"][k] for k in labels}
     questions = {QID: {"type": "choice",
@@ -114,12 +105,13 @@ def convert_files(target_files, label_dirs):
 
 def main():
     # 실행 파라미터 처리
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--advanced", default="false")
+    ap = argparse.ArgumentParser(parents=[common_parser()])
     a = ap.parse_args()
 
-    # 심화 파일 유무 확인
-    advanced = a.advanced == "true"
+    advanced = a.advanced   # 심화 파일 유무 확인
+    topic = a.topic         # 타겟 주제 확인
+    extended = a.extended   # 확장 파일 여부 확인
+
     target_dataset_dir = ADVANCED_DATASET_DIR if advanced else NORMAL_DATASET_DIR
     # 처리 대상 파일 목록
     target_files = []
