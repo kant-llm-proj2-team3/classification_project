@@ -1,0 +1,12 @@
+{
+  "labels": [
+    "announcement",
+    "manual",
+    "minutes"
+  ],
+  "descriptions": {
+    "announcement": "대상자에게 일정, 변경, 참여, 주의사항을 알리는 문서",
+    "manual": "사용자가 작업을 수행하도록 절차, 조건, 방법을 설명하는 문서",
+    "minutes": "이미 진행된 논의의 의견, 결정, 담당, 후속 작업을 기록한 문서"
+  }
+}
