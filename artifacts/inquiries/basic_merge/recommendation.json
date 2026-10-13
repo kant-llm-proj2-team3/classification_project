@@ -1,0 +1,19 @@
+{
+  "topic": "inquiries",
+  "dataset": "basic_merge",
+  "recommended_model": "bert",
+  "model_id": "klue/bert-base",
+  "run_name": "20261013_144749",
+  "learning_rate": 3e-05,
+  "selection_rule": "각 모델 best_model 의 validation Macro-F1 (동점: validation loss, 그다음 학습 시간). test 점수는 사용하지 않음.",
+  "reason": "validation Macro-F1 이 0.9910로 roberta와 동점이라 validation loss(0.0482 vs 0.0544)로 결정했습니다.",
+  "notes": [],
+  "validation_macro_f1": 0.990990990990991,
+  "compared_models": [
+    "bert",
+    "roberta",
+    "koelectra"
+  ],
+  "baseline_reference_validation_macro_f1": 0.9863601532567049,
+  "created_at": "2026-10-13 14:58:56"
+}

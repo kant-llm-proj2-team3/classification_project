@@ -1,0 +1,139 @@
+{
+  "topic": "documents",
+  "dataset": "advanced",
+  "split": "test",
+  "selected_model": "bert",
+  "evaluated_model": "baseline",
+  "official": false,
+  "selected_run": "20261013_145320",
+  "model_id": "TF-IDF(char n-gram) + LogisticRegression",
+  "classifier": {
+    "n": 60,
+    "accuracy": 0.8333333333333334,
+    "macro_f1": 0.8323232323232324,
+    "per_class": {
+      "announcement": {
+        "precision": 0.9375,
+        "recall": 0.75,
+        "f1-score": 0.8333333333333334,
+        "support": 20.0
+      },
+      "manual": {
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1-score": 0.8,
+        "support": 20.0
+      },
+      "minutes": {
+        "precision": 0.7916666666666666,
+        "recall": 0.95,
+        "f1-score": 0.8636363636363636,
+        "support": 20.0
+      },
+      "accuracy": 0.8333333333333334,
+      "macro avg": {
+        "precision": 0.8430555555555556,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.8323232323232324,
+        "support": 60.0
+      },
+      "weighted avg": {
+        "precision": 0.8430555555555554,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.8323232323232325,
+        "support": 60.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        15,
+        3,
+        2
+      ],
+      [
+        1,
+        16,
+        3
+      ],
+      [
+        0,
+        1,
+        19
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "announcement",
+        "manual",
+        "minutes"
+      ]
+    }
+  },
+  "baseline": {
+    "n": 60,
+    "accuracy": 0.8333333333333334,
+    "macro_f1": 0.8323232323232324,
+    "per_class": {
+      "announcement": {
+        "precision": 0.9375,
+        "recall": 0.75,
+        "f1-score": 0.8333333333333334,
+        "support": 20.0
+      },
+      "manual": {
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1-score": 0.8,
+        "support": 20.0
+      },
+      "minutes": {
+        "precision": 0.7916666666666666,
+        "recall": 0.95,
+        "f1-score": 0.8636363636363636,
+        "support": 20.0
+      },
+      "accuracy": 0.8333333333333334,
+      "macro avg": {
+        "precision": 0.8430555555555556,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.8323232323232324,
+        "support": 60.0
+      },
+      "weighted avg": {
+        "precision": 0.8430555555555554,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.8323232323232325,
+        "support": 60.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        15,
+        3,
+        2
+      ],
+      [
+        1,
+        16,
+        3
+      ],
+      [
+        0,
+        1,
+        19
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "announcement",
+        "manual",
+        "minutes"
+      ]
+    }
+  },
+  "baseline_run": "20261013_145320"
+}

@@ -1,0 +1,156 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "bert",
+  "model_id": "klue/bert-base",
+  "topic": "documents",
+  "dataset": "total_merge",
+  "dataset_id": "documents/total_merge",
+  "run_id": "20261013_145443",
+  "train": {
+    "learning_rate": 3e-05,
+    "epochs_max": 2,
+    "epochs_run": 2,
+    "best_epoch": 2,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 990,
+    "validation_rows": 331,
+    "test_rows": 331
+  },
+  "validation": {
+    "n": 331,
+    "correct": 327,
+    "accuracy": 0.9879154078549849,
+    "macro_f1": 0.9879330189914377,
+    "loss": 0.0688885376931821,
+    "per_label": {
+      "announcement": {
+        "correct": 108,
+        "n": 111,
+        "f1": 0.9818181818181818
+      },
+      "manual": {
+        "correct": 110,
+        "n": 111,
+        "f1": 0.9865470852017937
+      },
+      "minutes": {
+        "correct": 109,
+        "n": 109,
+        "f1": 0.9954337899543378
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        108,
+        2,
+        1
+      ],
+      [
+        1,
+        110,
+        0
+      ],
+      [
+        0,
+        0,
+        109
+      ]
+    ]
+  },
+  "test": {
+    "n": 331,
+    "correct": 328,
+    "accuracy": 0.9909365558912386,
+    "macro_f1": 0.9909089030765098,
+    "loss": null,
+    "per_label": {
+      "announcement": {
+        "correct": 109,
+        "n": 111,
+        "f1": 0.9864253393665159
+      },
+      "manual": {
+        "correct": 108,
+        "n": 109,
+        "f1": 0.9863013698630136
+      },
+      "minutes": {
+        "correct": 111,
+        "n": 111,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        109,
+        2,
+        0
+      ],
+      [
+        1,
+        108,
+        0
+      ],
+      [
+        0,
+        0,
+        111
+      ]
+    ]
+  },
+  "test_meta": {
+    "official": null,
+    "evaluated_at": "2026-10-13 14:59:32"
+  },
+  "cost": {
+    "train_seconds": 41.38074430002598,
+    "validation_inference_seconds": 1.776883499987889,
+    "test_inference_seconds": 1.779,
+    "peak_gpu_mb": 2162.42919921875,
+    "num_parameters": 110619651,
+    "model_size_mb": 422.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2
+    ],
+    "train_loss": [
+      0.286761,
+      0.012657
+    ],
+    "val_loss": [
+      0.104024,
+      0.068889
+    ],
+    "val_macro_f1": [
+      0.975946,
+      0.987933
+    ],
+    "val_correct": [
+      323,
+      327
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": "test_predictions.csv",
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "baseline",
+  "model_id": "TF-IDF(char n-gram) + LogisticRegression",
+  "topic": "documents",
+  "dataset": "basic",
+  "dataset_id": "documents/basic",
+  "run_id": "20261013_145150",
+  "train": {
+    "analyzer": "char",
+    "ngram_range": [
+      2,
+      5
+    ],
+    "min_df": 1,
+    "sublinear_tf": true,
+    "max_iter": 1000,
+    "class_weight": "balanced"
+  },
+  "input": {
+    "train_rows": 360,
+    "validation_rows": 120,
+    "test_rows": 120
+  },
+  "validation": {
+    "n": 120,
+    "correct": 114,
+    "accuracy": 0.95,
+    "macro_f1": 0.9499687304565354,
+    "loss": null,
+    "per_label": {
+      "announcement": {
+        "correct": 36,
+        "n": 40,
+        "f1": 0.9230769230769231
+      },
+      "manual": {
+        "correct": 38,
+        "n": 40,
+        "f1": 0.926829268292683
+      },
+      "minutes": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        36,
+        4,
+        0
+      ],
+      [
+        2,
+        38,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "test": {
+    "n": 120,
+    "correct": 117,
+    "accuracy": 0.975,
+    "macro_f1": 0.9749647942419027,
+    "loss": null,
+    "per_label": {
+      "announcement": {
+        "correct": 37,
+        "n": 40,
+        "f1": 0.961038961038961
+      },
+      "manual": {
+        "correct": 40,
+        "n": 40,
+        "f1": 0.963855421686747
+      },
+      "minutes": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        37,
+        3,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "test_meta": {
+    "official": false,
+    "evaluated_at": "2026-10-13 14:59:15"
+  },
+  "cost": {
+    "train_seconds": 0.18332690000534058,
+    "validation_inference_seconds": 0.011283600004389882,
+    "test_inference_seconds": 0.011,
+    "peak_gpu_mb": null,
+    "num_parameters": 117708,
+    "model_size_mb": 1.79
+  },
+  "curve": null,
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": "test_predictions.csv",
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

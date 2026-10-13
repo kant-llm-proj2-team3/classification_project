@@ -1,0 +1,170 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261013_144809",
+  "generated_at": "2026-10-13 14:48:29",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_checkpointing": true,
+    "precision": "bfloat16",
+    "early_stopping_patience": 1,
+    "target_macro_f1": null,
+    "stop_reason": "validation Macro-F1 이 1에폭 연속 개선되지 않음",
+    "optimizer_steps_at_checkpoint": 83,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "sklearn": null
+  },
+  "data": {
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_csv": [
+      "dataset/inquiries/basic_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/inquiries/basic_merge/validation.csv"
+    ],
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0
+    }
+  },
+  "validation_detail": {
+    "per_class": {
+      "shipping": {
+        "precision": 0.9864864864864865,
+        "recall": 0.9864864864864865,
+        "f1-score": 0.9864864864864865,
+        "support": 74.0
+      },
+      "refund": {
+        "precision": 0.9864864864864865,
+        "recall": 0.9864864864864865,
+        "f1-score": 0.9864864864864865,
+        "support": 74.0
+      },
+      "account": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "accuracy": 0.990909090909091,
+      "macro avg": {
+        "precision": 0.990990990990991,
+        "recall": 0.990990990990991,
+        "f1-score": 0.990990990990991,
+        "support": 220.0
+      },
+      "weighted avg": {
+        "precision": 0.990909090909091,
+        "recall": 0.990909090909091,
+        "f1-score": 0.990909090909091,
+        "support": 220.0
+      }
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.36182412812204073,
+      "validation_loss": 0.05439117546193302,
+      "validation_accuracy": 0.990909090909091,
+      "validation_macro_f1": 0.990990990990991,
+      "optimizer_steps": 83,
+      "elapsed_seconds": 9.630763399996795
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.00840750029592803,
+      "validation_loss": 0.05545775864527307,
+      "validation_accuracy": 0.990909090909091,
+      "validation_macro_f1": 0.990990990990991,
+      "optimizer_steps": 166,
+      "elapsed_seconds": 19.42555860002176
+    }
+  ],
+  "training_summary": {
+    "model_key": "roberta",
+    "model_id": "klue/roberta-base",
+    "run_name": "20261013_144809",
+    "learning_rate": 3e-05,
+    "best_epoch": 1,
+    "validation_macro_f1": 0.990990990990991,
+    "validation_accuracy": 0.990909090909091,
+    "validation_loss": 0.05439117546193302,
+    "train_seconds": 19.425982500019018,
+    "validation_inference_seconds": 0.6312839999736752,
+    "peak_gpu_memory_mb": 2135.689453125,
+    "train_rows": 660,
+    "validation_rows": 220,
+    "epochs_run": 2,
+    "epochs_max": 2,
+    "stop_reason": "validation Macro-F1 이 1에폭 연속 개선되지 않음",
+    "num_parameters": 110620419,
+    "model_size_mb": 422.0
+  },
+  "run_config": {
+    "topic": "inquiries",
+    "dataset": "basic_merge",
+    "model_key": "roberta",
+    "model_id": "klue/roberta-base",
+    "run_name": "20261013_144809",
+    "learning_rate": 3e-05,
+    "epochs_max": 2,
+    "early_stopping_patience": 1,
+    "target_macro_f1": null,
+    "score_stop": {
+      "enabled": true,
+      "min_accuracy": 1.0,
+      "min_macro_f1": 1.0,
+      "max_val_loss": 0.01,
+      "min_epochs": 3
+    },
+    "batch_size": 4,
+    "gradient_accumulation_steps": 2,
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0
+    },
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "seed": 42,
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_rows": 660,
+    "validation_rows": 220,
+    "train_csv": [
+      "dataset/inquiries/basic_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/inquiries/basic_merge/validation.csv"
+    ],
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "precision": "bfloat16",
+    "gradient_checkpointing": true,
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6"
+  }
+}

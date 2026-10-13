@@ -1,0 +1,48 @@
+{
+  "topic": "documents",
+  "dataset": "total_merge",
+  "model_key": "bert",
+  "selection_rule": "validation Macro-F1 이 높은 쪽, 동점이면 validation loss 가 낮은 쪽. 더 좋아졌을 때만 best_model 을 교체한다. (test 점수는 사용하지 않음)",
+  "best": {
+    "model_key": "bert",
+    "model_id": "klue/bert-base",
+    "run_name": "20261013_145443",
+    "learning_rate": 3e-05,
+    "best_epoch": 2,
+    "validation_macro_f1": 0.9879330189914377,
+    "validation_accuracy": 0.9879154078549849,
+    "validation_loss": 0.0688885376931821,
+    "train_seconds": 41.38074430002598,
+    "validation_inference_seconds": 1.776883499987889,
+    "peak_gpu_memory_mb": 2162.42919921875,
+    "train_rows": 990,
+    "validation_rows": 331,
+    "epochs_run": 2,
+    "epochs_max": 2,
+    "stop_reason": "최대 에폭(2) 도달",
+    "num_parameters": 110619651,
+    "model_size_mb": 422.0
+  },
+  "last_run": {
+    "run_name": "20261013_145443",
+    "replaced_best": true,
+    "reason": "이 모델의 첫 결과라서 best_model 로 저장",
+    "validation_macro_f1": 0.9879330189914377,
+    "validation_loss": 0.0688885376931821
+  },
+  "previous_best": null,
+  "runs": [
+    {
+      "run_name": "20261013_145443",
+      "learning_rate": 3e-05,
+      "best_epoch": 2,
+      "validation_macro_f1": 0.9879330189914377,
+      "validation_accuracy": 0.9879154078549849,
+      "validation_loss": 0.0688885376931821,
+      "train_seconds": 41.38074430002598,
+      "peak_gpu_memory_mb": 2162.42919921875,
+      "is_best": true
+    }
+  ],
+  "updated_at": "2026-10-13 14:55:25"
+}

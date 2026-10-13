@@ -1,0 +1,50 @@
+{
+  "topic": "inquiries",
+  "dataset": "advanced",
+  "model_key": "koelectra",
+  "model_id": "monologg/koelectra-small-v3-discriminator",
+  "run_name": "20261013_144911",
+  "learning_rate": 0.0001,
+  "epochs_max": 2,
+  "early_stopping_patience": 1,
+  "target_macro_f1": null,
+  "score_stop": {
+    "enabled": true,
+    "min_accuracy": 1.0,
+    "min_macro_f1": 1.0,
+    "max_val_loss": 0.01,
+    "min_epochs": 3
+  },
+  "batch_size": 4,
+  "gradient_accumulation_steps": 2,
+  "max_length": 512,
+  "truncation": "head_tail",
+  "head_tokens": 256,
+  "truncated_rows": {
+    "train": 79,
+    "validation": 30
+  },
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "seed": 42,
+  "labels": [
+    "shipping",
+    "refund",
+    "account"
+  ],
+  "train_rows": 180,
+  "validation_rows": 60,
+  "train_csv": [
+    "dataset/inquiries/advanced/train.csv"
+  ],
+  "validation_csv": [
+    "dataset/inquiries/advanced/validation.csv"
+  ],
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "precision": "bfloat16",
+  "gradient_checkpointing": true,
+  "python": "3.12.13",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6"
+}

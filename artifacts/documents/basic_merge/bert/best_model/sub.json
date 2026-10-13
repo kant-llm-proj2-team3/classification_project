@@ -1,0 +1,171 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261013_145221",
+  "generated_at": "2026-10-13 14:52:41",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_checkpointing": true,
+    "precision": "bfloat16",
+    "early_stopping_patience": 1,
+    "target_macro_f1": null,
+    "stop_reason": "validation Macro-F1 이 1에폭 연속 개선되지 않음",
+    "optimizer_steps_at_checkpoint": 166,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "sklearn": null
+  },
+  "data": {
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "train_csv": [
+      "dataset/documents/basic_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/documents/basic_merge/validation.csv"
+    ],
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0,
+      "test": 0
+    }
+  },
+  "validation_detail": {
+    "per_class": {
+      "announcement": {
+        "precision": 1.0,
+        "recall": 0.972972972972973,
+        "f1-score": 0.9863013698630136,
+        "support": 74.0
+      },
+      "manual": {
+        "precision": 0.9736842105263158,
+        "recall": 1.0,
+        "f1-score": 0.9866666666666667,
+        "support": 74.0
+      },
+      "minutes": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "accuracy": 0.990909090909091,
+      "macro avg": {
+        "precision": 0.9912280701754387,
+        "recall": 0.990990990990991,
+        "f1-score": 0.9909893455098935,
+        "support": 220.0
+      },
+      "weighted avg": {
+        "precision": 0.9911483253588517,
+        "recall": 0.990909090909091,
+        "f1-score": 0.9909074304690744,
+        "support": 220.0
+      }
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.25368456985011245,
+      "validation_loss": 0.054826930271122946,
+      "validation_accuracy": 0.990909090909091,
+      "validation_macro_f1": 0.9909893455098935,
+      "optimizer_steps": 83,
+      "elapsed_seconds": 9.401990899990778
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.0020812930482806582,
+      "validation_loss": 0.05440801899372177,
+      "validation_accuracy": 0.990909090909091,
+      "validation_macro_f1": 0.9909893455098935,
+      "optimizer_steps": 166,
+      "elapsed_seconds": 18.974108800000977
+    }
+  ],
+  "training_summary": {
+    "model_key": "bert",
+    "model_id": "klue/bert-base",
+    "run_name": "20261013_145221",
+    "learning_rate": 3e-05,
+    "best_epoch": 2,
+    "validation_macro_f1": 0.9909893455098935,
+    "validation_accuracy": 0.990909090909091,
+    "validation_loss": 0.05440801899372177,
+    "train_seconds": 19.23544079999556,
+    "validation_inference_seconds": 0.5679059000103734,
+    "peak_gpu_memory_mb": 2131.42333984375,
+    "train_rows": 660,
+    "validation_rows": 220,
+    "epochs_run": 2,
+    "epochs_max": 2,
+    "stop_reason": "validation Macro-F1 이 1에폭 연속 개선되지 않음",
+    "num_parameters": 110619651,
+    "model_size_mb": 422.0
+  },
+  "run_config": {
+    "topic": "documents",
+    "dataset": "basic_merge",
+    "model_key": "bert",
+    "model_id": "klue/bert-base",
+    "run_name": "20261013_145221",
+    "learning_rate": 3e-05,
+    "epochs_max": 2,
+    "early_stopping_patience": 1,
+    "target_macro_f1": null,
+    "score_stop": {
+      "enabled": true,
+      "min_accuracy": 1.0,
+      "min_macro_f1": 1.0,
+      "max_val_loss": 0.01,
+      "min_epochs": 3
+    },
+    "batch_size": 4,
+    "gradient_accumulation_steps": 2,
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0
+    },
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "seed": 42,
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "train_rows": 660,
+    "validation_rows": 220,
+    "train_csv": [
+      "dataset/documents/basic_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/documents/basic_merge/validation.csv"
+    ],
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "precision": "bfloat16",
+    "gradient_checkpointing": true,
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6"
+  }
+}

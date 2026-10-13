@@ -1,0 +1,48 @@
+{
+  "topic": "documents",
+  "dataset": "basic_merge",
+  "model_key": "koelectra",
+  "selection_rule": "validation Macro-F1 이 높은 쪽, 동점이면 validation loss 가 낮은 쪽. 더 좋아졌을 때만 best_model 을 교체한다. (test 점수는 사용하지 않음)",
+  "best": {
+    "model_key": "koelectra",
+    "model_id": "monologg/koelectra-small-v3-discriminator",
+    "run_name": "20261013_145301",
+    "learning_rate": 0.0001,
+    "best_epoch": 2,
+    "validation_macro_f1": 0.9639573820395738,
+    "validation_accuracy": 0.9636363636363636,
+    "validation_loss": 0.2995636731386185,
+    "train_seconds": 18.556565699982457,
+    "validation_inference_seconds": 0.2903015000047162,
+    "peak_gpu_memory_mb": 292.19189453125,
+    "train_rows": 660,
+    "validation_rows": 220,
+    "epochs_run": 2,
+    "epochs_max": 2,
+    "stop_reason": "최대 에폭(2) 도달",
+    "num_parameters": 14122755,
+    "model_size_mb": 53.9
+  },
+  "last_run": {
+    "run_name": "20261013_145301",
+    "replaced_best": true,
+    "reason": "이 모델의 첫 결과라서 best_model 로 저장",
+    "validation_macro_f1": 0.9639573820395738,
+    "validation_loss": 0.2995636731386185
+  },
+  "previous_best": null,
+  "runs": [
+    {
+      "run_name": "20261013_145301",
+      "learning_rate": 0.0001,
+      "best_epoch": 2,
+      "validation_macro_f1": 0.9639573820395738,
+      "validation_accuracy": 0.9636363636363636,
+      "validation_loss": 0.2995636731386185,
+      "train_seconds": 18.556565699982457,
+      "peak_gpu_memory_mb": 292.19189453125,
+      "is_best": true
+    }
+  ],
+  "updated_at": "2026-10-13 14:53:20"
+}

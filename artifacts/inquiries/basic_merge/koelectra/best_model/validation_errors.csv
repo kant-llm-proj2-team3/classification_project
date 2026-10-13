@@ -1,0 +1,4 @@
+﻿id,text,actual,predicted,group_id
+inquiries-v2-refund-validation-001-v1,비회원으로 주문한 물건을 돌려보내고 싶은데 회원 주문 목록에는 거래가 없습니다. 구매 때 받은 이메일 영수증은 가지고 있습니다. 새 계정을 만드는 일보다 기존 비회원 거래의 환불 신청 경로가 궁금합니다.,refund,account,inquiries-v2-refund-validation-001
+inquiries-v2-refund-validation-027-v1,어떤 상태와 구성품을 보여 줘야 하는지 서면 안내를 받을 수 있나요? 참고로 현재 접수에서 어느 확인이 남았는지 담당별 처리 기록을 요청하고 싶습니다. 누리전시몰에서 신청한 도구 분류 상자 건입니다. 제품 상태는 그대로 보관 중이고 필요한 확인을 숨기려는 것은 아닙니다. 공동 작업에 쓰려고 신청한 물품입니다.,refund,shipping,inquiries-v2-refund-validation-027
+inquiries-v2-refund-validation-030-v2,환급 기준일에 영향을 주는지 확인하기 위해 두 시점의 자료를 갖고 있습니다. 모아교육몰에서 신청한 벽시계 건입니다. 제 계좌로 받을 예정이며 회원 이름 전체를 바꾸려는 요청은 아닙니다. 기관 담당자 명의로 신청한 주문입니다. 해당 환급 건의 계좌 확인과 수정 경로를 안내해 주세요.,refund,account,inquiries-v2-refund-validation-030

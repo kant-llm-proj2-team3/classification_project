@@ -1,0 +1,131 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261013_144916",
+  "generated_at": "2026-10-13 14:49:17",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": null,
+    "truncation": null,
+    "head_tokens": null,
+    "weight_decay": null,
+    "warmup_ratio": null,
+    "gradient_checkpointing": null,
+    "precision": null,
+    "early_stopping_patience": null,
+    "target_macro_f1": null,
+    "stop_reason": null,
+    "optimizer_steps_at_checkpoint": null,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": null,
+    "gpu": null,
+    "python": null,
+    "torch": null,
+    "transformers": null,
+    "sklearn": "1.9.1"
+  },
+  "data": {
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_csv": [
+      "dataset/inquiries/advanced_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/inquiries/advanced_merge/validation.csv"
+    ],
+    "truncated_rows": null
+  },
+  "validation_detail": {
+    "per_class": {
+      "shipping": {
+        "precision": 0.8378378378378378,
+        "recall": 0.8378378378378378,
+        "f1-score": 0.8378378378378378,
+        "support": 37.0
+      },
+      "refund": {
+        "precision": 0.8484848484848485,
+        "recall": 0.7567567567567568,
+        "f1-score": 0.8,
+        "support": 37.0
+      },
+      "account": {
+        "precision": 0.7804878048780488,
+        "recall": 0.8648648648648649,
+        "f1-score": 0.8205128205128205,
+        "support": 37.0
+      },
+      "accuracy": 0.8198198198198198,
+      "macro avg": {
+        "precision": 0.8222701637335783,
+        "recall": 0.8198198198198199,
+        "f1-score": 0.8194502194502196,
+        "support": 111.0
+      },
+      "weighted avg": {
+        "precision": 0.8222701637335783,
+        "recall": 0.8198198198198198,
+        "f1-score": 0.8194502194502195,
+        "support": 111.0
+      }
+    }
+  },
+  "epochs": [],
+  "training_summary": {
+    "model_key": "baseline",
+    "model_id": "TF-IDF(char n-gram) + LogisticRegression",
+    "run_name": "20261013_144916",
+    "learning_rate": null,
+    "best_epoch": null,
+    "validation_macro_f1": 0.8194502194502196,
+    "validation_accuracy": 0.8198198198198198,
+    "validation_loss": null,
+    "train_seconds": 0.6228182000049856,
+    "validation_inference_seconds": 0.06742259999737144,
+    "peak_gpu_memory_mb": null,
+    "train_rows": 330,
+    "validation_rows": 111,
+    "num_parameters": 293448,
+    "model_size_mb": 4.6
+  },
+  "run_config": {
+    "topic": "inquiries",
+    "dataset": "advanced_merge",
+    "model_key": "baseline",
+    "run_name": "20261013_144916",
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "tfidf": {
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 1,
+      "sublinear_tf": true,
+      "max_features": null
+    },
+    "logistic_regression": {
+      "max_iter": 1000,
+      "class_weight": "balanced",
+      "random_state": 42
+    },
+    "seed": 42,
+    "train_rows": 330,
+    "validation_rows": 111,
+    "train_csv": [
+      "dataset/inquiries/advanced_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/inquiries/advanced_merge/validation.csv"
+    ],
+    "sklearn": "1.9.1"
+  }
+}

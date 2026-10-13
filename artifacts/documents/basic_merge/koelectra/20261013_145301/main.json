@@ -1,0 +1,108 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "koelectra",
+  "model_id": "monologg/koelectra-small-v3-discriminator",
+  "topic": "documents",
+  "dataset": "basic_merge",
+  "dataset_id": "documents/basic_merge",
+  "run_id": "20261013_145301",
+  "train": {
+    "learning_rate": 0.0001,
+    "epochs_max": 2,
+    "epochs_run": 2,
+    "best_epoch": 2,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 660,
+    "validation_rows": 220,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 220,
+    "correct": 212,
+    "accuracy": 0.9636363636363636,
+    "macro_f1": 0.9639573820395738,
+    "loss": 0.2995636731386185,
+    "per_label": {
+      "announcement": {
+        "correct": 69,
+        "n": 74,
+        "f1": 0.9452054794520548
+      },
+      "manual": {
+        "correct": 71,
+        "n": 74,
+        "f1": 0.9466666666666667
+      },
+      "minutes": {
+        "correct": 72,
+        "n": 72,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        69,
+        5,
+        0
+      ],
+      [
+        3,
+        71,
+        0
+      ],
+      [
+        0,
+        0,
+        72
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 18.556565699982457,
+    "validation_inference_seconds": 0.2903015000047162,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 292.19189453125,
+    "num_parameters": 14122755,
+    "model_size_mb": 53.9
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2
+    ],
+    "train_loss": [
+      0.888604,
+      0.400191
+    ],
+    "val_loss": [
+      0.537528,
+      0.299564
+    ],
+    "val_macro_f1": [
+      0.936752,
+      0.963957
+    ],
+    "val_correct": [
+      206,
+      212
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

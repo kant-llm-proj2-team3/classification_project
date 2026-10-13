@@ -1,0 +1,38 @@
+﻿id,text,actual,predicted,group_id
+inquiries-v2-refund-test-016-v1,환불 지연 때문에 결제사에 이의를 접수한 뒤 판매자가 이제 반환을 진행하겠다고 연락했습니다. 아직 실제 입금은 확인하지 못했습니다. 중복 처리가 되지 않게 두 절차를 조정할 공식 확인 순서를 알려 주세요.,refund,account,inquiries-v2-refund-test-016
+inquiries-v2-refund-test-019-v2,최종 옵션을 확인한 적이 없는데 제작안이 승인된 것으로 표시됩니다. 물건을 받은 상태는 아니고 주문을 철회하고 싶습니다. 제가 동의한 기록이 있는지 대조한 뒤 취소 가능 여부를 안내받으려면 어떻게 하나요?,refund,account,inquiries-v2-refund-test-019
+inquiries-v2-account-test-004-v2,기기를 넘기기 전에 그 기기에서만 계정을 지우고 싶어요. 새 기기에서 쓸 회원과 자료는 유지해야 하는데 계정 제거가 탈퇴와 다른가요?,account,refund,inquiries-v2-account-test-004
+inquiries-v2-account-test-018-v2,팀이 공간을 보관 처리한 뒤 제 계정 목록에서 사라졌어요. 참여 권한이 끝난 건지 보관해서 숨겨진 건지 구별해 확인할 수 있나요?,account,shipping,inquiries-v2-account-test-018
+inquiries-v2-refund-test-018-v2,반품 마감일 저녁에 신청 완료 화면을 받았지만 목록에는 다음 영업일 날짜가 적혀 있습니다. 늦게 신청한 것으로 처리되어 환불 검토가 멈췄습니다. 보관한 화면으로 접수 시각을 재확인할 경로를 알려 주세요.,refund,account,inquiries-v2-refund-test-018
+inquiries-v2-refund-test-008-v1,가족 네 명의 이름으로 입장권을 한 번에 결제했는데 한 명만 참석하지 못합니다. 나머지 표의 좌석은 유지하려 합니다. 해당 이름의 표만 취소했을 때 다른 표가 무효가 되지 않는지 확인하고 싶습니다.,refund,account,inquiries-v2-refund-test-008
+inquiries-v2-refund-test-013-v1,서비스를 두 달 쉬는 것으로 상담하고 중지 확인을 받았는데 그 기간의 이용료가 나갔습니다. 영구 해지보다는 잘못 청구된 두 달 금액을 반환받고 싶습니다. 중지 확인 내역으로 환불 검토를 요청할 수 있나요?,refund,account,inquiries-v2-refund-test-013
+inquiries-v2-refund-test-017-v2,설치한 수납장 반품 견적에 해체비와 운송비가 따로 있습니다. 제품 환급액은 아직 안내받지 못했습니다. 구매 취소 전 비용별 근거와 실제 반환액을 알고 싶습니다.,refund,shipping,inquiries-v2-refund-test-017
+inquiries-v2-refund-test-019-v1,색상과 배치를 마지막에 승인하는 주문인데 제 승인 없이 기본안으로 확정됐다는 안내가 왔습니다. 완성품은 아직 받지 않았고 진행을 중단해 구매를 취소하려 합니다. 승인 기록을 확인받고 환급을 검토할 수 있나요?,refund,account,inquiries-v2-refund-test-019
+inquiries-v2-refund-test-015-v2,본품 봉인은 그대로인데 딸린 체험 샘플은 썼습니다. 본품을 반품하고 싶은데 사용한 샘플이 반품 조건과 환급액에 영향을 주는지 알려 주세요.,refund,shipping,inquiries-v2-refund-test-015
+inquiries-v2-refund-test-001-v2,"현금 구매를 반품하려는데 종이 영수증이 없습니다. 날짜와 금액, 전자 영수증 내역은 있는데 이 자료로 구매를 확인해 환불받을 수 있나요?",refund,shipping,inquiries-v2-refund-test-001
+inquiries-v2-refund-test-006-v2,선물받은 사람은 안 썼다는데 모바일 상품권의 취소 화면에는 사용 완료로 나옵니다. 이용 기록을 대조해서 환불 가능한지 확인하고 싶습니다.,refund,shipping,inquiries-v2-refund-test-006
+inquiries-v2-refund-test-003-v2,"카드대금을 선납한 뒤 구매가 취소됐습니다. 다음 청구에서 차감된다지만 이후 카드 이용 계획이 없는데, 이미 낸 돈의 반환은 어디에 확인하나요?",refund,shipping,inquiries-v2-refund-test-003
+inquiries-v2-refund-test-001-v1,현금으로 산 물건을 반품하려는데 종이 영수증을 잃어버렸습니다. 구매 날짜와 금액을 알고 있고 당시 발급받은 전자 영수증 조회 내역은 있습니다. 그 자료로 환급 심사를 요청할 수 있는지 알려 주세요.,refund,shipping,inquiries-v2-refund-test-001
+inquiries-v2-refund-test-014-v1,반품 상품을 보내면서 제 개인 보관 주머니도 상자에 넣은 사실을 뒤늦게 알았습니다. 주문 구성품은 아닌데 환불 심사 중이라 물건이 섞일까 걱정됩니다. 개인 물품을 따로 확인받고 구매 취소를 계속할 수 있나요?,refund,account,inquiries-v2-refund-test-014
+inquiries-v2-refund-test-005-v2,"재고가 없다며 동의 없이 다른 모델을 보내왔습니다. 개봉하지 않고 반품하려는데, 변경에 동의하지 않았던 원래 주문의 환급은 어떻게 접수하나요?",refund,shipping,inquiries-v2-refund-test-005
+inquiries-v2-refund-test-008-v2,한 거래로 산 기명 입장권 네 장 중 한 장만 환불받으려 합니다. 세 사람은 원래 좌석에서 참석할 예정입니다. 취소 대상을 특정해 나머지 입장권을 유지하는 절차를 안내해 주세요.,refund,account,inquiries-v2-refund-test-008
+inquiries-v2-account-test-010-v2,메일의 로그인 링크가 요청한 브라우저와 다른 앱에서 열려 원래 창은 대기 중입니다. 어떤 환경에서 열어야 로그인이 이어지나요?,account,shipping,inquiries-v2-account-test-010
+inquiries-v2-refund-test-009-v1,물품 구매 때 용기 보증금을 냈고 빈 용기를 지정 창구에 돌려줬습니다. 물품 대금을 환불하려는 것이 아니라 보증금 반환을 확인하고 싶습니다. 반납증을 어떤 결제 기록과 연결해야 하는지 알려 주세요.,refund,account,inquiries-v2-refund-test-009
+inquiries-v2-refund-test-003-v1,카드대금을 미리 낸 뒤 해당 구매가 취소됐습니다. 결제사 화면에는 취소액이 다음 청구에서 차감된다고만 나오지만 이후 사용할 계획이 없습니다. 이미 납부한 금액의 반환 확인은 어디에 요청해야 하나요?,refund,account,inquiries-v2-refund-test-003
+inquiries-v2-refund-test-020-v1,정해진 횟수의 방문 서비스를 결제했는데 이용 지역을 벗어나 이사했습니다. 남은 회차를 지인에게 넘기라는 안내는 받았지만 양도할 생각이 없습니다. 남은 이용료의 반환 가능 여부를 공식적으로 확인하고 싶습니다.,refund,account,inquiries-v2-refund-test-020
+inquiries-v2-refund-test-010-v2,배터리 장비를 반품하려는데 일반 택배로는 못 받는다고 합니다. 상품 종류에 맞는 방식으로 반환하려면 기존 환불 건에서 어디로 문의해야 하나요?,refund,shipping,inquiries-v2-refund-test-010
+inquiries-v2-refund-test-017-v1,설치된 수납장을 반품하려고 견적을 받았는데 해체 비용과 반환 운송비가 따로 적혀 있습니다. 제품의 환급 예정액은 아직 안내받지 못했습니다. 총 반환액을 판단할 수 있도록 비용 항목별 근거를 확인하고 싶습니다.,refund,account,inquiries-v2-refund-test-017
+inquiries-v2-refund-test-013-v2,두 달 이용 중지 확인을 받았는데 그동안 요금이 나갔습니다. 나중에 다시 쓸 거라 영구 해지는 안 하고 잘못 청구된 두 달 대금만 돌려받고 싶어요.,refund,shipping,inquiries-v2-refund-test-013
+inquiries-v2-account-test-016-v2,"회사 팀에서만 비밀번호 변경 주기 알림이 나오고 개인 설정에는 없어요. 조직 기준인지 전체 기준인지, 어느 담당에게 확인하면 될까요?",account,refund,inquiries-v2-account-test-016
+inquiries-v2-account-test-002-v2,탈퇴 완료 후 이용하지 않았는데 주간 활동 메일이 계속 와요. 계정 삭제 상태와 남은 알림 연결을 확인할 곳을 알려 주세요.,account,shipping,inquiries-v2-account-test-002
+inquiries-v2-refund-test-014-v2,환급받을 상품을 보낸 상자에 제 소유의 주머니가 함께 들어갔습니다. 판매한 제품의 구성품은 아닙니다. 개인 물품 반환 문의와 기존 반품 검수를 구분해 담당자에게 전달하는 절차를 알려 주세요.,refund,account,inquiries-v2-refund-test-014
+inquiries-v2-refund-test-016-v2,환불이 늦어 결제사에 이의를 냈는데 판매자가 반환 예정이라고 연락했습니다. 아직 입금 전인데 중복 처리되지 않게 두 절차를 어떻게 확인하나요?,refund,shipping,inquiries-v2-refund-test-016
+inquiries-v2-refund-test-002-v2,현금 구매를 취소해 반환 금액을 매장에서 받기로 안내받았습니다. 방문이 어려워 다른 사람이 대신 갈 수 있는지 궁금합니다. 계좌 변경 요청은 아니고 현장 환급 수령의 위임 조건을 확인하고 싶습니다.,refund,account,inquiries-v2-refund-test-002
+inquiries-v2-account-test-014-v2,계정 용량이 꽉 차 업로드가 막혔는데 전체 용량만 보입니다. 무작정 지우지 않고 어떤 자료가 공간을 쓰는지 종류별로 확인할 수 있나요?,account,shipping,inquiries-v2-account-test-014
+inquiries-v2-refund-test-011-v1,직접 조립한 가구가 공간에 맞지 않아 반품 가능 여부를 문의합니다. 부품을 버리지는 않았지만 일부 조립 자국은 있습니다. 미사용품이라고 적지 않고 현재 상태를 설명해 환불 심사를 받으려면 어떻게 하나요?,refund,account,inquiries-v2-refund-test-011
+inquiries-v2-refund-test-009-v2,내용물은 썼고 보증금을 낸 다회용 용기는 지정 창구에 반납했습니다. 물품 값 대신 용기 보증금을 돌려받으려면 반납증을 어디에 제출하나요?,refund,shipping,inquiries-v2-refund-test-009
+inquiries-v2-account-test-006-v2,저장한 녹음은 계속 보관하되 서비스 개선용 활용 동의만 철회하고 싶어요. 원본 삭제 없이 보관과 활용 동의를 따로 관리할 수 있나요?,account,refund,inquiries-v2-account-test-006
+inquiries-v2-refund-test-018-v1,접수 가능 마지막 날 밤에 반품 신청을 제출했고 완료 화면을 저장했습니다. 다음 영업일에 등록된 날짜로 표시돼 기간 초과라는 안내가 왔습니다. 실제 제출 시각을 대조해 구매 취소 심사를 요청하고 싶습니다.,refund,account,inquiries-v2-refund-test-018
+inquiries-v2-refund-test-004-v1,서로 다른 두 주문을 각각 취소했는데 은행에는 두 환급을 합한 듯한 금액이 한 번 들어왔습니다. 어느 주문이 완료됐는지 구분하고 싶습니다. 입금액과 각 취소 건을 연결한 반환 내역을 받을 수 있나요?,refund,account,inquiries-v2-refund-test-004
+inquiries-v2-refund-test-012-v1,길이를 지정해 주문한 원단 두 묶음 중 한 묶음만 재단이 시작됐다고 합니다. 아직 손대지 않은 다른 묶음은 취소하려 합니다. 제작 단계가 다른 두 품목을 구분해 반환 가능한 금액을 확인할 수 있나요?,refund,account,inquiries-v2-refund-test-012
+inquiries-v2-refund-test-007-v1,일반 참가비 외에 우선 예약 서비스를 추가로 결제했는데 우선 접수 시간이 별도로 운영되지 않았습니다. 행사에는 참가할 예정입니다. 참가비는 유지하고 제공되지 않은 추가 서비스 비용만 반환 요청할 수 있나요?,refund,account,inquiries-v2-refund-test-007

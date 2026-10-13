@@ -1,0 +1,156 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "bert",
+  "model_id": "klue/bert-base",
+  "topic": "inquiries",
+  "dataset": "basic",
+  "dataset_id": "inquiries/basic",
+  "run_id": "20261013_144714",
+  "train": {
+    "learning_rate": 3e-05,
+    "epochs_max": 2,
+    "epochs_run": 2,
+    "best_epoch": 1,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 360,
+    "validation_rows": 120,
+    "test_rows": 120
+  },
+  "validation": {
+    "n": 120,
+    "correct": 120,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "loss": 0.02284053070470691,
+    "per_label": {
+      "shipping": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "refund": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "account": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "test": {
+    "n": 120,
+    "correct": 120,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "loss": null,
+    "per_label": {
+      "shipping": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "refund": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "account": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "test_meta": {
+    "official": true,
+    "evaluated_at": "2026-10-13 14:58:56"
+  },
+  "cost": {
+    "train_seconds": 11.103893500025151,
+    "validation_inference_seconds": 0.41868370000156574,
+    "test_inference_seconds": 0.328,
+    "peak_gpu_mb": 2131.42041015625,
+    "num_parameters": 110619651,
+    "model_size_mb": 422.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2
+    ],
+    "train_loss": [
+      0.421645,
+      0.009636
+    ],
+    "val_loss": [
+      0.022841,
+      0.021579
+    ],
+    "val_macro_f1": [
+      1.0,
+      0.991665
+    ],
+    "val_correct": [
+      120,
+      119
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": "test_predictions.csv",
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model_key": "roberta",
+  "model_id": "klue/roberta-base",
+  "run_name": "20261013_145241",
+  "learning_rate": 3e-05,
+  "best_epoch": 1,
+  "validation_macro_f1": 0.9909893455098935,
+  "validation_accuracy": 0.990909090909091,
+  "validation_loss": 0.045401237803426656,
+  "train_seconds": 19.654159499972593,
+  "validation_inference_seconds": 0.5798228000057861,
+  "peak_gpu_memory_mb": 2132.15966796875,
+  "train_rows": 660,
+  "validation_rows": 220,
+  "epochs_run": 2,
+  "epochs_max": 2,
+  "stop_reason": "validation Macro-F1 이 1에폭 연속 개선되지 않음",
+  "num_parameters": 110620419,
+  "model_size_mb": 422.0
+}

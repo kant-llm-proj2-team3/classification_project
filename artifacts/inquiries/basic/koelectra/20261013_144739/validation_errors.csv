@@ -1,0 +1,33 @@
+﻿id,text,actual,predicted,group_id
+inquiries-v2-refund-validation-018-v2,반환 처리 뒤 받은 확인서에 숫자만 있고 통화 단위가 없습니다. 기존 환급액을 바꾸려는 것이 아니라 증빙을 보완하고 싶습니다. 취소 금액과 통화를 함께 표시한 문서를 요청하는 경로를 알려 주세요.,refund,account,inquiries-v2-refund-validation-018
+inquiries-v2-refund-validation-018-v1,환불 확인서에는 금액 옆의 통화 표시가 빠져 있어 회계 담당자가 접수를 보류했습니다. 돈을 더 돌려달라는 요청은 아닙니다. 완료된 구매 취소의 통화와 금액을 명시한 증빙을 다시 받을 수 있나요?,refund,account,inquiries-v2-refund-validation-018
+inquiries-v2-refund-validation-007-v2,해외 상품을 반품하려는데 물품 값 외에 수입 비용 예치금도 냈습니다. 최종 정산서는 아직 없습니다. 구매 환급과 남은 예치금 반환을 따로 확인할 수 있나요?,refund,shipping,inquiries-v2-refund-validation-007
+inquiries-v2-refund-validation-002-v2,가족이 받은 상품을 출장에서 돌아와 보니 수령 후 여덟 날이 지났습니다. 반품하려는데 접수 기간이 지난 경우에도 사유를 설명해 검토받을 수 있나요?,refund,shipping,inquiries-v2-refund-validation-002
+inquiries-v2-refund-validation-003-v1,제조사 공지에 제가 산 제품의 생산 번호가 회수 대상으로 적혀 있습니다. 더 사용하지 않고 구매 대금을 반환받고 싶습니다. 일반 반품과 같은 곳에 접수하는지 회수 공지를 제출할 별도 절차가 있는지 궁금합니다.,refund,account,inquiries-v2-refund-validation-003
+inquiries-v2-refund-validation-004-v2,유료 도안을 다운로드했는데 손상 오류 때문에 내용은 보지 못했습니다. 재전송보다 환불을 요청하려 합니다. 다운로드 시도와 실제 이용을 구분해 심사받으려면 어떤 오류 기록을 제출해야 하나요?,refund,account,inquiries-v2-refund-validation-004
+inquiries-v2-refund-validation-012-v1,무료 체험 종료일 전에 서비스를 취소했지만 결제 내역에는 첫 이용료가 청구돼 있습니다. 취소 시각을 적은 확인 메일을 보관 중입니다. 안내된 체험 기간과 대조해 이번 청구의 환불을 요청하고 싶습니다.,refund,account,inquiries-v2-refund-validation-012
+inquiries-v2-account-validation-010-v2,"기관에 낼 회원 가입 확인 자료가 필요합니다. 화면 캡처 대신 공식 확인서를 발급하는지, 이름과 가입일 등 어떤 정보가 나오는지 알려 주세요.",account,shipping,inquiries-v2-account-validation-010
+inquiries-v2-refund-validation-006-v2,반품 안내에 따라 오프라인 매장에 물건을 맡겼는데 인터넷 주문에는 반품 전으로 나옵니다. 매장이 발급한 영수증은 보관 중입니다. 구매 취소 건에 반환 완료 사실을 반영하려면 어디에 제출하나요?,refund,account,inquiries-v2-refund-validation-006
+inquiries-v2-refund-validation-010-v1,두 품목 중 하나를 반품하면 묶음 할인 조건이 사라져 남길 품목의 가격이 오른다고 합니다. 남는 구매까지 취소할지 결정하기 전입니다. 부분 반품 후 실제 반환액과 재계산 근거를 확인하고 싶습니다.,refund,account,inquiries-v2-refund-validation-010
+inquiries-v2-refund-validation-019-v2,반품 회수 후 환불 내역에 보관료가 생겼지만 이유와 기간은 없습니다. 바로 인정하기 전에 근거를 보고 싶습니다. 환급에서 빠지는 비용인지 확인해 주세요.,refund,shipping,inquiries-v2-refund-validation-019
+inquiries-v2-refund-validation-016-v2,환불이 어렵다는 안내를 받았는데 근거 사진이 다른 색 제품을 보여 줍니다. 제가 반품한 상품의 결과가 맞는지 확인받고 싶습니다. 제 접수 번호와 검수 사진을 대조할 공식 절차를 알려 주세요.,refund,account,inquiries-v2-refund-validation-016
+inquiries-v2-refund-validation-015-v2,세트의 두 상자 중 마지막 것은 오늘 받았는데 첫 수령일만 나옵니다. 전부 반품하려 하니 각 상자를 받은 날짜로 접수 기준을 확인해 주세요.,refund,shipping,inquiries-v2-refund-validation-015
+inquiries-v2-refund-validation-007-v1,해외 상품을 주문할 때 제품 대금과 수입 비용 예치금을 같이 냈습니다. 물건을 반품하려는데 최종 수입 비용 정산서는 아직 없습니다. 상품 환급과 예치금 정산을 나누어 확인할 방법이 궁금합니다.,refund,account,inquiries-v2-refund-validation-007
+inquiries-v2-refund-validation-011-v2,반품 입고 확인 후 판매자가 창고에서 물건을 잃었다고 합니다. 입고 안내와 배송 완료 기록이 있는데 재발송 없이 환불 심사를 이어갈 수 있나요?,refund,shipping,inquiries-v2-refund-validation-011
+inquiries-v2-refund-validation-006-v1,온라인에서 결제한 상품을 안내받은 매장에 반품했고 인수 영수증도 받았습니다. 온라인 화면은 아직 미반환 상태입니다. 매장 인수 기록을 기존 환불 요청과 연결하는 확인 절차를 알려 주세요.,refund,account,inquiries-v2-refund-validation-006
+inquiries-v2-refund-validation-015-v1,하나의 세트가 두 상자로 나뉘어 왔고 마지막 구성품은 오늘 받았습니다. 세트 전체를 반품하려는데 화면에는 첫 상자 도착일만 있습니다. 구성품별 실제 수령일을 알려 접수 기준을 확인하고 싶습니다.,refund,account,inquiries-v2-refund-validation-015
+inquiries-v2-refund-validation-013-v2,제 돈으로 단체에 보낼 물건을 샀지만 기증이 취소됐습니다. 아직 출고 전인데 수령인이 아닌 구매자인 제가 취소하고 환급받을 수 있나요?,refund,shipping,inquiries-v2-refund-validation-013
+inquiries-v2-account-validation-002-v2,개인 기기와 공용 기기에서 같은 기기용 계정을 씁니다. 패스키 등록 전에 인증 수단이 다른 기기로 동기화되는 범위를 확인할 수 있나요?,account,shipping,inquiries-v2-account-validation-002
+inquiries-v2-refund-validation-014-v1,환불을 문의한 판매자는 주문 번호로 결제를 찾지 못하지만 결제대행 영수증에는 승인 번호가 있습니다. 상품은 받지 않았습니다. 새 결제를 만들지 않고 기존 거래를 대조해 취소를 요청할 경로가 궁금합니다.,refund,account,inquiries-v2-refund-validation-014
+inquiries-v2-refund-validation-012-v2,체험 종료 전에 해지했다는 확인을 받았는데 유료 요금이 나갔습니다. 재가입이나 다음 달 해지가 아니라 이번 청구를 되돌리고 싶습니다. 취소 시각과 체험 약정을 제출해 확인받는 방법을 알려 주세요.,refund,account,inquiries-v2-refund-validation-012
+inquiries-v2-refund-validation-002-v1,출장 중 가족이 받아 둔 상품을 오늘 확인했는데 수령 후 여드레가 지났습니다. 물건을 반품하고 싶은데 일반 접수 기간은 지난 것 같습니다. 실제 받은 날짜와 사유를 설명해 검토받을 수 있나요?,refund,account,inquiries-v2-refund-validation-002
+inquiries-v2-refund-validation-009-v1,반환받을 계좌의 예금주 이름이 구매 당시 이름과 달라 송금이 실패했다는 안내를 받았습니다. 이름 변경 사실을 공식 창구에서 확인받으려 합니다. 환불 건의 정보를 보완하는 안전한 경로를 알려 주세요.,refund,account,inquiries-v2-refund-validation-009
+inquiries-v2-refund-validation-019-v1,반품 회수가 끝난 뒤 처음 보지 못한 보관료 청구가 환불 내역에 생겼습니다. 사유와 발생 기간은 적혀 있지 않습니다. 바로 인정하기 전에 해당 비용의 근거와 환급에서 공제되는지 확인하고 싶습니다.,refund,account,inquiries-v2-refund-validation-019
+inquiries-v2-refund-validation-010-v2,일부 상품만 돌려보내려 했더니 함께 적용한 묶음 할인이 해제된다고 나옵니다. 나머지 품목을 유지할지 아직 정하지 않았습니다. 할인 재계산이 반영된 환급 내역을 먼저 확인할 수 있을까요?,refund,account,inquiries-v2-refund-validation-010
+inquiries-v2-account-validation-012-v2,모르는 회원의 정보 변경 알림이 제 메일로 와요. 그 계정에 들어가지 않고 연락처 오등록과 잘못된 메일 연결을 확인받을 수 있나요?,account,refund,inquiries-v2-account-validation-012
+inquiries-v2-refund-validation-008-v1,반품한 제품과 다른 물건이 도착했다는 연락을 받았습니다. 발송 직전에 본체 번호와 상자를 함께 찍은 사진이 있습니다. 환불을 포기하기 전에 제 발송 기록과 판매자 입고 기록의 대조를 요청하고 싶습니다.,refund,account,inquiries-v2-refund-validation-008
+inquiries-v2-refund-validation-005-v2,결제한 공간이 중복 예약됐고 제안받은 다른 시간에는 못 갑니다. 대체 이용 대신 예약을 취소하고 대여료를 돌려받으려면 어떻게 하나요?,refund,shipping,inquiries-v2-refund-validation-005
+inquiries-v2-refund-validation-004-v1,결제한 도안 파일을 내려받았지만 파일이 손상됐다는 오류로 열리지 않습니다. 다른 파일을 다시 받는 대신 구매 취소를 검토받고 싶습니다. 내려받기 기록만으로 사용한 것으로 보는지 오류 자료로 확인할 수 있나요?,refund,account,inquiries-v2-refund-validation-004
+inquiries-v2-refund-validation-016-v1,반품 불가 안내에 첨부된 사진의 제품 색상이 제가 보낸 제품과 다릅니다. 제 물건을 검수한 결과인지 모르겠습니다. 사진과 접수 번호가 맞게 연결됐는지 확인해 환불 심사를 이어가고 싶습니다.,refund,account,inquiries-v2-refund-validation-016
+inquiries-v2-account-validation-006-v2,여러 팀을 같은 회원으로 쓰는데 부르는 이름이 각각 달라요. 전체 프로필은 유지하면서 특정 팀 안에서만 다른 이름을 쓸 수 있나요?,account,shipping,inquiries-v2-account-validation-006
+inquiries-v2-refund-validation-001-v1,비회원으로 주문한 물건을 돌려보내고 싶은데 회원 주문 목록에는 거래가 없습니다. 구매 때 받은 이메일 영수증은 가지고 있습니다. 새 계정을 만드는 일보다 기존 비회원 거래의 환불 신청 경로가 궁금합니다.,refund,account,inquiries-v2-refund-validation-001

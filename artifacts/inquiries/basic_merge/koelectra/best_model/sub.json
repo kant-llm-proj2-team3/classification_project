@@ -1,0 +1,171 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261013_144829",
+  "generated_at": "2026-10-13 14:48:46",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_checkpointing": true,
+    "precision": "bfloat16",
+    "early_stopping_patience": 1,
+    "target_macro_f1": null,
+    "stop_reason": "최대 에폭(2) 도달",
+    "optimizer_steps_at_checkpoint": 166,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "sklearn": null
+  },
+  "data": {
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_csv": [
+      "dataset/inquiries/basic_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/inquiries/basic_merge/validation.csv"
+    ],
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0,
+      "test": 0
+    }
+  },
+  "validation_detail": {
+    "per_class": {
+      "shipping": {
+        "precision": 0.9866666666666667,
+        "recall": 1.0,
+        "f1-score": 0.9932885906040269,
+        "support": 74.0
+      },
+      "refund": {
+        "precision": 1.0,
+        "recall": 0.9594594594594594,
+        "f1-score": 0.9793103448275862,
+        "support": 74.0
+      },
+      "account": {
+        "precision": 0.972972972972973,
+        "recall": 1.0,
+        "f1-score": 0.9863013698630136,
+        "support": 72.0
+      },
+      "accuracy": 0.9863636363636363,
+      "macro avg": {
+        "precision": 0.9865465465465467,
+        "recall": 0.9864864864864865,
+        "f1-score": 0.9863001017648756,
+        "support": 220.0
+      },
+      "weighted avg": {
+        "precision": 0.9866699426699427,
+        "recall": 0.9863636363636363,
+        "f1-score": 0.9863000902367106,
+        "support": 220.0
+      }
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.9644827178030303,
+      "validation_loss": 0.6139559778300199,
+      "validation_accuracy": 0.9590909090909091,
+      "validation_macro_f1": 0.9584596540358671,
+      "optimizer_steps": 83,
+      "elapsed_seconds": 8.04363870000816
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.42282492897727275,
+      "validation_loss": 0.30085655857216226,
+      "validation_accuracy": 0.9863636363636363,
+      "validation_macro_f1": 0.9863001017648756,
+      "optimizer_steps": 166,
+      "elapsed_seconds": 16.397669099998893
+    }
+  ],
+  "training_summary": {
+    "model_key": "koelectra",
+    "model_id": "monologg/koelectra-small-v3-discriminator",
+    "run_name": "20261013_144829",
+    "learning_rate": 0.0001,
+    "best_epoch": 2,
+    "validation_macro_f1": 0.9863001017648756,
+    "validation_accuracy": 0.9863636363636363,
+    "validation_loss": 0.30085655857216226,
+    "train_seconds": 16.44565139999031,
+    "validation_inference_seconds": 0.31794429998262785,
+    "peak_gpu_memory_mb": 292.193359375,
+    "train_rows": 660,
+    "validation_rows": 220,
+    "epochs_run": 2,
+    "epochs_max": 2,
+    "stop_reason": "최대 에폭(2) 도달",
+    "num_parameters": 14122755,
+    "model_size_mb": 53.9
+  },
+  "run_config": {
+    "topic": "inquiries",
+    "dataset": "basic_merge",
+    "model_key": "koelectra",
+    "model_id": "monologg/koelectra-small-v3-discriminator",
+    "run_name": "20261013_144829",
+    "learning_rate": 0.0001,
+    "epochs_max": 2,
+    "early_stopping_patience": 1,
+    "target_macro_f1": null,
+    "score_stop": {
+      "enabled": true,
+      "min_accuracy": 1.0,
+      "min_macro_f1": 1.0,
+      "max_val_loss": 0.01,
+      "min_epochs": 3
+    },
+    "batch_size": 4,
+    "gradient_accumulation_steps": 2,
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0
+    },
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "seed": 42,
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_rows": 660,
+    "validation_rows": 220,
+    "train_csv": [
+      "dataset/inquiries/basic_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/inquiries/basic_merge/validation.csv"
+    ],
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "precision": "bfloat16",
+    "gradient_checkpointing": true,
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6"
+  }
+}

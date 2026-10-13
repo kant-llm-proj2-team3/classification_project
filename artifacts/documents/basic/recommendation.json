@@ -1,0 +1,19 @@
+{
+  "topic": "documents",
+  "dataset": "basic",
+  "recommended_model": "roberta",
+  "model_id": "klue/roberta-base",
+  "run_name": "20261013_145201",
+  "learning_rate": 3e-05,
+  "selection_rule": "각 모델 best_model 의 validation Macro-F1 (동점: validation loss, 그다음 학습 시간). test 점수는 사용하지 않음.",
+  "reason": "validation Macro-F1 0.9917로 1위 (koelectra 0.9833, 정확히 맞힌 문장 약 1건 차이 / validation 120건).",
+  "notes": [],
+  "validation_macro_f1": 0.991665364379851,
+  "compared_models": [
+    "roberta",
+    "koelectra",
+    "bert"
+  ],
+  "baseline_reference_validation_macro_f1": 0.9499687304565354,
+  "created_at": "2026-10-13 14:59:13"
+}

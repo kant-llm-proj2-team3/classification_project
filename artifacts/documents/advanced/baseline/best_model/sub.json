@@ -1,0 +1,131 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261013_145320",
+  "generated_at": "2026-10-13 14:53:21",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": null,
+    "truncation": null,
+    "head_tokens": null,
+    "weight_decay": null,
+    "warmup_ratio": null,
+    "gradient_checkpointing": null,
+    "precision": null,
+    "early_stopping_patience": null,
+    "target_macro_f1": null,
+    "stop_reason": null,
+    "optimizer_steps_at_checkpoint": null,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": null,
+    "gpu": null,
+    "python": null,
+    "torch": null,
+    "transformers": null,
+    "sklearn": "1.9.1"
+  },
+  "data": {
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "train_csv": [
+      "dataset/documents/advanced/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/documents/advanced/validation.csv"
+    ],
+    "truncated_rows": null
+  },
+  "validation_detail": {
+    "per_class": {
+      "announcement": {
+        "precision": 0.9375,
+        "recall": 0.75,
+        "f1-score": 0.8333333333333334,
+        "support": 20.0
+      },
+      "manual": {
+        "precision": 0.9444444444444444,
+        "recall": 0.85,
+        "f1-score": 0.8947368421052632,
+        "support": 20.0
+      },
+      "minutes": {
+        "precision": 0.7307692307692307,
+        "recall": 0.95,
+        "f1-score": 0.8260869565217391,
+        "support": 20.0
+      },
+      "accuracy": 0.85,
+      "macro avg": {
+        "precision": 0.8709045584045584,
+        "recall": 0.85,
+        "f1-score": 0.8513857106534451,
+        "support": 60.0
+      },
+      "weighted avg": {
+        "precision": 0.8709045584045583,
+        "recall": 0.85,
+        "f1-score": 0.8513857106534453,
+        "support": 60.0
+      }
+    }
+  },
+  "epochs": [],
+  "training_summary": {
+    "model_key": "baseline",
+    "model_id": "TF-IDF(char n-gram) + LogisticRegression",
+    "run_name": "20261013_145320",
+    "learning_rate": null,
+    "best_epoch": null,
+    "validation_macro_f1": 0.8513857106534451,
+    "validation_accuracy": 0.85,
+    "validation_loss": null,
+    "train_seconds": 0.5529264999786392,
+    "validation_inference_seconds": 0.05178840001462959,
+    "peak_gpu_memory_mb": null,
+    "train_rows": 180,
+    "validation_rows": 60,
+    "num_parameters": 417135,
+    "model_size_mb": 6.58
+  },
+  "run_config": {
+    "topic": "documents",
+    "dataset": "advanced",
+    "model_key": "baseline",
+    "run_name": "20261013_145320",
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "tfidf": {
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 1,
+      "sublinear_tf": true,
+      "max_features": null
+    },
+    "logistic_regression": {
+      "max_iter": 1000,
+      "class_weight": "balanced",
+      "random_state": 42
+    },
+    "seed": 42,
+    "train_rows": 180,
+    "validation_rows": 60,
+    "train_csv": [
+      "dataset/documents/advanced/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/documents/advanced/validation.csv"
+    ],
+    "sklearn": "1.9.1"
+  }
+}

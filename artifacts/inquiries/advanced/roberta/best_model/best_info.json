@@ -1,0 +1,48 @@
+{
+  "topic": "inquiries",
+  "dataset": "advanced",
+  "model_key": "roberta",
+  "selection_rule": "validation Macro-F1 이 높은 쪽, 동점이면 validation loss 가 낮은 쪽. 더 좋아졌을 때만 best_model 을 교체한다. (test 점수는 사용하지 않음)",
+  "best": {
+    "model_key": "roberta",
+    "model_id": "klue/roberta-base",
+    "run_name": "20261013_144859",
+    "learning_rate": 3e-05,
+    "best_epoch": 2,
+    "validation_macro_f1": 0.6384956384956385,
+    "validation_accuracy": 0.6666666666666666,
+    "validation_loss": 0.8729987184206645,
+    "train_seconds": 11.490780599997379,
+    "validation_inference_seconds": 0.8860785999859218,
+    "peak_gpu_memory_mb": 2175.94775390625,
+    "train_rows": 180,
+    "validation_rows": 60,
+    "epochs_run": 2,
+    "epochs_max": 2,
+    "stop_reason": "최대 에폭(2) 도달",
+    "num_parameters": 110620419,
+    "model_size_mb": 422.0
+  },
+  "last_run": {
+    "run_name": "20261013_144859",
+    "replaced_best": true,
+    "reason": "이 모델의 첫 결과라서 best_model 로 저장",
+    "validation_macro_f1": 0.6384956384956385,
+    "validation_loss": 0.8729987184206645
+  },
+  "previous_best": null,
+  "runs": [
+    {
+      "run_name": "20261013_144859",
+      "learning_rate": 3e-05,
+      "best_epoch": 2,
+      "validation_macro_f1": 0.6384956384956385,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_loss": 0.8729987184206645,
+      "train_seconds": 11.490780599997379,
+      "peak_gpu_memory_mb": 2175.94775390625,
+      "is_best": true
+    }
+  ],
+  "updated_at": "2026-10-13 14:49:11"
+}

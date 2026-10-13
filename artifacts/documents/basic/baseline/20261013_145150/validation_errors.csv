@@ -1,0 +1,12 @@
+﻿id,text,actual,predicted,group_id
+documents-v2-announcement-validation-012-v2,무거운 교구를 옮길 바퀴 달린 상자 세 개를 새로 마련했다. 이용자는 상자를 반납할 때 내부가 비었는지 확인한다. 상자에 표시된 적재 한도를 넘겨 싣지 않는다.,announcement,manual,documents-v2-announcement-validation-012
+documents-v2-announcement-validation-012-v1,"- 무거운 교구를 옮길 바퀴 달린 상자 세 개를 새로 마련했습니다.
+- 이용자는 상자를 반납할 때 내부가 비었는지 확인합니다.
+- 상자에 표시된 적재 한도를 넘겨 싣지 않습니다.",announcement,manual,documents-v2-announcement-validation-012
+documents-v2-manual-validation-020-v2,행사 뒤 들어온 질문은 답변할 담당이 정해진 건과 미배정 건으로 나눈다. 미배정 건은 담당 지정부터 요청한다. 접수되었다는 이유만으로 답변 완료로 표시하지 않는다.,manual,announcement,documents-v2-manual-validation-020
+documents-v2-manual-validation-020-v1,"- 행사 뒤 들어온 질문은 답변할 담당이 정해진 건과 미배정 건으로 나눕니다.
+- 미배정 건은 담당 지정부터 요청합니다.
+- 접수되었다는 이유만으로 답변 완료로 표시하지 않습니다.",manual,announcement,documents-v2-manual-validation-020
+documents-v2-announcement-validation-017-v1,작품 촬영 공간의 예약 확정 알림에 다음 주부터 색상 표식을 추가한다. 접수 상태와 확정 상태를 다른 색으로 표시한다. 색만 보지 말고 알림의 상태 문구도 함께 확인한다.,announcement,manual,documents-v2-announcement-validation-017
+documents-v2-announcement-validation-017-v2,"예약 확인 표식
+작품 촬영 공간의 예약 확정 알림에 다음 주부터 색상 표식을 추가합니다. 접수 상태와 확정 상태를 다른 색으로 표시합니다. 색만 보지 말고 알림의 상태 문구도 같이 확인합니다.",announcement,manual,documents-v2-announcement-validation-017

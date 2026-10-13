@@ -1,0 +1,156 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "roberta",
+  "model_id": "klue/roberta-base",
+  "topic": "inquiries",
+  "dataset": "basic",
+  "dataset_id": "inquiries/basic",
+  "run_id": "20261013_144728",
+  "train": {
+    "learning_rate": 3e-05,
+    "epochs_max": 2,
+    "epochs_run": 2,
+    "best_epoch": 1,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 360,
+    "validation_rows": 120,
+    "test_rows": 120
+  },
+  "validation": {
+    "n": 120,
+    "correct": 119,
+    "accuracy": 0.9916666666666667,
+    "macro_f1": 0.991665364379851,
+    "loss": 0.025337477152546247,
+    "per_label": {
+      "shipping": {
+        "correct": 39,
+        "n": 40,
+        "f1": 0.9873417721518988
+      },
+      "refund": {
+        "correct": 40,
+        "n": 40,
+        "f1": 0.9876543209876543
+      },
+      "account": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        39,
+        1,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "test": {
+    "n": 120,
+    "correct": 120,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "loss": null,
+    "per_label": {
+      "shipping": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "refund": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "account": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "test_meta": {
+    "official": false,
+    "evaluated_at": "2026-10-13 14:58:56"
+  },
+  "cost": {
+    "train_seconds": 10.622452899988275,
+    "validation_inference_seconds": 0.31035859999246895,
+    "test_inference_seconds": 0.219,
+    "peak_gpu_mb": 2132.15673828125,
+    "num_parameters": 110620419,
+    "model_size_mb": 422.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2
+    ],
+    "train_loss": [
+      0.545468,
+      0.013913
+    ],
+    "val_loss": [
+      0.025337,
+      0.026367
+    ],
+    "val_macro_f1": [
+      0.991665,
+      0.991665
+    ],
+    "val_correct": [
+      119,
+      119
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": "test_predictions.csv",
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

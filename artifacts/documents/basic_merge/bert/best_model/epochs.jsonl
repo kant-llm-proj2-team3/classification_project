@@ -1,0 +1,2 @@
+{"epoch": 1, "train_loss": 0.25368456985011245, "validation_loss": 0.054826930271122946, "validation_accuracy": 0.990909090909091, "validation_macro_f1": 0.9909893455098935, "optimizer_steps": 83, "elapsed_seconds": 9.401990899990778}
+{"epoch": 2, "train_loss": 0.0020812930482806582, "validation_loss": 0.05440801899372177, "validation_accuracy": 0.990909090909091, "validation_macro_f1": 0.9909893455098935, "optimizer_steps": 166, "elapsed_seconds": 18.974108800000977}

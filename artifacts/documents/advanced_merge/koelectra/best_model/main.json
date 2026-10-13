@@ -1,0 +1,156 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "koelectra",
+  "model_id": "monologg/koelectra-small-v3-discriminator",
+  "topic": "documents",
+  "dataset": "advanced_merge",
+  "dataset_id": "documents/advanced_merge",
+  "run_id": "20261013_145430",
+  "train": {
+    "learning_rate": 0.0001,
+    "epochs_max": 2,
+    "epochs_run": 2,
+    "best_epoch": 2,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 330,
+    "validation_rows": 111,
+    "test_rows": 111
+  },
+  "validation": {
+    "n": 111,
+    "correct": 86,
+    "accuracy": 0.7747747747747747,
+    "macro_f1": 0.754931176387115,
+    "loss": 0.799518922427753,
+    "per_label": {
+      "announcement": {
+        "correct": 33,
+        "n": 37,
+        "f1": 0.7586206896551724
+      },
+      "manual": {
+        "correct": 16,
+        "n": 37,
+        "f1": 0.5925925925925926
+      },
+      "minutes": {
+        "correct": 37,
+        "n": 37,
+        "f1": 0.9135802469135802
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        33,
+        1,
+        3
+      ],
+      [
+        17,
+        16,
+        4
+      ],
+      [
+        0,
+        0,
+        37
+      ]
+    ]
+  },
+  "test": {
+    "n": 111,
+    "correct": 85,
+    "accuracy": 0.7657657657657657,
+    "macro_f1": 0.7413273001508296,
+    "loss": null,
+    "per_label": {
+      "announcement": {
+        "correct": 33,
+        "n": 37,
+        "f1": 0.7764705882352941
+      },
+      "manual": {
+        "correct": 15,
+        "n": 37,
+        "f1": 0.5769230769230769
+      },
+      "minutes": {
+        "correct": 37,
+        "n": 37,
+        "f1": 0.8705882352941177
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        33,
+        0,
+        4
+      ],
+      [
+        15,
+        15,
+        7
+      ],
+      [
+        0,
+        0,
+        37
+      ]
+    ]
+  },
+  "test_meta": {
+    "official": false,
+    "evaluated_at": "2026-10-13 14:59:26"
+  },
+  "cost": {
+    "train_seconds": 9.827600499993423,
+    "validation_inference_seconds": 0.2637220000033267,
+    "test_inference_seconds": 0.276,
+    "peak_gpu_mb": 350.45654296875,
+    "num_parameters": 14122755,
+    "model_size_mb": 53.9
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2
+    ],
+    "train_loss": [
+      1.047727,
+      0.879025
+    ],
+    "val_loss": [
+      0.894698,
+      0.799519
+    ],
+    "val_macro_f1": [
+      0.553909,
+      0.754931
+    ],
+    "val_correct": [
+      73,
+      86
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": "test_predictions.csv",
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "baseline",
+  "model_id": "TF-IDF(char n-gram) + LogisticRegression",
+  "topic": "inquiries",
+  "dataset": "basic",
+  "dataset_id": "inquiries/basic",
+  "run_id": "20261013_144711",
+  "train": {
+    "analyzer": "char",
+    "ngram_range": [
+      2,
+      5
+    ],
+    "min_df": 1,
+    "sublinear_tf": true,
+    "max_iter": 1000,
+    "class_weight": "balanced"
+  },
+  "input": {
+    "train_rows": 360,
+    "validation_rows": 120,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 120,
+    "correct": 118,
+    "accuracy": 0.9833333333333333,
+    "macro_f1": 0.9833229101521784,
+    "loss": null,
+    "per_label": {
+      "shipping": {
+        "correct": 40,
+        "n": 40,
+        "f1": 0.975609756097561
+      },
+      "refund": {
+        "correct": 38,
+        "n": 40,
+        "f1": 0.9743589743589743
+      },
+      "account": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0
+      ],
+      [
+        2,
+        38,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 0.20480019997921772,
+    "validation_inference_seconds": 0.01179509999928996,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": null,
+    "num_parameters": 149196,
+    "model_size_mb": 2.29
+  },
+  "curve": null,
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

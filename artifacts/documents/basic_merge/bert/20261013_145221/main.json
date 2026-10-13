@@ -1,0 +1,108 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "bert",
+  "model_id": "klue/bert-base",
+  "topic": "documents",
+  "dataset": "basic_merge",
+  "dataset_id": "documents/basic_merge",
+  "run_id": "20261013_145221",
+  "train": {
+    "learning_rate": 3e-05,
+    "epochs_max": 2,
+    "epochs_run": 2,
+    "best_epoch": 2,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 660,
+    "validation_rows": 220,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 220,
+    "correct": 218,
+    "accuracy": 0.990909090909091,
+    "macro_f1": 0.9909893455098935,
+    "loss": 0.05440801899372177,
+    "per_label": {
+      "announcement": {
+        "correct": 72,
+        "n": 74,
+        "f1": 0.9863013698630136
+      },
+      "manual": {
+        "correct": 74,
+        "n": 74,
+        "f1": 0.9866666666666667
+      },
+      "minutes": {
+        "correct": 72,
+        "n": 72,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        72,
+        2,
+        0
+      ],
+      [
+        0,
+        74,
+        0
+      ],
+      [
+        0,
+        0,
+        72
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 19.23544079999556,
+    "validation_inference_seconds": 0.5679059000103734,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 2131.42333984375,
+    "num_parameters": 110619651,
+    "model_size_mb": 422.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2
+    ],
+    "train_loss": [
+      0.253685,
+      0.002081
+    ],
+    "val_loss": [
+      0.054827,
+      0.054408
+    ],
+    "val_macro_f1": [
+      0.990989,
+      0.990989
+    ],
+    "val_correct": [
+      218,
+      218
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

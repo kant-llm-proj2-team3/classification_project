@@ -1,0 +1,139 @@
+{
+  "topic": "documents",
+  "dataset": "total_merge",
+  "split": "test",
+  "selected_model": null,
+  "evaluated_model": "koelectra",
+  "official": null,
+  "selected_run": "20261013_145606",
+  "model_id": "monologg/koelectra-small-v3-discriminator",
+  "classifier": {
+    "n": 331,
+    "accuracy": 0.9486404833836858,
+    "macro_f1": 0.9482368713066047,
+    "per_class": {
+      "announcement": {
+        "precision": 0.9722222222222222,
+        "recall": 0.9459459459459459,
+        "f1-score": 0.958904109589041,
+        "support": 111.0
+      },
+      "manual": {
+        "precision": 0.9607843137254902,
+        "recall": 0.8990825688073395,
+        "f1-score": 0.9289099526066351,
+        "support": 109.0
+      },
+      "minutes": {
+        "precision": 0.9173553719008265,
+        "recall": 1.0,
+        "f1-score": 0.9568965517241379,
+        "support": 111.0
+      },
+      "accuracy": 0.9486404833836858,
+      "macro avg": {
+        "precision": 0.950120635949513,
+        "recall": 0.9483428382510951,
+        "f1-score": 0.9482368713066047,
+        "support": 331.0
+      },
+      "weighted avg": {
+        "precision": 0.9500562028511688,
+        "recall": 0.9486404833836858,
+        "f1-score": 0.9483536502715593,
+        "support": 331.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        105,
+        4,
+        2
+      ],
+      [
+        3,
+        98,
+        8
+      ],
+      [
+        0,
+        0,
+        111
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "announcement",
+        "manual",
+        "minutes"
+      ]
+    }
+  },
+  "baseline": {
+    "n": 331,
+    "accuracy": 0.9033232628398792,
+    "macro_f1": 0.9032271044583936,
+    "per_class": {
+      "announcement": {
+        "precision": 0.9428571428571428,
+        "recall": 0.8918918918918919,
+        "f1-score": 0.9166666666666666,
+        "support": 111.0
+      },
+      "manual": {
+        "precision": 0.8807339449541285,
+        "recall": 0.8807339449541285,
+        "f1-score": 0.8807339449541285,
+        "support": 109.0
+      },
+      "minutes": {
+        "precision": 0.8888888888888888,
+        "recall": 0.9369369369369369,
+        "f1-score": 0.9122807017543859,
+        "support": 111.0
+      },
+      "accuracy": 0.9033232628398792,
+      "macro avg": {
+        "precision": 0.9041599922333866,
+        "recall": 0.9031875912609858,
+        "f1-score": 0.9032271044583936,
+        "support": 331.0
+      },
+      "weighted avg": {
+        "precision": 0.9043015393468564,
+        "recall": 0.9033232628398792,
+        "f1-score": 0.9033630147877245,
+        "support": 331.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        99,
+        8,
+        4
+      ],
+      [
+        4,
+        96,
+        9
+      ],
+      [
+        2,
+        5,
+        104
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "announcement",
+        "manual",
+        "minutes"
+      ]
+    }
+  },
+  "baseline_run": "20261013_145440"
+}

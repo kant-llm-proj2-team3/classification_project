@@ -1,0 +1,2 @@
+﻿id,text,actual,predicted,group_id
+documents-v2-manual-validation-002-v1,건조가 필요한 작업물은 재료와 예상 건조 시간을 적어 선반을 예약합니다. 다른 작업물에 닿지 않을 간격을 확인합니다. 시간이 더 필요하면 만료 전에 다음 예약과 겹치는지 담당자에게 문의합니다.,manual,announcement,documents-v2-manual-validation-002

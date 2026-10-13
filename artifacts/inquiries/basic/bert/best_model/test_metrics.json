@@ -1,0 +1,139 @@
+{
+  "topic": "inquiries",
+  "dataset": "basic",
+  "split": "test",
+  "selected_model": "bert",
+  "evaluated_model": "bert",
+  "official": true,
+  "selected_run": "20261013_144714",
+  "model_id": "klue/bert-base",
+  "classifier": {
+    "n": 120,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "shipping": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "refund": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "account": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "shipping",
+        "refund",
+        "account"
+      ]
+    }
+  },
+  "baseline": {
+    "n": 120,
+    "accuracy": 0.9916666666666667,
+    "macro_f1": 0.991665364379851,
+    "per_class": {
+      "shipping": {
+        "precision": 1.0,
+        "recall": 0.975,
+        "f1-score": 0.9873417721518988,
+        "support": 40.0
+      },
+      "refund": {
+        "precision": 0.975609756097561,
+        "recall": 1.0,
+        "f1-score": 0.9876543209876543,
+        "support": 40.0
+      },
+      "account": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "accuracy": 0.9916666666666667,
+      "macro avg": {
+        "precision": 0.991869918699187,
+        "recall": 0.9916666666666667,
+        "f1-score": 0.991665364379851,
+        "support": 120.0
+      },
+      "weighted avg": {
+        "precision": 0.9918699186991871,
+        "recall": 0.9916666666666667,
+        "f1-score": 0.9916653643798511,
+        "support": 120.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        39,
+        1,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "shipping",
+        "refund",
+        "account"
+      ]
+    }
+  },
+  "baseline_run": "20261013_144711"
+}

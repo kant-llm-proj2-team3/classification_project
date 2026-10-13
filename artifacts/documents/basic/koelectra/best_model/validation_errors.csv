@@ -1,0 +1,5 @@
+﻿id,text,actual,predicted,group_id
+documents-v2-manual-validation-020-v2,행사 뒤 들어온 질문은 답변할 담당이 정해진 건과 미배정 건으로 나눈다. 미배정 건은 담당 지정부터 요청한다. 접수되었다는 이유만으로 답변 완료로 표시하지 않는다.,manual,announcement,documents-v2-manual-validation-020
+documents-v2-manual-validation-020-v1,"- 행사 뒤 들어온 질문은 답변할 담당이 정해진 건과 미배정 건으로 나눕니다.
+- 미배정 건은 담당 지정부터 요청합니다.
+- 접수되었다는 이유만으로 답변 완료로 표시하지 않습니다.",manual,announcement,documents-v2-manual-validation-020

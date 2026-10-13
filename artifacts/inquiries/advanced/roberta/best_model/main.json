@@ -1,0 +1,156 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "roberta",
+  "model_id": "klue/roberta-base",
+  "topic": "inquiries",
+  "dataset": "advanced",
+  "dataset_id": "inquiries/advanced",
+  "run_id": "20261013_144859",
+  "train": {
+    "learning_rate": 3e-05,
+    "epochs_max": 2,
+    "epochs_run": 2,
+    "best_epoch": 2,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 180,
+    "validation_rows": 60,
+    "test_rows": 60
+  },
+  "validation": {
+    "n": 60,
+    "correct": 40,
+    "accuracy": 0.6666666666666666,
+    "macro_f1": 0.6384956384956385,
+    "loss": 0.8729987184206645,
+    "per_label": {
+      "shipping": {
+        "correct": 14,
+        "n": 20,
+        "f1": 0.7567567567567568
+      },
+      "refund": {
+        "correct": 6,
+        "n": 20,
+        "f1": 0.4444444444444444
+      },
+      "account": {
+        "correct": 20,
+        "n": 20,
+        "f1": 0.7142857142857143
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        14,
+        1,
+        5
+      ],
+      [
+        3,
+        6,
+        11
+      ],
+      [
+        0,
+        0,
+        20
+      ]
+    ]
+  },
+  "test": {
+    "n": 60,
+    "correct": 40,
+    "accuracy": 0.6666666666666666,
+    "macro_f1": 0.6384956384956385,
+    "loss": null,
+    "per_label": {
+      "shipping": {
+        "correct": 14,
+        "n": 20,
+        "f1": 0.7567567567567568
+      },
+      "refund": {
+        "correct": 6,
+        "n": 20,
+        "f1": 0.4444444444444444
+      },
+      "account": {
+        "correct": 20,
+        "n": 20,
+        "f1": 0.7142857142857143
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        14,
+        1,
+        5
+      ],
+      [
+        3,
+        6,
+        11
+      ],
+      [
+        0,
+        0,
+        20
+      ]
+    ]
+  },
+  "test_meta": {
+    "official": false,
+    "evaluated_at": "2026-10-13 14:59:02"
+  },
+  "cost": {
+    "train_seconds": 11.490780599997379,
+    "validation_inference_seconds": 0.8860785999859218,
+    "test_inference_seconds": 0.843,
+    "peak_gpu_mb": 2175.94775390625,
+    "num_parameters": 110620419,
+    "model_size_mb": 422.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2
+    ],
+    "train_loss": [
+      1.118338,
+      0.989811
+    ],
+    "val_loss": [
+      1.058545,
+      0.872999
+    ],
+    "val_macro_f1": [
+      0.620085,
+      0.638496
+    ],
+    "val_correct": [
+      38,
+      40
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": "test_predictions.csv",
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

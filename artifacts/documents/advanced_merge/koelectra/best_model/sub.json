@@ -1,0 +1,171 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261013_145430",
+  "generated_at": "2026-10-13 14:54:40",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_checkpointing": true,
+    "precision": "bfloat16",
+    "early_stopping_patience": 1,
+    "target_macro_f1": null,
+    "stop_reason": "최대 에폭(2) 도달",
+    "optimizer_steps_at_checkpoint": 84,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "sklearn": null
+  },
+  "data": {
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "train_csv": [
+      "dataset/documents/advanced_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/documents/advanced_merge/validation.csv"
+    ],
+    "truncated_rows": {
+      "train": 90,
+      "validation": 29,
+      "test": 30
+    }
+  },
+  "validation_detail": {
+    "per_class": {
+      "announcement": {
+        "precision": 0.66,
+        "recall": 0.8918918918918919,
+        "f1-score": 0.7586206896551724,
+        "support": 37.0
+      },
+      "manual": {
+        "precision": 0.9411764705882353,
+        "recall": 0.43243243243243246,
+        "f1-score": 0.5925925925925926,
+        "support": 37.0
+      },
+      "minutes": {
+        "precision": 0.8409090909090909,
+        "recall": 1.0,
+        "f1-score": 0.9135802469135802,
+        "support": 37.0
+      },
+      "accuracy": 0.7747747747747747,
+      "macro avg": {
+        "precision": 0.8140285204991087,
+        "recall": 0.7747747747747749,
+        "f1-score": 0.754931176387115,
+        "support": 111.0
+      },
+      "weighted avg": {
+        "precision": 0.8140285204991088,
+        "recall": 0.7747747747747747,
+        "f1-score": 0.754931176387115,
+        "support": 111.0
+      }
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.0477272727272726,
+      "validation_loss": 0.8946980855486415,
+      "validation_accuracy": 0.6576576576576577,
+      "validation_macro_f1": 0.553908962051961,
+      "optimizer_steps": 42,
+      "elapsed_seconds": 4.76080180000281
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.8790246212121212,
+      "validation_loss": 0.799518922427753,
+      "validation_accuracy": 0.7747747747747747,
+      "validation_macro_f1": 0.754931176387115,
+      "optimizer_steps": 84,
+      "elapsed_seconds": 9.765228600008413
+    }
+  ],
+  "training_summary": {
+    "model_key": "koelectra",
+    "model_id": "monologg/koelectra-small-v3-discriminator",
+    "run_name": "20261013_145430",
+    "learning_rate": 0.0001,
+    "best_epoch": 2,
+    "validation_macro_f1": 0.754931176387115,
+    "validation_accuracy": 0.7747747747747747,
+    "validation_loss": 0.799518922427753,
+    "train_seconds": 9.827600499993423,
+    "validation_inference_seconds": 0.2637220000033267,
+    "peak_gpu_memory_mb": 350.45654296875,
+    "train_rows": 330,
+    "validation_rows": 111,
+    "epochs_run": 2,
+    "epochs_max": 2,
+    "stop_reason": "최대 에폭(2) 도달",
+    "num_parameters": 14122755,
+    "model_size_mb": 53.9
+  },
+  "run_config": {
+    "topic": "documents",
+    "dataset": "advanced_merge",
+    "model_key": "koelectra",
+    "model_id": "monologg/koelectra-small-v3-discriminator",
+    "run_name": "20261013_145430",
+    "learning_rate": 0.0001,
+    "epochs_max": 2,
+    "early_stopping_patience": 1,
+    "target_macro_f1": null,
+    "score_stop": {
+      "enabled": true,
+      "min_accuracy": 1.0,
+      "min_macro_f1": 1.0,
+      "max_val_loss": 0.01,
+      "min_epochs": 3
+    },
+    "batch_size": 4,
+    "gradient_accumulation_steps": 2,
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,
+    "truncated_rows": {
+      "train": 90,
+      "validation": 29
+    },
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "seed": 42,
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "train_rows": 330,
+    "validation_rows": 111,
+    "train_csv": [
+      "dataset/documents/advanced_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/documents/advanced_merge/validation.csv"
+    ],
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "precision": "bfloat16",
+    "gradient_checkpointing": true,
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6"
+  }
+}
