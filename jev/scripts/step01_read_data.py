@@ -21,7 +21,6 @@ PREVIEW_ROWS = 3
 
 # 파일을 읽어오는 함수
 def read_rows(path: Path) -> list[dict[str, Any]]:
-    print(path)
     rows = []
     with Path(path).open(encoding="utf-8-sig") as stream:
         for number, line in enumerate(stream, start=1):
