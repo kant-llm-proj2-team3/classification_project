@@ -28,4 +28,4 @@ OUTPUT_ROOT = ROOT / "artifacts"
 JEV_MODEL = os.getenv("JEV_MODEL", "jev-1.13.0")
 MAX_OUTPUT_TOKENS = int(os.getenv("MAX_OUTPUT_TOKENS", "512"))
 TIMEOUT_SECONDS = float(os.getenv("GENERATION_TIMEOUT_SECONDS", "120"))
-MAX_INTPUT_CHARS = int(os.getenv("MAX_INPUT_CHARS", "4000"))
+MAX_INPUT_CHARS = int(os.getenv("MAX_INPUT_CHARS", "4000"))

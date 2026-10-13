@@ -11,13 +11,13 @@ def extract_path(topic, advanced, extended):
         raise ValueError(f"유효하지 않는 주제: {topic}")
 
     if advanced:
-        next = "advanced"
+        next_path_str = "advanced"
     else:
-        next = "basic"
+        next_path_str = "basic"
 
     if extended:
-        next += "_merge"
+        next_path_str += "_merge"
 
-    path = path / next
+    path = path / next_path_str
 
     return path
