@@ -1,0 +1,241 @@
+﻿id,text,label,group_id,source
+documents-v2-manual-validation-015-v2,시험 인쇄를 모을 때에는 내용 오류와 장비 인쇄 불량을 다른 묶음으로 나눕니다. 같은 오류가 여러 장에 반복되면 대표 한 장과 수량을 남깁니다. 원인 확인 전에는 두 오류를 하나의 문제로 집계하지 않습니다.,manual,documents-v2-manual-validation-015,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-004-v2,점토를 여러 팀에 나눌 때에는 사용할 용기의 무게를 제외한다. 팀별 요청량을 같은 단위로 맞춘 뒤 소분한다. 요청보다 적게 준 경우 실제 지급량을 따로 적는다.,manual,documents-v2-manual-validation-004,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-002-v2,"- 서로 다른 부서가 같은 소모품을 따로 보관하는 상황을 확인했다.
+- 공통으로 쓰는 두 품목만 한곳에서 관리하기로 했다.
+- 부서 전용 물품까지 합치는 안은 선택하지 않았다.",minutes,documents-v2-minutes-validation-002,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-019-v2,오래된 음반을 보관하는 수장 구역의 온도를 이번 주에 조정합니다. 작업 중에는 해당 구역의 방문 열람을 잠시 받지 않습니다. 일반 자료실 열람과 온라인 검색은 계속 운영합니다.,announcement,documents-v2-announcement-validation-019,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-020-v2,마을 기록 수집의 취지를 설명하는 자리를 일요일 오후에 마련한다. 자료 기증을 정하지 않은 주민도 참석할 수 있다. 설명회 참석은 기증 의사 표시로 기록하지 않는다.,announcement,documents-v2-announcement-validation-020,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-014-v2,"- 전시 교대 때에는 위치를 바꾼 작품 번호와 새 위치를 전달한다.
+- 다음 담당자가 현장에서 작품을 확인한 뒤 인계표를 닫는다.
+- 위치가 확인되지 않은 작품은 인계 완료로 표시하지 않는다.",manual,documents-v2-manual-validation-014,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-004-v1,"- 소규모 대화 행사에 관람객을 얼마나 받을지 의견이 갈렸습니다.
+- 첫 회차는 신청한 참가자만 받고 공개 관람은 보류했습니다.
+- 진행 담당이 공간 수용 범위를 확인한 뒤 재논의하기로 했습니다.",minutes,documents-v2-minutes-validation-004,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-018-v2,"- 행사가 끝난 뒤 상담 줄이 길어지는 상황을 살펴봤다.
+- 짧은 확인 질문은 현장에서 받고 긴 상담은 별도 시간을 안내하기로 했다.
+- 별도 상담 날짜는 아직 정하지 않았다.",minutes,documents-v2-minutes-validation-018,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-002-v1,작은 생활 도구의 수리 상담을 11월 18일 오후에 진행합니다. 전원을 사용하는 제품은 상담 대상으로 받지 않습니다. 상담 결과에 따라 수리가 불가능할 수도 있습니다.,announcement,documents-v2-announcement-validation-002,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-009-v2,"시편 보관 범위
+실험 재료 시편을 얼마나 오래 둘지 의논했습니다. 비교에 사용하는 대표 시편과 참고 사진을 우선 남기기로 했습니다. 보관 기한은 재료 상태와 저장 공간을 확인한 뒤 정하기로 했습니다.",minutes,documents-v2-minutes-validation-009,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-001-v2,"대기 작품 냉방
+접착 중인 모형 작품을 보관하는 건조실은 다음 주에 낮은 풍량으로 운영합니다. 작업자는 건조 예상 시간을 한 번 더 확인합니다. 재료별 완성 시점을 운영실에서 일괄 보장하지는 않습니다.",announcement,documents-v2-announcement-validation-001,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-018-v1,행사가 끝난 뒤 상담 줄이 길어지는 상황을 검토했습니다. 짧은 확인 질문은 현장에서 받고 긴 상담은 별도 시간을 안내하기로 했습니다. 별도 상담 날짜는 아직 정하지 않았습니다.,minutes,documents-v2-minutes-validation-018,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-007-v1,"완성 기준 합의
+- 활동을 어디까지 마치면 완료로 볼지 진행자 의견을 나눴다.
+- 기본 기능이 동작하면 완료로 기록하고 장식은 선택으로 두기로 했다.
+- 다음 회차 안내문에도 두 범위를 구분해 적기로 했다.",minutes,documents-v2-minutes-validation-007,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-016-v2,외부 모임에 보낼 교류 소포를 11월 26일까지 모은다. 각 꾸러미에는 보낸 팀 이름과 내용물 목록을 붙인다. 파손 가능성이 큰 물품은 이번 공동 발송에서 제외한다.,announcement,documents-v2-announcement-validation-016,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-009-v1,12월부터 저녁 9시 이후 마감 작업이 필요한 팀은 당일 오후에 이용 인원을 알린다. 별도 승인 대상인 공구 작업은 기존 절차를 유지한다. 인원 신고만으로 공구 사용을 승인하지 않는다.,announcement,documents-v2-announcement-validation-009,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-012-v2,무거운 교구를 옮길 바퀴 달린 상자 세 개를 새로 마련했다. 이용자는 상자를 반납할 때 내부가 비었는지 확인한다. 상자에 표시된 적재 한도를 넘겨 싣지 않는다.,announcement,documents-v2-announcement-validation-012,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-007-v1,"안내 책자 오기
+- 신규 이용 안내 책자의 물품 대여 전화번호에 오기가 확인되었다.
+- 수정 번호는 오늘 배부하는 정정표에서 확인할 수 있다.
+- 책자에 적힌 운영 시간에는 변경이 없다.",announcement,documents-v2-announcement-validation-007,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-010-v2,"- 새 교구의 모의 운영에 참여할 진행자 여섯 명을 모집한다.
+- 이번에는 사용 경험이 없는 사람의 의견을 우선 받는다.
+- 모의 운영의 평가 결과는 개인 성적에 반영하지 않는다.",announcement,documents-v2-announcement-validation-010,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-008-v2,협력처에 보낸 자료가 여러 상자로 나뉘어 일부만 확인된 사례를 살펴봤다. 발송 안내에 전체 상자 수를 함께 적기로 했다. 수령 확인 담당은 각 협력처와 다시 정하기로 했다.,minutes,documents-v2-minutes-validation-008,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-006-v1,세워 운송해야 하는 모형은 바른 방향을 확인한 뒤 상자 양면에 표시합니다. 뚜껑에만 표시하면 쌓았을 때 가려질 수 있으므로 옆면도 확인합니다. 실제 포장된 방향과 표시가 같은지 대조합니다.,manual,documents-v2-manual-validation-006,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-014-v1,방문자와 나눈 대화를 기록할 때 필요한 범위를 검토했습니다. 전시 이해에 관한 의견만 익명으로 정리하기로 했습니다. 방문 목적이나 개인 배경을 필수로 묻는 제안은 채택하지 않았습니다.,minutes,documents-v2-minutes-validation-014,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-011-v2,전시 자료 중 복제본에는 다음 주부터 회색 표식을 붙입니다. 원본의 표기 방식은 변경 없이 유지합니다. 이전에 배부한 안내 카드도 표식 설명에 맞춰 고칩니다.,announcement,documents-v2-announcement-validation-011,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-004-v1,"- 점토를 여러 팀에 나눌 때에는 사용할 용기의 무게를 제외합니다.
+- 팀별 요청량을 같은 단위로 맞춘 뒤 소분합니다.
+- 요청보다 적게 준 경우 실제 지급량을 별도로 적습니다.",manual,documents-v2-manual-validation-004,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-013-v1,음향 조정 요청이 여러 경로로 전달되는 문제를 확인했다. 행사 중 요청을 모아 전달할 담당 한 명을 두기로 했다. 장비를 직접 만질 권한까지 모두에게 주지는 않기로 했다.,minutes,documents-v2-minutes-validation-013,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-005-v1,인쇄 자료의 오류를 페이지마다 따로 알리는 불편을 검토했다. 한 장의 정오표에 오류 위치와 수정 내용을 모으기로 했다. 수정이 필요 없는 본문을 다시 인쇄하지 않기로 했다.,minutes,documents-v2-minutes-validation-005,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-013-v2,"여름 기록집 인수
+여름 프로그램 기록집은 다음 주부터 팀 대표가 묶음으로 수령합니다. 개인 배송을 신청한 사람은 대표 수령 수량에서 제외합니다. 중복 수령 여부가 확인되지 않으면 배부를 보류합니다.",announcement,documents-v2-announcement-validation-013,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-001-v1,활동 시작 전에 질문을 모두 보여 줄지 검토했다. 첫 관찰은 자유롭게 하고 이후 공통 질문을 주기로 했다. 질문 공개 전후의 의견 차이를 진행자가 기록하기로 했다.,minutes,documents-v2-minutes-validation-001,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-018-v2,"- 지역 만들기 전시의 출품작은 모두 관람용으로만 전시한다.
+- 구매 문의는 작가의 공개 연락처가 있는 경우에만 전달한다.
+- 운영실은 작품 판매 계약을 대신 체결하지 않는다.",announcement,documents-v2-announcement-validation-018,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-003-v2,책상을 이동한 뒤에는 실제 위치를 먼저 재고 배치도에 반영합니다. 출입문이 열리는 범위는 빈 공간으로 남깁니다. 수정본을 현장과 대조한 뒤 이전 배치도와 구분해 보관합니다.,manual,documents-v2-manual-validation-003,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-016-v2,협력 모임에 보낼 사례 자료를 살펴봤다. 완성도가 높은 사례와 수정 과정이 잘 드러난 사례를 각각 하나씩 고르기로 했다. 자료 담당이 작성자의 공개 동의부터 확인하기로 했다.,minutes,documents-v2-minutes-validation-016,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-008-v1,"- 협력처에 보낸 자료가 여러 상자로 나뉘어 일부만 확인된 사례를 검토했습니다.
+- 발송 안내에 전체 상자 수를 함께 적기로 했습니다.
+- 수령 확인 담당은 각 협력처와 다시 정하기로 했습니다.",minutes,documents-v2-minutes-validation-008,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-011-v1,"복제 자료 구분
+- 전시 자료 중 복제본에는 다음 주부터 회색 표식을 붙인다.
+- 원본의 표기 방식은 그대로 유지한다.
+- 이전에 배부한 안내 카드도 표식 설명에 맞춰 고친다.",announcement,documents-v2-announcement-validation-011,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-007-v2,신규 이용 안내 책자의 물품 대여 전화번호에 오기가 확인되었습니다. 수정 번호는 오늘 배부하는 정정표에서 확인할 수 있습니다. 책자에 적힌 운영 시간에는 변경이 없습니다.,announcement,documents-v2-announcement-validation-007,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-003-v1,"공연 대본 교환
+- 공연 연습용 대본의 수정판을 목요일부터 배부한다.
+- 이전 판의 4장과 5장만 바뀌었으며 나머지 장면 번호는 같다.
+- 이전 대본은 교환할 때 가져오지 않아도 된다.",announcement,documents-v2-announcement-validation-003,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-005-v1,공개 글의 일부를 활동 자료에 넣으려면 이용 가능한 범위를 먼저 확인한다. 인용한 구절과 작성자 및 출처를 함께 기록한다. 출처를 찾지 못한 문장은 사실로 확정해 배포하지 않는다.,manual,documents-v2-manual-validation-005,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-009-v1,실험 재료 시편을 얼마나 오래 둘지 논의했다. 비교에 사용하는 대표 시편과 참고 사진을 우선 남기기로 했다. 보관 기한은 재료 상태와 저장 공간을 확인한 뒤 정하기로 했다.,minutes,documents-v2-minutes-validation-009,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-019-v1,"관찰 장소 간격
+- 관찰 활동의 지점 사이가 멀어 이동 부담이 크다는 의견이 있었다.
+- 모든 지점을 유지하는 대신 기본 경로와 선택 경로를 나누기로 했다.
+- 경로별 소요 시간은 답사 뒤 안내하기로 했다.",minutes,documents-v2-minutes-validation-019,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-018-v1,재료 견본을 돌려보기 전에 깨지기 쉬운 부분을 확인합니다. 손으로 만지지 않을 부분은 받침 위에서 가리켜 설명합니다. 관찰 뒤 상태가 달라졌다면 처음 상태와 구분해 기록합니다.,manual,documents-v2-manual-validation-018,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-016-v2,협력처 물품에 인수 표식을 붙일 때에는 제거 가능한 재질인지 먼저 확인한다. 원래 관리 번호를 가리지 않는 곳에 붙인다. 표면 손상이 우려되면 물품 대신 보관 봉투에 표시한다.,manual,documents-v2-manual-validation-016,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-004-v2,소규모 대화 행사에 관람객을 얼마나 받을지 의견이 갈렸다. 첫 회차는 신청한 참가자만 받고 공개 관람은 보류했다. 진행 담당이 공간 수용 범위를 확인한 뒤 재논의하기로 했다.,minutes,documents-v2-minutes-validation-004,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-020-v2,여러 사람이 수정한 기록의 작성자 표시를 의논했다. 최초 작성자와 후속 검토자를 따로 남기는 안을 채택했다. 수정 횟수만으로 기여 순서를 매기는 방식은 사용하지 않기로 했다.,minutes,documents-v2-minutes-validation-020,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-020-v1,"- 마을 기록 수집의 취지를 설명하는 자리를 일요일 오후에 마련합니다.
+- 자료 기증을 정하지 않은 주민도 참석할 수 있습니다.
+- 설명회 참석은 기증 의사 표시로 기록하지 않습니다.",announcement,documents-v2-announcement-validation-020,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-001-v2,"관찰 주머니 배부
+작은 관찰 주머니를 배부하기 전에 내용물을 평평한 곳에 펼쳐 목록과 대조합니다. 뾰족한 조각이 섞였으면 해당 주머니만 분리합니다. 점검한 주머니에 확인 표시를 남긴 뒤 전달합니다.",manual,documents-v2-manual-validation-001,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-007-v1,"예약 명의 이전
+- 예약자가 참석하지 못해 명의를 옮기려면 원래 예약자의 요청부터 확인한다.
+- 새 이용자가 같은 이용 조건을 충족하는지 담당자가 확인한다.
+- 이름을 고친 뒤 원래 예약자에게 변경 결과를 알린다.",manual,documents-v2-manual-validation-007,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-014-v1,12월 체험에서는 분진이 많은 개인 재료의 반입을 제한합니다. 이미 구입한 재료는 사용 가능 여부를 행사 전에 문의할 수 있습니다. 제한 대상의 예시는 신청 안내에 덧붙였습니다.,announcement,documents-v2-announcement-validation-014,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-012-v1,"- 처음 온 참가자가 역할을 묻는 일이 반복된다는 의견이 나왔습니다.
+- 각 역할에 필요한 첫 행동을 작은 카드에 적기로 했습니다.
+- 카드를 누구에게 배부할지는 다음 모임에서 확인하기로 했습니다.",minutes,documents-v2-minutes-validation-012,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-009-v2,"음량 기준 기록
+같은 장소에서 재생 음량을 비교하려면 기기 설정과 측정 위치를 고정합니다. 파일을 바꿔도 기기 음량을 마음대로 조절하지 않습니다. 조건이 바뀐 측정은 같은 비교 묶음에 합치지 않습니다.",manual,documents-v2-manual-validation-009,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-011-v1,"공연 소품 대조
+- 공연 소품을 꺼낼 때에는 장면 번호별 목록과 실물을 대조한다.
+- 여러 장면에 쓰는 물품은 이동 담당을 적는다.
+- 소품이 없는 장면은 임의 대체하지 않고 연출 담당에게 확인한다.",manual,documents-v2-manual-validation-011,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-010-v1,새 교구의 모의 운영에 참여할 진행자 여섯 명을 모집합니다. 이번에는 사용 경험이 없는 사람의 의견을 우선 받습니다. 모의 운영의 평가 결과는 개인 성적에 반영하지 않습니다.,announcement,documents-v2-announcement-validation-010,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-006-v2,"- 지역 돌과 흙의 관찰 표본을 참여 모임에 한 주씩 대여한다.
+- 가루가 떨어지는 표본은 밀폐 상자를 열지 않은 채 관찰한다.
+- 대여 신청은 모임별 담당자 한 명이 제출한다.",announcement,documents-v2-announcement-validation-006,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-018-v1,지역 만들기 전시의 출품작은 모두 관람용으로만 전시합니다. 구매 문의는 작가의 공개 연락처가 있는 경우에만 전달합니다. 운영실은 작품 판매 계약을 대신 체결하지 않습니다.,announcement,documents-v2-announcement-validation-018,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-011-v2,심사위원이 소속된 모임의 작품도 출품된 사실을 확인했습니다. 해당 위원은 그 작품의 채점과 토론에서 빠지고 다른 작품의 심사에는 참여하기로 했습니다. 출품 자체를 취소하자는 의견은 선택하지 않았습니다.,minutes,documents-v2-minutes-validation-011,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-001-v1,접착 중인 모형 작품을 보관하는 건조실은 다음 주에 낮은 풍량으로 운영한다. 작업자는 건조 예상 시간을 다시 확인한다. 재료별 완성 시점을 운영실에서 일괄 보장하지는 않는다.,announcement,documents-v2-announcement-validation-001,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-012-v1,"- 무거운 교구를 옮길 바퀴 달린 상자 세 개를 새로 마련했습니다.
+- 이용자는 상자를 반납할 때 내부가 비었는지 확인합니다.
+- 상자에 표시된 적재 한도를 넘겨 싣지 않습니다.",announcement,documents-v2-announcement-validation-012,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-020-v2,행사 뒤 들어온 질문은 답변할 담당이 정해진 건과 미배정 건으로 나눈다. 미배정 건은 담당 지정부터 요청한다. 접수되었다는 이유만으로 답변 완료로 표시하지 않는다.,manual,documents-v2-manual-validation-020,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-003-v1,"협력처 설명 순서
+- 여러 협력처가 각자 기관 소개를 길게 하는 문제를 논의했다.
+- 다음 교류에서는 공동 활동 사례부터 설명하기로 했다.
+- 기관별 자세한 소개는 별도 자료로 제공하기로 했다.",minutes,documents-v2-minutes-validation-003,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-009-v1,같은 장소에서 재생 음량을 비교하려면 기기 설정과 측정 위치를 고정한다. 파일을 바꿔도 기기 음량을 임의로 조절하지 않는다. 조건이 바뀐 측정은 같은 비교 묶음에 합치지 않는다.,manual,documents-v2-manual-validation-009,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-003-v1,"비품 배치도 수정
+- 책상을 이동한 뒤에는 실제 위치를 먼저 재고 배치도에 반영한다.
+- 출입문이 열리는 범위는 빈 공간으로 남긴다.
+- 수정본을 현장과 대조한 뒤 이전 배치도와 구분해 보관한다.",manual,documents-v2-manual-validation-003,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-013-v2,"재료 이름 통일
+팀별 재료 목록을 모을 때에는 약어의 뜻을 작성자에게 확인합니다. 같은 재료로 확인된 이름만 대표 이름에 연결합니다. 뜻을 모르는 약어를 비슷한 이름으로 임의 통일하지 않습니다.",manual,documents-v2-manual-validation-013,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-017-v1,읽기 모임 자료를 줄일 때에는 토론 질문에 필요한 문단을 먼저 고른다. 문단 사이를 생략한 곳은 생략 표시를 남긴다. 서로 떨어진 문장을 이어 저자의 한 문장처럼 보이게 만들지 않는다.,manual,documents-v2-manual-validation-017,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-005-v2,"자료 정오표 방식
+인쇄 자료의 오류를 페이지마다 따로 알리는 불편을 살펴봤습니다. 한 장의 정오표에 오류 위치와 수정 내용을 모으기로 했습니다. 수정이 필요 없는 본문을 다시 인쇄하지 않기로 했습니다.",minutes,documents-v2-minutes-validation-005,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-010-v2,"- 모형을 붙이기 전에는 접합면을 맞대어 위치가 맞는지 확인한다.
+- 맞지 않으면 접착제를 바르기 전에 모양을 조정한다.
+- 붙인 뒤에는 재료 안내에 적힌 고정 시간을 지킨다.",manual,documents-v2-manual-validation-010,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-004-v1,"- 공동 일지의 개인 경험 부분은 작성자의 열람 동의를 받은 뒤 공개합니다.
+- 동의 요청은 다음 주에 개별 전달합니다.
+- 응답하지 않았다는 이유만으로 공개에 동의한 것으로 처리하지 않습니다.",announcement,documents-v2-announcement-validation-004,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-007-v2,예약자가 참석하지 못해 명의를 옮기려면 원래 예약자의 요청부터 확인합니다. 새 이용자가 같은 이용 조건을 충족하는지 담당자가 확인합니다. 이름을 고친 뒤 원래 예약자에게 변경 결과를 알립니다.,manual,documents-v2-manual-validation-007,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-019-v1,"행사 시간 합산
+- 진행표를 계산할 때에는 활동 시간에 이동과 정리 시간을 따로 더한다.
+- 동시에 진행하는 구간은 두 번 합산하지 않는다.
+- 합산한 시간으로 종료 시각을 계산하고 예정표와 맞는지 확인한 뒤 안내한다.",manual,documents-v2-manual-validation-019,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-020-v1,"- 행사 뒤 들어온 질문은 답변할 담당이 정해진 건과 미배정 건으로 나눕니다.
+- 미배정 건은 담당 지정부터 요청합니다.
+- 접수되었다는 이유만으로 답변 완료로 표시하지 않습니다.",manual,documents-v2-manual-validation-020,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-012-v2,처음 온 참가자가 역할을 묻는 일이 반복된다는 의견이 나왔다. 각 역할에 필요한 첫 행동을 작은 카드에 적기로 했다. 카드를 누구에게 배부할지는 다음 모임에서 확인하기로 했다.,minutes,documents-v2-minutes-validation-012,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-010-v1,서로 다른 활동이 같은 약칭으로 안내된 사실을 확인했습니다. 신청 화면에는 약칭 대신 목적이 드러나는 긴 이름을 쓰기로 했습니다. 내부 문서의 약칭 변경은 당장 진행하지 않기로 했습니다.,minutes,documents-v2-minutes-validation-010,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-019-v2,진행표를 계산할 때에는 활동 시간에 이동과 정리 시간을 따로 더합니다. 동시에 진행하는 구간은 두 번 합산하지 않습니다. 합산한 시간으로 종료 시각을 계산하고 예정표와 맞는지 확인한 뒤 안내합니다.,manual,documents-v2-manual-validation-019,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-003-v2,여러 협력처가 각자 기관 소개를 길게 하는 문제를 의논했습니다. 다음 교류에서는 공동 활동 사례부터 설명하기로 했습니다. 기관별 자세한 소개는 별도 자료로 제공하기로 했습니다.,minutes,documents-v2-minutes-validation-003,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-002-v2,"- 건조가 필요한 작업물은 재료와 예상 건조 시간을 적어 선반을 예약한다.
+- 다른 작업물에 닿지 않을 간격을 확인한다.
+- 시간이 더 필요하면 만료 전에 다음 예약과 겹치는지 담당자에게 문의한다.",manual,documents-v2-manual-validation-002,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-015-v1,"불량 인쇄 분리
+- 시험 인쇄를 모을 때에는 내용 오류와 장비 인쇄 불량을 다른 묶음으로 나눈다.
+- 같은 오류가 여러 장에 반복되면 대표 한 장과 수량을 남긴다.
+- 원인 확인 전에는 두 오류를 하나의 문제로 집계하지 않는다.",manual,documents-v2-manual-validation-015,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-011-v2,공연 소품을 꺼낼 때에는 장면 번호별 목록과 실물을 대조합니다. 여러 장면에 쓰는 물품은 이동 담당을 적습니다. 소품이 없는 장면은 임의 대체하지 않고 연출 담당에게 확인합니다.,manual,documents-v2-manual-validation-011,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-006-v2,"- 세워 운송해야 하는 모형은 바른 방향을 확인한 뒤 상자 양면에 표시한다.
+- 뚜껑에만 표시하면 쌓았을 때 가려질 수 있으므로 옆면도 확인한다.
+- 실제 포장된 방향과 표시가 같은지 대조한다.",manual,documents-v2-manual-validation-006,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-003-v2,공연 연습용 대본의 수정판을 목요일부터 배부합니다. 이전 판의 4장과 5장만 바뀌었으며 나머지 장면 번호는 같습니다. 이전 대본은 교환할 때 가져오지 않아도 됩니다.,announcement,documents-v2-announcement-validation-003,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-015-v2,준비가 늦어진 팀을 돕기 위한 일정 공개 방식을 의논했습니다. 팀별 미완료 항목 대신 도움이 필요한 작업만 공유하기로 했습니다. 개인의 작업 속도를 비교하는 표는 만들지 않기로 했습니다.,minutes,documents-v2-minutes-validation-015,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-017-v1,작품 촬영 공간의 예약 확정 알림에 다음 주부터 색상 표식을 추가한다. 접수 상태와 확정 상태를 다른 색으로 표시한다. 색만 보지 말고 알림의 상태 문구도 함께 확인한다.,announcement,documents-v2-announcement-validation-017,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-002-v2,"- 작은 생활 도구의 수리 상담을 11월 18일 오후에 진행한다.
+- 전원을 사용하는 제품은 상담 대상으로 받지 않는다.
+- 상담 결과에 따라 수리가 불가능할 수도 있다.",announcement,documents-v2-announcement-validation-002,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-016-v1,"- 외부 모임에 보낼 교류 소포를 11월 26일까지 모읍니다.
+- 각 꾸러미에는 보낸 팀 이름과 내용물 목록을 붙입니다.
+- 파손 가능성이 큰 물품은 이번 공동 발송에서 제외합니다.",announcement,documents-v2-announcement-validation-016,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-017-v1,공용 상자의 임시 라벨이 쉽게 떨어진다는 현장 의견을 들었다. 글씨 크기를 바꾸기 전에 부착 재질 두 가지를 시험하기로 했다. 시험 중에는 기존 관리 번호도 함께 유지하기로 했다.,minutes,documents-v2-minutes-validation-017,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-012-v1,"- 체험 신청의 동반인 수를 고치려면 접수 번호로 원래 신청을 찾습니다.
+- 바꿀 인원과 함께 필요한 준비물 수량도 확인합니다.
+- 수정 결과를 확인한 뒤 같은 사람의 새 신청을 중복으로 만들지 않습니다.",manual,documents-v2-manual-validation-012,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-013-v1,팀별 재료 목록을 모을 때에는 약어의 뜻을 작성자에게 확인한다. 같은 재료로 확인된 이름만 대표 이름에 연결한다. 뜻을 모르는 약어를 비슷한 이름으로 임의 통일하지 않는다.,manual,documents-v2-manual-validation-013,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-018-v2,"- 재료 견본을 돌려보기 전에 깨지기 쉬운 부분을 확인한다.
+- 손으로 만지지 않을 부분은 받침 위에서 가리켜 설명한다.
+- 관찰 뒤 상태가 달라졌다면 처음 상태와 구분해 기록한다.",manual,documents-v2-manual-validation-018,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-013-v1,여름 프로그램 기록집은 다음 주부터 팀 대표가 묶음으로 수령한다. 개인 배송을 신청한 사람은 대표 수령 수량에서 제외한다. 중복 수령 여부가 확인되지 않으면 배부를 보류한다.,announcement,documents-v2-announcement-validation-013,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-006-v1,지역 돌과 흙의 관찰 표본을 참여 모임에 한 주씩 대여합니다. 가루가 떨어지는 표본은 밀폐 상자를 열지 않은 채 관찰합니다. 대여 신청은 모임별 담당자 한 명이 제출합니다.,announcement,documents-v2-announcement-validation-006,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-017-v2,"임시 라벨 내구성
+공용 상자의 임시 라벨이 쉽게 떨어진다는 현장 의견을 들었습니다. 글씨 크기를 바꾸기 전에 부착 재질 두 가지를 시험하기로 했습니다. 시험 중에는 기존 관리 번호도 함께 유지하기로 했습니다.",minutes,documents-v2-minutes-validation-017,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-001-v2,"토론 질문 시점
+활동 시작 전에 질문을 모두 보여 줄지 살펴봤습니다. 첫 관찰은 자유롭게 하고 이후 공통 질문을 주기로 했습니다. 질문 공개 전후의 의견 차이를 진행자가 기록하기로 했습니다.",minutes,documents-v2-minutes-validation-001,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-009-v2,"야간 작업 신고
+12월부터 저녁 9시 이후 마감 작업이 필요한 팀은 당일 오후에 이용 인원을 알립니다. 별도 승인 대상인 공구 작업은 기존 절차를 유지합니다. 인원 신고만으로 공구 사용을 승인하지 않습니다.",announcement,documents-v2-announcement-validation-009,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-015-v1,"인근 산책 해설
+- 동네 산책 해설은 이번 달에만 출발 전 짧은 실내 설명을 추가한다.
+- 참가자는 기존 출발 시각보다 15분 먼저 모인다.
+- 실제 산책 경로와 종료 장소는 바꾸지 않는다.",announcement,documents-v2-announcement-validation-015,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-001-v1,작은 관찰 주머니를 배부하기 전에 내용물을 평평한 곳에 펼쳐 목록과 대조한다. 뾰족한 조각이 섞였으면 해당 주머니만 분리한다. 점검한 주머니에 확인 표시를 남긴 뒤 전달한다.,manual,documents-v2-manual-validation-001,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-019-v1,"자료 보존 온도
+- 오래된 음반을 보관하는 수장 구역의 온도를 이번 주에 조정한다.
+- 작업 중에는 해당 구역의 방문 열람을 잠시 받지 않는다.
+- 일반 자료실 열람과 온라인 검색은 계속 운영한다.",announcement,documents-v2-announcement-validation-019,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-014-v2,"- 방문자와 나눈 대화를 기록할 때 필요한 범위를 살펴봤다.
+- 전시 이해에 관한 의견만 익명으로 정리하기로 했다.
+- 방문 목적이나 개인 배경을 필수로 묻는 제안은 선택하지 않았다.",minutes,documents-v2-minutes-validation-014,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-016-v1,"- 협력처 물품에 인수 표식을 붙일 때에는 제거 가능한 재질인지 먼저 확인합니다.
+- 원래 관리 번호를 가리지 않는 곳에 붙입니다.
+- 표면 손상이 우려되면 물품 대신 보관 봉투에 표시합니다.",manual,documents-v2-manual-validation-016,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-015-v2,동네 산책 해설은 이번 달에만 출발 전 짧은 실내 설명을 추가합니다. 참가자는 기존 출발 시각보다 15분 먼저 모입니다. 실제 산책 경로와 종료 장소는 바꾸지 않습니다.,announcement,documents-v2-announcement-validation-015,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-011-v1,"심사 참여 조정
+- 심사위원이 소속된 모임의 작품도 출품된 사실을 확인했다.
+- 해당 위원은 그 작품의 채점과 토론에서 빠지고 다른 작품의 심사에는 참여하기로 했다.
+- 출품 자체를 취소하자는 의견은 채택하지 않았다.",minutes,documents-v2-minutes-validation-011,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-010-v1,모형을 붙이기 전에는 접합면을 맞대어 위치가 맞는지 확인합니다. 맞지 않으면 접착제를 바르기 전에 모양을 조정합니다. 붙인 뒤에는 재료 안내에 적힌 고정 시간을 지킵니다.,manual,documents-v2-manual-validation-010,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-015-v1,"준비 일정 공개
+- 준비가 늦어진 팀을 돕기 위한 일정 공개 방식을 논의했다.
+- 팀별 미완료 항목 대신 도움이 필요한 작업만 공유하기로 했다.
+- 개인의 작업 속도를 비교하는 표는 만들지 않기로 했다.",minutes,documents-v2-minutes-validation-015,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-005-v2,"아침 배송 통제
+다음 주 화요일에는 중정에서 큰 장비를 내려놓아 아침 물품 배송을 후문으로 받습니다. 배송 시간은 평소와 같습니다. 보행자는 표시된 통로를 이용할 수 있습니다.",announcement,documents-v2-announcement-validation-005,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-012-v2,체험 신청의 동반인 수를 고치려면 접수 번호로 원래 신청을 찾는다. 바꿀 인원과 함께 필요한 준비물 수량도 확인한다. 수정 결과를 확인한 뒤 같은 사람의 새 신청을 중복으로 만들지 않는다.,manual,documents-v2-manual-validation-012,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-014-v2,"- 12월 체험에서는 분진이 많은 개인 재료의 반입을 제한한다.
+- 이미 구입한 재료는 사용 가능 여부를 행사 전에 문의할 수 있다.
+- 제한 대상의 예시는 신청 안내에 덧붙였다.",announcement,documents-v2-announcement-validation-014,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-002-v1,서로 다른 부서가 같은 소모품을 따로 보관하는 상황을 확인했습니다. 공통으로 쓰는 두 품목만 한곳에서 관리하기로 했습니다. 부서 전용 물품까지 합치는 안은 채택하지 않았습니다.,minutes,documents-v2-minutes-validation-002,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-010-v2,"- 서로 다른 활동이 같은 약칭으로 안내된 사실을 확인했다.
+- 신청 화면에는 약칭 대신 목적이 드러나는 긴 이름을 쓰기로 했다.
+- 내부 문서의 약칭 변경은 당장 진행하지 않기로 했다.",minutes,documents-v2-minutes-validation-010,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-017-v2,"예약 확인 표식
+작품 촬영 공간의 예약 확정 알림에 다음 주부터 색상 표식을 추가합니다. 접수 상태와 확정 상태를 다른 색으로 표시합니다. 색만 보지 말고 알림의 상태 문구도 같이 확인합니다.",announcement,documents-v2-announcement-validation-017,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-006-v1,두 모임의 연습 소리가 서로 방해한다는 보고를 확인했습니다. 소리가 큰 연습 구간만 시간을 나누기로 했습니다. 모임 전체 시간을 분리하는 것은 추가 사용 기록을 보고 판단하기로 했습니다.,minutes,documents-v2-minutes-validation-006,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-005-v1,다음 주 화요일에는 중정에서 큰 장비를 내려놓아 아침 물품 배송을 후문으로 받는다. 배송 시간은 평소와 같다. 보행자는 표시된 통로를 이용할 수 있다.,announcement,documents-v2-announcement-validation-005,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-005-v2,"활동 자료 인용
+공개 글의 일부를 활동 자료에 넣으려면 이용 가능한 범위를 먼저 확인합니다. 인용한 구절과 작성자 및 출처를 함께 기록합니다. 출처를 찾지 못한 문장은 사실로 확정해 배포하지 않습니다.",manual,documents-v2-manual-validation-005,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-004-v2,공동 일지의 개인 경험 부분은 작성자의 열람 동의를 받은 뒤 공개한다. 동의 요청은 다음 주에 개별 전달한다. 응답하지 않았다는 이유만으로 공개에 동의한 것으로 처리하지 않는다.,announcement,documents-v2-announcement-validation-004,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-007-v2,활동을 어디까지 마치면 완료로 볼지 진행자 의견을 나눴습니다. 기본 기능이 동작하면 완료로 기록하고 장식은 선택으로 두기로 했습니다. 다음 회차 안내문에도 두 범위를 구분해 적기로 했습니다.,minutes,documents-v2-minutes-validation-007,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-013-v2,"현장 음향 담당
+음향 조정 요청이 여러 경로로 전달되는 문제를 확인했습니다. 행사 중 요청을 모아 전달할 담당 한 명을 두기로 했습니다. 장비를 직접 만질 권한까지 모두에게 주지는 않기로 했습니다.",minutes,documents-v2-minutes-validation-013,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-006-v2,"- 두 모임의 연습 소리가 서로 방해한다는 보고를 확인했다.
+- 소리가 큰 연습 구간만 시간을 나누기로 했다.
+- 모임 전체 시간을 분리하는 것은 추가 사용 기록을 보고 판단하기로 했다.",minutes,documents-v2-minutes-validation-006,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-008-v1,"- 수령표에 서명이 빠졌다면 물품이 실제로 전달되었는지 먼저 확인합니다.
+- 수령 사실이 확인된 경우에만 당사자에게 기록 보완을 요청합니다.
+- 담당자가 수령자 이름으로 대신 서명하지 않습니다.",manual,documents-v2-manual-validation-008,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-017-v2,"읽기 모임 발췌
+읽기 모임 자료를 줄일 때에는 토론 질문에 필요한 문단을 먼저 고릅니다. 문단 사이를 생략한 곳은 생략 표시를 남깁니다. 서로 떨어진 문장을 이어 저자의 한 문장처럼 보이게 만들지 않습니다.",manual,documents-v2-manual-validation-017,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-008-v2,축제에 쓴 재사용 장식은 해체한 상태로 별관 창고에 보관한다. 다음 행사에서 사용할 팀은 수량 확인을 먼저 요청한다. 낡은 장식의 교체 여부는 아직 결정하지 않았다.,announcement,documents-v2-announcement-validation-008,original-synthetic:synthetic-ko-v2.0
+documents-v2-announcement-validation-008-v1,"- 축제에 쓴 재사용 장식은 해체한 상태로 별관 창고에 보관합니다.
+- 다음 행사에서 사용할 팀은 수량 확인을 먼저 요청합니다.
+- 낡은 장식의 교체 여부는 아직 결정하지 않았습니다.",announcement,documents-v2-announcement-validation-008,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-002-v1,건조가 필요한 작업물은 재료와 예상 건조 시간을 적어 선반을 예약합니다. 다른 작업물에 닿지 않을 간격을 확인합니다. 시간이 더 필요하면 만료 전에 다음 예약과 겹치는지 담당자에게 문의합니다.,manual,documents-v2-manual-validation-002,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-016-v1,"- 협력 모임에 보낼 사례 자료를 검토했습니다.
+- 완성도가 높은 사례와 수정 과정이 잘 드러난 사례를 각각 하나씩 고르기로 했습니다.
+- 자료 담당이 작성자의 공개 동의부터 확인하기로 했습니다.",minutes,documents-v2-minutes-validation-016,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-008-v2,수령표에 서명이 빠졌다면 물품이 실제로 전달되었는지 먼저 확인한다. 수령 사실이 확인된 경우에만 당사자에게 기록 보완을 요청한다. 담당자가 수령자 이름으로 대신 서명하지 않는다.,manual,documents-v2-manual-validation-008,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-020-v1,"- 여러 사람이 수정한 기록의 작성자 표시를 논의했습니다.
+- 최초 작성자와 후속 검토자를 따로 남기는 안을 채택했습니다.
+- 수정 횟수만으로 기여 순서를 매기는 방식은 사용하지 않기로 했습니다.",minutes,documents-v2-minutes-validation-020,original-synthetic:synthetic-ko-v2.0
+documents-v2-manual-validation-014-v1,전시 교대 때에는 위치를 바꾼 작품 번호와 새 위치를 전달합니다. 다음 담당자가 현장에서 작품을 확인한 뒤 인계표를 닫습니다. 위치가 확인되지 않은 작품은 인계 완료로 표시하지 않습니다.,manual,documents-v2-manual-validation-014,original-synthetic:synthetic-ko-v2.0
+documents-v2-minutes-validation-019-v2,관찰 활동의 지점 사이가 멀어 이동 부담이 크다는 의견이 있었습니다. 모든 지점을 유지하는 대신 기본 경로와 선택 경로를 나누기로 했습니다. 경로별 소요 시간은 답사 뒤 안내하기로 했습니다.,minutes,documents-v2-minutes-validation-019,original-synthetic:synthetic-ko-v2.0
