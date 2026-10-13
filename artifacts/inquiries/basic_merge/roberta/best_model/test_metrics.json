@@ -2,10 +2,10 @@
   "topic": "inquiries",
   "dataset": "basic_merge",
   "split": "test",
-  "selected_model": "bert",
+  "selected_model": "koelectra",
   "evaluated_model": "roberta",
   "official": false,
-  "selected_run": "20261013_144809",
+  "selected_run": "20261013_160914",
   "model_id": "klue/roberta-base",
   "classifier": {
     "n": 220,

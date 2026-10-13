@@ -3,10 +3,10 @@
   "dataset": "basic_merge",
   "model_key": "roberta",
   "model_id": "klue/roberta-base",
-  "run_name": "20261013_144809",
+  "run_name": "20261013_160914",
   "learning_rate": 3e-05,
-  "epochs_max": 2,
-  "early_stopping_patience": 1,
+  "epochs_max": 20,
+  "early_stopping_patience": 5,
   "target_macro_f1": null,
   "score_stop": {
     "enabled": true,

@@ -5,59 +5,59 @@
   "selected_model": null,
   "evaluated_model": "roberta",
   "official": null,
-  "selected_run": "20261013_145046",
+  "selected_run": "20261013_161829",
   "model_id": "klue/roberta-base",
   "classifier": {
     "n": 331,
-    "accuracy": 0.9848942598187311,
-    "macro_f1": 0.9848757848757849,
+    "accuracy": 0.9969788519637462,
+    "macro_f1": 0.9969969360631454,
     "per_class": {
       "shipping": {
-        "precision": 0.9908256880733946,
-        "recall": 0.972972972972973,
-        "f1-score": 0.9818181818181818,
+        "precision": 0.9910714285714286,
+        "recall": 1.0,
+        "f1-score": 0.9955156950672646,
         "support": 111.0
       },
       "refund": {
-        "precision": 0.972972972972973,
-        "recall": 0.9908256880733946,
-        "f1-score": 0.9818181818181818,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 109.0
       },
       "account": {
-        "precision": 0.990990990990991,
+        "precision": 1.0,
         "recall": 0.990990990990991,
-        "f1-score": 0.990990990990991,
+        "f1-score": 0.995475113122172,
         "support": 111.0
       },
-      "accuracy": 0.9848942598187311,
+      "accuracy": 0.9969788519637462,
       "macro avg": {
-        "precision": 0.9849298840124528,
-        "recall": 0.9849298840124528,
-        "f1-score": 0.9848757848757849,
+        "precision": 0.9970238095238096,
+        "recall": 0.9969969969969971,
+        "f1-score": 0.9969969360631454,
         "support": 331.0
       },
       "weighted avg": {
-        "precision": 0.9850021312090661,
-        "recall": 0.9848942598187311,
-        "f1-score": 0.9848942598187311,
+        "precision": 0.9970058264997842,
+        "recall": 0.9969788519637462,
+        "f1-score": 0.9969787906617144,
         "support": 331.0
       }
     },
     "confusion_matrix": [
       [
-        108,
-        2,
-        1
-      ],
-      [
-        1,
-        108,
+        111,
+        0,
         0
       ],
       [
         0,
+        109,
+        0
+      ],
+      [
         1,
+        0,
         110
       ]
     ],

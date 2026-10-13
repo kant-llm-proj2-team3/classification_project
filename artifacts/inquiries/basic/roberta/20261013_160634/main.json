@@ -1,0 +1,128 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "roberta",
+  "model_id": "klue/roberta-base",
+  "topic": "inquiries",
+  "dataset": "basic",
+  "dataset_id": "inquiries/basic",
+  "run_id": "20261013_160634",
+  "train": {
+    "learning_rate": 3e-05,
+    "epochs_max": 20,
+    "epochs_run": 6,
+    "best_epoch": 6,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 360,
+    "validation_rows": 120,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 120,
+    "correct": 120,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "loss": 0.0007632349870012452,
+    "per_label": {
+      "shipping": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "refund": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "account": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 36.05456650000997,
+    "validation_inference_seconds": 0.32107090001227334,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 2132.158203125,
+    "num_parameters": 110620419,
+    "model_size_mb": 422.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "train_loss": [
+      0.99806,
+      0.111092,
+      0.004089,
+      0.003218,
+      0.001626,
+      0.001287
+    ],
+    "val_loss": [
+      0.442488,
+      0.036229,
+      0.052514,
+      0.052046,
+      0.058898,
+      0.000763
+    ],
+    "val_macro_f1": [
+      0.983323,
+      0.991665,
+      0.991665,
+      0.991665,
+      0.991665,
+      1.0
+    ],
+    "val_correct": [
+      118,
+      119,
+      119,
+      119,
+      119,
+      120
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

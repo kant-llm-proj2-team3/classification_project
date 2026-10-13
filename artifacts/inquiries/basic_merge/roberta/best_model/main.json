@@ -5,12 +5,12 @@
   "topic": "inquiries",
   "dataset": "basic_merge",
   "dataset_id": "inquiries/basic_merge",
-  "run_id": "20261013_144809",
+  "run_id": "20261013_160914",
   "train": {
     "learning_rate": 3e-05,
-    "epochs_max": 2,
-    "epochs_run": 2,
-    "best_epoch": 1,
+    "epochs_max": 20,
+    "epochs_run": 11,
+    "best_epoch": 6,
     "batch_size": 4,
     "accumulation_steps": 2,
     "effective_batch": 8
@@ -22,20 +22,20 @@
   },
   "validation": {
     "n": 220,
-    "correct": 218,
-    "accuracy": 0.990909090909091,
-    "macro_f1": 0.990990990990991,
-    "loss": 0.05439117546193302,
+    "correct": 219,
+    "accuracy": 0.9954545454545455,
+    "macro_f1": 0.9954952898385305,
+    "loss": 0.03931919636300087,
     "per_label": {
       "shipping": {
-        "correct": 73,
+        "correct": 74,
         "n": 74,
-        "f1": 0.9864864864864865
+        "f1": 0.9932885906040269
       },
       "refund": {
         "correct": 73,
         "n": 74,
-        "f1": 0.9864864864864865
+        "f1": 0.9931972789115646
       },
       "account": {
         "correct": 72,
@@ -50,8 +50,8 @@
     ],
     "confusion_matrix": [
       [
-        73,
-        1,
+        74,
+        0,
         0
       ],
       [
@@ -114,12 +114,12 @@
   },
   "test_meta": {
     "official": false,
-    "evaluated_at": "2026-10-13 14:58:59"
+    "evaluated_at": "2026-10-13 16:59:26"
   },
   "cost": {
-    "train_seconds": 19.425982500019018,
-    "validation_inference_seconds": 0.6312839999736752,
-    "test_inference_seconds": 0.468,
+    "train_seconds": 121.15314180002315,
+    "validation_inference_seconds": 0.6263893000141252,
+    "test_inference_seconds": 0.438,
     "peak_gpu_mb": 2135.689453125,
     "num_parameters": 110620419,
     "model_size_mb": 422.0
@@ -127,23 +127,68 @@
   "curve": {
     "epoch": [
       1,
-      2
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
     ],
     "train_loss": [
-      0.361824,
-      0.008408
+      0.819568,
+      0.043422,
+      0.015163,
+      0.001577,
+      0.009725,
+      0.005174,
+      0.000523,
+      0.000423,
+      0.000362,
+      0.000316,
+      0.000286
     ],
     "val_loss": [
-      0.054391,
-      0.055458
+      0.077336,
+      0.090645,
+      0.045135,
+      0.067984,
+      0.039203,
+      0.039319,
+      0.040219,
+      0.041157,
+      0.041695,
+      0.042281,
+      0.0428
     ],
     "val_macro_f1": [
+      0.981977,
+      0.986486,
       0.990991,
-      0.990991
+      0.990991,
+      0.990991,
+      0.995495,
+      0.995495,
+      0.995495,
+      0.995495,
+      0.995495,
+      0.995495
     ],
     "val_correct": [
+      216,
+      217,
       218,
-      218
+      218,
+      218,
+      219,
+      219,
+      219,
+      219,
+      219,
+      219
     ]
   },
   "files": {

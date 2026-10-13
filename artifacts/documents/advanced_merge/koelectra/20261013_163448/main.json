@@ -1,0 +1,173 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "koelectra",
+  "model_id": "monologg/koelectra-small-v3-discriminator",
+  "topic": "documents",
+  "dataset": "advanced_merge",
+  "dataset_id": "documents/advanced_merge",
+  "run_id": "20261013_163448",
+  "train": {
+    "learning_rate": 0.0001,
+    "epochs_max": 20,
+    "epochs_run": 15,
+    "best_epoch": 10,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 330,
+    "validation_rows": 111,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 111,
+    "correct": 110,
+    "accuracy": 0.990990990990991,
+    "macro_f1": 0.9909893455098935,
+    "loss": 0.05773974552347853,
+    "per_label": {
+      "announcement": {
+        "correct": 36,
+        "n": 37,
+        "f1": 0.9863013698630136
+      },
+      "manual": {
+        "correct": 37,
+        "n": 37,
+        "f1": 1.0
+      },
+      "minutes": {
+        "correct": 37,
+        "n": 37,
+        "f1": 0.9866666666666667
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        36,
+        0,
+        1
+      ],
+      [
+        0,
+        37,
+        0
+      ],
+      [
+        0,
+        0,
+        37
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 61.12863870000001,
+    "validation_inference_seconds": 0.22774390000267886,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 350.45654296875,
+    "num_parameters": 14122755,
+    "model_size_mb": 53.9
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "train_loss": [
+      1.092176,
+      0.966465,
+      0.742264,
+      0.497374,
+      0.277085,
+      0.207204,
+      0.095015,
+      0.028954,
+      0.02444,
+      0.01619,
+      0.006885,
+      0.00554,
+      0.004529,
+      0.003969,
+      0.003697
+    ],
+    "val_loss": [
+      1.045344,
+      0.796494,
+      0.503995,
+      0.350465,
+      0.151862,
+      0.26034,
+      0.10352,
+      0.113828,
+      0.158976,
+      0.05774,
+      0.093457,
+      0.101811,
+      0.100051,
+      0.091682,
+      0.092884
+    ],
+    "val_macro_f1": [
+      0.531807,
+      0.520853,
+      0.945743,
+      0.928083,
+      0.963831,
+      0.937186,
+      0.98198,
+      0.98198,
+      0.963959,
+      0.990989,
+      0.972963,
+      0.972963,
+      0.972963,
+      0.972963,
+      0.972963
+    ],
+    "val_correct": [
+      72,
+      72,
+      105,
+      103,
+      107,
+      104,
+      109,
+      109,
+      107,
+      110,
+      108,
+      108,
+      108,
+      108,
+      108
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

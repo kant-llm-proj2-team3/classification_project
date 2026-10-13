@@ -1,7 +1,7 @@
 {
   "schema": "project2-result/v1",
-  "run_id": "20261013_144829",
-  "generated_at": "2026-10-13 14:48:46",
+  "run_id": "20261013_161116",
+  "generated_at": "2026-10-13 16:12:14",
   "hyperparameters": {
     "seed": 42,
     "max_length": 512,
@@ -11,10 +11,10 @@
     "warmup_ratio": 0.1,
     "gradient_checkpointing": true,
     "precision": "bfloat16",
-    "early_stopping_patience": 1,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
-    "stop_reason": "최대 에폭(2) 도달",
-    "optimizer_steps_at_checkpoint": 166,
+    "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
+    "optimizer_steps_at_checkpoint": 332,
     "selection_split": "validation"
   },
   "environment": {
@@ -46,34 +46,34 @@
   "validation_detail": {
     "per_class": {
       "shipping": {
+        "precision": 1.0,
+        "recall": 0.9864864864864865,
+        "f1-score": 0.9931972789115646,
+        "support": 74.0
+      },
+      "refund": {
         "precision": 0.9866666666666667,
         "recall": 1.0,
         "f1-score": 0.9932885906040269,
         "support": 74.0
       },
-      "refund": {
-        "precision": 1.0,
-        "recall": 0.9594594594594594,
-        "f1-score": 0.9793103448275862,
-        "support": 74.0
-      },
       "account": {
-        "precision": 0.972972972972973,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1-score": 0.9863013698630136,
+        "f1-score": 1.0,
         "support": 72.0
       },
-      "accuracy": 0.9863636363636363,
+      "accuracy": 0.9954545454545455,
       "macro avg": {
-        "precision": 0.9865465465465467,
-        "recall": 0.9864864864864865,
-        "f1-score": 0.9863001017648756,
+        "precision": 0.9955555555555556,
+        "recall": 0.9954954954954954,
+        "f1-score": 0.9954952898385305,
         "support": 220.0
       },
       "weighted avg": {
-        "precision": 0.9866699426699427,
-        "recall": 0.9863636363636363,
-        "f1-score": 0.9863000902367106,
+        "precision": 0.9955151515151515,
+        "recall": 0.9954545454545455,
+        "f1-score": 0.9954543379279717,
         "support": 220.0
       }
     }
@@ -81,40 +81,85 @@
   "epochs": [
     {
       "epoch": 1,
-      "train_loss": 0.9644827178030303,
-      "validation_loss": 0.6139559778300199,
-      "validation_accuracy": 0.9590909090909091,
-      "validation_macro_f1": 0.9584596540358671,
+      "train_loss": 1.095691287878788,
+      "validation_loss": 1.0778000007976185,
+      "validation_accuracy": 0.37727272727272726,
+      "validation_macro_f1": 0.27377450980392154,
       "optimizer_steps": 83,
-      "elapsed_seconds": 8.04363870000816
+      "elapsed_seconds": 9.807486800011247
     },
     {
       "epoch": 2,
-      "train_loss": 0.42282492897727275,
-      "validation_loss": 0.30085655857216226,
-      "validation_accuracy": 0.9863636363636363,
-      "validation_macro_f1": 0.9863001017648756,
+      "train_loss": 0.7335981889204546,
+      "validation_loss": 0.2158720704642209,
+      "validation_accuracy": 0.9954545454545455,
+      "validation_macro_f1": 0.9954952898385305,
       "optimizer_steps": 166,
-      "elapsed_seconds": 16.397669099998893
+      "elapsed_seconds": 17.89186159998644
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.11350671016808712,
+      "validation_loss": 0.047479794682426885,
+      "validation_accuracy": 0.9863636363636363,
+      "validation_macro_f1": 0.98645308376852,
+      "optimizer_steps": 249,
+      "elapsed_seconds": 26.102282400010154
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.02911691376657197,
+      "validation_loss": 0.03383786967024207,
+      "validation_accuracy": 0.9954545454545455,
+      "validation_macro_f1": 0.9954952898385305,
+      "optimizer_steps": 332,
+      "elapsed_seconds": 34.07671910000499
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.005993074359315814,
+      "validation_loss": 0.05803139353255657,
+      "validation_accuracy": 0.990909090909091,
+      "validation_macro_f1": 0.990990990990991,
+      "optimizer_steps": 415,
+      "elapsed_seconds": 42.179355800006306
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.0035689382842092805,
+      "validation_loss": 0.060916000458581206,
+      "validation_accuracy": 0.990909090909091,
+      "validation_macro_f1": 0.990990990990991,
+      "optimizer_steps": 498,
+      "elapsed_seconds": 50.01769360000617
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.002433973370176373,
+      "validation_loss": 0.06323388585482131,
+      "validation_accuracy": 0.990909090909091,
+      "validation_macro_f1": 0.990990990990991,
+      "optimizer_steps": 581,
+      "elapsed_seconds": 57.946083899994846
     }
   ],
   "training_summary": {
     "model_key": "koelectra",
     "model_id": "monologg/koelectra-small-v3-discriminator",
-    "run_name": "20261013_144829",
+    "run_name": "20261013_161116",
     "learning_rate": 0.0001,
-    "best_epoch": 2,
-    "validation_macro_f1": 0.9863001017648756,
-    "validation_accuracy": 0.9863636363636363,
-    "validation_loss": 0.30085655857216226,
-    "train_seconds": 16.44565139999031,
-    "validation_inference_seconds": 0.31794429998262785,
+    "best_epoch": 4,
+    "validation_macro_f1": 0.9954952898385305,
+    "validation_accuracy": 0.9954545454545455,
+    "validation_loss": 0.03383786967024207,
+    "train_seconds": 57.94657110000844,
+    "validation_inference_seconds": 0.29598380002425984,
     "peak_gpu_memory_mb": 292.193359375,
     "train_rows": 660,
     "validation_rows": 220,
-    "epochs_run": 2,
-    "epochs_max": 2,
-    "stop_reason": "최대 에폭(2) 도달",
+    "epochs_run": 7,
+    "epochs_max": 20,
+    "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
     "num_parameters": 14122755,
     "model_size_mb": 53.9
   },
@@ -123,10 +168,10 @@
     "dataset": "basic_merge",
     "model_key": "koelectra",
     "model_id": "monologg/koelectra-small-v3-discriminator",
-    "run_name": "20261013_144829",
+    "run_name": "20261013_161116",
     "learning_rate": 0.0001,
-    "epochs_max": 2,
-    "early_stopping_patience": 1,
+    "epochs_max": 20,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
     "score_stop": {
       "enabled": true,

@@ -1,0 +1,224 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261013_160745",
+  "generated_at": "2026-10-13 16:09:14",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_checkpointing": true,
+    "precision": "bfloat16",
+    "early_stopping_patience": 5,
+    "target_macro_f1": null,
+    "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
+    "optimizer_steps_at_checkpoint": 249,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "sklearn": null
+  },
+  "data": {
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_csv": [
+      "dataset/inquiries/basic_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/inquiries/basic_merge/validation.csv"
+    ],
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0
+    }
+  },
+  "validation_detail": {
+    "per_class": {
+      "shipping": {
+        "precision": 0.9866666666666667,
+        "recall": 1.0,
+        "f1-score": 0.9932885906040269,
+        "support": 74.0
+      },
+      "refund": {
+        "precision": 0.9864864864864865,
+        "recall": 0.9864864864864865,
+        "f1-score": 0.9864864864864865,
+        "support": 74.0
+      },
+      "account": {
+        "precision": 1.0,
+        "recall": 0.9861111111111112,
+        "f1-score": 0.993006993006993,
+        "support": 72.0
+      },
+      "accuracy": 0.990909090909091,
+      "macro avg": {
+        "precision": 0.9910510510510511,
+        "recall": 0.9908658658658659,
+        "f1-score": 0.9909273566991689,
+        "support": 220.0
+      },
+      "weighted avg": {
+        "precision": 0.990969696969697,
+        "recall": 0.990909090909091,
+        "f1-score": 0.9909084509145522,
+        "support": 220.0
+      }
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.757107451467803,
+      "validation_loss": 0.12200466313145378,
+      "validation_accuracy": 0.9818181818181818,
+      "validation_macro_f1": 0.981851302089941,
+      "optimizer_steps": 83,
+      "elapsed_seconds": 11.135121600003913
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.03406406749378551,
+      "validation_loss": 0.07650353364985098,
+      "validation_accuracy": 0.9863636363636363,
+      "validation_macro_f1": 0.9864858695155915,
+      "optimizer_steps": 166,
+      "elapsed_seconds": 22.41454770002747
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.008768119234027285,
+      "validation_loss": 0.04095650225750763,
+      "validation_accuracy": 0.990909090909091,
+      "validation_macro_f1": 0.9909273566991689,
+      "optimizer_steps": 249,
+      "elapsed_seconds": 33.66107030000421
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.000631474003647313,
+      "validation_loss": 0.06347803802345879,
+      "validation_accuracy": 0.9863636363636363,
+      "validation_macro_f1": 0.98645308376852,
+      "optimizer_steps": 332,
+      "elapsed_seconds": 45.172047300002305
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.00040221936774976325,
+      "validation_loss": 0.06904128339824224,
+      "validation_accuracy": 0.9863636363636363,
+      "validation_macro_f1": 0.98645308376852,
+      "optimizer_steps": 415,
+      "elapsed_seconds": 56.01951990000089
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.00030307769775390626,
+      "validation_loss": 0.07189440137087579,
+      "validation_accuracy": 0.9863636363636363,
+      "validation_macro_f1": 0.98645308376852,
+      "optimizer_steps": 498,
+      "elapsed_seconds": 66.92922570000519
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.00024473811640883937,
+      "validation_loss": 0.07613918768977535,
+      "validation_accuracy": 0.9863636363636363,
+      "validation_macro_f1": 0.98645308376852,
+      "optimizer_steps": 581,
+      "elapsed_seconds": 77.94373640001868
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.00020336454564874823,
+      "validation_loss": 0.07957694845853522,
+      "validation_accuracy": 0.9863636363636363,
+      "validation_macro_f1": 0.98645308376852,
+      "optimizer_steps": 664,
+      "elapsed_seconds": 88.9341024000023
+    }
+  ],
+  "training_summary": {
+    "model_key": "bert",
+    "model_id": "klue/bert-base",
+    "run_name": "20261013_160745",
+    "learning_rate": 3e-05,
+    "best_epoch": 3,
+    "validation_macro_f1": 0.9909273566991689,
+    "validation_accuracy": 0.990909090909091,
+    "validation_loss": 0.04095650225750763,
+    "train_seconds": 88.93470740001067,
+    "validation_inference_seconds": 0.6199718999851029,
+    "peak_gpu_memory_mb": 2135.046875,
+    "train_rows": 660,
+    "validation_rows": 220,
+    "epochs_run": 8,
+    "epochs_max": 20,
+    "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
+    "num_parameters": 110619651,
+    "model_size_mb": 422.0
+  },
+  "run_config": {
+    "topic": "inquiries",
+    "dataset": "basic_merge",
+    "model_key": "bert",
+    "model_id": "klue/bert-base",
+    "run_name": "20261013_160745",
+    "learning_rate": 3e-05,
+    "epochs_max": 20,
+    "early_stopping_patience": 5,
+    "target_macro_f1": null,
+    "score_stop": {
+      "enabled": true,
+      "min_accuracy": 1.0,
+      "min_macro_f1": 1.0,
+      "max_val_loss": 0.01,
+      "min_epochs": 3
+    },
+    "batch_size": 4,
+    "gradient_accumulation_steps": 2,
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0
+    },
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "seed": 42,
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_rows": 660,
+    "validation_rows": 220,
+    "train_csv": [
+      "dataset/inquiries/basic_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/inquiries/basic_merge/validation.csv"
+    ],
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "precision": "bfloat16",
+    "gradient_checkpointing": true,
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6"
+  }
+}

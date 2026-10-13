@@ -1,0 +1,133 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "roberta",
+  "model_id": "klue/roberta-base",
+  "topic": "documents",
+  "dataset": "basic_merge",
+  "dataset_id": "documents/basic_merge",
+  "run_id": "20261013_162808",
+  "train": {
+    "learning_rate": 3e-05,
+    "epochs_max": 20,
+    "epochs_run": 7,
+    "best_epoch": 2,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 660,
+    "validation_rows": 220,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 220,
+    "correct": 219,
+    "accuracy": 0.9954545454545455,
+    "macro_f1": 0.9954952898385305,
+    "loss": 0.010870223445817829,
+    "per_label": {
+      "announcement": {
+        "correct": 73,
+        "n": 74,
+        "f1": 0.9931972789115646
+      },
+      "manual": {
+        "correct": 74,
+        "n": 74,
+        "f1": 0.9932885906040269
+      },
+      "minutes": {
+        "correct": 72,
+        "n": 72,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        73,
+        1,
+        0
+      ],
+      [
+        0,
+        74,
+        0
+      ],
+      [
+        0,
+        0,
+        72
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 65.45643350001774,
+    "validation_inference_seconds": 0.5563829000166152,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 2132.15966796875,
+    "num_parameters": 110620419,
+    "model_size_mb": 422.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "train_loss": [
+      0.689295,
+      0.098622,
+      0.051903,
+      0.001471,
+      0.000908,
+      0.00066,
+      0.000517
+    ],
+    "val_loss": [
+      0.120465,
+      0.01087,
+      0.03127,
+      0.03566,
+      0.037123,
+      0.038391,
+      0.039351
+    ],
+    "val_macro_f1": [
+      0.972953,
+      0.995495,
+      0.995495,
+      0.995495,
+      0.995495,
+      0.995495,
+      0.995495
+    ],
+    "val_correct": [
+      214,
+      219,
+      219,
+      219,
+      219,
+      219,
+      219
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

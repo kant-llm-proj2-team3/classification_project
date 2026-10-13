@@ -1,0 +1,138 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "bert",
+  "model_id": "klue/bert-base",
+  "topic": "documents",
+  "dataset": "basic_merge",
+  "dataset_id": "documents/basic_merge",
+  "run_id": "20261013_162653",
+  "train": {
+    "learning_rate": 3e-05,
+    "epochs_max": 20,
+    "epochs_run": 8,
+    "best_epoch": 3,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 660,
+    "validation_rows": 220,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 220,
+    "correct": 218,
+    "accuracy": 0.990909090909091,
+    "macro_f1": 0.9909893455098935,
+    "loss": 0.058874974373876204,
+    "per_label": {
+      "announcement": {
+        "correct": 72,
+        "n": 74,
+        "f1": 0.9863013698630136
+      },
+      "manual": {
+        "correct": 74,
+        "n": 74,
+        "f1": 0.9866666666666667
+      },
+      "minutes": {
+        "correct": 72,
+        "n": 72,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        72,
+        2,
+        0
+      ],
+      [
+        0,
+        74,
+        0
+      ],
+      [
+        0,
+        0,
+        72
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 74.62987639999483,
+    "validation_inference_seconds": 0.5503348999773152,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 2131.42333984375,
+    "num_parameters": 110619651,
+    "model_size_mb": 422.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "train_loss": [
+      0.650718,
+      0.043273,
+      0.007769,
+      0.019058,
+      0.002809,
+      0.000329,
+      0.000267,
+      0.000219
+    ],
+    "val_loss": [
+      0.096388,
+      0.084281,
+      0.058875,
+      0.129828,
+      0.071469,
+      0.078283,
+      0.079078,
+      0.082781
+    ],
+    "val_macro_f1": [
+      0.977476,
+      0.977274,
+      0.990989,
+      0.977452,
+      0.990989,
+      0.986481,
+      0.990989,
+      0.986481
+    ],
+    "val_correct": [
+      215,
+      215,
+      218,
+      215,
+      218,
+      217,
+      218,
+      217
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

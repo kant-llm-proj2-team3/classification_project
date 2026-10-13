@@ -1,6 +1,6 @@
 {
   "schema": "project2-result/v1",
-  "created_at": "2026-10-13 14:59:32",
+  "created_at": "2026-10-13 16:59:53",
   "count": 40,
   "results": [
     {
@@ -121,7 +121,7 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:58:56"
+        "evaluated_at": "2026-10-13 16:59:25"
       },
       "cost": {
         "train_seconds": 0.20480019997921772,
@@ -303,12 +303,12 @@
       "topic": "inquiries",
       "dataset": "basic",
       "dataset_id": "inquiries/basic",
-      "run_id": "20261013_144728",
+      "run_id": "20261013_160634",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 1,
+        "epochs_max": 20,
+        "epochs_run": 6,
+        "best_epoch": 6,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -320,20 +320,20 @@
       },
       "validation": {
         "n": 120,
-        "correct": 119,
-        "accuracy": 0.9916666666666667,
-        "macro_f1": 0.991665364379851,
-        "loss": 0.025337477152546247,
+        "correct": 120,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": 0.0007632349870012452,
         "per_label": {
           "shipping": {
-            "correct": 39,
+            "correct": 40,
             "n": 40,
-            "f1": 0.9873417721518988
+            "f1": 1.0
           },
           "refund": {
             "correct": 40,
             "n": 40,
-            "f1": 0.9876543209876543
+            "f1": 1.0
           },
           "account": {
             "correct": 40,
@@ -348,8 +348,184 @@
         ],
         "confusion_matrix": [
           [
-            39,
-            1,
+            40,
+            0,
+            0
+          ],
+          [
+            0,
+            40,
+            0
+          ],
+          [
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "test": {
+        "n": 120,
+        "correct": 120,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": null,
+        "per_label": {
+          "shipping": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          },
+          "refund": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          },
+          "account": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          }
+        },
+        "labels": [
+          "shipping",
+          "refund",
+          "account"
+        ],
+        "confusion_matrix": [
+          [
+            40,
+            0,
+            0
+          ],
+          [
+            0,
+            40,
+            0
+          ],
+          [
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "test_meta": {
+        "official": true,
+        "evaluated_at": "2026-10-13 16:59:25"
+      },
+      "cost": {
+        "train_seconds": 36.05456650000997,
+        "validation_inference_seconds": 0.32107090001227334,
+        "test_inference_seconds": 0.261,
+        "peak_gpu_mb": 2132.158203125,
+        "num_parameters": 110620419,
+        "model_size_mb": 422.0
+      },
+      "curve": {
+        "epoch": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "train_loss": [
+          0.99806,
+          0.111092,
+          0.004089,
+          0.003218,
+          0.001626,
+          0.001287
+        ],
+        "val_loss": [
+          0.442488,
+          0.036229,
+          0.052514,
+          0.052046,
+          0.058898,
+          0.000763
+        ],
+        "val_macro_f1": [
+          0.983323,
+          0.991665,
+          0.991665,
+          0.991665,
+          0.991665,
+          1.0
+        ],
+        "val_correct": [
+          118,
+          119,
+          119,
+          119,
+          119,
+          120
+        ]
+      },
+      "files": {
+        "sub": "sub.json",
+        "validation_predictions": "validation_predictions.csv",
+        "test_predictions": "test_predictions.csv",
+        "validation_errors": "validation_errors.csv",
+        "log": "train.log"
+      }
+    },
+    {
+      "schema": "project2-result/v1",
+      "model_name": "koelectra",
+      "model_id": "monologg/koelectra-small-v3-discriminator",
+      "topic": "inquiries",
+      "dataset": "basic",
+      "dataset_id": "inquiries/basic",
+      "run_id": "20261013_160710",
+      "train": {
+        "learning_rate": 0.0001,
+        "epochs_max": 20,
+        "epochs_run": 6,
+        "best_epoch": 6,
+        "batch_size": 4,
+        "accumulation_steps": 2,
+        "effective_batch": 8
+      },
+      "input": {
+        "train_rows": 360,
+        "validation_rows": 120,
+        "test_rows": 120
+      },
+      "validation": {
+        "n": 120,
+        "correct": 120,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": 0.006275365455076098,
+        "per_label": {
+          "shipping": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          },
+          "refund": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          },
+          "account": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          }
+        },
+        "labels": [
+          "shipping",
+          "refund",
+          "account"
+        ],
+        "confusion_matrix": [
+          [
+            40,
+            0,
             0
           ],
           [
@@ -412,168 +588,12 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:58:56"
+        "evaluated_at": "2026-10-13 16:59:25"
       },
       "cost": {
-        "train_seconds": 10.622452899988275,
-        "validation_inference_seconds": 0.31035859999246895,
-        "test_inference_seconds": 0.219,
-        "peak_gpu_mb": 2132.15673828125,
-        "num_parameters": 110620419,
-        "model_size_mb": 422.0
-      },
-      "curve": {
-        "epoch": [
-          1,
-          2
-        ],
-        "train_loss": [
-          0.545468,
-          0.013913
-        ],
-        "val_loss": [
-          0.025337,
-          0.026367
-        ],
-        "val_macro_f1": [
-          0.991665,
-          0.991665
-        ],
-        "val_correct": [
-          119,
-          119
-        ]
-      },
-      "files": {
-        "sub": "sub.json",
-        "validation_predictions": "validation_predictions.csv",
-        "test_predictions": "test_predictions.csv",
-        "validation_errors": "validation_errors.csv",
-        "log": "train.log"
-      }
-    },
-    {
-      "schema": "project2-result/v1",
-      "model_name": "koelectra",
-      "model_id": "monologg/koelectra-small-v3-discriminator",
-      "topic": "inquiries",
-      "dataset": "basic",
-      "dataset_id": "inquiries/basic",
-      "run_id": "20261013_144739",
-      "train": {
-        "learning_rate": 0.0001,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 1,
-        "batch_size": 4,
-        "accumulation_steps": 2,
-        "effective_batch": 8
-      },
-      "input": {
-        "train_rows": 360,
-        "validation_rows": 120,
-        "test_rows": 120
-      },
-      "validation": {
-        "n": 120,
-        "correct": 88,
-        "accuracy": 0.7333333333333333,
-        "macro_f1": 0.6946623729350825,
-        "loss": 0.9492934624354045,
-        "per_label": {
-          "shipping": {
-            "correct": 40,
-            "n": 40,
-            "f1": 0.8888888888888888
-          },
-          "refund": {
-            "correct": 12,
-            "n": 40,
-            "f1": 0.4528301886792453
-          },
-          "account": {
-            "correct": 36,
-            "n": 40,
-            "f1": 0.7422680412371134
-          }
-        },
-        "labels": [
-          "shipping",
-          "refund",
-          "account"
-        ],
-        "confusion_matrix": [
-          [
-            40,
-            0,
-            0
-          ],
-          [
-            7,
-            12,
-            21
-          ],
-          [
-            3,
-            1,
-            36
-          ]
-        ]
-      },
-      "test": {
-        "n": 120,
-        "correct": 83,
-        "accuracy": 0.6916666666666667,
-        "macro_f1": 0.6456183526905862,
-        "loss": null,
-        "per_label": {
-          "shipping": {
-            "correct": 40,
-            "n": 40,
-            "f1": 0.8421052631578947
-          },
-          "refund": {
-            "correct": 10,
-            "n": 40,
-            "f1": 0.37735849056603776
-          },
-          "account": {
-            "correct": 33,
-            "n": 40,
-            "f1": 0.717391304347826
-          }
-        },
-        "labels": [
-          "shipping",
-          "refund",
-          "account"
-        ],
-        "confusion_matrix": [
-          [
-            40,
-            0,
-            0
-          ],
-          [
-            11,
-            10,
-            19
-          ],
-          [
-            4,
-            3,
-            33
-          ]
-        ]
-      },
-      "test_meta": {
-        "official": false,
-        "evaluated_at": "2026-10-13 14:58:56"
-      },
-      "cost": {
-        "train_seconds": 8.752063899999484,
-        "validation_inference_seconds": 0.18319420001353137,
-        "test_inference_seconds": 0.047,
+        "train_seconds": 33.10964070001501,
+        "validation_inference_seconds": 0.21746230000280775,
+        "test_inference_seconds": 0.073,
         "peak_gpu_mb": 292.1904296875,
         "num_parameters": 14122755,
         "model_size_mb": 53.9
@@ -581,23 +601,43 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6
         ],
         "train_loss": [
-          1.066168,
-          0.892936
+          1.097114,
+          0.961556,
+          0.357513,
+          0.058953,
+          0.01914,
+          0.010923
         ],
         "val_loss": [
-          0.949293,
-          0.798734
+          1.094737,
+          0.638575,
+          0.103345,
+          0.021404,
+          0.010164,
+          0.006275
         ],
         "val_macro_f1": [
-          0.694662,
-          0.686495
+          0.166667,
+          0.991665,
+          1.0,
+          1.0,
+          1.0,
+          1.0
         ],
         "val_correct": [
-          88,
-          89
+          40,
+          119,
+          120,
+          120,
+          120,
+          120
         ]
       },
       "files": {
@@ -726,7 +766,7 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:58:59"
+        "evaluated_at": "2026-10-13 16:59:26"
       },
       "cost": {
         "train_seconds": 0.5270224999985658,
@@ -908,12 +948,12 @@
       "topic": "inquiries",
       "dataset": "basic_merge",
       "dataset_id": "inquiries/basic_merge",
-      "run_id": "20261013_144809",
+      "run_id": "20261013_160914",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 1,
+        "epochs_max": 20,
+        "epochs_run": 11,
+        "best_epoch": 6,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -925,20 +965,20 @@
       },
       "validation": {
         "n": 220,
-        "correct": 218,
-        "accuracy": 0.990909090909091,
-        "macro_f1": 0.990990990990991,
-        "loss": 0.05439117546193302,
+        "correct": 219,
+        "accuracy": 0.9954545454545455,
+        "macro_f1": 0.9954952898385305,
+        "loss": 0.03931919636300087,
         "per_label": {
           "shipping": {
-            "correct": 73,
+            "correct": 74,
             "n": 74,
-            "f1": 0.9864864864864865
+            "f1": 0.9932885906040269
           },
           "refund": {
             "correct": 73,
             "n": 74,
-            "f1": 0.9864864864864865
+            "f1": 0.9931972789115646
           },
           "account": {
             "correct": 72,
@@ -953,8 +993,8 @@
         ],
         "confusion_matrix": [
           [
-            73,
-            1,
+            74,
+            0,
             0
           ],
           [
@@ -1017,12 +1057,12 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:58:59"
+        "evaluated_at": "2026-10-13 16:59:26"
       },
       "cost": {
-        "train_seconds": 19.425982500019018,
-        "validation_inference_seconds": 0.6312839999736752,
-        "test_inference_seconds": 0.468,
+        "train_seconds": 121.15314180002315,
+        "validation_inference_seconds": 0.6263893000141252,
+        "test_inference_seconds": 0.438,
         "peak_gpu_mb": 2135.689453125,
         "num_parameters": 110620419,
         "model_size_mb": 422.0
@@ -1030,23 +1070,68 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
         ],
         "train_loss": [
-          0.361824,
-          0.008408
+          0.819568,
+          0.043422,
+          0.015163,
+          0.001577,
+          0.009725,
+          0.005174,
+          0.000523,
+          0.000423,
+          0.000362,
+          0.000316,
+          0.000286
         ],
         "val_loss": [
-          0.054391,
-          0.055458
+          0.077336,
+          0.090645,
+          0.045135,
+          0.067984,
+          0.039203,
+          0.039319,
+          0.040219,
+          0.041157,
+          0.041695,
+          0.042281,
+          0.0428
         ],
         "val_macro_f1": [
+          0.981977,
+          0.986486,
           0.990991,
-          0.990991
+          0.990991,
+          0.990991,
+          0.995495,
+          0.995495,
+          0.995495,
+          0.995495,
+          0.995495,
+          0.995495
         ],
         "val_correct": [
+          216,
+          217,
           218,
-          218
+          218,
+          218,
+          219,
+          219,
+          219,
+          219,
+          219,
+          219
         ]
       },
       "files": {
@@ -1064,12 +1149,12 @@
       "topic": "inquiries",
       "dataset": "basic_merge",
       "dataset_id": "inquiries/basic_merge",
-      "run_id": "20261013_144829",
+      "run_id": "20261013_161116",
       "train": {
         "learning_rate": 0.0001,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 7,
+        "best_epoch": 4,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -1081,25 +1166,25 @@
       },
       "validation": {
         "n": 220,
-        "correct": 217,
-        "accuracy": 0.9863636363636363,
-        "macro_f1": 0.9863001017648756,
-        "loss": 0.30085655857216226,
+        "correct": 219,
+        "accuracy": 0.9954545454545455,
+        "macro_f1": 0.9954952898385305,
+        "loss": 0.03383786967024207,
         "per_label": {
           "shipping": {
+            "correct": 73,
+            "n": 74,
+            "f1": 0.9931972789115646
+          },
+          "refund": {
             "correct": 74,
             "n": 74,
             "f1": 0.9932885906040269
           },
-          "refund": {
-            "correct": 71,
-            "n": 74,
-            "f1": 0.9793103448275862
-          },
           "account": {
             "correct": 72,
             "n": 72,
-            "f1": 0.9863013698630136
+            "f1": 1.0
           }
         },
         "labels": [
@@ -1109,14 +1194,14 @@
         ],
         "confusion_matrix": [
           [
-            74,
-            0,
+            73,
+            1,
             0
           ],
           [
-            1,
-            71,
-            2
+            0,
+            74,
+            0
           ],
           [
             0,
@@ -1172,12 +1257,12 @@
         ]
       },
       "test_meta": {
-        "official": false,
-        "evaluated_at": "2026-10-13 14:58:59"
+        "official": true,
+        "evaluated_at": "2026-10-13 16:59:26"
       },
       "cost": {
-        "train_seconds": 16.44565139999031,
-        "validation_inference_seconds": 0.31794429998262785,
+        "train_seconds": 57.94657110000844,
+        "validation_inference_seconds": 0.29598380002425984,
         "test_inference_seconds": 0.093,
         "peak_gpu_mb": 292.193359375,
         "num_parameters": 14122755,
@@ -1186,23 +1271,48 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
         ],
         "train_loss": [
-          0.964483,
-          0.422825
+          1.095691,
+          0.733598,
+          0.113507,
+          0.029117,
+          0.005993,
+          0.003569,
+          0.002434
         ],
         "val_loss": [
-          0.613956,
-          0.300857
+          1.0778,
+          0.215872,
+          0.04748,
+          0.033838,
+          0.058031,
+          0.060916,
+          0.063234
         ],
         "val_macro_f1": [
-          0.95846,
-          0.9863
+          0.273775,
+          0.995495,
+          0.986453,
+          0.995495,
+          0.990991,
+          0.990991,
+          0.990991
         ],
         "val_correct": [
-          211,
-          217
+          83,
+          219,
+          217,
+          219,
+          218,
+          218,
+          218
         ]
       },
       "files": {
@@ -1331,12 +1441,12 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:02"
+        "evaluated_at": "2026-10-13 16:59:30"
       },
       "cost": {
         "train_seconds": 0.6520809000066947,
         "validation_inference_seconds": 0.05245299998205155,
-        "test_inference_seconds": 0.045,
+        "test_inference_seconds": 0.042,
         "peak_gpu_mb": null,
         "num_parameters": 274497,
         "model_size_mb": 4.29
@@ -1357,12 +1467,12 @@
       "topic": "inquiries",
       "dataset": "advanced",
       "dataset_id": "inquiries/advanced",
-      "run_id": "20261013_144847",
+      "run_id": "20261013_161215",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 4,
+        "best_epoch": 4,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -1374,71 +1484,25 @@
       },
       "validation": {
         "n": 60,
-        "correct": 57,
-        "accuracy": 0.95,
-        "macro_f1": 0.9499164578111946,
-        "loss": 0.30483084470033645,
-        "per_label": {
-          "shipping": {
-            "correct": 19,
-            "n": 20,
-            "f1": 0.95
-          },
-          "refund": {
-            "correct": 18,
-            "n": 20,
-            "f1": 0.9473684210526315
-          },
-          "account": {
-            "correct": 20,
-            "n": 20,
-            "f1": 0.9523809523809523
-          }
-        },
-        "labels": [
-          "shipping",
-          "refund",
-          "account"
-        ],
-        "confusion_matrix": [
-          [
-            19,
-            0,
-            1
-          ],
-          [
-            1,
-            18,
-            1
-          ],
-          [
-            0,
-            0,
-            20
-          ]
-        ]
-      },
-      "test": {
-        "n": 60,
-        "correct": 57,
-        "accuracy": 0.95,
-        "macro_f1": 0.9489698757991439,
-        "loss": null,
+        "correct": 60,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": 0.0028227150595436495,
         "per_label": {
           "shipping": {
             "correct": 20,
             "n": 20,
-            "f1": 0.975609756097561
+            "f1": 1.0
           },
           "refund": {
-            "correct": 17,
+            "correct": 20,
             "n": 20,
-            "f1": 0.918918918918919
+            "f1": 1.0
           },
           "account": {
             "correct": 20,
             "n": 20,
-            "f1": 0.9523809523809523
+            "f1": 1.0
           }
         },
         "labels": [
@@ -1453,9 +1517,55 @@
             0
           ],
           [
-            1,
-            17,
-            2
+            0,
+            20,
+            0
+          ],
+          [
+            0,
+            0,
+            20
+          ]
+        ]
+      },
+      "test": {
+        "n": 60,
+        "correct": 59,
+        "accuracy": 0.9833333333333333,
+        "macro_f1": 0.9833229101521784,
+        "loss": null,
+        "per_label": {
+          "shipping": {
+            "correct": 20,
+            "n": 20,
+            "f1": 1.0
+          },
+          "refund": {
+            "correct": 19,
+            "n": 20,
+            "f1": 0.9743589743589743
+          },
+          "account": {
+            "correct": 20,
+            "n": 20,
+            "f1": 0.975609756097561
+          }
+        },
+        "labels": [
+          "shipping",
+          "refund",
+          "account"
+        ],
+        "confusion_matrix": [
+          [
+            20,
+            0,
+            0
+          ],
+          [
+            0,
+            19,
+            1
           ],
           [
             0,
@@ -1466,12 +1576,12 @@
       },
       "test_meta": {
         "official": true,
-        "evaluated_at": "2026-10-13 14:59:02"
+        "evaluated_at": "2026-10-13 16:59:30"
       },
       "cost": {
-        "train_seconds": 11.822156700014602,
-        "validation_inference_seconds": 0.8748563000117429,
-        "test_inference_seconds": 0.855,
+        "train_seconds": 21.476500599994324,
+        "validation_inference_seconds": 0.7758349000068847,
+        "test_inference_seconds": 0.788,
         "peak_gpu_mb": 2169.21142578125,
         "num_parameters": 110619651,
         "model_size_mb": 422.0
@@ -1479,23 +1589,33 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4
         ],
         "train_loss": [
-          0.942144,
-          0.410552
+          1.116385,
+          0.673052,
+          0.159202,
+          0.018399
         ],
         "val_loss": [
-          0.620185,
-          0.304831
+          0.913114,
+          0.308347,
+          0.014425,
+          0.002823
         ],
         "val_macro_f1": [
-          0.781015,
-          0.949916
+          0.711671,
+          0.897698,
+          1.0,
+          1.0
         ],
         "val_correct": [
-          47,
-          57
+          43,
+          54,
+          60,
+          60
         ]
       },
       "files": {
@@ -1513,12 +1633,12 @@
       "topic": "inquiries",
       "dataset": "advanced",
       "dataset_id": "inquiries/advanced",
-      "run_id": "20261013_144859",
+      "run_id": "20261013_161237",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 4,
+        "best_epoch": 4,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -1530,25 +1650,25 @@
       },
       "validation": {
         "n": 60,
-        "correct": 40,
-        "accuracy": 0.6666666666666666,
-        "macro_f1": 0.6384956384956385,
-        "loss": 0.8729987184206645,
+        "correct": 60,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": 0.007910269591957331,
         "per_label": {
           "shipping": {
-            "correct": 14,
+            "correct": 20,
             "n": 20,
-            "f1": 0.7567567567567568
+            "f1": 1.0
           },
           "refund": {
-            "correct": 6,
+            "correct": 20,
             "n": 20,
-            "f1": 0.4444444444444444
+            "f1": 1.0
           },
           "account": {
             "correct": 20,
             "n": 20,
-            "f1": 0.7142857142857143
+            "f1": 1.0
           }
         },
         "labels": [
@@ -1558,14 +1678,14 @@
         ],
         "confusion_matrix": [
           [
-            14,
-            1,
-            5
+            20,
+            0,
+            0
           ],
           [
-            3,
-            6,
-            11
+            0,
+            20,
+            0
           ],
           [
             0,
@@ -1576,25 +1696,25 @@
       },
       "test": {
         "n": 60,
-        "correct": 40,
-        "accuracy": 0.6666666666666666,
-        "macro_f1": 0.6384956384956385,
+        "correct": 59,
+        "accuracy": 0.9833333333333333,
+        "macro_f1": 0.9833229101521784,
         "loss": null,
         "per_label": {
           "shipping": {
-            "correct": 14,
-            "n": 20,
-            "f1": 0.7567567567567568
-          },
-          "refund": {
-            "correct": 6,
-            "n": 20,
-            "f1": 0.4444444444444444
-          },
-          "account": {
             "correct": 20,
             "n": 20,
-            "f1": 0.7142857142857143
+            "f1": 1.0
+          },
+          "refund": {
+            "correct": 20,
+            "n": 20,
+            "f1": 0.975609756097561
+          },
+          "account": {
+            "correct": 19,
+            "n": 20,
+            "f1": 0.9743589743589743
           }
         },
         "labels": [
@@ -1604,30 +1724,30 @@
         ],
         "confusion_matrix": [
           [
-            14,
+            20,
+            0,
+            0
+          ],
+          [
+            0,
+            20,
+            0
+          ],
+          [
+            0,
             1,
-            5
-          ],
-          [
-            3,
-            6,
-            11
-          ],
-          [
-            0,
-            0,
-            20
+            19
           ]
         ]
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:02"
+        "evaluated_at": "2026-10-13 16:59:30"
       },
       "cost": {
-        "train_seconds": 11.490780599997379,
-        "validation_inference_seconds": 0.8860785999859218,
-        "test_inference_seconds": 0.843,
+        "train_seconds": 21.643806699983543,
+        "validation_inference_seconds": 0.7704856999916956,
+        "test_inference_seconds": 0.782,
         "peak_gpu_mb": 2175.94775390625,
         "num_parameters": 110620419,
         "model_size_mb": 422.0
@@ -1635,23 +1755,33 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4
         ],
         "train_loss": [
-          1.118338,
-          0.989811
+          1.110265,
+          1.068229,
+          0.487956,
+          0.091558
         ],
         "val_loss": [
-          1.058545,
-          0.872999
+          1.092543,
+          0.905215,
+          0.269213,
+          0.00791
         ],
         "val_macro_f1": [
-          0.620085,
-          0.638496
+          0.166667,
+          0.590816,
+          0.949939,
+          1.0
         ],
         "val_correct": [
-          38,
-          40
+          20,
+          37,
+          57,
+          60
         ]
       },
       "files": {
@@ -1669,12 +1799,12 @@
       "topic": "inquiries",
       "dataset": "advanced",
       "dataset_id": "inquiries/advanced",
-      "run_id": "20261013_144911",
+      "run_id": "20261013_161259",
       "train": {
         "learning_rate": 0.0001,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 16,
+        "best_epoch": 11,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -1686,25 +1816,25 @@
       },
       "validation": {
         "n": 60,
-        "correct": 33,
-        "accuracy": 0.55,
-        "macro_f1": 0.5174010217113666,
-        "loss": 1.0709691842397053,
+        "correct": 56,
+        "accuracy": 0.9333333333333333,
+        "macro_f1": 0.9341229341229341,
+        "loss": 0.2638401928047339,
         "per_label": {
           "shipping": {
-            "correct": 6,
+            "correct": 19,
             "n": 20,
-            "f1": 0.4444444444444444
+            "f1": 0.9743589743589743
           },
           "refund": {
-            "correct": 7,
-            "n": 20,
-            "f1": 0.4827586206896552
-          },
-          "account": {
             "correct": 20,
             "n": 20,
-            "f1": 0.625
+            "f1": 0.9090909090909091
+          },
+          "account": {
+            "correct": 17,
+            "n": 20,
+            "f1": 0.918918918918919
           }
         },
         "labels": [
@@ -1714,43 +1844,43 @@
         ],
         "confusion_matrix": [
           [
-            6,
-            2,
-            12
-          ],
-          [
+            19,
             1,
-            7,
-            12
+            0
           ],
           [
             0,
+            20,
+            0
+          ],
+          [
             0,
-            20
+            3,
+            17
           ]
         ]
       },
       "test": {
         "n": 60,
-        "correct": 30,
-        "accuracy": 0.5,
-        "macro_f1": 0.4379180602006689,
+        "correct": 54,
+        "accuracy": 0.9,
+        "macro_f1": 0.900375234521576,
         "loss": null,
         "per_label": {
           "shipping": {
-            "correct": 3,
+            "correct": 18,
             "n": 20,
-            "f1": 0.2608695652173913
+            "f1": 0.9230769230769231
           },
           "refund": {
-            "correct": 7,
+            "correct": 18,
             "n": 20,
-            "f1": 0.4375
+            "f1": 0.8780487804878049
           },
           "account": {
-            "correct": 20,
+            "correct": 18,
             "n": 20,
-            "f1": 0.6153846153846154
+            "f1": 0.9
           }
         },
         "labels": [
@@ -1760,30 +1890,30 @@
         ],
         "confusion_matrix": [
           [
-            3,
-            5,
-            12
+            18,
+            1,
+            1
+          ],
+          [
+            1,
+            18,
+            1
           ],
           [
             0,
-            7,
-            13
-          ],
-          [
-            0,
-            0,
-            20
+            2,
+            18
           ]
         ]
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:02"
+        "evaluated_at": "2026-10-13 16:59:30"
       },
       "cost": {
-        "train_seconds": 4.915905500005465,
-        "validation_inference_seconds": 0.17952049997984432,
-        "test_inference_seconds": 0.222,
+        "train_seconds": 37.38501249998808,
+        "validation_inference_seconds": 0.16391299999668263,
+        "test_inference_seconds": 0.217,
         "peak_gpu_mb": 350.45654296875,
         "num_parameters": 14122755,
         "model_size_mb": 53.9
@@ -1791,23 +1921,93 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
         ],
         "train_loss": [
-          1.098828,
-          1.080447
+          1.099219,
+          1.090408,
+          1.010786,
+          0.879232,
+          0.72985,
+          0.608811,
+          0.447678,
+          0.30491,
+          0.204761,
+          0.105046,
+          0.057987,
+          0.04672,
+          0.02714,
+          0.022088,
+          0.018907,
+          0.01552
         ],
         "val_loss": [
-          1.087932,
-          1.070969
+          1.09608,
+          1.060794,
+          0.921366,
+          0.789839,
+          0.689354,
+          0.556733,
+          0.575675,
+          0.431861,
+          0.329805,
+          0.31222,
+          0.26384,
+          0.332242,
+          0.313533,
+          0.314211,
+          0.30148,
+          0.309337
         ],
         "val_macro_f1": [
-          0.476308,
-          0.517401
+          0.371856,
+          0.666996,
+          0.58208,
+          0.640123,
+          0.760656,
+          0.832427,
+          0.795838,
+          0.868443,
+          0.916635,
+          0.899878,
+          0.934123,
+          0.900961,
+          0.917377,
+          0.899878,
+          0.933676,
+          0.916635
         ],
         "val_correct": [
-          31,
-          33
+          27,
+          40,
+          38,
+          41,
+          46,
+          50,
+          48,
+          52,
+          55,
+          54,
+          56,
+          54,
+          55,
+          54,
+          56,
+          55
         ]
       },
       "files": {
@@ -1936,7 +2136,7 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:07"
+        "evaluated_at": "2026-10-13 16:59:34"
       },
       "cost": {
         "train_seconds": 0.6228182000049856,
@@ -1962,12 +2162,12 @@
       "topic": "inquiries",
       "dataset": "advanced_merge",
       "dataset_id": "inquiries/advanced_merge",
-      "run_id": "20261013_144917",
+      "run_id": "20261013_161338",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 4,
+        "best_epoch": 4,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -1979,71 +2179,25 @@
       },
       "validation": {
         "n": 111,
-        "correct": 98,
-        "accuracy": 0.8828828828828829,
-        "macro_f1": 0.8836856110880001,
-        "loss": 0.22140357249861095,
-        "per_label": {
-          "shipping": {
-            "correct": 34,
-            "n": 37,
-            "f1": 0.8607594936708861
-          },
-          "refund": {
-            "correct": 32,
-            "n": 37,
-            "f1": 0.8888888888888888
-          },
-          "account": {
-            "correct": 32,
-            "n": 37,
-            "f1": 0.9014084507042254
-          }
-        },
-        "labels": [
-          "shipping",
-          "refund",
-          "account"
-        ],
-        "confusion_matrix": [
-          [
-            34,
-            1,
-            2
-          ],
-          [
-            5,
-            32,
-            0
-          ],
-          [
-            3,
-            2,
-            32
-          ]
-        ]
-      },
-      "test": {
-        "n": 111,
-        "correct": 101,
-        "accuracy": 0.9099099099099099,
-        "macro_f1": 0.9095992127393093,
-        "loss": null,
+        "correct": 111,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": 0.0010508680008225948,
         "per_label": {
           "shipping": {
             "correct": 37,
             "n": 37,
-            "f1": 0.9135802469135802
+            "f1": 1.0
           },
           "refund": {
-            "correct": 31,
+            "correct": 37,
             "n": 37,
-            "f1": 0.8985507246376812
+            "f1": 1.0
           },
           "account": {
-            "correct": 33,
+            "correct": 37,
             "n": 37,
-            "f1": 0.9166666666666666
+            "f1": 1.0
           }
         },
         "labels": [
@@ -2058,25 +2212,71 @@
             0
           ],
           [
-            4,
-            31,
+            0,
+            37,
+            0
+          ],
+          [
+            0,
+            0,
+            37
+          ]
+        ]
+      },
+      "test": {
+        "n": 111,
+        "correct": 108,
+        "accuracy": 0.972972972972973,
+        "macro_f1": 0.9729629629629629,
+        "loss": null,
+        "per_label": {
+          "shipping": {
+            "correct": 37,
+            "n": 37,
+            "f1": 0.9866666666666667
+          },
+          "refund": {
+            "correct": 35,
+            "n": 37,
+            "f1": 0.9722222222222222
+          },
+          "account": {
+            "correct": 36,
+            "n": 37,
+            "f1": 0.96
+          }
+        },
+        "labels": [
+          "shipping",
+          "refund",
+          "account"
+        ],
+        "confusion_matrix": [
+          [
+            37,
+            0,
+            0
+          ],
+          [
+            0,
+            35,
             2
           ],
           [
-            3,
             1,
-            33
+            0,
+            36
           ]
         ]
       },
       "test_meta": {
-        "official": false,
-        "evaluated_at": "2026-10-13 14:59:07"
+        "official": true,
+        "evaluated_at": "2026-10-13 16:59:34"
       },
       "cost": {
-        "train_seconds": 18.344011599983787,
-        "validation_inference_seconds": 1.3743789999862202,
-        "test_inference_seconds": 1.218,
+        "train_seconds": 34.105713500001,
+        "validation_inference_seconds": 1.0420259999809787,
+        "test_inference_seconds": 1.065,
         "peak_gpu_mb": 2169.21142578125,
         "num_parameters": 110619651,
         "model_size_mb": 422.0
@@ -2084,23 +2284,33 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4
         ],
         "train_loss": [
-          0.694013,
-          0.240053
+          1.061979,
+          0.389676,
+          0.076493,
+          0.012993
         ],
         "val_loss": [
-          0.315044,
-          0.221404
+          0.715254,
+          0.287799,
+          0.076669,
+          0.001051
         ],
         "val_macro_f1": [
-          0.856424,
-          0.883686
+          0.811841,
+          0.902017,
+          0.972928,
+          1.0
         ],
         "val_correct": [
-          95,
-          98
+          90,
+          100,
+          108,
+          111
         ]
       },
       "files": {
@@ -2118,12 +2328,12 @@
       "topic": "inquiries",
       "dataset": "advanced_merge",
       "dataset_id": "inquiries/advanced_merge",
-      "run_id": "20261013_144936",
+      "run_id": "20261013_161413",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 3,
+        "best_epoch": 3,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -2135,25 +2345,25 @@
       },
       "validation": {
         "n": 111,
-        "correct": 106,
-        "accuracy": 0.954954954954955,
-        "macro_f1": 0.9550588800769045,
-        "loss": 0.23493998511149003,
+        "correct": 111,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": 0.007234314678924846,
         "per_label": {
           "shipping": {
-            "correct": 35,
+            "correct": 37,
             "n": 37,
-            "f1": 0.958904109589041
+            "f1": 1.0
           },
           "refund": {
-            "correct": 35,
+            "correct": 37,
             "n": 37,
-            "f1": 0.958904109589041
+            "f1": 1.0
           },
           "account": {
-            "correct": 36,
+            "correct": 37,
             "n": 37,
-            "f1": 0.9473684210526315
+            "f1": 1.0
           }
         },
         "labels": [
@@ -2163,43 +2373,43 @@
         ],
         "confusion_matrix": [
           [
-            35,
+            37,
             0,
-            2
-          ],
-          [
-            1,
-            35,
-            1
+            0
           ],
           [
             0,
-            1,
-            36
+            37,
+            0
+          ],
+          [
+            0,
+            0,
+            37
           ]
         ]
       },
       "test": {
         "n": 111,
-        "correct": 105,
-        "accuracy": 0.9459459459459459,
-        "macro_f1": 0.9459459459459459,
+        "correct": 109,
+        "accuracy": 0.9819819819819819,
+        "macro_f1": 0.9819803365008845,
         "loss": null,
         "per_label": {
           "shipping": {
-            "correct": 35,
+            "correct": 37,
             "n": 37,
-            "f1": 0.9459459459459459
+            "f1": 0.9866666666666667
           },
           "refund": {
-            "correct": 35,
+            "correct": 36,
             "n": 37,
-            "f1": 0.9459459459459459
+            "f1": 0.9863013698630136
           },
           "account": {
-            "correct": 35,
+            "correct": 36,
             "n": 37,
-            "f1": 0.9459459459459459
+            "f1": 0.972972972972973
           }
         },
         "labels": [
@@ -2209,30 +2419,30 @@
         ],
         "confusion_matrix": [
           [
-            35,
-            1,
+            37,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
             1
           ],
           [
             1,
-            35,
-            1
-          ],
-          [
-            1,
-            1,
-            35
+            0,
+            36
           ]
         ]
       },
       "test_meta": {
-        "official": true,
-        "evaluated_at": "2026-10-13 14:59:07"
+        "official": false,
+        "evaluated_at": "2026-10-13 16:59:34"
       },
       "cost": {
-        "train_seconds": 18.022067399986554,
-        "validation_inference_seconds": 1.2466444000019692,
-        "test_inference_seconds": 1.174,
+        "train_seconds": 25.872860599978594,
+        "validation_inference_seconds": 1.0253582000150345,
+        "test_inference_seconds": 1.057,
         "peak_gpu_mb": 2173.44775390625,
         "num_parameters": 110620419,
         "model_size_mb": 422.0
@@ -2240,23 +2450,28 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3
         ],
         "train_loss": [
-          1.062618,
-          0.468666
+          1.102569,
+          0.772711,
+          0.203856
         ],
         "val_loss": [
-          0.695527,
-          0.23494
+          1.068548,
+          0.280865,
+          0.007234
         ],
         "val_macro_f1": [
-          0.827559,
-          0.955059
+          0.497001,
+          0.937005,
+          1.0
         ],
         "val_correct": [
-          92,
-          106
+          60,
+          104,
+          111
         ]
       },
       "files": {
@@ -2274,12 +2489,12 @@
       "topic": "inquiries",
       "dataset": "advanced_merge",
       "dataset_id": "inquiries/advanced_merge",
-      "run_id": "20261013_144955",
+      "run_id": "20261013_161439",
       "train": {
         "learning_rate": 0.0001,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 10,
+        "best_epoch": 10,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -2291,25 +2506,25 @@
       },
       "validation": {
         "n": 111,
-        "correct": 93,
-        "accuracy": 0.8378378378378378,
-        "macro_f1": 0.839025054466231,
-        "loss": 0.9444249669710795,
+        "correct": 111,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": 0.009112153179221996,
         "per_label": {
           "shipping": {
-            "correct": 30,
+            "correct": 37,
             "n": 37,
-            "f1": 0.8823529411764706
+            "f1": 1.0
           },
           "refund": {
-            "correct": 26,
+            "correct": 37,
             "n": 37,
-            "f1": 0.8125
+            "f1": 1.0
           },
           "account": {
             "correct": 37,
             "n": 37,
-            "f1": 0.8222222222222222
+            "f1": 1.0
           }
         },
         "labels": [
@@ -2319,14 +2534,14 @@
         ],
         "confusion_matrix": [
           [
-            30,
-            1,
-            6
+            37,
+            0,
+            0
           ],
           [
-            1,
-            26,
-            10
+            0,
+            37,
+            0
           ],
           [
             0,
@@ -2337,25 +2552,25 @@
       },
       "test": {
         "n": 111,
-        "correct": 89,
-        "accuracy": 0.8018018018018018,
-        "macro_f1": 0.7985838779956427,
+        "correct": 111,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
         "loss": null,
         "per_label": {
           "shipping": {
-            "correct": 28,
+            "correct": 37,
             "n": 37,
-            "f1": 0.8235294117647058
+            "f1": 1.0
           },
           "refund": {
-            "correct": 24,
+            "correct": 37,
             "n": 37,
-            "f1": 0.75
+            "f1": 1.0
           },
           "account": {
             "correct": 37,
             "n": 37,
-            "f1": 0.8222222222222222
+            "f1": 1.0
           }
         },
         "labels": [
@@ -2365,14 +2580,14 @@
         ],
         "confusion_matrix": [
           [
-            28,
-            3,
-            6
+            37,
+            0,
+            0
           ],
           [
-            3,
-            24,
-            10
+            0,
+            37,
+            0
           ],
           [
             0,
@@ -2383,12 +2598,12 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:07"
+        "evaluated_at": "2026-10-13 16:59:34"
       },
       "cost": {
-        "train_seconds": 8.844567199994344,
-        "validation_inference_seconds": 0.24678169999970123,
-        "test_inference_seconds": 0.276,
+        "train_seconds": 41.03009469999233,
+        "validation_inference_seconds": 0.22936669999035075,
+        "test_inference_seconds": 0.264,
         "peak_gpu_mb": 350.45654296875,
         "num_parameters": 14122755,
         "model_size_mb": 53.9
@@ -2396,23 +2611,63 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
         ],
         "train_loss": [
-          1.093584,
-          1.002296
+          1.097798,
+          1.042022,
+          0.7884,
+          0.488574,
+          0.239099,
+          0.071966,
+          0.01977,
+          0.011268,
+          0.007855,
+          0.005696
         ],
         "val_loss": [
-          1.052303,
-          0.944425
+          1.093243,
+          0.895689,
+          0.579758,
+          0.302911,
+          0.193494,
+          0.020774,
+          0.015638,
+          0.019333,
+          0.046531,
+          0.009112
         ],
         "val_macro_f1": [
-          0.787424,
-          0.839025
+          0.333059,
+          0.49092,
+          0.852033,
+          0.946157,
+          0.9463,
+          1.0,
+          1.0,
+          0.990989,
+          0.990989,
+          1.0
         ],
         "val_correct": [
-          87,
-          93
+          49,
+          68,
+          95,
+          105,
+          105,
+          111,
+          111,
+          110,
+          110,
+          111
         ]
       },
       "files": {
@@ -2541,12 +2796,12 @@
       },
       "test_meta": {
         "official": null,
-        "evaluated_at": "2026-10-13 14:59:13"
+        "evaluated_at": "2026-10-13 16:59:37"
       },
       "cost": {
         "train_seconds": 1.3887231000117026,
         "validation_inference_seconds": 0.10448809998342767,
-        "test_inference_seconds": 0.086,
+        "test_inference_seconds": 0.087,
         "peak_gpu_mb": null,
         "num_parameters": 436728,
         "model_size_mb": 6.91
@@ -2723,12 +2978,12 @@
       "topic": "inquiries",
       "dataset": "total_merge",
       "dataset_id": "inquiries/total_merge",
-      "run_id": "20261013_145046",
+      "run_id": "20261013_161829",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 9,
+        "best_epoch": 4,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -2740,25 +2995,25 @@
       },
       "validation": {
         "n": 331,
-        "correct": 319,
-        "accuracy": 0.9637462235649547,
-        "macro_f1": 0.9636997250189786,
-        "loss": 0.1570984884770165,
+        "correct": 329,
+        "accuracy": 0.9939577039274925,
+        "macro_f1": 0.993993993993994,
+        "loss": 0.03856721342459681,
         "per_label": {
           "shipping": {
-            "correct": 104,
+            "correct": 110,
             "n": 111,
-            "f1": 0.9585253456221198
+            "f1": 0.990990990990991
           },
           "refund": {
-            "correct": 108,
+            "correct": 110,
             "n": 111,
-            "f1": 0.968609865470852
+            "f1": 0.990990990990991
           },
           "account": {
-            "correct": 107,
+            "correct": 109,
             "n": 109,
-            "f1": 0.963963963963964
+            "f1": 1.0
           }
         },
         "labels": [
@@ -2768,43 +3023,43 @@
         ],
         "confusion_matrix": [
           [
-            104,
-            2,
-            5
+            110,
+            1,
+            0
           ],
           [
-            2,
-            108,
-            1
+            1,
+            110,
+            0
           ],
           [
             0,
-            2,
-            107
+            0,
+            109
           ]
         ]
       },
       "test": {
         "n": 331,
-        "correct": 326,
-        "accuracy": 0.9848942598187311,
-        "macro_f1": 0.9848757848757849,
+        "correct": 330,
+        "accuracy": 0.9969788519637462,
+        "macro_f1": 0.9969969360631454,
         "loss": null,
         "per_label": {
           "shipping": {
-            "correct": 108,
+            "correct": 111,
             "n": 111,
-            "f1": 0.9818181818181818
+            "f1": 0.9955156950672646
           },
           "refund": {
-            "correct": 108,
+            "correct": 109,
             "n": 109,
-            "f1": 0.9818181818181818
+            "f1": 1.0
           },
           "account": {
             "correct": 110,
             "n": 111,
-            "f1": 0.990990990990991
+            "f1": 0.995475113122172
           }
         },
         "labels": [
@@ -2814,30 +3069,30 @@
         ],
         "confusion_matrix": [
           [
-            108,
-            2,
-            1
-          ],
-          [
-            1,
-            108,
+            111,
+            0,
             0
           ],
           [
             0,
+            109,
+            0
+          ],
+          [
             1,
+            0,
             110
           ]
         ]
       },
       "test_meta": {
         "official": null,
-        "evaluated_at": "2026-10-13 14:59:13"
+        "evaluated_at": "2026-10-13 16:59:37"
       },
       "cost": {
-        "train_seconds": 39.12395849998575,
-        "validation_inference_seconds": 1.7646648999943864,
-        "test_inference_seconds": 1.839,
+        "train_seconds": 168.63986009999644,
+        "validation_inference_seconds": 1.6077304999926127,
+        "test_inference_seconds": 1.498,
         "peak_gpu_mb": 2161.91845703125,
         "num_parameters": 110620419,
         "model_size_mb": 422.0
@@ -2845,23 +3100,58 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
         ],
         "train_loss": [
-          0.470352,
-          0.13971
+          0.780364,
+          0.113898,
+          0.068396,
+          0.019038,
+          0.000951,
+          0.000482,
+          0.000366,
+          0.000292,
+          0.000247
         ],
         "val_loss": [
-          0.309897,
-          0.157098
+          0.261843,
+          0.118538,
+          0.066981,
+          0.038567,
+          0.04524,
+          0.047452,
+          0.04902,
+          0.049963,
+          0.051075
         ],
         "val_macro_f1": [
-          0.933539,
-          0.9637
+          0.919471,
+          0.972823,
+          0.984818,
+          0.993994,
+          0.993994,
+          0.993994,
+          0.993994,
+          0.993994,
+          0.993994
         ],
         "val_correct": [
-          309,
-          319
+          304,
+          322,
+          326,
+          329,
+          329,
+          329,
+          329,
+          329,
+          329
         ]
       },
       "files": {
@@ -2879,12 +3169,12 @@
       "topic": "inquiries",
       "dataset": "total_merge",
       "dataset_id": "inquiries/total_merge",
-      "run_id": "20261013_145126",
+      "run_id": "20261013_162118",
       "train": {
         "learning_rate": 0.0001,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 19,
+        "best_epoch": 14,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -2896,25 +3186,25 @@
       },
       "validation": {
         "n": 331,
-        "correct": 312,
-        "accuracy": 0.9425981873111783,
-        "macro_f1": 0.9425260824204487,
-        "loss": 0.27650106095025184,
+        "correct": 325,
+        "accuracy": 0.9818731117824774,
+        "macro_f1": 0.9818587570400625,
+        "loss": 0.11113121098430062,
         "per_label": {
           "shipping": {
-            "correct": 100,
+            "correct": 107,
             "n": 111,
-            "f1": 0.9389671361502347
+            "f1": 0.9771689497716894
           },
           "refund": {
-            "correct": 105,
+            "correct": 109,
             "n": 111,
-            "f1": 0.9375
+            "f1": 0.9864253393665159
           },
           "account": {
-            "correct": 107,
+            "correct": 109,
             "n": 109,
-            "f1": 0.9511111111111111
+            "f1": 0.9819819819819819
           }
         },
         "labels": [
@@ -2924,43 +3214,43 @@
         ],
         "confusion_matrix": [
           [
-            100,
-            6,
-            5
+            107,
+            1,
+            3
           ],
           [
-            2,
-            105,
-            4
+            1,
+            109,
+            1
           ],
           [
             0,
-            2,
-            107
+            0,
+            109
           ]
         ]
       },
       "test": {
         "n": 331,
-        "correct": 319,
-        "accuracy": 0.9637462235649547,
-        "macro_f1": 0.9636462980382662,
+        "correct": 328,
+        "accuracy": 0.9909365558912386,
+        "macro_f1": 0.9909354025179713,
         "loss": null,
         "per_label": {
           "shipping": {
-            "correct": 103,
+            "correct": 109,
             "n": 111,
-            "f1": 0.958139534883721
+            "f1": 0.990909090909091
           },
           "refund": {
-            "correct": 106,
+            "correct": 108,
             "n": 109,
-            "f1": 0.9636363636363636
+            "f1": 0.9908256880733946
           },
           "account": {
-            "correct": 110,
+            "correct": 111,
             "n": 111,
-            "f1": 0.9691629955947136
+            "f1": 0.9910714285714286
           }
         },
         "labels": [
@@ -2970,30 +3260,30 @@
         ],
         "confusion_matrix": [
           [
-            103,
-            4,
-            4
-          ],
-          [
+            109,
             1,
-            106,
-            2
+            1
           ],
           [
             0,
-            1,
-            110
+            108,
+            1
+          ],
+          [
+            0,
+            0,
+            111
           ]
         ]
       },
       "test_meta": {
         "official": null,
-        "evaluated_at": "2026-10-13 14:59:13"
+        "evaluated_at": "2026-10-13 16:59:37"
       },
       "cost": {
-        "train_seconds": 23.748532900004648,
-        "validation_inference_seconds": 0.5175078999891412,
-        "test_inference_seconds": 0.365,
+        "train_seconds": 226.70243900001515,
+        "validation_inference_seconds": 0.5305728999956045,
+        "test_inference_seconds": 0.36,
         "peak_gpu_mb": 350.73876953125,
         "num_parameters": 14122755,
         "model_size_mb": 53.9
@@ -3001,23 +3291,108 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
         ],
         "train_loss": [
-          0.893937,
-          0.400022
+          1.090341,
+          0.618749,
+          0.219102,
+          0.149633,
+          0.131807,
+          0.098748,
+          0.03636,
+          0.037352,
+          0.023649,
+          0.018249,
+          0.024062,
+          0.023712,
+          0.014168,
+          0.015631,
+          0.011181,
+          0.007874,
+          0.000733,
+          0.000687,
+          0.000646
         ],
         "val_loss": [
-          0.535802,
-          0.276501
+          0.987134,
+          0.292407,
+          0.237237,
+          0.227659,
+          0.179814,
+          0.197586,
+          0.228287,
+          0.166335,
+          0.195778,
+          0.188094,
+          0.169264,
+          0.148958,
+          0.147095,
+          0.111131,
+          0.113742,
+          0.14076,
+          0.143786,
+          0.146191,
+          0.147986
         ],
         "val_macro_f1": [
-          0.914971,
-          0.942526
+          0.790336,
+          0.927789,
+          0.933006,
+          0.948497,
+          0.957709,
+          0.957638,
+          0.963678,
+          0.972859,
+          0.963736,
+          0.969787,
+          0.972744,
+          0.975811,
+          0.97877,
+          0.981859,
+          0.981843,
+          0.97881,
+          0.97881,
+          0.97881,
+          0.97881
         ],
         "val_correct": [
-          303,
-          312
+          263,
+          307,
+          309,
+          314,
+          317,
+          317,
+          319,
+          322,
+          319,
+          321,
+          322,
+          323,
+          324,
+          325,
+          325,
+          324,
+          324,
+          324,
+          324
         ]
       },
       "files": {
@@ -3146,12 +3521,12 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:15"
+        "evaluated_at": "2026-10-13 16:59:39"
       },
       "cost": {
         "train_seconds": 0.18332690000534058,
         "validation_inference_seconds": 0.011283600004389882,
-        "test_inference_seconds": 0.011,
+        "test_inference_seconds": 0.01,
         "peak_gpu_mb": null,
         "num_parameters": 117708,
         "model_size_mb": 1.79
@@ -3172,12 +3547,12 @@
       "topic": "documents",
       "dataset": "basic",
       "dataset_id": "documents/basic",
-      "run_id": "20261013_145150",
+      "run_id": "20261013_162506",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 8,
+        "best_epoch": 3,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -3189,10 +3564,242 @@
       },
       "validation": {
         "n": 120,
+        "correct": 119,
+        "accuracy": 0.9916666666666667,
+        "macro_f1": 0.991665364379851,
+        "loss": 0.010067946822770561,
+        "per_label": {
+          "announcement": {
+            "correct": 39,
+            "n": 40,
+            "f1": 0.9873417721518988
+          },
+          "manual": {
+            "correct": 40,
+            "n": 40,
+            "f1": 0.9876543209876543
+          },
+          "minutes": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          }
+        },
+        "labels": [
+          "announcement",
+          "manual",
+          "minutes"
+        ],
+        "confusion_matrix": [
+          [
+            39,
+            1,
+            0
+          ],
+          [
+            0,
+            40,
+            0
+          ],
+          [
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "test": {
+        "n": 120,
+        "correct": 120,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": null,
+        "per_label": {
+          "announcement": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          },
+          "manual": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          },
+          "minutes": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          }
+        },
+        "labels": [
+          "announcement",
+          "manual",
+          "minutes"
+        ],
+        "confusion_matrix": [
+          [
+            40,
+            0,
+            0
+          ],
+          [
+            0,
+            40,
+            0
+          ],
+          [
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "test_meta": {
+        "official": false,
+        "evaluated_at": "2026-10-13 16:59:39"
+      },
+      "cost": {
+        "train_seconds": 40.946670000004815,
+        "validation_inference_seconds": 0.29818390001310036,
+        "test_inference_seconds": 0.206,
+        "peak_gpu_mb": 2131.421875,
+        "num_parameters": 110619651,
+        "model_size_mb": 422.0
+      },
+      "curve": {
+        "epoch": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "train_loss": [
+          0.823942,
+          0.066863,
+          0.003598,
+          0.001141,
+          0.000805,
+          0.000612,
+          0.000504,
+          0.000435
+        ],
+        "val_loss": [
+          0.260001,
+          0.06346,
+          0.010068,
+          0.029198,
+          0.03485,
+          0.040933,
+          0.044172,
+          0.047602
+        ],
+        "val_macro_f1": [
+          0.958327,
+          0.983323,
+          0.991665,
+          0.991665,
+          0.991665,
+          0.991665,
+          0.991665,
+          0.991665
+        ],
+        "val_correct": [
+          115,
+          118,
+          119,
+          119,
+          119,
+          119,
+          119,
+          119
+        ]
+      },
+      "files": {
+        "sub": "sub.json",
+        "validation_predictions": "validation_predictions.csv",
+        "test_predictions": "test_predictions.csv",
+        "validation_errors": "validation_errors.csv",
+        "log": "train.log"
+      }
+    },
+    {
+      "schema": "project2-result/v1",
+      "model_name": "roberta",
+      "model_id": "klue/roberta-base",
+      "topic": "documents",
+      "dataset": "basic",
+      "dataset_id": "documents/basic",
+      "run_id": "20261013_162547",
+      "train": {
+        "learning_rate": 3e-05,
+        "epochs_max": 20,
+        "epochs_run": 5,
+        "best_epoch": 5,
+        "batch_size": 4,
+        "accumulation_steps": 2,
+        "effective_batch": 8
+      },
+      "input": {
+        "train_rows": 360,
+        "validation_rows": 120,
+        "test_rows": 120
+      },
+      "validation": {
+        "n": 120,
+        "correct": 120,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": 0.0009976726452199122,
+        "per_label": {
+          "announcement": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          },
+          "manual": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          },
+          "minutes": {
+            "correct": 40,
+            "n": 40,
+            "f1": 1.0
+          }
+        },
+        "labels": [
+          "announcement",
+          "manual",
+          "minutes"
+        ],
+        "confusion_matrix": [
+          [
+            40,
+            0,
+            0
+          ],
+          [
+            0,
+            40,
+            0
+          ],
+          [
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "test": {
+        "n": 120,
         "correct": 117,
         "accuracy": 0.975,
         "macro_f1": 0.974996093139553,
-        "loss": 0.08232123913864295,
+        "loss": null,
         "per_label": {
           "announcement": {
             "correct": 39,
@@ -3233,216 +3840,14 @@
           ]
         ]
       },
-      "test": {
-        "n": 120,
-        "correct": 119,
-        "accuracy": 0.9916666666666667,
-        "macro_f1": 0.991665364379851,
-        "loss": null,
-        "per_label": {
-          "announcement": {
-            "correct": 40,
-            "n": 40,
-            "f1": 0.9876543209876543
-          },
-          "manual": {
-            "correct": 39,
-            "n": 40,
-            "f1": 0.9873417721518988
-          },
-          "minutes": {
-            "correct": 40,
-            "n": 40,
-            "f1": 1.0
-          }
-        },
-        "labels": [
-          "announcement",
-          "manual",
-          "minutes"
-        ],
-        "confusion_matrix": [
-          [
-            40,
-            0,
-            0
-          ],
-          [
-            1,
-            39,
-            0
-          ],
-          [
-            0,
-            0,
-            40
-          ]
-        ]
-      },
-      "test_meta": {
-        "official": false,
-        "evaluated_at": "2026-10-13 14:59:15"
-      },
-      "cost": {
-        "train_seconds": 10.750568099989323,
-        "validation_inference_seconds": 0.31104790000244975,
-        "test_inference_seconds": 0.227,
-        "peak_gpu_mb": 2131.42041015625,
-        "num_parameters": 110619651,
-        "model_size_mb": 422.0
-      },
-      "curve": {
-        "epoch": [
-          1,
-          2
-        ],
-        "train_loss": [
-          0.386606,
-          0.010066
-        ],
-        "val_loss": [
-          0.154437,
-          0.082321
-        ],
-        "val_macro_f1": [
-          0.949969,
-          0.974996
-        ],
-        "val_correct": [
-          114,
-          117
-        ]
-      },
-      "files": {
-        "sub": "sub.json",
-        "validation_predictions": "validation_predictions.csv",
-        "test_predictions": "test_predictions.csv",
-        "validation_errors": "validation_errors.csv",
-        "log": "train.log"
-      }
-    },
-    {
-      "schema": "project2-result/v1",
-      "model_name": "roberta",
-      "model_id": "klue/roberta-base",
-      "topic": "documents",
-      "dataset": "basic",
-      "dataset_id": "documents/basic",
-      "run_id": "20261013_145201",
-      "train": {
-        "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
-        "batch_size": 4,
-        "accumulation_steps": 2,
-        "effective_batch": 8
-      },
-      "input": {
-        "train_rows": 360,
-        "validation_rows": 120,
-        "test_rows": 120
-      },
-      "validation": {
-        "n": 120,
-        "correct": 119,
-        "accuracy": 0.9916666666666667,
-        "macro_f1": 0.991665364379851,
-        "loss": 0.04749756554762522,
-        "per_label": {
-          "announcement": {
-            "correct": 40,
-            "n": 40,
-            "f1": 0.9876543209876543
-          },
-          "manual": {
-            "correct": 39,
-            "n": 40,
-            "f1": 0.9873417721518988
-          },
-          "minutes": {
-            "correct": 40,
-            "n": 40,
-            "f1": 1.0
-          }
-        },
-        "labels": [
-          "announcement",
-          "manual",
-          "minutes"
-        ],
-        "confusion_matrix": [
-          [
-            40,
-            0,
-            0
-          ],
-          [
-            1,
-            39,
-            0
-          ],
-          [
-            0,
-            0,
-            40
-          ]
-        ]
-      },
-      "test": {
-        "n": 120,
-        "correct": 118,
-        "accuracy": 0.9833333333333333,
-        "macro_f1": 0.9833229101521784,
-        "loss": null,
-        "per_label": {
-          "announcement": {
-            "correct": 40,
-            "n": 40,
-            "f1": 0.975609756097561
-          },
-          "manual": {
-            "correct": 38,
-            "n": 40,
-            "f1": 0.9743589743589743
-          },
-          "minutes": {
-            "correct": 40,
-            "n": 40,
-            "f1": 1.0
-          }
-        },
-        "labels": [
-          "announcement",
-          "manual",
-          "minutes"
-        ],
-        "confusion_matrix": [
-          [
-            40,
-            0,
-            0
-          ],
-          [
-            2,
-            38,
-            0
-          ],
-          [
-            0,
-            0,
-            40
-          ]
-        ]
-      },
       "test_meta": {
         "official": true,
-        "evaluated_at": "2026-10-13 14:59:15"
+        "evaluated_at": "2026-10-13 16:59:39"
       },
       "cost": {
-        "train_seconds": 10.51827040000353,
-        "validation_inference_seconds": 0.3205219999945257,
-        "test_inference_seconds": 0.232,
+        "train_seconds": 25.796102799999062,
+        "validation_inference_seconds": 0.3016332999977749,
+        "test_inference_seconds": 0.222,
         "peak_gpu_mb": 2132.15673828125,
         "num_parameters": 110620419,
         "model_size_mb": 422.0
@@ -3450,23 +3855,38 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5
         ],
         "train_loss": [
-          0.472197,
-          0.079932
+          0.935653,
+          0.090887,
+          0.019961,
+          0.021762,
+          0.001715
         ],
         "val_loss": [
-          0.322883,
-          0.047498
+          0.315841,
+          0.047001,
+          0.164121,
+          0.107121,
+          0.000998
         ],
         "val_macro_f1": [
-          0.924039,
-          0.991665
+          0.958327,
+          0.991665,
+          0.966583,
+          0.974965,
+          1.0
         ],
         "val_correct": [
-          111,
-          119
+          115,
+          119,
+          116,
+          117,
+          120
         ]
       },
       "files": {
@@ -3484,12 +3904,12 @@
       "topic": "documents",
       "dataset": "basic",
       "dataset_id": "documents/basic",
-      "run_id": "20261013_145212",
+      "run_id": "20261013_162613",
       "train": {
         "learning_rate": 0.0001,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 9,
+        "best_epoch": 4,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -3501,20 +3921,20 @@
       },
       "validation": {
         "n": 120,
-        "correct": 118,
-        "accuracy": 0.9833333333333333,
-        "macro_f1": 0.9833229101521784,
-        "loss": 0.5981392145156861,
+        "correct": 120,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": 0.027210538275539875,
         "per_label": {
           "announcement": {
             "correct": 40,
             "n": 40,
-            "f1": 0.975609756097561
+            "f1": 1.0
           },
           "manual": {
-            "correct": 38,
+            "correct": 40,
             "n": 40,
-            "f1": 0.9743589743589743
+            "f1": 1.0
           },
           "minutes": {
             "correct": 40,
@@ -3534,8 +3954,8 @@
             0
           ],
           [
-            2,
-            38,
+            0,
+            40,
             0
           ],
           [
@@ -3547,20 +3967,20 @@
       },
       "test": {
         "n": 120,
-        "correct": 116,
-        "accuracy": 0.9666666666666667,
-        "macro_f1": 0.9665831244778613,
+        "correct": 118,
+        "accuracy": 0.9833333333333333,
+        "macro_f1": 0.9833229101521784,
         "loss": null,
         "per_label": {
           "announcement": {
-            "correct": 40,
+            "correct": 38,
             "n": 40,
-            "f1": 0.9523809523809523
+            "f1": 0.9743589743589743
           },
           "manual": {
-            "correct": 36,
+            "correct": 40,
             "n": 40,
-            "f1": 0.9473684210526315
+            "f1": 0.975609756097561
           },
           "minutes": {
             "correct": 40,
@@ -3575,13 +3995,13 @@
         ],
         "confusion_matrix": [
           [
-            40,
-            0,
+            38,
+            2,
             0
           ],
           [
-            4,
-            36,
+            0,
+            40,
             0
           ],
           [
@@ -3593,12 +4013,12 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:15"
+        "evaluated_at": "2026-10-13 16:59:39"
       },
       "cost": {
-        "train_seconds": 8.404454100003932,
-        "validation_inference_seconds": 0.15853590000187978,
-        "test_inference_seconds": 0.053,
+        "train_seconds": 38.43561220000265,
+        "validation_inference_seconds": 0.16028609999921173,
+        "test_inference_seconds": 0.055,
         "peak_gpu_mb": 292.1904296875,
         "num_parameters": 14122755,
         "model_size_mb": 53.9
@@ -3606,22 +4026,57 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
         ],
         "train_loss": [
-          1.007075,
-          0.686784
+          1.089431,
+          0.835775,
+          0.328642,
+          0.063031,
+          0.020404,
+          0.011173,
+          0.007612,
+          0.005574,
+          0.00426
         ],
         "val_loss": [
-          0.800854,
-          0.598139
+          1.035698,
+          0.557435,
+          0.144851,
+          0.027211,
+          0.208174,
+          0.129232,
+          0.108608,
+          0.091853,
+          0.043815
         ],
         "val_macro_f1": [
-          0.906567,
+          0.897543,
+          0.897698,
+          0.974996,
+          1.0,
+          0.95779,
+          0.966583,
+          0.974965,
+          0.974965,
           0.983323
         ],
         "val_correct": [
-          109,
+          108,
+          108,
+          117,
+          120,
+          115,
+          116,
+          117,
+          117,
           118
         ]
       },
@@ -3751,12 +4206,12 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:18"
+        "evaluated_at": "2026-10-13 16:59:40"
       },
       "cost": {
         "train_seconds": 0.3866322000103537,
         "validation_inference_seconds": 0.021723700017901137,
-        "test_inference_seconds": 0.02,
+        "test_inference_seconds": 0.021,
         "peak_gpu_mb": null,
         "num_parameters": 182055,
         "model_size_mb": 2.79
@@ -3933,12 +4388,12 @@
       "topic": "documents",
       "dataset": "basic_merge",
       "dataset_id": "documents/basic_merge",
-      "run_id": "20261013_145241",
+      "run_id": "20261013_162808",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 1,
+        "epochs_max": 20,
+        "epochs_run": 7,
+        "best_epoch": 2,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -3950,20 +4405,20 @@
       },
       "validation": {
         "n": 220,
-        "correct": 218,
-        "accuracy": 0.990909090909091,
-        "macro_f1": 0.9909893455098935,
-        "loss": 0.045401237803426656,
+        "correct": 219,
+        "accuracy": 0.9954545454545455,
+        "macro_f1": 0.9954952898385305,
+        "loss": 0.010870223445817829,
         "per_label": {
           "announcement": {
-            "correct": 72,
+            "correct": 73,
             "n": 74,
-            "f1": 0.9863013698630136
+            "f1": 0.9931972789115646
           },
           "manual": {
             "correct": 74,
             "n": 74,
-            "f1": 0.9866666666666667
+            "f1": 0.9932885906040269
           },
           "minutes": {
             "correct": 72,
@@ -3978,8 +4433,8 @@
         ],
         "confusion_matrix": [
           [
-            72,
-            2,
+            73,
+            1,
             0
           ],
           [
@@ -3996,25 +4451,25 @@
       },
       "test": {
         "n": 220,
-        "correct": 219,
-        "accuracy": 0.9954545454545455,
-        "macro_f1": 0.9954318612036733,
+        "correct": 217,
+        "accuracy": 0.9863636363636363,
+        "macro_f1": 0.9863634951697574,
         "loss": null,
         "per_label": {
           "announcement": {
-            "correct": 74,
+            "correct": 72,
             "n": 74,
-            "f1": 0.9932885906040269
+            "f1": 0.9795918367346939
           },
           "manual": {
-            "correct": 71,
+            "correct": 72,
             "n": 72,
-            "f1": 0.993006993006993
+            "f1": 0.9863013698630136
           },
           "minutes": {
-            "correct": 74,
+            "correct": 73,
             "n": 74,
-            "f1": 1.0
+            "f1": 0.9931972789115646
           }
         },
         "labels": [
@@ -4024,30 +4479,30 @@
         ],
         "confusion_matrix": [
           [
-            74,
+            72,
+            2,
+            0
+          ],
+          [
             0,
+            72,
             0
           ],
           [
             1,
-            71,
-            0
-          ],
-          [
             0,
-            0,
-            74
+            73
           ]
         ]
       },
       "test_meta": {
         "official": true,
-        "evaluated_at": "2026-10-13 14:59:18"
+        "evaluated_at": "2026-10-13 16:59:40"
       },
       "cost": {
-        "train_seconds": 19.654159499972593,
-        "validation_inference_seconds": 0.5798228000057861,
-        "test_inference_seconds": 0.444,
+        "train_seconds": 65.45643350001774,
+        "validation_inference_seconds": 0.5563829000166152,
+        "test_inference_seconds": 0.397,
         "peak_gpu_mb": 2132.15966796875,
         "num_parameters": 110620419,
         "model_size_mb": 422.0
@@ -4055,23 +4510,48 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
         ],
         "train_loss": [
-          0.326519,
-          0.004374
+          0.689295,
+          0.098622,
+          0.051903,
+          0.001471,
+          0.000908,
+          0.00066,
+          0.000517
         ],
         "val_loss": [
-          0.045401,
-          0.051892
+          0.120465,
+          0.01087,
+          0.03127,
+          0.03566,
+          0.037123,
+          0.038391,
+          0.039351
         ],
         "val_macro_f1": [
-          0.990989,
-          0.990989
+          0.972953,
+          0.995495,
+          0.995495,
+          0.995495,
+          0.995495,
+          0.995495,
+          0.995495
         ],
         "val_correct": [
-          218,
-          218
+          214,
+          219,
+          219,
+          219,
+          219,
+          219,
+          219
         ]
       },
       "files": {
@@ -4089,12 +4569,12 @@
       "topic": "documents",
       "dataset": "basic_merge",
       "dataset_id": "documents/basic_merge",
-      "run_id": "20261013_145301",
+      "run_id": "20261013_162914",
       "train": {
         "learning_rate": 0.0001,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 13,
+        "best_epoch": 8,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -4106,20 +4586,20 @@
       },
       "validation": {
         "n": 220,
-        "correct": 212,
-        "accuracy": 0.9636363636363636,
-        "macro_f1": 0.9639573820395738,
-        "loss": 0.2995636731386185,
+        "correct": 216,
+        "accuracy": 0.9818181818181818,
+        "macro_f1": 0.981978691019787,
+        "loss": 0.10346573092128065,
         "per_label": {
           "announcement": {
-            "correct": 69,
+            "correct": 73,
             "n": 74,
-            "f1": 0.9452054794520548
+            "f1": 0.9733333333333334
           },
           "manual": {
             "correct": 71,
             "n": 74,
-            "f1": 0.9466666666666667
+            "f1": 0.9726027397260274
           },
           "minutes": {
             "correct": 72,
@@ -4134,8 +4614,8 @@
         ],
         "confusion_matrix": [
           [
-            69,
-            5,
+            73,
+            1,
             0
           ],
           [
@@ -4152,25 +4632,25 @@
       },
       "test": {
         "n": 220,
-        "correct": 213,
-        "accuracy": 0.9681818181818181,
-        "macro_f1": 0.9679989980116795,
+        "correct": 215,
+        "accuracy": 0.9772727272727273,
+        "macro_f1": 0.977098842870655,
         "loss": null,
         "per_label": {
           "announcement": {
-            "correct": 67,
+            "correct": 69,
             "n": 74,
-            "f1": 0.950354609929078
+            "f1": 0.965034965034965
           },
           "manual": {
             "correct": 72,
             "n": 72,
-            "f1": 0.9536423841059603
+            "f1": 0.972972972972973
           },
           "minutes": {
             "correct": 74,
             "n": 74,
-            "f1": 1.0
+            "f1": 0.9932885906040269
           }
         },
         "labels": [
@@ -4180,9 +4660,9 @@
         ],
         "confusion_matrix": [
           [
-            67,
-            7,
-            0
+            69,
+            4,
+            1
           ],
           [
             0,
@@ -4198,12 +4678,12 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:18"
+        "evaluated_at": "2026-10-13 16:59:40"
       },
       "cost": {
-        "train_seconds": 18.556565699982457,
-        "validation_inference_seconds": 0.2903015000047162,
-        "test_inference_seconds": 0.096,
+        "train_seconds": 101.54906540000229,
+        "validation_inference_seconds": 0.29585470000165515,
+        "test_inference_seconds": 0.085,
         "peak_gpu_mb": 292.19189453125,
         "num_parameters": 14122755,
         "model_size_mb": 53.9
@@ -4211,23 +4691,78 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
         ],
         "train_loss": [
-          0.888604,
-          0.400191
+          1.06292,
+          0.570974,
+          0.093567,
+          0.039727,
+          0.012147,
+          0.003469,
+          0.002373,
+          0.001802,
+          0.001387,
+          0.001178,
+          0.001031,
+          0.000876,
+          0.000783
         ],
         "val_loss": [
-          0.537528,
-          0.299564
+          0.909797,
+          0.323222,
+          0.134556,
+          0.136739,
+          0.113981,
+          0.095631,
+          0.095098,
+          0.103466,
+          0.107729,
+          0.110236,
+          0.113526,
+          0.116983,
+          0.118726
         ],
         "val_macro_f1": [
-          0.936752,
-          0.963957
+          0.749976,
+          0.939521,
+          0.963858,
+          0.968366,
+          0.968432,
+          0.977476,
+          0.977476,
+          0.981979,
+          0.981979,
+          0.981979,
+          0.981979,
+          0.981979,
+          0.981979
         ],
         "val_correct": [
-          206,
-          212
+          168,
+          207,
+          212,
+          213,
+          213,
+          215,
+          215,
+          216,
+          216,
+          216,
+          216,
+          216,
+          216
         ]
       },
       "files": {
@@ -4356,12 +4891,12 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:22"
+        "evaluated_at": "2026-10-13 16:59:44"
       },
       "cost": {
         "train_seconds": 0.5529264999786392,
         "validation_inference_seconds": 0.05178840001462959,
-        "test_inference_seconds": 0.048,
+        "test_inference_seconds": 0.052,
         "peak_gpu_mb": null,
         "num_parameters": 417135,
         "model_size_mb": 6.58
@@ -4382,12 +4917,12 @@
       "topic": "documents",
       "dataset": "advanced",
       "dataset_id": "documents/advanced",
-      "run_id": "20261013_145321",
+      "run_id": "20261013_163057",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 9,
+        "best_epoch": 5,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -4399,25 +4934,25 @@
       },
       "validation": {
         "n": 60,
-        "correct": 57,
-        "accuracy": 0.95,
-        "macro_f1": 0.9499164578111946,
-        "loss": 0.27813392927249275,
+        "correct": 59,
+        "accuracy": 0.9833333333333333,
+        "macro_f1": 0.9833229101521784,
+        "loss": 0.06704478547908366,
         "per_label": {
           "announcement": {
-            "correct": 19,
+            "correct": 20,
             "n": 20,
-            "f1": 0.95
+            "f1": 0.975609756097561
           },
           "manual": {
-            "correct": 18,
+            "correct": 19,
             "n": 20,
-            "f1": 0.9473684210526315
+            "f1": 0.9743589743589743
           },
           "minutes": {
             "correct": 20,
             "n": 20,
-            "f1": 0.9523809523809523
+            "f1": 1.0
           }
         },
         "labels": [
@@ -4427,14 +4962,14 @@
         ],
         "confusion_matrix": [
           [
-            19,
+            20,
             0,
-            1
+            0
           ],
           [
             1,
-            18,
-            1
+            19,
+            0
           ],
           [
             0,
@@ -4445,25 +4980,25 @@
       },
       "test": {
         "n": 60,
-        "correct": 58,
-        "accuracy": 0.9666666666666667,
-        "macro_f1": 0.9661959777492511,
+        "correct": 60,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
         "loss": null,
         "per_label": {
           "announcement": {
-            "correct": 18,
+            "correct": 20,
             "n": 20,
-            "f1": 0.9473684210526315
+            "f1": 1.0
           },
           "manual": {
             "correct": 20,
             "n": 20,
-            "f1": 0.975609756097561
+            "f1": 1.0
           },
           "minutes": {
             "correct": 20,
             "n": 20,
-            "f1": 0.975609756097561
+            "f1": 1.0
           }
         },
         "labels": [
@@ -4473,9 +5008,9 @@
         ],
         "confusion_matrix": [
           [
-            18,
-            1,
-            1
+            20,
+            0,
+            0
           ],
           [
             0,
@@ -4490,13 +5025,13 @@
         ]
       },
       "test_meta": {
-        "official": true,
-        "evaluated_at": "2026-10-13 14:59:22"
+        "official": false,
+        "evaluated_at": "2026-10-13 16:59:44"
       },
       "cost": {
-        "train_seconds": 11.38062959999661,
-        "validation_inference_seconds": 0.9284603999985848,
-        "test_inference_seconds": 0.886,
+        "train_seconds": 47.157701500022085,
+        "validation_inference_seconds": 0.7804478000034578,
+        "test_inference_seconds": 0.794,
         "peak_gpu_mb": 2169.21142578125,
         "num_parameters": 110619651,
         "model_size_mb": 422.0
@@ -4504,23 +5039,58 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
         ],
         "train_loss": [
-          0.898443,
-          0.340356
+          1.098437,
+          0.621072,
+          0.181156,
+          0.039512,
+          0.003598,
+          0.001868,
+          0.001328,
+          0.001045,
+          0.000879
         ],
         "val_loss": [
-          0.581039,
-          0.278134
+          0.893677,
+          0.241757,
+          0.119397,
+          0.084144,
+          0.067045,
+          0.125005,
+          0.116456,
+          0.111574,
+          0.109077
         ],
         "val_macro_f1": [
-          0.769101,
-          0.949916
+          0.719581,
+          0.966656,
+          0.966583,
+          0.983323,
+          0.983323,
+          0.983323,
+          0.983323,
+          0.983323,
+          0.983323
         ],
         "val_correct": [
-          46,
-          57
+          43,
+          58,
+          58,
+          59,
+          59,
+          59,
+          59,
+          59,
+          59
         ]
       },
       "files": {
@@ -4538,12 +5108,12 @@
       "topic": "documents",
       "dataset": "advanced",
       "dataset_id": "documents/advanced",
-      "run_id": "20261013_145333",
+      "run_id": "20261013_163144",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 9,
+        "best_epoch": 4,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -4555,25 +5125,25 @@
       },
       "validation": {
         "n": 60,
-        "correct": 53,
-        "accuracy": 0.8833333333333333,
-        "macro_f1": 0.881427515573857,
-        "loss": 0.5845160186290741,
+        "correct": 60,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": 0.01931962960710128,
         "per_label": {
           "announcement": {
-            "correct": 15,
+            "correct": 20,
             "n": 20,
-            "f1": 0.8571428571428571
+            "f1": 1.0
           },
           "manual": {
-            "correct": 18,
+            "correct": 20,
             "n": 20,
-            "f1": 0.8780487804878049
+            "f1": 1.0
           },
           "minutes": {
             "correct": 20,
             "n": 20,
-            "f1": 0.9090909090909091
+            "f1": 1.0
           }
         },
         "labels": [
@@ -4583,14 +5153,14 @@
         ],
         "confusion_matrix": [
           [
-            15,
-            3,
-            2
+            20,
+            0,
+            0
           ],
           [
             0,
-            18,
-            2
+            20,
+            0
           ],
           [
             0,
@@ -4601,25 +5171,25 @@
       },
       "test": {
         "n": 60,
-        "correct": 52,
-        "accuracy": 0.8666666666666667,
-        "macro_f1": 0.865167352972231,
+        "correct": 59,
+        "accuracy": 0.9833333333333333,
+        "macro_f1": 0.9833229101521784,
         "loss": null,
         "per_label": {
           "announcement": {
-            "correct": 15,
+            "correct": 19,
             "n": 20,
-            "f1": 0.8571428571428571
+            "f1": 0.9743589743589743
           },
           "manual": {
-            "correct": 17,
+            "correct": 20,
             "n": 20,
-            "f1": 0.8292682926829268
+            "f1": 1.0
           },
           "minutes": {
             "correct": 20,
             "n": 20,
-            "f1": 0.9090909090909091
+            "f1": 0.975609756097561
           }
         },
         "labels": [
@@ -4629,14 +5199,14 @@
         ],
         "confusion_matrix": [
           [
-            15,
-            4,
+            19,
+            0,
             1
           ],
           [
             0,
-            17,
-            3
+            20,
+            0
           ],
           [
             0,
@@ -4646,13 +5216,13 @@
         ]
       },
       "test_meta": {
-        "official": false,
-        "evaluated_at": "2026-10-13 14:59:22"
+        "official": true,
+        "evaluated_at": "2026-10-13 16:59:44"
       },
       "cost": {
-        "train_seconds": 11.458961800002726,
-        "validation_inference_seconds": 0.886573199997656,
-        "test_inference_seconds": 0.852,
+        "train_seconds": 47.2991905999952,
+        "validation_inference_seconds": 0.7751493999967352,
+        "test_inference_seconds": 0.781,
         "peak_gpu_mb": 2175.94775390625,
         "num_parameters": 110620419,
         "model_size_mb": 422.0
@@ -4660,23 +5230,58 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
         ],
         "train_loss": [
-          1.103103,
-          0.82449
+          1.097765,
+          0.939388,
+          0.46445,
+          0.226549,
+          0.023734,
+          0.005656,
+          0.003575,
+          0.002701,
+          0.002181
         ],
         "val_loss": [
-          1.031512,
-          0.584516
+          1.083339,
+          0.494681,
+          0.297508,
+          0.01932,
+          0.075315,
+          0.103542,
+          0.083562,
+          0.086365,
+          0.090877
         ],
         "val_macro_f1": [
-          0.663508,
-          0.881428
+          0.319073,
+          0.865878,
+          0.917029,
+          1.0,
+          0.983323,
+          0.983323,
+          0.983323,
+          0.983323,
+          0.983323
         ],
         "val_correct": [
-          42,
-          53
+          25,
+          52,
+          55,
+          60,
+          59,
+          59,
+          59,
+          59,
+          59
         ]
       },
       "files": {
@@ -4694,12 +5299,12 @@
       "topic": "documents",
       "dataset": "advanced",
       "dataset_id": "documents/advanced",
-      "run_id": "20261013_145345",
+      "run_id": "20261013_163232",
       "train": {
         "learning_rate": 0.0001,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 1,
+        "epochs_max": 20,
+        "epochs_run": 14,
+        "best_epoch": 14,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -4711,25 +5316,25 @@
       },
       "validation": {
         "n": 60,
-        "correct": 44,
-        "accuracy": 0.7333333333333333,
-        "macro_f1": 0.6937012263099219,
-        "loss": 1.0824995994567872,
+        "correct": 56,
+        "accuracy": 0.9333333333333333,
+        "macro_f1": 0.9335593007563632,
+        "loss": 0.21535807773470877,
         "per_label": {
           "announcement": {
-            "correct": 6,
+            "correct": 18,
             "n": 20,
-            "f1": 0.46153846153846156
+            "f1": 0.9230769230769231
           },
           "manual": {
             "correct": 18,
             "n": 20,
-            "f1": 0.75
+            "f1": 0.9473684210526315
           },
           "minutes": {
             "correct": 20,
             "n": 20,
-            "f1": 0.8695652173913043
+            "f1": 0.9302325581395349
           }
         },
         "labels": [
@@ -4739,9 +5344,55 @@
         ],
         "confusion_matrix": [
           [
-            6,
-            10,
-            4
+            18,
+            0,
+            2
+          ],
+          [
+            1,
+            18,
+            1
+          ],
+          [
+            0,
+            0,
+            20
+          ]
+        ]
+      },
+      "test": {
+        "n": 60,
+        "correct": 55,
+        "accuracy": 0.9166666666666666,
+        "macro_f1": 0.9183920762868132,
+        "loss": null,
+        "per_label": {
+          "announcement": {
+            "correct": 17,
+            "n": 20,
+            "f1": 0.918918918918919
+          },
+          "manual": {
+            "correct": 18,
+            "n": 20,
+            "f1": 0.9473684210526315
+          },
+          "minutes": {
+            "correct": 20,
+            "n": 20,
+            "f1": 0.8888888888888888
+          }
+        },
+        "labels": [
+          "announcement",
+          "manual",
+          "minutes"
+        ],
+        "confusion_matrix": [
+          [
+            17,
+            0,
+            3
           ],
           [
             0,
@@ -4755,60 +5406,14 @@
           ]
         ]
       },
-      "test": {
-        "n": 60,
-        "correct": 39,
-        "accuracy": 0.65,
-        "macro_f1": 0.5959859120953346,
-        "loss": null,
-        "per_label": {
-          "announcement": {
-            "correct": 4,
-            "n": 20,
-            "f1": 0.3333333333333333
-          },
-          "manual": {
-            "correct": 15,
-            "n": 20,
-            "f1": 0.6382978723404256
-          },
-          "minutes": {
-            "correct": 20,
-            "n": 20,
-            "f1": 0.8163265306122449
-          }
-        },
-        "labels": [
-          "announcement",
-          "manual",
-          "minutes"
-        ],
-        "confusion_matrix": [
-          [
-            4,
-            12,
-            4
-          ],
-          [
-            0,
-            15,
-            5
-          ],
-          [
-            0,
-            0,
-            20
-          ]
-        ]
-      },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:22"
+        "evaluated_at": "2026-10-13 16:59:44"
       },
       "cost": {
-        "train_seconds": 4.6515827999974135,
-        "validation_inference_seconds": 0.1749755000055302,
-        "test_inference_seconds": 0.22,
+        "train_seconds": 31.861325099976966,
+        "validation_inference_seconds": 0.16028559999540448,
+        "test_inference_seconds": 0.222,
         "peak_gpu_mb": 350.45654296875,
         "num_parameters": 14122755,
         "model_size_mb": 53.9
@@ -4816,23 +5421,83 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
         ],
         "train_loss": [
-          1.098437,
-          1.06964
+          1.098785,
+          1.086089,
+          0.992556,
+          0.857737,
+          0.711144,
+          0.603836,
+          0.514909,
+          0.362278,
+          0.24082,
+          0.19888,
+          0.090243,
+          0.052441,
+          0.041153,
+          0.025258
         ],
         "val_loss": [
-          1.0825,
-          1.041296
+          1.093624,
+          1.033147,
+          0.934001,
+          0.705225,
+          0.622674,
+          0.550365,
+          0.466646,
+          0.40878,
+          0.305872,
+          0.388508,
+          0.444199,
+          0.470712,
+          0.520898,
+          0.215358
         ],
         "val_macro_f1": [
-          0.693701,
-          0.577363
+          0.569299,
+          0.552302,
+          0.595786,
+          0.827621,
+          0.847268,
+          0.884397,
+          0.866432,
+          0.884397,
+          0.933559,
+          0.881766,
+          0.881766,
+          0.883304,
+          0.881766,
+          0.933559
         ],
         "val_correct": [
-          44,
-          40
+          36,
+          38,
+          38,
+          50,
+          51,
+          53,
+          52,
+          53,
+          56,
+          53,
+          53,
+          53,
+          53,
+          56
         ]
       },
       "files": {
@@ -4961,12 +5626,12 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:26"
+        "evaluated_at": "2026-10-13 16:59:48"
       },
       "cost": {
         "train_seconds": 1.0476684999885038,
         "validation_inference_seconds": 0.06936250001308508,
-        "test_inference_seconds": 0.068,
+        "test_inference_seconds": 0.069,
         "peak_gpu_mb": null,
         "num_parameters": 435951,
         "model_size_mb": 6.88
@@ -4987,12 +5652,12 @@
       "topic": "documents",
       "dataset": "advanced_merge",
       "dataset_id": "documents/advanced_merge",
-      "run_id": "20261013_145352",
+      "run_id": "20261013_163306",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 3,
+        "best_epoch": 3,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -5004,20 +5669,20 @@
       },
       "validation": {
         "n": 111,
-        "correct": 110,
-        "accuracy": 0.990990990990991,
-        "macro_f1": 0.9909893455098935,
-        "loss": 0.04612624922532353,
+        "correct": 111,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "loss": 0.002272256632201239,
         "per_label": {
           "announcement": {
             "correct": 37,
             "n": 37,
-            "f1": 0.9866666666666667
+            "f1": 1.0
           },
           "manual": {
-            "correct": 36,
+            "correct": 37,
             "n": 37,
-            "f1": 0.9863013698630136
+            "f1": 1.0
           },
           "minutes": {
             "correct": 37,
@@ -5037,8 +5702,8 @@
             0
           ],
           [
-            1,
-            36,
+            0,
+            37,
             0
           ],
           [
@@ -5096,12 +5761,12 @@
       },
       "test_meta": {
         "official": true,
-        "evaluated_at": "2026-10-13 14:59:26"
+        "evaluated_at": "2026-10-13 16:59:48"
       },
       "cost": {
-        "train_seconds": 18.528016500000376,
-        "validation_inference_seconds": 1.2621807999967132,
-        "test_inference_seconds": 1.179,
+        "train_seconds": 25.6755114000116,
+        "validation_inference_seconds": 1.0378731999953743,
+        "test_inference_seconds": 1.054,
         "peak_gpu_mb": 2169.21142578125,
         "num_parameters": 110619651,
         "model_size_mb": 422.0
@@ -5109,23 +5774,28 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3
         ],
         "train_loss": [
-          0.558684,
-          0.069601
+          0.927024,
+          0.257402,
+          0.016929
         ],
         "val_loss": [
-          0.118203,
-          0.046126
+          0.479721,
+          0.089039,
+          0.002272
         ],
         "val_macro_f1": [
-          0.990989,
-          0.990989
+          0.858305,
+          0.981969,
+          1.0
         ],
         "val_correct": [
-          110,
-          110
+          95,
+          109,
+          111
         ]
       },
       "files": {
@@ -5143,12 +5813,12 @@
       "topic": "documents",
       "dataset": "advanced_merge",
       "dataset_id": "documents/advanced_merge",
-      "run_id": "20261013_145411",
+      "run_id": "20261013_163332",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 9,
+        "best_epoch": 4,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -5160,25 +5830,25 @@
       },
       "validation": {
         "n": 111,
-        "correct": 105,
-        "accuracy": 0.9459459459459459,
-        "macro_f1": 0.9459196038143407,
-        "loss": 0.20069366804248578,
+        "correct": 110,
+        "accuracy": 0.990990990990991,
+        "macro_f1": 0.9909893455098935,
+        "loss": 0.06520677066349366,
         "per_label": {
           "announcement": {
-            "correct": 34,
+            "correct": 37,
             "n": 37,
-            "f1": 0.9444444444444444
+            "f1": 0.9866666666666667
           },
           "manual": {
             "correct": 36,
             "n": 37,
-            "f1": 0.9473684210526315
+            "f1": 0.9863013698630136
           },
           "minutes": {
-            "correct": 35,
+            "correct": 37,
             "n": 37,
-            "f1": 0.9459459459459459
+            "f1": 1.0
           }
         },
         "labels": [
@@ -5188,9 +5858,9 @@
         ],
         "confusion_matrix": [
           [
-            34,
-            1,
-            2
+            37,
+            0,
+            0
           ],
           [
             1,
@@ -5199,32 +5869,32 @@
           ],
           [
             0,
-            2,
-            35
+            0,
+            37
           ]
         ]
       },
       "test": {
         "n": 111,
-        "correct": 106,
-        "accuracy": 0.954954954954955,
-        "macro_f1": 0.954849354849355,
+        "correct": 110,
+        "accuracy": 0.990990990990991,
+        "macro_f1": 0.9909893455098935,
         "loss": null,
         "per_label": {
           "announcement": {
-            "correct": 33,
-            "n": 37,
-            "f1": 0.9428571428571428
-          },
-          "manual": {
             "correct": 37,
             "n": 37,
-            "f1": 0.9487179487179487
+            "f1": 0.9866666666666667
           },
-          "minutes": {
+          "manual": {
             "correct": 36,
             "n": 37,
-            "f1": 0.972972972972973
+            "f1": 0.9863013698630136
+          },
+          "minutes": {
+            "correct": 37,
+            "n": 37,
+            "f1": 1.0
           }
         },
         "labels": [
@@ -5234,54 +5904,89 @@
         ],
         "confusion_matrix": [
           [
-            33,
-            3,
-            1
+            37,
+            0,
+            0
           ],
           [
-            0,
-            37,
+            1,
+            36,
             0
           ],
           [
             0,
-            1,
-            36
+            0,
+            37
           ]
         ]
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:26"
+        "evaluated_at": "2026-10-13 16:59:48"
       },
       "cost": {
-        "train_seconds": 18.798991699994076,
-        "validation_inference_seconds": 1.2706851999973878,
-        "test_inference_seconds": 1.151,
-        "peak_gpu_mb": 2173.44775390625,
+        "train_seconds": 75.63614899999811,
+        "validation_inference_seconds": 1.035024800017709,
+        "test_inference_seconds": 1.044,
+        "peak_gpu_mb": 2175.94775390625,
         "num_parameters": 110620419,
         "model_size_mb": 422.0
       },
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
         ],
         "train_loss": [
-          0.958694,
-          0.32791
+          1.068229,
+          0.495423,
+          0.165555,
+          0.028962,
+          0.002975,
+          0.001914,
+          0.001532,
+          0.001205,
+          0.000998
         ],
         "val_loss": [
-          0.40339,
-          0.200694
+          0.774739,
+          0.306091,
+          0.199431,
+          0.065207,
+          0.068543,
+          0.068768,
+          0.07047,
+          0.071821,
+          0.072817
         ],
         "val_macro_f1": [
-          0.898533,
-          0.94592
+          0.872541,
+          0.919549,
+          0.937147,
+          0.990989,
+          0.990989,
+          0.990989,
+          0.990989,
+          0.990989,
+          0.990989
         ],
         "val_correct": [
-          100,
-          105
+          97,
+          102,
+          104,
+          110,
+          110,
+          110,
+          110,
+          110,
+          110
         ]
       },
       "files": {
@@ -5299,12 +6004,12 @@
       "topic": "documents",
       "dataset": "advanced_merge",
       "dataset_id": "documents/advanced_merge",
-      "run_id": "20261013_145430",
+      "run_id": "20261013_163448",
       "train": {
         "learning_rate": 0.0001,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 15,
+        "best_epoch": 10,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -5316,25 +6021,25 @@
       },
       "validation": {
         "n": 111,
-        "correct": 86,
-        "accuracy": 0.7747747747747747,
-        "macro_f1": 0.754931176387115,
-        "loss": 0.799518922427753,
+        "correct": 110,
+        "accuracy": 0.990990990990991,
+        "macro_f1": 0.9909893455098935,
+        "loss": 0.05773974552347853,
         "per_label": {
           "announcement": {
-            "correct": 33,
+            "correct": 36,
             "n": 37,
-            "f1": 0.7586206896551724
+            "f1": 0.9863013698630136
           },
           "manual": {
-            "correct": 16,
+            "correct": 37,
             "n": 37,
-            "f1": 0.5925925925925926
+            "f1": 1.0
           },
           "minutes": {
             "correct": 37,
             "n": 37,
-            "f1": 0.9135802469135802
+            "f1": 0.9866666666666667
           }
         },
         "labels": [
@@ -5344,14 +6049,14 @@
         ],
         "confusion_matrix": [
           [
-            33,
-            1,
-            3
+            36,
+            0,
+            1
           ],
           [
-            17,
-            16,
-            4
+            0,
+            37,
+            0
           ],
           [
             0,
@@ -5362,25 +6067,25 @@
       },
       "test": {
         "n": 111,
-        "correct": 85,
-        "accuracy": 0.7657657657657657,
-        "macro_f1": 0.7413273001508296,
+        "correct": 110,
+        "accuracy": 0.990990990990991,
+        "macro_f1": 0.9909893455098935,
         "loss": null,
         "per_label": {
           "announcement": {
-            "correct": 33,
+            "correct": 36,
             "n": 37,
-            "f1": 0.7764705882352941
+            "f1": 0.9863013698630136
           },
           "manual": {
-            "correct": 15,
+            "correct": 37,
             "n": 37,
-            "f1": 0.5769230769230769
+            "f1": 0.9866666666666667
           },
           "minutes": {
             "correct": 37,
             "n": 37,
-            "f1": 0.8705882352941177
+            "f1": 1.0
           }
         },
         "labels": [
@@ -5390,14 +6095,14 @@
         ],
         "confusion_matrix": [
           [
-            33,
-            0,
-            4
+            36,
+            1,
+            0
           ],
           [
-            15,
-            15,
-            7
+            0,
+            37,
+            0
           ],
           [
             0,
@@ -5408,12 +6113,12 @@
       },
       "test_meta": {
         "official": false,
-        "evaluated_at": "2026-10-13 14:59:26"
+        "evaluated_at": "2026-10-13 16:59:48"
       },
       "cost": {
-        "train_seconds": 9.827600499993423,
-        "validation_inference_seconds": 0.2637220000033267,
-        "test_inference_seconds": 0.276,
+        "train_seconds": 61.12863870000001,
+        "validation_inference_seconds": 0.22774390000267886,
+        "test_inference_seconds": 0.253,
         "peak_gpu_mb": 350.45654296875,
         "num_parameters": 14122755,
         "model_size_mb": 53.9
@@ -5421,23 +6126,88 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
         ],
         "train_loss": [
-          1.047727,
-          0.879025
+          1.092176,
+          0.966465,
+          0.742264,
+          0.497374,
+          0.277085,
+          0.207204,
+          0.095015,
+          0.028954,
+          0.02444,
+          0.01619,
+          0.006885,
+          0.00554,
+          0.004529,
+          0.003969,
+          0.003697
         ],
         "val_loss": [
-          0.894698,
-          0.799519
+          1.045344,
+          0.796494,
+          0.503995,
+          0.350465,
+          0.151862,
+          0.26034,
+          0.10352,
+          0.113828,
+          0.158976,
+          0.05774,
+          0.093457,
+          0.101811,
+          0.100051,
+          0.091682,
+          0.092884
         ],
         "val_macro_f1": [
-          0.553909,
-          0.754931
+          0.531807,
+          0.520853,
+          0.945743,
+          0.928083,
+          0.963831,
+          0.937186,
+          0.98198,
+          0.98198,
+          0.963959,
+          0.990989,
+          0.972963,
+          0.972963,
+          0.972963,
+          0.972963,
+          0.972963
         ],
         "val_correct": [
-          73,
-          86
+          72,
+          72,
+          105,
+          103,
+          107,
+          104,
+          109,
+          109,
+          107,
+          110,
+          108,
+          108,
+          108,
+          108,
+          108
         ]
       },
       "files": {
@@ -5566,12 +6336,12 @@
       },
       "test_meta": {
         "official": null,
-        "evaluated_at": "2026-10-13 14:59:32"
+        "evaluated_at": "2026-10-13 16:59:53"
       },
       "cost": {
         "train_seconds": 1.6068309999827761,
         "validation_inference_seconds": 0.12270310000167228,
-        "test_inference_seconds": 0.095,
+        "test_inference_seconds": 0.099,
         "peak_gpu_mb": null,
         "num_parameters": 551700,
         "model_size_mb": 8.75
@@ -5592,12 +6362,12 @@
       "topic": "documents",
       "dataset": "total_merge",
       "dataset_id": "documents/total_merge",
-      "run_id": "20261013_145443",
+      "run_id": "20261013_163552",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 10,
+        "best_epoch": 10,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -5609,25 +6379,25 @@
       },
       "validation": {
         "n": 331,
-        "correct": 327,
-        "accuracy": 0.9879154078549849,
-        "macro_f1": 0.9879330189914377,
-        "loss": 0.0688885376931821,
+        "correct": 329,
+        "accuracy": 0.9939577039274925,
+        "macro_f1": 0.9939935064935065,
+        "loss": 0.03838512969105343,
         "per_label": {
           "announcement": {
-            "correct": 108,
+            "correct": 111,
             "n": 111,
-            "f1": 0.9818181818181818
+            "f1": 0.9910714285714286
           },
           "manual": {
-            "correct": 110,
+            "correct": 109,
             "n": 111,
-            "f1": 0.9865470852017937
+            "f1": 0.990909090909091
           },
           "minutes": {
             "correct": 109,
             "n": 109,
-            "f1": 0.9954337899543378
+            "f1": 1.0
           }
         },
         "labels": [
@@ -5637,13 +6407,13 @@
         ],
         "confusion_matrix": [
           [
-            108,
-            2,
-            1
+            111,
+            0,
+            0
           ],
           [
-            1,
-            110,
+            2,
+            109,
             0
           ],
           [
@@ -5701,12 +6471,12 @@
       },
       "test_meta": {
         "official": null,
-        "evaluated_at": "2026-10-13 14:59:32"
+        "evaluated_at": "2026-10-13 16:59:53"
       },
       "cost": {
-        "train_seconds": 41.38074430002598,
-        "validation_inference_seconds": 1.776883499987889,
-        "test_inference_seconds": 1.779,
+        "train_seconds": 189.2753567000036,
+        "validation_inference_seconds": 1.56545590001042,
+        "test_inference_seconds": 1.451,
         "peak_gpu_mb": 2162.42919921875,
         "num_parameters": 110619651,
         "model_size_mb": 422.0
@@ -5714,23 +6484,63 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
         ],
         "train_loss": [
-          0.286761,
-          0.012657
+          0.628272,
+          0.072462,
+          0.030158,
+          0.002304,
+          0.000314,
+          0.000226,
+          0.000178,
+          0.000151,
+          0.000127,
+          0.000111
         ],
         "val_loss": [
-          0.104024,
-          0.068889
+          0.424733,
+          0.096926,
+          0.034145,
+          0.053149,
+          0.047253,
+          0.044554,
+          0.042064,
+          0.040392,
+          0.039574,
+          0.038385
         ],
         "val_macro_f1": [
-          0.975946,
-          0.987933
+          0.870003,
+          0.978775,
+          0.993953,
+          0.990989,
+          0.993994,
+          0.993994,
+          0.993994,
+          0.993994,
+          0.993994,
+          0.993994
         ],
         "val_correct": [
-          323,
-          327
+          288,
+          324,
+          329,
+          328,
+          329,
+          329,
+          329,
+          329,
+          329,
+          329
         ]
       },
       "files": {
@@ -5748,12 +6558,12 @@
       "topic": "documents",
       "dataset": "total_merge",
       "dataset_id": "documents/total_merge",
-      "run_id": "20261013_145525",
+      "run_id": "20261013_163902",
       "train": {
         "learning_rate": 3e-05,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 10,
+        "best_epoch": 5,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -5767,23 +6577,23 @@
         "n": 331,
         "correct": 326,
         "accuracy": 0.9848942598187311,
-        "macro_f1": 0.9849304458490598,
-        "loss": 0.07396999177567976,
+        "macro_f1": 0.98497736454252,
+        "loss": 0.11738368084668632,
         "per_label": {
           "announcement": {
-            "correct": 108,
+            "correct": 111,
             "n": 111,
-            "f1": 0.9773755656108597
+            "f1": 0.9779735682819384
           },
           "manual": {
-            "correct": 109,
+            "correct": 106,
             "n": 111,
-            "f1": 0.9819819819819819
+            "f1": 0.9769585253456221
           },
           "minutes": {
             "correct": 109,
             "n": 109,
-            "f1": 0.9954337899543378
+            "f1": 1.0
           }
         },
         "labels": [
@@ -5793,13 +6603,13 @@
         ],
         "confusion_matrix": [
           [
-            108,
-            2,
-            1
+            111,
+            0,
+            0
           ],
           [
-            2,
-            109,
+            5,
+            106,
             0
           ],
           [
@@ -5811,25 +6621,25 @@
       },
       "test": {
         "n": 331,
-        "correct": 328,
-        "accuracy": 0.9909365558912386,
-        "macro_f1": 0.990908718613123,
+        "correct": 330,
+        "accuracy": 0.9969788519637462,
+        "macro_f1": 0.9969696343588366,
         "loss": null,
         "per_label": {
           "announcement": {
-            "correct": 108,
+            "correct": 110,
             "n": 111,
-            "f1": 0.9863013698630136
+            "f1": 0.995475113122172
           },
           "manual": {
             "correct": 109,
             "n": 109,
-            "f1": 0.990909090909091
+            "f1": 0.9954337899543378
           },
           "minutes": {
             "correct": 111,
             "n": 111,
-            "f1": 0.9955156950672646
+            "f1": 1.0
           }
         },
         "labels": [
@@ -5839,9 +6649,9 @@
         ],
         "confusion_matrix": [
           [
-            108,
-            2,
-            1
+            110,
+            1,
+            0
           ],
           [
             0,
@@ -5857,12 +6667,12 @@
       },
       "test_meta": {
         "official": null,
-        "evaluated_at": "2026-10-13 14:59:32"
+        "evaluated_at": "2026-10-13 16:59:53"
       },
       "cost": {
-        "train_seconds": 40.726576299988665,
-        "validation_inference_seconds": 1.7318595999968238,
-        "test_inference_seconds": 1.741,
+        "train_seconds": 188.395324800018,
+        "validation_inference_seconds": 1.5647940000053495,
+        "test_inference_seconds": 1.444,
         "peak_gpu_mb": 2161.91552734375,
         "num_parameters": 110620419,
         "model_size_mb": 422.0
@@ -5870,23 +6680,63 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
         ],
         "train_loss": [
-          0.43308,
-          0.073943
+          0.692312,
+          0.166218,
+          0.042592,
+          0.010938,
+          0.001537,
+          0.000504,
+          0.008264,
+          0.000487,
+          0.000234,
+          0.000202
         ],
         "val_loss": [
-          0.187707,
-          0.07397
+          0.30393,
+          0.218632,
+          0.091927,
+          0.143026,
+          0.117384,
+          0.147712,
+          0.170467,
+          0.143389,
+          0.147279,
+          0.150344
         ],
         "val_macro_f1": [
-          0.957683,
-          0.98493
+          0.90844,
+          0.9521,
+          0.978841,
+          0.97887,
+          0.984977,
+          0.978895,
+          0.978958,
+          0.981976,
+          0.981976,
+          0.981976
         ],
         "val_correct": [
-          317,
-          326
+          301,
+          315,
+          324,
+          324,
+          326,
+          324,
+          324,
+          325,
+          325,
+          325
         ]
       },
       "files": {
@@ -5904,12 +6754,12 @@
       "topic": "documents",
       "dataset": "total_merge",
       "dataset_id": "documents/total_merge",
-      "run_id": "20261013_145606",
+      "run_id": "20261013_164211",
       "train": {
         "learning_rate": 0.0001,
-        "epochs_max": 2,
-        "epochs_run": 2,
-        "best_epoch": 2,
+        "epochs_max": 20,
+        "epochs_run": 14,
+        "best_epoch": 9,
         "batch_size": 4,
         "accumulation_steps": 2,
         "effective_batch": 8
@@ -5921,25 +6771,25 @@
       },
       "validation": {
         "n": 331,
-        "correct": 310,
-        "accuracy": 0.9365558912386707,
-        "macro_f1": 0.9359626232588506,
-        "loss": 0.23178371420169525,
+        "correct": 317,
+        "accuracy": 0.9577039274924471,
+        "macro_f1": 0.9578334974916448,
+        "loss": 0.2875562790463667,
         "per_label": {
           "announcement": {
-            "correct": 106,
+            "correct": 104,
             "n": 111,
-            "f1": 0.9298245614035088
+            "f1": 0.9411764705882353
           },
           "manual": {
-            "correct": 95,
+            "correct": 106,
             "n": 111,
-            "f1": 0.9134615384615384
+            "f1": 0.9506726457399103
           },
           "minutes": {
-            "correct": 109,
+            "correct": 107,
             "n": 109,
-            "f1": 0.9646017699115044
+            "f1": 0.981651376146789
           }
         },
         "labels": [
@@ -5949,43 +6799,43 @@
         ],
         "confusion_matrix": [
           [
+            104,
+            5,
+            2
+          ],
+          [
+            5,
             106,
-            2,
-            3
+            0
           ],
           [
-            11,
-            95,
-            5
-          ],
-          [
-            0,
-            0,
-            109
+            1,
+            1,
+            107
           ]
         ]
       },
       "test": {
         "n": 331,
-        "correct": 314,
-        "accuracy": 0.9486404833836858,
-        "macro_f1": 0.9482368713066047,
+        "correct": 316,
+        "accuracy": 0.9546827794561934,
+        "macro_f1": 0.9544605922460757,
         "loss": null,
         "per_label": {
           "announcement": {
-            "correct": 105,
+            "correct": 101,
             "n": 111,
-            "f1": 0.958904109589041
+            "f1": 0.9395348837209302
           },
           "manual": {
-            "correct": 98,
+            "correct": 105,
             "n": 109,
-            "f1": 0.9289099526066351
+            "f1": 0.9417040358744395
           },
           "minutes": {
-            "correct": 111,
+            "correct": 110,
             "n": 111,
-            "f1": 0.9568965517241379
+            "f1": 0.9821428571428571
           }
         },
         "labels": [
@@ -5995,30 +6845,30 @@
         ],
         "confusion_matrix": [
           [
-            105,
-            4,
+            101,
+            8,
             2
           ],
           [
             3,
-            98,
-            8
+            105,
+            1
           ],
           [
             0,
-            0,
-            111
+            1,
+            110
           ]
         ]
       },
       "test_meta": {
         "official": null,
-        "evaluated_at": "2026-10-13 14:59:32"
+        "evaluated_at": "2026-10-13 16:59:53"
       },
       "cost": {
-        "train_seconds": 26.219745900016278,
-        "validation_inference_seconds": 0.7189918000076432,
-        "test_inference_seconds": 0.362,
+        "train_seconds": 167.70068460001494,
+        "validation_inference_seconds": 0.5282498000015039,
+        "test_inference_seconds": 0.324,
         "peak_gpu_mb": 350.45654296875,
         "num_parameters": 14122755,
         "model_size_mb": 53.9
@@ -6026,23 +6876,83 @@
       "curve": {
         "epoch": [
           1,
-          2
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
         ],
         "train_loss": [
-          0.788623,
-          0.266981
+          1.030911,
+          0.538139,
+          0.215534,
+          0.172798,
+          0.106661,
+          0.067028,
+          0.047677,
+          0.078791,
+          0.004925,
+          0.00166,
+          0.018601,
+          0.0009,
+          0.000751,
+          0.000628
         ],
         "val_loss": [
-          0.381505,
-          0.231784
+          0.83223,
+          0.420783,
+          0.28996,
+          0.223661,
+          0.314979,
+          0.566629,
+          0.406361,
+          0.268653,
+          0.287556,
+          0.320889,
+          0.298955,
+          0.317735,
+          0.333223,
+          0.340543
         ],
         "val_macro_f1": [
-          0.905277,
-          0.935963
+          0.483358,
+          0.838239,
+          0.927139,
+          0.952027,
+          0.939526,
+          0.892894,
+          0.928014,
+          0.957585,
+          0.957833,
+          0.957793,
+          0.957762,
+          0.957779,
+          0.957779,
+          0.957779
         ],
         "val_correct": [
-          300,
-          310
+          196,
+          280,
+          307,
+          315,
+          311,
+          296,
+          307,
+          317,
+          317,
+          317,
+          317,
+          317,
+          317,
+          317
         ]
       },
       "files": {

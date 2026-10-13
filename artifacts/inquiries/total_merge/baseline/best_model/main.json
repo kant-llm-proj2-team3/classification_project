@@ -116,12 +116,12 @@
   },
   "test_meta": {
     "official": null,
-    "evaluated_at": "2026-10-13 14:59:13"
+    "evaluated_at": "2026-10-13 16:59:37"
   },
   "cost": {
     "train_seconds": 1.3887231000117026,
     "validation_inference_seconds": 0.10448809998342767,
-    "test_inference_seconds": 0.086,
+    "test_inference_seconds": 0.087,
     "peak_gpu_mb": null,
     "num_parameters": 436728,
     "model_size_mb": 6.91

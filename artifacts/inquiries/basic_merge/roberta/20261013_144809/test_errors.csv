@@ -1,0 +1,2 @@
+﻿id,text,actual,predicted,group_id
+inquiries-v2-refund-test-005-v1,판매자가 원래 상품 재고가 없다며 다른 모델을 보냈지만 저는 대체 발송에 동의한 적이 없습니다. 포장은 개봉하지 않았습니다. 대체품을 그대로 돌려보내고 원래 주문을 취소할 절차를 알려 주세요.,refund,shipping,inquiries-v2-refund-test-005

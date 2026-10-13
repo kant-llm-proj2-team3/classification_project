@@ -1,0 +1,20 @@
+{
+  "model_key": "bert",
+  "model_id": "klue/bert-base",
+  "run_name": "20261013_162653",
+  "learning_rate": 3e-05,
+  "best_epoch": 3,
+  "validation_macro_f1": 0.9909893455098935,
+  "validation_accuracy": 0.990909090909091,
+  "validation_loss": 0.058874974373876204,
+  "train_seconds": 74.62987639999483,
+  "validation_inference_seconds": 0.5503348999773152,
+  "peak_gpu_memory_mb": 2131.42333984375,
+  "train_rows": 660,
+  "validation_rows": 220,
+  "epochs_run": 8,
+  "epochs_max": 20,
+  "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
+  "num_parameters": 110619651,
+  "model_size_mb": 422.0
+}

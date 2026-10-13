@@ -5,7 +5,7 @@
   "selected_model": "bert",
   "evaluated_model": "bert",
   "official": true,
-  "selected_run": "20261013_145352",
+  "selected_run": "20261013_163306",
   "model_id": "klue/bert-base",
   "classifier": {
     "n": 111,

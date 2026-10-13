@@ -1,0 +1,143 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "koelectra",
+  "model_id": "monologg/koelectra-small-v3-discriminator",
+  "topic": "documents",
+  "dataset": "basic",
+  "dataset_id": "documents/basic",
+  "run_id": "20261013_162613",
+  "train": {
+    "learning_rate": 0.0001,
+    "epochs_max": 20,
+    "epochs_run": 9,
+    "best_epoch": 4,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 360,
+    "validation_rows": 120,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 120,
+    "correct": 120,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "loss": 0.027210538275539875,
+    "per_label": {
+      "announcement": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "manual": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "minutes": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 38.43561220000265,
+    "validation_inference_seconds": 0.16028609999921173,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 292.1904296875,
+    "num_parameters": 14122755,
+    "model_size_mb": 53.9
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "train_loss": [
+      1.089431,
+      0.835775,
+      0.328642,
+      0.063031,
+      0.020404,
+      0.011173,
+      0.007612,
+      0.005574,
+      0.00426
+    ],
+    "val_loss": [
+      1.035698,
+      0.557435,
+      0.144851,
+      0.027211,
+      0.208174,
+      0.129232,
+      0.108608,
+      0.091853,
+      0.043815
+    ],
+    "val_macro_f1": [
+      0.897543,
+      0.897698,
+      0.974996,
+      1.0,
+      0.95779,
+      0.966583,
+      0.974965,
+      0.974965,
+      0.983323
+    ],
+    "val_correct": [
+      108,
+      108,
+      117,
+      120,
+      115,
+      116,
+      117,
+      117,
+      118
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

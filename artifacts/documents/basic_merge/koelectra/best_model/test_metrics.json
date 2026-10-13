@@ -5,50 +5,50 @@
   "selected_model": "roberta",
   "evaluated_model": "koelectra",
   "official": false,
-  "selected_run": "20261013_145301",
+  "selected_run": "20261013_162914",
   "model_id": "monologg/koelectra-small-v3-discriminator",
   "classifier": {
     "n": 220,
-    "accuracy": 0.9681818181818181,
-    "macro_f1": 0.9679989980116795,
+    "accuracy": 0.9772727272727273,
+    "macro_f1": 0.977098842870655,
     "per_class": {
       "announcement": {
         "precision": 1.0,
-        "recall": 0.9054054054054054,
-        "f1-score": 0.950354609929078,
+        "recall": 0.9324324324324325,
+        "f1-score": 0.965034965034965,
         "support": 74.0
       },
       "manual": {
-        "precision": 0.9113924050632911,
+        "precision": 0.9473684210526315,
         "recall": 1.0,
-        "f1-score": 0.9536423841059603,
+        "f1-score": 0.972972972972973,
         "support": 72.0
       },
       "minutes": {
-        "precision": 1.0,
+        "precision": 0.9866666666666667,
         "recall": 1.0,
-        "f1-score": 1.0,
+        "f1-score": 0.9932885906040269,
         "support": 74.0
       },
-      "accuracy": 0.9681818181818181,
+      "accuracy": 0.9772727272727273,
       "macro avg": {
-        "precision": 0.9704641350210971,
-        "recall": 0.9684684684684685,
-        "f1-score": 0.9679989980116795,
+        "precision": 0.9780116959064328,
+        "recall": 0.9774774774774775,
+        "f1-score": 0.977098842870655,
         "support": 220.0
       },
       "weighted avg": {
-        "precision": 0.9710011507479862,
-        "recall": 0.9681818181818181,
-        "f1-score": 0.9681295126835496,
+        "precision": 0.9782902711323763,
+        "recall": 0.9772727272727273,
+        "f1-score": 0.9771363507788157,
         "support": 220.0
       }
     },
     "confusion_matrix": [
       [
-        67,
-        7,
-        0
+        69,
+        4,
+        1
       ],
       [
         0,

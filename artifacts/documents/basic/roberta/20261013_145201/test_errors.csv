@@ -1,0 +1,4 @@
+﻿id,text,actual,predicted,group_id
+documents-v2-manual-test-017-v1,신청한 재료가 필요 없어지면 접수 번호로 배부 준비 상태를 확인한다. 아직 준비 전이면 철회 요청을 남긴다. 이미 포장한 재료는 담당자가 재배부 가능 여부를 확인한 뒤 처리한다.,manual,announcement,documents-v2-manual-test-017
+documents-v2-manual-test-017-v2,"재료 요청 철회
+신청한 재료가 필요 없어지면 접수 번호로 배부 준비 상태를 확인합니다. 아직 준비 전이면 철회 요청을 남깁니다. 이미 포장한 재료는 담당자가 재배부 가능 여부를 확인한 뒤 처리합니다.",manual,announcement,documents-v2-manual-test-017

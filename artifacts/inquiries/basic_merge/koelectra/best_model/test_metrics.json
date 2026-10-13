@@ -2,10 +2,10 @@
   "topic": "inquiries",
   "dataset": "basic_merge",
   "split": "test",
-  "selected_model": "bert",
+  "selected_model": "koelectra",
   "evaluated_model": "koelectra",
-  "official": false,
-  "selected_run": "20261013_144829",
+  "official": true,
+  "selected_run": "20261013_161116",
   "model_id": "monologg/koelectra-small-v3-discriminator",
   "classifier": {
     "n": 220,

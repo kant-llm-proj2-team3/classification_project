@@ -1,7 +1,7 @@
 {
   "schema": "project2-result/v1",
-  "run_id": "20261013_145443",
-  "generated_at": "2026-10-13 14:55:25",
+  "run_id": "20261013_163552",
+  "generated_at": "2026-10-13 16:39:02",
   "hyperparameters": {
     "seed": 42,
     "max_length": 512,
@@ -11,10 +11,10 @@
     "warmup_ratio": 0.1,
     "gradient_checkpointing": true,
     "precision": "bfloat16",
-    "early_stopping_patience": 1,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
-    "stop_reason": "최대 에폭(2) 도달",
-    "optimizer_steps_at_checkpoint": 248,
+    "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
+    "optimizer_steps_at_checkpoint": 1240,
     "selection_split": "validation"
   },
   "environment": {
@@ -46,34 +46,34 @@
   "validation_detail": {
     "per_class": {
       "announcement": {
-        "precision": 0.9908256880733946,
-        "recall": 0.972972972972973,
-        "f1-score": 0.9818181818181818,
+        "precision": 0.9823008849557522,
+        "recall": 1.0,
+        "f1-score": 0.9910714285714286,
         "support": 111.0
       },
       "manual": {
-        "precision": 0.9821428571428571,
-        "recall": 0.990990990990991,
-        "f1-score": 0.9865470852017937,
+        "precision": 1.0,
+        "recall": 0.9819819819819819,
+        "f1-score": 0.990909090909091,
         "support": 111.0
       },
       "minutes": {
-        "precision": 0.990909090909091,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1-score": 0.9954337899543378,
+        "f1-score": 1.0,
         "support": 109.0
       },
-      "accuracy": 0.9879154078549849,
+      "accuracy": 0.9939577039274925,
       "macro avg": {
-        "precision": 0.9879592120417809,
-        "recall": 0.9879879879879879,
-        "f1-score": 0.9879330189914377,
+        "precision": 0.9941002949852508,
+        "recall": 0.993993993993994,
+        "f1-score": 0.9939935064935065,
         "support": 331.0
       },
       "weighted avg": {
-        "precision": 0.9879413880002865,
-        "recall": 0.9879154078549849,
-        "f1-score": 0.9878876971125079,
+        "precision": 0.9940646472208112,
+        "recall": 0.9939577039274925,
+        "f1-score": 0.9939572134813827,
         "support": 331.0
       }
     }
@@ -81,40 +81,112 @@
   "epochs": [
     {
       "epoch": 1,
-      "train_loss": 0.28676081185389046,
-      "validation_loss": 0.1040242190678179,
-      "validation_accuracy": 0.9758308157099698,
-      "validation_macro_f1": 0.9759462250287939,
+      "train_loss": 0.6282719159367108,
+      "validation_loss": 0.4247333845658245,
+      "validation_accuracy": 0.8700906344410876,
+      "validation_macro_f1": 0.8700034525559409,
       "optimizer_steps": 124,
-      "elapsed_seconds": 20.46317660002387
+      "elapsed_seconds": 18.77564559999155
     },
     {
       "epoch": 2,
-      "train_loss": 0.01265676479146938,
-      "validation_loss": 0.0688885376931821,
-      "validation_accuracy": 0.9879154078549849,
-      "validation_macro_f1": 0.9879330189914377,
+      "train_loss": 0.07246187768801295,
+      "validation_loss": 0.09692562482790358,
+      "validation_accuracy": 0.9788519637462235,
+      "validation_macro_f1": 0.9787748398853818,
       "optimizer_steps": 248,
-      "elapsed_seconds": 41.12221520001185
+      "elapsed_seconds": 37.62791350000771
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.03015778088810468,
+      "validation_loss": 0.03414526750372999,
+      "validation_accuracy": 0.9939577039274925,
+      "validation_macro_f1": 0.9939528586435644,
+      "optimizer_steps": 372,
+      "elapsed_seconds": 56.768820099998266
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.002304033799604936,
+      "validation_loss": 0.05314863841164558,
+      "validation_accuracy": 0.9909365558912386,
+      "validation_macro_f1": 0.9909893455098935,
+      "optimizer_steps": 496,
+      "elapsed_seconds": 75.64176820000284
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.00031409793429904514,
+      "validation_loss": 0.04725329459445612,
+      "validation_accuracy": 0.9939577039274925,
+      "validation_macro_f1": 0.9939935064935065,
+      "optimizer_steps": 620,
+      "elapsed_seconds": 94.27297829999588
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.0002260660884356258,
+      "validation_loss": 0.044553938514593106,
+      "validation_accuracy": 0.9939577039274925,
+      "validation_macro_f1": 0.9939935064935065,
+      "optimizer_steps": 744,
+      "elapsed_seconds": 113.14170380000724
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.00017834673024187184,
+      "validation_loss": 0.042063598574161684,
+      "validation_accuracy": 0.9939577039274925,
+      "validation_macro_f1": 0.9939935064935065,
+      "optimizer_steps": 868,
+      "elapsed_seconds": 132.09762349998346
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.00015065645930742978,
+      "validation_loss": 0.040392179139677874,
+      "validation_accuracy": 0.9939577039274925,
+      "validation_macro_f1": 0.9939935064935065,
+      "optimizer_steps": 992,
+      "elapsed_seconds": 151.08808670000872
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.00012684735384854403,
+      "validation_loss": 0.039573639380657485,
+      "validation_accuracy": 0.9939577039274925,
+      "validation_macro_f1": 0.9939935064935065,
+      "optimizer_steps": 1116,
+      "elapsed_seconds": 170.01582090000738
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.0001108663250701596,
+      "validation_loss": 0.03838512969105343,
+      "validation_accuracy": 0.9939577039274925,
+      "validation_macro_f1": 0.9939935064935065,
+      "optimizer_steps": 1240,
+      "elapsed_seconds": 189.02259030001005
     }
   ],
   "training_summary": {
     "model_key": "bert",
     "model_id": "klue/bert-base",
-    "run_name": "20261013_145443",
+    "run_name": "20261013_163552",
     "learning_rate": 3e-05,
-    "best_epoch": 2,
-    "validation_macro_f1": 0.9879330189914377,
-    "validation_accuracy": 0.9879154078549849,
-    "validation_loss": 0.0688885376931821,
-    "train_seconds": 41.38074430002598,
-    "validation_inference_seconds": 1.776883499987889,
+    "best_epoch": 10,
+    "validation_macro_f1": 0.9939935064935065,
+    "validation_accuracy": 0.9939577039274925,
+    "validation_loss": 0.03838512969105343,
+    "train_seconds": 189.2753567000036,
+    "validation_inference_seconds": 1.56545590001042,
     "peak_gpu_memory_mb": 2162.42919921875,
     "train_rows": 990,
     "validation_rows": 331,
-    "epochs_run": 2,
-    "epochs_max": 2,
-    "stop_reason": "최대 에폭(2) 도달",
+    "epochs_run": 10,
+    "epochs_max": 20,
+    "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
     "num_parameters": 110619651,
     "model_size_mb": 422.0
   },
@@ -123,10 +195,10 @@
     "dataset": "total_merge",
     "model_key": "bert",
     "model_id": "klue/bert-base",
-    "run_name": "20261013_145443",
+    "run_name": "20261013_163552",
     "learning_rate": 3e-05,
-    "epochs_max": 2,
-    "early_stopping_patience": 1,
+    "epochs_max": 20,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
     "score_stop": {
       "enabled": true,

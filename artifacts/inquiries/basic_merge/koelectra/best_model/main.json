@@ -5,12 +5,12 @@
   "topic": "inquiries",
   "dataset": "basic_merge",
   "dataset_id": "inquiries/basic_merge",
-  "run_id": "20261013_144829",
+  "run_id": "20261013_161116",
   "train": {
     "learning_rate": 0.0001,
-    "epochs_max": 2,
-    "epochs_run": 2,
-    "best_epoch": 2,
+    "epochs_max": 20,
+    "epochs_run": 7,
+    "best_epoch": 4,
     "batch_size": 4,
     "accumulation_steps": 2,
     "effective_batch": 8
@@ -22,25 +22,25 @@
   },
   "validation": {
     "n": 220,
-    "correct": 217,
-    "accuracy": 0.9863636363636363,
-    "macro_f1": 0.9863001017648756,
-    "loss": 0.30085655857216226,
+    "correct": 219,
+    "accuracy": 0.9954545454545455,
+    "macro_f1": 0.9954952898385305,
+    "loss": 0.03383786967024207,
     "per_label": {
       "shipping": {
+        "correct": 73,
+        "n": 74,
+        "f1": 0.9931972789115646
+      },
+      "refund": {
         "correct": 74,
         "n": 74,
         "f1": 0.9932885906040269
       },
-      "refund": {
-        "correct": 71,
-        "n": 74,
-        "f1": 0.9793103448275862
-      },
       "account": {
         "correct": 72,
         "n": 72,
-        "f1": 0.9863013698630136
+        "f1": 1.0
       }
     },
     "labels": [
@@ -50,14 +50,14 @@
     ],
     "confusion_matrix": [
       [
-        74,
-        0,
+        73,
+        1,
         0
       ],
       [
-        1,
-        71,
-        2
+        0,
+        74,
+        0
       ],
       [
         0,
@@ -113,12 +113,12 @@
     ]
   },
   "test_meta": {
-    "official": false,
-    "evaluated_at": "2026-10-13 14:58:59"
+    "official": true,
+    "evaluated_at": "2026-10-13 16:59:26"
   },
   "cost": {
-    "train_seconds": 16.44565139999031,
-    "validation_inference_seconds": 0.31794429998262785,
+    "train_seconds": 57.94657110000844,
+    "validation_inference_seconds": 0.29598380002425984,
     "test_inference_seconds": 0.093,
     "peak_gpu_mb": 292.193359375,
     "num_parameters": 14122755,
@@ -127,23 +127,48 @@
   "curve": {
     "epoch": [
       1,
-      2
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
     ],
     "train_loss": [
-      0.964483,
-      0.422825
+      1.095691,
+      0.733598,
+      0.113507,
+      0.029117,
+      0.005993,
+      0.003569,
+      0.002434
     ],
     "val_loss": [
-      0.613956,
-      0.300857
+      1.0778,
+      0.215872,
+      0.04748,
+      0.033838,
+      0.058031,
+      0.060916,
+      0.063234
     ],
     "val_macro_f1": [
-      0.95846,
-      0.9863
+      0.273775,
+      0.995495,
+      0.986453,
+      0.995495,
+      0.990991,
+      0.990991,
+      0.990991
     ],
     "val_correct": [
-      211,
-      217
+      83,
+      219,
+      217,
+      219,
+      218,
+      218,
+      218
     ]
   },
   "files": {

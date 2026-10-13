@@ -5,12 +5,12 @@
   "topic": "inquiries",
   "dataset": "basic",
   "dataset_id": "inquiries/basic",
-  "run_id": "20261013_144728",
+  "run_id": "20261013_160634",
   "train": {
     "learning_rate": 3e-05,
-    "epochs_max": 2,
-    "epochs_run": 2,
-    "best_epoch": 1,
+    "epochs_max": 20,
+    "epochs_run": 6,
+    "best_epoch": 6,
     "batch_size": 4,
     "accumulation_steps": 2,
     "effective_batch": 8
@@ -22,20 +22,20 @@
   },
   "validation": {
     "n": 120,
-    "correct": 119,
-    "accuracy": 0.9916666666666667,
-    "macro_f1": 0.991665364379851,
-    "loss": 0.025337477152546247,
+    "correct": 120,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "loss": 0.0007632349870012452,
     "per_label": {
       "shipping": {
-        "correct": 39,
+        "correct": 40,
         "n": 40,
-        "f1": 0.9873417721518988
+        "f1": 1.0
       },
       "refund": {
         "correct": 40,
         "n": 40,
-        "f1": 0.9876543209876543
+        "f1": 1.0
       },
       "account": {
         "correct": 40,
@@ -50,8 +50,8 @@
     ],
     "confusion_matrix": [
       [
-        39,
-        1,
+        40,
+        0,
         0
       ],
       [
@@ -113,37 +113,57 @@
     ]
   },
   "test_meta": {
-    "official": false,
-    "evaluated_at": "2026-10-13 14:58:56"
+    "official": true,
+    "evaluated_at": "2026-10-13 16:59:25"
   },
   "cost": {
-    "train_seconds": 10.622452899988275,
-    "validation_inference_seconds": 0.31035859999246895,
-    "test_inference_seconds": 0.219,
-    "peak_gpu_mb": 2132.15673828125,
+    "train_seconds": 36.05456650000997,
+    "validation_inference_seconds": 0.32107090001227334,
+    "test_inference_seconds": 0.261,
+    "peak_gpu_mb": 2132.158203125,
     "num_parameters": 110620419,
     "model_size_mb": 422.0
   },
   "curve": {
     "epoch": [
       1,
-      2
+      2,
+      3,
+      4,
+      5,
+      6
     ],
     "train_loss": [
-      0.545468,
-      0.013913
+      0.99806,
+      0.111092,
+      0.004089,
+      0.003218,
+      0.001626,
+      0.001287
     ],
     "val_loss": [
-      0.025337,
-      0.026367
+      0.442488,
+      0.036229,
+      0.052514,
+      0.052046,
+      0.058898,
+      0.000763
     ],
     "val_macro_f1": [
+      0.983323,
       0.991665,
-      0.991665
+      0.991665,
+      0.991665,
+      0.991665,
+      1.0
     ],
     "val_correct": [
+      118,
       119,
-      119
+      119,
+      119,
+      119,
+      120
     ]
   },
   "files": {

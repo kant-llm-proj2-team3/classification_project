@@ -2,53 +2,53 @@
   "topic": "documents",
   "dataset": "advanced",
   "split": "test",
-  "selected_model": "bert",
+  "selected_model": "roberta",
   "evaluated_model": "bert",
-  "official": true,
-  "selected_run": "20261013_145321",
+  "official": false,
+  "selected_run": "20261013_163057",
   "model_id": "klue/bert-base",
   "classifier": {
     "n": 60,
-    "accuracy": 0.9666666666666667,
-    "macro_f1": 0.9661959777492511,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
     "per_class": {
       "announcement": {
         "precision": 1.0,
-        "recall": 0.9,
-        "f1-score": 0.9473684210526315,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 20.0
       },
       "manual": {
-        "precision": 0.9523809523809523,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1-score": 0.975609756097561,
+        "f1-score": 1.0,
         "support": 20.0
       },
       "minutes": {
-        "precision": 0.9523809523809523,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1-score": 0.975609756097561,
+        "f1-score": 1.0,
         "support": 20.0
       },
-      "accuracy": 0.9666666666666667,
+      "accuracy": 1.0,
       "macro avg": {
-        "precision": 0.9682539682539683,
-        "recall": 0.9666666666666667,
-        "f1-score": 0.9661959777492511,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 60.0
       },
       "weighted avg": {
-        "precision": 0.9682539682539684,
-        "recall": 0.9666666666666667,
-        "f1-score": 0.9661959777492513,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 60.0
       }
     },
     "confusion_matrix": [
       [
-        18,
-        1,
-        1
+        20,
+        0,
+        0
       ],
       [
         0,

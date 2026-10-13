@@ -1,0 +1,4 @@
+﻿id,text,actual,predicted,group_id
+inquiries-v2-refund-validation-011-v2,반품 입고 확인 후 판매자가 창고에서 물건을 잃었다고 합니다. 입고 안내와 배송 완료 기록이 있는데 재발송 없이 환불 심사를 이어갈 수 있나요?,refund,shipping,inquiries-v2-refund-validation-011
+inquiries-v2-refund-validation-009-v2,환급 송금이 예금주 명의 불일치로 실패했습니다. 이름 변경은 확인할 수 있지만 서류를 공개하고 싶지 않습니다. 공식 창구에서 정보를 보완할 절차를 알려 주세요.,refund,account,inquiries-v2-refund-validation-009
+inquiries-v2-refund-validation-008-v1,반품한 제품과 다른 물건이 도착했다는 연락을 받았습니다. 발송 직전에 본체 번호와 상자를 함께 찍은 사진이 있습니다. 환불을 포기하기 전에 제 발송 기록과 판매자 입고 기록의 대조를 요청하고 싶습니다.,refund,shipping,inquiries-v2-refund-validation-008

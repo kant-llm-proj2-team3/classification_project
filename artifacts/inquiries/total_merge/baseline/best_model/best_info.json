@@ -21,9 +21,9 @@
     "model_size_mb": 6.91
   },
   "last_run": {
-    "run_name": "20261013_145004",
-    "replaced_best": true,
-    "reason": "이 모델의 첫 결과라서 best_model 로 저장",
+    "run_name": "20261013_161520",
+    "replaced_best": false,
+    "reason": "이전 best(20261013_145004)와 점수가 같아 유지 (Macro-F1 0.9125)",
     "validation_macro_f1": 0.9125140809011777,
     "validation_loss": null
   },
@@ -39,7 +39,18 @@
       "train_seconds": 1.3887231000117026,
       "peak_gpu_memory_mb": null,
       "is_best": true
+    },
+    {
+      "run_name": "20261013_161520",
+      "learning_rate": null,
+      "best_epoch": null,
+      "validation_macro_f1": 0.9125140809011777,
+      "validation_accuracy": 0.9123867069486404,
+      "validation_loss": null,
+      "train_seconds": 1.2727678999945056,
+      "peak_gpu_memory_mb": null,
+      "is_best": false
     }
   ],
-  "updated_at": "2026-10-13 14:50:06"
+  "updated_at": "2026-10-13 16:15:22"
 }

@@ -1,0 +1,133 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "bert",
+  "model_id": "klue/bert-base",
+  "topic": "inquiries",
+  "dataset": "basic",
+  "dataset_id": "inquiries/basic",
+  "run_id": "20261013_160552",
+  "train": {
+    "learning_rate": 3e-05,
+    "epochs_max": 20,
+    "epochs_run": 7,
+    "best_epoch": 2,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 360,
+    "validation_rows": 120,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 120,
+    "correct": 119,
+    "accuracy": 0.9916666666666667,
+    "macro_f1": 0.991665364379851,
+    "loss": 0.016478219403264424,
+    "per_label": {
+      "shipping": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "refund": {
+        "correct": 40,
+        "n": 40,
+        "f1": 0.9876543209876543
+      },
+      "account": {
+        "correct": 39,
+        "n": 40,
+        "f1": 0.9873417721518988
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        1,
+        39
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 38.58023089999915,
+    "validation_inference_seconds": 0.32395140000153333,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 2131.421875,
+    "num_parameters": 110619651,
+    "model_size_mb": 422.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "train_loss": [
+      0.89298,
+      0.102702,
+      0.00228,
+      0.001076,
+      0.000787,
+      0.000596,
+      0.000496
+    ],
+    "val_loss": [
+      0.362411,
+      0.016478,
+      0.023282,
+      0.03378,
+      0.038471,
+      0.040225,
+      0.04208
+    ],
+    "val_macro_f1": [
+      0.974768,
+      0.991665,
+      0.991665,
+      0.991665,
+      0.991665,
+      0.991665,
+      0.991665
+    ],
+    "val_correct": [
+      117,
+      119,
+      119,
+      119,
+      119,
+      119,
+      119
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

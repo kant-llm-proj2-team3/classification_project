@@ -1,0 +1,17 @@
+{
+  "model_key": "baseline",
+  "model_id": "TF-IDF(char n-gram) + LogisticRegression",
+  "run_name": "20261013_161214",
+  "learning_rate": null,
+  "best_epoch": null,
+  "validation_macro_f1": 0.7326007326007327,
+  "validation_accuracy": 0.7333333333333333,
+  "validation_loss": null,
+  "train_seconds": 0.5666382999916095,
+  "validation_inference_seconds": 0.05101720002130605,
+  "peak_gpu_memory_mb": null,
+  "train_rows": 180,
+  "validation_rows": 60,
+  "num_parameters": 274497,
+  "model_size_mb": 4.29
+}

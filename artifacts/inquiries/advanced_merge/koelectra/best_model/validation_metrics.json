@@ -1,50 +1,50 @@
 {
   "n": 111,
-  "accuracy": 0.8378378378378378,
-  "macro_f1": 0.839025054466231,
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
   "per_class": {
     "shipping": {
-      "precision": 0.967741935483871,
-      "recall": 0.8108108108108109,
-      "f1-score": 0.8823529411764706,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
       "support": 37.0
     },
     "refund": {
-      "precision": 0.9629629629629629,
-      "recall": 0.7027027027027027,
-      "f1-score": 0.8125,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
       "support": 37.0
     },
     "account": {
-      "precision": 0.6981132075471698,
+      "precision": 1.0,
       "recall": 1.0,
-      "f1-score": 0.8222222222222222,
+      "f1-score": 1.0,
       "support": 37.0
     },
-    "accuracy": 0.8378378378378378,
+    "accuracy": 1.0,
     "macro avg": {
-      "precision": 0.8762727019980012,
-      "recall": 0.8378378378378378,
-      "f1-score": 0.839025054466231,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
       "support": 111.0
     },
     "weighted avg": {
-      "precision": 0.8762727019980012,
-      "recall": 0.8378378378378378,
-      "f1-score": 0.839025054466231,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
       "support": 111.0
     }
   },
   "confusion_matrix": [
     [
-      30,
-      1,
-      6
+      37,
+      0,
+      0
     ],
     [
-      1,
-      26,
-      10
+      0,
+      37,
+      0
     ],
     [
       0,

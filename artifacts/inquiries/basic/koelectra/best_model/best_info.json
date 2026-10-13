@@ -6,32 +6,47 @@
   "best": {
     "model_key": "koelectra",
     "model_id": "monologg/koelectra-small-v3-discriminator",
-    "run_name": "20261013_144739",
+    "run_name": "20261013_160710",
     "learning_rate": 0.0001,
-    "best_epoch": 1,
-    "validation_macro_f1": 0.6946623729350825,
-    "validation_accuracy": 0.7333333333333333,
-    "validation_loss": 0.9492934624354045,
-    "train_seconds": 8.752063899999484,
-    "validation_inference_seconds": 0.18319420001353137,
+    "best_epoch": 6,
+    "validation_macro_f1": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_loss": 0.006275365455076098,
+    "train_seconds": 33.10964070001501,
+    "validation_inference_seconds": 0.21746230000280775,
     "peak_gpu_memory_mb": 292.1904296875,
     "train_rows": 360,
     "validation_rows": 120,
-    "epochs_run": 2,
-    "epochs_max": 2,
-    "stop_reason": "validation Macro-F1 이 1에폭 연속 개선되지 않음",
+    "epochs_run": 6,
+    "epochs_max": 20,
+    "stop_reason": "점수 기준 도달: 정답 120/120(만점), Macro-F1 1.0000, val_loss 0.0063 <= 0.01",
     "num_parameters": 14122755,
     "model_size_mb": 53.9
   },
   "last_run": {
-    "run_name": "20261013_144739",
+    "run_name": "20261013_160710",
     "replaced_best": true,
-    "reason": "이 모델의 첫 결과라서 best_model 로 저장",
+    "reason": "validation Macro-F1 1.0000 > 이전 best 0.6947 (20261013_144739)",
+    "validation_macro_f1": 1.0,
+    "validation_loss": 0.006275365455076098
+  },
+  "previous_best": {
+    "run_name": "20261013_144739",
     "validation_macro_f1": 0.6946623729350825,
     "validation_loss": 0.9492934624354045
   },
-  "previous_best": null,
   "runs": [
+    {
+      "run_name": "20261013_160710",
+      "learning_rate": 0.0001,
+      "best_epoch": 6,
+      "validation_macro_f1": 1.0,
+      "validation_accuracy": 1.0,
+      "validation_loss": 0.006275365455076098,
+      "train_seconds": 33.10964070001501,
+      "peak_gpu_memory_mb": 292.1904296875,
+      "is_best": true
+    },
     {
       "run_name": "20261013_144739",
       "learning_rate": 0.0001,
@@ -41,8 +56,8 @@
       "validation_loss": 0.9492934624354045,
       "train_seconds": 8.752063899999484,
       "peak_gpu_memory_mb": 292.1904296875,
-      "is_best": true
+      "is_best": false
     }
   ],
-  "updated_at": "2026-10-13 14:47:48"
+  "updated_at": "2026-10-13 16:07:44"
 }

@@ -1,0 +1,139 @@
+{
+  "topic": "inquiries",
+  "dataset": "advanced_merge",
+  "split": "test",
+  "selected_model": "roberta",
+  "evaluated_model": "roberta",
+  "official": true,
+  "selected_run": "20261013_144936",
+  "model_id": "klue/roberta-base",
+  "classifier": {
+    "n": 111,
+    "accuracy": 0.9459459459459459,
+    "macro_f1": 0.9459459459459459,
+    "per_class": {
+      "shipping": {
+        "precision": 0.9459459459459459,
+        "recall": 0.9459459459459459,
+        "f1-score": 0.9459459459459459,
+        "support": 37.0
+      },
+      "refund": {
+        "precision": 0.9459459459459459,
+        "recall": 0.9459459459459459,
+        "f1-score": 0.9459459459459459,
+        "support": 37.0
+      },
+      "account": {
+        "precision": 0.9459459459459459,
+        "recall": 0.9459459459459459,
+        "f1-score": 0.9459459459459459,
+        "support": 37.0
+      },
+      "accuracy": 0.9459459459459459,
+      "macro avg": {
+        "precision": 0.9459459459459459,
+        "recall": 0.9459459459459459,
+        "f1-score": 0.9459459459459459,
+        "support": 111.0
+      },
+      "weighted avg": {
+        "precision": 0.9459459459459459,
+        "recall": 0.9459459459459459,
+        "f1-score": 0.9459459459459459,
+        "support": 111.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        35,
+        1,
+        1
+      ],
+      [
+        1,
+        35,
+        1
+      ],
+      [
+        1,
+        1,
+        35
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "shipping",
+        "refund",
+        "account"
+      ]
+    }
+  },
+  "baseline": {
+    "n": 111,
+    "accuracy": 0.8108108108108109,
+    "macro_f1": 0.809319297124175,
+    "per_class": {
+      "shipping": {
+        "precision": 0.8108108108108109,
+        "recall": 0.8108108108108109,
+        "f1-score": 0.8108108108108109,
+        "support": 37.0
+      },
+      "refund": {
+        "precision": 0.896551724137931,
+        "recall": 0.7027027027027027,
+        "f1-score": 0.7878787878787878,
+        "support": 37.0
+      },
+      "account": {
+        "precision": 0.7555555555555555,
+        "recall": 0.918918918918919,
+        "f1-score": 0.8292682926829268,
+        "support": 37.0
+      },
+      "accuracy": 0.8108108108108109,
+      "macro avg": {
+        "precision": 0.8209726968347658,
+        "recall": 0.8108108108108109,
+        "f1-score": 0.809319297124175,
+        "support": 111.0
+      },
+      "weighted avg": {
+        "precision": 0.8209726968347658,
+        "recall": 0.8108108108108109,
+        "f1-score": 0.8093192971241752,
+        "support": 111.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        30,
+        2,
+        5
+      ],
+      [
+        5,
+        26,
+        6
+      ],
+      [
+        2,
+        1,
+        34
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "shipping",
+        "refund",
+        "account"
+      ]
+    }
+  },
+  "baseline_run": "20261013_144916"
+}

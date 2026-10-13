@@ -1,7 +1,7 @@
 {
   "schema": "project2-result/v1",
-  "run_id": "20261013_145352",
-  "generated_at": "2026-10-13 14:54:10",
+  "run_id": "20261013_163306",
+  "generated_at": "2026-10-13 16:33:32",
   "hyperparameters": {
     "seed": 42,
     "max_length": 512,
@@ -11,10 +11,10 @@
     "warmup_ratio": 0.1,
     "gradient_checkpointing": true,
     "precision": "bfloat16",
-    "early_stopping_patience": 1,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
-    "stop_reason": "validation Macro-F1 이 1에폭 연속 개선되지 않음",
-    "optimizer_steps_at_checkpoint": 84,
+    "stop_reason": "점수 기준 도달: 정답 111/111(만점), Macro-F1 1.0000, val_loss 0.0023 <= 0.01",
+    "optimizer_steps_at_checkpoint": 126,
     "selection_split": "validation"
   },
   "environment": {
@@ -46,15 +46,15 @@
   "validation_detail": {
     "per_class": {
       "announcement": {
-        "precision": 0.9736842105263158,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1-score": 0.9866666666666667,
+        "f1-score": 1.0,
         "support": 37.0
       },
       "manual": {
         "precision": 1.0,
-        "recall": 0.972972972972973,
-        "f1-score": 0.9863013698630136,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 37.0
       },
       "minutes": {
@@ -63,17 +63,17 @@
         "f1-score": 1.0,
         "support": 37.0
       },
-      "accuracy": 0.990990990990991,
+      "accuracy": 1.0,
       "macro avg": {
-        "precision": 0.9912280701754387,
-        "recall": 0.990990990990991,
-        "f1-score": 0.9909893455098935,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 111.0
       },
       "weighted avg": {
-        "precision": 0.9912280701754386,
-        "recall": 0.990990990990991,
-        "f1-score": 0.9909893455098935,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 111.0
       }
     }
@@ -81,40 +81,49 @@
   "epochs": [
     {
       "epoch": 1,
-      "train_loss": 0.5586840080492425,
-      "validation_loss": 0.11820314056030265,
-      "validation_accuracy": 0.990990990990991,
-      "validation_macro_f1": 0.9909893455098935,
+      "train_loss": 0.9270241477272727,
+      "validation_loss": 0.47972091240388853,
+      "validation_accuracy": 0.8558558558558559,
+      "validation_macro_f1": 0.8583051130900121,
       "optimizer_steps": 42,
-      "elapsed_seconds": 8.827376299974276
+      "elapsed_seconds": 8.322617300000275
     },
     {
       "epoch": 2,
-      "train_loss": 0.0696014404296875,
-      "validation_loss": 0.04612624922532353,
-      "validation_accuracy": 0.990990990990991,
-      "validation_macro_f1": 0.9909893455098935,
+      "train_loss": 0.2574022697679924,
+      "validation_loss": 0.08903932435488379,
+      "validation_accuracy": 0.9819819819819819,
+      "validation_macro_f1": 0.9819688109161794,
       "optimizer_steps": 84,
-      "elapsed_seconds": 18.28494499999215
+      "elapsed_seconds": 16.740439100016374
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.01692925655480587,
+      "validation_loss": 0.002272256632201239,
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "optimizer_steps": 126,
+      "elapsed_seconds": 25.40563409999595
     }
   ],
   "training_summary": {
     "model_key": "bert",
     "model_id": "klue/bert-base",
-    "run_name": "20261013_145352",
+    "run_name": "20261013_163306",
     "learning_rate": 3e-05,
-    "best_epoch": 2,
-    "validation_macro_f1": 0.9909893455098935,
-    "validation_accuracy": 0.990990990990991,
-    "validation_loss": 0.04612624922532353,
-    "train_seconds": 18.528016500000376,
-    "validation_inference_seconds": 1.2621807999967132,
+    "best_epoch": 3,
+    "validation_macro_f1": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_loss": 0.002272256632201239,
+    "train_seconds": 25.6755114000116,
+    "validation_inference_seconds": 1.0378731999953743,
     "peak_gpu_memory_mb": 2169.21142578125,
     "train_rows": 330,
     "validation_rows": 111,
-    "epochs_run": 2,
-    "epochs_max": 2,
-    "stop_reason": "validation Macro-F1 이 1에폭 연속 개선되지 않음",
+    "epochs_run": 3,
+    "epochs_max": 20,
+    "stop_reason": "점수 기준 도달: 정답 111/111(만점), Macro-F1 1.0000, val_loss 0.0023 <= 0.01",
     "num_parameters": 110619651,
     "model_size_mb": 422.0
   },
@@ -123,10 +132,10 @@
     "dataset": "advanced_merge",
     "model_key": "bert",
     "model_id": "klue/bert-base",
-    "run_name": "20261013_145352",
+    "run_name": "20261013_163306",
     "learning_rate": 3e-05,
-    "epochs_max": 2,
-    "early_stopping_patience": 1,
+    "epochs_max": 20,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
     "score_stop": {
       "enabled": true,

@@ -1,0 +1,20 @@
+{
+  "model_key": "koelectra",
+  "model_id": "monologg/koelectra-small-v3-discriminator",
+  "run_name": "20261013_163448",
+  "learning_rate": 0.0001,
+  "best_epoch": 10,
+  "validation_macro_f1": 0.9909893455098935,
+  "validation_accuracy": 0.990990990990991,
+  "validation_loss": 0.05773974552347853,
+  "train_seconds": 61.12863870000001,
+  "validation_inference_seconds": 0.22774390000267886,
+  "peak_gpu_memory_mb": 350.45654296875,
+  "train_rows": 330,
+  "validation_rows": 111,
+  "epochs_run": 15,
+  "epochs_max": 20,
+  "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
+  "num_parameters": 14122755,
+  "model_size_mb": 53.9
+}

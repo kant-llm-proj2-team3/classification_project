@@ -1,7 +1,7 @@
 {
   "schema": "project2-result/v1",
-  "run_id": "20261013_144955",
-  "generated_at": "2026-10-13 14:50:04",
+  "run_id": "20261013_161439",
+  "generated_at": "2026-10-13 16:15:20",
   "hyperparameters": {
     "seed": 42,
     "max_length": 512,
@@ -11,10 +11,10 @@
     "warmup_ratio": 0.1,
     "gradient_checkpointing": true,
     "precision": "bfloat16",
-    "early_stopping_patience": 1,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
-    "stop_reason": "최대 에폭(2) 도달",
-    "optimizer_steps_at_checkpoint": 84,
+    "stop_reason": "점수 기준 도달: 정답 111/111(만점), Macro-F1 1.0000, val_loss 0.0091 <= 0.01",
+    "optimizer_steps_at_checkpoint": 420,
     "selection_split": "validation"
   },
   "environment": {
@@ -46,34 +46,34 @@
   "validation_detail": {
     "per_class": {
       "shipping": {
-        "precision": 0.967741935483871,
-        "recall": 0.8108108108108109,
-        "f1-score": 0.8823529411764706,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 37.0
       },
       "refund": {
-        "precision": 0.9629629629629629,
-        "recall": 0.7027027027027027,
-        "f1-score": 0.8125,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 37.0
       },
       "account": {
-        "precision": 0.6981132075471698,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1-score": 0.8222222222222222,
+        "f1-score": 1.0,
         "support": 37.0
       },
-      "accuracy": 0.8378378378378378,
+      "accuracy": 1.0,
       "macro avg": {
-        "precision": 0.8762727019980012,
-        "recall": 0.8378378378378378,
-        "f1-score": 0.839025054466231,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 111.0
       },
       "weighted avg": {
-        "precision": 0.8762727019980012,
-        "recall": 0.8378378378378378,
-        "f1-score": 0.839025054466231,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 111.0
       }
     }
@@ -81,40 +81,112 @@
   "epochs": [
     {
       "epoch": 1,
-      "train_loss": 1.0935842803030302,
-      "validation_loss": 1.0523031262664106,
-      "validation_accuracy": 0.7837837837837838,
-      "validation_macro_f1": 0.7874239479465945,
+      "train_loss": 1.0977982954545455,
+      "validation_loss": 1.0932425625689395,
+      "validation_accuracy": 0.44144144144144143,
+      "validation_macro_f1": 0.33305921052631576,
       "optimizer_steps": 42,
-      "elapsed_seconds": 4.57836959999986
+      "elapsed_seconds": 4.034358600009
     },
     {
       "epoch": 2,
-      "train_loss": 1.0022964015151514,
-      "validation_loss": 0.9444249669710795,
-      "validation_accuracy": 0.8378378378378378,
-      "validation_macro_f1": 0.839025054466231,
+      "train_loss": 1.0420217803030303,
+      "validation_loss": 0.8956893650261132,
+      "validation_accuracy": 0.6126126126126126,
+      "validation_macro_f1": 0.4909204270906398,
       "optimizer_steps": 84,
-      "elapsed_seconds": 8.79203830001643
+      "elapsed_seconds": 8.087116400012746
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.7883996212121213,
+      "validation_loss": 0.5797580483260455,
+      "validation_accuracy": 0.8558558558558559,
+      "validation_macro_f1": 0.8520333318210002,
+      "optimizer_steps": 126,
+      "elapsed_seconds": 12.22532689999207
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.48857421875,
+      "validation_loss": 0.30291127903504417,
+      "validation_accuracy": 0.9459459459459459,
+      "validation_macro_f1": 0.9461567044018926,
+      "optimizer_steps": 168,
+      "elapsed_seconds": 16.46354739999515
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.23909875118371213,
+      "validation_loss": 0.19349358677192852,
+      "validation_accuracy": 0.9459459459459459,
+      "validation_macro_f1": 0.9462999280257258,
+      "optimizer_steps": 210,
+      "elapsed_seconds": 20.565328099997714
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.07196599786931818,
+      "validation_loss": 0.02077410027787492,
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "optimizer_steps": 252,
+      "elapsed_seconds": 24.640658899996197
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.019770211884469698,
+      "validation_loss": 0.015638116033965938,
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "optimizer_steps": 294,
+      "elapsed_seconds": 28.769010499992874
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.011267505992542613,
+      "validation_loss": 0.019332962664397987,
+      "validation_accuracy": 0.990990990990991,
+      "validation_macro_f1": 0.9909893455098935,
+      "optimizer_steps": 336,
+      "elapsed_seconds": 32.901273099996615
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.007854577266808712,
+      "validation_loss": 0.046530850332331015,
+      "validation_accuracy": 0.990990990990991,
+      "validation_macro_f1": 0.9909893455098935,
+      "optimizer_steps": 378,
+      "elapsed_seconds": 36.88011260001804
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.005696059718276515,
+      "validation_loss": 0.009112153179221996,
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "optimizer_steps": 420,
+      "elapsed_seconds": 40.973943499993766
     }
   ],
   "training_summary": {
     "model_key": "koelectra",
     "model_id": "monologg/koelectra-small-v3-discriminator",
-    "run_name": "20261013_144955",
+    "run_name": "20261013_161439",
     "learning_rate": 0.0001,
-    "best_epoch": 2,
-    "validation_macro_f1": 0.839025054466231,
-    "validation_accuracy": 0.8378378378378378,
-    "validation_loss": 0.9444249669710795,
-    "train_seconds": 8.844567199994344,
-    "validation_inference_seconds": 0.24678169999970123,
+    "best_epoch": 10,
+    "validation_macro_f1": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_loss": 0.009112153179221996,
+    "train_seconds": 41.03009469999233,
+    "validation_inference_seconds": 0.22936669999035075,
     "peak_gpu_memory_mb": 350.45654296875,
     "train_rows": 330,
     "validation_rows": 111,
-    "epochs_run": 2,
-    "epochs_max": 2,
-    "stop_reason": "최대 에폭(2) 도달",
+    "epochs_run": 10,
+    "epochs_max": 20,
+    "stop_reason": "점수 기준 도달: 정답 111/111(만점), Macro-F1 1.0000, val_loss 0.0091 <= 0.01",
     "num_parameters": 14122755,
     "model_size_mb": 53.9
   },
@@ -123,10 +195,10 @@
     "dataset": "advanced_merge",
     "model_key": "koelectra",
     "model_id": "monologg/koelectra-small-v3-discriminator",
-    "run_name": "20261013_144955",
+    "run_name": "20261013_161439",
     "learning_rate": 0.0001,
-    "epochs_max": 2,
-    "early_stopping_patience": 1,
+    "epochs_max": 20,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
     "score_stop": {
       "enabled": true,

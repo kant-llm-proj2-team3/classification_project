@@ -3,17 +3,19 @@
   "dataset": "basic_merge",
   "recommended_model": "roberta",
   "model_id": "klue/roberta-base",
-  "run_name": "20261013_145241",
+  "run_name": "20261013_162808",
   "learning_rate": 3e-05,
   "selection_rule": "각 모델 best_model 의 validation Macro-F1 (동점: validation loss, 그다음 학습 시간). test 점수는 사용하지 않음.",
-  "reason": "validation Macro-F1 이 0.9910로 bert와 동점이라 validation loss(0.0454 vs 0.0544)로 결정했습니다.",
-  "notes": [],
-  "validation_macro_f1": 0.9909893455098935,
+  "reason": "validation Macro-F1 0.9955로 1위 (bert 0.9910, 정확히 맞힌 문장 약 1건 차이 / validation 220건).",
+  "notes": [
+    "이미 ['bert'] 의 test 평가가 끝나 있습니다. 추천이 바뀌었다면 test 이후에 모델을 다시 고른 셈이므로 기존 test 결과와 추가 실험을 구분해 기록하세요."
+  ],
+  "validation_macro_f1": 0.9954952898385305,
   "compared_models": [
     "roberta",
     "bert",
     "koelectra"
   ],
   "baseline_reference_validation_macro_f1": 0.981978691019787,
-  "created_at": "2026-10-13 14:59:15"
+  "created_at": "2026-10-13 16:59:39"
 }

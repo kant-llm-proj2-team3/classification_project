@@ -1,0 +1,118 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "bert",
+  "model_id": "klue/bert-base",
+  "topic": "inquiries",
+  "dataset": "advanced",
+  "dataset_id": "inquiries/advanced",
+  "run_id": "20261013_161215",
+  "train": {
+    "learning_rate": 3e-05,
+    "epochs_max": 20,
+    "epochs_run": 4,
+    "best_epoch": 4,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 180,
+    "validation_rows": 60,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 60,
+    "correct": 60,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "loss": 0.0028227150595436495,
+    "per_label": {
+      "shipping": {
+        "correct": 20,
+        "n": 20,
+        "f1": 1.0
+      },
+      "refund": {
+        "correct": 20,
+        "n": 20,
+        "f1": 1.0
+      },
+      "account": {
+        "correct": 20,
+        "n": 20,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        20,
+        0
+      ],
+      [
+        0,
+        0,
+        20
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 21.476500599994324,
+    "validation_inference_seconds": 0.7758349000068847,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 2169.21142578125,
+    "num_parameters": 110619651,
+    "model_size_mb": 422.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "train_loss": [
+      1.116385,
+      0.673052,
+      0.159202,
+      0.018399
+    ],
+    "val_loss": [
+      0.913114,
+      0.308347,
+      0.014425,
+      0.002823
+    ],
+    "val_macro_f1": [
+      0.711671,
+      0.897698,
+      1.0,
+      1.0
+    ],
+    "val_correct": [
+      43,
+      54,
+      60,
+      60
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

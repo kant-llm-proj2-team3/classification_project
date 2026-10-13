@@ -1,7 +1,7 @@
 {
   "schema": "project2-result/v1",
-  "run_id": "20261013_145606",
-  "generated_at": "2026-10-13 14:56:33",
+  "run_id": "20261013_164211",
+  "generated_at": "2026-10-13 16:44:59",
   "hyperparameters": {
     "seed": 42,
     "max_length": 512,
@@ -11,10 +11,10 @@
     "warmup_ratio": 0.1,
     "gradient_checkpointing": true,
     "precision": "bfloat16",
-    "early_stopping_patience": 1,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
-    "stop_reason": "최대 에폭(2) 도달",
-    "optimizer_steps_at_checkpoint": 248,
+    "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
+    "optimizer_steps_at_checkpoint": 1116,
     "selection_split": "validation"
   },
   "environment": {
@@ -46,34 +46,34 @@
   "validation_detail": {
     "per_class": {
       "announcement": {
-        "precision": 0.905982905982906,
-        "recall": 0.954954954954955,
-        "f1-score": 0.9298245614035088,
+        "precision": 0.9454545454545454,
+        "recall": 0.9369369369369369,
+        "f1-score": 0.9411764705882353,
         "support": 111.0
       },
       "manual": {
-        "precision": 0.979381443298969,
-        "recall": 0.8558558558558559,
-        "f1-score": 0.9134615384615384,
+        "precision": 0.9464285714285714,
+        "recall": 0.954954954954955,
+        "f1-score": 0.9506726457399103,
         "support": 111.0
       },
       "minutes": {
-        "precision": 0.9316239316239316,
-        "recall": 1.0,
-        "f1-score": 0.9646017699115044,
+        "precision": 0.981651376146789,
+        "recall": 0.981651376146789,
+        "f1-score": 0.981651376146789,
         "support": 109.0
       },
-      "accuracy": 0.9365558912386707,
+      "accuracy": 0.9577039274924471,
       "macro avg": {
-        "precision": 0.9389960936352688,
-        "recall": 0.936936936936937,
-        "f1-score": 0.9359626232588506,
+        "precision": 0.9578448310099686,
+        "recall": 0.9578477560128936,
+        "f1-score": 0.9578334974916448,
         "support": 331.0
       },
       "weighted avg": {
-        "precision": 0.9390406384208358,
-        "recall": 0.9365558912386707,
-        "f1-score": 0.9357895770555112,
+        "precision": 0.9577009848157885,
+        "recall": 0.9577039274924471,
+        "f1-score": 0.9576895828169913,
         "support": 331.0
       }
     }
@@ -81,40 +81,148 @@
   "epochs": [
     {
       "epoch": 1,
-      "train_loss": 0.7886225536616162,
-      "validation_loss": 0.3815049049627385,
-      "validation_accuracy": 0.9063444108761329,
-      "validation_macro_f1": 0.9052774612382376,
+      "train_loss": 1.0309106691919192,
+      "validation_loss": 0.832230336716528,
+      "validation_accuracy": 0.5921450151057401,
+      "validation_macro_f1": 0.48335769656699884,
       "optimizer_steps": 124,
-      "elapsed_seconds": 11.86439750000136
+      "elapsed_seconds": 11.849842499999795
     },
     {
       "epoch": 2,
-      "train_loss": 0.2669813368055556,
-      "validation_loss": 0.23178371420169525,
-      "validation_accuracy": 0.9365558912386707,
-      "validation_macro_f1": 0.9359626232588506,
+      "train_loss": 0.5381387113320707,
+      "validation_loss": 0.42078299237432076,
+      "validation_accuracy": 0.8459214501510574,
+      "validation_macro_f1": 0.838239454264769,
       "optimizer_steps": 248,
-      "elapsed_seconds": 26.160183500003768
+      "elapsed_seconds": 23.80773540001246
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.21553394047900884,
+      "validation_loss": 0.2899597191063299,
+      "validation_accuracy": 0.9274924471299094,
+      "validation_macro_f1": 0.9271390166245171,
+      "optimizer_steps": 372,
+      "elapsed_seconds": 35.734074400010286
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.1727984804095644,
+      "validation_loss": 0.2236611021631974,
+      "validation_accuracy": 0.9516616314199395,
+      "validation_macro_f1": 0.9520271000891155,
+      "optimizer_steps": 496,
+      "elapsed_seconds": 47.6597190000175
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.10666140932025331,
+      "validation_loss": 0.3149793685591158,
+      "validation_accuracy": 0.9395770392749244,
+      "validation_macro_f1": 0.9395262203258016,
+      "optimizer_steps": 620,
+      "elapsed_seconds": 59.72277240001131
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.06702755244091303,
+      "validation_loss": 0.5666291922671309,
+      "validation_accuracy": 0.8942598187311178,
+      "validation_macro_f1": 0.8928939019664827,
+      "optimizer_steps": 744,
+      "elapsed_seconds": 71.72986700001638
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.047677138357451465,
+      "validation_loss": 0.4063610905342457,
+      "validation_accuracy": 0.9274924471299094,
+      "validation_macro_f1": 0.9280139486270261,
+      "optimizer_steps": 868,
+      "elapsed_seconds": 83.8280342000071
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.07879083421495225,
+      "validation_loss": 0.26865251313330846,
+      "validation_accuracy": 0.9577039274924471,
+      "validation_macro_f1": 0.957585193130916,
+      "optimizer_steps": 992,
+      "elapsed_seconds": 95.8980131999997
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.004925005363695549,
+      "validation_loss": 0.2875562790463667,
+      "validation_accuracy": 0.9577039274924471,
+      "validation_macro_f1": 0.9578334974916448,
+      "optimizer_steps": 1116,
+      "elapsed_seconds": 108.086896599998
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.0016603469848632812,
+      "validation_loss": 0.3208892589708962,
+      "validation_accuracy": 0.9577039274924471,
+      "validation_macro_f1": 0.9577930981037371,
+      "optimizer_steps": 1240,
+      "elapsed_seconds": 120.15731629999937
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.018601343366834854,
+      "validation_loss": 0.29895467544607596,
+      "validation_accuracy": 0.9577039274924471,
+      "validation_macro_f1": 0.9577617974218903,
+      "optimizer_steps": 1364,
+      "elapsed_seconds": 132.0213959000248
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.0009000180947660196,
+      "validation_loss": 0.3177346872787267,
+      "validation_accuracy": 0.9577039274924471,
+      "validation_macro_f1": 0.9577792173221867,
+      "optimizer_steps": 1488,
+      "elapsed_seconds": 144.00398999999743
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.0007513296724569918,
+      "validation_loss": 0.3332234017417824,
+      "validation_accuracy": 0.9577039274924471,
+      "validation_macro_f1": 0.9577792173221867,
+      "optimizer_steps": 1612,
+      "elapsed_seconds": 155.87133120000362
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.0006278115089493569,
+      "validation_loss": 0.34054318088603774,
+      "validation_accuracy": 0.9577039274924471,
+      "validation_macro_f1": 0.9577792173221867,
+      "optimizer_steps": 1736,
+      "elapsed_seconds": 167.70024750000448
     }
   ],
   "training_summary": {
     "model_key": "koelectra",
     "model_id": "monologg/koelectra-small-v3-discriminator",
-    "run_name": "20261013_145606",
+    "run_name": "20261013_164211",
     "learning_rate": 0.0001,
-    "best_epoch": 2,
-    "validation_macro_f1": 0.9359626232588506,
-    "validation_accuracy": 0.9365558912386707,
-    "validation_loss": 0.23178371420169525,
-    "train_seconds": 26.219745900016278,
-    "validation_inference_seconds": 0.7189918000076432,
+    "best_epoch": 9,
+    "validation_macro_f1": 0.9578334974916448,
+    "validation_accuracy": 0.9577039274924471,
+    "validation_loss": 0.2875562790463667,
+    "train_seconds": 167.70068460001494,
+    "validation_inference_seconds": 0.5282498000015039,
     "peak_gpu_memory_mb": 350.45654296875,
     "train_rows": 990,
     "validation_rows": 331,
-    "epochs_run": 2,
-    "epochs_max": 2,
-    "stop_reason": "최대 에폭(2) 도달",
+    "epochs_run": 14,
+    "epochs_max": 20,
+    "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
     "num_parameters": 14122755,
     "model_size_mb": 53.9
   },
@@ -123,10 +231,10 @@
     "dataset": "total_merge",
     "model_key": "koelectra",
     "model_id": "monologg/koelectra-small-v3-discriminator",
-    "run_name": "20261013_145606",
+    "run_name": "20261013_164211",
     "learning_rate": 0.0001,
-    "epochs_max": 2,
-    "early_stopping_patience": 1,
+    "epochs_max": 20,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
     "score_stop": {
       "enabled": true,

@@ -1,0 +1,4 @@
+﻿id,text,actual,predicted,group_id
+c-5904c749edca,빵 발효 바구니 주문이 배송 출발로 바뀐 뒤 이틀째 이동 기록이 없습니다. 주말 수업 전에 받아야 해서 현재 위치와 예상 도착일을 확인해 주세요. 결제 취소나 반품은 원하지 않습니다.,shipping,refund,ctx-i-065
+inquiries-v2-account-validation-014-v2,운영 규정 위반으로 계정이 제한됐다는데 어느 활동이 문제인지 모르겠어요. 우회하지 않고 사유 확인과 이의 제기를 할 공식 창구가 있나요?,account,refund,inquiries-v2-account-validation-014
+inquiries-v2-refund-validation-027-v1,어떤 상태와 구성품을 보여 줘야 하는지 서면 안내를 받을 수 있나요? 참고로 현재 접수에서 어느 확인이 남았는지 담당별 처리 기록을 요청하고 싶습니다. 누리전시몰에서 신청한 도구 분류 상자 건입니다. 제품 상태는 그대로 보관 중이고 필요한 확인을 숨기려는 것은 아닙니다. 공동 작업에 쓰려고 신청한 물품입니다.,refund,shipping,inquiries-v2-refund-validation-027

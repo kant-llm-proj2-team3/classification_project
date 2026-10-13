@@ -5,60 +5,60 @@
   "selected_model": null,
   "evaluated_model": "koelectra",
   "official": null,
-  "selected_run": "20261013_145606",
+  "selected_run": "20261013_164211",
   "model_id": "monologg/koelectra-small-v3-discriminator",
   "classifier": {
     "n": 331,
-    "accuracy": 0.9486404833836858,
-    "macro_f1": 0.9482368713066047,
+    "accuracy": 0.9546827794561934,
+    "macro_f1": 0.9544605922460757,
     "per_class": {
       "announcement": {
-        "precision": 0.9722222222222222,
-        "recall": 0.9459459459459459,
-        "f1-score": 0.958904109589041,
+        "precision": 0.9711538461538461,
+        "recall": 0.9099099099099099,
+        "f1-score": 0.9395348837209302,
         "support": 111.0
       },
       "manual": {
-        "precision": 0.9607843137254902,
-        "recall": 0.8990825688073395,
-        "f1-score": 0.9289099526066351,
+        "precision": 0.9210526315789473,
+        "recall": 0.963302752293578,
+        "f1-score": 0.9417040358744395,
         "support": 109.0
       },
       "minutes": {
-        "precision": 0.9173553719008265,
-        "recall": 1.0,
-        "f1-score": 0.9568965517241379,
+        "precision": 0.9734513274336283,
+        "recall": 0.990990990990991,
+        "f1-score": 0.9821428571428571,
         "support": 111.0
       },
-      "accuracy": 0.9486404833836858,
+      "accuracy": 0.9546827794561934,
       "macro avg": {
-        "precision": 0.950120635949513,
-        "recall": 0.9483428382510951,
-        "f1-score": 0.9482368713066047,
+        "precision": 0.9552192683888073,
+        "recall": 0.9547345510648263,
+        "f1-score": 0.9544605922460757,
         "support": 331.0
       },
       "weighted avg": {
-        "precision": 0.9500562028511688,
-        "recall": 0.9486404833836858,
-        "f1-score": 0.9483536502715593,
+        "precision": 0.9554257133242142,
+        "recall": 0.9546827794561934,
+        "f1-score": 0.9545376711365386,
         "support": 331.0
       }
     },
     "confusion_matrix": [
       [
-        105,
-        4,
+        101,
+        8,
         2
       ],
       [
         3,
-        98,
-        8
+        105,
+        1
       ],
       [
         0,
-        0,
-        111
+        1,
+        110
       ]
     ],
     "confusion_matrix_axes": {

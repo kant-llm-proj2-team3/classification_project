@@ -1,0 +1,143 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "roberta",
+  "model_id": "klue/roberta-base",
+  "topic": "inquiries",
+  "dataset": "total_merge",
+  "dataset_id": "inquiries/total_merge",
+  "run_id": "20261013_161829",
+  "train": {
+    "learning_rate": 3e-05,
+    "epochs_max": 20,
+    "epochs_run": 9,
+    "best_epoch": 4,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8
+  },
+  "input": {
+    "train_rows": 990,
+    "validation_rows": 331,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 331,
+    "correct": 329,
+    "accuracy": 0.9939577039274925,
+    "macro_f1": 0.993993993993994,
+    "loss": 0.03856721342459681,
+    "per_label": {
+      "shipping": {
+        "correct": 110,
+        "n": 111,
+        "f1": 0.990990990990991
+      },
+      "refund": {
+        "correct": 110,
+        "n": 111,
+        "f1": 0.990990990990991
+      },
+      "account": {
+        "correct": 109,
+        "n": 109,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        110,
+        1,
+        0
+      ],
+      [
+        1,
+        110,
+        0
+      ],
+      [
+        0,
+        0,
+        109
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 168.63986009999644,
+    "validation_inference_seconds": 1.6077304999926127,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 2161.91845703125,
+    "num_parameters": 110620419,
+    "model_size_mb": 422.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "train_loss": [
+      0.780364,
+      0.113898,
+      0.068396,
+      0.019038,
+      0.000951,
+      0.000482,
+      0.000366,
+      0.000292,
+      0.000247
+    ],
+    "val_loss": [
+      0.261843,
+      0.118538,
+      0.066981,
+      0.038567,
+      0.04524,
+      0.047452,
+      0.04902,
+      0.049963,
+      0.051075
+    ],
+    "val_macro_f1": [
+      0.919471,
+      0.972823,
+      0.984818,
+      0.993994,
+      0.993994,
+      0.993994,
+      0.993994,
+      0.993994,
+      0.993994
+    ],
+    "val_correct": [
+      304,
+      322,
+      326,
+      329,
+      329,
+      329,
+      329,
+      329,
+      329
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

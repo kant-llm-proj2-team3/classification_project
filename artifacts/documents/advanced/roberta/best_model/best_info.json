@@ -6,32 +6,47 @@
   "best": {
     "model_key": "roberta",
     "model_id": "klue/roberta-base",
-    "run_name": "20261013_145333",
+    "run_name": "20261013_163144",
     "learning_rate": 3e-05,
-    "best_epoch": 2,
-    "validation_macro_f1": 0.881427515573857,
-    "validation_accuracy": 0.8833333333333333,
-    "validation_loss": 0.5845160186290741,
-    "train_seconds": 11.458961800002726,
-    "validation_inference_seconds": 0.886573199997656,
+    "best_epoch": 4,
+    "validation_macro_f1": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_loss": 0.01931962960710128,
+    "train_seconds": 47.2991905999952,
+    "validation_inference_seconds": 0.7751493999967352,
     "peak_gpu_memory_mb": 2175.94775390625,
     "train_rows": 180,
     "validation_rows": 60,
-    "epochs_run": 2,
-    "epochs_max": 2,
-    "stop_reason": "최대 에폭(2) 도달",
+    "epochs_run": 9,
+    "epochs_max": 20,
+    "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
     "num_parameters": 110620419,
     "model_size_mb": 422.0
   },
   "last_run": {
-    "run_name": "20261013_145333",
+    "run_name": "20261013_163144",
     "replaced_best": true,
-    "reason": "이 모델의 첫 결과라서 best_model 로 저장",
+    "reason": "validation Macro-F1 1.0000 > 이전 best 0.8814 (20261013_145333)",
+    "validation_macro_f1": 1.0,
+    "validation_loss": 0.01931962960710128
+  },
+  "previous_best": {
+    "run_name": "20261013_145333",
     "validation_macro_f1": 0.881427515573857,
     "validation_loss": 0.5845160186290741
   },
-  "previous_best": null,
   "runs": [
+    {
+      "run_name": "20261013_163144",
+      "learning_rate": 3e-05,
+      "best_epoch": 4,
+      "validation_macro_f1": 1.0,
+      "validation_accuracy": 1.0,
+      "validation_loss": 0.01931962960710128,
+      "train_seconds": 47.2991905999952,
+      "peak_gpu_memory_mb": 2175.94775390625,
+      "is_best": true
+    },
     {
       "run_name": "20261013_145333",
       "learning_rate": 3e-05,
@@ -41,8 +56,8 @@
       "validation_loss": 0.5845160186290741,
       "train_seconds": 11.458961800002726,
       "peak_gpu_memory_mb": 2175.94775390625,
-      "is_best": true
+      "is_best": false
     }
   ],
-  "updated_at": "2026-10-13 14:53:45"
+  "updated_at": "2026-10-13 16:32:32"
 }

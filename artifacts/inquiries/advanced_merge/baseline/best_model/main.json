@@ -116,7 +116,7 @@
   },
   "test_meta": {
     "official": false,
-    "evaluated_at": "2026-10-13 14:59:07"
+    "evaluated_at": "2026-10-13 16:59:34"
   },
   "cost": {
     "train_seconds": 0.6228182000049856,

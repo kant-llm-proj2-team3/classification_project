@@ -5,12 +5,12 @@
   "topic": "inquiries",
   "dataset": "advanced_merge",
   "dataset_id": "inquiries/advanced_merge",
-  "run_id": "20261013_144917",
+  "run_id": "20261013_161338",
   "train": {
     "learning_rate": 3e-05,
-    "epochs_max": 2,
-    "epochs_run": 2,
-    "best_epoch": 2,
+    "epochs_max": 20,
+    "epochs_run": 4,
+    "best_epoch": 4,
     "batch_size": 4,
     "accumulation_steps": 2,
     "effective_batch": 8
@@ -22,71 +22,25 @@
   },
   "validation": {
     "n": 111,
-    "correct": 98,
-    "accuracy": 0.8828828828828829,
-    "macro_f1": 0.8836856110880001,
-    "loss": 0.22140357249861095,
-    "per_label": {
-      "shipping": {
-        "correct": 34,
-        "n": 37,
-        "f1": 0.8607594936708861
-      },
-      "refund": {
-        "correct": 32,
-        "n": 37,
-        "f1": 0.8888888888888888
-      },
-      "account": {
-        "correct": 32,
-        "n": 37,
-        "f1": 0.9014084507042254
-      }
-    },
-    "labels": [
-      "shipping",
-      "refund",
-      "account"
-    ],
-    "confusion_matrix": [
-      [
-        34,
-        1,
-        2
-      ],
-      [
-        5,
-        32,
-        0
-      ],
-      [
-        3,
-        2,
-        32
-      ]
-    ]
-  },
-  "test": {
-    "n": 111,
-    "correct": 101,
-    "accuracy": 0.9099099099099099,
-    "macro_f1": 0.9095992127393093,
-    "loss": null,
+    "correct": 111,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "loss": 0.0010508680008225948,
     "per_label": {
       "shipping": {
         "correct": 37,
         "n": 37,
-        "f1": 0.9135802469135802
+        "f1": 1.0
       },
       "refund": {
-        "correct": 31,
+        "correct": 37,
         "n": 37,
-        "f1": 0.8985507246376812
+        "f1": 1.0
       },
       "account": {
-        "correct": 33,
+        "correct": 37,
         "n": 37,
-        "f1": 0.9166666666666666
+        "f1": 1.0
       }
     },
     "labels": [
@@ -101,25 +55,71 @@
         0
       ],
       [
-        4,
-        31,
+        0,
+        37,
+        0
+      ],
+      [
+        0,
+        0,
+        37
+      ]
+    ]
+  },
+  "test": {
+    "n": 111,
+    "correct": 108,
+    "accuracy": 0.972972972972973,
+    "macro_f1": 0.9729629629629629,
+    "loss": null,
+    "per_label": {
+      "shipping": {
+        "correct": 37,
+        "n": 37,
+        "f1": 0.9866666666666667
+      },
+      "refund": {
+        "correct": 35,
+        "n": 37,
+        "f1": 0.9722222222222222
+      },
+      "account": {
+        "correct": 36,
+        "n": 37,
+        "f1": 0.96
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        37,
+        0,
+        0
+      ],
+      [
+        0,
+        35,
         2
       ],
       [
-        3,
         1,
-        33
+        0,
+        36
       ]
     ]
   },
   "test_meta": {
-    "official": false,
-    "evaluated_at": "2026-10-13 14:59:07"
+    "official": true,
+    "evaluated_at": "2026-10-13 16:59:34"
   },
   "cost": {
-    "train_seconds": 18.344011599983787,
-    "validation_inference_seconds": 1.3743789999862202,
-    "test_inference_seconds": 1.218,
+    "train_seconds": 34.105713500001,
+    "validation_inference_seconds": 1.0420259999809787,
+    "test_inference_seconds": 1.065,
     "peak_gpu_mb": 2169.21142578125,
     "num_parameters": 110619651,
     "model_size_mb": 422.0
@@ -127,23 +127,33 @@
   "curve": {
     "epoch": [
       1,
-      2
+      2,
+      3,
+      4
     ],
     "train_loss": [
-      0.694013,
-      0.240053
+      1.061979,
+      0.389676,
+      0.076493,
+      0.012993
     ],
     "val_loss": [
-      0.315044,
-      0.221404
+      0.715254,
+      0.287799,
+      0.076669,
+      0.001051
     ],
     "val_macro_f1": [
-      0.856424,
-      0.883686
+      0.811841,
+      0.902017,
+      0.972928,
+      1.0
     ],
     "val_correct": [
-      95,
-      98
+      90,
+      100,
+      108,
+      111
     ]
   },
   "files": {

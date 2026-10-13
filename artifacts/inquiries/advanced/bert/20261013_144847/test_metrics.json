@@ -1,0 +1,139 @@
+{
+  "topic": "inquiries",
+  "dataset": "advanced",
+  "split": "test",
+  "selected_model": "bert",
+  "evaluated_model": "bert",
+  "official": true,
+  "selected_run": "20261013_144847",
+  "model_id": "klue/bert-base",
+  "classifier": {
+    "n": 60,
+    "accuracy": 0.95,
+    "macro_f1": 0.9489698757991439,
+    "per_class": {
+      "shipping": {
+        "precision": 0.9523809523809523,
+        "recall": 1.0,
+        "f1-score": 0.975609756097561,
+        "support": 20.0
+      },
+      "refund": {
+        "precision": 1.0,
+        "recall": 0.85,
+        "f1-score": 0.918918918918919,
+        "support": 20.0
+      },
+      "account": {
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1-score": 0.9523809523809523,
+        "support": 20.0
+      },
+      "accuracy": 0.95,
+      "macro avg": {
+        "precision": 0.9538239538239538,
+        "recall": 0.9500000000000001,
+        "f1-score": 0.9489698757991439,
+        "support": 60.0
+      },
+      "weighted avg": {
+        "precision": 0.9538239538239538,
+        "recall": 0.95,
+        "f1-score": 0.948969875799144,
+        "support": 60.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        1,
+        17,
+        2
+      ],
+      [
+        0,
+        0,
+        20
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "shipping",
+        "refund",
+        "account"
+      ]
+    }
+  },
+  "baseline": {
+    "n": 60,
+    "accuracy": 0.6666666666666666,
+    "macro_f1": 0.6590752242926156,
+    "per_class": {
+      "shipping": {
+        "precision": 0.6842105263157895,
+        "recall": 0.65,
+        "f1-score": 0.6666666666666666,
+        "support": 20.0
+      },
+      "refund": {
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1-score": 0.5714285714285714,
+        "support": 20.0
+      },
+      "account": {
+        "precision": 0.6538461538461539,
+        "recall": 0.85,
+        "f1-score": 0.7391304347826086,
+        "support": 20.0
+      },
+      "accuracy": 0.6666666666666666,
+      "macro avg": {
+        "precision": 0.6682411156095367,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.6590752242926156,
+        "support": 60.0
+      },
+      "weighted avg": {
+        "precision": 0.6682411156095367,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.6590752242926156,
+        "support": 60.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        13,
+        3,
+        4
+      ],
+      [
+        5,
+        10,
+        5
+      ],
+      [
+        1,
+        2,
+        17
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "shipping",
+        "refund",
+        "account"
+      ]
+    }
+  },
+  "baseline_run": "20261013_144846"
+}

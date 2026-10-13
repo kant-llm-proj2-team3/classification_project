@@ -1,7 +1,7 @@
 {
   "schema": "project2-result/v1",
-  "run_id": "20261013_145411",
-  "generated_at": "2026-10-13 14:54:30",
+  "run_id": "20261013_163332",
+  "generated_at": "2026-10-13 16:34:48",
   "hyperparameters": {
     "seed": 42,
     "max_length": 512,
@@ -11,10 +11,10 @@
     "warmup_ratio": 0.1,
     "gradient_checkpointing": true,
     "precision": "bfloat16",
-    "early_stopping_patience": 1,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
-    "stop_reason": "최대 에폭(2) 도달",
-    "optimizer_steps_at_checkpoint": 84,
+    "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
+    "optimizer_steps_at_checkpoint": 168,
     "selection_split": "validation"
   },
   "environment": {
@@ -46,34 +46,34 @@
   "validation_detail": {
     "per_class": {
       "announcement": {
-        "precision": 0.9714285714285714,
-        "recall": 0.918918918918919,
-        "f1-score": 0.9444444444444444,
+        "precision": 0.9736842105263158,
+        "recall": 1.0,
+        "f1-score": 0.9866666666666667,
         "support": 37.0
       },
       "manual": {
-        "precision": 0.9230769230769231,
+        "precision": 1.0,
         "recall": 0.972972972972973,
-        "f1-score": 0.9473684210526315,
+        "f1-score": 0.9863013698630136,
         "support": 37.0
       },
       "minutes": {
-        "precision": 0.9459459459459459,
-        "recall": 0.9459459459459459,
-        "f1-score": 0.9459459459459459,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 37.0
       },
-      "accuracy": 0.9459459459459459,
+      "accuracy": 0.990990990990991,
       "macro avg": {
-        "precision": 0.9468171468171468,
-        "recall": 0.945945945945946,
-        "f1-score": 0.9459196038143407,
+        "precision": 0.9912280701754387,
+        "recall": 0.990990990990991,
+        "f1-score": 0.9909893455098935,
         "support": 111.0
       },
       "weighted avg": {
-        "precision": 0.9468171468171468,
-        "recall": 0.9459459459459459,
-        "f1-score": 0.9459196038143407,
+        "precision": 0.9912280701754386,
+        "recall": 0.990990990990991,
+        "f1-score": 0.9909893455098935,
         "support": 111.0
       }
     }
@@ -81,40 +81,103 @@
   "epochs": [
     {
       "epoch": 1,
-      "train_loss": 0.9586943655303031,
-      "validation_loss": 0.4033896359237465,
-      "validation_accuracy": 0.9009009009009009,
-      "validation_macro_f1": 0.8985332529636327,
+      "train_loss": 1.0682291666666666,
+      "validation_loss": 0.7747388546531265,
+      "validation_accuracy": 0.8738738738738738,
+      "validation_macro_f1": 0.8725407462563085,
       "optimizer_steps": 42,
-      "elapsed_seconds": 9.07176929997513
+      "elapsed_seconds": 8.310217199992621
     },
     {
       "epoch": 2,
-      "train_loss": 0.3279097123579545,
-      "validation_loss": 0.20069366804248578,
-      "validation_accuracy": 0.9459459459459459,
-      "validation_macro_f1": 0.9459196038143407,
+      "train_loss": 0.49542310310132576,
+      "validation_loss": 0.3060913494376986,
+      "validation_accuracy": 0.918918918918919,
+      "validation_macro_f1": 0.919549391572347,
       "optimizer_steps": 84,
-      "elapsed_seconds": 18.538859099993715
+      "elapsed_seconds": 16.670823799999198
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.1655550870028409,
+      "validation_loss": 0.1994311972479294,
+      "validation_accuracy": 0.9369369369369369,
+      "validation_macro_f1": 0.937146780491033,
+      "optimizer_steps": 126,
+      "elapsed_seconds": 25.41277860000264
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.028962106415719696,
+      "validation_loss": 0.06520677066349366,
+      "validation_accuracy": 0.990990990990991,
+      "validation_macro_f1": 0.9909893455098935,
+      "optimizer_steps": 168,
+      "elapsed_seconds": 33.924935999995796
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.0029750014796401515,
+      "validation_loss": 0.06854290831603345,
+      "validation_accuracy": 0.990990990990991,
+      "validation_macro_f1": 0.9909893455098935,
+      "optimizer_steps": 210,
+      "elapsed_seconds": 42.378380599984666
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.0019140301328716856,
+      "validation_loss": 0.06876780948421272,
+      "validation_accuracy": 0.990990990990991,
+      "validation_macro_f1": 0.9909893455098935,
+      "optimizer_steps": 252,
+      "elapsed_seconds": 50.53530069999397
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.001531658750591856,
+      "validation_loss": 0.07046983190046556,
+      "validation_accuracy": 0.990990990990991,
+      "validation_macro_f1": 0.9909893455098935,
+      "optimizer_steps": 294,
+      "elapsed_seconds": 58.846914699999616
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.0012052709406072443,
+      "validation_loss": 0.07182088518003421,
+      "validation_accuracy": 0.990990990990991,
+      "validation_macro_f1": 0.9909893455098935,
+      "optimizer_steps": 336,
+      "elapsed_seconds": 67.39355129998876
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.0009982137969045928,
+      "validation_loss": 0.07281674619350868,
+      "validation_accuracy": 0.990990990990991,
+      "validation_macro_f1": 0.9909893455098935,
+      "optimizer_steps": 378,
+      "elapsed_seconds": 75.63570819998858
     }
   ],
   "training_summary": {
     "model_key": "roberta",
     "model_id": "klue/roberta-base",
-    "run_name": "20261013_145411",
+    "run_name": "20261013_163332",
     "learning_rate": 3e-05,
-    "best_epoch": 2,
-    "validation_macro_f1": 0.9459196038143407,
-    "validation_accuracy": 0.9459459459459459,
-    "validation_loss": 0.20069366804248578,
-    "train_seconds": 18.798991699994076,
-    "validation_inference_seconds": 1.2706851999973878,
-    "peak_gpu_memory_mb": 2173.44775390625,
+    "best_epoch": 4,
+    "validation_macro_f1": 0.9909893455098935,
+    "validation_accuracy": 0.990990990990991,
+    "validation_loss": 0.06520677066349366,
+    "train_seconds": 75.63614899999811,
+    "validation_inference_seconds": 1.035024800017709,
+    "peak_gpu_memory_mb": 2175.94775390625,
     "train_rows": 330,
     "validation_rows": 111,
-    "epochs_run": 2,
-    "epochs_max": 2,
-    "stop_reason": "최대 에폭(2) 도달",
+    "epochs_run": 9,
+    "epochs_max": 20,
+    "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
     "num_parameters": 110620419,
     "model_size_mb": 422.0
   },
@@ -123,10 +186,10 @@
     "dataset": "advanced_merge",
     "model_key": "roberta",
     "model_id": "klue/roberta-base",
-    "run_name": "20261013_145411",
+    "run_name": "20261013_163332",
     "learning_rate": 3e-05,
-    "epochs_max": 2,
-    "early_stopping_patience": 1,
+    "epochs_max": 20,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
     "score_stop": {
       "enabled": true,

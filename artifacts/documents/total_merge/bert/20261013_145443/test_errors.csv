@@ -1,0 +1,6 @@
+﻿id,text,actual,predicted,group_id
+c-01ed22f5cfe7,"도보 답사 참가 접수는 신청서에 이름과 연락 가능한 수단, 보행이 어려운 구간에 대한 참고 사항을 적는 방식으로 받는다. 접수 후 인원이 정원을 넘으면 신청 시각순으로 대기 명단을 만들고, 취소자가 생길 때 순서대로 안내한다.",manual,announcement,ctx-d-081
+documents-v2-announcement-test-014-v2,"- 대여 물품 목록에 실제 상태를 보여 주는 사진을 추가했다.
+- 사진은 촬영 당시의 상태이므로 현장 인수 때 한 번 더 확인한다.
+- 사진에 없는 부속품은 대여 포함 여부를 따로 문의한다.",announcement,manual,documents-v2-announcement-test-014
+documents-v2-announcement-test-006-v1,종이 기록물 보관 강좌의 첫 회차에서는 손상 사례를 관찰합니다. 개인 원본을 가져오지 말고 상태를 보여 주는 사진을 준비합니다. 현장에서 실제 복원 처치를 제공하지 않습니다.,announcement,manual,documents-v2-announcement-test-006

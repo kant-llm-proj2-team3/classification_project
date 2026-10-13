@@ -1,0 +1,36 @@
+{
+  "topic": "documents",
+  "dataset": "total_merge",
+  "model_key": "baseline",
+  "run_name": "20261013_163550",
+  "labels": [
+    "announcement",
+    "manual",
+    "minutes"
+  ],
+  "tfidf": {
+    "analyzer": "char",
+    "ngram_range": [
+      2,
+      5
+    ],
+    "min_df": 1,
+    "sublinear_tf": true,
+    "max_features": null
+  },
+  "logistic_regression": {
+    "max_iter": 1000,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "seed": 42,
+  "train_rows": 990,
+  "validation_rows": 331,
+  "train_csv": [
+    "dataset/documents/total_merge/train.csv"
+  ],
+  "validation_csv": [
+    "dataset/documents/total_merge/validation.csv"
+  ],
+  "sklearn": "1.9.1"
+}

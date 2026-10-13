@@ -5,12 +5,12 @@
   "topic": "documents",
   "dataset": "advanced_merge",
   "dataset_id": "documents/advanced_merge",
-  "run_id": "20261013_145411",
+  "run_id": "20261013_163332",
   "train": {
     "learning_rate": 3e-05,
-    "epochs_max": 2,
-    "epochs_run": 2,
-    "best_epoch": 2,
+    "epochs_max": 20,
+    "epochs_run": 9,
+    "best_epoch": 4,
     "batch_size": 4,
     "accumulation_steps": 2,
     "effective_batch": 8
@@ -22,25 +22,25 @@
   },
   "validation": {
     "n": 111,
-    "correct": 105,
-    "accuracy": 0.9459459459459459,
-    "macro_f1": 0.9459196038143407,
-    "loss": 0.20069366804248578,
+    "correct": 110,
+    "accuracy": 0.990990990990991,
+    "macro_f1": 0.9909893455098935,
+    "loss": 0.06520677066349366,
     "per_label": {
       "announcement": {
-        "correct": 34,
+        "correct": 37,
         "n": 37,
-        "f1": 0.9444444444444444
+        "f1": 0.9866666666666667
       },
       "manual": {
         "correct": 36,
         "n": 37,
-        "f1": 0.9473684210526315
+        "f1": 0.9863013698630136
       },
       "minutes": {
-        "correct": 35,
+        "correct": 37,
         "n": 37,
-        "f1": 0.9459459459459459
+        "f1": 1.0
       }
     },
     "labels": [
@@ -50,9 +50,9 @@
     ],
     "confusion_matrix": [
       [
-        34,
-        1,
-        2
+        37,
+        0,
+        0
       ],
       [
         1,
@@ -61,32 +61,32 @@
       ],
       [
         0,
-        2,
-        35
+        0,
+        37
       ]
     ]
   },
   "test": {
     "n": 111,
-    "correct": 106,
-    "accuracy": 0.954954954954955,
-    "macro_f1": 0.954849354849355,
+    "correct": 110,
+    "accuracy": 0.990990990990991,
+    "macro_f1": 0.9909893455098935,
     "loss": null,
     "per_label": {
       "announcement": {
-        "correct": 33,
-        "n": 37,
-        "f1": 0.9428571428571428
-      },
-      "manual": {
         "correct": 37,
         "n": 37,
-        "f1": 0.9487179487179487
+        "f1": 0.9866666666666667
       },
-      "minutes": {
+      "manual": {
         "correct": 36,
         "n": 37,
-        "f1": 0.972972972972973
+        "f1": 0.9863013698630136
+      },
+      "minutes": {
+        "correct": 37,
+        "n": 37,
+        "f1": 1.0
       }
     },
     "labels": [
@@ -96,54 +96,89 @@
     ],
     "confusion_matrix": [
       [
-        33,
-        3,
-        1
+        37,
+        0,
+        0
       ],
       [
-        0,
-        37,
+        1,
+        36,
         0
       ],
       [
         0,
-        1,
-        36
+        0,
+        37
       ]
     ]
   },
   "test_meta": {
     "official": false,
-    "evaluated_at": "2026-10-13 14:59:26"
+    "evaluated_at": "2026-10-13 16:59:48"
   },
   "cost": {
-    "train_seconds": 18.798991699994076,
-    "validation_inference_seconds": 1.2706851999973878,
-    "test_inference_seconds": 1.151,
-    "peak_gpu_mb": 2173.44775390625,
+    "train_seconds": 75.63614899999811,
+    "validation_inference_seconds": 1.035024800017709,
+    "test_inference_seconds": 1.044,
+    "peak_gpu_mb": 2175.94775390625,
     "num_parameters": 110620419,
     "model_size_mb": 422.0
   },
   "curve": {
     "epoch": [
       1,
-      2
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
     ],
     "train_loss": [
-      0.958694,
-      0.32791
+      1.068229,
+      0.495423,
+      0.165555,
+      0.028962,
+      0.002975,
+      0.001914,
+      0.001532,
+      0.001205,
+      0.000998
     ],
     "val_loss": [
-      0.40339,
-      0.200694
+      0.774739,
+      0.306091,
+      0.199431,
+      0.065207,
+      0.068543,
+      0.068768,
+      0.07047,
+      0.071821,
+      0.072817
     ],
     "val_macro_f1": [
-      0.898533,
-      0.94592
+      0.872541,
+      0.919549,
+      0.937147,
+      0.990989,
+      0.990989,
+      0.990989,
+      0.990989,
+      0.990989,
+      0.990989
     ],
     "val_correct": [
-      100,
-      105
+      97,
+      102,
+      104,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
     ]
   },
   "files": {

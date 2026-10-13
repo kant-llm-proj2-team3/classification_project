@@ -1,0 +1,10 @@
+﻿id,text,actual,predicted,group_id
+documents-v2-announcement-validation-011-v1,"복제 자료 구분
+- 전시 자료 중 복제본에는 다음 주부터 회색 표식을 붙인다.
+- 원본의 표기 방식은 그대로 유지한다.
+- 이전에 배부한 안내 카드도 표식 설명에 맞춰 고친다.",announcement,manual,documents-v2-announcement-validation-011
+documents-v2-manual-validation-012-v1,"- 체험 신청의 동반인 수를 고치려면 접수 번호로 원래 신청을 찾습니다.
+- 바꿀 인원과 함께 필요한 준비물 수량도 확인합니다.
+- 수정 결과를 확인한 뒤 같은 사람의 새 신청을 중복으로 만들지 않습니다.",manual,announcement,documents-v2-manual-validation-012
+documents-v2-manual-validation-002-v1,건조가 필요한 작업물은 재료와 예상 건조 시간을 적어 선반을 예약합니다. 다른 작업물에 닿지 않을 간격을 확인합니다. 시간이 더 필요하면 만료 전에 다음 예약과 겹치는지 담당자에게 문의합니다.,manual,announcement,documents-v2-manual-validation-002
+documents-v2-manual-validation-028-v2,녹음을 공개하기 전 개인 대화가 들리는 구간을 따로 들어 보세요. 허락 범위를 확인할 수 없으면 그 구간을 공개 목록에서 뺍니다.,manual,announcement,documents-v2-manual-validation-028

@@ -1,0 +1,131 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261013_162652",
+  "generated_at": "2026-10-13 16:26:53",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": null,
+    "truncation": null,
+    "head_tokens": null,
+    "weight_decay": null,
+    "warmup_ratio": null,
+    "gradient_checkpointing": null,
+    "precision": null,
+    "early_stopping_patience": null,
+    "target_macro_f1": null,
+    "stop_reason": null,
+    "optimizer_steps_at_checkpoint": null,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": null,
+    "gpu": null,
+    "python": null,
+    "torch": null,
+    "transformers": null,
+    "sklearn": "1.9.1"
+  },
+  "data": {
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "train_csv": [
+      "dataset/documents/basic_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/documents/basic_merge/validation.csv"
+    ],
+    "truncated_rows": null
+  },
+  "validation_detail": {
+    "per_class": {
+      "announcement": {
+        "precision": 0.9861111111111112,
+        "recall": 0.9594594594594594,
+        "f1-score": 0.9726027397260274,
+        "support": 74.0
+      },
+      "manual": {
+        "precision": 0.9605263157894737,
+        "recall": 0.9864864864864865,
+        "f1-score": 0.9733333333333334,
+        "support": 74.0
+      },
+      "minutes": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "accuracy": 0.9818181818181818,
+      "macro avg": {
+        "precision": 0.9822124756335283,
+        "recall": 0.981981981981982,
+        "f1-score": 0.981978691019787,
+        "support": 220.0
+      },
+      "weighted avg": {
+        "precision": 0.9820507708665603,
+        "recall": 0.9818181818181818,
+        "f1-score": 0.9818148609381486,
+        "support": 220.0
+      }
+    }
+  },
+  "epochs": [],
+  "training_summary": {
+    "model_key": "baseline",
+    "model_id": "TF-IDF(char n-gram) + LogisticRegression",
+    "run_name": "20261013_162652",
+    "learning_rate": null,
+    "best_epoch": null,
+    "validation_macro_f1": 0.981978691019787,
+    "validation_accuracy": 0.9818181818181818,
+    "validation_loss": null,
+    "train_seconds": 0.39778699999442324,
+    "validation_inference_seconds": 0.02307159997872077,
+    "peak_gpu_memory_mb": null,
+    "train_rows": 660,
+    "validation_rows": 220,
+    "num_parameters": 182055,
+    "model_size_mb": 2.79
+  },
+  "run_config": {
+    "topic": "documents",
+    "dataset": "basic_merge",
+    "model_key": "baseline",
+    "run_name": "20261013_162652",
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "tfidf": {
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 1,
+      "sublinear_tf": true,
+      "max_features": null
+    },
+    "logistic_regression": {
+      "max_iter": 1000,
+      "class_weight": "balanced",
+      "random_state": 42
+    },
+    "seed": 42,
+    "train_rows": 660,
+    "validation_rows": 220,
+    "train_csv": [
+      "dataset/documents/basic_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/documents/basic_merge/validation.csv"
+    ],
+    "sklearn": "1.9.1"
+  }
+}

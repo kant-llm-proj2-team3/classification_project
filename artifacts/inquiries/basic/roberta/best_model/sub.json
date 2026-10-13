@@ -1,7 +1,7 @@
 {
   "schema": "project2-result/v1",
-  "run_id": "20261013_144728",
-  "generated_at": "2026-10-13 14:47:39",
+  "run_id": "20261013_160634",
+  "generated_at": "2026-10-13 16:07:10",
   "hyperparameters": {
     "seed": 42,
     "max_length": 512,
@@ -11,10 +11,10 @@
     "warmup_ratio": 0.1,
     "gradient_checkpointing": true,
     "precision": "bfloat16",
-    "early_stopping_patience": 1,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
-    "stop_reason": "validation Macro-F1 이 1에폭 연속 개선되지 않음",
-    "optimizer_steps_at_checkpoint": 45,
+    "stop_reason": "점수 기준 도달: 정답 120/120(만점), Macro-F1 1.0000, val_loss 0.0008 <= 0.01",
+    "optimizer_steps_at_checkpoint": 270,
     "selection_split": "validation"
   },
   "environment": {
@@ -47,14 +47,14 @@
     "per_class": {
       "shipping": {
         "precision": 1.0,
-        "recall": 0.975,
-        "f1-score": 0.9873417721518988,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 40.0
       },
       "refund": {
-        "precision": 0.975609756097561,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1-score": 0.9876543209876543,
+        "f1-score": 1.0,
         "support": 40.0
       },
       "account": {
@@ -63,17 +63,17 @@
         "f1-score": 1.0,
         "support": 40.0
       },
-      "accuracy": 0.9916666666666667,
+      "accuracy": 1.0,
       "macro avg": {
-        "precision": 0.991869918699187,
-        "recall": 0.9916666666666667,
-        "f1-score": 0.991665364379851,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 120.0
       },
       "weighted avg": {
-        "precision": 0.9918699186991871,
-        "recall": 0.9916666666666667,
-        "f1-score": 0.9916653643798511,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
         "support": 120.0
       }
     }
@@ -81,40 +81,76 @@
   "epochs": [
     {
       "epoch": 1,
-      "train_loss": 0.5454681396484375,
-      "validation_loss": 0.025337477152546247,
-      "validation_accuracy": 0.9916666666666667,
-      "validation_macro_f1": 0.991665364379851,
+      "train_loss": 0.9980604383680556,
+      "validation_loss": 0.442488161722819,
+      "validation_accuracy": 0.9833333333333333,
+      "validation_macro_f1": 0.9833229101521784,
       "optimizer_steps": 45,
-      "elapsed_seconds": 5.280281599989394
+      "elapsed_seconds": 5.323189200018533
     },
     {
       "epoch": 2,
-      "train_loss": 0.013913218180338542,
-      "validation_loss": 0.026366669808824857,
+      "train_loss": 0.11109246148003472,
+      "validation_loss": 0.03622854449786246,
       "validation_accuracy": 0.9916666666666667,
       "validation_macro_f1": 0.991665364379851,
       "optimizer_steps": 90,
-      "elapsed_seconds": 10.622009399987292
+      "elapsed_seconds": 11.551991800020915
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.004089461432562934,
+      "validation_loss": 0.052514342280725636,
+      "validation_accuracy": 0.9916666666666667,
+      "validation_macro_f1": 0.991665364379851,
+      "optimizer_steps": 135,
+      "elapsed_seconds": 17.85696270002518
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.003217845492892795,
+      "validation_loss": 0.0520460677643617,
+      "validation_accuracy": 0.9916666666666667,
+      "validation_macro_f1": 0.991665364379851,
+      "optimizer_steps": 180,
+      "elapsed_seconds": 23.85897780000232
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.0016256756252712673,
+      "validation_loss": 0.05889784899579051,
+      "validation_accuracy": 0.9916666666666667,
+      "validation_macro_f1": 0.991665364379851,
+      "optimizer_steps": 225,
+      "elapsed_seconds": 29.746151800005464
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.0012866655985514324,
+      "validation_loss": 0.0007632349870012452,
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "optimizer_steps": 270,
+      "elapsed_seconds": 35.78010160001577
     }
   ],
   "training_summary": {
     "model_key": "roberta",
     "model_id": "klue/roberta-base",
-    "run_name": "20261013_144728",
+    "run_name": "20261013_160634",
     "learning_rate": 3e-05,
-    "best_epoch": 1,
-    "validation_macro_f1": 0.991665364379851,
-    "validation_accuracy": 0.9916666666666667,
-    "validation_loss": 0.025337477152546247,
-    "train_seconds": 10.622452899988275,
-    "validation_inference_seconds": 0.31035859999246895,
-    "peak_gpu_memory_mb": 2132.15673828125,
+    "best_epoch": 6,
+    "validation_macro_f1": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_loss": 0.0007632349870012452,
+    "train_seconds": 36.05456650000997,
+    "validation_inference_seconds": 0.32107090001227334,
+    "peak_gpu_memory_mb": 2132.158203125,
     "train_rows": 360,
     "validation_rows": 120,
-    "epochs_run": 2,
-    "epochs_max": 2,
-    "stop_reason": "validation Macro-F1 이 1에폭 연속 개선되지 않음",
+    "epochs_run": 6,
+    "epochs_max": 20,
+    "stop_reason": "점수 기준 도달: 정답 120/120(만점), Macro-F1 1.0000, val_loss 0.0008 <= 0.01",
     "num_parameters": 110620419,
     "model_size_mb": 422.0
   },
@@ -123,10 +159,10 @@
     "dataset": "basic",
     "model_key": "roberta",
     "model_id": "klue/roberta-base",
-    "run_name": "20261013_144728",
+    "run_name": "20261013_160634",
     "learning_rate": 3e-05,
-    "epochs_max": 2,
-    "early_stopping_patience": 1,
+    "epochs_max": 20,
+    "early_stopping_patience": 5,
     "target_macro_f1": null,
     "score_stop": {
       "enabled": true,

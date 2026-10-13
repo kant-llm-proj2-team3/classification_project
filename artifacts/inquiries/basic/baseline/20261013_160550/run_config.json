@@ -1,0 +1,36 @@
+{
+  "topic": "inquiries",
+  "dataset": "basic",
+  "model_key": "baseline",
+  "run_name": "20261013_160550",
+  "labels": [
+    "shipping",
+    "refund",
+    "account"
+  ],
+  "tfidf": {
+    "analyzer": "char",
+    "ngram_range": [
+      2,
+      5
+    ],
+    "min_df": 1,
+    "sublinear_tf": true,
+    "max_features": null
+  },
+  "logistic_regression": {
+    "max_iter": 1000,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "seed": 42,
+  "train_rows": 360,
+  "validation_rows": 120,
+  "train_csv": [
+    "dataset/inquiries/basic/train.csv"
+  ],
+  "validation_csv": [
+    "dataset/inquiries/basic/validation.csv"
+  ],
+  "sklearn": "1.9.1"
+}

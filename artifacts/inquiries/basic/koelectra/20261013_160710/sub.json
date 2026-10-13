@@ -1,0 +1,206 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261013_160710",
+  "generated_at": "2026-10-13 16:07:44",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_checkpointing": true,
+    "precision": "bfloat16",
+    "early_stopping_patience": 5,
+    "target_macro_f1": null,
+    "stop_reason": "점수 기준 도달: 정답 120/120(만점), Macro-F1 1.0000, val_loss 0.0063 <= 0.01",
+    "optimizer_steps_at_checkpoint": 270,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "sklearn": null
+  },
+  "data": {
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_csv": [
+      "dataset/inquiries/basic/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/inquiries/basic/validation.csv"
+    ],
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0
+    }
+  },
+  "validation_detail": {
+    "per_class": {
+      "shipping": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "refund": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "account": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      }
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.0971137152777777,
+      "validation_loss": 1.094736909866333,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.16666666666666666,
+      "optimizer_steps": 45,
+      "elapsed_seconds": 5.470553999999538
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.9615559895833333,
+      "validation_loss": 0.6385750969250997,
+      "validation_accuracy": 0.9916666666666667,
+      "validation_macro_f1": 0.991665364379851,
+      "optimizer_steps": 90,
+      "elapsed_seconds": 11.04298940001172
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.35751274956597223,
+      "validation_loss": 0.10334528560439746,
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "optimizer_steps": 135,
+      "elapsed_seconds": 16.69252559999586
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.05895250108506944,
+      "validation_loss": 0.021404020426174005,
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "optimizer_steps": 180,
+      "elapsed_seconds": 22.217839100019773
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.019139862060546874,
+      "validation_loss": 0.010163821217914423,
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "optimizer_steps": 225,
+      "elapsed_seconds": 27.688501700002234
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.010923173692491319,
+      "validation_loss": 0.006275365455076098,
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "optimizer_steps": 270,
+      "elapsed_seconds": 33.04496680002194
+    }
+  ],
+  "training_summary": {
+    "model_key": "koelectra",
+    "model_id": "monologg/koelectra-small-v3-discriminator",
+    "run_name": "20261013_160710",
+    "learning_rate": 0.0001,
+    "best_epoch": 6,
+    "validation_macro_f1": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_loss": 0.006275365455076098,
+    "train_seconds": 33.10964070001501,
+    "validation_inference_seconds": 0.21746230000280775,
+    "peak_gpu_memory_mb": 292.1904296875,
+    "train_rows": 360,
+    "validation_rows": 120,
+    "epochs_run": 6,
+    "epochs_max": 20,
+    "stop_reason": "점수 기준 도달: 정답 120/120(만점), Macro-F1 1.0000, val_loss 0.0063 <= 0.01",
+    "num_parameters": 14122755,
+    "model_size_mb": 53.9
+  },
+  "run_config": {
+    "topic": "inquiries",
+    "dataset": "basic",
+    "model_key": "koelectra",
+    "model_id": "monologg/koelectra-small-v3-discriminator",
+    "run_name": "20261013_160710",
+    "learning_rate": 0.0001,
+    "epochs_max": 20,
+    "early_stopping_patience": 5,
+    "target_macro_f1": null,
+    "score_stop": {
+      "enabled": true,
+      "min_accuracy": 1.0,
+      "min_macro_f1": 1.0,
+      "max_val_loss": 0.01,
+      "min_epochs": 3
+    },
+    "batch_size": 4,
+    "gradient_accumulation_steps": 2,
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0
+    },
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "seed": 42,
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_rows": 360,
+    "validation_rows": 120,
+    "train_csv": [
+      "dataset/inquiries/basic/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/inquiries/basic/validation.csv"
+    ],
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "precision": "bfloat16",
+    "gradient_checkpointing": true,
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6"
+  }
+}

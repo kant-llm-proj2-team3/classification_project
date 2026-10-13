@@ -1,0 +1,2 @@
+﻿id,text,actual,predicted,group_id
+inquiries-v2-account-validation-013-v2,계정의 상담 내역을 보다가 불필요한 파일까지 올린 것을 발견했습니다. 문의 전체를 취소하려는 것은 아닙니다. 본문과 답변을 유지하면서 제가 올린 첨부 자료만 제거할 수 있을까요?,account,refund,inquiries-v2-account-validation-013

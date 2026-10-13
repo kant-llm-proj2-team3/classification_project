@@ -5,12 +5,12 @@
   "topic": "inquiries",
   "dataset": "advanced",
   "dataset_id": "inquiries/advanced",
-  "run_id": "20261013_144847",
+  "run_id": "20261013_161215",
   "train": {
     "learning_rate": 3e-05,
-    "epochs_max": 2,
-    "epochs_run": 2,
-    "best_epoch": 2,
+    "epochs_max": 20,
+    "epochs_run": 4,
+    "best_epoch": 4,
     "batch_size": 4,
     "accumulation_steps": 2,
     "effective_batch": 8
@@ -22,71 +22,25 @@
   },
   "validation": {
     "n": 60,
-    "correct": 57,
-    "accuracy": 0.95,
-    "macro_f1": 0.9499164578111946,
-    "loss": 0.30483084470033645,
-    "per_label": {
-      "shipping": {
-        "correct": 19,
-        "n": 20,
-        "f1": 0.95
-      },
-      "refund": {
-        "correct": 18,
-        "n": 20,
-        "f1": 0.9473684210526315
-      },
-      "account": {
-        "correct": 20,
-        "n": 20,
-        "f1": 0.9523809523809523
-      }
-    },
-    "labels": [
-      "shipping",
-      "refund",
-      "account"
-    ],
-    "confusion_matrix": [
-      [
-        19,
-        0,
-        1
-      ],
-      [
-        1,
-        18,
-        1
-      ],
-      [
-        0,
-        0,
-        20
-      ]
-    ]
-  },
-  "test": {
-    "n": 60,
-    "correct": 57,
-    "accuracy": 0.95,
-    "macro_f1": 0.9489698757991439,
-    "loss": null,
+    "correct": 60,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "loss": 0.0028227150595436495,
     "per_label": {
       "shipping": {
         "correct": 20,
         "n": 20,
-        "f1": 0.975609756097561
+        "f1": 1.0
       },
       "refund": {
-        "correct": 17,
+        "correct": 20,
         "n": 20,
-        "f1": 0.918918918918919
+        "f1": 1.0
       },
       "account": {
         "correct": 20,
         "n": 20,
-        "f1": 0.9523809523809523
+        "f1": 1.0
       }
     },
     "labels": [
@@ -101,9 +55,55 @@
         0
       ],
       [
-        1,
-        17,
-        2
+        0,
+        20,
+        0
+      ],
+      [
+        0,
+        0,
+        20
+      ]
+    ]
+  },
+  "test": {
+    "n": 60,
+    "correct": 59,
+    "accuracy": 0.9833333333333333,
+    "macro_f1": 0.9833229101521784,
+    "loss": null,
+    "per_label": {
+      "shipping": {
+        "correct": 20,
+        "n": 20,
+        "f1": 1.0
+      },
+      "refund": {
+        "correct": 19,
+        "n": 20,
+        "f1": 0.9743589743589743
+      },
+      "account": {
+        "correct": 20,
+        "n": 20,
+        "f1": 0.975609756097561
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        19,
+        1
       ],
       [
         0,
@@ -114,12 +114,12 @@
   },
   "test_meta": {
     "official": true,
-    "evaluated_at": "2026-10-13 14:59:02"
+    "evaluated_at": "2026-10-13 16:59:30"
   },
   "cost": {
-    "train_seconds": 11.822156700014602,
-    "validation_inference_seconds": 0.8748563000117429,
-    "test_inference_seconds": 0.855,
+    "train_seconds": 21.476500599994324,
+    "validation_inference_seconds": 0.7758349000068847,
+    "test_inference_seconds": 0.788,
     "peak_gpu_mb": 2169.21142578125,
     "num_parameters": 110619651,
     "model_size_mb": 422.0
@@ -127,23 +127,33 @@
   "curve": {
     "epoch": [
       1,
-      2
+      2,
+      3,
+      4
     ],
     "train_loss": [
-      0.942144,
-      0.410552
+      1.116385,
+      0.673052,
+      0.159202,
+      0.018399
     ],
     "val_loss": [
-      0.620185,
-      0.304831
+      0.913114,
+      0.308347,
+      0.014425,
+      0.002823
     ],
     "val_macro_f1": [
-      0.781015,
-      0.949916
+      0.711671,
+      0.897698,
+      1.0,
+      1.0
     ],
     "val_correct": [
-      47,
-      57
+      43,
+      54,
+      60,
+      60
     ]
   },
   "files": {
