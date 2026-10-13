@@ -16,3 +16,4 @@ artifacts/
 *.log
 dist/
 *.egg-info/
+.idea/
