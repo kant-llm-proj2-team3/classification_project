@@ -1,0 +1,82 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "laya_zeroshot",
+  "model_id": "convaiinnovations/laya (multilingual)",
+  "topic": "documents",
+  "dataset": "basic",
+  "dataset_id": "documents/basic",
+  "run_id": "20261013_173214",
+  "train": {
+    "fine_tuned": false,
+    "max_len": 1536
+  },
+  "input": {
+    "train_rows": 0,
+    "validation_rows": 120,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 120,
+    "correct": 63,
+    "accuracy": 0.525,
+    "macro_f1": 0.4649487198635849,
+    "loss": 0.9853070378303528,
+    "per_label": {
+      "announcement": {
+        "correct": 5,
+        "n": 40,
+        "f1": 0.20833333333333334
+      },
+      "manual": {
+        "correct": 21,
+        "n": 40,
+        "f1": 0.5316455696202531
+      },
+      "minutes": {
+        "correct": 37,
+        "n": 40,
+        "f1": 0.6548672566371682
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        5,
+        17,
+        18
+      ],
+      [
+        1,
+        21,
+        18
+      ],
+      [
+        2,
+        1,
+        37
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 1.3193293999999867,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 1303.55029296875,
+    "num_parameters": 321908998,
+    "model_size_mb": 614.0
+  },
+  "curve": null,
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

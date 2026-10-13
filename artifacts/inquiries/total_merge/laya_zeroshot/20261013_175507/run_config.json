@@ -1,0 +1,30 @@
+{
+  "topic": "inquiries",
+  "dataset": "total_merge",
+  "model_key": "laya_zeroshot",
+  "model_id": "convaiinnovations/laya (multilingual)",
+  "run_name": "20261013_175507",
+  "learning_rate": null,
+  "epochs_max": 0,
+  "batch_size": 2,
+  "gradient_accumulation_steps": 1,
+  "max_length": 1536,
+  "head_max_len": 256,
+  "truncation": "right",
+  "truncated_rows": {
+    "validation": 0
+  },
+  "seed": 42,
+  "labels": [
+    "shipping",
+    "refund",
+    "account"
+  ],
+  "validation_rows": 331,
+  "weights": "C:\\Users\\scy04\\.cache\\huggingface\\hub\\models--convaiinnovations--laya\\snapshots\\7b928d828b7b0e022f929d9bd2e44165aa270148\\multilingual",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "python": "3.12.10",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6"
+}

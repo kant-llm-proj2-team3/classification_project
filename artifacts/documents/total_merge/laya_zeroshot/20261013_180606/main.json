@@ -1,0 +1,82 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "laya_zeroshot",
+  "model_id": "convaiinnovations/laya (multilingual)",
+  "topic": "documents",
+  "dataset": "total_merge",
+  "dataset_id": "documents/total_merge",
+  "run_id": "20261013_180606",
+  "train": {
+    "fine_tuned": false,
+    "max_len": 1536
+  },
+  "input": {
+    "train_rows": 0,
+    "validation_rows": 331,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 331,
+    "correct": 164,
+    "accuracy": 0.4954682779456193,
+    "macro_f1": 0.45687286294641893,
+    "loss": 0.989765465259552,
+    "per_label": {
+      "announcement": {
+        "correct": 20,
+        "n": 111,
+        "f1": 0.27586206896551724
+      },
+      "manual": {
+        "correct": 53,
+        "n": 111,
+        "f1": 0.4840182648401826
+      },
+      "minutes": {
+        "correct": 91,
+        "n": 109,
+        "f1": 0.610738255033557
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        20,
+        39,
+        52
+      ],
+      [
+        12,
+        53,
+        46
+      ],
+      [
+        2,
+        16,
+        91
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 7.39586989999998,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 1729.265625,
+    "num_parameters": 321908998,
+    "model_size_mb": 614.0
+  },
+  "curve": null,
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

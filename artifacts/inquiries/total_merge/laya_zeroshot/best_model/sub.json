@@ -1,0 +1,126 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261013_175507",
+  "generated_at": "2026-10-13 17:55:22",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": 1536,
+    "truncation": "right",
+    "head_tokens": null,
+    "weight_decay": null,
+    "warmup_ratio": null,
+    "gradient_checkpointing": null,
+    "precision": null,
+    "early_stopping_patience": null,
+    "target_macro_f1": null,
+    "stop_reason": "zero-shot (학습 없음)",
+    "optimizer_steps_at_checkpoint": null,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.10",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "sklearn": null
+  },
+  "data": {
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_csv": null,
+    "validation_csv": null,
+    "truncated_rows": {
+      "validation": 0
+    }
+  },
+  "validation_detail": {
+    "per_class": {
+      "shipping": {
+        "precision": 0.7685185185185185,
+        "recall": 0.7477477477477478,
+        "f1-score": 0.7579908675799086,
+        "support": 111.0
+      },
+      "refund": {
+        "precision": 0.7045454545454546,
+        "recall": 0.8378378378378378,
+        "f1-score": 0.7654320987654321,
+        "support": 111.0
+      },
+      "account": {
+        "precision": 0.9230769230769231,
+        "recall": 0.7706422018348624,
+        "f1-score": 0.84,
+        "support": 109.0
+      },
+      "accuracy": 0.7854984894259819,
+      "macro avg": {
+        "precision": 0.7987136320469655,
+        "recall": 0.7854092624734826,
+        "f1-score": 0.7878076554484469,
+        "support": 331.0
+      },
+      "weighted avg": {
+        "precision": 0.7979621922220109,
+        "recall": 0.7854984894259819,
+        "f1-score": 0.787492293849948,
+        "support": 331.0
+      }
+    }
+  },
+  "epochs": [],
+  "training_summary": {
+    "model_key": "laya_zeroshot",
+    "model_id": "convaiinnovations/laya (multilingual)",
+    "run_name": "20261013_175507",
+    "learning_rate": null,
+    "best_epoch": 0,
+    "validation_macro_f1": 0.7878076554484469,
+    "validation_accuracy": 0.7854984894259819,
+    "validation_loss": 1.0475918054580688,
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 8.767392599999994,
+    "peak_gpu_memory_mb": 1737.359375,
+    "train_rows": 0,
+    "validation_rows": 331,
+    "epochs_run": 0,
+    "epochs_max": 0,
+    "stop_reason": "zero-shot (학습 없음)",
+    "num_parameters": 321908998,
+    "model_size_mb": 614.0
+  },
+  "run_config": {
+    "topic": "inquiries",
+    "dataset": "total_merge",
+    "model_key": "laya_zeroshot",
+    "model_id": "convaiinnovations/laya (multilingual)",
+    "run_name": "20261013_175507",
+    "learning_rate": null,
+    "epochs_max": 0,
+    "batch_size": 2,
+    "gradient_accumulation_steps": 1,
+    "max_length": 1536,
+    "head_max_len": 256,
+    "truncation": "right",
+    "truncated_rows": {
+      "validation": 0
+    },
+    "seed": 42,
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "validation_rows": 331,
+    "weights": "C:\\Users\\scy04\\.cache\\huggingface\\hub\\models--convaiinnovations--laya\\snapshots\\7b928d828b7b0e022f929d9bd2e44165aa270148\\multilingual",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.10",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6"
+  }
+}

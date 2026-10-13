@@ -1,0 +1,147 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "laya",
+  "model_id": "convaiinnovations/laya (multilingual)",
+  "topic": "inquiries",
+  "dataset": "total_merge",
+  "dataset_id": "inquiries/total_merge",
+  "run_id": "20261013_175522",
+  "train": {
+    "learning_rate": 2.5e-05,
+    "epochs_max": 20,
+    "epochs_run": 9,
+    "best_epoch": 9,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8,
+    "head_learning_rate": 0.0001,
+    "loss": "rlcd",
+    "max_len": 1536,
+    "fine_tuned": true
+  },
+  "input": {
+    "train_rows": 990,
+    "validation_rows": 331,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 331,
+    "correct": 327,
+    "accuracy": 0.9879154078549849,
+    "macro_f1": 0.9879870129870131,
+    "loss": 0.2325977385044098,
+    "per_label": {
+      "shipping": {
+        "correct": 108,
+        "n": 111,
+        "f1": 0.9818181818181818
+      },
+      "refund": {
+        "correct": 110,
+        "n": 111,
+        "f1": 0.9821428571428571
+      },
+      "account": {
+        "correct": 109,
+        "n": 109,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        108,
+        3,
+        0
+      ],
+      [
+        1,
+        110,
+        0
+      ],
+      [
+        0,
+        0,
+        109
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 612.2970466,
+    "validation_inference_seconds": 7.1713488999998845,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 6199.525390625,
+    "num_parameters": 321908998,
+    "model_size_mb": 614.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "train_loss": [
+      0.836511,
+      0.342543,
+      0.205069,
+      0.102333,
+      0.023574,
+      0.009822,
+      0.00046,
+      0.0,
+      0.0
+    ],
+    "val_loss": [
+      0.988765,
+      0.490271,
+      0.515184,
+      0.253508,
+      0.449581,
+      0.431687,
+      0.232839,
+      0.232716,
+      0.232598
+    ],
+    "val_macro_f1": [
+      0.930365,
+      0.963744,
+      0.957503,
+      0.987987,
+      0.975809,
+      0.981976,
+      0.987987,
+      0.987987,
+      0.987987
+    ],
+    "val_correct": [
+      308,
+      319,
+      317,
+      327,
+      323,
+      325,
+      327,
+      327,
+      327
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

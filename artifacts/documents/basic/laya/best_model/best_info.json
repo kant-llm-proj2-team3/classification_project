@@ -1,0 +1,48 @@
+{
+  "topic": "documents",
+  "dataset": "basic",
+  "model_key": "laya",
+  "selection_rule": "validation Macro-F1 이 높은 쪽, 동점이면 validation loss 가 낮은 쪽. 더 좋아졌을 때만 best_model 을 교체한다. (test 점수는 사용하지 않음)",
+  "best": {
+    "model_key": "laya",
+    "model_id": "convaiinnovations/laya (multilingual)",
+    "run_name": "20261013_173219",
+    "learning_rate": 2.5e-05,
+    "best_epoch": 4,
+    "validation_macro_f1": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_loss": 0.0,
+    "train_seconds": 60.072283699999986,
+    "validation_inference_seconds": 0.9539646999999718,
+    "peak_gpu_memory_mb": 6197.5,
+    "train_rows": 360,
+    "validation_rows": 120,
+    "epochs_run": 4,
+    "epochs_max": 20,
+    "stop_reason": "점수 기준 도달: 정답 120/120(만점), Macro-F1 1.0000, val_loss 0.0000 <= 0.01",
+    "num_parameters": 321908998,
+    "model_size_mb": 614.0
+  },
+  "last_run": {
+    "run_name": "20261013_173219",
+    "replaced_best": true,
+    "reason": "이 모델의 첫 결과라서 best_model 로 저장",
+    "validation_macro_f1": 1.0,
+    "validation_loss": 0.0
+  },
+  "previous_best": null,
+  "runs": [
+    {
+      "run_name": "20261013_173219",
+      "learning_rate": 2.5e-05,
+      "best_epoch": 4,
+      "validation_macro_f1": 1.0,
+      "validation_accuracy": 1.0,
+      "validation_loss": 0.0,
+      "train_seconds": 60.072283699999986,
+      "peak_gpu_memory_mb": 6197.5,
+      "is_best": true
+    }
+  ],
+  "updated_at": "2026-10-13 17:33:21"
+}

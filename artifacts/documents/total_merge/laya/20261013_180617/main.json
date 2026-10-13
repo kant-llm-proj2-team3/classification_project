@@ -1,0 +1,147 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "laya",
+  "model_id": "convaiinnovations/laya (multilingual)",
+  "topic": "documents",
+  "dataset": "total_merge",
+  "dataset_id": "documents/total_merge",
+  "run_id": "20261013_180617",
+  "train": {
+    "learning_rate": 2.5e-05,
+    "epochs_max": 20,
+    "epochs_run": 9,
+    "best_epoch": 4,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8,
+    "head_learning_rate": 0.0001,
+    "loss": "rlcd",
+    "max_len": 1536,
+    "fine_tuned": true
+  },
+  "input": {
+    "train_rows": 990,
+    "validation_rows": 331,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 331,
+    "correct": 329,
+    "accuracy": 0.9939577039274925,
+    "macro_f1": 0.9939528586435644,
+    "loss": 0.12503288686275482,
+    "per_label": {
+      "announcement": {
+        "correct": 111,
+        "n": 111,
+        "f1": 0.9955156950672646
+      },
+      "manual": {
+        "correct": 109,
+        "n": 111,
+        "f1": 0.990909090909091
+      },
+      "minutes": {
+        "correct": 109,
+        "n": 109,
+        "f1": 0.9954337899543378
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        111,
+        0,
+        0
+      ],
+      [
+        1,
+        109,
+        1
+      ],
+      [
+        0,
+        0,
+        109
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 661.3796229000002,
+    "validation_inference_seconds": 7.179976399999987,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 6204.822265625,
+    "num_parameters": 321908998,
+    "model_size_mb": 614.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "train_loss": [
+      0.681699,
+      0.237706,
+      0.319704,
+      0.132037,
+      0.060854,
+      0.002281,
+      0.000773,
+      0.004094,
+      0.000621
+    ],
+    "val_loss": [
+      0.405255,
+      0.112916,
+      0.223419,
+      0.125033,
+      0.181564,
+      0.24529,
+      0.20793,
+      0.338269,
+      0.19817
+    ],
+    "val_macro_f1": [
+      0.924391,
+      0.984889,
+      0.981791,
+      0.993953,
+      0.990989,
+      0.987984,
+      0.990989,
+      0.985006,
+      0.990989
+    ],
+    "val_correct": [
+      306,
+      326,
+      325,
+      329,
+      328,
+      327,
+      328,
+      326,
+      328
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}
