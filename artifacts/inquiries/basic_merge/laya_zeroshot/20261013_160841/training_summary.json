@@ -1,0 +1,20 @@
+{
+  "model_key": "laya_zeroshot",
+  "model_id": "convaiinnovations/laya (multilingual)",
+  "run_name": "20261013_160841",
+  "learning_rate": null,
+  "best_epoch": 0,
+  "validation_macro_f1": 0.8867791680673952,
+  "validation_accuracy": 0.8863636363636364,
+  "validation_loss": 0.3248651623725891,
+  "train_seconds": 0.0,
+  "validation_inference_seconds": 1.8779259999282658,
+  "peak_gpu_memory_mb": 1329.32080078125,
+  "train_rows": 0,
+  "validation_rows": 220,
+  "epochs_run": 0,
+  "epochs_max": 0,
+  "stop_reason": "zero-shot (학습 없음)",
+  "num_parameters": 321908998,
+  "model_size_mb": 614.0
+}

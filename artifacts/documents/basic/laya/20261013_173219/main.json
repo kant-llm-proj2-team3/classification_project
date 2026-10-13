@@ -1,0 +1,122 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "laya",
+  "model_id": "convaiinnovations/laya (multilingual)",
+  "topic": "documents",
+  "dataset": "basic",
+  "dataset_id": "documents/basic",
+  "run_id": "20261013_173219",
+  "train": {
+    "learning_rate": 2.5e-05,
+    "epochs_max": 20,
+    "epochs_run": 4,
+    "best_epoch": 4,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "effective_batch": 8,
+    "head_learning_rate": 0.0001,
+    "loss": "rlcd",
+    "max_len": 1536,
+    "fine_tuned": true
+  },
+  "input": {
+    "train_rows": 360,
+    "validation_rows": 120,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 120,
+    "correct": 120,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "loss": 0.0,
+    "per_label": {
+      "announcement": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "manual": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      },
+      "minutes": {
+        "correct": 40,
+        "n": 40,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 60.072283699999986,
+    "validation_inference_seconds": 0.9539646999999718,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 6197.5,
+    "num_parameters": 321908998,
+    "model_size_mb": 614.0
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "train_loss": [
+      0.657125,
+      0.527098,
+      0.136959,
+      0.109039
+    ],
+    "val_loss": [
+      1.155627,
+      0.0,
+      0.331112,
+      0.0
+    ],
+    "val_macro_f1": [
+      0.885192,
+      1.0,
+      0.983323,
+      1.0
+    ],
+    "val_correct": [
+      106,
+      120,
+      118,
+      120
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

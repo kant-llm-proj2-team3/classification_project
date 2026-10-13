@@ -85,9 +85,21 @@ def check_question(splits_records: dict[str, list[dict]], labels: list[str]) -> 
     return {"instructions": instructions, "choices": list(criteria)}
 
 
+# 데이터 폴더 이름으로 상황 묶음 규칙을 정한다.
+# basic 계열은 묶음의 라벨이 모두 같고(same), advanced 계열은 묶음 안에 모든 라벨이 한 번씩 있다(each).
+# total_merge는 두 계열이 섞여 있어 묶음마다 둘 중 하나를 만족하면 된다(either).
+def group_rule_for(name: str) -> str:
+    if name.startswith("advanced"):
+        return "each"
+    if name.startswith("total"):
+        return "either"
+    return "same"
+
+
 # json의 구조 확인
-# basic 계열은 상황 묶음의 라벨이 모두 같고, advanced 계열은 묶음 안에 모든 라벨이 한 번씩 있다.
-def check_splits(splits: dict[str, list[dict]], labels: list[str], advanced: bool = False) -> dict:
+def check_splits(splits: dict[str, list[dict]], labels: list[str], group_rule: str = "same") -> dict:
+    if group_rule not in ("same", "each", "either"):
+        raise ValueError(f"알 수 없는 상황 묶음 규칙: {group_rule}")
     seen = {"id": set(), "group": set(), "text": set()}
     report = {}
     for split_name, records in splits.items():
@@ -113,10 +125,14 @@ def check_splits(splits: dict[str, list[dict]], labels: list[str], advanced: boo
         for tag, record in zip(tags, records):
             group_labels.setdefault(tag["group"], []).append(record["expected"][QID])
         for group, values in group_labels.items():
-            if advanced and Counter(values) != Counter(labels):
+            same = len(set(values)) == 1
+            each = Counter(values) == Counter(labels)
+            if group_rule == "each" and not each:
                 raise ValueError(f"{split_name}: 상황 묶음 {group}에 모든 라벨이 한 번씩 있어야 합니다.")
-            if not advanced and len(set(values)) != 1:
+            if group_rule == "same" and not same:
                 raise ValueError(f"{split_name}: 상황 묶음 {group}에 서로 다른 라벨이 있습니다.")
+            if group_rule == "either" and not (same or each):
+                raise ValueError(f"{split_name}: 상황 묶음 {group}의 라벨 구성이 basic/advanced 규칙과 모두 다릅니다.")
 
         for key, previous in seen.items():
             if previous & current[key]:
@@ -140,9 +156,8 @@ def check_dataset(data_path: Path, names: tuple[str, ...]) -> dict:
 
     labels = read_labels(data_path / "labels.json")
     splits = {name: read_rows(data_path / f"{name}.jsonl") for name in names}
-    advanced = data_path.name.startswith("advanced")
     # check_splits에서 레코드 구조를 먼저 확인한 뒤 질문 정의를 비교한다.
-    split_report = check_splits(splits, labels, advanced)
+    split_report = check_splits(splits, labels, group_rule_for(data_path.name))
     return {"question": check_question(splits, labels), "splits": split_report}
 
 

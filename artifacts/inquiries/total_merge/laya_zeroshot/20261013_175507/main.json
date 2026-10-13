@@ -1,0 +1,82 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "laya_zeroshot",
+  "model_id": "convaiinnovations/laya (multilingual)",
+  "topic": "inquiries",
+  "dataset": "total_merge",
+  "dataset_id": "inquiries/total_merge",
+  "run_id": "20261013_175507",
+  "train": {
+    "fine_tuned": false,
+    "max_len": 1536
+  },
+  "input": {
+    "train_rows": 0,
+    "validation_rows": 331,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 331,
+    "correct": 260,
+    "accuracy": 0.7854984894259819,
+    "macro_f1": 0.7878076554484469,
+    "loss": 1.0475918054580688,
+    "per_label": {
+      "shipping": {
+        "correct": 83,
+        "n": 111,
+        "f1": 0.7579908675799086
+      },
+      "refund": {
+        "correct": 93,
+        "n": 111,
+        "f1": 0.7654320987654321
+      },
+      "account": {
+        "correct": 84,
+        "n": 109,
+        "f1": 0.84
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        83,
+        24,
+        4
+      ],
+      [
+        15,
+        93,
+        3
+      ],
+      [
+        10,
+        15,
+        84
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 8.767392599999994,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 1737.359375,
+    "num_parameters": 321908998,
+    "model_size_mb": 614.0
+  },
+  "curve": null,
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

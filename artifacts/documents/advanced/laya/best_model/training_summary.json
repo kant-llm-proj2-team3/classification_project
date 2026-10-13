@@ -1,0 +1,20 @@
+{
+  "model_key": "laya",
+  "model_id": "convaiinnovations/laya (multilingual)",
+  "run_name": "20261013_174535",
+  "learning_rate": 2.5e-05,
+  "best_epoch": 6,
+  "validation_macro_f1": 0.9333020637898688,
+  "validation_accuracy": 0.9333333333333333,
+  "validation_loss": 1.2707668542861938,
+  "train_seconds": 277.0877711,
+  "validation_inference_seconds": 3.5494965999999977,
+  "peak_gpu_memory_mb": 6183.19921875,
+  "train_rows": 180,
+  "validation_rows": 60,
+  "epochs_run": 11,
+  "epochs_max": 20,
+  "stop_reason": "validation Macro-F1 이 5에폭 연속 개선되지 않음",
+  "num_parameters": 321908998,
+  "model_size_mb": 614.0
+}
