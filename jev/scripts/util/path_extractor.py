@@ -1,6 +1,6 @@
 from pathlib import Path
 
-DATA_DIR = Path(__file__).parent.parent.parent / "data"
+DATA_DIR = Path(__file__).parent.parent.parent.parent / "dataset"
 
 def extract_path(topic, advanced, extended):
     if topic == "documents":

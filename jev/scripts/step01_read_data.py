@@ -2,16 +2,15 @@
 JSONL 한 행을 파이썬 딕셔너리로 읽고 문장과 라벨을 확인한다.
 
 루트 디렉토리 기준 실행 코드
-uv run python ./jev/steps/step01_read_data.py
+uv run python ./jev/scripts/step01_read_data.py --topic --advanced documents --extended
 """
 
 import argparse
 import json
 from collections import Counter
 from pathlib import Path
-import sys
-sys.path.insert(0, str(Path(__file__).parent.parent))
-from scripts.common_args import common_parser
+from util.common_args import common_parser
+from util.path_extractor import extract_path
 from typing import Any
 
 from settings import *
@@ -20,8 +19,9 @@ from settings import *
 PREVIEW_ROWS = 3
 
 
-# 몇 줄만 읽어오는 함수
+# 파일을 읽어오는 함수
 def read_rows(path: Path) -> list[dict[str, Any]]:
+    print(path)
     rows = []
     with Path(path).open(encoding="utf-8-sig") as stream:
         for number, line in enumerate(stream, start=1):
@@ -35,9 +35,8 @@ def read_rows(path: Path) -> list[dict[str, Any]]:
 
 
 # 라벨을 읽어오는 함수
-def read_labels(data_dir: Path) -> list[str]:
-    # TODO: 파일 구조에 따른 경로 변경이 필요함
-    #value = json.loads((Path(data_dir) / "labels.json").read_text(encoding="utf-8-sig"))
+def read_labels(labels_file: Path) -> list[str]:
+    value = json.loads(labels_file.read_text(encoding="utf-8-sig"))
     labels = value["labels"]
     if (not isinstance(labels, list) or not labels
             or not all(isinstance(label, str) and label.strip() for label in labels)
@@ -52,12 +51,21 @@ def main():
 
     advanced = a.advanced
     topic = a.topic
-    plus = a.plus
+    extended = a.extended
 
-    # TODO: 파일 구조에 따른 경로 변경이 필요함
-    #rows = read_rows(advanced, topic, plus, "train.jsonl")
-    #labels = read_labels(advanced, topic, plus)
-    #print("읽은 파일:", DATA_DIR / "project2-advanced-data" if advanced else "project2-data" / "data")
+    data_path = extract_path(topic, advanced, extended)
+    train, valid, test = data_path / "train.jsonl", data_path / "validation.jsonl", data_path / "test.jsonl"
+    labels = read_labels(data_path / "labels.json")
+
+    for path in [train, valid, test]:
+        rows = read_rows(path)
+        print("읽은 파일:", path.name)
+        print("행 수:", len(rows))
+        print("라벨 순서:", labels)
+        for row in rows[:PREVIEW_ROWS]:
+            print("\nID:", row["tags"][0])
+            print("문장:", row["state"])
+            print("정답:", row["expected"]["label"], "상황 묶음:", row["tags"][1])
 
 
 if __name__ == "__main__":
