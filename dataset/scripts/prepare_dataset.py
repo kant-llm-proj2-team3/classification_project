@@ -1,4 +1,4 @@
-"""Validate basic/advanced sources and rebuild their *_plus CSV files."""
+"""Validate basic/advanced sources and rebuild their *_merge CSV files."""
 
 import argparse
 import csv
@@ -91,9 +91,9 @@ def validate(root, variant):
     for topic in TOPICS:
         base = root / topic / variant
         added_dir = root / topic / f"{variant}_add"
-        plus = root / topic / f"{variant}_plus"
+        merged_dir = root / topic / f"{variant}_merge"
 
-        for directory in (base, added_dir, plus):
+        for directory in (base, added_dir, merged_dir):
             metadata = json.loads(
                 (directory / "labels.json").read_text(
                     encoding="utf-8-sig"
@@ -141,7 +141,7 @@ def validate(root, variant):
                     for row in rows
                 )
 
-            prepared[plus / f"{split}.csv"] = original + added
+            prepared[merged_dir / f"{split}.csv"] = original + added
 
             summaries.append(
                 (
@@ -306,16 +306,14 @@ def main():
 
     for topic, variant, split, original, added in summaries:
         print(
-            f"[{topic}/{variant}_plus/{split}] "
+            f"[{topic}/{variant}_merge/{split}] "
             f"{original} + {added} = {original + added} rows"
         )
 
     print(
         "Checked only."
         if args.check_only
-        else (
-            "Combined CSVs written."
-        )
+        else "Combined CSVs written."
     )
 
 
