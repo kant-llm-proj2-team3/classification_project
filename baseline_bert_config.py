@@ -18,6 +18,10 @@ DATA_ROOT = PROJECT_ROOT / "dataset"
 # 결과 저장 위치: <artifacts>/<topic>/<dataset>/<model>/...
 BASELINE_ARTIFACTS = BASELINE_DIR / "artifacts"      # tfidf 결과 + 모델 간 비교/추천 결과
 BERT_ARTIFACTS = BERT_DIR / "artifacts"              # bert / roberta / koelectra 결과
+# 실행 로그(화면에 찍히는 내용 전체)는 실행할 때마다 이 폴더에 새 파일로 저장됩니다. (학습/추천/test/길이점검)
+# run 폴더 안의 train.log 와 달리, 초기화(2번)를 해도 지워지지 않습니다.
+LOG_DIR = PROJECT_ROOT / "logs"
+
 ARTIFACT_ROOTS = {
     "tfidf": BASELINE_ARTIFACTS,
     "bert": BERT_ARTIFACTS,
@@ -115,7 +119,14 @@ LEARNING_RATES = {
 
 # 공통 학습 설정 (Learning Rate 는 위 LEARNING_RATES 에서 모델별로 지정)
 TRAINING_CONFIG = {
-    "max_length": 192,
+    # 입력 길이: 이 모델들의 최대는 512토큰. 넘는 문장은 truncation 방식으로 자른다.
+    #   "right"     : 앞쪽만 남기고 뒤를 자름           (1차 실험: max_length 192 + right)
+    #   "head_tail" : 앞 head_tokens 개 + 뒤쪽 나머지를 남기고 가운데를 자름
+    # advanced 데이터는 라벨을 정하는 "새로 접수한 문의"가 글의 맨 앞에 있기도 하고 맨 뒤에 있기도 합니다.
+    # 앞쪽만 남기면 정답 구간이 통째로 잘리는 행이 많아서 앞과 뒤를 모두 남깁니다.
+    "max_length": 512,
+    "truncation": "head_tail",
+    "head_tokens": 256,                 # head_tail 일 때 앞쪽에서 남길 토큰 수 (뒤쪽 = max_length - 2 - head_tokens)
     "batch_size": 4,
     "gradient_accumulation_steps": 4,   # 실제 배치 = 4 x 4 = 16
     "epochs": 5,                        # 학습 행 수가 적어 실습 키트(3)보다 늘렸습니다
