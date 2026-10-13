@@ -6,7 +6,6 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 *.py[cod]
-artifacts/
 *.safetensors
 *.pt
 *.pth
