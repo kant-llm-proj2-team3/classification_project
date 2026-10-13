@@ -11,7 +11,7 @@
   test_errors.csv         : test 에서 틀린 문장
   test_predictions.csv    : test 모든 문장의 예측 (팀원과 비교용)
   main.json 의 test 칸    : 몇 문제 중 몇 개 정답, F1 등 (+ test_meta 에 공식 여부)
-데이터셋 폴더에는 comparison/test_comparison.csv (모델별 test 점수 비교표)를 만든다.
+모델별 test 비교표는 화면에만 출력하고 파일로는 저장하지 않는다. (모아 볼 때는 artifacts/viz 의 all_main.csv 를 쓴다)
 """
 import sys
 import time
@@ -25,8 +25,6 @@ import common  # noqa: E402
 import result_files  # noqa: E402
 
 MODES = ("recommended", "all")
-COMPARISON_FIELDS = ["model_name", "run_id", "test_n", "test_correct", "test_accuracy", "test_macro_f1",
-                     "validation_macro_f1", "official", "test_inference_seconds"]
 
 
 def _predict(model_key, best, rows, labels):
@@ -43,7 +41,7 @@ def _predict(model_key, best, rows, labels):
 
 
 def write_test_comparison(topic, dataset):
-    """각 모델 best_model 의 main.json 에 있는 test 점수를 모아 비교표를 만든다. (이미 평가한 모델도 포함)"""
+    """각 모델 best_model 의 main.json 에 있는 test 점수를 모아 비교표를 화면에 출력한다. (이미 평가한 모델도 포함. 파일로는 저장하지 않는다)"""
     rows = []
     for key in common.ALL_MODEL_KEYS:
         path = common.best_dir(key, topic, dataset) / "main.json"
@@ -59,8 +57,6 @@ def write_test_comparison(topic, dataset):
                      "official": (main.get("test_meta") or {}).get("official"),
                      "test_inference_seconds": main["cost"].get("test_inference_seconds")})
     if rows:
-        common.write_csv(common.dataset_result_dir(topic, dataset) / "comparison" / "test_comparison.csv",
-                         COMPARISON_FIELDS, rows)
         print(f"\n  [test 비교표] {topic}/{dataset}")
         print(f"  {'model':<12}{'best run':<17}{'test 정답':>12}{'test_f1':>9}{'validation_f1':>15}  구분")
         for row in rows:

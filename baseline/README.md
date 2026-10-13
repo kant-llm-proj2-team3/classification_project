@@ -48,8 +48,8 @@ project_2/artifacts/
 │   │   │   ├── best_model/        지금까지 가장 좋았던 결과 (가중치 포함)
 │   │   │   ├── 20261012_195030/   학습 1회 = 폴더 1개 (날짜_시각, 점수·로그만)
 │   │   │   └── 20261012_210544/
-│   │   ├── comparison/model_comparison.csv      (3번 추천) 모델 간 비교표
-│   │   └── recommendation.json                  (3번 추천) 추천 모델과 이유
+│   │   ├── recommendation.json                  (3번 추천) 추천 모델과 이유
+│   │   └── (모델 간 비교표는 화면에만 출력합니다. 파일로는 artifacts/viz 의 all_main.csv 를 사용)
 └── input_length_report.csv                       (5번) 입력 길이 점검
 ```
 
@@ -122,7 +122,7 @@ Hugging Face 가 모델 설정을 `config.json` 으로 저장하기 때문에, �
   `test_metrics.json` 과 `main.json` 의 `test_meta` 에 표시되고, test 점수를 보고 모델을 다시 고르면 안 됩니다.
 - 모델은 각자 한 번만 평가합니다. (이미 평가한 모델은 건너뜀. baseline 은 비교 기준선이라 항상 다시 계산해도 같은 값)
 - 각 모델 `best_model` 에 `test_metrics.json`, `test_errors.csv`, `test_predictions.csv` 가 저장되고,
-  데이터셋 폴더에 `comparison/test_comparison.csv`(모델별 test 비교표)가 만들어집니다.
+  데이터셋별 모델 비교표는 화면에만 출력되고 파일로는 저장되지 않습니다. (모아 볼 때는 7번이 만드는 `all_main.csv`)
 
 ## 한 번에 마무리 (메뉴 8번)
 

@@ -1045,11 +1045,6 @@ def rank_key(summary):
     return (-round(summary["validation_macro_f1"], 6), summary["validation_loss"], summary["train_seconds"])
 
 
-COMPARISON_FIELDS = ["model_key", "run_name", "learning_rate", "best_epoch", "validation_macro_f1",
-                     "validation_accuracy", "validation_loss", "train_seconds",
-                     "validation_inference_seconds", "peak_gpu_memory_mb"]
-
-
 def _fmt(value, spec):
     return "-" if value is None else format(value, spec)
 
@@ -1117,10 +1112,6 @@ def recommend_model(topic, dataset):
         print(f"     [참고] {note}")
 
     result_dir = dataset_result_dir(topic, dataset)
-    table = [{k: row.get(k) for k in COMPARISON_FIELDS} for row in ranked]
-    if reference:
-        table.append({k: reference.get(k) for k in COMPARISON_FIELDS})
-    write_csv(result_dir / "comparison" / "model_comparison.csv", COMPARISON_FIELDS, table)
     save_json(result_dir / "recommendation.json", {
         "topic": topic, "dataset": dataset, "recommended_model": best["model_key"],
         "model_id": best["model_id"], "run_name": best["run_name"], "learning_rate": best["learning_rate"],
