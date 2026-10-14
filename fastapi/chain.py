@@ -1,36 +1,57 @@
-"""main.py와 분류기, 향후 모델 호출을 연결하는 LangChain 뼈대."""
+"""main.py의 /chat 요청을 처리하는 LCEL 체인: 분류 -> 정책 적용 -> 답변 생성 -> 응답 조립.
 
-from langchain_core.runnables import Runnable, RunnableLambda
+각 단계가 이전 단계의 결과를 들고 다니는 딕셔너리(item)를 받아 키를 더해 넘긴다.
+  입력  : {"text", "dataset"}
+  classify     : + classification   (분류 모델, 동기 함수라서 ainvoke에서는 별도 스레드에서 실행된다)
+  apply_policy : + prompt            (분류에 실패했거나 정책이 없으면 None)
+  generate     : + generation        (OpenAI, 비동기. 프롬프트가 없으면 skipped)
+  respond      : API 응답(status, classification, generation)으로 정리
+Streamlit이 검사하는 응답 계약 때문에 단계가 실패해도 예외 대신 단계별 status(error/timeout/skipped)를 담아 돌려준다.
+"""
+
+import os
 
 from classifier import predict_text
+from generator import OpenAIGenerator
+from langchain_core.runnables import Runnable, RunnableLambda
+from policy import build_prompt
+
+# 생성 모델에 보낼 원문의 최대 글자 수. 분류에는 전체 원문을 쓴다.
+MAX_INPUT_CHARS = int(os.getenv("MAX_INPUT_CHARS") or 4000)
 
 
-def create_chain(classifiers: dict) -> Runnable:
-    # main.py가 전달한 주제별 모델을 사용하는 처리 순서를 조립한다.
+def create_chain(classifiers: dict, generator: OpenAIGenerator | None = None) -> Runnable:
+    generator = generator or OpenAIGenerator()
+
     def classify(item: dict) -> dict:
-        # 이번 요청의 주제·원문을 유지하면서 분류 결과를 다음 단계에 전달한다.
-        classification = predict_text(item["text"], classifiers[item["dataset"]])
-        return {**item, "classification": classification}
+        text = item["text"].strip()
+        classification = predict_text(text, classifiers[item["dataset"]])
+        return {**item, "text": text, "classification": classification}
 
-    def generate(item: dict) -> dict:
-        # 현재는 프론트 연결 확인용 고정 안내문을 반환하고 실제 모델은 호출하지 않는다.
-        # TODO: 선정 모델에 맞게 정책·프롬프트·호출을 연결해 generation을 채운다.
-        topic_name = {"documents": "문서", "inquiries": "고객 요청"}[item["dataset"]]
-        return {
-            "status": "partial_success",
-            "mode": "stub",
-            "classification": item["classification"],
-            "generation": {
-                # 기존 Streamlit이 안내문을 표시하도록 success를 사용한다.
-                # 실제 생성 성공 여부는 모델 연결 단계에서 판정하도록 교체한다.
-                "status": "success",
-                "answer": (
-                    f"{topic_name} 입력을 받았습니다. "
-                    "현재는 API 연결 확인용 기본 응답입니다. "
-                    "실제 분류와 답변 생성은 아직 연결되지 않았습니다."
-                ),
-                "next_steps": [],
-            },
-        }
+    def apply_policy(item: dict) -> dict:
+        classification = item["classification"]
+        if classification["status"] != "success":
+            return {**item, "prompt": None, "skip_reason": "분류에 성공하지 못해 생성을 건너뜁니다."}
+        text = item["text"][:MAX_INPUT_CHARS]
+        prompt = build_prompt(classification["label"], text)
+        if prompt is None:
+            return {**item, "prompt": None, "skip_reason": f"'{classification['label']}' 라벨의 정책이 없습니다."}
+        return {**item, "prompt": prompt, "text_truncated": len(item["text"]) > MAX_INPUT_CHARS}
 
-    return RunnableLambda(classify) | RunnableLambda(generate)
+    async def generate(item: dict) -> dict:
+        if item["prompt"] is None:
+            return {**item, "generation": {"status": "skipped", "error": item["skip_reason"]}}
+        generation = await generator.generate(item["prompt"])
+        generation["metrics"]["text_truncated"] = item["text_truncated"]
+        return {**item, "generation": generation}
+
+    def respond(item: dict) -> dict:
+        classification, generation = item["classification"], item["generation"]
+        done = classification["status"] == "success" and generation["status"] == "success"
+        return {"status": "success" if done else "partial_success",
+                "classification": classification, "generation": generation}
+
+    return (RunnableLambda(classify).with_config(run_name="classify")
+            | RunnableLambda(apply_policy).with_config(run_name="apply_policy")
+            | RunnableLambda(generate).with_config(run_name="generate")
+            | RunnableLambda(respond).with_config(run_name="respond"))
