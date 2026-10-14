@@ -1,0 +1,64 @@
+{
+  "n": 120,
+  "accuracy": 0.925,
+  "macro_f1": 0.9245360285218984,
+  "per_class": {
+    "announcement": {
+      "precision": 0.9714285714285714,
+      "recall": 0.85,
+      "f1-score": 0.9066666666666666,
+      "support": 40.0
+    },
+    "manual": {
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "f1-score": 0.9302325581395349,
+      "support": 40.0
+    },
+    "minutes": {
+      "precision": 0.9487179487179487,
+      "recall": 0.925,
+      "f1-score": 0.9367088607594937,
+      "support": 40.0
+    },
+    "accuracy": 0.925,
+    "macro avg": {
+      "precision": 0.9299039125126081,
+      "recall": 0.9250000000000002,
+      "f1-score": 0.9245360285218984,
+      "support": 120.0
+    },
+    "weighted avg": {
+      "precision": 0.9299039125126082,
+      "recall": 0.925,
+      "f1-score": 0.9245360285218983,
+      "support": 120.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      34,
+      4,
+      2
+    ],
+    [
+      0,
+      40,
+      0
+    ],
+    [
+      1,
+      2,
+      37
+    ]
+  ],
+  "confusion_matrix_axes": {
+    "rows": "actual",
+    "columns": "predicted",
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ]
+  }
+}

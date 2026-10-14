@@ -1,0 +1,18 @@
+﻿id,text,actual,predicted,group_id
+documents-v2-announcement-validation-012-v2,무거운 교구를 옮길 바퀴 달린 상자 세 개를 새로 마련했다. 이용자는 상자를 반납할 때 내부가 비었는지 확인한다. 상자에 표시된 적재 한도를 넘겨 싣지 않는다.,announcement,manual,documents-v2-announcement-validation-012
+documents-v2-minutes-validation-001-v1,활동 시작 전에 질문을 모두 보여 줄지 검토했다. 첫 관찰은 자유롭게 하고 이후 공통 질문을 주기로 했다. 질문 공개 전후의 의견 차이를 진행자가 기록하기로 했다.,minutes,manual,documents-v2-minutes-validation-001
+documents-v2-announcement-validation-006-v2,"- 지역 돌과 흙의 관찰 표본을 참여 모임에 한 주씩 대여한다.
+- 가루가 떨어지는 표본은 밀폐 상자를 열지 않은 채 관찰한다.
+- 대여 신청은 모임별 담당자 한 명이 제출한다.",announcement,manual,documents-v2-announcement-validation-006
+documents-v2-announcement-validation-012-v1,"- 무거운 교구를 옮길 바퀴 달린 상자 세 개를 새로 마련했습니다.
+- 이용자는 상자를 반납할 때 내부가 비었는지 확인합니다.
+- 상자에 표시된 적재 한도를 넘겨 싣지 않습니다.",announcement,manual,documents-v2-announcement-validation-012
+documents-v2-minutes-validation-005-v2,"자료 정오표 방식
+인쇄 자료의 오류를 페이지마다 따로 알리는 불편을 살펴봤습니다. 한 장의 정오표에 오류 위치와 수정 내용을 모으기로 했습니다. 수정이 필요 없는 본문을 다시 인쇄하지 않기로 했습니다.",minutes,announcement,documents-v2-minutes-validation-005
+documents-v2-announcement-validation-006-v1,지역 돌과 흙의 관찰 표본을 참여 모임에 한 주씩 대여합니다. 가루가 떨어지는 표본은 밀폐 상자를 열지 않은 채 관찰합니다. 대여 신청은 모임별 담당자 한 명이 제출합니다.,announcement,manual,documents-v2-announcement-validation-006
+documents-v2-minutes-validation-001-v2,"토론 질문 시점
+활동 시작 전에 질문을 모두 보여 줄지 살펴봤습니다. 첫 관찰은 자유롭게 하고 이후 공통 질문을 주기로 했습니다. 질문 공개 전후의 의견 차이를 진행자가 기록하기로 했습니다.",minutes,manual,documents-v2-minutes-validation-001
+documents-v2-announcement-validation-008-v2,축제에 쓴 재사용 장식은 해체한 상태로 별관 창고에 보관한다. 다음 행사에서 사용할 팀은 수량 확인을 먼저 요청한다. 낡은 장식의 교체 여부는 아직 결정하지 않았다.,announcement,minutes,documents-v2-announcement-validation-008
+documents-v2-announcement-validation-008-v1,"- 축제에 쓴 재사용 장식은 해체한 상태로 별관 창고에 보관합니다.
+- 다음 행사에서 사용할 팀은 수량 확인을 먼저 요청합니다.
+- 낡은 장식의 교체 여부는 아직 결정하지 않았습니다.",announcement,minutes,documents-v2-announcement-validation-008

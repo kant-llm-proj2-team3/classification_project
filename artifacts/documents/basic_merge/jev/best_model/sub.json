@@ -1,0 +1,155 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261014_112701",
+  "generated_at": "2026-10-14 11:27:03",
+  "hyperparameters": {
+    "seed": null,
+    "max_length": null,
+    "truncation": null,
+    "head_tokens": null,
+    "weight_decay": null,
+    "warmup_ratio": null,
+    "gradient_checkpointing": null,
+    "precision": null,
+    "early_stopping_patience": null,
+    "target_macro_f1": null,
+    "stop_reason": "학습 없음 (API 평가)",
+    "optimizer_steps_at_checkpoint": null,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": "remote (TypeSafe API)",
+    "gpu": null,
+    "python": "3.12.10",
+    "torch": null,
+    "transformers": null,
+    "sklearn": null
+  },
+  "data": {
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "train_csv": null,
+    "validation_csv": [
+      "dataset/documents/basic_merge/validation.csv"
+    ],
+    "truncated_rows": null
+  },
+  "validation_detail": {
+    "per_class": {
+      "announcement": {
+        "precision": 0.9852941176470589,
+        "recall": 0.9054054054054054,
+        "f1-score": 0.9436619718309859,
+        "support": 74.0
+      },
+      "manual": {
+        "precision": 0.9135802469135802,
+        "recall": 1.0,
+        "f1-score": 0.9548387096774194,
+        "support": 74.0
+      },
+      "minutes": {
+        "precision": 0.971830985915493,
+        "recall": 0.9583333333333334,
+        "f1-score": 0.965034965034965,
+        "support": 72.0
+      },
+      "accuracy": 0.9545454545454546,
+      "macro avg": {
+        "precision": 0.956901783492044,
+        "recall": 0.9545795795795796,
+        "f1-score": 0.9545118821811234,
+        "support": 220.0
+      },
+      "weighted avg": {
+        "precision": 0.9567660634700126,
+        "recall": 0.9545454545454546,
+        "f1-score": 0.9544162177915431,
+        "support": 220.0
+      }
+    }
+  },
+  "epochs": [],
+  "training_summary": {
+    "model_key": "jev",
+    "model_id": "jev-1.13.0",
+    "run_name": "20261014_112701",
+    "learning_rate": null,
+    "best_epoch": 0,
+    "validation_macro_f1": 0.9545118821811234,
+    "validation_accuracy": 0.9545454545454546,
+    "validation_loss": 0.09635381067727354,
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 40.45462429998588,
+    "peak_gpu_memory_mb": null,
+    "train_rows": 0,
+    "validation_rows": 220,
+    "epochs_run": 0,
+    "epochs_max": 0,
+    "stop_reason": "학습 없음 (API 평가)",
+    "wall_seconds": 2.3970913000011933,
+    "requests_sent": 100,
+    "requests_cached": 120,
+    "sent_input_tokens": 47426,
+    "api_requests": 220,
+    "api_input_tokens": 103872,
+    "api_output_tokens": 8360,
+    "api_cost_usd": 0.004363
+  },
+  "run_config": {
+    "topic": "documents",
+    "dataset": "basic_merge",
+    "model_key": "jev",
+    "model_id": "jev-1.13.0",
+    "run_name": "20261014_112701",
+    "learning_rate": null,
+    "epochs_max": 0,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 1,
+    "max_length": null,
+    "truncation": null,
+    "seed": null,
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "validation_rows": 220,
+    "validation_csv": [
+      "dataset/documents/basic_merge/validation.csv"
+    ],
+    "question": {
+      "type": "choice",
+      "instructions": "이 글의 목적은 어느 문서 유형에 해당합니까?",
+      "criteria": {
+        "announcement": "대상자에게 일정, 변경, 참여, 주의사항을 알리는 문서",
+        "manual": "사용자가 작업을 수행하도록 절차, 조건, 방법을 설명하는 문서",
+        "minutes": "이미 진행된 논의의 의견, 결정, 담당, 후속 작업을 기록한 문서"
+      }
+    },
+    "option_order": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "api": {
+      "host": "api.typesafe.ai",
+      "endpoint": "/v1/systemone",
+      "model_requested": "jev-1.13.0",
+      "models_returned": [
+        "jev-1.13.0"
+      ],
+      "concurrency": 8,
+      "timeout": 60.0,
+      "max_retries": 5,
+      "loss_floor": 1e-06
+    },
+    "device": "remote (TypeSafe API)",
+    "gpu": null,
+    "python": "3.12.10",
+    "httpx": "0.28.1"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "topic": "inquiries",
+  "dataset": "basic",
+  "split": "test",
+  "selected_model": null,
+  "evaluated_model": "jev",
+  "official": false,
+  "selected_run": "20261014_112646",
+  "model_id": "jev-1.13.0",
+  "classifier": {
+    "n": 120,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "shipping": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "refund": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "account": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "shipping",
+        "refund",
+        "account"
+      ]
+    }
+  },
+  "baseline": null,
+  "api": {
+    "models_returned": [
+      "jev-1.13.0"
+    ],
+    "loss": 0.005030058322165178
+  }
+}

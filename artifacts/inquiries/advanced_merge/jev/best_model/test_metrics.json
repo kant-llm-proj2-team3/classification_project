@@ -1,0 +1,81 @@
+{
+  "topic": "inquiries",
+  "dataset": "advanced_merge",
+  "split": "test",
+  "selected_model": null,
+  "evaluated_model": "jev",
+  "official": false,
+  "selected_run": "20261014_112656",
+  "model_id": "jev-1.13.0",
+  "classifier": {
+    "n": 111,
+    "accuracy": 0.9819819819819819,
+    "macro_f1": 0.9818518518518519,
+    "per_class": {
+      "shipping": {
+        "precision": 1.0,
+        "recall": 0.9459459459459459,
+        "f1-score": 0.9722222222222222,
+        "support": 37.0
+      },
+      "refund": {
+        "precision": 0.9736842105263158,
+        "recall": 1.0,
+        "f1-score": 0.9866666666666667,
+        "support": 37.0
+      },
+      "account": {
+        "precision": 0.9736842105263158,
+        "recall": 1.0,
+        "f1-score": 0.9866666666666667,
+        "support": 37.0
+      },
+      "accuracy": 0.9819819819819819,
+      "macro avg": {
+        "precision": 0.9824561403508772,
+        "recall": 0.981981981981982,
+        "f1-score": 0.9818518518518519,
+        "support": 111.0
+      },
+      "weighted avg": {
+        "precision": 0.9824561403508772,
+        "recall": 0.9819819819819819,
+        "f1-score": 0.9818518518518518,
+        "support": 111.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        35,
+        1,
+        1
+      ],
+      [
+        0,
+        37,
+        0
+      ],
+      [
+        0,
+        0,
+        37
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "shipping",
+        "refund",
+        "account"
+      ]
+    }
+  },
+  "baseline": null,
+  "api": {
+    "models_returned": [
+      "jev-1.13.0"
+    ],
+    "loss": 0.09045042818705566
+  }
+}

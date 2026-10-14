@@ -1,0 +1,86 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "jev",
+  "model_id": "jev-1.13.0",
+  "topic": "inquiries",
+  "dataset": "basic_merge",
+  "dataset_id": "inquiries/basic_merge",
+  "run_id": "20261014_112650",
+  "train": {
+    "fine_tuned": false,
+    "api_model": "jev-1.13.0"
+  },
+  "input": {
+    "train_rows": 0,
+    "validation_rows": 220,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 220,
+    "correct": 218,
+    "accuracy": 0.990909090909091,
+    "macro_f1": 0.9909893455098935,
+    "loss": 0.03739046398407287,
+    "per_label": {
+      "shipping": {
+        "correct": 74,
+        "n": 74,
+        "f1": 0.9866666666666667
+      },
+      "refund": {
+        "correct": 72,
+        "n": 74,
+        "f1": 0.9863013698630136
+      },
+      "account": {
+        "correct": 72,
+        "n": 72,
+        "f1": 1.0
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        74,
+        0,
+        0
+      ],
+      [
+        2,
+        72,
+        0
+      ],
+      [
+        0,
+        0,
+        72
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 39.49631360002968,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": null,
+    "num_parameters": null,
+    "model_size_mb": null,
+    "api_requests": 220,
+    "api_input_tokens": 104617,
+    "api_output_tokens": 8360,
+    "api_cost_usd": 0.004394
+  },
+  "curve": null,
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

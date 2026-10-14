@@ -1,0 +1,86 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "jev",
+  "model_id": "jev-1.13.0",
+  "topic": "documents",
+  "dataset": "basic_merge",
+  "dataset_id": "documents/basic_merge",
+  "run_id": "20261014_112701",
+  "train": {
+    "fine_tuned": false,
+    "api_model": "jev-1.13.0"
+  },
+  "input": {
+    "train_rows": 0,
+    "validation_rows": 220,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 220,
+    "correct": 210,
+    "accuracy": 0.9545454545454546,
+    "macro_f1": 0.9545118821811234,
+    "loss": 0.09635381067727354,
+    "per_label": {
+      "announcement": {
+        "correct": 67,
+        "n": 74,
+        "f1": 0.9436619718309859
+      },
+      "manual": {
+        "correct": 74,
+        "n": 74,
+        "f1": 0.9548387096774194
+      },
+      "minutes": {
+        "correct": 69,
+        "n": 72,
+        "f1": 0.965034965034965
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        67,
+        5,
+        2
+      ],
+      [
+        0,
+        74,
+        0
+      ],
+      [
+        1,
+        2,
+        69
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 40.45462429998588,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": null,
+    "num_parameters": null,
+    "model_size_mb": null,
+    "api_requests": 220,
+    "api_input_tokens": 103872,
+    "api_output_tokens": 8360,
+    "api_cost_usd": 0.004363
+  },
+  "curve": null,
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

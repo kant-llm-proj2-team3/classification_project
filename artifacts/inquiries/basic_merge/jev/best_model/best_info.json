@@ -1,0 +1,54 @@
+{
+  "topic": "inquiries",
+  "dataset": "basic_merge",
+  "model_key": "jev",
+  "selection_rule": "validation Macro-F1 이 높은 쪽, 동점이면 validation loss 가 낮은 쪽. 더 좋아졌을 때만 best_model 을 교체한다. (test 점수는 사용하지 않음)",
+  "best": {
+    "model_key": "jev",
+    "model_id": "jev-1.13.0",
+    "run_name": "20261014_112650",
+    "learning_rate": null,
+    "best_epoch": 0,
+    "validation_macro_f1": 0.9909893455098935,
+    "validation_accuracy": 0.990909090909091,
+    "validation_loss": 0.03739046398407287,
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 39.49631360002968,
+    "peak_gpu_memory_mb": null,
+    "train_rows": 0,
+    "validation_rows": 220,
+    "epochs_run": 0,
+    "epochs_max": 0,
+    "stop_reason": "학습 없음 (API 평가)",
+    "wall_seconds": 2.265597699995851,
+    "requests_sent": 100,
+    "requests_cached": 120,
+    "sent_input_tokens": 49659,
+    "api_requests": 220,
+    "api_input_tokens": 104617,
+    "api_output_tokens": 8360,
+    "api_cost_usd": 0.004394
+  },
+  "last_run": {
+    "run_name": "20261014_112650",
+    "replaced_best": true,
+    "reason": "이 모델의 첫 결과라서 best_model 로 저장",
+    "validation_macro_f1": 0.9909893455098935,
+    "validation_loss": 0.03739046398407287
+  },
+  "previous_best": null,
+  "runs": [
+    {
+      "run_name": "20261014_112650",
+      "learning_rate": null,
+      "best_epoch": 0,
+      "validation_macro_f1": 0.9909893455098935,
+      "validation_accuracy": 0.990909090909091,
+      "validation_loss": 0.03739046398407287,
+      "train_seconds": 0.0,
+      "peak_gpu_memory_mb": null,
+      "is_best": true
+    }
+  ],
+  "updated_at": "2026-10-14 11:26:52"
+}
