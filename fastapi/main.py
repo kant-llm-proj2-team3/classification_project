@@ -10,6 +10,8 @@ from fastapi import Depends, FastAPI, HTTPException, Request
 from langchain_core.runnables import Runnable
 from pydantic import AliasChoices, BaseModel, ConfigDict, Field, field_validator
 from tracking.callbacks import TrackingCallbackHandler, log_trace
+from tracking.context import current_request
+from tracking.middleware import RequestTrackingMiddleware, log_request
 
 
 class ChatRequest(BaseModel):
@@ -45,6 +47,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="분류 챗봇 API", lifespan=lifespan)
+app.add_middleware(RequestTrackingMiddleware, sink=log_request)
 
 
 def get_chain(request: Request) -> Runnable:
@@ -74,7 +77,13 @@ async def chat(
     request: Request,
     chain: Annotated[Runnable, Depends(get_chain)],
 ) -> dict:
-    # Streamlit이 보내는 X-Request-ID를 추적의 요청 ID로 쓴다. (없으면 새로 만든다)
-    request_id = request.headers.get("X-Request-ID") or uuid.uuid4().hex
+    # 요청 ID와 요청 레코드는 미들웨어가 만든다. 검증을 통과한 입력과 결과를 레코드에 채우고, span은 같은 request_id로 연결한다.
+    record = current_request()
+    request_id = record.request_id if record else uuid.uuid4().hex
+    if record:
+        record.set_input(body.dataset, body.text)
     config = {"callbacks": [request.app.state.tracker], "metadata": {"request_id": request_id}}
-    return await chain.ainvoke(body.model_dump(), config=config)
+    result = await chain.ainvoke(body.model_dump(), config=config)
+    if record:
+        record.set_output(result)
+    return result
