@@ -12,6 +12,7 @@ from pydantic import AliasChoices, BaseModel, ConfigDict, Field, field_validator
 from tracking.callbacks import TrackingCallbackHandler, log_trace
 from tracking.context import current_request
 from tracking.middleware import RequestTrackingMiddleware, log_request
+from tracking.store import open_store_from_env
 
 
 class ChatRequest(BaseModel):
@@ -37,17 +38,38 @@ async def lifespan(app: FastAPI):
     generator = OpenAIGenerator()
     app.state.classifiers = classifiers
     app.state.chain = create_chain(classifiers, generator)
-    app.state.tracker = TrackingCallbackHandler(sink=log_trace)
+    app.state.store = await asyncio.to_thread(open_store_from_env)
+    app.state.tracker = TrackingCallbackHandler(sink=trace_sink)
     try:
         yield
     finally:
         app.state.chain = None
         await generator.aclose()
         await asyncio.to_thread(close_classifiers, classifiers)
+        if app.state.store:
+            await asyncio.to_thread(app.state.store.close)      # 큐에 남은 기록을 모두 저장하고 닫는다.
 
 
 app = FastAPI(title="분류 챗봇 API", lifespan=lifespan)
-app.add_middleware(RequestTrackingMiddleware, sink=log_request)
+app.state.store = None
+
+
+def trace_sink(trace: dict) -> None:
+    # 체인이 끝났을 때 호출 흐름(span)을 저장한다. 저장소를 열지 못했으면 로그 한 줄로 남긴다.
+    if app.state.store:
+        app.state.store.write_trace(trace)
+    else:
+        log_trace(trace)
+
+
+def request_sink(record: dict) -> None:
+    # 응답이 나간 뒤 요청 기록을 저장한다. 저장소가 있어도 요청마다 로그 한 줄은 남긴다.
+    log_request(record)
+    if app.state.store:
+        app.state.store.write_request(record)
+
+
+app.add_middleware(RequestTrackingMiddleware, sink=request_sink)
 
 
 def get_chain(request: Request) -> Runnable:

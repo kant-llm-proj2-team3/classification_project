@@ -17,3 +17,7 @@ dist/
 *.egg-info/
 .idea/
 jev/tmp/
+# 요청 추적 DB (요청 원문이 들어 있다)
+logs/*.db
+logs/*.db-wal
+logs/*.db-shm
