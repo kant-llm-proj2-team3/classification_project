@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 
 from urllib.parse import urlsplit
@@ -19,21 +18,19 @@ DATASETS = {
 
 MAX_CHARS = 10000
 
-# 로컬 서버 환경을 고려한 Timeout 설정
 API_TIMEOUT = httpx.Timeout(
-    connect=5.0,    # 서버 연결 대기
-    read=90.0,      # 응답 데이터 대기
-    write=10.0,     # 요청 데이터 전송
-    pool=5.0,       # 연결 풀 대기
+    connect=5.0,   # 서버 연결 대기
+    read=90.0,     # 응답 데이터 대기
+    write=10.0,    # 요청 데이터 전송
+    pool=5.0,      # 연결 풀 대기
 )
 
 
 # ==========================================
-# 2. 사용자별 세션 초기화 (Isolation)
+# 2. 사용자별 세션 초기화
 # ==========================================
 
 def initialize_session():
-
     if "session_id" not in st.session_state:
         st.session_state.session_id = str(uuid.uuid4())
 
@@ -55,7 +52,6 @@ def initialize_session():
 # ==========================================
 
 def apply_chat_style():
-
     st.html(
         """
         <style>
@@ -98,11 +94,47 @@ def apply_chat_style():
 # 4. FastAPI 통신
 # ==========================================
 
-def get_reply(text, dataset):
+def validate_api_url(api_url):
+    """채팅과 연결 확인에 사용할 서버 주소를 검증한다."""
+    try:
+        parsed = urlsplit(api_url)
 
+        return (
+            parsed.scheme in ("http", "https")
+            and bool(parsed.hostname)
+            and parsed.port != 0
+            and not parsed.username
+            and not parsed.password
+            and not parsed.query
+            and not parsed.fragment
+        )
+
+    except ValueError:
+        return False
+
+
+def check_api_connection(api_url):
+    """모델 실행 여부와 별개로 FastAPI 서버 연결을 확인한다."""
+    response = httpx.get(
+        f"{api_url.rstrip('/')}/health",
+        timeout=httpx.Timeout(5.0),
+    )
+
+    response.raise_for_status()
+    data = response.json()
+
+    if not isinstance(data, dict) or data.get("status") != "ok":
+        raise ValueError(
+            "서버 상태 응답 형식이 올바르지 않습니다."
+        )
+
+    return data
+
+
+def get_reply(text, dataset):
     settings = st.session_state.app_settings
 
-    # API 미연결 시 화면 테스트
+    # API 미연결 시에는 화면 테스트용 응답을 반환
     if not settings["use_api"]:
         return {
             "status": "demo",
@@ -123,10 +155,9 @@ def get_reply(text, dataset):
             },
         }
 
-    # 요청별 고유 ID 생성
     request_id = str(uuid.uuid4())
 
-    # FastAPI 요청
+    # 선택한 데이터셋과 입력 내용을 FastAPI에 전송
     response = httpx.post(
         f"{settings['api_url'].rstrip('/')}/chat",
         json={
@@ -140,55 +171,77 @@ def get_reply(text, dataset):
     )
 
     response.raise_for_status()
-
     data = response.json()
 
-    # 응답 데이터 형식 확인
+    # 응답 형식 검증
     if not isinstance(data, dict):
         raise ValueError(
             "API 응답 형식이 올바르지 않습니다."
         )
 
-    if data.get("status") not in (
-        "success",
-        "partial_success",
-    ):
+    if data.get("status") not in ("success", "partial_success"):
         raise ValueError(
             "API 처리 상태를 확인할 수 없습니다."
         )
 
-    if not isinstance(
-        data.get("classification"), dict
-    ):
+    if not isinstance(data.get("classification"), dict):
         raise ValueError(
             "분류 결과가 없습니다."
         )
 
-    if not isinstance(
-        data.get("generation"), dict
-    ):
+    if not isinstance(data.get("generation"), dict):
         raise ValueError(
             "답변 생성 결과가 없습니다."
         )
+
+    allowed_statuses = {
+        "success",
+        "skipped",
+        "error",
+        "timeout",
+    }
+
+    for name in ("classification", "generation"):
+        if data[name].get("status") not in allowed_statuses:
+            raise ValueError(
+                "API 처리 단계의 상태가 올바르지 않습니다."
+            )
+
+    generation = data["generation"]
+
+    if generation["status"] == "success":
+        answer = generation.get("answer")
+
+        if not isinstance(answer, str) or not answer.strip():
+            raise ValueError(
+                "API 답변 내용이 없습니다."
+            )
+
+        steps = generation.get("next_steps", [])
+
+        if (
+            not isinstance(steps, list)
+            or any(not isinstance(step, str) for step in steps)
+        ):
+            raise ValueError(
+                "API 다음 단계 형식이 올바르지 않습니다."
+            )
 
     return data
 
 
 # ==========================================
-# 5. 분류 결과 및 LLM 답변 표시
+# 5. 분류 결과 및 답변 표시
 # ==========================================
 
 def show_reply(data):
-
     status = data.get("status")
 
-    classification = data.get(
-        "classification", {}
-    )
+    is_stub = data.get("mode") == "stub"
+    is_preview = is_stub or status == "demo"
 
-    generation = data.get(
-        "generation", {}
-    )
+    classification = data.get("classification", {})
+    generation = data.get("generation", {})
 
     # 전체 요청 상태
     if status == "demo":
@@ -196,25 +249,24 @@ def show_reply(data):
             "현재 화면 테스트 모드입니다."
         )
 
+    elif is_stub:
+        st.info(
+            "FastAPI 연결이 확인되었습니다. "
+            "현재는 연결 테스트용 응답이며, "
+            "실제 분류 모델과 LLM은 아직 연결되지 않았습니다."
+        )
+
     elif status == "partial_success":
         st.warning(
             "일부 처리 과정에서 문제가 발생했습니다."
         )
 
-    # --------------------------------------
-    # 분류 결과
-    # --------------------------------------
-
-    classification_status = classification.get(
-        "status"
-    )
+    # 분류 결과 표시
+    classification_status = classification.get("status")
 
     if classification_status == "success":
-
         label = classification.get("label")
-        confidence = classification.get(
-            "confidence"
-        )
+        confidence = classification.get("confidence")
 
         if isinstance(label, str):
             st.markdown(
@@ -231,41 +283,40 @@ def show_reply(data):
             )
 
     elif classification_status == "timeout":
-
         st.warning(
             "분류 모델 응답 시간이 초과되었습니다."
         )
 
     elif classification_status == "error":
-
         st.warning(
             "분류 모델 처리에 실패했습니다."
         )
 
-    # --------------------------------------
-    # LLM 답변
-    # --------------------------------------
+    elif classification_status == "skipped" and not is_preview:
+        st.info(
+            "분류를 수행하지 않았습니다."
+        )
 
-    generation_status = generation.get(
-        "status"
-    )
+    # 답변 표시
+    generation_status = generation.get("status")
 
     if generation_status == "success":
-
         answer = generation.get("answer")
 
         if isinstance(answer, str) and answer.strip():
+            if is_stub:
+                answer_title = "**연결 테스트 안내**"
+            elif is_preview:
+                answer_title = "**화면 테스트 안내**"
+            else:
+                answer_title = "**AI 답변**"
 
-            st.markdown("**AI 답변**")
-
+            st.markdown(answer_title)
             st.write(answer)
 
-        next_steps = generation.get(
-            "next_steps", []
-        )
+        next_steps = generation.get("next_steps", [])
 
         if isinstance(next_steps, list) and next_steps:
-
             st.markdown("**다음 단계**")
 
             for step in next_steps:
@@ -273,24 +324,21 @@ def show_reply(data):
                     st.markdown(f"- {step}")
 
     elif generation_status == "timeout":
-
         st.warning(
             "AI 답변 생성 시간이 초과되었습니다. "
             "잠시 후 다시 시도해주세요."
         )
 
     elif generation_status == "error":
-
         st.warning(
             "AI 답변 생성에 실패했습니다. "
             "잠시 후 다시 시도해주세요."
         )
 
     elif generation_status == "skipped":
-
         if status != "demo":
             st.info(
-                "분류 실패로 AI 답변 생성을 "
+                "분류를 수행하지 못해 AI 답변 생성을 "
                 "진행하지 않았습니다."
             )
 
@@ -300,7 +348,6 @@ def show_reply(data):
 # ==========================================
 
 def change_dataset():
-
     st.session_state.selected_dataset = (
         st.session_state._dataset
     )
@@ -314,7 +361,6 @@ def change_dataset():
 # ==========================================
 
 def chat_page():
-
     apply_chat_style()
 
     title_col, button_col = st.columns([4, 1])
@@ -330,12 +376,9 @@ def chat_page():
         "새 질문을 보내면 이전 질문과 답변이 교체됩니다."
     )
 
-    if st.session_state.pop(
-        "settings_saved", False
-    ):
+    if st.session_state.pop("settings_saved", False):
         st.success("설정을 저장했어요.")
 
-    # 데이터셋 선택
     dataset_name = st.radio(
         "데이터셋",
         list(DATASETS),
@@ -348,58 +391,45 @@ def chat_page():
     )
 
     if not st.session_state.app_settings["use_api"]:
-
         st.caption(
             "현재는 모델 없이 화면을 확인하는 "
             "테스트 모드입니다."
         )
 
-    # 사용자 입력
     prompt = st.chat_input(
         "분류할 내용을 입력해주세요.",
         max_chars=MAX_CHARS,
     )
 
     if prompt is not None:
-
         prompt = prompt.strip()
 
         if not prompt or len(prompt) > MAX_CHARS:
-
             st.warning(
                 "공백이 아닌 내용을 "
                 "10,000자 이하로 입력해주세요."
             )
 
         else:
-
-            # 현재 사용자 세션에 저장
+            # 현재 사용자 세션에 질문 저장
             st.session_state.last_exchange = {
                 "question": prompt,
                 "answer": None,
                 "dataset_name": dataset_name,
             }
 
-            # ----------------------------------
-            # API 실행 및 경과 시간 표시
-            # ----------------------------------
-
             with st.spinner(
-                "AI가 답변을 생성하고 있어요. "
+                "요청을 처리하고 있어요. "
                 "잠시만 기다려주세요...",
                 show_time=True,
             ):
-
                 try:
-
                     result = get_reply(
                         prompt,
                         DATASETS[dataset_name],
                     )
 
-                # 서버 연결 Timeout
                 except httpx.ConnectTimeout:
-
                     result = {
                         "error": (
                             "서버 연결 시간이 초과되었습니다. "
@@ -407,19 +437,15 @@ def chat_page():
                         )
                     }
 
-                # 응답 대기 Timeout
                 except httpx.ReadTimeout:
-
                     result = {
                         "error": (
-                            "AI 응답 시간이 초과되었습니다. "
+                            "API 응답 대기 시간이 초과되었습니다. "
                             "잠시 후 다시 시도해주세요."
                         )
                     }
 
-                # 그 외 Timeout
                 except httpx.TimeoutException:
-
                     result = {
                         "error": (
                             "요청 처리 시간이 초과되었습니다. "
@@ -427,20 +453,15 @@ def chat_page():
                         )
                     }
 
-                # HTTP 오류
                 except httpx.HTTPStatusError as exc:
-
                     result = {
                         "error": (
                             "API 요청에 실패했습니다. "
-                            f"응답 코드: "
-                            f"{exc.response.status_code}"
+                            f"응답 코드: {exc.response.status_code}"
                         )
                     }
 
-                # 네트워크 오류
                 except httpx.RequestError:
-
                     result = {
                         "error": (
                             "FastAPI 서버에 연결하지 못했습니다. "
@@ -448,30 +469,22 @@ def chat_page():
                         )
                     }
 
-                # 응답 JSON 오류
                 except (ValueError, TypeError) as exc:
-
                     result = {
                         "error": str(exc)
                     }
 
-            # 사용자 세션에 결과 저장
+            # 현재 사용자 세션에 응답 저장
             st.session_state.last_exchange["answer"] = result
-
-    # --------------------------------------
-    # 질문 및 답변 출력
-    # --------------------------------------
 
     exchange = st.session_state.last_exchange
 
     if exchange is not None:
-
         # 질문: 파란 음영 박스
         with st.container(
             key="question_box",
             border=False,
         ):
-
             st.caption("👤 질문")
             st.text(exchange["question"])
 
@@ -480,7 +493,6 @@ def chat_page():
             key="answer_box",
             border=False,
         ):
-
             st.caption(
                 f"🤖 답변 · 데이터셋: "
                 f"{exchange['dataset_name']}"
@@ -489,10 +501,8 @@ def chat_page():
             result = exchange["answer"]
 
             if isinstance(result, dict):
-
                 if "error" in result:
                     st.error(result["error"])
-
                 else:
                     show_reply(result)
 
@@ -502,7 +512,6 @@ def chat_page():
 # ==========================================
 
 def settings_page():
-
     st.title("⚙️ 설정")
 
     if st.button("← 채팅으로 돌아가기"):
@@ -511,7 +520,6 @@ def settings_page():
     saved = st.session_state.app_settings
 
     with st.form("settings_form"):
-
         use_api = st.checkbox(
             "모델 API 연결",
             value=saved["use_api"],
@@ -523,39 +531,85 @@ def settings_page():
         )
 
         st.caption(
-            "모델이 준비되기 전에는 API 연결을 끄고 "
-            "화면을 테스트하세요."
+            "FastAPI 서버를 실행한 뒤 API 연결을 켜세요. "
+            "모델이 연결되기 전에도 서버 통신을 테스트할 수 있어요."
+        )
+
+        check_connection = st.form_submit_button(
+            "API 연결 확인"
         )
 
         submitted = st.form_submit_button(
             "저장하고 채팅으로 돌아가기"
         )
 
-    if submitted:
+    # 입력한 주소로 서버 연결 확인
+    if check_connection:
+        test_url = api_url.strip().rstrip("/")
 
-        api_url = api_url.strip().rstrip("/")
-
-        try:
-
-            parsed = urlsplit(api_url)
-
-            valid_url = (
-                parsed.scheme in ("http", "https")
-                and bool(parsed.hostname)
+        if not validate_api_url(test_url):
+            st.error(
+                "유효한 http:// 또는 https:// "
+                "API 주소를 입력해주세요."
             )
 
-        except ValueError:
-            valid_url = False
+        else:
+            try:
+                with st.spinner(
+                    "서버 연결을 확인하고 있어요.",
+                    show_time=True,
+                ):
+                    health = check_api_connection(test_url)
+
+                if health.get("mode") == "stub":
+                    st.success(
+                        "FastAPI 연결 성공 · "
+                        "실제 모델은 아직 연결되지 않았습니다."
+                    )
+                else:
+                    st.success(
+                        "FastAPI 서버 연결 성공"
+                    )
+
+                st.caption(
+                    "연결 확인 후 저장 버튼을 눌러 "
+                    "설정을 적용하세요."
+                )
+
+            except httpx.TimeoutException:
+                st.error(
+                    "서버 연결 확인 시간이 초과되었습니다."
+                )
+
+            except httpx.HTTPStatusError as exc:
+                st.error(
+                    "서버 연결 확인 실패 · "
+                    f"응답 코드: {exc.response.status_code}"
+                )
+
+            except httpx.RequestError:
+                st.error(
+                    "FastAPI 서버에 연결하지 못했습니다. "
+                    "주소와 서버 실행 상태를 확인해주세요."
+                )
+
+            except (ValueError, TypeError):
+                st.error(
+                    "서버 상태 응답 형식이 올바르지 않습니다."
+                )
+
+    # 설정 저장
+    if submitted:
+        api_url = api_url.strip().rstrip("/")
+        valid_url = validate_api_url(api_url)
 
         if use_api and not valid_url:
-
             st.error(
                 "API 주소를 http:// 또는 https://로 "
                 "시작하는 주소로 입력해주세요."
             )
 
         else:
-
             updated = {
                 "use_api": use_api,
                 "api_url": api_url,
@@ -566,7 +620,6 @@ def settings_page():
                 st.session_state.last_exchange = None
 
             st.session_state.app_settings = updated
-
             st.session_state.settings_saved = True
 
             st.switch_page(chat_route)
@@ -583,6 +636,12 @@ st.set_page_config(
 )
 
 initialize_session()
+
+# 임시: FastAPI 연결 테스트
+st.session_state.app_settings.update({
+    "use_api": True,
+    "api_url": "http://127.0.0.1:8000",
+})
 
 
 # ==========================================
