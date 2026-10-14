@@ -1,0 +1,81 @@
+{
+  "topic": "documents",
+  "dataset": "basic",
+  "split": "test",
+  "selected_model": null,
+  "evaluated_model": "jev",
+  "official": false,
+  "selected_run": "20261014_112617",
+  "model_id": "jev-1.13.0",
+  "classifier": {
+    "n": 120,
+    "accuracy": 0.975,
+    "macro_f1": 0.9751853893992067,
+    "per_class": {
+      "announcement": {
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1-score": 0.9743589743589743,
+        "support": 40.0
+      },
+      "manual": {
+        "precision": 0.9302325581395349,
+        "recall": 1.0,
+        "f1-score": 0.963855421686747,
+        "support": 40.0
+      },
+      "minutes": {
+        "precision": 1.0,
+        "recall": 0.975,
+        "f1-score": 0.9873417721518988,
+        "support": 40.0
+      },
+      "accuracy": 0.975,
+      "macro avg": {
+        "precision": 0.9767441860465116,
+        "recall": 0.975,
+        "f1-score": 0.9751853893992067,
+        "support": 120.0
+      },
+      "weighted avg": {
+        "precision": 0.9767441860465117,
+        "recall": 0.975,
+        "f1-score": 0.9751853893992067,
+        "support": 120.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        38,
+        2,
+        0
+      ],
+      [
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        1,
+        39
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "announcement",
+        "manual",
+        "minutes"
+      ]
+    }
+  },
+  "baseline": null,
+  "api": {
+    "models_returned": [
+      "jev-1.13.0"
+    ],
+    "loss": 0.09887647447519472
+  }
+}

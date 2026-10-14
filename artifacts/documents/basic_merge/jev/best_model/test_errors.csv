@@ -1,0 +1,10 @@
+﻿id,text,actual,predicted,group_id
+documents-v2-announcement-test-002-v2,"- 미니어처 전시의 조명 밝기를 수요일 개장 전에 낮춘다.
+- 발열에 약한 작품의 위치는 변경 없이 유지한다.
+- 밝기가 부족한 구간은 개장 후 관람 의견을 받아 한 번 더 확인한다.",announcement,manual,documents-v2-announcement-test-002
+documents-v2-announcement-test-002-v1,미니어처 전시의 조명 밝기를 수요일 개장 전에 낮춥니다. 발열에 약한 작품의 위치는 그대로 유지합니다. 밝기가 부족한 구간은 개장 후 관람 의견을 받아 다시 확인합니다.,announcement,manual,documents-v2-announcement-test-002
+documents-v2-minutes-test-009-v2,"체험 진행 용어
+진행자마다 같은 도구를 다른 이름으로 부르는 문제를 살펴봤습니다. 안내 카드에는 공통 이름을 쓰고 익숙한 별칭도 함께 적기로 했습니다. 지역에서 쓰는 이름을 틀렸다고 고치지는 않기로 했습니다.",minutes,manual,documents-v2-minutes-test-009
+documents-v2-announcement-test-024-v2,기차 좌석관의 새 운영 기준입니다. 객차 좌석 도면의 연구 이용 신청은 목적 설명을 함께 받습니다. 접수 뒤 자료 상태를 확인해 제공 여부를 알립니다. 신청 대상이 개인인지 단체인지 확인한 뒤 제공 범위를 정합니다.,announcement,manual,documents-v2-announcement-test-024
+documents-v2-announcement-test-035-v1,한 항목을 확인했다고 전체 자료가 검토된 것으로 안내하지 않습니다. 일행의 예약을 대신 바꾸려면 신청자의 동의 확인이 필요합니다. 옛 가방관 참가자는 신청 내용과 별도로 이 조건을 확인해야 합니다.,announcement,manual,documents-v2-announcement-test-035
+documents-v2-announcement-test-037-v1,전체 동의로 받지 않은 자료는 항목별로 허락받은 부분만 사용합니다. 일행의 예약을 대신 바꾸려면 신청자의 동의 확인이 필요합니다. 공예 손잡이실 참가자는 신청 내용과 별도로 이 조건을 확인해야 합니다.,announcement,manual,documents-v2-announcement-test-037

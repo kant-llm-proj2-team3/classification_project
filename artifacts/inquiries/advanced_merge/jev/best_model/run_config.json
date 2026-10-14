@@ -1,0 +1,53 @@
+{
+  "topic": "inquiries",
+  "dataset": "advanced_merge",
+  "model_key": "jev",
+  "model_id": "jev-1.13.0",
+  "run_name": "20261014_112656",
+  "learning_rate": null,
+  "epochs_max": 0,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 1,
+  "max_length": null,
+  "truncation": null,
+  "seed": null,
+  "labels": [
+    "shipping",
+    "refund",
+    "account"
+  ],
+  "validation_rows": 111,
+  "validation_csv": [
+    "dataset/inquiries/advanced_merge/validation.csv"
+  ],
+  "question": {
+    "type": "choice",
+    "instructions": "이 고객 문의의 주된 요청은 어느 유형에 해당합니까?",
+    "criteria": {
+      "shipping": "배송 진행, 수령 장소, 방법, 운송 및 인도 상태에 대한 문의",
+      "refund": "결제 취소, 반품, 환급 금액, 수단, 처리에 대한 문의",
+      "account": "가입, 로그인, 인증, 회원정보, 계정 권한 및 계정 자료 관리에 대한 문의"
+    }
+  },
+  "option_order": [
+    "shipping",
+    "refund",
+    "account"
+  ],
+  "api": {
+    "host": "api.typesafe.ai",
+    "endpoint": "/v1/systemone",
+    "model_requested": "jev-1.13.0",
+    "models_returned": [
+      "jev-1.13.0"
+    ],
+    "concurrency": 8,
+    "timeout": 60.0,
+    "max_retries": 5,
+    "loss_floor": 1e-06
+  },
+  "device": "remote (TypeSafe API)",
+  "gpu": null,
+  "python": "3.12.10",
+  "httpx": "0.28.1"
+}

@@ -1,0 +1,155 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261014_112646",
+  "generated_at": "2026-10-14 11:26:49",
+  "hyperparameters": {
+    "seed": null,
+    "max_length": null,
+    "truncation": null,
+    "head_tokens": null,
+    "weight_decay": null,
+    "warmup_ratio": null,
+    "gradient_checkpointing": null,
+    "precision": null,
+    "early_stopping_patience": null,
+    "target_macro_f1": null,
+    "stop_reason": "학습 없음 (API 평가)",
+    "optimizer_steps_at_checkpoint": null,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": "remote (TypeSafe API)",
+    "gpu": null,
+    "python": "3.12.10",
+    "torch": null,
+    "transformers": null,
+    "sklearn": null
+  },
+  "data": {
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_csv": null,
+    "validation_csv": [
+      "dataset/inquiries/basic/validation.csv"
+    ],
+    "truncated_rows": null
+  },
+  "validation_detail": {
+    "per_class": {
+      "shipping": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "refund": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "account": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      }
+    }
+  },
+  "epochs": [],
+  "training_summary": {
+    "model_key": "jev",
+    "model_id": "jev-1.13.0",
+    "run_name": "20261014_112646",
+    "learning_rate": null,
+    "best_epoch": 0,
+    "validation_macro_f1": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_loss": 0.011451008390507488,
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 21.66000349996466,
+    "peak_gpu_memory_mb": null,
+    "train_rows": 0,
+    "validation_rows": 120,
+    "epochs_run": 0,
+    "epochs_max": 0,
+    "stop_reason": "학습 없음 (API 평가)",
+    "wall_seconds": 2.7832606000010855,
+    "requests_sent": 120,
+    "requests_cached": 0,
+    "sent_input_tokens": 54958,
+    "api_requests": 120,
+    "api_input_tokens": 54958,
+    "api_output_tokens": 4560,
+    "api_cost_usd": 0.002308
+  },
+  "run_config": {
+    "topic": "inquiries",
+    "dataset": "basic",
+    "model_key": "jev",
+    "model_id": "jev-1.13.0",
+    "run_name": "20261014_112646",
+    "learning_rate": null,
+    "epochs_max": 0,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 1,
+    "max_length": null,
+    "truncation": null,
+    "seed": null,
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "validation_rows": 120,
+    "validation_csv": [
+      "dataset/inquiries/basic/validation.csv"
+    ],
+    "question": {
+      "type": "choice",
+      "instructions": "이 고객 문의의 주된 요청은 어느 유형에 해당합니까?",
+      "criteria": {
+        "shipping": "배송 진행, 수령 장소, 방법, 운송 및 인도 상태에 대한 문의",
+        "refund": "결제 취소, 반품, 환급 금액, 수단, 처리에 대한 문의",
+        "account": "가입, 로그인, 인증, 회원정보, 계정 권한 및 계정 자료 관리에 대한 문의"
+      }
+    },
+    "option_order": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "api": {
+      "host": "api.typesafe.ai",
+      "endpoint": "/v1/systemone",
+      "model_requested": "jev-1.13.0",
+      "models_returned": [
+        "jev-1.13.0"
+      ],
+      "concurrency": 8,
+      "timeout": 60.0,
+      "max_retries": 5,
+      "loss_floor": 1e-06
+    },
+    "device": "remote (TypeSafe API)",
+    "gpu": null,
+    "python": "3.12.10",
+    "httpx": "0.28.1"
+  }
+}
