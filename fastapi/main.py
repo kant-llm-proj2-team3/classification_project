@@ -3,6 +3,7 @@ import uuid
 from contextlib import asynccontextmanager
 from typing import Annotated, Literal
 
+from admin import router as admin_router
 from chain import create_chain
 from classifier import close_classifiers, load_classifier
 from generator import OpenAIGenerator
@@ -70,6 +71,7 @@ def request_sink(record: dict) -> None:
 
 
 app.add_middleware(RequestTrackingMiddleware, sink=request_sink)
+app.include_router(admin_router)
 
 
 def get_chain(request: Request) -> Runnable:
