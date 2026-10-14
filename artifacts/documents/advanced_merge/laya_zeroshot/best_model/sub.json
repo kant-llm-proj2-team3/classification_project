@@ -34,7 +34,8 @@
     "train_csv": null,
     "validation_csv": null,
     "truncated_rows": {
-      "validation": 0
+      "validation": 0,
+      "test": 0
     }
   },
   "validation_detail": {

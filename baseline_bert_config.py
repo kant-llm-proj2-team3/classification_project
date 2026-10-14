@@ -36,6 +36,15 @@ DATASET_SWITCH = {
     "inquiries": {"basic": True, "basic_merge": True, "advanced": True, "advanced_merge": True, "total_merge": True},
     "documents": {"basic": True, "basic_merge": True, "advanced": True, "advanced_merge": True, "total_merge": True},
 }
+# 다른 팀원이 직접 학습해서 결과만 넘겨 주는 모델. 우리 코드는 이 모델을 학습하거나 test 를 직접 평가하지 않고,
+# artifacts/<주제>/<데이터셋>/<모델>/best_model/ 에 있는 결과 파일(main.json 등)만 읽습니다.
+# 이 모델들은 모델 추천(3번), test 비교(8번), 그래프(7번)에 함께 들어갑니다.
+# 폴더 이름은 소문자 모델 이름입니다. True = 사용, False = 무시 (폴더가 없어도 오류 없이 건너뜀).
+# 초기화(2번)는 이 폴더를 지우지 않습니다.
+EXTERNAL_MODELS = {"laya": True, "jev": True, "clm": True}
+# 모델 추천(최종 모델 선정)에서 빼고 baseline 처럼 표에 참고용으로만 넣는 외부 모델. (baseline 은 항상 참고용)
+# 여기 적힌 모델은 validation 결과가 없어도 되고, test 결과만 있어도 표와 그래프에 들어갑니다.
+RECOMMEND_REFERENCE_ONLY = ("jev",)
 RECOMMEND_EXCLUDED = ("total_merge",)               # 모델 추천(메뉴 3번·8번)에서 빠지는 데이터셋. 이런 데이터셋은 test 를 4개 모델 모두 평가합니다.
 
 # ───────────────────────── 데이터 파일 ─────────────────────────

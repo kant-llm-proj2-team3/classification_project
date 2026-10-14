@@ -1,0 +1,138 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "jev",
+  "model_id": "jev-1.13.0",
+  "topic": "documents",
+  "dataset": "advanced",
+  "dataset_id": "documents/advanced",
+  "run_id": "20261014_112704",
+  "train": {
+    "fine_tuned": false,
+    "api_model": "jev-1.13.0"
+  },
+  "input": {
+    "train_rows": 0,
+    "validation_rows": 60,
+    "test_rows": 60
+  },
+  "validation": {
+    "n": 60,
+    "correct": 52,
+    "accuracy": 0.8666666666666667,
+    "macro_f1": 0.8646723646723647,
+    "loss": 0.2956263961397374,
+    "per_label": {
+      "announcement": {
+        "correct": 17,
+        "n": 20,
+        "f1": 0.8717948717948718
+      },
+      "manual": {
+        "correct": 15,
+        "n": 20,
+        "f1": 0.8333333333333334
+      },
+      "minutes": {
+        "correct": 20,
+        "n": 20,
+        "f1": 0.8888888888888888
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        17,
+        1,
+        2
+      ],
+      [
+        2,
+        15,
+        3
+      ],
+      [
+        0,
+        0,
+        20
+      ]
+    ]
+  },
+  "test": {
+    "n": 60,
+    "correct": 51,
+    "accuracy": 0.85,
+    "macro_f1": 0.8503335417969563,
+    "loss": null,
+    "per_label": {
+      "announcement": {
+        "correct": 16,
+        "n": 20,
+        "f1": 0.8205128205128205
+      },
+      "manual": {
+        "correct": 19,
+        "n": 20,
+        "f1": 0.95
+      },
+      "minutes": {
+        "correct": 16,
+        "n": 20,
+        "f1": 0.7804878048780488
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        16,
+        0,
+        4
+      ],
+      [
+        0,
+        19,
+        1
+      ],
+      [
+        3,
+        1,
+        16
+      ]
+    ]
+  },
+  "test_meta": {
+    "official": false,
+    "evaluated_at": "2026-10-14 11:27:37"
+  },
+  "cost": {
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 11.022351400002663,
+    "test_inference_seconds": 11.513,
+    "peak_gpu_mb": null,
+    "num_parameters": null,
+    "model_size_mb": null,
+    "api_requests": 60,
+    "api_input_tokens": 60322,
+    "api_output_tokens": 2280,
+    "api_cost_usd": 0.002534,
+    "api_test_requests": 60,
+    "api_test_input_tokens": 60911,
+    "api_test_output_tokens": 2280,
+    "api_test_cost_usd": 0.002558
+  },
+  "curve": null,
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": "test_predictions.csv",
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

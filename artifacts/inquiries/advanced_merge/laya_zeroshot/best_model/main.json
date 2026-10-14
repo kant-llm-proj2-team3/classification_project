@@ -13,7 +13,7 @@
   "input": {
     "train_rows": 0,
     "validation_rows": 111,
-    "test_rows": null
+    "test_rows": 111
   },
   "validation": {
     "n": 111,
@@ -61,12 +61,60 @@
       ]
     ]
   },
-  "test": null,
-  "test_meta": null,
+  "test": {
+    "n": 111,
+    "correct": 58,
+    "accuracy": 0.5225225225225225,
+    "macro_f1": 0.5330128205128205,
+    "loss": null,
+    "per_label": {
+      "shipping": {
+        "correct": 18,
+        "n": 37,
+        "f1": 0.46153846153846156
+      },
+      "refund": {
+        "correct": 18,
+        "n": 37,
+        "f1": 0.45
+      },
+      "account": {
+        "correct": 22,
+        "n": 37,
+        "f1": 0.6875
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        18,
+        17,
+        2
+      ],
+      [
+        16,
+        18,
+        3
+      ],
+      [
+        7,
+        8,
+        22
+      ]
+    ]
+  },
+  "test_meta": {
+    "official": false,
+    "evaluated_at": "2026-10-14 10:43:43"
+  },
   "cost": {
     "train_seconds": 0.0,
     "validation_inference_seconds": 4.469234100077301,
-    "test_inference_seconds": null,
+    "test_inference_seconds": 3.537,
     "peak_gpu_mb": 3180.77099609375,
     "num_parameters": 321908998,
     "model_size_mb": 614.0
@@ -75,7 +123,7 @@
   "files": {
     "sub": "sub.json",
     "validation_predictions": "validation_predictions.csv",
-    "test_predictions": null,
+    "test_predictions": "test_predictions.csv",
     "validation_errors": "validation_errors.csv",
     "log": "train.log"
   }

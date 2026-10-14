@@ -1,0 +1,16 @@
+﻿id,text,actual,predicted,group_id
+documents-v2-announcement-validation-012-v2,무거운 교구를 옮길 바퀴 달린 상자 세 개를 새로 마련했다. 이용자는 상자를 반납할 때 내부가 비었는지 확인한다. 상자에 표시된 적재 한도를 넘겨 싣지 않는다.,announcement,manual,documents-v2-announcement-validation-012
+documents-v2-announcement-validation-011-v2,전시 자료 중 복제본에는 다음 주부터 회색 표식을 붙입니다. 원본의 표기 방식은 변경 없이 유지합니다. 이전에 배부한 안내 카드도 표식 설명에 맞춰 고칩니다.,announcement,manual,documents-v2-announcement-validation-011
+documents-v2-minutes-validation-005-v1,인쇄 자료의 오류를 페이지마다 따로 알리는 불편을 검토했다. 한 장의 정오표에 오류 위치와 수정 내용을 모으기로 했다. 수정이 필요 없는 본문을 다시 인쇄하지 않기로 했다.,minutes,manual,documents-v2-minutes-validation-005
+documents-v2-announcement-validation-011-v1,"복제 자료 구분
+- 전시 자료 중 복제본에는 다음 주부터 회색 표식을 붙인다.
+- 원본의 표기 방식은 그대로 유지한다.
+- 이전에 배부한 안내 카드도 표식 설명에 맞춰 고친다.",announcement,manual,documents-v2-announcement-validation-011
+documents-v2-announcement-validation-001-v1,접착 중인 모형 작품을 보관하는 건조실은 다음 주에 낮은 풍량으로 운영한다. 작업자는 건조 예상 시간을 다시 확인한다. 재료별 완성 시점을 운영실에서 일괄 보장하지는 않는다.,announcement,minutes,documents-v2-announcement-validation-001
+documents-v2-manual-validation-020-v2,행사 뒤 들어온 질문은 답변할 담당이 정해진 건과 미배정 건으로 나눈다. 미배정 건은 담당 지정부터 요청한다. 접수되었다는 이유만으로 답변 완료로 표시하지 않는다.,manual,minutes,documents-v2-manual-validation-020
+documents-v2-minutes-validation-005-v2,"자료 정오표 방식
+인쇄 자료의 오류를 페이지마다 따로 알리는 불편을 살펴봤습니다. 한 장의 정오표에 오류 위치와 수정 내용을 모으기로 했습니다. 수정이 필요 없는 본문을 다시 인쇄하지 않기로 했습니다.",minutes,manual,documents-v2-minutes-validation-005
+documents-v2-announcement-validation-004-v1,"- 공동 일지의 개인 경험 부분은 작성자의 열람 동의를 받은 뒤 공개합니다.
+- 동의 요청은 다음 주에 개별 전달합니다.
+- 응답하지 않았다는 이유만으로 공개에 동의한 것으로 처리하지 않습니다.",announcement,minutes,documents-v2-announcement-validation-004
+documents-v2-announcement-validation-008-v2,축제에 쓴 재사용 장식은 해체한 상태로 별관 창고에 보관한다. 다음 행사에서 사용할 팀은 수량 확인을 먼저 요청한다. 낡은 장식의 교체 여부는 아직 결정하지 않았다.,announcement,minutes,documents-v2-announcement-validation-008

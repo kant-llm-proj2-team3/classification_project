@@ -1,0 +1,3 @@
+﻿id,text,actual,predicted,group_id
+inquiries-v2-refund-validation-026-v1,서로 다른 거래를 중복 반환으로 오해하지 않도록 원거래 연결을 확인하려 합니다. 다온자료상점에서 신청한 공예용 실 고리 건입니다. 발송 직전 사진과 구매 때 전달받은 식별 정보를 갖고 있습니다. 제가 직접 받는 주문입니다. 이 조건에서 출고 자료와 검수 기록을 대조하는 이의 절차를 알려 주세요.,refund,shipping,inquiries-v2-refund-validation-026
+inquiries-v2-refund-validation-027-v1,어떤 상태와 구성품을 보여 줘야 하는지 서면 안내를 받을 수 있나요? 참고로 현재 접수에서 어느 확인이 남았는지 담당별 처리 기록을 요청하고 싶습니다. 누리전시몰에서 신청한 도구 분류 상자 건입니다. 제품 상태는 그대로 보관 중이고 필요한 확인을 숨기려는 것은 아닙니다. 공동 작업에 쓰려고 신청한 물품입니다.,refund,shipping,inquiries-v2-refund-validation-027

@@ -1,0 +1,186 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "clm",
+  "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+  "topic": "inquiries",
+  "dataset": "basic",
+  "dataset_id": "inquiries/basic",
+  "run_id": "20261014_101507",
+  "train": {
+    "learning_rate": 0.0005,
+    "epochs_max": 20,
+    "epochs_run": 17,
+    "best_epoch": 17,
+    "batch_size": 256,
+    "accumulation_steps": 1,
+    "effective_batch": 256,
+    "loss": "infonce",
+    "max_len": 2048,
+    "fine_tuned": true
+  },
+  "input": {
+    "train_rows": 360,
+    "validation_rows": 120,
+    "test_rows": null
+  },
+  "validation": {
+    "n": 120,
+    "correct": 118,
+    "accuracy": 0.9833333333333333,
+    "macro_f1": 0.9833320310465177,
+    "loss": 0.1596076339483261,
+    "per_label": {
+      "shipping": {
+        "correct": 39,
+        "n": 40,
+        "f1": 0.9873417721518988
+      },
+      "refund": {
+        "correct": 39,
+        "n": 40,
+        "f1": 0.975
+      },
+      "account": {
+        "correct": 40,
+        "n": 40,
+        "f1": 0.9876543209876543
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        39,
+        1,
+        0
+      ],
+      [
+        0,
+        39,
+        1
+      ],
+      [
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "test": null,
+  "test_meta": null,
+  "cost": {
+    "train_seconds": 2.4728898999965168,
+    "validation_inference_seconds": 5.007279484321771,
+    "test_inference_seconds": null,
+    "peak_gpu_mb": 5289.0,
+    "num_parameters": 8209623041,
+    "model_size_mb": 4866.9
+  },
+  "curve": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "train_loss": [
+      3.285654,
+      3.149205,
+      2.962146,
+      2.815636,
+      2.695858,
+      2.598102,
+      2.525424,
+      2.437989,
+      2.387899,
+      2.350739,
+      2.319648,
+      2.295422,
+      2.270923,
+      2.248246,
+      2.254895,
+      2.246404,
+      2.231263
+    ],
+    "val_loss": [
+      0.924675,
+      0.798272,
+      0.709075,
+      0.636377,
+      0.523971,
+      0.445242,
+      0.381731,
+      0.336202,
+      0.294682,
+      0.251577,
+      0.21871,
+      0.198268,
+      0.183317,
+      0.172812,
+      0.165985,
+      0.161896,
+      0.159608
+    ],
+    "val_macro_f1": [
+      0.459332,
+      0.768665,
+      0.892148,
+      0.908798,
+      0.949776,
+      0.941307,
+      0.958215,
+      0.958215,
+      0.974996,
+      0.974893,
+      0.974893,
+      0.983332,
+      0.983332,
+      0.983332,
+      0.983332,
+      0.983332,
+      0.983332
+    ],
+    "val_correct": [
+      60,
+      93,
+      107,
+      109,
+      114,
+      113,
+      115,
+      115,
+      117,
+      117,
+      117,
+      118,
+      118,
+      118,
+      118,
+      118,
+      118
+    ]
+  },
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": null,
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

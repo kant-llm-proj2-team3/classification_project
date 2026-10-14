@@ -1,0 +1,75 @@
+{
+  "topic": "inquiries",
+  "dataset": "advanced_merge",
+  "split": "test",
+  "selected_model": null,
+  "evaluated_model": "laya_zeroshot",
+  "official": false,
+  "selected_run": "20261013_162307",
+  "model_id": "convaiinnovations/laya (multilingual)",
+  "classifier": {
+    "n": 111,
+    "accuracy": 0.5225225225225225,
+    "macro_f1": 0.5330128205128205,
+    "per_class": {
+      "shipping": {
+        "precision": 0.43902439024390244,
+        "recall": 0.4864864864864865,
+        "f1-score": 0.46153846153846156,
+        "support": 37.0
+      },
+      "refund": {
+        "precision": 0.4186046511627907,
+        "recall": 0.4864864864864865,
+        "f1-score": 0.45,
+        "support": 37.0
+      },
+      "account": {
+        "precision": 0.8148148148148148,
+        "recall": 0.5945945945945946,
+        "f1-score": 0.6875,
+        "support": 37.0
+      },
+      "accuracy": 0.5225225225225225,
+      "macro avg": {
+        "precision": 0.5574812854071692,
+        "recall": 0.5225225225225225,
+        "f1-score": 0.5330128205128205,
+        "support": 111.0
+      },
+      "weighted avg": {
+        "precision": 0.5574812854071693,
+        "recall": 0.5225225225225225,
+        "f1-score": 0.5330128205128205,
+        "support": 111.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        18,
+        17,
+        2
+      ],
+      [
+        16,
+        18,
+        3
+      ],
+      [
+        7,
+        8,
+        22
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "shipping",
+        "refund",
+        "account"
+      ]
+    }
+  },
+  "baseline": null
+}

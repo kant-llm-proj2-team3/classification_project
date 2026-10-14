@@ -1,0 +1,69 @@
+{
+  "topic": "inquiries",
+  "dataset": "total_merge",
+  "model_key": "clm",
+  "selection_rule": "validation Macro-F1 이 높은 쪽, 동점이면 validation loss 가 낮은 쪽. 더 좋아졌을 때만 best_model 을 교체한다. (test 점수는 사용하지 않음)",
+  "best": {
+    "model_key": "clm",
+    "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+    "run_name": "20261014_103332",
+    "learning_rate": 0.0005,
+    "best_epoch": 20,
+    "validation_macro_f1": 0.9758454834925424,
+    "validation_accuracy": 0.9758308157099698,
+    "validation_loss": 0.09130995720624924,
+    "train_seconds": 22.761425199998484,
+    "validation_inference_seconds": 28.4129348298884,
+    "peak_gpu_memory_mb": 5283.0,
+    "train_rows": 990,
+    "validation_rows": 331,
+    "epochs_run": 20,
+    "epochs_max": 20,
+    "stop_reason": "최대 에폭(20) 도달",
+    "embed_seconds_train": 82.56908589601517,
+    "embed_seconds_validation": 28.38889322988689,
+    "num_parameters": 8209623041,
+    "model_size_mb": 4866.9,
+    "head_parameters": 18887681,
+    "head_size_mb": 72.1,
+    "encoder_parameters": 8190735360,
+    "encoder_size_mb": 4794.9
+  },
+  "last_run": {
+    "run_name": "20261014_103332",
+    "replaced_best": true,
+    "reason": "validation Macro-F1 0.9758 > 이전 best 0.9394 (20261014_101706)",
+    "validation_macro_f1": 0.9758454834925424,
+    "validation_loss": 0.09130995720624924
+  },
+  "previous_best": {
+    "run_name": "20261014_101706",
+    "validation_macro_f1": 0.9394163062847224,
+    "validation_loss": 0.2581579089164734
+  },
+  "runs": [
+    {
+      "run_name": "20261014_103332",
+      "learning_rate": 0.0005,
+      "best_epoch": 20,
+      "validation_macro_f1": 0.9758454834925424,
+      "validation_accuracy": 0.9758308157099698,
+      "validation_loss": 0.09130995720624924,
+      "train_seconds": 22.761425199998484,
+      "peak_gpu_memory_mb": 5283.0,
+      "is_best": true
+    },
+    {
+      "run_name": "20261014_101706",
+      "learning_rate": 0.0005,
+      "best_epoch": 20,
+      "validation_macro_f1": 0.9394163062847224,
+      "validation_accuracy": 0.9395770392749244,
+      "validation_loss": 0.2581579089164734,
+      "train_seconds": 4.637470400004531,
+      "peak_gpu_memory_mb": 5289.0,
+      "is_best": false
+    }
+  ],
+  "updated_at": "2026-10-14 10:33:55"
+}

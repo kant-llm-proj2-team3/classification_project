@@ -1,0 +1,5 @@
+﻿id,text,actual,predicted,group_id
+inquiries-v2-account-test-020-v2,가득 찬 메일함을 비워 일반 메일은 오는데 계정 알림은 멈췄고 배달 실패 표시도 남아 있어요. 주소를 유지하며 수신을 재개하려면 어떻게 하나요?,account,shipping,inquiries-v2-account-test-020
+inquiries-v2-account-test-012-v2,팀 자료 열람 권한을 신청하려는데 소유자만 받는지 관리자 모두가 보는지 모르겠어요. 신청 사유를 적기 전에 전달 대상을 확인할 수 있나요?,account,shipping,inquiries-v2-account-test-012
+inquiries-v2-account-test-006-v2,저장한 녹음은 계속 보관하되 서비스 개선용 활용 동의만 철회하고 싶어요. 원본 삭제 없이 보관과 활용 동의를 따로 관리할 수 있나요?,account,shipping,inquiries-v2-account-test-006
+inquiries-v2-refund-test-007-v2,유료 우선 예약 옵션을 샀지만 따로 먼저 접수하는 시간은 없었습니다. 행사에는 참가합니다. 일반 참가비는 두고 미제공 옵션 비용만 돌려받을 수 있나요?,refund,shipping,inquiries-v2-refund-test-007

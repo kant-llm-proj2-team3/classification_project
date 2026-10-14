@@ -1,19 +1,31 @@
 {
   "topic": "inquiries",
   "dataset": "advanced",
-  "recommended_model": "bert",
-  "model_id": "klue/bert-base",
-  "run_name": "20261013_161215",
-  "learning_rate": 3e-05,
+  "recommended_model": "laya",
+  "model_id": "convaiinnovations/laya (multilingual)",
+  "run_name": "20261013_161425",
+  "learning_rate": 2.5e-05,
   "selection_rule": "각 모델 best_model 의 validation Macro-F1 (동점: validation loss, 그다음 학습 시간). test 점수는 사용하지 않음.",
-  "reason": "validation Macro-F1 이 1.0000로 roberta와 동점이라 validation loss(0.0028 vs 0.0079)로 결정했습니다.",
-  "notes": [],
+  "reason": "validation Macro-F1 이 1.0000로 bert와 동점이라 validation loss(0.0000 vs 0.0028)로 결정했습니다.",
+  "notes": [
+    "이미 ['bert', 'roberta', 'koelectra'] 의 test 평가가 끝나 있습니다. 추천이 바뀌었다면 test 이후에 모델을 다시 고른 셈이므로 기존 test 결과와 추가 실험을 구분해 기록하세요."
+  ],
   "validation_macro_f1": 1.0,
   "compared_models": [
+    "laya",
     "bert",
     "roberta",
-    "koelectra"
+    "koelectra",
+    "clm"
   ],
   "baseline_reference_validation_macro_f1": 0.7326007326007327,
-  "created_at": "2026-10-13 16:59:26"
+  "external_models": [
+    "laya",
+    "clm"
+  ],
+  "reference_only_models": [
+    "baseline",
+    "jev"
+  ],
+  "created_at": "2026-10-14 12:34:56"
 }

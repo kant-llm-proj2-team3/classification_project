@@ -1,0 +1,75 @@
+{
+  "topic": "inquiries",
+  "dataset": "basic",
+  "split": "test",
+  "selected_model": null,
+  "evaluated_model": "clm_zeroshot",
+  "official": false,
+  "selected_run": "20261014_101501",
+  "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+  "classifier": {
+    "n": 120,
+    "accuracy": 0.4083333333333333,
+    "macro_f1": 0.3096821830798308,
+    "per_class": {
+      "shipping": {
+        "precision": 0.37383177570093457,
+        "recall": 1.0,
+        "f1-score": 0.54421768707483,
+        "support": 40.0
+      },
+      "refund": {
+        "precision": 0.3333333333333333,
+        "recall": 0.05,
+        "f1-score": 0.08695652173913043,
+        "support": 40.0
+      },
+      "account": {
+        "precision": 1.0,
+        "recall": 0.175,
+        "f1-score": 0.2978723404255319,
+        "support": 40.0
+      },
+      "accuracy": 0.4083333333333333,
+      "macro avg": {
+        "precision": 0.569055036344756,
+        "recall": 0.4083333333333334,
+        "f1-score": 0.3096821830798308,
+        "support": 120.0
+      },
+      "weighted avg": {
+        "precision": 0.5690550363447558,
+        "recall": 0.4083333333333333,
+        "f1-score": 0.3096821830798308,
+        "support": 120.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0
+      ],
+      [
+        38,
+        2,
+        0
+      ],
+      [
+        29,
+        4,
+        7
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "shipping",
+        "refund",
+        "account"
+      ]
+    }
+  },
+  "baseline": null
+}
