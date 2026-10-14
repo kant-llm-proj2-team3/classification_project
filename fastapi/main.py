@@ -52,8 +52,17 @@ async def health() -> dict:
 
 
 @app.post("/chat")
-async def chat(
-    body: ChatRequest,
-    chain: Annotated[Runnable, Depends(get_chain)],
-) -> dict:
-    return await chain.ainvoke(body.model_dump())
+async def chat(body: ChatRequest) -> dict:
+    # 랭체인 연결 전에 요청 수신과 응답 반환을 확인한다.
+    return {
+        "status": "ok",
+        "message": "요청을 정상적으로 받았습니다.",
+        "dataset": body.dataset,
+        "text": body.text,
+    }
+
+# async def chat(
+#     body: ChatRequest,
+#     chain: Annotated[Runnable, Depends(get_chain)],
+# ) -> dict:
+#     return await chain.ainvoke(body.model_dump())
