@@ -19,6 +19,7 @@ dependencies = [
   "huggingface-hub>=0.36.2",
   "laya>=0.4.4",
   "streamlit>=1.65.0",
+  "matplotlib>=3.11.2",
 ]
 
 [dependency-groups]
