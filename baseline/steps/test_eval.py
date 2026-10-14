@@ -11,7 +11,7 @@
   test_errors.csv         : test 에서 틀린 문장
   test_predictions.csv    : test 모든 문장의 예측 (팀원과 비교용)
   main.json 의 test 칸    : 몇 문제 중 몇 개 정답, F1 등 (+ test_meta 에 공식 여부)
-모델별 test 비교표는 화면에만 출력하고 파일로는 저장하지 않는다. (모아 볼 때는 artifacts/viz 의 all_main.csv 를 쓴다)
+모델별 test 비교표는 화면에만 출력하고 파일로는 저장하지 않는다. (그래프는 make_charts.py 가 main.json 으로 만든다)
 """
 import sys
 import time
@@ -40,10 +40,21 @@ def _predict(model_key, best, rows, labels):
     return model.predict(texts).tolist(), probabilities, seconds, None
 
 
-def write_test_comparison(topic, dataset):
+def external_status(topic, dataset, selected=None):
+    """외부 모델(팀원 제공)의 test 결과가 main.json 에 있는지 화면에 알려 준다. 우리 코드는 외부 모델의 test 를 직접 평가하지 않는다."""
+    for key in common.EXTERNAL_KEYS:
+        path = common.best_dir(key, topic, dataset) / "main.json"
+        if not path.exists():
+            print(f"  [{key}(외부)] 결과 파일이 없어 비교에서 빠집니다.")
+        elif not common.load_json(path).get("test"):
+            warn = "  <- 공식 모델인데 test 결과가 없습니다. 팀원에게 main.json 의 test 칸을 채워 달라고 요청하세요" if key == selected else ""
+            print(f"  [{key}(외부)] test 결과가 main.json 에 아직 없습니다.{warn}")
+
+
+def write_test_comparison(topic, dataset, selected=None):
     """각 모델 best_model 의 main.json 에 있는 test 점수를 모아 비교표를 화면에 출력한다. (이미 평가한 모델도 포함. 파일로는 저장하지 않는다)"""
     rows = []
-    for key in common.ALL_MODEL_KEYS:
+    for key in common.RESULT_MODEL_KEYS:
         path = common.best_dir(key, topic, dataset) / "main.json"
         if not path.exists():
             continue
@@ -53,8 +64,9 @@ def write_test_comparison(topic, dataset):
             continue
         rows.append({"model_name": key, "run_id": main["run_id"], "test_n": test["n"],
                      "test_correct": test["correct"], "test_accuracy": test["accuracy"],
-                     "test_macro_f1": test["macro_f1"], "validation_macro_f1": main["validation"]["macro_f1"],
-                     "official": (main.get("test_meta") or {}).get("official"),
+                     "test_macro_f1": test["macro_f1"], "validation_macro_f1": (main.get("validation") or {}).get("macro_f1"),
+                     "official": ((selected == key) if (common.is_external(key) and selected)
+                                   else (main.get("test_meta") or {}).get("official")),
                      "test_inference_seconds": main["cost"].get("test_inference_seconds")})
     if rows:
         print(f"\n  [test 비교표] {topic}/{dataset}")
@@ -63,7 +75,7 @@ def write_test_comparison(topic, dataset):
             tag = "공식" if row["official"] else ("참고" if row["official"] is not None else "-")
             print(f"  {row['model_name']:<12}{row['run_id']:<17}"
                   f"{str(row['test_correct']) + '/' + str(row['test_n']):>12}{row['test_macro_f1']:>9.4f}"
-                  f"{row['validation_macro_f1']:>15.4f}  {tag}")
+                  f"{common._fmt(row['validation_macro_f1'], '.4f'):>15}  {tag}")
     return rows
 
 
@@ -80,11 +92,11 @@ def evaluate_test(topic, dataset, mode="recommended"):
             raise RuntimeError("추천 결과가 없습니다. 먼저 3번(모델 추천)을 실행하세요.")
         recommendation = common.load_json(recommendation_path)
         selected, selected_run = recommendation["recommended_model"], recommendation["run_name"]
-        info = common.read_best_info(selected, topic, dataset)
-        if info is None or info["best"]["run_name"] != selected_run:
+        current = common.read_candidate(selected, topic, dataset)
+        if current is None or current["run_name"] != selected_run:
             raise RuntimeError(f"추천 이후 {selected} 의 best_model 이 바뀌었습니다. 3번(모델 추천)을 다시 실행하세요.")
         selected_path = common.best_dir(selected, topic, dataset) / "test_metrics.json"
-        if mode == "recommended" and selected_path.exists():
+        if mode == "recommended" and selected_path.exists() and not common.is_external(selected):
             raise FileExistsError(f"test 결과가 이미 있습니다. 덮어쓰지 않습니다: {selected_path}")
 
     if excluded:
@@ -98,7 +110,11 @@ def evaluate_test(topic, dataset, mode="recommended"):
     actual = [label2id[row[cfg.LABEL_COLUMN]] for row in test_rows]
 
     outcomes = {}   # 모델 키 -> (best 요약, (예측, 확률, 시간, 잘린 행 수))
-    for key in ([selected] if mode == "recommended" else list(common.TRANSFORMER_KEYS)):
+    if mode == "recommended":
+        keys = [] if common.is_external(selected) else [selected]   # 외부 모델이 공식이면 우리가 평가할 모델은 없다(baseline 만 평가)
+    else:
+        keys = list(common.TRANSFORMER_KEYS)
+    for key in keys:
         best = common.best_dir(key, topic, dataset)
         best_info = common.read_best_info(key, topic, dataset)
         if best_info is None:
@@ -137,7 +153,8 @@ def evaluate_test(topic, dataset, mode="recommended"):
         print(f"  [{key}] test macro F1 {scores[key]['macro_f1']:.4f} (accuracy {scores[key]['accuracy']:.4f}){tag}")
         print(f"  [{key}] test 정답: {common.format_correct(scores[key], labels)}")
 
-    write_test_comparison(topic, dataset)
+    write_test_comparison(topic, dataset, selected)
+    external_status(topic, dataset, selected)
     if excluded:
         print("\n  [참고] 이 데이터셋은 모델 추천 대상이 아니라 서버용입니다. 4개 모델을 같은 조건으로 평가했고, 공식 모델 표시는 하지 않았습니다.")
         return scores

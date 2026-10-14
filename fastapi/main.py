@@ -52,8 +52,20 @@ async def health() -> dict:
 
 
 @app.post("/chat")
-async def chat(
-    body: ChatRequest,
-    chain: Annotated[Runnable, Depends(get_chain)],
-) -> dict:
-    return await chain.ainvoke(body.model_dump())
+async def chat(body: ChatRequest) -> dict:
+    # 프론트에 테스트 응답을 반환한다.
+    return {
+        "status": "success",
+        "classification": {"status": "skipped"},
+        "generation": {
+            "status": "success",
+            "answer": "요청을 정상적으로 받았습니다.",
+            "next_steps": [],
+        },
+    }
+
+# async def chat(
+#     body: ChatRequest,
+#     chain: Annotated[Runnable, Depends(get_chain)],
+# ) -> dict:
+#     return await chain.ainvoke(body.model_dump())

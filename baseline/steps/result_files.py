@@ -296,70 +296,59 @@ def rebuild_result_files(topic, dataset, with_predictions=True):
             print(f"  {key:<10} main/sub 새로 만든 폴더 {made}개 (전체 {len(folders)}개){note}")
 
 
-# ═════════════════════════ 4. 시각화용으로 한 곳에 모으기 ═════════════════════════
-FLAT_FIELDS = (["model_name", "model_id", "topic", "dataset", "run_id", "learning_rate", "epochs_run", "best_epoch",
-                "validation_n", "validation_correct", "validation_accuracy", "validation_macro_f1", "validation_loss",
-                "test_n", "test_correct", "test_accuracy", "test_macro_f1", "test_official"] + COST_FIELDS)
+# ═════════════════════════ 4. 그래프용으로 main.json 읽기 (CSV 표는 만들지 않는다) ═════════════════════════
 
 
-def flatten_main(main):
-    validation, test, train = main["validation"], main.get("test") or {}, main["train"]
-    row = {"model_name": main["model_name"], "model_id": main["model_id"], "topic": main["topic"],
-           "dataset": main["dataset"], "run_id": main["run_id"], "learning_rate": train.get("learning_rate"),
-           "epochs_run": train.get("epochs_run"), "best_epoch": train.get("best_epoch"),
-           "validation_n": validation["n"], "validation_correct": validation["correct"],
-           "validation_accuracy": validation["accuracy"], "validation_macro_f1": validation["macro_f1"],
-           "validation_loss": validation.get("loss"), "test_n": test.get("n"), "test_correct": test.get("correct"),
-           "test_accuracy": test.get("accuracy"), "test_macro_f1": test.get("macro_f1"),
-           "test_official": (main.get("test_meta") or {}).get("official")}
-    row.update({field: main["cost"].get(field) for field in COST_FIELDS})
-    return row
+def prepare_external_main(main, key, topic, dataset, recommended, reference=None):
+    """외부 모델(팀원 제공)의 main.json 을 표에 넣기 전에 손본다. 원본 파일은 고치지 않고 복사본을 돌려 준다.
+
+    우리 형식과 다른 점(모델 이름, 데이터셋, 문장 수)은 화면에 경고로 알린다. 공식 여부는 추천 결과(recommendation.json)로 정한다.
+    """
+    main = dict(main)
+    where = f"{topic}/{dataset}/{key}"
+    if main.get("model_name") != key:
+        print(f"  [주의] {where}: main.json 의 model_name({main.get('model_name')})이 폴더 이름({key})과 다릅니다. 폴더 이름으로 통일합니다.")
+        main["model_name"] = key
+    main.setdefault("topic", topic)
+    main.setdefault("dataset", dataset)
+    main.setdefault("dataset_id", f"{topic}/{dataset}")
+    main.setdefault("run_id", "-")
+    main.setdefault("model_id", key)
+    if main.get("dataset_id") != f"{topic}/{dataset}":
+        print(f"  [주의] {where}: main.json 의 dataset_id({main.get('dataset_id')})가 폴더 위치와 다릅니다.")
+    if reference:
+        for split in ("validation", "test"):
+            mine, ours = (main.get(split) or {}).get("n"), (reference.get(split) or {}).get("n")
+            if mine is not None and ours is not None and mine != ours:
+                print(f"  [주의] {where}: {split} 문장 수({mine})가 우리({ours})와 달라 점수를 직접 비교하기 어렵습니다.")
+        mine_labels, our_labels = (main.get("validation") or main.get("test") or {}).get("labels"), (reference.get("validation") or {}).get("labels")
+        if mine_labels and our_labels and mine_labels != our_labels:
+            print(f"  [주의] {where}: 라벨 이름·순서({mine_labels})가 우리({our_labels})와 다릅니다.")
+    if main.get("test"):
+        main["test_meta"] = {"official": (recommended == key) if recommended else None,
+                            "evaluated_at": (main.get("test_meta") or {}).get("evaluated_at")}
+    return main
 
 
-def collect_all_main():
-    """모든 데이터셋 x 모델의 best_model/main.json 을 artifacts/viz 에 모은다. (그래프용 표)"""
+def load_all_main():
+    """모든 데이터셋 x 모델의 best_model/main.json 을 읽어 목록으로 돌려 준다. (그래프 코드가 쓴다. 파일은 만들지 않는다)"""
     results, missing = [], []
     for topic, dataset in common.all_pairs():
-        for key in common.ALL_MODEL_KEYS:
+        recommended = None
+        rec_path = common.dataset_result_dir(topic, dataset) / "recommendation.json"
+        if rec_path.exists() and not common.is_recommend_excluded(dataset):
+            recommended = common.load_json(rec_path).get("recommended_model")
+        base_path = common.best_dir(common.BASELINE_KEY, topic, dataset) / "main.json"
+        reference = common.load_json(base_path) if base_path.exists() else None
+        for key in common.RESULT_MODEL_KEYS:
             path = common.best_dir(key, topic, dataset) / "main.json"
             if path.exists():
-                results.append(common.load_json(path))
+                main = common.load_json(path)
+                if common.is_external(key):
+                    main = prepare_external_main(main, key, topic, dataset, recommended, reference)
+                results.append(main)
             elif common.best_dir(key, topic, dataset).exists():
                 missing.append(f"{topic}/{dataset}/{key}")
-    out = cfg.ARTIFACTS_ROOT / "viz"
-    common.save_json(out / "all_main.json", {"schema": SCHEMA, "created_at": time.strftime("%Y-%m-%d %H:%M:%S"),
-                                             "count": len(results), "results": results})
-    common.write_csv(out / "all_main.csv", FLAT_FIELDS, [flatten_main(m) for m in results])
-
-    epoch_rows, label_rows, confusion_rows = [], [], []
-    for main in results:
-        ident = {"model_name": main["model_name"], "topic": main["topic"], "dataset": main["dataset"]}
-        curve = main.get("curve")
-        if curve:
-            n = main["validation"]["n"]
-            for i, epoch in enumerate(curve["epoch"]):
-                epoch_rows.append({**ident, "epoch": epoch, "train_loss": curve["train_loss"][i],
-                                   "val_loss": curve["val_loss"][i], "val_macro_f1": curve["val_macro_f1"][i],
-                                   "val_correct": curve["val_correct"][i], "val_n": n})
-        for split in ("validation", "test"):
-            block = main.get(split)
-            if not block:
-                continue
-            for label, info in block["per_label"].items():
-                label_rows.append({**ident, "split": split, "label": label, "correct": info["correct"],
-                                   "n": info["n"], "f1": info["f1"]})
-            for i, actual in enumerate(block["labels"]):
-                for j, predicted in enumerate(block["labels"]):
-                    confusion_rows.append({**ident, "split": split, "actual": actual, "predicted": predicted,
-                                           "count": block["confusion_matrix"][i][j]})
-    ident_fields = ["model_name", "topic", "dataset"]
-    common.write_csv(out / "all_epochs.csv", ident_fields + ["epoch", "train_loss", "val_loss", "val_macro_f1",
-                                                           "val_correct", "val_n"], epoch_rows)
-    common.write_csv(out / "all_per_label.csv", ident_fields + ["split", "label", "correct", "n", "f1"], label_rows)
-    common.write_csv(out / "all_confusion.csv", ident_fields + ["split", "actual", "predicted", "count"],
-                     confusion_rows)
-    print(f"  모은 결과: {len(results)}개 (best_model 의 main.json)")
     if missing:
         print(f"  [주의] main.json 이 없는 best_model {len(missing)}개는 빠졌습니다 -> 메뉴 6번으로 먼저 만드세요.")
-    print(f"  저장: {out}  (all_main.json, all_main.csv, all_epochs.csv, all_per_label.csv, all_confusion.csv)")
     return results
