@@ -3,7 +3,7 @@ from contextlib import asynccontextmanager
 from typing import Annotated, Literal
 
 from chain import create_chain
-from classifier import load_classifier
+from classifier import close_classifiers, load_classifier
 from fastapi import Depends, FastAPI, HTTPException, Request
 from langchain_core.runnables import Runnable
 from pydantic import AliasChoices, BaseModel, ConfigDict, Field, field_validator
@@ -34,6 +34,7 @@ async def lifespan(app: FastAPI):
         yield
     finally:
         app.state.chain = None
+        await asyncio.to_thread(close_classifiers, classifiers)
 
 
 app = FastAPI(title="분류 챗봇 API", lifespan=lifespan)
