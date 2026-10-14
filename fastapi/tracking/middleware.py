@@ -24,6 +24,7 @@ REQUEST_ID_HEADER = "X-Request-ID"
 CLIENT_ID_PATTERN = re.compile(r"^[A-Za-z0-9._:-]{1,64}$")
 # 연결 확인 등으로 자주 불리는 경로는 기록하지 않는다. (request_id 헤더는 그대로 붙인다)
 SKIP_PATHS = frozenset({"/health", "/docs", "/redoc", "/openapi.json"})
+SKIP_PREFIXES = ("/admin",)       # 조회 API(인증, 목록, 내보내기)는 추적 기록에 남기지 않는다.
 MAX_DETAIL_BYTES = 1000
 
 
@@ -74,7 +75,7 @@ class RequestTrackingMiddleware:
                 record.error_detail = "(원문 저장이 꺼져 있어 응답 본문을 생략했습니다)"
             record.finish_outcome()
             unbind_request(token)
-            if record.path not in self.skip_paths:
+            if record.path not in self.skip_paths and not record.path.startswith(SKIP_PREFIXES):
                 self._emit(record)
 
     def _emit(self, record: RequestRecord) -> None:
