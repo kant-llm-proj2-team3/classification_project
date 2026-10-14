@@ -2,9 +2,9 @@
   "topic": "inquiries",
   "dataset": "total_merge",
   "split": "test",
-  "selected_model": null,
+  "selected_model": "roberta",
   "evaluated_model": "bert",
-  "official": null,
+  "official": false,
   "selected_run": "20261013_145006",
   "model_id": "klue/bert-base",
   "classifier": {

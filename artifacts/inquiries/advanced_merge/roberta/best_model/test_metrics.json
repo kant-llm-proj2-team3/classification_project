@@ -2,7 +2,7 @@
   "topic": "inquiries",
   "dataset": "advanced_merge",
   "split": "test",
-  "selected_model": "bert",
+  "selected_model": "laya",
   "evaluated_model": "roberta",
   "official": false,
   "selected_run": "20261013_161413",

@@ -2,9 +2,9 @@
   "topic": "documents",
   "dataset": "total_merge",
   "split": "test",
-  "selected_model": null,
+  "selected_model": "roberta",
   "evaluated_model": "baseline",
-  "official": null,
+  "official": false,
   "selected_run": "20261013_145440",
   "model_id": "TF-IDF(char n-gram) + LogisticRegression",
   "classifier": {
