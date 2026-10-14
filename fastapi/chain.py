@@ -51,7 +51,8 @@ def create_chain(classifiers: dict, generator: OpenAIGenerator | None = None) ->
         return {"status": "success" if done else "partial_success",
                 "classification": classification, "generation": generation}
 
+    # run_name은 추적(tracking/callbacks.py)이 단계를 구분하는 이름이다. 바꾸면 그쪽의 STEP_ATTRS도 맞춰야 한다.
     return (RunnableLambda(classify).with_config(run_name="classify")
             | RunnableLambda(apply_policy).with_config(run_name="apply_policy")
             | RunnableLambda(generate).with_config(run_name="generate")
-            | RunnableLambda(respond).with_config(run_name="respond"))
+            | RunnableLambda(respond).with_config(run_name="respond")).with_config(run_name="chat")
