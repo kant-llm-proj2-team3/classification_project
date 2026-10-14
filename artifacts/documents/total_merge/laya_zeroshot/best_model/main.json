@@ -13,7 +13,7 @@
   "input": {
     "train_rows": 0,
     "validation_rows": 331,
-    "test_rows": null
+    "test_rows": 331
   },
   "validation": {
     "n": 331,
@@ -61,12 +61,60 @@
       ]
     ]
   },
-  "test": null,
-  "test_meta": null,
+  "test": {
+    "n": 331,
+    "correct": 170,
+    "accuracy": 0.513595166163142,
+    "macro_f1": 0.4706883620620282,
+    "loss": null,
+    "per_label": {
+      "announcement": {
+        "correct": 20,
+        "n": 111,
+        "f1": 0.28776978417266186
+      },
+      "manual": {
+        "correct": 54,
+        "n": 109,
+        "f1": 0.48
+      },
+      "minutes": {
+        "correct": 96,
+        "n": 111,
+        "f1": 0.6442953020134228
+      }
+    },
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "confusion_matrix": [
+      [
+        20,
+        48,
+        43
+      ],
+      [
+        7,
+        54,
+        48
+      ],
+      [
+        1,
+        14,
+        96
+      ]
+    ]
+  },
+  "test_meta": {
+    "official": null,
+    "evaluated_at": "2026-10-14 10:44:46"
+  },
   "cost": {
     "train_seconds": 0.0,
     "validation_inference_seconds": 7.39586989999998,
-    "test_inference_seconds": null,
+    "test_inference_seconds": 6.425,
     "peak_gpu_mb": 1729.265625,
     "num_parameters": 321908998,
     "model_size_mb": 614.0
@@ -75,7 +123,7 @@
   "files": {
     "sub": "sub.json",
     "validation_predictions": "validation_predictions.csv",
-    "test_predictions": null,
+    "test_predictions": "test_predictions.csv",
     "validation_errors": "validation_errors.csv",
     "log": "train.log"
   }

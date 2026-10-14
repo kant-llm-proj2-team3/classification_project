@@ -1,0 +1,18 @@
+﻿id,text,actual,predicted,group_id
+documents-v2-minutes-validation-005-v1,인쇄 자료의 오류를 페이지마다 따로 알리는 불편을 검토했다. 한 장의 정오표에 오류 위치와 수정 내용을 모으기로 했다. 수정이 필요 없는 본문을 다시 인쇄하지 않기로 했다.,minutes,manual,documents-v2-minutes-validation-005
+documents-v2-announcement-validation-011-v1,"복제 자료 구분
+- 전시 자료 중 복제본에는 다음 주부터 회색 표식을 붙인다.
+- 원본의 표기 방식은 그대로 유지한다.
+- 이전에 배부한 안내 카드도 표식 설명에 맞춰 고친다.",announcement,manual,documents-v2-announcement-validation-011
+documents-v2-manual-validation-007-v1,"예약 명의 이전
+- 예약자가 참석하지 못해 명의를 옮기려면 원래 예약자의 요청부터 확인한다.
+- 새 이용자가 같은 이용 조건을 충족하는지 담당자가 확인한다.
+- 이름을 고친 뒤 원래 예약자에게 변경 결과를 알린다.",manual,announcement,documents-v2-manual-validation-007
+documents-v2-announcement-validation-001-v1,접착 중인 모형 작품을 보관하는 건조실은 다음 주에 낮은 풍량으로 운영한다. 작업자는 건조 예상 시간을 다시 확인한다. 재료별 완성 시점을 운영실에서 일괄 보장하지는 않는다.,announcement,minutes,documents-v2-announcement-validation-001
+documents-v2-minutes-validation-005-v2,"자료 정오표 방식
+인쇄 자료의 오류를 페이지마다 따로 알리는 불편을 살펴봤습니다. 한 장의 정오표에 오류 위치와 수정 내용을 모으기로 했습니다. 수정이 필요 없는 본문을 다시 인쇄하지 않기로 했습니다.",minutes,manual,documents-v2-minutes-validation-005
+documents-v2-manual-validation-007-v2,예약자가 참석하지 못해 명의를 옮기려면 원래 예약자의 요청부터 확인합니다. 새 이용자가 같은 이용 조건을 충족하는지 담당자가 확인합니다. 이름을 고친 뒤 원래 예약자에게 변경 결과를 알립니다.,manual,announcement,documents-v2-manual-validation-007
+documents-v2-announcement-validation-017-v1,작품 촬영 공간의 예약 확정 알림에 다음 주부터 색상 표식을 추가한다. 접수 상태와 확정 상태를 다른 색으로 표시한다. 색만 보지 말고 알림의 상태 문구도 함께 확인한다.,announcement,manual,documents-v2-announcement-validation-017
+documents-v2-announcement-validation-017-v2,"예약 확인 표식
+작품 촬영 공간의 예약 확정 알림에 다음 주부터 색상 표식을 추가합니다. 접수 상태와 확정 상태를 다른 색으로 표시합니다. 색만 보지 말고 알림의 상태 문구도 같이 확인합니다.",announcement,manual,documents-v2-announcement-validation-017
+documents-v2-announcement-validation-008-v2,축제에 쓴 재사용 장식은 해체한 상태로 별관 창고에 보관한다. 다음 행사에서 사용할 팀은 수량 확인을 먼저 요청한다. 낡은 장식의 교체 여부는 아직 결정하지 않았다.,announcement,minutes,documents-v2-announcement-validation-008

@@ -17,9 +17,9 @@ from pathlib import Path
 
 import numpy as np
 import torch
-import torch.nn as nn
 import torch.nn.functional as F
 from safetensors.torch import load_file, save_file
+from torch import nn
 
 import clm_settings as S
 from util.clm_encoder import HIDDEN, load_clm
@@ -43,9 +43,9 @@ class HeadModel:
         make_head = load_clm().heads.make_head
         self.arch = {key: arch[key] for key in ARCH_KEYS}
         self.device = torch.device(device)
-        kwargs = dict(width=arch["width"], depth=arch["depth"], proj=arch["projection_dim"],
-                      activation=arch["activation"], layernorm=arch["layernorm"], residual=arch["residual"],
-                      hidden=arch["hidden_size"])
+        kwargs = {"width": arch["width"], "depth": arch["depth"], "proj": arch["projection_dim"],
+                  "activation": arch["activation"], "layernorm": arch["layernorm"], "residual": arch["residual"],
+                  "hidden": arch["hidden_size"]}
         self.state_head = make_head(**kwargs).to(self.device)
         self.action_head = make_head(**kwargs).to(self.device)
         self.logit_scale = nn.Parameter(torch.zeros((), device=self.device))

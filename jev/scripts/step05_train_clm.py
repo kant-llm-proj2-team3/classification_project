@@ -117,7 +117,7 @@ def environment(device, enc) -> dict:
             "llama_cpp_build": enc.identity.get("build"), "clm_commit": enc.clm_commit}
 
 
-@functools.lru_cache(maxsize=None)
+@functools.cache
 def file_sha256(path: Path) -> str:
     digest = hashlib.sha256()
     with Path(path).open("rb") as stream:

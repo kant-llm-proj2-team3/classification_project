@@ -1,0 +1,5 @@
+﻿id,text,actual,predicted,group_id
+inquiries-v2-refund-validation-005-v1,대여 공간을 결제했는데 운영자가 같은 시간에 다른 예약도 잡혔다고 합니다. 제안받은 대체 시간에는 이용할 수 없습니다. 공간 변경 대신 예약 철회와 결제 반환을 요청할 방법을 알려 주세요.,refund,account,inquiries-v2-refund-validation-005
+inquiries-v2-refund-validation-024-v1,표시 차이를 오류로 단정하지 않고 각 항목이 뜻하는 단계를 확인하려 합니다. 누리전시몰에서 신청한 행사용 좌석 표식 건입니다. 회수는 아직 전이고 나머지 물품은 제가 유지할 예정입니다. 여러 품목 중 한 품목에 관한 문의입니다. 중복 접수 없이 반품 수량과 계산 내역을 정정할 수 있나요?,refund,shipping,inquiries-v2-refund-validation-024
+inquiries-v2-refund-validation-027-v1,어떤 상태와 구성품을 보여 줘야 하는지 서면 안내를 받을 수 있나요? 참고로 현재 접수에서 어느 확인이 남았는지 담당별 처리 기록을 요청하고 싶습니다. 누리전시몰에서 신청한 도구 분류 상자 건입니다. 제품 상태는 그대로 보관 중이고 필요한 확인을 숨기려는 것은 아닙니다. 공동 작업에 쓰려고 신청한 물품입니다.,refund,shipping,inquiries-v2-refund-validation-027
+inquiries-v2-account-validation-028-v2,지원되는 변경 절차가 있는지 확인한 뒤 본인 자료를 정리하고 싶습니다. 이음공방마켓에서 신청한 방명록 받침대 건입니다. 다른 담당자가 기관 업무를 맡았고 제 회원 자체를 없애려는 것이 아닙니다. 행사 준비를 위해 선택한 물품입니다. 이 조건에서 기관 연락 담당의 변경 심사를 어디에 요청하나요?,account,refund,inquiries-v2-account-validation-028

@@ -1,0 +1,148 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261014_101552",
+  "generated_at": "2026-10-14 10:16:05",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": 2048,
+    "truncation": "tail",
+    "head_tokens": null,
+    "weight_decay": null,
+    "warmup_ratio": null,
+    "gradient_checkpointing": null,
+    "precision": null,
+    "early_stopping_patience": null,
+    "target_macro_f1": null,
+    "stop_reason": "zero-shot (학습 없음)",
+    "optimizer_steps_at_checkpoint": null,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": "cpu (head) + llama.cpp (encoder)",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.10",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "sklearn": null
+  },
+  "data": {
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_csv": null,
+    "validation_csv": null,
+    "truncated_rows": {
+      "validation": 0,
+      "test": 0
+    }
+  },
+  "validation_detail": {
+    "per_class": {
+      "shipping": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1-score": 0.5,
+        "support": 20.0
+      },
+      "refund": {
+        "precision": 0.5,
+        "recall": 0.55,
+        "f1-score": 0.5238095238095238,
+        "support": 20.0
+      },
+      "account": {
+        "precision": 0.3333333333333333,
+        "recall": 0.3,
+        "f1-score": 0.3157894736842105,
+        "support": 20.0
+      },
+      "accuracy": 0.45,
+      "macro avg": {
+        "precision": 0.4444444444444444,
+        "recall": 0.45,
+        "f1-score": 0.4465329991645781,
+        "support": 60.0
+      },
+      "weighted avg": {
+        "precision": 0.4444444444444444,
+        "recall": 0.45,
+        "f1-score": 0.4465329991645781,
+        "support": 60.0
+      }
+    }
+  },
+  "epochs": [],
+  "training_summary": {
+    "model_key": "clm_zeroshot",
+    "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+    "run_name": "20261014_101552",
+    "learning_rate": null,
+    "best_epoch": 0,
+    "validation_macro_f1": 0.4465329991645781,
+    "validation_accuracy": 0.45,
+    "validation_loss": 1.0464845895767212,
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 12.804853854097018,
+    "peak_gpu_memory_mb": 5289.0,
+    "train_rows": 0,
+    "validation_rows": 60,
+    "epochs_run": 0,
+    "epochs_max": 0,
+    "stop_reason": "zero-shot (학습 없음)",
+    "num_parameters": 8209623041,
+    "model_size_mb": 4866.9,
+    "head_parameters": 18887681,
+    "head_size_mb": 72.1,
+    "encoder_parameters": 8190735360,
+    "encoder_size_mb": 4794.9
+  },
+  "run_config": {
+    "topic": "inquiries",
+    "dataset": "advanced",
+    "model_key": "clm_zeroshot",
+    "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+    "run_name": "20261014_101552",
+    "learning_rate": null,
+    "epochs_max": 0,
+    "batch_size": 32,
+    "gradient_accumulation_steps": 1,
+    "max_length": 2048,
+    "truncation": "tail",
+    "truncated_rows": {
+      "validation": 0
+    },
+    "seed": 42,
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "validation_rows": 60,
+    "weights": "C:\\Users\\scy04\\.cache\\huggingface\\hub\\models--Contrastive-LM--CLM-v0.1-8B\\snapshots\\e939398d4556fcd9400c76fa8c5a513202f42b0a\\CLM_v0.1-8B.pt",
+    "encoder": {
+      "encoder": "Qwen3-8B",
+      "quantization": "Q4_K_M",
+      "gguf_repo": "Qwen/Qwen3-8B-GGUF",
+      "gguf_file": "Qwen3-8B-Q4_K_M.gguf",
+      "gguf_size_bytes": 5027783488,
+      "pooling": "last",
+      "max_len": 2048,
+      "hidden_size": 4096,
+      "served_name": "qwen3-8b",
+      "tokenizer": "Qwen/Qwen3-8B",
+      "llama_cpp_build": "b11608-04f7226a2",
+      "clm_commit": "d5f9ef0fd9bde185df0ceaad4f4ecc6cfe8c34f6",
+      "reference_cosine": 1.0
+    },
+    "gpu_memory_scope": "server_delta",
+    "device": "cpu (head) + llama.cpp (encoder)",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.10",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "llama_cpp_build": "b11608-04f7226a2",
+    "clm_commit": "d5f9ef0fd9bde185df0ceaad4f4ecc6cfe8c34f6"
+  }
+}

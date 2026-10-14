@@ -259,7 +259,7 @@ def _wait_ready(base: str, process: subprocess.Popen | None, log_path: Path | No
             raise RuntimeError(
                 f"llama-server가 시작 도중 종료됐습니다 (종료 코드 {process.returncode}). 로그 마지막 부분:\n"
                 f"{_tail(log_path)}\n"
-                "  VRAM이 부족하면 .env의 CLM_GPU_LAYERS(예: 30)나 CLM_UBATCH(예: 1536)를 줄여 보세요.")
+                "  VRAM이 부족하면 .env의 CLM_GPU_LAYERS(예: 30)를 줄여 보세요. CLM_UBATCH를 512로 줄이면 약 0.3GB 절약됩니다.")
         if server_state(base) == "ready":
             return
         time.sleep(1)

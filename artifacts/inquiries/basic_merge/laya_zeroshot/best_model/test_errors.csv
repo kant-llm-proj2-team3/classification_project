@@ -1,0 +1,23 @@
+﻿id,text,actual,predicted,group_id
+inquiries-v2-account-test-020-v2,가득 찬 메일함을 비워 일반 메일은 오는데 계정 알림은 멈췄고 배달 실패 표시도 남아 있어요. 주소를 유지하며 수신을 재개하려면 어떻게 하나요?,account,shipping,inquiries-v2-account-test-020
+inquiries-v2-shipping-test-009-v2,투숙 전에 주문품을 호텔로 받으려 해요. 프런트의 사전 보관 동의와 배송 접수를 어떻게 연결해 확인하면 되나요?,shipping,refund,inquiries-v2-shipping-test-009
+inquiries-v2-account-test-014-v1,제 계정의 저장 공간이 가득 찼다고 나옵니다. 게시물 첨부와 개인 보관함 중 어디에서 많이 쓰는지 몰라 무작정 지우기는 어려워요. 자료 종류별 사용량을 확인하고 필요한 것부터 정리할 수 있을까요?,account,shipping,inquiries-v2-account-test-014
+inquiries-v2-refund-test-005-v1,판매자가 원래 상품 재고가 없다며 다른 모델을 보냈지만 저는 대체 발송에 동의한 적이 없습니다. 포장은 개봉하지 않았습니다. 대체품을 그대로 돌려보내고 원래 주문을 취소할 절차를 알려 주세요.,refund,shipping,inquiries-v2-refund-test-005
+inquiries-v2-account-test-014-v2,계정 용량이 꽉 차 업로드가 막혔는데 전체 용량만 보입니다. 무작정 지우지 않고 어떤 자료가 공간을 쓰는지 종류별로 확인할 수 있나요?,account,shipping,inquiries-v2-account-test-014
+inquiries-v2-account-test-004-v1,태블릿을 다른 사람에게 주기 전에 이 기기에서만 제 계정을 빼려고 합니다. 서비스 회원과 저장해 둔 자료는 계속 사용해야 해요. 화면의 계정 제거가 기기 연결만 끊는 것인지 회원 탈퇴인지 구별하고 싶습니다.,account,refund,inquiries-v2-account-test-004
+inquiries-v2-account-test-006-v2,저장한 녹음은 계속 보관하되 서비스 개선용 활용 동의만 철회하고 싶어요. 원본 삭제 없이 보관과 활용 동의를 따로 관리할 수 있나요?,account,refund,inquiries-v2-account-test-006
+inquiries-v2-refund-test-007-v2,유료 우선 예약 옵션을 샀지만 따로 먼저 접수하는 시간은 없었습니다. 행사에는 참가합니다. 일반 참가비는 두고 미제공 옵션 비용만 돌려받을 수 있나요?,refund,shipping,inquiries-v2-refund-test-007
+inquiries-v2-shipping-test-021-v1,현재 날짜에 적용되는 반입 조건을 전달할 수 있는 공식 자료가 있습니다. 모아교육몰에서 신청한 파일 전송 어댑터 건입니다. 사진은 일부 구역만 찍혔을 수 있어 누락으로 단정하지는 않겠습니다. 기관 담당자 명의로 신청한 주문입니다. 관련 절차를 확인하려 합니다. 전체 하역 수량을 확인할 기록과 담당자를 안내해 주세요.,shipping,refund,inquiries-v2-shipping-test-021
+inquiries-v2-shipping-test-021-v2,실제 한 번에 오는 포장 수와 인도 목록을 확인하고 싶습니다. 파일 전송 어댑터의 인수증에 수량 3개가 적혀 있으나 배송 사진에는 일부만 보입니다. 건물은 행사일마다 출입 구역을 달리 운영합니다.,shipping,refund,inquiries-v2-shipping-test-021
+inquiries-v2-shipping-test-022-v2,수량 표기의 기준을 확인하고 정상 수령하려 합니다. 상황은 이렇습니다. 목판 인쇄 키트의 운송 명세에는 낱개 수와 포장 수가 같은 숫자로 보입니다. 발송지와 수령지 담당자가 서로 다른 서식을 사용합니다.,shipping,refund,inquiries-v2-shipping-test-022
+inquiries-v2-shipping-test-033-v2,반입 목록은 시설 담당에게도 전달됐지만 기사에게 넘어갔는지는 확인하지 못했습니다. 다온자료상점에서 신청한 접이식 독서대 건입니다. 현장 담당자는 물품을 아직 넘겨받지 못했고 건물 주소는 맞습니다. 제가 직접 받는 주문입니다. 접이식 독서대의 인도 위치와 확인 자료를 대조하려면 어디에 문의하나요?,shipping,refund,inquiries-v2-shipping-test-033
+inquiries-v2-shipping-test-034-v2,같은 날 왔다는 이유만으로 서로 다른 운송 건의 인계 기록을 합치지는 않을 예정입니다. 이음공방마켓에서 신청한 회화용 캔버스 틀 건입니다. 발송처에는 연락처를 전달했지만 기사 안내에 반영됐는지 모릅니다. 개인 보관용으로 구입한 물품입니다. 처리 전에 운송사에 넘어간 인수 담당 정보를 어떻게 대조하나요?,shipping,refund,inquiries-v2-shipping-test-034
+inquiries-v2-shipping-test-035-v1,현재 날짜에 적용되는 반입 조건을 전달할 수 있는 공식 자료가 있습니다. 모아교육몰에서 신청한 소형 사물함 건입니다. 조회에는 지점의 약칭만 보이고 주문한 주소는 정상입니다. 기존에 이용하던 곳의 새 주문입니다. 처리 전에 보관 지점의 정식 명칭과 인계 연락을 확인할 수 있나요?,shipping,refund,inquiries-v2-shipping-test-035
+inquiries-v2-refund-test-030-v2,시편 운반 케이스는 반품 승인됐는데 지급은 적립금으로만 한다고 합니다. 제가 요청한 날짜와 담당자가 검토한 날짜가 다르게 기록됐습니다. 그래서 원래 결제한 금액의 반환을 요청할 경로를 확인하고 싶습니다.,refund,shipping,inquiries-v2-refund-test-030
+inquiries-v2-account-test-021-v1,새 요청이 기존 요청을 대신하는지 확인한 뒤 중복 변경을 피하려 합니다. 모아교육몰에서 신청한 종이 회전 모형 건입니다. 모임의 자료와 다른 회원은 계속 이용해야 합니다. 기관 담당자 명의로 신청한 주문입니다. 처리 전에 관리 책임을 넘기고 제 역할만 해제하는 공식 경로가 있나요?,account,refund,inquiries-v2-account-test-021
+inquiries-v2-account-test-024-v2,역할에 따라 달라지는 기능과 개인에게 유지되는 기능을 확인하려 합니다. 누리전시몰에서 신청한 벽면 자료 주머니 건입니다. 완료 화면은 보았지만 이후 접속에는 이전 상태가 남는 것 같습니다. 여러 품목 중 한 품목에 관한 문의입니다. 관련 절차를 확인하려 합니다. 비밀번호를 채팅에 보내지 않고 공식 지원에서 상태를 대조할 방법이 있나요?,account,refund,inquiries-v2-account-test-024
+inquiries-v2-account-test-027-v1,자료 복사 카드 이용 자료를 이음공방마켓의 회원 공간에서 관리하고 있습니다. 이음공방마켓에 등록한 비밀번호 재설정 요청이 이미 처리됐다고만 나옵니다. 변경을 확정하기 전에 되돌릴 수 있는 범위를 확인하고 싶습니다. 현재 계정에 적용된 재설정 상태를 확인하고 싶습니다.,account,refund,inquiries-v2-account-test-027
+inquiries-v2-account-test-027-v2,보존해야 하는 자료가 있어 실행한 뒤에 결과를 추측하는 방식은 피하려 합니다. 이음공방마켓에서 신청한 자료 복사 카드 건입니다. 완료 화면은 보았지만 이후 접속에는 이전 상태가 남는 것 같습니다. 행사 준비를 위해 선택한 물품입니다. 비밀번호를 채팅에 보내지 않고 공식 지원에서 상태를 대조할 방법이 있나요?,account,refund,inquiries-v2-account-test-027
+inquiries-v2-account-test-028-v1,문의드릴 내용은 다음과 같습니다. 파일 전송 어댑터 이용 자료를 모아교육몰의 회원 공간에서 관리하고 있습니다. 모아교육몰의 제 계정에 휴면 해제가 필요하다는 메시지가 나옵니다. 공용 컴퓨터에서도 작업하지만 계정은 다른 사람과 공유하지 않습니다. 소유 확인 후 정상 이용 상태로 복구할 경로를 알고 싶습니다.,account,refund,inquiries-v2-account-test-028
+inquiries-v2-account-test-031-v2,개인 설정과 조직에서 적용한 정책을 구분해 안내받고 싶습니다. 모아교육몰에서 신청한 직조 틀 건입니다. 인증 자체를 취소하려는 것이 아니라 제출 자료의 공개를 관리하려 합니다. 기관 담당자 명의로 신청한 주문입니다. 처리 전에 증빙 보관과 외부 노출 동의를 구분해 설정할 수 있나요?,account,refund,inquiries-v2-account-test-031
+inquiries-v2-account-test-032-v2,원본을 지우지 않고 계정 자료의 동기화 범위를 확인하고 싶습니다. 상황은 이렇습니다. 시편 운반 케이스 이용 자료를 다온자료상점의 회원 공간에서 관리하고 있습니다. 다온자료상점에서 작성한 임시 글이 다른 기기에는 나타나지 않습니다. 동일한 내용을 웹 화면과 앱 화면에서 확인하고 있습니다.,account,shipping,inquiries-v2-account-test-032

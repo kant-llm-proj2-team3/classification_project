@@ -1,0 +1,359 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261014_101712",
+  "generated_at": "2026-10-14 10:17:14",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": 2048,
+    "truncation": "tail",
+    "head_tokens": null,
+    "weight_decay": 0.0,
+    "warmup_ratio": 0.1,
+    "gradient_checkpointing": null,
+    "precision": "float32 (head)",
+    "early_stopping_patience": 5,
+    "target_macro_f1": null,
+    "stop_reason": "최대 에폭(20) 도달",
+    "optimizer_steps_at_checkpoint": 40,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": "cpu (head) + llama.cpp (encoder)",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.10",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "sklearn": null
+  },
+  "data": {
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "train_csv": [
+      "dataset/documents/basic/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/documents/basic/validation.csv"
+    ],
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0
+    }
+  },
+  "validation_detail": {
+    "per_class": {
+      "announcement": {
+        "precision": 1.0,
+        "recall": 0.85,
+        "f1-score": 0.918918918918919,
+        "support": 40.0
+      },
+      "manual": {
+        "precision": 0.8863636363636364,
+        "recall": 0.975,
+        "f1-score": 0.9285714285714286,
+        "support": 40.0
+      },
+      "minutes": {
+        "precision": 0.9047619047619048,
+        "recall": 0.95,
+        "f1-score": 0.926829268292683,
+        "support": 40.0
+      },
+      "accuracy": 0.925,
+      "macro avg": {
+        "precision": 0.9303751803751803,
+        "recall": 0.9249999999999999,
+        "f1-score": 0.9247732052610101,
+        "support": 120.0
+      },
+      "weighted avg": {
+        "precision": 0.9303751803751804,
+        "recall": 0.925,
+        "f1-score": 0.9247732052610103,
+        "support": 120.0
+      }
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 3.4286792278289795,
+      "validation_loss": 0.9644806981086731,
+      "validation_accuracy": 0.5083333333333333,
+      "validation_macro_f1": 0.5078509751668823,
+      "optimizer_steps": 2,
+      "elapsed_seconds": 0.10208419999980833
+    },
+    {
+      "epoch": 2,
+      "train_loss": 3.346488356590271,
+      "validation_loss": 0.9138580560684204,
+      "validation_accuracy": 0.5916666666666667,
+      "validation_macro_f1": 0.5811277475297439,
+      "optimizer_steps": 4,
+      "elapsed_seconds": 0.22749550000298768
+    },
+    {
+      "epoch": 3,
+      "train_loss": 3.0870375633239746,
+      "validation_loss": 0.8141414523124695,
+      "validation_accuracy": 0.6916666666666667,
+      "validation_macro_f1": 0.692151344590369,
+      "optimizer_steps": 6,
+      "elapsed_seconds": 0.35997840000345604
+    },
+    {
+      "epoch": 4,
+      "train_loss": 2.906091332435608,
+      "validation_loss": 0.7384012341499329,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.7669793621013135,
+      "optimizer_steps": 8,
+      "elapsed_seconds": 0.4924992000014754
+    },
+    {
+      "epoch": 5,
+      "train_loss": 2.809247612953186,
+      "validation_loss": 0.6694527268409729,
+      "validation_accuracy": 0.8083333333333333,
+      "validation_macro_f1": 0.8078434438190536,
+      "optimizer_steps": 10,
+      "elapsed_seconds": 0.6251219000041601
+    },
+    {
+      "epoch": 6,
+      "train_loss": 2.723855137825012,
+      "validation_loss": 0.6111080646514893,
+      "validation_accuracy": 0.825,
+      "validation_macro_f1": 0.8241335044929397,
+      "optimizer_steps": 12,
+      "elapsed_seconds": 0.7592106000010972
+    },
+    {
+      "epoch": 7,
+      "train_loss": 2.6293898820877075,
+      "validation_loss": 0.5592764616012573,
+      "validation_accuracy": 0.875,
+      "validation_macro_f1": 0.8742181735070362,
+      "optimizer_steps": 14,
+      "elapsed_seconds": 0.8885459000011906
+    },
+    {
+      "epoch": 8,
+      "train_loss": 2.5707703828811646,
+      "validation_loss": 0.5172235369682312,
+      "validation_accuracy": 0.8833333333333333,
+      "validation_macro_f1": 0.8821286756288228,
+      "optimizer_steps": 16,
+      "elapsed_seconds": 1.0183220000035362
+    },
+    {
+      "epoch": 9,
+      "train_loss": 2.511889696121216,
+      "validation_loss": 0.47796908020973206,
+      "validation_accuracy": 0.9083333333333333,
+      "validation_macro_f1": 0.9077949223795768,
+      "optimizer_steps": 18,
+      "elapsed_seconds": 1.1457101999985753
+    },
+    {
+      "epoch": 10,
+      "train_loss": 2.468255877494812,
+      "validation_loss": 0.4475625157356262,
+      "validation_accuracy": 0.9,
+      "validation_macro_f1": 0.8998716302952503,
+      "optimizer_steps": 20,
+      "elapsed_seconds": 1.2748294999983045
+    },
+    {
+      "epoch": 11,
+      "train_loss": 2.429435133934021,
+      "validation_loss": 0.4232660233974457,
+      "validation_accuracy": 0.9166666666666666,
+      "validation_macro_f1": 0.9162727807172252,
+      "optimizer_steps": 22,
+      "elapsed_seconds": 1.3654065000009723
+    },
+    {
+      "epoch": 12,
+      "train_loss": 2.4078829288482666,
+      "validation_loss": 0.4101789593696594,
+      "validation_accuracy": 0.9083333333333333,
+      "validation_macro_f1": 0.9087651046271737,
+      "optimizer_steps": 24,
+      "elapsed_seconds": 1.4979288000031374
+    },
+    {
+      "epoch": 13,
+      "train_loss": 2.3739901781082153,
+      "validation_loss": 0.390278697013855,
+      "validation_accuracy": 0.9166666666666666,
+      "validation_macro_f1": 0.9167840905374023,
+      "optimizer_steps": 26,
+      "elapsed_seconds": 1.592687999996997
+    },
+    {
+      "epoch": 14,
+      "train_loss": 2.3581042289733887,
+      "validation_loss": 0.37597617506980896,
+      "validation_accuracy": 0.9166666666666666,
+      "validation_macro_f1": 0.9162727807172252,
+      "optimizer_steps": 28,
+      "elapsed_seconds": 1.7307846999974572
+    },
+    {
+      "epoch": 15,
+      "train_loss": 2.359244465827942,
+      "validation_loss": 0.3679519593715668,
+      "validation_accuracy": 0.9166666666666666,
+      "validation_macro_f1": 0.9162727807172252,
+      "optimizer_steps": 30,
+      "elapsed_seconds": 1.8253036000023712
+    },
+    {
+      "epoch": 16,
+      "train_loss": 2.3416794538497925,
+      "validation_loss": 0.36331304907798767,
+      "validation_accuracy": 0.925,
+      "validation_macro_f1": 0.9247732052610101,
+      "optimizer_steps": 32,
+      "elapsed_seconds": 1.9179884999975911
+    },
+    {
+      "epoch": 17,
+      "train_loss": 2.3371795415878296,
+      "validation_loss": 0.3606226146221161,
+      "validation_accuracy": 0.925,
+      "validation_macro_f1": 0.9247732052610101,
+      "optimizer_steps": 34,
+      "elapsed_seconds": 2.0510003000017605
+    },
+    {
+      "epoch": 18,
+      "train_loss": 2.315120577812195,
+      "validation_loss": 0.3592603802680969,
+      "validation_accuracy": 0.925,
+      "validation_macro_f1": 0.9247732052610101,
+      "optimizer_steps": 36,
+      "elapsed_seconds": 2.1854875999997603
+    },
+    {
+      "epoch": 19,
+      "train_loss": 2.3366401195526123,
+      "validation_loss": 0.35883867740631104,
+      "validation_accuracy": 0.925,
+      "validation_macro_f1": 0.9247732052610101,
+      "optimizer_steps": 38,
+      "elapsed_seconds": 2.319169200003671
+    },
+    {
+      "epoch": 20,
+      "train_loss": 2.3254992961883545,
+      "validation_loss": 0.3588050901889801,
+      "validation_accuracy": 0.925,
+      "validation_macro_f1": 0.9247732052610101,
+      "optimizer_steps": 40,
+      "elapsed_seconds": 2.4511100000017905
+    }
+  ],
+  "training_summary": {
+    "model_key": "clm",
+    "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+    "run_name": "20261014_101712",
+    "learning_rate": 0.0005,
+    "best_epoch": 20,
+    "validation_macro_f1": 0.9247732052610101,
+    "validation_accuracy": 0.925,
+    "validation_loss": 0.3588050901889801,
+    "train_seconds": 2.4903229999981704,
+    "validation_inference_seconds": 5.282065701234387,
+    "peak_gpu_memory_mb": 5289.0,
+    "train_rows": 360,
+    "validation_rows": 120,
+    "epochs_run": 20,
+    "epochs_max": 20,
+    "stop_reason": "최대 에폭(20) 도달",
+    "embed_seconds_train": 15.968487996608019,
+    "embed_seconds_validation": 5.271061301231384,
+    "num_parameters": 8209623041,
+    "model_size_mb": 4866.9,
+    "head_parameters": 18887681,
+    "head_size_mb": 72.1,
+    "encoder_parameters": 8190735360,
+    "encoder_size_mb": 4794.9
+  },
+  "run_config": {
+    "topic": "documents",
+    "dataset": "basic",
+    "model_key": "clm",
+    "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+    "run_name": "20261014_101712",
+    "learning_rate": 0.0005,
+    "loss": "infonce",
+    "epochs_max": 20,
+    "early_stopping_patience": 5,
+    "target_macro_f1": null,
+    "score_stop": {
+      "enabled": true,
+      "min_accuracy": 1.0,
+      "min_macro_f1": 1.0,
+      "max_val_loss": 0.01,
+      "min_epochs": 3
+    },
+    "batch_size": 256,
+    "gradient_accumulation_steps": 1,
+    "max_length": 2048,
+    "truncation": "tail",
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0
+    },
+    "weight_decay": 0.0,
+    "scheduler": "OneCycleLR (cos)",
+    "warmup_ratio": 0.1,
+    "grad_clip": 1.0,
+    "seed": 42,
+    "labels": [
+      "announcement",
+      "manual",
+      "minutes"
+    ],
+    "train_rows": 360,
+    "validation_rows": 120,
+    "train_csv": [
+      "dataset/documents/basic/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/documents/basic/validation.csv"
+    ],
+    "trainable": "state/action head only (encoder frozen)",
+    "init_head": "C:\\Users\\scy04\\.cache\\huggingface\\hub\\models--Contrastive-LM--CLM-v0.1-8B\\snapshots\\e939398d4556fcd9400c76fa8c5a513202f42b0a\\CLM_v0.1-8B.pt",
+    "encoder": {
+      "encoder": "Qwen3-8B",
+      "quantization": "Q4_K_M",
+      "gguf_repo": "Qwen/Qwen3-8B-GGUF",
+      "gguf_file": "Qwen3-8B-Q4_K_M.gguf",
+      "gguf_size_bytes": 5027783488,
+      "pooling": "last",
+      "max_len": 2048,
+      "hidden_size": 4096,
+      "served_name": "qwen3-8b",
+      "tokenizer": "Qwen/Qwen3-8B",
+      "llama_cpp_build": "b11608-04f7226a2",
+      "clm_commit": "d5f9ef0fd9bde185df0ceaad4f4ecc6cfe8c34f6",
+      "reference_cosine": 1.0
+    },
+    "gpu_memory_scope": "server_delta",
+    "precision": "float32 (head)",
+    "device": "cpu (head) + llama.cpp (encoder)",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.10",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "llama_cpp_build": "b11608-04f7226a2",
+    "clm_commit": "d5f9ef0fd9bde185df0ceaad4f4ecc6cfe8c34f6"
+  }
+}

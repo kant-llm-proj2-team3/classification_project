@@ -1,0 +1,4 @@
+﻿id,text,actual,predicted,group_id
+inquiries-v2-account-test-020-v2,가득 찬 메일함을 비워 일반 메일은 오는데 계정 알림은 멈췄고 배달 실패 표시도 남아 있어요. 주소를 유지하며 수신을 재개하려면 어떻게 하나요?,account,shipping,inquiries-v2-account-test-020
+inquiries-v2-account-test-012-v2,팀 자료 열람 권한을 신청하려는데 소유자만 받는지 관리자 모두가 보는지 모르겠어요. 신청 사유를 적기 전에 전달 대상을 확인할 수 있나요?,account,shipping,inquiries-v2-account-test-012
+inquiries-v2-account-test-014-v2,계정 용량이 꽉 차 업로드가 막혔는데 전체 용량만 보입니다. 무작정 지우지 않고 어떤 자료가 공간을 쓰는지 종류별로 확인할 수 있나요?,account,shipping,inquiries-v2-account-test-014

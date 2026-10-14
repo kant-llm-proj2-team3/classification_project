@@ -1,0 +1,4 @@
+﻿id,text,actual,predicted,group_id
+inquiries-v2-refund-test-011-v2,공간에 안 맞아 조립한 가구를 반품하려 합니다. 부품은 다 있지만 조립 흔적이 있어요. 이런 상태에서 반품 가능한지 어떤 자료로 확인받나요?,refund,shipping,inquiries-v2-refund-test-011
+inquiries-v2-shipping-test-021-v1,현재 날짜에 적용되는 반입 조건을 전달할 수 있는 공식 자료가 있습니다. 모아교육몰에서 신청한 파일 전송 어댑터 건입니다. 사진은 일부 구역만 찍혔을 수 있어 누락으로 단정하지는 않겠습니다. 기관 담당자 명의로 신청한 주문입니다. 관련 절차를 확인하려 합니다. 전체 하역 수량을 확인할 기록과 담당자를 안내해 주세요.,shipping,account,inquiries-v2-shipping-test-021
+inquiries-v2-account-test-033-v1,공식 인증 창구에서 자료의 보완 기준을 받을 수 있나요? 참고로 한 공간의 설정을 바꾸면 다른 공간에도 적용되는지 먼저 확인하려 합니다. 다온자료상점에서 신청한 태양계 모형 건입니다. 신청 주체는 그대로이고 어떤 부분이 안 읽혔는지 안내받지 못했습니다. 제가 직접 받는 주문입니다.,account,shipping,inquiries-v2-account-test-033

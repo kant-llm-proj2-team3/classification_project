@@ -1,0 +1,12 @@
+﻿id,text,actual,predicted,group_id
+documents-v2-minutes-validation-005-v1,인쇄 자료의 오류를 페이지마다 따로 알리는 불편을 검토했다. 한 장의 정오표에 오류 위치와 수정 내용을 모으기로 했다. 수정이 필요 없는 본문을 다시 인쇄하지 않기로 했다.,minutes,manual,documents-v2-minutes-validation-005
+documents-v2-announcement-validation-011-v1,"복제 자료 구분
+- 전시 자료 중 복제본에는 다음 주부터 회색 표식을 붙인다.
+- 원본의 표기 방식은 그대로 유지한다.
+- 이전에 배부한 안내 카드도 표식 설명에 맞춰 고친다.",announcement,manual,documents-v2-announcement-validation-011
+documents-v2-minutes-validation-005-v2,"자료 정오표 방식
+인쇄 자료의 오류를 페이지마다 따로 알리는 불편을 살펴봤습니다. 한 장의 정오표에 오류 위치와 수정 내용을 모으기로 했습니다. 수정이 필요 없는 본문을 다시 인쇄하지 않기로 했습니다.",minutes,manual,documents-v2-minutes-validation-005
+documents-v2-announcement-validation-004-v1,"- 공동 일지의 개인 경험 부분은 작성자의 열람 동의를 받은 뒤 공개합니다.
+- 동의 요청은 다음 주에 개별 전달합니다.
+- 응답하지 않았다는 이유만으로 공개에 동의한 것으로 처리하지 않습니다.",announcement,manual,documents-v2-announcement-validation-004
+documents-v2-announcement-validation-008-v2,축제에 쓴 재사용 장식은 해체한 상태로 별관 창고에 보관한다. 다음 행사에서 사용할 팀은 수량 확인을 먼저 요청한다. 낡은 장식의 교체 여부는 아직 결정하지 않았다.,announcement,minutes,documents-v2-announcement-validation-008
