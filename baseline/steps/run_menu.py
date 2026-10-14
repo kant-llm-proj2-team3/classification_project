@@ -12,8 +12,8 @@
   4) test 평가 : 추천 모델 1개(+baseline) 또는 4개 모델 모두를 best_model 로 test 평가 (모델마다 한 번)
   5) 길이 점검 : CSV 파일별로 몇 행이 192/512토큰을 넘는지 확인 (입력이 잘리는 정도)
   6) 결과 파일 : 이미 있는 결과에 main.json / sub.json / 문장별 예측 CSV 를 만든다 (다시 학습 안 함)
-  7) 모으기   : 모든 best_model 의 main.json 을 artifacts/viz 에 모아 그래프용 표를 만든다
-  8) 한 번에 마무리 : 결과 파일 보강 -> 모델 추천 -> 4개 모델 test -> 모으기 (다시 학습 안 함, 학습 끝난 뒤에)
+  7) 그래프   : 모든 best_model 의 main.json 을 읽어 PNG 그래프를 artifacts/viz/charts 에 만든다 (matplotlib 필요)
+  8) 한 번에 마무리 : 결과 파일 보강 -> 모델 추천 -> 4개 모델 test -> 그래프 (다시 학습 안 함, 학습 끝난 뒤에)
 """
 import sys
 import time
@@ -25,6 +25,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "bert" / "steps"))
 
 import check_lengths  # noqa: E402
 import common  # noqa: E402
+import make_charts  # noqa: E402
 import result_files  # noqa: E402
 import train_bert  # noqa: E402
 import train_koelectra  # noqa: E402
@@ -48,9 +49,12 @@ def status_text(topic, dataset):
     parts = []
     for key in common.ALL_MODEL_KEYS:
         runs = len(common.complete_run_dirs(key, topic, dataset))
-        info = common.read_best_info(key, topic, dataset)
-        best = f"(best {info['best']['validation_macro_f1']:.4f})" if info else ""
+        info = common.read_candidate(key, topic, dataset)      # main.json 기준
+        best = f"(best {info['validation_macro_f1']:.4f})" if info else ""
         parts.append(f"{key} {runs}회{best}")
+    for key in common.EXTERNAL_KEYS:     # 외부 모델은 학습 횟수 대신 결과가 있는지만 보여 준다
+        summary = common.read_candidate(key, topic, dataset)
+        parts.append(f"{key}(외부) " + (f"best {summary['validation_macro_f1']:.4f}" if summary else "-"))
     recommendation = common.dataset_result_dir(topic, dataset) / "recommendation.json"
     if common.is_recommend_excluded(dataset):
         parts.append("추천 제외(서버용)")
@@ -128,7 +132,7 @@ def action_train(pairs):
 def action_reset(pairs):
     options = {"1": "all", "2": "baseline", "3": "bert", "4": "roberta", "5": "koelectra"}
     print("\n초기화 범위: 1) 전체  2) baseline  3) bert  4) roberta  5) koelectra  0) 취소")
-    print("(선택한 범위의 best_model 과 날짜 폴더가 모두 지워집니다)")
+    print("(선택한 범위의 best_model 과 날짜 폴더가 모두 지워집니다. 팀원이 넘겨 준 외부 모델(laya 등) 결과는 지우지 않습니다)")
     scope = options.get(ask("선택 > "))
     if scope is None:
         print("취소했습니다.")
@@ -193,14 +197,14 @@ def action_rebuild(pairs):
             result_files.rebuild_result_files(topic, dataset)
 
 
-def action_collect(pairs):
-    print("\n모든 데이터셋 x 모델의 best_model/main.json 을 artifacts/viz 에 모읍니다. (선택한 데이터셋과 무관)")
-    with common.session_log("collect"):
-        result_files.collect_all_main()
+def action_charts(pairs):
+    print("\n모든 데이터셋 x 모델의 best_model/main.json 을 읽어 그래프(PNG)를 만듭니다. (선택한 데이터셋과 무관, 위치: artifacts/viz/charts)")
+    with common.session_log("charts"):
+        make_charts.run()
 
 
 def action_finish(pairs):
-    print("\n한 번에 마무리: 빠진 결과 파일 보강 -> 모델 추천 -> 4개 모델 test 평가 -> 시각화용 모으기")
+    print("\n한 번에 마무리: 빠진 결과 파일 보강 -> 모델 추천 -> 4개 모델 test 평가 -> 그래프 만들기")
     print("선택한 데이터셋 전체에 현재 best_model 로 진행합니다. (다시 학습하지 않습니다)")
     print("주의: 학습이 모두 끝난 뒤에 실행하세요. test 는 모델마다 한 번만 평가하고,")
     print("      공식 모델은 validation 으로 정한 추천 모델입니다. test 점수를 보고 모델을 바꾸면 안 됩니다.")
@@ -215,12 +219,12 @@ def action_finish(pairs):
                 common.evaluate_final(topic, dataset, "all")
             except (RuntimeError, FileExistsError, FileNotFoundError, ValueError) as error:
                 print(f"  [{topic}/{dataset}] 건너뜀: {error}")
-        print("\n[시각화용 모으기]")
-        result_files.collect_all_main()
+        print("\n[그래프 만들기]")
+        make_charts.run()
 
 
 ACTIONS = {"1": action_train, "2": action_reset, "3": action_recommend,
-           "4": action_test, "5": action_lengths, "6": action_rebuild, "7": action_collect,
+           "4": action_test, "5": action_lengths, "6": action_rebuild, "7": action_charts,
            "8": action_finish}
 
 
@@ -266,8 +270,8 @@ def main():
             print("  4) test 최종 평가 - 추천 모델 1개 또는 4개 모델 모두(비교용)")
             print("  5) 입력 길이(토큰 수) 점검 - 파일별로 192/512토큰을 넘는 행 수")
             print("  6) 결과 파일 만들기 - 이미 있는 결과에 main.json / sub.json / 문장별 예측 추가")
-            print("  7) 시각화용으로 한 곳에 모으기 (artifacts/viz)")
-            print("  8) 한 번에 마무리 - 결과 파일 보강 -> 추천 -> 4개 모델 test -> 모으기 (학습 끝난 뒤)")
+            print("  7) 그래프 만들기 - best_model/main.json 으로 PNG 그래프 (artifacts/viz/charts)")
+            print("  8) 한 번에 마무리 - 결과 파일 보강 -> 추천 -> 4개 모델 test -> 그래프 (학습 끝난 뒤)")
             print("  b) 데이터셋 다시 선택")
             print("  0) 종료")
             choice = ask("메뉴 선택 > ")
