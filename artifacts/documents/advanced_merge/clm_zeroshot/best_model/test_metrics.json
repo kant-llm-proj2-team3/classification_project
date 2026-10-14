@@ -1,0 +1,75 @@
+{
+  "topic": "documents",
+  "dataset": "advanced_merge",
+  "split": "test",
+  "selected_model": null,
+  "evaluated_model": "clm_zeroshot",
+  "official": false,
+  "selected_run": "20261014_101839",
+  "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+  "classifier": {
+    "n": 111,
+    "accuracy": 0.4144144144144144,
+    "macro_f1": 0.3786566227244193,
+    "per_class": {
+      "announcement": {
+        "precision": 0.38461538461538464,
+        "recall": 0.13513513513513514,
+        "f1-score": 0.2,
+        "support": 37.0
+      },
+      "manual": {
+        "precision": 0.7058823529411765,
+        "recall": 0.32432432432432434,
+        "f1-score": 0.4444444444444444,
+        "support": 37.0
+      },
+      "minutes": {
+        "precision": 0.35802469135802467,
+        "recall": 0.7837837837837838,
+        "f1-score": 0.4915254237288136,
+        "support": 37.0
+      },
+      "accuracy": 0.4144144144144144,
+      "macro avg": {
+        "precision": 0.4828408096381953,
+        "recall": 0.4144144144144144,
+        "f1-score": 0.3786566227244193,
+        "support": 111.0
+      },
+      "weighted avg": {
+        "precision": 0.48284080963819526,
+        "recall": 0.4144144144144144,
+        "f1-score": 0.3786566227244193,
+        "support": 111.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        5,
+        1,
+        31
+      ],
+      [
+        4,
+        12,
+        21
+      ],
+      [
+        4,
+        4,
+        29
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "announcement",
+        "manual",
+        "minutes"
+      ]
+    }
+  },
+  "baseline": null
+}

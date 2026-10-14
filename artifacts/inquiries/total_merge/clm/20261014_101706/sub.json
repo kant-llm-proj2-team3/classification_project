@@ -1,0 +1,359 @@
+{
+  "schema": "project2-result/v1",
+  "run_id": "20261014_101706",
+  "generated_at": "2026-10-14 10:17:11",
+  "hyperparameters": {
+    "seed": 42,
+    "max_length": 2048,
+    "truncation": "tail",
+    "head_tokens": null,
+    "weight_decay": 0.0,
+    "warmup_ratio": 0.1,
+    "gradient_checkpointing": null,
+    "precision": "float32 (head)",
+    "early_stopping_patience": 5,
+    "target_macro_f1": null,
+    "stop_reason": "최대 에폭(20) 도달",
+    "optimizer_steps_at_checkpoint": 80,
+    "selection_split": "validation"
+  },
+  "environment": {
+    "device": "cpu (head) + llama.cpp (encoder)",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.10",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "sklearn": null
+  },
+  "data": {
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_csv": [
+      "dataset/inquiries/total_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/inquiries/total_merge/validation.csv"
+    ],
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0
+    }
+  },
+  "validation_detail": {
+    "per_class": {
+      "shipping": {
+        "precision": 0.9454545454545454,
+        "recall": 0.9369369369369369,
+        "f1-score": 0.9411764705882353,
+        "support": 111.0
+      },
+      "refund": {
+        "precision": 0.9345794392523364,
+        "recall": 0.9009009009009009,
+        "f1-score": 0.9174311926605505,
+        "support": 111.0
+      },
+      "account": {
+        "precision": 0.9385964912280702,
+        "recall": 0.981651376146789,
+        "f1-score": 0.9596412556053812,
+        "support": 109.0
+      },
+      "accuracy": 0.9395770392749244,
+      "macro avg": {
+        "precision": 0.9395434919783173,
+        "recall": 0.9398297379948756,
+        "f1-score": 0.9394163062847224,
+        "support": 331.0
+      },
+      "weighted avg": {
+        "precision": 0.9395492140372312,
+        "recall": 0.9395770392749244,
+        "f1-score": 0.9392941011528754,
+        "support": 331.0
+      }
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 3.510441839694977,
+      "validation_loss": 0.946075975894928,
+      "validation_accuracy": 0.56797583081571,
+      "validation_macro_f1": 0.5483140655105972,
+      "optimizer_steps": 4,
+      "elapsed_seconds": 0.20173970000178088
+    },
+    {
+      "epoch": 2,
+      "train_loss": 3.3021119236946106,
+      "validation_loss": 0.8584620356559753,
+      "validation_accuracy": 0.6888217522658611,
+      "validation_macro_f1": 0.694981809671519,
+      "optimizer_steps": 8,
+      "elapsed_seconds": 0.4209599000023445
+    },
+    {
+      "epoch": 3,
+      "train_loss": 3.1331238746643066,
+      "validation_loss": 0.7511528134346008,
+      "validation_accuracy": 0.7824773413897281,
+      "validation_macro_f1": 0.7766388888888889,
+      "optimizer_steps": 12,
+      "elapsed_seconds": 0.6399884000056772
+    },
+    {
+      "epoch": 4,
+      "train_loss": 3.0063617825508118,
+      "validation_loss": 0.6613823771476746,
+      "validation_accuracy": 0.8459214501510574,
+      "validation_macro_f1": 0.8489294875593671,
+      "optimizer_steps": 16,
+      "elapsed_seconds": 0.8656703000015114
+    },
+    {
+      "epoch": 5,
+      "train_loss": 2.901373326778412,
+      "validation_loss": 0.5664774179458618,
+      "validation_accuracy": 0.8429003021148036,
+      "validation_macro_f1": 0.8420460906856563,
+      "optimizer_steps": 20,
+      "elapsed_seconds": 1.094019300006039
+    },
+    {
+      "epoch": 6,
+      "train_loss": 2.8170332312583923,
+      "validation_loss": 0.49139514565467834,
+      "validation_accuracy": 0.8882175226586103,
+      "validation_macro_f1": 0.8884334751270235,
+      "optimizer_steps": 24,
+      "elapsed_seconds": 1.2836440000028233
+    },
+    {
+      "epoch": 7,
+      "train_loss": 2.750052273273468,
+      "validation_loss": 0.43245160579681396,
+      "validation_accuracy": 0.8942598187311178,
+      "validation_macro_f1": 0.8937598063179459,
+      "optimizer_steps": 28,
+      "elapsed_seconds": 1.51255669999955
+    },
+    {
+      "epoch": 8,
+      "train_loss": 2.699505031108856,
+      "validation_loss": 0.3887529969215393,
+      "validation_accuracy": 0.8761329305135952,
+      "validation_macro_f1": 0.8757871512116707,
+      "optimizer_steps": 32,
+      "elapsed_seconds": 1.7465162000007695
+    },
+    {
+      "epoch": 9,
+      "train_loss": 2.6598398089408875,
+      "validation_loss": 0.3526124656200409,
+      "validation_accuracy": 0.8942598187311178,
+      "validation_macro_f1": 0.8937593190189478,
+      "optimizer_steps": 36,
+      "elapsed_seconds": 2.0352876000033575
+    },
+    {
+      "epoch": 10,
+      "train_loss": 2.626371383666992,
+      "validation_loss": 0.32392972707748413,
+      "validation_accuracy": 0.8972809667673716,
+      "validation_macro_f1": 0.8966319755704037,
+      "optimizer_steps": 40,
+      "elapsed_seconds": 2.253002800003742
+    },
+    {
+      "epoch": 11,
+      "train_loss": 2.6042688488960266,
+      "validation_loss": 0.3027448058128357,
+      "validation_accuracy": 0.9063444108761329,
+      "validation_macro_f1": 0.9055137096974669,
+      "optimizer_steps": 44,
+      "elapsed_seconds": 2.5019002000044566
+    },
+    {
+      "epoch": 12,
+      "train_loss": 2.581394851207733,
+      "validation_loss": 0.29349398612976074,
+      "validation_accuracy": 0.9214501510574018,
+      "validation_macro_f1": 0.9212965068524642,
+      "optimizer_steps": 48,
+      "elapsed_seconds": 2.753765100002056
+    },
+    {
+      "epoch": 13,
+      "train_loss": 2.5713412761688232,
+      "validation_loss": 0.2784521281719208,
+      "validation_accuracy": 0.918429003021148,
+      "validation_macro_f1": 0.9182847124490138,
+      "optimizer_steps": 52,
+      "elapsed_seconds": 3.020924800002831
+    },
+    {
+      "epoch": 14,
+      "train_loss": 2.5575878024101257,
+      "validation_loss": 0.270981103181839,
+      "validation_accuracy": 0.9244712990936556,
+      "validation_macro_f1": 0.9239199477531156,
+      "optimizer_steps": 56,
+      "elapsed_seconds": 3.2377339000013308
+    },
+    {
+      "epoch": 15,
+      "train_loss": 2.5508684515953064,
+      "validation_loss": 0.2687714397907257,
+      "validation_accuracy": 0.918429003021148,
+      "validation_macro_f1": 0.9177033492822967,
+      "optimizer_steps": 60,
+      "elapsed_seconds": 3.469875000002503
+    },
+    {
+      "epoch": 16,
+      "train_loss": 2.545975625514984,
+      "validation_loss": 0.2623690962791443,
+      "validation_accuracy": 0.9274924471299094,
+      "validation_macro_f1": 0.9269410699745585,
+      "optimizer_steps": 64,
+      "elapsed_seconds": 3.653285700005654
+    },
+    {
+      "epoch": 17,
+      "train_loss": 2.540157973766327,
+      "validation_loss": 0.2592385411262512,
+      "validation_accuracy": 0.9335347432024169,
+      "validation_macro_f1": 0.9332338290671625,
+      "optimizer_steps": 68,
+      "elapsed_seconds": 3.9120878000030643
+    },
+    {
+      "epoch": 18,
+      "train_loss": 2.5352465510368347,
+      "validation_loss": 0.25841766595840454,
+      "validation_accuracy": 0.9395770392749244,
+      "validation_macro_f1": 0.9394163062847224,
+      "optimizer_steps": 72,
+      "elapsed_seconds": 4.150609100004658
+    },
+    {
+      "epoch": 19,
+      "train_loss": 2.5372740030288696,
+      "validation_loss": 0.25820180773735046,
+      "validation_accuracy": 0.9395770392749244,
+      "validation_macro_f1": 0.9394163062847224,
+      "optimizer_steps": 76,
+      "elapsed_seconds": 4.373981400000048
+    },
+    {
+      "epoch": 20,
+      "train_loss": 2.537224292755127,
+      "validation_loss": 0.2581579089164734,
+      "validation_accuracy": 0.9395770392749244,
+      "validation_macro_f1": 0.9394163062847224,
+      "optimizer_steps": 80,
+      "elapsed_seconds": 4.599554800006445
+    }
+  ],
+  "training_summary": {
+    "model_key": "clm",
+    "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+    "run_name": "20261014_101706",
+    "learning_rate": 0.0005,
+    "best_epoch": 20,
+    "validation_macro_f1": 0.9394163062847224,
+    "validation_accuracy": 0.9395770392749244,
+    "validation_loss": 0.2581579089164734,
+    "train_seconds": 4.637470400004531,
+    "validation_inference_seconds": 28.407530029886402,
+    "peak_gpu_memory_mb": 5289.0,
+    "train_rows": 990,
+    "validation_rows": 331,
+    "epochs_run": 20,
+    "epochs_max": 20,
+    "stop_reason": "최대 에폭(20) 도달",
+    "embed_seconds_train": 82.56908589601517,
+    "embed_seconds_validation": 28.38889322988689,
+    "num_parameters": 8209623041,
+    "model_size_mb": 4866.9,
+    "head_parameters": 18887681,
+    "head_size_mb": 72.1,
+    "encoder_parameters": 8190735360,
+    "encoder_size_mb": 4794.9
+  },
+  "run_config": {
+    "topic": "inquiries",
+    "dataset": "total_merge",
+    "model_key": "clm",
+    "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+    "run_name": "20261014_101706",
+    "learning_rate": 0.0005,
+    "loss": "infonce",
+    "epochs_max": 20,
+    "early_stopping_patience": 5,
+    "target_macro_f1": null,
+    "score_stop": {
+      "enabled": true,
+      "min_accuracy": 1.0,
+      "min_macro_f1": 1.0,
+      "max_val_loss": 0.01,
+      "min_epochs": 3
+    },
+    "batch_size": 256,
+    "gradient_accumulation_steps": 1,
+    "max_length": 2048,
+    "truncation": "tail",
+    "truncated_rows": {
+      "train": 0,
+      "validation": 0
+    },
+    "weight_decay": 0.0,
+    "scheduler": "OneCycleLR (cos)",
+    "warmup_ratio": 0.1,
+    "grad_clip": 1.0,
+    "seed": 42,
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "train_rows": 990,
+    "validation_rows": 331,
+    "train_csv": [
+      "dataset/inquiries/total_merge/train.csv"
+    ],
+    "validation_csv": [
+      "dataset/inquiries/total_merge/validation.csv"
+    ],
+    "trainable": "state/action head only (encoder frozen)",
+    "init_head": "C:\\Users\\scy04\\.cache\\huggingface\\hub\\models--Contrastive-LM--CLM-v0.1-8B\\snapshots\\e939398d4556fcd9400c76fa8c5a513202f42b0a\\CLM_v0.1-8B.pt",
+    "encoder": {
+      "encoder": "Qwen3-8B",
+      "quantization": "Q4_K_M",
+      "gguf_repo": "Qwen/Qwen3-8B-GGUF",
+      "gguf_file": "Qwen3-8B-Q4_K_M.gguf",
+      "gguf_size_bytes": 5027783488,
+      "pooling": "last",
+      "max_len": 2048,
+      "hidden_size": 4096,
+      "served_name": "qwen3-8b",
+      "tokenizer": "Qwen/Qwen3-8B",
+      "llama_cpp_build": "b11608-04f7226a2",
+      "clm_commit": "d5f9ef0fd9bde185df0ceaad4f4ecc6cfe8c34f6",
+      "reference_cosine": 1.0
+    },
+    "gpu_memory_scope": "server_delta",
+    "precision": "float32 (head)",
+    "device": "cpu (head) + llama.cpp (encoder)",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "python": "3.12.10",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "llama_cpp_build": "b11608-04f7226a2",
+    "clm_commit": "d5f9ef0fd9bde185df0ceaad4f4ecc6cfe8c34f6"
+  }
+}

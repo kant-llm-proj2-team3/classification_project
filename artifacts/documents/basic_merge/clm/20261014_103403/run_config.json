@@ -1,0 +1,71 @@
+{
+  "topic": "documents",
+  "dataset": "basic_merge",
+  "model_key": "clm",
+  "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+  "run_name": "20261014_103403",
+  "learning_rate": 0.0005,
+  "loss": "infonce",
+  "epochs_max": 20,
+  "early_stopping_patience": 5,
+  "target_macro_f1": null,
+  "score_stop": {
+    "enabled": true,
+    "min_accuracy": 1.0,
+    "min_macro_f1": 1.0,
+    "max_val_loss": 0.01,
+    "min_epochs": 3
+  },
+  "batch_size": 32,
+  "gradient_accumulation_steps": 1,
+  "max_length": 2048,
+  "truncation": "tail",
+  "truncated_rows": {
+    "train": 0,
+    "validation": 0
+  },
+  "weight_decay": 0.0,
+  "scheduler": "OneCycleLR (cos)",
+  "warmup_ratio": 0.1,
+  "grad_clip": 1.0,
+  "seed": 42,
+  "labels": [
+    "announcement",
+    "manual",
+    "minutes"
+  ],
+  "train_rows": 660,
+  "validation_rows": 220,
+  "train_csv": [
+    "dataset/documents/basic_merge/train.csv"
+  ],
+  "validation_csv": [
+    "dataset/documents/basic_merge/validation.csv"
+  ],
+  "trainable": "state/action head only (encoder frozen)",
+  "init_head": "C:\\Users\\scy04\\.cache\\huggingface\\hub\\models--Contrastive-LM--CLM-v0.1-8B\\snapshots\\e939398d4556fcd9400c76fa8c5a513202f42b0a\\CLM_v0.1-8B.pt",
+  "encoder": {
+    "encoder": "Qwen3-8B",
+    "quantization": "Q4_K_M",
+    "gguf_repo": "Qwen/Qwen3-8B-GGUF",
+    "gguf_file": "Qwen3-8B-Q4_K_M.gguf",
+    "gguf_size_bytes": 5027783488,
+    "pooling": "last",
+    "max_len": 2048,
+    "hidden_size": 4096,
+    "served_name": "qwen3-8b",
+    "tokenizer": "Qwen/Qwen3-8B",
+    "llama_cpp_build": "b11608-04f7226a2",
+    "clm_commit": "d5f9ef0fd9bde185df0ceaad4f4ecc6cfe8c34f6",
+    "reference_cosine": 1.0
+  },
+  "gpu_memory_scope": "server_delta",
+  "precision": "float32 (head)",
+  "device": "cpu (head) + llama.cpp (encoder)",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "python": "3.12.10",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "llama_cpp_build": "b11608-04f7226a2",
+  "clm_commit": "d5f9ef0fd9bde185df0ceaad4f4ecc6cfe8c34f6"
+}

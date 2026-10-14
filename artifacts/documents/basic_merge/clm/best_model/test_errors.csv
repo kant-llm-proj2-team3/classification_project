@@ -1,0 +1,14 @@
+﻿id,text,actual,predicted,group_id
+documents-v2-manual-test-017-v1,신청한 재료가 필요 없어지면 접수 번호로 배부 준비 상태를 확인한다. 아직 준비 전이면 철회 요청을 남긴다. 이미 포장한 재료는 담당자가 재배부 가능 여부를 확인한 뒤 처리한다.,manual,announcement,documents-v2-manual-test-017
+documents-v2-announcement-test-014-v2,"- 대여 물품 목록에 실제 상태를 보여 주는 사진을 추가했다.
+- 사진은 촬영 당시의 상태이므로 현장 인수 때 한 번 더 확인한다.
+- 사진에 없는 부속품은 대여 포함 여부를 따로 문의한다.",announcement,manual,documents-v2-announcement-test-014
+documents-v2-announcement-test-006-v1,종이 기록물 보관 강좌의 첫 회차에서는 손상 사례를 관찰합니다. 개인 원본을 가져오지 말고 상태를 보여 주는 사진을 준비합니다. 현장에서 실제 복원 처치를 제공하지 않습니다.,announcement,manual,documents-v2-announcement-test-006
+documents-v2-announcement-test-014-v1,대여 물품 목록에 실제 상태를 보여 주는 사진을 추가했습니다. 사진은 촬영 당시의 상태이므로 현장 인수 때 다시 확인합니다. 사진에 없는 부속품은 대여 포함 여부를 따로 문의합니다.,announcement,manual,documents-v2-announcement-test-014
+documents-v2-announcement-test-006-v2,"- 종이 기록물 보관 강좌의 첫 회차에서는 손상 사례를 관찰한다.
+- 개인 원본을 가져오지 말고 상태를 보여 주는 사진을 준비한다.
+- 현장에서 실제 복원 처치를 제공하지 않는다.",announcement,manual,documents-v2-announcement-test-006
+documents-v2-manual-test-017-v2,"재료 요청 철회
+신청한 재료가 필요 없어지면 접수 번호로 배부 준비 상태를 확인합니다. 아직 준비 전이면 철회 요청을 남깁니다. 이미 포장한 재료는 담당자가 재배부 가능 여부를 확인한 뒤 처리합니다.",manual,announcement,documents-v2-manual-test-017
+documents-v2-announcement-test-025-v2,직물 염색실의 새 안내에서 구분할 사항은 다음과 같습니다. 수정본이 들어왔어도 이전에 안내한 근거를 지우지 않습니다. 공개하지 않은 정보가 필요한 경우에는 자료 이용 요청을 별도로 제출해 주세요.,announcement,manual,documents-v2-announcement-test-025
+documents-v2-announcement-test-029-v1,음반 해설실의 새 안내에서 구분할 사항은 다음과 같습니다. 수정본이 들어왔어도 이전에 안내한 근거를 지우지 않습니다. 원본의 실제 상태 확인은 별도 자료 열람 조건을 따라야 합니다.,announcement,manual,documents-v2-announcement-test-029

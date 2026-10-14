@@ -1,0 +1,75 @@
+{
+  "topic": "documents",
+  "dataset": "basic_merge",
+  "split": "test",
+  "selected_model": null,
+  "evaluated_model": "laya",
+  "official": false,
+  "selected_run": "20261013_173442",
+  "model_id": "convaiinnovations/laya (multilingual)",
+  "classifier": {
+    "n": 220,
+    "accuracy": 0.9818181818181818,
+    "macro_f1": 0.9817972851240953,
+    "per_class": {
+      "announcement": {
+        "precision": 0.9861111111111112,
+        "recall": 0.9594594594594594,
+        "f1-score": 0.9726027397260274,
+        "support": 74.0
+      },
+      "manual": {
+        "precision": 0.96,
+        "recall": 1.0,
+        "f1-score": 0.9795918367346939,
+        "support": 72.0
+      },
+      "minutes": {
+        "precision": 1.0,
+        "recall": 0.9864864864864865,
+        "f1-score": 0.9931972789115646,
+        "support": 74.0
+      },
+      "accuracy": 0.9818181818181818,
+      "macro avg": {
+        "precision": 0.982037037037037,
+        "recall": 0.981981981981982,
+        "f1-score": 0.9817972851240953,
+        "support": 220.0
+      },
+      "weighted avg": {
+        "precision": 0.9822373737373737,
+        "recall": 0.9818181818181818,
+        "f1-score": 0.9818173346549081,
+        "support": 220.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        71,
+        3,
+        0
+      ],
+      [
+        0,
+        72,
+        0
+      ],
+      [
+        1,
+        0,
+        73
+      ]
+    ],
+    "confusion_matrix_axes": {
+      "rows": "actual",
+      "columns": "predicted",
+      "labels": [
+        "announcement",
+        "manual",
+        "minutes"
+      ]
+    }
+  },
+  "baseline": null
+}

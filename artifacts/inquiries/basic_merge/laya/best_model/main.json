@@ -22,7 +22,7 @@
   "input": {
     "train_rows": 660,
     "validation_rows": 220,
-    "test_rows": null
+    "test_rows": 220
   },
   "validation": {
     "n": 220,
@@ -70,12 +70,60 @@
       ]
     ]
   },
-  "test": null,
-  "test_meta": null,
+  "test": {
+    "n": 220,
+    "correct": 217,
+    "accuracy": 0.9863636363636363,
+    "macro_f1": 0.9864809317195707,
+    "loss": null,
+    "per_label": {
+      "shipping": {
+        "correct": 74,
+        "n": 74,
+        "f1": 0.9801324503311258
+      },
+      "refund": {
+        "correct": 72,
+        "n": 72,
+        "f1": 1.0
+      },
+      "account": {
+        "correct": 71,
+        "n": 74,
+        "f1": 0.9793103448275862
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        74,
+        0,
+        0
+      ],
+      [
+        0,
+        72,
+        0
+      ],
+      [
+        3,
+        0,
+        71
+      ]
+    ]
+  },
+  "test_meta": {
+    "official": false,
+    "evaluated_at": "2026-10-14 10:43:29"
+  },
   "cost": {
     "train_seconds": 333.20234900014475,
     "validation_inference_seconds": 1.8700162000022829,
-    "test_inference_seconds": null,
+    "test_inference_seconds": 2.543,
     "peak_gpu_mb": 6199.7900390625,
     "num_parameters": 321908998,
     "model_size_mb": 614.0
@@ -160,7 +208,7 @@
   "files": {
     "sub": "sub.json",
     "validation_predictions": "validation_predictions.csv",
-    "test_predictions": null,
+    "test_predictions": "test_predictions.csv",
     "validation_errors": "validation_errors.csv",
     "log": "train.log"
   }

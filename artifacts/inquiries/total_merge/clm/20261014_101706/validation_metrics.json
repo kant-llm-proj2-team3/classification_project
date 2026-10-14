@@ -1,0 +1,64 @@
+{
+  "n": 331,
+  "accuracy": 0.9395770392749244,
+  "macro_f1": 0.9394163062847224,
+  "per_class": {
+    "shipping": {
+      "precision": 0.9454545454545454,
+      "recall": 0.9369369369369369,
+      "f1-score": 0.9411764705882353,
+      "support": 111.0
+    },
+    "refund": {
+      "precision": 0.9345794392523364,
+      "recall": 0.9009009009009009,
+      "f1-score": 0.9174311926605505,
+      "support": 111.0
+    },
+    "account": {
+      "precision": 0.9385964912280702,
+      "recall": 0.981651376146789,
+      "f1-score": 0.9596412556053812,
+      "support": 109.0
+    },
+    "accuracy": 0.9395770392749244,
+    "macro avg": {
+      "precision": 0.9395434919783173,
+      "recall": 0.9398297379948756,
+      "f1-score": 0.9394163062847224,
+      "support": 331.0
+    },
+    "weighted avg": {
+      "precision": 0.9395492140372312,
+      "recall": 0.9395770392749244,
+      "f1-score": 0.9392941011528754,
+      "support": 331.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      104,
+      5,
+      2
+    ],
+    [
+      6,
+      100,
+      5
+    ],
+    [
+      0,
+      2,
+      107
+    ]
+  ],
+  "confusion_matrix_axes": {
+    "rows": "actual",
+    "columns": "predicted",
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ]
+  }
+}

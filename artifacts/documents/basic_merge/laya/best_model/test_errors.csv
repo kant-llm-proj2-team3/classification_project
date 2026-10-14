@@ -1,0 +1,7 @@
+﻿id,text,actual,predicted,group_id
+documents-v2-announcement-test-002-v2,"- 미니어처 전시의 조명 밝기를 수요일 개장 전에 낮춘다.
+- 발열에 약한 작품의 위치는 변경 없이 유지한다.
+- 밝기가 부족한 구간은 개장 후 관람 의견을 받아 한 번 더 확인한다.",announcement,manual,documents-v2-announcement-test-002
+documents-v2-announcement-test-002-v1,미니어처 전시의 조명 밝기를 수요일 개장 전에 낮춥니다. 발열에 약한 작품의 위치는 그대로 유지합니다. 밝기가 부족한 구간은 개장 후 관람 의견을 받아 다시 확인합니다.,announcement,manual,documents-v2-announcement-test-002
+documents-v2-announcement-test-026-v1,잉크 만들기에 쓸 식물은 공방에서 배부합니다. 가져온 식물을 바로 넣을 수 없으니 참가 전 재료 범위를 확인해 주세요.,announcement,manual,documents-v2-announcement-test-026
+documents-v2-minutes-test-029-v1,해설 수정안은 일정한 회전 속도를 역사적 사실로 쓰지 않도록 정리됐다. 연구원이 당시 수로 자료에서 확인되는 조건을 찾아 보완한다.,minutes,announcement,documents-v2-minutes-test-029

@@ -1,0 +1,9 @@
+{
+  "width": 1536,
+  "depth": 3,
+  "projection_dim": 512,
+  "activation": "gelu",
+  "layernorm": true,
+  "residual": false,
+  "hidden_size": 4096
+}

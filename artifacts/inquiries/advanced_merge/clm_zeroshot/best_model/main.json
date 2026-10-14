@@ -1,0 +1,130 @@
+{
+  "schema": "project2-result/v1",
+  "model_name": "clm_zeroshot",
+  "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+  "topic": "inquiries",
+  "dataset": "advanced_merge",
+  "dataset_id": "inquiries/advanced_merge",
+  "run_id": "20261014_101643",
+  "train": {
+    "fine_tuned": false,
+    "max_len": 2048
+  },
+  "input": {
+    "train_rows": 0,
+    "validation_rows": 111,
+    "test_rows": 111
+  },
+  "validation": {
+    "n": 111,
+    "correct": 49,
+    "accuracy": 0.44144144144144143,
+    "macro_f1": 0.4103491050859472,
+    "loss": 1.0439176559448242,
+    "per_label": {
+      "shipping": {
+        "correct": 27,
+        "n": 37,
+        "f1": 0.5684210526315789
+      },
+      "refund": {
+        "correct": 16,
+        "n": 37,
+        "f1": 0.4444444444444444
+      },
+      "account": {
+        "correct": 6,
+        "n": 37,
+        "f1": 0.21818181818181817
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        27,
+        3,
+        7
+      ],
+      [
+        16,
+        16,
+        5
+      ],
+      [
+        15,
+        16,
+        6
+      ]
+    ]
+  },
+  "test": {
+    "n": 111,
+    "correct": 45,
+    "accuracy": 0.40540540540540543,
+    "macro_f1": 0.3570135746606335,
+    "loss": null,
+    "per_label": {
+      "shipping": {
+        "correct": 30,
+        "n": 37,
+        "f1": 0.5769230769230769
+      },
+      "refund": {
+        "correct": 10,
+        "n": 37,
+        "f1": 0.29411764705882354
+      },
+      "account": {
+        "correct": 5,
+        "n": 37,
+        "f1": 0.2
+      }
+    },
+    "labels": [
+      "shipping",
+      "refund",
+      "account"
+    ],
+    "confusion_matrix": [
+      [
+        30,
+        4,
+        3
+      ],
+      [
+        22,
+        10,
+        5
+      ],
+      [
+        15,
+        17,
+        5
+      ]
+    ]
+  },
+  "test_meta": {
+    "official": false,
+    "evaluated_at": "2026-10-14 10:39:57"
+  },
+  "cost": {
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 17.98904893641884,
+    "test_inference_seconds": 16.77,
+    "peak_gpu_mb": 5289.0,
+    "num_parameters": 8209623041,
+    "model_size_mb": 4866.9
+  },
+  "curve": null,
+  "files": {
+    "sub": "sub.json",
+    "validation_predictions": "validation_predictions.csv",
+    "test_predictions": "test_predictions.csv",
+    "validation_errors": "validation_errors.csv",
+    "log": "train.log"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "topic": "inquiries",
+  "dataset": "basic",
+  "model_key": "clm_zeroshot",
+  "selection_rule": "validation Macro-F1 이 높은 쪽, 동점이면 validation loss 가 낮은 쪽. 더 좋아졌을 때만 best_model 을 교체한다. (test 점수는 사용하지 않음)",
+  "best": {
+    "model_key": "clm_zeroshot",
+    "model_id": "CLM-v0.1-8B head + Qwen3-8B Q4_K_M",
+    "run_name": "20261014_101501",
+    "learning_rate": null,
+    "best_epoch": 0,
+    "validation_macro_f1": 0.21534279673814558,
+    "validation_accuracy": 0.35,
+    "validation_loss": 1.0224976539611816,
+    "train_seconds": 0.0,
+    "validation_inference_seconds": 5.018359884321399,
+    "peak_gpu_memory_mb": 5289.0,
+    "train_rows": 0,
+    "validation_rows": 120,
+    "epochs_run": 0,
+    "epochs_max": 0,
+    "stop_reason": "zero-shot (학습 없음)",
+    "num_parameters": 8209623041,
+    "model_size_mb": 4866.9,
+    "head_parameters": 18887681,
+    "head_size_mb": 72.1,
+    "encoder_parameters": 8190735360,
+    "encoder_size_mb": 4794.9
+  },
+  "last_run": {
+    "run_name": "20261014_101501",
+    "replaced_best": true,
+    "reason": "이 모델의 첫 결과라서 best_model 로 저장",
+    "validation_macro_f1": 0.21534279673814558,
+    "validation_loss": 1.0224976539611816
+  },
+  "previous_best": null,
+  "runs": [
+    {
+      "run_name": "20261014_101501",
+      "learning_rate": null,
+      "best_epoch": 0,
+      "validation_macro_f1": 0.21534279673814558,
+      "validation_accuracy": 0.35,
+      "validation_loss": 1.0224976539611816,
+      "train_seconds": 0.0,
+      "peak_gpu_memory_mb": 5289.0,
+      "is_best": true
+    }
+  ],
+  "updated_at": "2026-10-14 10:15:07"
+}
