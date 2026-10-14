@@ -4,6 +4,7 @@ from typing import Annotated, Literal
 
 from chain import create_chain
 from classifier import close_classifiers, load_classifier
+from generator import OpenAIGenerator
 from fastapi import Depends, FastAPI, HTTPException, Request
 from langchain_core.runnables import Runnable
 from pydantic import AliasChoices, BaseModel, ConfigDict, Field, field_validator
@@ -29,11 +30,14 @@ class ChatRequest(BaseModel):
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     classifiers = await asyncio.to_thread(load_classifier)
-    app.state.chain = create_chain(classifiers)
+    generator = OpenAIGenerator()
+    app.state.classifiers = classifiers
+    app.state.chain = create_chain(classifiers, generator)
     try:
         yield
     finally:
         app.state.chain = None
+        await generator.aclose()
         await asyncio.to_thread(close_classifiers, classifiers)
 
 
@@ -48,25 +52,22 @@ def get_chain(request: Request) -> Runnable:
 
 
 @app.get("/health")
-async def health() -> dict:
-    return {"status": "ok", "mode": "stub"}
-
-
-@app.post("/chat")
-async def chat(body: ChatRequest) -> dict:
-    # 프론트에 테스트 응답을 반환한다.
+async def health(request: Request) -> dict:
+    # 서버 연결 확인용. 주제별 분류 모델이 준비됐는지도 함께 알려 준다.
+    classifiers = getattr(request.app.state, "classifiers", {})
     return {
-        "status": "success",
-        "classification": {"status": "skipped"},
-        "generation": {
-            "status": "success",
-            "answer": "요청을 정상적으로 받았습니다.",
-            "next_steps": [],
+        "status": "ok",
+        "mode": "live",
+        "classifiers": {
+            topic: {"model": bundle.model_key, "run_name": bundle.run_name, "error": bundle.error}
+            for topic, bundle in classifiers.items()
         },
     }
 
-# async def chat(
-#     body: ChatRequest,
-#     chain: Annotated[Runnable, Depends(get_chain)],
-# ) -> dict:
-#     return await chain.ainvoke(body.model_dump())
+
+@app.post("/chat")
+async def chat(
+    body: ChatRequest,
+    chain: Annotated[Runnable, Depends(get_chain)],
+) -> dict:
+    return await chain.ainvoke(body.model_dump())
