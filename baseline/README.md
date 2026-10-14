@@ -49,7 +49,7 @@ project_2/artifacts/
 │   │   │   ├── 20261012_195030/   학습 1회 = 폴더 1개 (날짜_시각, 점수·로그만)
 │   │   │   └── 20261012_210544/
 │   │   ├── recommendation.json                  (3번 추천) 추천 모델과 이유
-│   │   └── (모델 간 비교표는 화면에만 출력합니다. 파일로는 artifacts/viz 의 all_main.csv 를 사용)
+│   │   └── (모델 간 비교표는 화면에만 출력합니다)
 └── input_length_report.csv                       (5번) 입력 길이 점검
 ```
 
@@ -80,7 +80,7 @@ Hugging Face 가 모델 설정을 `config.json` 으로 저장하기 때문에, �
 - **데이터셋 켜기/끄기**: `DATASET_SWITCH` 에서 해당 줄을 `True`/`False` 로 변경 (데이터 폴더가 비어 있으면 자동으로 건너뜀)
 - **데이터셋 구성**: `basic`, `advanced`(원본), `basic_merge`, `advanced_merge`(원본 + 추가본), `total_merge`(basic_merge + advanced_merge).
   폴더 위치는 `DATASET_FOLDERS`. 예전 이름 `basic_plus`, `advanced_plus` 는 `basic_merge`, `advanced_merge` 로 바뀌었습니다.
-- **모델 추천에서 빼기**: `RECOMMEND_EXCLUDED` (기본 `total_merge`). 서버에 줄 최종 모델을 만드는 데이터셋이라 학습, test 평가, 시각화 표에는 포함되지만
+- **모델 추천에서 빼기**: `RECOMMEND_EXCLUDED` (기본 `total_merge`). 서버에 줄 최종 모델을 만드는 데이터셋이라 학습, test 평가에는 포함되지만 그래프에서는 기본으로 빠지고(`--with-total-merge` 로 포함)
   추천(메뉴 3번·8번)에서는 빠집니다. 이 데이터셋의 test 는 4개 모델을 모두 평가하고 공식 모델 표시는 하지 않습니다.
 - **Learning Rate**: `LEARNING_RATES` 에 모델별 숫자 하나. `[2e-5, 5e-5]` 처럼 리스트로 적으면 값마다 run 이 하나씩 돌고 best 가 선택됨(튜닝)
 - **배치**: `batch_size`(한 번에 넣는 문장 수) x `gradient_accumulation_steps`(몇 묶음마다 가중치를 고칠지) = 실질 배치. 기본 4 x 2 = 8
@@ -94,7 +94,7 @@ Hugging Face 가 모델 설정을 `config.json` 으로 저장하기 때문에, �
 
 설정을 바꿔도 이전 결과는 그대로 남고, 새 학습 결과는 best_model 과 비교될 뿐입니다. 이전 결과를 지우려면 2번(초기화)을 쓰세요.
 
-## 결과 파일: 시각화·팀원 비교용 (메뉴 6, 7번)
+## 결과 파일과 그래프 (메뉴 6, 7번)
 
 학습할 때마다 날짜 폴더와 `best_model` 에 아래 파일이 함께 생깁니다. 이미 있는 결과에는 메뉴 6번이 (다시 학습하지 않고) 만듭니다.
 
@@ -106,8 +106,9 @@ Hugging Face 가 모델 설정을 `config.json` 으로 저장하기 때문에, �
 | `test_predictions.csv` | test 모든 문장의 예측 (메뉴 4번을 실행한 이후) |
 
 - `main.json` 의 `test` 칸은 메뉴 4번 전에는 `null` 입니다. `schema` 필드는 파일 형식의 버전 표시입니다.
-- 메뉴 7번은 모든 데이터셋 x 모델의 `best_model/main.json` 을 `artifacts/viz/` 에 모아 그래프용 표를 만듭니다:
-  `all_main.json`, `all_main.csv`(모델 x 데이터셋 한 줄), `all_epochs.csv`(학습 곡선), `all_per_label.csv`, `all_confusion.csv`.
+- 메뉴 7번(그래프)은 모든 데이터셋 x 모델의 `best_model/main.json` **만** 읽어 PNG 그래프를 `artifacts/viz/charts/` 에 만듭니다. (CSV 표는 만들지 않습니다)
+  `01_heatmap_test`(데이터셋 x 모델 test 정확도), `02_heatmap_validation`, `03_baseline_vs_official`, `04_learning_curves`, `05_cost_vs_accuracy`,
+  `06_confusion_official`. 직접 실행할 수도 있습니다: `uv run python baseline/steps/make_charts.py` (처음 한 번 `uv add matplotlib`, 서버용 total_merge 를 넣으려면 `--with-total-merge`).
 - 팀원과 비교할 때는 문장별 예측 CSV(`id`, `actual`, `predicted`)를 같이 주고받으면, 같은 코드로 지표를 다시 계산하고
   같은 문장에서 누가 맞고 틀렸는지도 비교할 수 있습니다.
 
@@ -122,15 +123,33 @@ Hugging Face 가 모델 설정을 `config.json` 으로 저장하기 때문에, �
   `test_metrics.json` 과 `main.json` 의 `test_meta` 에 표시되고, test 점수를 보고 모델을 다시 고르면 안 됩니다.
 - 모델은 각자 한 번만 평가합니다. (이미 평가한 모델은 건너뜀. baseline 은 비교 기준선이라 항상 다시 계산해도 같은 값)
 - 각 모델 `best_model` 에 `test_metrics.json`, `test_errors.csv`, `test_predictions.csv` 가 저장되고,
-  데이터셋별 모델 비교표는 화면에만 출력되고 파일로는 저장되지 않습니다. (모아 볼 때는 7번이 만드는 `all_main.csv`)
+  데이터셋별 모델 비교표는 화면에만 출력되고 파일로는 저장되지 않습니다.
 
 ## 한 번에 마무리 (메뉴 8번)
 
-현재 best_model 로 **빠진 결과 파일 보강 -> 모델 추천 -> 4개 모델 test 평가 -> 시각화용 모으기**를 한 번에 실행합니다. (다시 학습하지 않음)
+현재 best_model 로 **빠진 결과 파일 보강 -> 모델 추천 -> 4개 모델 test 평가 -> 그래프 만들기**를 한 번에 실행합니다. (다시 학습하지 않음)
 학습이 모두 끝난 뒤에 실행하세요. test 는 모델마다 한 번만 평가되고, 공식 모델은 validation 으로 정한 추천 모델입니다.
 
 학습(1번)이 끝날 때마다 새 run 이 best 를 못 이겼을 때 남는 옛 best_model 에 main.json / sub.json / 문장별 예측이 없으면
 자동으로 채웁니다. (그 best 자신의 기록으로 main/sub 를 정리하고, 예측은 저장된 가중치로 validation 을 한 번 더 예측해 만들며 다른 run 의 파일을 복사하지 않음)
+
+## 외부 모델 (laya, jev, clm) 결과 합치기
+
+다른 팀원이 직접 학습해서 결과만 넘겨 주는 모델을 우리 모델과 같은 표에 넣습니다. 우리 코드는 이 모델을 학습하거나 test 를 직접 평가하지 않고,
+결과 파일만 읽습니다.
+
+- **켜고 끄기**: `baseline_bert_config.py` 의 `EXTERNAL_MODELS` (기본값 `{"laya": False, "jev": False, "clm": False}`, 쓰려면 해당 모델을 `True` 로). `False` 면 무시합니다.
+- **폴더 위치**: `artifacts/<주제>/<데이터셋>/<모델 소문자 이름>/best_model/main.json` (예: `artifacts/documents/advanced/laya/best_model/main.json`).
+  폴더가 없는 데이터셋은 오류 없이 건너뜁니다.
+- **모델 추천(3번·8번)**: `main.json` 의 **validation** 결과로 우리 모델과 같이 순위를 매깁니다. (`main.json` 이 없는 예전 결과만 `best_info.json` 으로 대신 읽음) validation 결과가 없거나
+  validation 문장 수가 우리와 다르면 비교에서 빠집니다. loss 가 비어 있으면 동점일 때 뒤로 보냅니다.
+- **test 비교(8번)**: 외부 모델의 test 점수는 팀원이 넘긴 `main.json` 의 `test` 칸 값을 그대로 씁니다.
+  `test` 칸이 비어 있으면 화면에 알리고 표에는 빈칸으로 남습니다. 공식 여부는 추천 결과(`recommendation.json`)로 정합니다.
+- **그래프(7번·8번)**: 같은 그래프에 함께 들어갑니다.
+- **참고용으로만 넣기**: `RECOMMEND_REFERENCE_ONLY` (기본 `("jev",)`)에 적힌 외부 모델은 baseline 처럼 모델 추천(최종 모델 선정)에서 빼고
+  표·그래프에 참고용으로만 들어갑니다. validation 칸이 없어도 되고 test 결과만 있어도 됩니다.
+- **초기화(2번)**: 우리 모델(baseline, bert, roberta, koelectra)만 지웁니다. 외부 모델 폴더는 지우지 않습니다.
+- 형식이 다르면(모델 이름, dataset_id, validation·test 문장 수, 라벨 순서) 7번·8번 실행 시 `[주의]` 경고가 나옵니다.
 
 ## 로그
 
