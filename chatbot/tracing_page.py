@@ -247,14 +247,12 @@ def overview_tab(stats):
     total_latency = stats["latency"].get("total_ms") or {}
     tokens = stats["tokens"]
 
-    cols = st.columns(6)
+    cols = st.columns(5)
     cols[0].metric("요청 수", f"{total:,}")
     cols[1].metric("성공률", f"{success / total:.1%}")
     cols[2].metric("실패·부분 실패", f"{total - success:,}건")
     cols[3].metric("총 시간 p50", ms_text(total_latency.get("p50")))
     cols[4].metric("총 시간 p95", ms_text(total_latency.get("p95")))
-    cols[5].metric("LLM 토큰", f"{tokens['llm_input'] + tokens['llm_output']:,}",
-                   f"입력 {tokens['llm_input']:,} / 출력 {tokens['llm_output']:,}", delta_color="off", delta_arrow="off")
 
     if stats["truncated_rows"]:
         st.warning("집계 한도(100,000건)를 넘어 일부 요청만 반영됐습니다. 기간을 좁혀보세요.")
@@ -276,7 +274,7 @@ def overview_tab(stats):
                     color=alt.Color("구분:N", scale=alt.Scale(domain=["성공", "실패"], range=["#4c78a8", "#e45756"]),
                                     legend=alt.Legend(orient="top", title=None)),
                     tooltip=["시각:T", "구분:N", "건수:Q"]),
-                use_container_width=True)
+                width="stretch")
 
         with right:
             st.markdown(f"**{unit} 평균 총 시간 (ms)**")
@@ -284,7 +282,7 @@ def overview_tab(stats):
                 alt.Chart(timeline).mark_line(point=True).encode(
                     x=alt.X("시각:T", title=None), y=alt.Y("avg_total_ms:Q", title=None),
                     tooltip=["시각:T", alt.Tooltip("avg_total_ms:Q", format=",.0f", title="평균 ms")]),
-                use_container_width=True)
+                width="stretch")
 
     left, mid, right = st.columns(3)
 
@@ -313,7 +311,7 @@ def overview_tab(stats):
     table = latency_table(stats["latency"])
 
     if not table.empty:
-        st.dataframe(table, hide_index=True, use_container_width=True, column_config={
+        st.dataframe(table, hide_index=True, width="stretch", column_config={
             name: st.column_config.NumberColumn(format="%.0f") for name in ["평균", "p50", "p90", "p95", "p99", "최대"]})
 
     note = []
@@ -323,12 +321,13 @@ def overview_tab(stats):
         note.append(f"분류 신뢰도 평균 {confidence['mean']:.3f} (최소 {confidence['min']:.3f})")
 
     note.append(f"입력이 잘린 요청 {stats['truncated_inputs']}건")
+    note.append(f"LLM 토큰 {tokens['llm_input'] + tokens['llm_output']:,} (입력 {tokens['llm_input']:,} · 출력 {tokens['llm_output']:,})")
     st.caption(" · ".join(note))
 
     if stats["errors"]:
         st.markdown("**오류 / 실패 사유**")
         st.dataframe(pd.DataFrame({"사유": list(stats["errors"]), "건수": list(stats["errors"].values())}),
-                     hide_index=True, use_container_width=True)
+                     hide_index=True, width="stretch")
 
 
 # ==========================================
@@ -374,7 +373,7 @@ def list_tab(api_url, filters, sort, direction, limit):
     frame = list_dataframe(items)
 
     event = st.dataframe(
-        frame, hide_index=True, use_container_width=True, height=520, key="req_table",
+        frame, hide_index=True, width="stretch", height=520, key="req_table",
         on_select="rerun", selection_mode="multi-row",
         column_config={
             "총 시간(ms)": st.column_config.NumberColumn(format="%.0f"),
@@ -494,14 +493,14 @@ def detail_tab(api_url):
             x=alt.X("시작(ms):Q", title="시작 이후 경과 (ms)"), x2="끝(ms):Q",
             color=alt.Color("상태:N", scale=colors, legend=alt.Legend(orient="top", title=None)),
             tooltip=["단계", alt.Tooltip("소요(ms):Q", format=",.1f"), "상태"]),
-        use_container_width=True)
+        width="stretch")
 
     by_id = {span["run_id"]: span["name"] for span in spans}
     table = pd.DataFrame([{
         "순서": span["seq"], "단계": span["name"], "상위": by_id.get(span["parent_run_id"], "-"),
         "소요(ms)": span["duration_ms"], "상태": span["status"], "오류": span["error_type"] or "",
     } for span in spans])
-    st.dataframe(table, hide_index=True, use_container_width=True,
+    st.dataframe(table, hide_index=True, width="stretch",
                  column_config={"소요(ms)": st.column_config.NumberColumn(format="%.1f")})
 
     for span in spans:
@@ -585,14 +584,11 @@ def export_tab(api_url, filters):
 # 8. 페이지
 # ==========================================
 
-def render(chat_route):
+def render():
     api_url = st.session_state.app_settings["api_url"]
 
-    title, back, refresh = st.columns([5, 1, 1])
+    title, refresh = st.columns([6, 1])
     title.title("📊 트레이싱")
-
-    if back.button("← 채팅으로"):
-        st.switch_page(chat_route)
 
     if refresh.button("🔄 새로고침"):
         st.cache_data.clear()
