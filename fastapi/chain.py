@@ -8,6 +8,7 @@ from classifier import predict_text
 def create_chain(classifiers: dict) -> Runnable:
     # main.py가 전달한 주제별 모델을 사용하는 처리 순서를 조립한다.
     def classify(item: dict) -> dict:
+        print(f"create_chain의 classify item은 : {item}")
         # 이번 요청의 주제·원문을 유지하면서 분류 결과를 다음 단계에 전달한다.
         classification = predict_text(item["text"], classifiers[item["dataset"]])
         return {**item, "classification": classification}

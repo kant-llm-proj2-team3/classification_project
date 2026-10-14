@@ -10,6 +10,7 @@ def load_classifier() -> dict:
 def predict_text(text: str, bundle) -> dict:
     # 모델 연결 전에는 분류를 수행하지 않았다는 공통 결과를 반환한다.
     # TODO: 실제 추론 후 status="success", label, confidence를 반환한다.
+    print(f"predict_text text는 : {text}")
     return {
         "status": "skipped",
         "label": None,
