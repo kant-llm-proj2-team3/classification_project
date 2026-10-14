@@ -8,12 +8,12 @@
                  validation 점수가 좋아졌을 때만 best_model 을 교체한다.
                  (현재 설정을 로그 맨 위에 남기고, 화면 출력 전체를 logs/ 에 저장)
   2) 초기화    : 학습 결과(artifacts)를 지운다. CSV 데이터와 logs/ 는 건드리지 않는다.
-  3) 추천      : 각 모델 best_model 의 validation 결과만 보고 bert / roberta / koelectra 중 1개를 추천
-  4) test 평가 : 추천 모델 1개(+baseline) 또는 4개 모델 모두를 best_model 로 test 평가 (모델마다 한 번)
+  3) 추천      : test 점수가 가장 좋은 모델 1개를 공식 모델로 정한다 (bert / roberta / koelectra / laya / clm 중, 4번을 먼저 해야 함)
+  4) test 평가 : baseline + bert + roberta + koelectra 를 각 best_model 로 test 평가 (모델마다 한 번)
   5) 길이 점검 : CSV 파일별로 몇 행이 192/512토큰을 넘는지 확인 (입력이 잘리는 정도)
   6) 결과 파일 : 이미 있는 결과에 main.json / sub.json / 문장별 예측 CSV 를 만든다 (다시 학습 안 함)
   7) 그래프   : 모든 best_model 의 main.json 을 읽어 PNG 그래프를 artifacts/viz/charts 에 만든다 (matplotlib 필요)
-  8) 한 번에 마무리 : 결과 파일 보강 -> 모델 추천 -> 4개 모델 test -> 그래프 (다시 학습 안 함, 학습 끝난 뒤에)
+  8) 한 번에 마무리 : 결과 파일 보강 -> 4개 모델 test -> 모델 추천(test 기준) -> 그래프 (다시 학습 안 함, 학습 끝난 뒤에)
 """
 import sys
 import time
@@ -160,22 +160,14 @@ def action_recommend(pairs):
 
 
 def action_test(pairs):
-    print("\ntest 평가 방식을 고릅니다.")
-    print("  1) 추천 모델 1개 (+ baseline)      -> 선정한 모델의 최종(공식) 점수")
-    print("  2) 4개 모델 모두 (각 best_model) -> 비교용. 공식 점수는 여전히 추천 모델의 것이고 나머지는 참고용")
-    print("  0) 취소")
-    print("어느 쪽이든 최종 모델은 validation 으로 정한 추천 모델이고, 모델은 각자 한 번만 평가합니다.")
-    print("test 점수를 보고 모델·설정을 다시 고르면 안 됩니다.")
-    mode = {"1": "recommended", "2": "all"}.get(ask("선택 > "))
-    if mode is None:
-        print("취소했습니다.")
-        return
+    print("\ntest 평가: baseline + bert + roberta + koelectra 를 각 best_model 로 평가합니다. (모델마다 한 번만, 이미 한 모델은 건너뜀)")
+    print("공식 모델은 이 test 점수로 정합니다. 평가가 끝나면 3번(모델 추천)을 실행하세요.")
     if ask("진행할까요? (y/n) > ") != "y":
         return
     with common.session_log("test"):
         for pair in pairs:
             try:
-                common.evaluate_final(*pair, mode)
+                common.evaluate_final(*pair)
             except (RuntimeError, FileExistsError, FileNotFoundError, ValueError) as error:
                 print(f"  [{pair[0]}/{pair[1]}] 건너뜀: {error}")
 
@@ -204,10 +196,10 @@ def action_charts(pairs):
 
 
 def action_finish(pairs):
-    print("\n한 번에 마무리: 빠진 결과 파일 보강 -> 모델 추천 -> 4개 모델 test 평가 -> 그래프 만들기")
+    print("\n한 번에 마무리: 빠진 결과 파일 보강 -> 4개 모델 test 평가 -> 모델 추천(test 점수 기준) -> 그래프 만들기")
     print("선택한 데이터셋 전체에 현재 best_model 로 진행합니다. (다시 학습하지 않습니다)")
     print("주의: 학습이 모두 끝난 뒤에 실행하세요. test 는 모델마다 한 번만 평가하고,")
-    print("      공식 모델은 validation 으로 정한 추천 모델입니다. test 점수를 보고 모델을 바꾸면 안 됩니다.")
+    print("      공식 모델은 test 점수가 가장 높은 모델입니다. (동점이면 validation loss, 학습 시간 순)")
     if ask("진행할까요? (y/n) > ") != "y":
         return
     with common.session_log("finish"):
@@ -215,8 +207,8 @@ def action_finish(pairs):
             print(f"\n[{topic}/{dataset}]")
             try:
                 result_files.rebuild_result_files(topic, dataset)
+                common.evaluate_final(topic, dataset)
                 common.recommend_model(topic, dataset)
-                common.evaluate_final(topic, dataset, "all")
             except (RuntimeError, FileExistsError, FileNotFoundError, ValueError) as error:
                 print(f"  [{topic}/{dataset}] 건너뜀: {error}")
         print("\n[그래프 만들기]")
@@ -266,12 +258,12 @@ def main():
             print(f"\n[선택된 데이터셋] {names}")
             print("  1) 학습  (baseline + bert + roberta + koelectra, best_model 과 비교해 좋으면 교체)")
             print("  2) 학습 결과 초기화")
-            print("  3) 각 모델 best_model 로 모델 추천")
-            print("  4) test 최종 평가 - 추천 모델 1개 또는 4개 모델 모두(비교용)")
+            print("  3) 모델 추천 - test 점수가 가장 좋은 모델을 공식 모델로 (4번을 먼저)")
+            print("  4) test 평가 - 4개 모델을 각 best_model 로 평가")
             print("  5) 입력 길이(토큰 수) 점검 - 파일별로 192/512토큰을 넘는 행 수")
             print("  6) 결과 파일 만들기 - 이미 있는 결과에 main.json / sub.json / 문장별 예측 추가")
             print("  7) 그래프 만들기 - best_model/main.json 으로 PNG 그래프 (artifacts/viz/charts)")
-            print("  8) 한 번에 마무리 - 결과 파일 보강 -> 추천 -> 4개 모델 test -> 그래프 (학습 끝난 뒤)")
+            print("  8) 한 번에 마무리 - 결과 파일 보강 -> 4개 모델 test -> 추천(test 기준) -> 그래프 (학습 끝난 뒤)")
             print("  b) 데이터셋 다시 선택")
             print("  0) 종료")
             choice = ask("메뉴 선택 > ")
