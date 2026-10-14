@@ -1,4 +1,5 @@
 import asyncio
+import uuid
 from contextlib import asynccontextmanager
 from typing import Annotated, Literal
 
@@ -8,6 +9,7 @@ from generator import OpenAIGenerator
 from fastapi import Depends, FastAPI, HTTPException, Request
 from langchain_core.runnables import Runnable
 from pydantic import AliasChoices, BaseModel, ConfigDict, Field, field_validator
+from tracking.callbacks import TrackingCallbackHandler, log_trace
 
 
 class ChatRequest(BaseModel):
@@ -33,6 +35,7 @@ async def lifespan(app: FastAPI):
     generator = OpenAIGenerator()
     app.state.classifiers = classifiers
     app.state.chain = create_chain(classifiers, generator)
+    app.state.tracker = TrackingCallbackHandler(sink=log_trace)
     try:
         yield
     finally:
@@ -68,6 +71,10 @@ async def health(request: Request) -> dict:
 @app.post("/chat")
 async def chat(
     body: ChatRequest,
+    request: Request,
     chain: Annotated[Runnable, Depends(get_chain)],
 ) -> dict:
-    return await chain.ainvoke(body.model_dump())
+    # Streamlit이 보내는 X-Request-ID를 추적의 요청 ID로 쓴다. (없으면 새로 만든다)
+    request_id = request.headers.get("X-Request-ID") or uuid.uuid4().hex
+    config = {"callbacks": [request.app.state.tracker], "metadata": {"request_id": request_id}}
+    return await chain.ainvoke(body.model_dump(), config=config)
