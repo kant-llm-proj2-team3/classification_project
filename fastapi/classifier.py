@@ -121,6 +121,11 @@ def close_classifiers(bundles: dict | None = None) -> None:
 
 
 def predict_text(text: str, bundle) -> dict:
+<<<<<<< HEAD
+    # 모델 연결 전에는 분류를 수행하지 않았다는 공통 결과를 반환한다.
+    # TODO: 실제 추론 후 status="success", label, confidence를 반환한다.
+    print(f"predict_text text는 : {text}")
+=======
     # 분류 결과. 앞의 세 키(status, label, confidence)가 API 응답 계약이고, 나머지는 추적·확인용이다.
     if bundle is None or bundle.error or bundle.backend is None:
         return {"status": "error", "label": None, "confidence": None,
@@ -130,6 +135,7 @@ def predict_text(text: str, bundle) -> dict:
     except Exception as error:
         logger.exception("[classifier] %s 분류에 실패했습니다.", bundle.topic)
         return {"status": "error", "label": None, "confidence": None, "error": f"{type(error).__name__}: {error}"}
+>>>>>>> b62ae44fdaa52e985feb4216e91c7ebf3bc302d6
     return {
         "status": "success",
         "label": result["label"],
