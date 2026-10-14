@@ -182,15 +182,13 @@ dependencies = [
     { name = "huggingface-hub" },
     { name = "langchain-core" },
     { name = "laya" },
-<<<<<<< HEAD
     { name = "locust" },
-=======
     { name = "matplotlib" },
->>>>>>> b62ae44fdaa52e985feb4216e91c7ebf3bc302d6
     { name = "numpy" },
     { name = "openai" },
     { name = "pydantic" },
     { name = "python-dotenv" },
+    { name = "requests" },
     { name = "safetensors" },
     { name = "scikit-learn" },
     { name = "streamlit" },
@@ -212,15 +210,13 @@ requires-dist = [
     { name = "huggingface-hub", specifier = ">=0.36.2" },
     { name = "langchain-core", specifier = ">=0.3.60,<2" },
     { name = "laya", specifier = ">=0.4.4" },
-<<<<<<< HEAD
     { name = "locust", specifier = ">=2.46.7" },
-=======
     { name = "matplotlib", specifier = ">=3.11.2" },
->>>>>>> b62ae44fdaa52e985feb4216e91c7ebf3bc302d6
     { name = "numpy", specifier = ">=2,<3" },
     { name = "openai", specifier = ">=2,<3" },
     { name = "pydantic", specifier = ">=2.10,<3" },
     { name = "python-dotenv", specifier = ">=1.0,<2" },
+    { name = "requests", specifier = ">=2.34.2" },
     { name = "safetensors", specifier = ">=0.5,<1" },
     { name = "scikit-learn", specifier = ">=1.6,<2" },
     { name = "streamlit", specifier = ">=1.65.0" },
@@ -263,14 +259,15 @@ wheels = [
 ]
 
 [[package]]
-<<<<<<< HEAD
 name = "configargparse"
 version = "1.8.0"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/5d/ed/33c0ba7f0b5be384ff8a2101ce77728f219e816b2104819f1651477e1ad5/configargparse-1.8.0.tar.gz", hash = "sha256:22a417f4d7b00149f0af82ef7c491f8ecc4b1d5454633fd319b386f5eb806f92", size = 74830, upload-time = "2026-09-28T15:10:52.119Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b0/74/bd8453e8e20296063f9f431e6f1417f1b62bae0e012821df07fb71ede6c2/configargparse-1.8.0-py3-none-any.whl", hash = "sha256:bb25b307c3cd46a3e868e7f7aa51487eb8003a9f01cac3ae129b66ec26eb794c", size = 34611, upload-time = "2026-09-28T15:10:50.818Z" },
-=======
+]
+
+[[package]]
 name = "contourpy"
 version = "1.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -290,7 +287,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/ac/f0/b75a10e9d0616b97a30de277b6dfe83f1879880854c7330337309530eb48/contourpy-1.4.0-cp312-cp312-win32.whl", hash = "sha256:5450f091ac1be0be3ad3a2a3b3f23b5e443e78c670ced4fd347d626f92a28fd2", size = 347345, upload-time = "2026-09-11T19:03:06.192Z" },
     { url = "https://files.pythonhosted.org/packages/50/a9/dab08786bb4d77ef9a046b3c1be923be4e73c5d07d91f5a54e8ea9b09e41/contourpy-1.4.0-cp312-cp312-win_amd64.whl", hash = "sha256:6e697d94e69f499ff6bebb899cae97a58d5d14f0e1fe9568b43a0248d2f9af8c", size = 234083, upload-time = "2026-09-11T19:03:08.122Z" },
     { url = "https://files.pythonhosted.org/packages/47/b9/3ba509755a970dbde5948e7142ac21f266be72f38017cc4087a05fdceee1/contourpy-1.4.0-cp312-cp312-win_arm64.whl", hash = "sha256:0c7a4c2716a4e98342221954416a836cca77c996c14ddbf22b5f01d5d93ca09c", size = 559521, upload-time = "2026-09-11T19:03:10.047Z" },
->>>>>>> b62ae44fdaa52e985feb4216e91c7ebf3bc302d6
 ]
 
 [[package]]
@@ -401,7 +397,6 @@ wheels = [
 ]
 
 [[package]]
-<<<<<<< HEAD
 name = "flask"
 version = "3.1.3"
 source = { registry = "https://pypi.org/simple" }
@@ -442,7 +437,9 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/c3/6e/2f4e13e373bb49e68c02c51ceadd22d172715a06716f9299d9df01b6ddb2/Flask-Login-0.6.3.tar.gz", hash = "sha256:5e23d14a607ef12806c699590b89d0f0e0d67baeec599d75947bf9c147330333", size = 48834, upload-time = "2023-10-30T14:53:21.151Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/59/f5/67e9cc5c2036f58115f9fe0f00d203cf6780c3ff8ae0e705e7a9d9e8ff9e/Flask_Login-0.6.3-py3-none-any.whl", hash = "sha256:849b25b82a436bf830a054e74214074af59097171562ab10bfa999e6b78aae5d", size = 17303, upload-time = "2023-10-30T14:53:19.636Z" },
-=======
+]
+
+[[package]]
 name = "fonttools"
 version = "4.66.1"
 source = { registry = "https://pypi.org/simple" }
@@ -457,7 +454,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/d4/20/e126062610aea31919310b0b3de4d0bbe73ccbdcb3d0409cc52027db93ee/fonttools-4.66.1-cp312-cp312-win32.whl", hash = "sha256:9ea6c93091cbf83161a544388746a0911550bd98cb911faca3591cf5ead166ac", size = 2435084, upload-time = "2026-09-29T16:10:21.145Z" },
     { url = "https://files.pythonhosted.org/packages/f0/af/5c245a0587e5b7b3dd209f640b9f70d8e63404ad8dc93819ba578d685985/fonttools-4.66.1-cp312-cp312-win_amd64.whl", hash = "sha256:261d8dc95845e751f975fe8d6075600593ee253470d46d1b84801688051b09f6", size = 2486987, upload-time = "2026-09-29T16:10:22.924Z" },
     { url = "https://files.pythonhosted.org/packages/f6/10/d45b74135d5d642cb3a4fb0a957c1613ef93de4c8548671dfc3a5bf38299/fonttools-4.66.1-py3-none-any.whl", hash = "sha256:7234ae9e28db64273fbbfa72caebd0a97e3bdba6b05064114741b9539ef339d0", size = 1202222, upload-time = "2026-09-29T16:11:51.678Z" },
->>>>>>> b62ae44fdaa52e985feb4216e91c7ebf3bc302d6
 ]
 
 [[package]]

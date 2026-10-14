@@ -19,11 +19,9 @@ dependencies = [
   "huggingface-hub>=0.36.2",
   "laya>=0.4.4",
   "streamlit>=1.65.0",
-<<<<<<< HEAD
   "locust>=2.46.7",
-=======
   "matplotlib>=3.11.2",
->>>>>>> b62ae44fdaa52e985feb4216e91c7ebf3bc302d6
+  "requests>=2.34.2",
 ]
 
 [dependency-groups]
