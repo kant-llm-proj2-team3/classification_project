@@ -1,0 +1,505 @@
+{
+  "run": "compare_20261015_113659",
+  "config": {
+    "args": {
+      "per_kind": 10,
+      "topic": "both",
+      "kinds": "basic,basic_add,advanced,advanced_add",
+      "repeats": 1,
+      "providers": [
+        "openai",
+        "ollama"
+      ],
+      "seed": 42,
+      "unblind": false
+    },
+    "policy_fingerprint": "c1cbe934e3dc7ed8",
+    "prompt_changed_since": [],
+    "classifiers": {
+      "documents": {
+        "model": "bert",
+        "run_name": "20261013_163306"
+      },
+      "inquiries": {
+        "model": "laya",
+        "run_name": "20261013_162313"
+      }
+    },
+    "generators": {
+      "openai": {
+        "model": "gpt-5.6-luna",
+        "max_output_tokens": 1024,
+        "timeout": 80.0,
+        "temperature": null,
+        "reasoning_effort": "none"
+      },
+      "ollama": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "max_output_tokens": 1024,
+        "timeout": 80.0,
+        "temperature": null,
+        "num_ctx": 4096,
+        "keep_alive": "5m",
+        "base_url": "http://127.0.0.1:11434"
+      }
+    },
+    "git_commit": "c2cba6d549a4e61c167c9d7c23c1835348c6ed7c",
+    "started_at": "2026-10-15 11:37:06"
+  },
+  "objective": {
+    "providers": {
+      "openai": {
+        "summary_structure_ok_rate": 1.0,
+        "cases": 80,
+        "calls": 80,
+        "errors": 0,
+        "error_rate_all_calls": 0.0,
+        "format_valid_rate_all_calls": 1.0,
+        "mean_latency_seconds_success_only": 2.564315888750025,
+        "median_latency_seconds_success_only": 2.4562621499999295,
+        "p95_latency_seconds_success_only": 3.3413843699993766,
+        "mean_output_tokens_success_only": 183.6375,
+        "median_tokens_per_sec_success_only": null
+      },
+      "ollama": {
+        "summary_structure_ok_rate": 0.9743589743589743,
+        "cases": 80,
+        "calls": 80,
+        "errors": 1,
+        "error_rate_all_calls": 0.0125,
+        "format_valid_rate_all_calls": 0.9875,
+        "mean_latency_seconds_success_only": 2.9844937784810903,
+        "median_latency_seconds_success_only": 2.6681103999999323,
+        "p95_latency_seconds_success_only": 5.680262119999679,
+        "mean_output_tokens_success_only": 219.51898734177215,
+        "median_tokens_per_sec_success_only": 89.66781077540709
+      }
+    },
+    "by_topic": {
+      "documents": {
+        "openai": {
+          "summary_structure_ok_rate": 1.0,
+          "cases": 40,
+          "calls": 40,
+          "errors": 0,
+          "error_rate_all_calls": 0.0,
+          "format_valid_rate_all_calls": 1.0,
+          "mean_latency_seconds_success_only": 2.469282817499925,
+          "median_latency_seconds_success_only": 2.352166650000072,
+          "p95_latency_seconds_success_only": 3.359457744999416,
+          "mean_output_tokens_success_only": 182.95,
+          "median_tokens_per_sec_success_only": null
+        },
+        "ollama": {
+          "summary_structure_ok_rate": 0.9743589743589743,
+          "cases": 40,
+          "calls": 40,
+          "errors": 1,
+          "error_rate_all_calls": 0.025,
+          "format_valid_rate_all_calls": 0.975,
+          "mean_latency_seconds_success_only": 2.027642492307654,
+          "median_latency_seconds_success_only": 1.8696154000008391,
+          "p95_latency_seconds_success_only": 3.6216210400001736,
+          "mean_output_tokens_success_only": 167.25641025641025,
+          "median_tokens_per_sec_success_only": 101.11041514394095
+        }
+      },
+      "inquiries": {
+        "openai": {
+          "summary_structure_ok_rate": null,
+          "cases": 40,
+          "calls": 40,
+          "errors": 0,
+          "error_rate_all_calls": 0.0,
+          "format_valid_rate_all_calls": 1.0,
+          "mean_latency_seconds_success_only": 2.6593489600001248,
+          "median_latency_seconds_success_only": 2.5994543500000873,
+          "p95_latency_seconds_success_only": 3.317685669999809,
+          "mean_output_tokens_success_only": 184.325,
+          "median_tokens_per_sec_success_only": null
+        },
+        "ollama": {
+          "summary_structure_ok_rate": null,
+          "cases": 40,
+          "calls": 40,
+          "errors": 0,
+          "error_rate_all_calls": 0.0,
+          "format_valid_rate_all_calls": 1.0,
+          "mean_latency_seconds_success_only": 3.917423782500191,
+          "median_latency_seconds_success_only": 3.9072463000002244,
+          "p95_latency_seconds_success_only": 6.031277205000054,
+          "mean_output_tokens_success_only": 270.475,
+          "median_tokens_per_sec_success_only": 68.39649669311001
+        }
+      }
+    }
+  },
+  "coverage": {
+    "calls": 160,
+    "scored_items": 160,
+    "unscored_items": 0,
+    "scored_ratio": 1.0,
+    "reviewers": {
+      "최선영": 160
+    }
+  },
+  "issues": {
+    "response_edited": [
+      "human_scores.csv:2 item-0001",
+      "human_scores.csv:3 item-0002",
+      "human_scores.csv:4 item-0003",
+      "human_scores.csv:5 item-0004",
+      "human_scores.csv:6 item-0005",
+      "human_scores.csv:7 item-0006",
+      "human_scores.csv:8 item-0007",
+      "human_scores.csv:9 item-0008",
+      "human_scores.csv:10 item-0009",
+      "human_scores.csv:11 item-0010",
+      "human_scores.csv:12 item-0011",
+      "human_scores.csv:13 item-0012",
+      "human_scores.csv:14 item-0013",
+      "human_scores.csv:15 item-0014",
+      "human_scores.csv:16 item-0015",
+      "human_scores.csv:17 item-0016",
+      "human_scores.csv:18 item-0017",
+      "human_scores.csv:19 item-0018",
+      "human_scores.csv:20 item-0019",
+      "human_scores.csv:21 item-0020",
+      "human_scores.csv:22 item-0021",
+      "human_scores.csv:23 item-0022",
+      "human_scores.csv:24 item-0023",
+      "human_scores.csv:25 item-0024",
+      "human_scores.csv:26 item-0025",
+      "human_scores.csv:27 item-0026",
+      "human_scores.csv:28 item-0027",
+      "human_scores.csv:29 item-0028",
+      "human_scores.csv:30 item-0029",
+      "human_scores.csv:31 item-0030",
+      "human_scores.csv:32 item-0031",
+      "human_scores.csv:33 item-0032",
+      "human_scores.csv:34 item-0033",
+      "human_scores.csv:35 item-0034",
+      "human_scores.csv:36 item-0035",
+      "human_scores.csv:37 item-0036",
+      "human_scores.csv:38 item-0037",
+      "human_scores.csv:39 item-0038",
+      "human_scores.csv:40 item-0039",
+      "human_scores.csv:41 item-0040",
+      "human_scores.csv:42 item-0041",
+      "human_scores.csv:43 item-0042",
+      "human_scores.csv:44 item-0043",
+      "human_scores.csv:45 item-0044",
+      "human_scores.csv:46 item-0045",
+      "human_scores.csv:47 item-0046",
+      "human_scores.csv:48 item-0047",
+      "human_scores.csv:49 item-0048",
+      "human_scores.csv:50 item-0049",
+      "human_scores.csv:51 item-0050",
+      "human_scores.csv:52 item-0051",
+      "human_scores.csv:53 item-0052",
+      "human_scores.csv:54 item-0053",
+      "human_scores.csv:55 item-0054",
+      "human_scores.csv:56 item-0055",
+      "human_scores.csv:57 item-0056",
+      "human_scores.csv:58 item-0057",
+      "human_scores.csv:59 item-0058",
+      "human_scores.csv:60 item-0059",
+      "human_scores.csv:61 item-0060",
+      "human_scores.csv:62 item-0061",
+      "human_scores.csv:63 item-0062",
+      "human_scores.csv:64 item-0063",
+      "human_scores.csv:65 item-0064",
+      "human_scores.csv:66 item-0065",
+      "human_scores.csv:67 item-0066",
+      "human_scores.csv:68 item-0067",
+      "human_scores.csv:69 item-0068",
+      "human_scores.csv:70 item-0069",
+      "human_scores.csv:71 item-0070",
+      "human_scores.csv:72 item-0071",
+      "human_scores.csv:73 item-0072",
+      "human_scores.csv:74 item-0073",
+      "human_scores.csv:75 item-0074",
+      "human_scores.csv:76 item-0075",
+      "human_scores.csv:77 item-0076",
+      "human_scores.csv:78 item-0077",
+      "human_scores.csv:79 item-0078",
+      "human_scores.csv:80 item-0079",
+      "human_scores.csv:81 item-0080",
+      "human_scores.csv:82 item-0081",
+      "human_scores.csv:83 item-0082",
+      "human_scores.csv:84 item-0083",
+      "human_scores.csv:85 item-0084",
+      "human_scores.csv:86 item-0085",
+      "human_scores.csv:87 item-0086",
+      "human_scores.csv:88 item-0087",
+      "human_scores.csv:89 item-0088",
+      "human_scores.csv:90 item-0089",
+      "human_scores.csv:91 item-0090",
+      "human_scores.csv:92 item-0091",
+      "human_scores.csv:93 item-0092",
+      "human_scores.csv:94 item-0093",
+      "human_scores.csv:95 item-0094",
+      "human_scores.csv:96 item-0095",
+      "human_scores.csv:97 item-0096",
+      "human_scores.csv:98 item-0097",
+      "human_scores.csv:99 item-0098",
+      "human_scores.csv:100 item-0099",
+      "human_scores.csv:101 item-0100",
+      "human_scores.csv:102 item-0101",
+      "human_scores.csv:103 item-0102",
+      "human_scores.csv:104 item-0103",
+      "human_scores.csv:105 item-0104",
+      "human_scores.csv:106 item-0105",
+      "human_scores.csv:107 item-0106",
+      "human_scores.csv:108 item-0107",
+      "human_scores.csv:109 item-0108",
+      "human_scores.csv:110 item-0109",
+      "human_scores.csv:111 item-0110",
+      "human_scores.csv:112 item-0111",
+      "human_scores.csv:113 item-0112",
+      "human_scores.csv:114 item-0113",
+      "human_scores.csv:115 item-0114",
+      "human_scores.csv:116 item-0115",
+      "human_scores.csv:117 item-0116",
+      "human_scores.csv:118 item-0117",
+      "human_scores.csv:119 item-0118",
+      "human_scores.csv:120 item-0119",
+      "human_scores.csv:121 item-0120",
+      "human_scores.csv:122 item-0121",
+      "human_scores.csv:123 item-0122",
+      "human_scores.csv:124 item-0123",
+      "human_scores.csv:125 item-0124",
+      "human_scores.csv:126 item-0125",
+      "human_scores.csv:127 item-0126",
+      "human_scores.csv:128 item-0127",
+      "human_scores.csv:129 item-0128",
+      "human_scores.csv:130 item-0129",
+      "human_scores.csv:131 item-0130",
+      "human_scores.csv:132 item-0131",
+      "human_scores.csv:133 item-0132",
+      "human_scores.csv:134 item-0133",
+      "human_scores.csv:135 item-0134",
+      "human_scores.csv:136 item-0135",
+      "human_scores.csv:137 item-0136",
+      "human_scores.csv:138 item-0137",
+      "human_scores.csv:139 item-0138",
+      "human_scores.csv:140 item-0139",
+      "human_scores.csv:141 item-0140",
+      "human_scores.csv:142 item-0141",
+      "human_scores.csv:143 item-0142",
+      "human_scores.csv:144 item-0143",
+      "human_scores.csv:145 item-0144",
+      "human_scores.csv:146 item-0145",
+      "human_scores.csv:147 item-0146",
+      "human_scores.csv:148 item-0147",
+      "human_scores.csv:149 item-0148",
+      "human_scores.csv:150 item-0149",
+      "human_scores.csv:151 item-0150",
+      "human_scores.csv:152 item-0151",
+      "human_scores.csv:153 item-0152",
+      "human_scores.csv:154 item-0153",
+      "human_scores.csv:155 item-0154",
+      "human_scores.csv:157 item-0156",
+      "human_scores.csv:158 item-0157",
+      "human_scores.csv:159 item-0158",
+      "human_scores.csv:160 item-0159",
+      "human_scores.csv:161 item-0160"
+    ],
+    "scored_failed_call": [
+      "human_scores.csv:156 item-0155 (ollama error)"
+    ]
+  },
+  "human": {
+    "human_quality_scored": true,
+    "by_provider": {
+      "openai": {
+        "scored_items": 80,
+        "criteria": {
+          "policy_correct_0_2": {
+            "n": 80,
+            "mean": 1.925,
+            "distribution": {
+              "0": 0,
+              "1": 6,
+              "2": 74
+            }
+          },
+          "required_points_0_2": {
+            "n": 80,
+            "mean": 1.925,
+            "distribution": {
+              "0": 0,
+              "1": 6,
+              "2": 74
+            }
+          },
+          "no_unsupported_claims_0_2": {
+            "n": 80,
+            "mean": 1.6625,
+            "distribution": {
+              "0": 0,
+              "1": 27,
+              "2": 53
+            }
+          },
+          "clarity_0_2": {
+            "n": 80,
+            "mean": 1.9,
+            "distribution": {
+              "0": 0,
+              "1": 8,
+              "2": 72
+            }
+          }
+        },
+        "mean_total_0_8": 7.4125,
+        "unsupported_claims_zero": {
+          "count": 0,
+          "item_ids": []
+        }
+      },
+      "ollama": {
+        "scored_items": 80,
+        "criteria": {
+          "policy_correct_0_2": {
+            "n": 80,
+            "mean": 1.8125,
+            "distribution": {
+              "0": 3,
+              "1": 9,
+              "2": 68
+            }
+          },
+          "required_points_0_2": {
+            "n": 80,
+            "mean": 1.6625,
+            "distribution": {
+              "0": 2,
+              "1": 23,
+              "2": 55
+            }
+          },
+          "no_unsupported_claims_0_2": {
+            "n": 80,
+            "mean": 1.5,
+            "distribution": {
+              "0": 5,
+              "1": 30,
+              "2": 45
+            }
+          },
+          "clarity_0_2": {
+            "n": 80,
+            "mean": 1.8,
+            "distribution": {
+              "0": 1,
+              "1": 14,
+              "2": 65
+            }
+          }
+        },
+        "mean_total_0_8": 6.775,
+        "unsupported_claims_zero": {
+          "count": 5,
+          "item_ids": [
+            "item-0048",
+            "item-0054",
+            "item-0055",
+            "item-0112",
+            "item-0144"
+          ]
+        }
+      }
+    },
+    "by_topic": {
+      "documents": {
+        "openai": {
+          "n": 40,
+          "mean_total_0_8": 7.85
+        },
+        "ollama": {
+          "n": 40,
+          "mean_total_0_8": 7.475
+        }
+      },
+      "inquiries": {
+        "openai": {
+          "n": 40,
+          "mean_total_0_8": 6.975
+        },
+        "ollama": {
+          "n": 40,
+          "mean_total_0_8": 6.075
+        }
+      }
+    },
+    "by_origin": {
+      "advanced": {
+        "openai": {
+          "n": 20,
+          "mean_total_0_8": 7.25
+        },
+        "ollama": {
+          "n": 20,
+          "mean_total_0_8": 6.15
+        }
+      },
+      "advanced_add": {
+        "openai": {
+          "n": 20,
+          "mean_total_0_8": 7.3
+        },
+        "ollama": {
+          "n": 20,
+          "mean_total_0_8": 7.15
+        }
+      },
+      "basic": {
+        "openai": {
+          "n": 20,
+          "mean_total_0_8": 7.6
+        },
+        "ollama": {
+          "n": 20,
+          "mean_total_0_8": 7.1
+        }
+      },
+      "basic_add": {
+        "openai": {
+          "n": 20,
+          "mean_total_0_8": 7.5
+        },
+        "ollama": {
+          "n": 20,
+          "mean_total_0_8": 6.7
+        }
+      }
+    },
+    "pairwise": [
+      {
+        "a": "openai",
+        "b": "ollama",
+        "cases_compared": 80,
+        "a_wins": 32,
+        "ties": 44,
+        "b_wins": 4,
+        "mean_difference_a_minus_b": 0.6375
+      }
+    ],
+    "repeat_consistency": {
+      "openai": {
+        "cases_with_repeats": 0,
+        "mean_std_of_total": null
+      },
+      "ollama": {
+        "cases_with_repeats": 0,
+        "mean_std_of_total": null
+      }
+    },
+    "reviewer_agreement": []
+  },
+  "classification_note": {
+    "cases": 80,
+    "predicted_equals_expected": 76
+  }
+}
