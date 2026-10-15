@@ -4,8 +4,8 @@
   GET  /admin/auth-check         서명이 맞는지 확인
   GET  /admin/requests           요청 목록 (필터, 정렬, 페이지)
   GET  /admin/requests/{id}      요청 한 건과 호출 흐름(span) 전체. request_id나 client_request_id로 찾는다.
-  GET  /admin/stats              필터에 맞는 요청들의 집계 (건수, 지연 분포, 라벨, 토큰, 오류, 시간대별 추이)
-  POST /admin/export             csv / json / jsonl 파일로 내보내기 (요약, 요청, span, 상세 중 선택)
+  GET  /admin/stats              필터에 맞는 요청들의 집계 (건수, 지연 분포, 라벨, 토큰, 오류, 시간대별 추이, 생성 모델별 비교)
+  POST /admin/export             csv / json / jsonl 파일로 내보내기 (요약, 요청, 생성 호출별, span, 상세 중 선택)
 인증은 admin_auth.py. 이 경로의 요청은 추적 기록에 남기지 않는다.
 """
 
@@ -33,7 +33,7 @@ SUMMARY_COLUMNS = ("request_id", "client_request_id", "started_at", "dataset", "
                    "classify_ms", "generate_ms", "label", "confidence", "classifier_model", "inference_ms",
                    "non_inference_ms", "classify_input_tokens", "truncated", "classification_status",
                    "generation_status", "llm_model", "llm_input_tokens", "llm_output_tokens", "llm_reasoning_tokens",
-                   "llm_reasoning_effort", "error")
+                   "llm_reasoning_effort", "error", "endpoint", "llm_provider", "llm_providers")
 FROM_SUMMARY = "FROM v_request_summary s JOIN requests r ON r.request_id = s.request_id"
 
 
@@ -49,6 +49,8 @@ class Filters(BaseModel):
     generation_status: str | None = None
     min_total_ms: float | None = None
     q: str | None = Field(None, description="입력 원문에 포함된 글자")
+    provider: str | None = Field(None, description="이 생성 모델(openai, ollama)을 호출한 요청. /compare는 어느 쪽이든 해당")
+    endpoint: Literal["/chat", "/compare"] | None = None
 
 
 def query_filters(
@@ -62,11 +64,13 @@ def query_filters(
     generation_status: str | None = None,
     min_total_ms: float | None = None,
     q: str | None = Query(None, description="입력 원문에 포함된 글자"),
+    provider: str | None = None,
+    endpoint: Literal["/chat", "/compare"] | None = None,
 ) -> Filters:
     # GET 쿼리 문자열을 Filters로 모은다. (쿼리 모델은 다른 쿼리 파라미터와 함께 쓸 수 없어서 직접 받는다)
     return Filters(since=since, until=until, dataset=dataset, outcome=outcome, label=label, status_code=status_code,
                    classification_status=classification_status, generation_status=generation_status,
-                   min_total_ms=min_total_ms, q=q)
+                   min_total_ms=min_total_ms, q=q, provider=provider, endpoint=endpoint)
 
 
 QueryFilters = Annotated[Filters, Depends(query_filters)]
@@ -102,6 +106,11 @@ def build_where(filters: Filters) -> tuple[str, list]:
             add(f"{column} = ?", value)
     if filters.min_total_ms is not None:
         add("s.total_ms >= ?", filters.min_total_ms)
+    if filters.endpoint:
+        add("s.endpoint = ?", filters.endpoint)
+    if filters.provider:
+        add("EXISTS (SELECT 1 FROM v_generation_runs gr WHERE gr.request_id = s.request_id AND gr.provider = ?)",
+            filters.provider)
     if filters.q:
         escaped = filters.q.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
         add("r.input_text LIKE ? ESCAPE '\\'", f"%{escaped}%")
@@ -187,6 +196,46 @@ def count_by(rows: list, key: str) -> dict:
     return dict(sorted(counts.items(), key=lambda item: -item[1]))
 
 
+def provider_stats(runs: list[dict]) -> dict:
+    """생성 모델(제공자)별 호출 통계. 지연·토큰 분포는 성공한 호출만으로 계산해서 실패한 호출이 비교를 흐리지 않게 한다."""
+    by_provider: dict = {}
+    for run in runs:
+        by_provider.setdefault(run["provider"], []).append(run)
+    result = {}
+    for provider, items in by_provider.items():
+        ok = [run for run in items if run["status"] == "success"]
+        result[provider] = {
+            "models": sorted({run["model"] for run in items if run["model"]}),
+            "count": len(items), "success": len(ok), "statuses": count_by(items, "status"),
+            "latency_ms": describe([run["latency_ms"] for run in ok]),
+            "output_tokens": describe([run["output_tokens"] for run in ok]),
+            "tokens_per_sec": describe([run["tokens_per_sec"] for run in ok]),
+            "tokens": {"input": sum(run["input_tokens"] or 0 for run in items),
+                       "output": sum(run["output_tokens"] or 0 for run in items),
+                       "reasoning": sum(run["reasoning_tokens"] or 0 for run in items)},
+            # 로컬 모델이 메모리에 올라와 있지 않아 모델을 새로 읽은 호출(1초 넘게 로딩). 지연이 길어진 이유를 가린다.
+            "cold_starts": sum(1 for run in items if (run["load_ms"] or 0) > 1000),
+            "context_full": sum(1 for run in items if run["context_full"]),
+            "errors": count_by([run for run in items if run["error"]], "error"),
+        }
+    return result
+
+
+def comparison_stats(runs: list[dict]) -> dict:
+    """/compare 요청의 제공자 비교: 모두 성공한 요청에서 어느 쪽이 더 빨랐는지."""
+    groups: dict = {}
+    for run in runs:
+        if run["endpoint"] == "/compare":
+            groups.setdefault(run["request_id"], []).append(run)
+    paired = [group for group in groups.values() if len(group) >= 2]
+    all_success = [group for group in paired if all(run["status"] == "success" and run["latency_ms"] for run in group)]
+    faster: dict = {}
+    for group in all_success:
+        winner = min(group, key=lambda run: run["latency_ms"])["provider"]
+        faster[winner] = faster.get(winner, 0) + 1
+    return {"requests": len(paired), "all_success": len(all_success), "faster": faster}
+
+
 @router.get("/stats", dependencies=[Admin])
 def stats(store: Store, filters: QueryFilters) -> dict:
     where, params = build_where(filters)
@@ -194,9 +243,13 @@ def stats(store: Store, filters: QueryFilters) -> dict:
     try:
         rows = [dict(row) for row in connection.execute(
             "SELECT s.started_at, s.dataset, s.outcome, s.status_code, s.total_ms, s.classify_ms, s.generate_ms, s.label,"
-            " s.confidence, s.inference_ms, s.non_inference_ms, s.truncated, s.llm_input_tokens, s.llm_output_tokens,"
-            f" s.llm_reasoning_tokens, s.error {FROM_SUMMARY}{where} ORDER BY s.started_at LIMIT ?",
+            " s.confidence, s.inference_ms, s.non_inference_ms, s.truncated, s.error, s.endpoint"
+            f" {FROM_SUMMARY}{where} ORDER BY s.started_at LIMIT ?",
             [*params, MAX_STAT_ROWS])]
+        # 생성 호출은 요청과 1:1이 아니라서(/compare는 제공자마다 한 번) 요청 필터를 거친 뒤 호출 단위로 따로 읽는다.
+        runs = [dict(row) for row in connection.execute(
+            "SELECT gr.* FROM v_generation_runs gr WHERE gr.request_id IN "
+            f"(SELECT s.request_id {FROM_SUMMARY}{where} LIMIT ?)", [*params, MAX_STAT_ROWS])]
     finally:
         connection.close()
 
@@ -231,9 +284,11 @@ def stats(store: Store, filters: QueryFilters) -> dict:
         "latency": {name: describe([row[name] for row in rows])
                     for name in ("total_ms", "classify_ms", "generate_ms", "inference_ms", "non_inference_ms")},
         "confidence": describe([row["confidence"] for row in rows]),
-        "tokens": {"llm_input": sum(row["llm_input_tokens"] or 0 for row in rows),
-                   "llm_output": sum(row["llm_output_tokens"] or 0 for row in rows),
-                   "llm_reasoning": sum(row["llm_reasoning_tokens"] or 0 for row in rows)},
+        "tokens": {"llm_input": sum(run["input_tokens"] or 0 for run in runs),
+                   "llm_output": sum(run["output_tokens"] or 0 for run in runs),
+                   "llm_reasoning": sum(run["reasoning_tokens"] or 0 for run in runs)},
+        "endpoints": count_by(rows, "endpoint") if rows and "endpoint" in rows[0] else {},
+        "providers": provider_stats(runs), "comparison": comparison_stats(runs),
         "truncated_inputs": sum(1 for row in rows if row["truncated"]),
         "errors": count_by([row for row in rows if row["error"]], "error"),
         "timeline": timeline,
@@ -243,7 +298,7 @@ def stats(store: Store, filters: QueryFilters) -> dict:
 # ═════════════════════════ 내보내기 ═════════════════════════
 class ExportRequest(BaseModel):
     format: Literal["csv", "json", "jsonl"] = "csv"
-    scope: Literal["summary", "requests", "spans", "trace"] = "summary"
+    scope: Literal["summary", "requests", "generations", "spans", "trace"] = "summary"
     include_text: bool = Field(False, description="입력 원문과 답변을 포함할지")
     filters: Filters = Filters()
     request_ids: list[str] | None = Field(None, max_length=10_000, description="주면 필터 대신 이 요청들만 내보낸다")
@@ -311,10 +366,35 @@ def request_row(row: dict, include_text: bool) -> dict:
     row["output"] = json.loads(row["output"]) if row["output"] else None
     if not include_text:
         row["input_text"] = None
-        if row["output"]:
-            row["output"].get("generation", {}).pop("answer", None)
-            row["output"].get("generation", {}).pop("next_steps", None)
+        if row["output"]:       # /chat은 generation 하나, /compare는 generations 목록
+            for generation in [row["output"].get("generation") or {}, *(row["output"].get("generations") or [])]:
+                generation.pop("answer", None)
+                generation.pop("next_steps", None)
     return row
+
+
+def generation_answers(output: dict | None) -> dict:
+    """요청 기록의 결과에서 제공자 -> (답변, 다음 단계). 원문 저장이 꺼져 있었다면 비어 있다."""
+    if not output:
+        return {}
+    found = {}
+    for generation in [output.get("generation") or {}, *(output.get("generations") or [])]:
+        if generation.get("provider"):
+            found[generation["provider"]] = generation
+    return found
+
+
+def generation_rows(connection, ids: list[str], include_text: bool) -> list[dict]:
+    """생성 호출 1번 = 1행. 제공자를 나란히 비교하기 좋은 형태다."""
+    runs = fetch_by_ids(connection, "SELECT * FROM v_generation_runs WHERE request_id IN ({marks})", ids)
+    if include_text:
+        outputs = {row["request_id"]: json.loads(row["output"]) if row["output"] else None for row in fetch_by_ids(
+            connection, "SELECT request_id, output FROM requests WHERE request_id IN ({marks})", ids)}
+        for run in runs:
+            generation = generation_answers(outputs.get(run["request_id"])).get(run["provider"], {})
+            run["answer"] = generation.get("answer")
+            run["next_steps"] = generation.get("next_steps")
+    return runs
 
 
 def collect_rows(connection, body: ExportRequest) -> list[dict]:
@@ -329,6 +409,10 @@ def collect_rows(connection, body: ExportRequest) -> list[dict]:
     elif body.scope == "requests":
         rows = [request_row(row, body.include_text)
                 for row in fetch_by_ids(connection, "SELECT * FROM requests WHERE request_id IN ({marks})", ids)]
+    elif body.scope == "generations":
+        rows = generation_rows(connection, ids, body.include_text)
+        rows.sort(key=lambda row: (order.get(row["request_id"], 0), row["provider"]))
+        return rows
     else:
         spans = fetch_by_ids(connection, "SELECT * FROM spans WHERE request_id IN ({marks}) ORDER BY seq", ids)
         for span in spans:

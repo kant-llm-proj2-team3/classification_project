@@ -46,11 +46,21 @@ def _text_attrs(text: str) -> dict:
 
 
 def _chat(inputs: dict, outputs: dict | None) -> tuple[str, dict]:
-    attrs = {"dataset": inputs.get("dataset"), **_text_attrs(inputs.get("text", ""))}
+    attrs = {"dataset": inputs.get("dataset"), "provider": inputs.get("provider"), **_text_attrs(inputs.get("text", ""))}
     if outputs is None:
         return "running", attrs
     attrs["classification_status"] = outputs["classification"]["status"]
     attrs["generation_status"] = outputs["generation"]["status"]
+    return outputs["status"], attrs
+
+
+def _compare(inputs: dict, outputs: dict | None) -> tuple[str, dict]:
+    """/compare의 최상위 체인. 제공자마다의 결과 상태를 함께 남긴다."""
+    attrs = {"dataset": inputs.get("dataset"), **_text_attrs(inputs.get("text", ""))}
+    if outputs is None:
+        return "running", attrs
+    attrs["classification_status"] = outputs["classification"]["status"]
+    attrs["generation_statuses"] = {result["provider"]: result["status"] for result in outputs["results"]}
     return outputs["status"], attrs
 
 
@@ -72,17 +82,41 @@ def _apply_policy(inputs: dict, outputs: dict | None) -> tuple[str, dict]:
     return ("success" if prompt else "skipped"), attrs
 
 
-def _generate(inputs: dict, outputs: dict | None) -> tuple[str, dict]:
-    if outputs is None:
-        return "running", {}
-    result = outputs["generation"]
+def _generation_result(result: dict) -> tuple[str, dict]:
     attrs = {"error": result["error"]} if "error" in result else {}
     attrs.update(result.get("metrics", {}))
     return result["status"], attrs
 
 
-STEP_ATTRS: dict[str, Callable] = {"chat": _chat, "classify": _classify, "apply_policy": _apply_policy,
-                                   "generate": _generate}
+def _generate(inputs: dict, outputs: dict | None) -> tuple[str, dict]:
+    """/chat이면 생성 호출 하나의 지표, /compare이면 제공자별 호출을 묶은 span이다.
+    묶음 span의 시간은 가장 느린 호출에 맞춰지고, 호출별 지표는 아래의 generate_<제공자> span에 있다."""
+    if outputs is None:
+        return "running", {}
+    if "generations" in outputs:
+        statuses = {result["provider"]: result["status"] for result in outputs["generations"]}
+        values = set(statuses.values())
+        status = "success" if values == {"success"} else "skipped" if values == {"skipped"} else (
+            "partial_success" if "success" in values else "error")
+        return status, {"mode": "compare", "providers": list(statuses), "statuses": statuses}
+    return _generation_result(outputs["generation"])
+
+
+def _generate_call(inputs: dict, outputs: dict | None) -> tuple[str, dict]:
+    """/compare에서 제공자 하나의 생성 호출 (span 이름: generate_openai, generate_ollama). 출력은 생성 결과 자체다."""
+    if outputs is None:
+        return "running", {}
+    return _generation_result(outputs)
+
+
+STEP_ATTRS: dict[str, Callable] = {"chat": _chat, "compare": _compare, "classify": _classify,
+                                   "apply_policy": _apply_policy, "generate": _generate}
+
+
+def step_extractor(name: str) -> Callable | None:
+    if name.startswith("generate_"):
+        return _generate_call
+    return STEP_ATTRS.get(name)
 
 
 def now_iso() -> str:
@@ -115,7 +149,7 @@ class TrackingCallbackHandler(AsyncCallbackHandler):
         parent = self._spans.get(parent_id) if parent_id else None
         request_id = metadata.get("request_id") or (parent.request_id if parent else None)
         span = Span(run_id=run_id, parent_run_id=parent_id, request_id=request_id, name=name, started_at=now_iso())
-        extract = STEP_ATTRS.get(name)
+        extract = step_extractor(name)
         if extract and isinstance(inputs, dict):
             span.attrs.update(extract(inputs, None)[1])
         self._spans[run_id] = span
@@ -130,7 +164,7 @@ class TrackingCallbackHandler(AsyncCallbackHandler):
             span = self._spans.get(str(run_id))
             if span is None:
                 return
-            extract = STEP_ATTRS.get(span.name)
+            extract = step_extractor(span.name)
             status, attrs = "success", {}
             if extract and isinstance(outputs, dict):
                 status, attrs = extract({}, outputs)

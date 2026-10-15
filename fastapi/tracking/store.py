@@ -4,6 +4,7 @@
   spans    : 그 요청의 호출 흐름 (tracking/callbacks.py의 trace). request_id로 requests와 연결된다.
   v_request_trace   : 요청과 호출 흐름을 한 번에 보는 뷰 (요청 1건 = 행 여러 개, seq 순서)
   v_request_summary : 요청 1건 = 행 1개. 단계별 시간과 분류·생성 지표를 한 줄로 모은 뷰 (집계용)
+  v_generation_runs : 생성 호출 1번 = 행 1개. /chat은 호출 하나, /compare는 제공자마다 한 행이라 생성 모델끼리 비교할 때 쓴다.
 
 쓰기는 요청 처리를 막지 않도록 큐에 넣고 백그라운드 스레드 하나가 묶어서 저장한다. (SQLite는 쓰기 연결이 하나일 때 가장 안전하다)
 큐가 가득 차면 요청을 막는 대신 기록을 버리고 dropped 개수에 센다. 읽기는 별도 연결이라 쓰는 중에도 조회할 수 있다. (WAL)
@@ -101,10 +102,35 @@ SELECT r.request_id, r.client_request_id, r.started_at, r.dataset, r.status_code
        json_extract(g.attrs, '$.reasoning_tokens') AS llm_reasoning_tokens,
        json_extract(g.attrs, '$.reasoning_effort') AS llm_reasoning_effort,
        COALESCE(r.error_type, c.error_type, g.error_type,
-                json_extract(c.attrs, '$.error'), json_extract(g.attrs, '$.error')) AS error
+                json_extract(c.attrs, '$.error'), json_extract(g.attrs, '$.error')) AS error,
+       r.path AS endpoint,
+       json_extract(g.attrs, '$.provider')         AS llm_provider,
+       json_extract(g.attrs, '$.providers')        AS llm_providers
 FROM requests r
 LEFT JOIN spans c ON c.request_id = r.request_id AND c.name = 'classify'
 LEFT JOIN spans g ON g.request_id = r.request_id AND g.name = 'generate';
+
+DROP VIEW IF EXISTS v_generation_runs;
+CREATE VIEW v_generation_runs AS
+SELECT s.run_id, s.request_id, r.started_at, r.path AS endpoint, r.dataset,
+       json_extract(c.attrs, '$.label')            AS label,
+       json_extract(s.attrs, '$.provider')         AS provider,
+       json_extract(s.attrs, '$.model')            AS model,
+       s.name AS span, s.status, s.duration_ms AS span_ms,
+       json_extract(s.attrs, '$.latency_ms')       AS latency_ms,
+       json_extract(s.attrs, '$.input_tokens')     AS input_tokens,
+       json_extract(s.attrs, '$.output_tokens')    AS output_tokens,
+       json_extract(s.attrs, '$.reasoning_tokens') AS reasoning_tokens,
+       json_extract(s.attrs, '$.tokens_per_sec')   AS tokens_per_sec,
+       json_extract(s.attrs, '$.load_ms')          AS load_ms,
+       json_extract(s.attrs, '$.context_full')     AS context_full,
+       json_extract(s.attrs, '$.reasoning_effort') AS reasoning_effort,
+       json_extract(s.attrs, '$.temperature')      AS temperature,
+       json_extract(s.attrs, '$.error')            AS error
+FROM spans s
+JOIN requests r ON r.request_id = s.request_id
+LEFT JOIN spans c ON c.request_id = s.request_id AND c.name = 'classify'
+WHERE s.name LIKE 'generate%' AND json_extract(s.attrs, '$.provider') IS NOT NULL;
 """
 
 
