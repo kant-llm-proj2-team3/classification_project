@@ -126,7 +126,8 @@ SELECT s.run_id, s.request_id, r.started_at, r.path AS endpoint, r.dataset,
        json_extract(s.attrs, '$.context_full')     AS context_full,
        json_extract(s.attrs, '$.reasoning_effort') AS reasoning_effort,
        json_extract(s.attrs, '$.temperature')      AS temperature,
-       json_extract(s.attrs, '$.error')            AS error
+       json_extract(s.attrs, '$.error')            AS error,
+       json_extract(s.attrs, '$.summary_structure_ok') AS summary_structure_ok
 FROM spans s
 JOIN requests r ON r.request_id = s.request_id
 LEFT JOIN spans c ON c.request_id = s.request_id AND c.name = 'classify'

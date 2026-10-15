@@ -256,6 +256,8 @@ def provider_table(providers):
             "출력 토큰 평균": (item["output_tokens"] or {}).get("mean"), "토큰/초 p50": speed.get("p50"),
             "입력 토큰 합": item["tokens"]["input"], "출력 토큰 합": item["tokens"]["output"],
             "콜드 스타트": item["cold_starts"], "문맥 초과": item["context_full"],
+            "요약 구성 준수율": (item["summary_structure_ok"]["ok"] / item["summary_structure_ok"]["checked"]
+                          if item.get("summary_structure_ok", {}).get("checked") else None),
         })
 
     return pd.DataFrame(rows)
@@ -276,6 +278,7 @@ def provider_section(stats):
         "지연 p95(ms)": st.column_config.NumberColumn(format="%.0f"),
         "출력 토큰 평균": st.column_config.NumberColumn(format="%.0f"),
         "토큰/초 p50": st.column_config.NumberColumn(format="%.1f"),
+        "요약 구성 준수율": st.column_config.NumberColumn(format="percent", help="문서(documents) 요약이 항목 수·순서·항목 이름을 지킨 비율"),
     })
 
     chart = table.dropna(subset=["지연 p50(ms)"])
@@ -505,7 +508,11 @@ def span_offsets(spans):
 def answer_block(generation, key):
     """답변과 다음 단계를 보여준다. 원문 저장이 꺼져 있었다면 답변은 비어 있다."""
     if generation.get("answer"):
-        st.text_area("답변", generation["answer"], height=140, disabled=True, label_visibility="collapsed", key=f"answer_{key}")
+        label = "요약" if generation.get("summary_items") else "답변"      # 문서(documents)는 항목형 요약, 문의는 답변과 다음 단계
+        st.text_area(label, generation["answer"], height=140, disabled=True, label_visibility="collapsed", key=f"answer_{key}")
+
+        for item in generation.get("summary_items") or []:
+            st.markdown(f"- {item}")
 
         for step in generation.get("next_steps") or []:
             st.markdown(f"- {step}")

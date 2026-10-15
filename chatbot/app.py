@@ -156,6 +156,10 @@ ALLOWED_STATUSES = {
 }
 
 
+def is_text_list(value):
+    return isinstance(value, list) and all(isinstance(item, str) for item in value)
+
+
 def validate_comparison(data):
     """/compare 응답(분류 결과 하나 + 생성 모델별 결과 목록)을 확인한다."""
     if not isinstance(data, dict):
@@ -188,11 +192,13 @@ def validate_comparison(data):
         if result["status"] == "success":
             steps = result.get("next_steps", [])
 
+            summary_items = result.get("summary_items", [])
+
             if (
                 not isinstance(result.get("answer"), str)
                 or not result["answer"].strip()
-                or not isinstance(steps, list)
-                or any(not isinstance(step, str) for step in steps)
+                or not is_text_list(steps)
+                or not is_text_list(summary_items)
             ):
                 raise ValueError("API 답변 내용이 올바르지 않습니다.")
 
@@ -310,12 +316,35 @@ def get_reply(text, dataset, mode="openai"):
                 "API 다음 단계 형식이 올바르지 않습니다."
             )
 
+        # 문서(documents)는 항목형 요약(summary_items)을 함께 돌려준다.
+        summary_items = generation.get("summary_items")
+
+        if summary_items is not None and not is_text_list(summary_items):
+            raise ValueError(
+                "API 요약 항목 형식이 올바르지 않습니다."
+            )
+
     return data
 
 
 # ==========================================
 # 5. 분류 결과 및 답변 표시
 # ==========================================
+
+def show_summary_items(items):
+    """문서 요약의 항목('항목명: 내용')을 항목 이름을 굵게 해서 목록으로 보여준다."""
+    for item in items:
+        if not isinstance(item, str) or not item.strip():
+            continue
+
+        name, separator, content = item.partition(":")
+
+        if separator and 0 < len(name.strip()) <= 20:
+            st.markdown(f"- **{name.strip()}**: {content.strip()}")
+
+        else:
+            st.markdown(f"- {item.strip()}")
+
 
 def show_reply(data):
     status = data.get("status")
@@ -386,16 +415,25 @@ def show_reply(data):
     if generation_status == "success":
         answer = generation.get("answer")
 
+        summary_items = generation.get("summary_items")
+        has_summary = isinstance(summary_items, list) and bool(summary_items)
+
         if isinstance(answer, str) and answer.strip():
             if is_stub:
                 answer_title = "**연결 테스트 안내**"
             elif is_preview:
                 answer_title = "**화면 테스트 안내**"
+            elif has_summary:
+                answer_title = "**문서 요약**"
             else:
                 answer_title = "**AI 답변**"
 
             st.markdown(answer_title)
             st.write(answer)
+
+        if has_summary:
+            st.markdown("**항목별 요약**")
+            show_summary_items(summary_items)
 
         next_steps = generation.get("next_steps", [])
 
@@ -487,6 +525,12 @@ def show_comparison(data):
 
             if result["status"] == "success":
                 st.write(result["answer"])
+
+                summary_items = result.get("summary_items") or []
+
+                if summary_items:
+                    st.markdown("**항목별 요약**")
+                    show_summary_items(summary_items)
 
                 steps = result.get("next_steps") or []
 
@@ -684,8 +728,12 @@ def chat_page():
             key="answer_box",
             border=False,
         ):
+            result_title = (
+                "요약" if exchange["dataset_name"] == "문서" else "답변"
+            )
+
             st.caption(
-                f"🤖 답변 · 데이터셋: "
+                f"🤖 {result_title} · 데이터셋: "
                 f"{exchange['dataset_name']} · "
                 f"{exchange.get('mode_name', 'OpenAI')}"
             )
