@@ -1,0 +1,33 @@
+{
+  "topic": "inquiries",
+  "dataset": "total_merge",
+  "recommended_model": "roberta",
+  "model_id": "klue/roberta-base",
+  "run_name": "20261013_161829",
+  "learning_rate": 3e-05,
+  "selection_rule": "각 모델 best_model 의 test Macro-F1 (동점: validation loss, 그다음 학습 시간). baseline 과 참고용 모델(jev)은 후보에서 제외.",
+  "reason": "test Macro-F1 0.9970로 1위 (bert 0.9940, 정확히 맞힌 문장 1건 차이 / test 331건).",
+  "notes": [
+    "이 공식 모델은 test 점수로 골랐습니다. 이 test 점수는 모델 선택에 쓰였으므로 처음 보는 데이터에서의 성능보다 높게 나올 수 있습니다."
+  ],
+  "test_macro_f1": 0.9969969360631454,
+  "validation_macro_f1": 0.993993993993994,
+  "validation_best_model": "roberta",
+  "compared_models": [
+    "roberta",
+    "bert",
+    "laya",
+    "koelectra",
+    "clm"
+  ],
+  "baseline_reference_test_macro_f1": 0.9092781303695757,
+  "external_models": [
+    "laya",
+    "clm"
+  ],
+  "reference_only_models": [
+    "baseline",
+    "jev"
+  ],
+  "created_at": "2026-10-14 17:29:41"
+}

@@ -1,6 +1,6 @@
 """그래프 만들기 (baseline/steps/make_charts.py).
 
-artifacts/<주제>/<데이터셋>/<모델>/best_model/main.json 만 읽어서 PNG 그래프를 만든다. (CSV 표는 만들지 않는다)
+artifacts/<주제>/<데이터셋>/<모델>/best_model/main.json 을 읽어서 PNG 그래프를 만든다. (CSV 표는 만들지 않는다)
 저장 위치: artifacts/viz/charts/   (초기화(2번)는 이 폴더를 지우지 않는다)
 
 실행 (프로젝트 루트 project_2 에서):
@@ -10,12 +10,14 @@ artifacts/<주제>/<데이터셋>/<모델>/best_model/main.json 만 읽어서 PN
 처음 한 번 matplotlib 설치가 필요하다:  uv add matplotlib
 
 만드는 그래프
-  01_heatmap_test.png          데이터셋 x 모델 test 정확도 히트맵 (정답 수 표시, 공식 모델은 굵은 테두리)
-  02_heatmap_validation.png    같은 표의 validation 버전 (모델 선정에 쓰인 점수)
-  03_baseline_vs_official.png  baseline 대비 공식 모델의 test 정확도 막대
-  04_learning_curves.png       데이터셋별 validation Macro-F1 학습 곡선 (별표 = 저장된 best 에폭)
+  01_heatmap_test.png          데이터셋 x 모델 test 정확도 히트맵 (정답 수 표시, 줄당 1개 굵은 주황 테두리 = test 점수가 가장 높은 모델,
+                               RED_BOX_DATASETS 줄은 빨간 네모, 주제가 바뀌는 곳에는 빈 칸)
+  02_heatmap_validation.png    같은 표의 validation 버전 (주황 테두리 = validation 점수가 가장 높은 모델)
+  03_baseline_vs_official.png  baseline_1(TF-IDF)·baseline_2(JEV) 대비 공식 모델의 test 정확도 막대 (막대 아래에 공식 모델 이름)
+  04_learning_curves.png       데이터셋별 validation Macro-F1 학습 곡선 (별표 = 저장된 best 에폭, 왼쪽에 주제 이름)
   05_cost_vs_accuracy.png      모델 크기·추론 속도와 평균 test 정확도
-  06_confusion_official.png    데이터셋별 공식 모델의 test 혼동행렬
+베스트(공식) 모델은 줄마다 그 그림의 점수가 가장 높은 모델이다. baseline 과 jev 는 후보에서 뺀다. 동점이면 validation loss -> 학습 시간 순.
+03 번의 공식 모델도 test 점수가 가장 높은 모델이다. (recommendation.json 은 쓰지 않는다)
 외부 모델(laya, jev, clm)은 설정에서 켜져 있고 main.json 이 있으면 같은 그래프에 함께 들어간다.
 main.json 에 없는 값(test, curve, 파라미터 수 등)은 그 그래프에서만 빠지고 오류는 나지 않는다.
 """
@@ -36,6 +38,9 @@ CHART_DIR_NAME = "charts"
 MODEL_COLORS = {"baseline": "#8a8a8a", "bert": "#2a78d6", "roberta": "#eb6834", "koelectra": "#1baf7a",
                 "laya": "#8f5bd6", "jev": "#c9a227", "clm": "#d6458f"}
 KOREAN = True            # 한글 글꼴을 찾으면 True. 못 찾으면 영어 제목을 쓴다.
+GAP_HEIGHT = 0.5                         # 히트맵에서 inquiries / documents 사이 빈 칸 높이 (1 = 한 줄)
+RED_BOX_DATASETS = ("advanced_merge",)   # 히트맵에서 줄 전체를 빨간 네모로 감쌀 데이터셋 (total_merge 와 비교할 줄)
+JEV_BAR_COLOR = "#c4c4c4"                # 03번 그래프 baseline_2 (JEV) 막대 색 (baseline 회색보다 밝은 회색)
 
 
 def _t(korean, english):
@@ -75,8 +80,21 @@ def _models(results):
     return [m for m in common.RESULT_MODEL_KEYS if m in present]
 
 
-def _official(main):
-    return bool((main.get("test_meta") or {}).get("official"))
+def _best_model(idx, dataset, split):
+    """한 데이터셋에서 split("test" / "validation") 점수가 가장 높은 모델 이름. 줄마다 1개.
+    후보는 baseline 과 참고용 모델(jev)을 뺀 나머지. 순위 규칙은 모델 추천(common.rank_key)과 같다:
+    Macro-F1 높은 순 -> 동점이면 validation loss 낮은 순 -> 학습 시간 짧은 순. (test 는 loss 를 저장하지 않아 validation loss 를 쓴다)"""
+    skip = {common.BASELINE_KEY, *cfg.RECOMMEND_REFERENCE_ONLY}
+    ranked = []
+    for (d, model), main in idx.items():
+        block = main.get(split)
+        if d != dataset or model in skip or not block:
+            continue
+        loss = (main.get("validation") or {}).get("loss")
+        seconds = (main.get("cost") or {}).get("train_seconds")
+        ranked.append(((-round(block["macro_f1"], 6), float("inf") if loss is None else loss,
+                        float("inf") if seconds is None else seconds), model))
+    return min(ranked)[1] if ranked else None
 
 
 def _save(plt, fig, path):
@@ -88,8 +106,19 @@ def _save(plt, fig, path):
 # ═════════════════════════ 그래프 ═════════════════════════
 def chart_heatmap(plt, idx, datasets, models, split, path):
     import numpy as np
-    values = np.full((len(datasets), len(models)), np.nan)
-    for i, dataset in enumerate(datasets):
+    # 주제(inquiries / documents)가 바뀌는 곳에는 반 줄 높이의 빈 칸(None)을 끼워 간격을 둔다.
+    layout = []
+    for dataset in datasets:
+        if layout and dataset.split("/", 1)[0] != [d for d in layout if d][-1].split("/", 1)[0]:
+            layout.append(None)
+        layout.append(dataset)
+    heights = [GAP_HEIGHT if d is None else 1.0 for d in layout]
+    edges = np.concatenate([[-0.5], -0.5 + np.cumsum(heights)])       # 줄 경계의 y 좌표
+    centers = [(edges[i] + edges[i + 1]) / 2 for i in range(len(layout))]
+    values = np.full((len(layout), len(models)), np.nan)
+    for i, dataset in enumerate(layout):
+        if dataset is None:
+            continue
         for j, model in enumerate(models):
             block = (idx.get((dataset, model)) or {}).get(split)
             if block:
@@ -97,111 +126,150 @@ def chart_heatmap(plt, idx, datasets, models, split, path):
     if np.isnan(values).all():
         print(f"  [건너뜀] {path.name}: {split} 결과가 하나도 없습니다.")
         return None
-    fig, ax = plt.subplots(figsize=(1.9 * len(models) + 3.6, 0.66 * len(datasets) + 2.0))
+    best_models = {d: _best_model(idx, d, split) for d in layout if d}      # 줄마다 이 그림의 점수(test / validation)가 가장 높은 모델
+    fig, ax = plt.subplots(figsize=(1.9 * len(models) + 3.6, 0.66 * sum(heights) + 2.0))
     cmap = plt.get_cmap("Blues").copy()
     cmap.set_bad("#eeeeee")
-    ax.imshow(np.ma.masked_invalid(values), cmap=cmap, vmin=0.6, vmax=1.0, aspect="auto")
-    for i, dataset in enumerate(datasets):
+    ax.pcolormesh(np.arange(len(models) + 1) - 0.5, edges, np.ma.masked_invalid(values), cmap=cmap, vmin=0.6, vmax=1.0)
+    for i, dataset in enumerate(layout):
+        if dataset is None:
+            ax.add_patch(plt.Rectangle((-0.5, edges[i]), len(models), heights[i], facecolor="white", edgecolor="none", zorder=3))   # 빈 칸
+            continue
         for j, model in enumerate(models):
             main = idx.get((dataset, model))
             block = (main or {}).get(split)
             if not block:
-                ax.text(j, i, "-", ha="center", va="center", fontsize=11, color="#999999")
+                ax.text(j, centers[i], "-", ha="center", va="center", fontsize=11, color="#999999")
                 continue
             dark = (block["accuracy"] - 0.6) / 0.4 > 0.55
-            ax.text(j, i, f"{block['accuracy']:.1%}\n{block['correct']}/{block['n']}", ha="center", va="center",
+            ax.text(j, centers[i], f"{block['accuracy']:.1%}\n{block['correct']}/{block['n']}", ha="center", va="center",
                     fontsize=10, color="white" if dark else "#222222")
-            if _official(main):
-                ax.add_patch(plt.Rectangle((j - 0.46, i - 0.46), 0.92, 0.92, fill=False, edgecolor="#ff8c00", linewidth=3.2))
+            if model == best_models[dataset]:
+                ax.add_patch(plt.Rectangle((j - 0.46, centers[i] - 0.46), 0.92, 0.92, fill=False, edgecolor="#ff8c00", linewidth=3.2))
     ax.set_xticks(range(len(models)))
     ax.set_xticklabels(models, fontsize=11)
     ax.xaxis.tick_top()
-    ax.set_yticks(range(len(datasets)))
-    ax.set_yticklabels([_label(d) for d in datasets], fontsize=10)
+    ax.set_yticks(centers)
+    ax.set_yticklabels([_label(d) if d else "" for d in layout], fontsize=10)
     ax.set_xticks([x - 0.5 for x in range(len(models) + 1)], minor=True)
-    ax.set_yticks([y - 0.5 for y in range(len(datasets) + 1)], minor=True)
+    ax.set_yticks(list(edges), minor=True)
     ax.grid(which="minor", color="white", linewidth=2.5)
     ax.tick_params(which="both", length=0)
     for spine in ax.spines.values():
         spine.set_visible(False)
+    # 빨간 네모(RED_BOX_DATASETS 줄): 행 이름 글자 위치를 알아야 해서 한 번 그려 본 뒤 추가한다.
+    ax.set_xlim(-0.5, len(models) - 0.5)
+    ax.set_ylim(edges[-1], -0.5)
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    inverse = ax.transData.inverted()
+    label_boxes = [tick.get_window_extent(renderer) for tick in ax.get_yticklabels()]
+    x_right = len(models) - 0.5 + 0.04
+    for i, dataset in enumerate(layout):
+        if dataset and dataset.split("/", 1)[1] in RED_BOX_DATASETS:
+            x_left = inverse.transform((label_boxes[i].x0, label_boxes[i].y0))[0] - 0.12
+            ax.add_patch(plt.Rectangle((x_left, edges[i]), x_right - x_left, heights[i], fill=False, edgecolor="#e02020",
+                                       linewidth=3.0, clip_on=False, zorder=10))
     name = _t("test 정확도", "Test accuracy") if split == "test" else _t("validation 정확도 (모델 선정에 사용)", "Validation accuracy (used for selection)")
     fig.suptitle(f"{name}  ({_t('정답 수/전체', 'correct/total')})", fontsize=13, y=0.995)
-    fig.text(0.5, 0.0, _t("굵은 주황 테두리 = 공식 모델 (validation 으로 선정)    회색 = 결과 없음",
-                          "Orange border = official model (selected on validation)    Gray = no result"),
+    fig.text(0.5, 0.0, _t("굵은 주황 테두리 = 공식 모델    회색 = 결과 없음",
+                          "Orange border = official model    Gray = no result"),
              ha="center", va="top", fontsize=9, color="#555555")
     return _save(plt, fig, path)
 
 
 def chart_baseline_vs_official(plt, idx, datasets, path):
-    rows = []
+    rows = []          # (데이터셋, baseline_1 TF-IDF 정확도, 공식 모델 이름, 공식 모델 정확도, baseline_2 JEV 정확도 또는 None)
     for dataset in datasets:
         base = (idx.get((dataset, "baseline")) or {}).get("test")
-        official = [(m, r) for (d, m), r in idx.items() if d == dataset and _official(r) and r.get("test")]
-        if base and official:
-            rows.append((dataset, base["accuracy"], official[0][0], official[0][1]["test"]["accuracy"]))
+        jev = (idx.get((dataset, "jev")) or {}).get("test")
+        best = _best_model(idx, dataset, "test")          # test 점수가 가장 높은 모델 (baseline·jev 제외)
+        if base and best:
+            rows.append((dataset, base["accuracy"], best, idx[(dataset, best)]["test"]["accuracy"],
+                         jev["accuracy"] if jev else None))
     if not rows:
         print(f"  [건너뜀] {path.name}: baseline 과 공식 모델의 test 결과가 함께 있는 데이터셋이 없습니다. (3번·8번을 먼저 실행하세요)")
         return None
-    fig, ax = plt.subplots(figsize=(max(7.5, 1.35 * len(rows) + 2), 5.2))
+    fig, ax = plt.subplots(figsize=(max(8.5, 1.7 * len(rows) + 2), 5.4))
     xs = list(range(len(rows)))
-    width = 0.38
-    for offset, key, color, label in ((-width / 2, 1, MODEL_COLORS["baseline"], "baseline"),
-                                      (width / 2, 3, "#2a78d6", _t("공식 모델", "Official model"))):
-        values = [row[key] * 100 for row in rows]
-        bars = ax.bar([x + offset for x in xs], values, width, color=color, label=label)
-        for bar, value in zip(bars, values):
-            ax.text(bar.get_x() + bar.get_width() / 2, value + 1, f"{value:.1f}", ha="center", va="bottom", fontsize=9)
+    width = 0.26
+    series = ((-width, 1, MODEL_COLORS["baseline"], "baseline_1 (TF-IDF)"),      # 회색 = 항상 TF-IDF baseline
+              (0.0, 4, JEV_BAR_COLOR, "baseline_2 (JEV)"),                        # 밝은 회색 = JEV (결과가 없는 데이터셋은 막대 없음)
+              (width, 3, "#2a78d6", _t("공식 모델", "Official model")))           # 파란색 = 공식 모델 (이름은 막대 아래)
+    for offset, key, color, label in series:
+        points = [(x, row[key] * 100) for x, row in zip(xs, rows) if row[key] is not None]
+        if not points:
+            continue
+        bars = ax.bar([x + offset for x, _ in points], [value for _, value in points], width, color=color, label=label)
+        for bar, (_, value) in zip(bars, points):
+            ax.text(bar.get_x() + bar.get_width() / 2, value + 1, f"{value:.1f}", ha="center", va="bottom", fontsize=8.5)
     ax.set_xticks(xs)
     ax.set_xticklabels([f"{_label(row[0]).replace(' · ', chr(10))}\n({row[2]})" for row in rows], fontsize=9)
+    for tick, row in zip(ax.get_xticklabels(), rows):       # RED_BOX_DATASETS (advanced_merge) 줄은 글씨를 굵고 진하게
+        if row[0].split("/", 1)[1] in RED_BOX_DATASETS:
+            tick.set_fontweight("bold")
+            tick.set_color("#e02020")
     ax.set_ylim(0, 118)
     ax.set_ylabel(_t("test 정확도 (%)", "Test accuracy (%)"))
-    ax.set_title(_t("baseline 대비 공식 모델 (test 정확도)", "Official model vs baseline (test accuracy)"), fontsize=13)
+    ax.set_title(_t("baseline 대비 공식 모델 (test 정확도)", "Official model vs baselines (test accuracy)"), fontsize=13)
     ax.grid(axis="y", alpha=0.3)
-    ax.legend(loc="upper center", bbox_to_anchor=(0.5, 1.0), ncol=2, frameon=False)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, 1.0), ncol=3, frameon=False)
     for side in ("top", "right"):
         ax.spines[side].set_visible(False)
     return _save(plt, fig, path)
 
 
 def chart_learning_curves(plt, idx, datasets, models, path):
+    from matplotlib.lines import Line2D
+    from matplotlib.ticker import MaxNLocator
     shown = [d for d in datasets if any((idx.get((d, m)) or {}).get("curve") for m in models)]
     if not shown:
         print(f"  [건너뜀] {path.name}: 학습 곡선(curve)이 있는 결과가 없습니다.")
         return None
-    cols = min(4, len(shown))
-    rows = math.ceil(len(shown) / cols)
+    # 주제(inquiries / documents)마다 한 줄, 데이터셋은 왼쪽부터
+    groups = [[d for d in shown if d.split("/", 1)[0] == topic] for topic in cfg.TOPICS]
+    groups = [group for group in groups if group]
+    cols, rows = max(len(group) for group in groups), len(groups)
     fig, axes = plt.subplots(rows, cols, figsize=(4.3 * cols, 3.3 * rows), squeeze=False, sharey=True)
     handles = {}
-    for k, dataset in enumerate(shown):
-        ax = axes[k // cols][k % cols]
-        for model in models:
-            main = idx.get((dataset, model))
-            curve = (main or {}).get("curve")
-            if not curve:
-                continue
-            color = MODEL_COLORS.get(model, "#555555")
-            line, = ax.plot(curve["epoch"], curve["val_macro_f1"], color=color, linewidth=1.8, marker="o", markersize=3)
-            handles[model] = line
-            best = (main.get("train") or {}).get("best_epoch")
-            if best in curve["epoch"]:
-                ax.scatter([best], [curve["val_macro_f1"][curve["epoch"].index(best)]], marker="*", s=170, color=color,
-                           edgecolor="black", linewidth=0.8, zorder=5)
-        ax.set_title(_label(dataset), fontsize=10)
-        ax.set_ylim(0, 1.05)
-        ax.grid(alpha=0.3)
-        ax.set_xlabel(_t("에폭", "Epoch"), fontsize=9)
-        for side in ("top", "right"):
-            ax.spines[side].set_visible(False)
-    for k in range(len(shown), rows * cols):
-        axes[k // cols][k % cols].axis("off")
+    for r, group in enumerate(groups):
+        for c, dataset in enumerate(group):
+            ax = axes[r][c]
+            for model in models:
+                main = idx.get((dataset, model))
+                curve = (main or {}).get("curve")
+                if not curve:
+                    continue
+                color = MODEL_COLORS.get(model, "#555555")
+                line, = ax.plot(curve["epoch"], curve["val_macro_f1"], color=color, linewidth=1.8, marker="o", markersize=3)
+                handles[model] = line
+                best = (main.get("train") or {}).get("best_epoch")
+                if best in curve["epoch"]:
+                    ax.scatter([best], [curve["val_macro_f1"][curve["epoch"].index(best)]], marker="*", s=170, color=color,
+                               edgecolor="black", linewidth=0.8, zorder=5)
+            ax.set_title(_label(dataset), fontsize=10)
+            ax.set_ylim(0, 1.05)
+            ax.grid(alpha=0.3)
+            ax.set_xlabel(_t("에폭", "Epoch"), fontsize=9)
+            ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+            for side in ("top", "right"):
+                ax.spines[side].set_visible(False)
+        for c in range(len(group), cols):
+            axes[r][c].axis("off")
     for r in range(rows):
-        axes[r][0].set_ylabel("validation Macro-F1", fontsize=9)
-    fig.legend(list(handles.values()), list(handles.keys()), loc="upper center", ncol=len(handles), frameon=False,
-               bbox_to_anchor=(0.5, 1.02), fontsize=10)
-    fig.text(0.5, -0.01, _t("별표 = 저장된 best 에폭 (곡선의 마지막 점은 학습이 멈춘 시점)",
-                            "Star = saved best epoch (last point = where training stopped)"),
+        axes[r][0].set_ylabel("Macro-F1", fontsize=9)
+    star = Line2D([0], [0], marker="*", linestyle="none", markerfacecolor="#555555", markeredgecolor="black", markersize=12)
+    fig.legend(list(handles.values()) + [star],
+               list(handles.keys()) + [_t("best 에폭의 validation 점수", "validation score at best epoch")],
+               loc="upper center", ncol=len(handles) + 1, frameon=False, bbox_to_anchor=(0.5, 0.995), fontsize=10)
+    fig.text(0.5, -0.01, _t("곡선 = validation Macro-F1 (마지막 점은 학습이 멈춘 시점)",
+                            "Curve = validation Macro-F1 (last point = where training stopped)"),
              ha="center", va="top", fontsize=9, color="#555555")
-    fig.tight_layout()
+    fig.tight_layout(rect=(0.035, 0, 1, 0.93))      # 위쪽 7% 는 범례 자리, 왼쪽 3.5% 는 주제(inquiries/documents) 라벨 자리
+    for r, group in enumerate(groups):              # 줄마다 왼쪽에 주제 이름
+        box = axes[r][0].get_position()
+        fig.text(0.012, (box.y0 + box.y1) / 2, group[0].split("/", 1)[0], rotation=90, ha="center", va="center",
+                 fontsize=15, fontweight="bold")
     return _save(plt, fig, path)
 
 
@@ -248,41 +316,6 @@ def chart_cost_vs_accuracy(plt, idx, datasets, models, path):
     return _save(plt, fig, path)
 
 
-def chart_confusion(plt, idx, datasets, path):
-    items = []
-    for dataset in datasets:
-        official = [(m, r) for (d, m), r in idx.items() if d == dataset and _official(r) and (r.get("test") or {}).get("confusion_matrix")]
-        if official:
-            items.append((dataset, official[0][0], official[0][1]["test"]))
-    if not items:
-        print(f"  [건너뜀] {path.name}: 공식 모델의 test 혼동행렬이 없습니다. (3번·8번을 먼저 실행하세요)")
-        return None
-    cols = min(4, len(items))
-    rows = math.ceil(len(items) / cols)
-    fig, axes = plt.subplots(rows, cols, figsize=(3.7 * cols, 3.6 * rows), squeeze=False)
-    for k, (dataset, model, block) in enumerate(items):
-        ax = axes[k // cols][k % cols]
-        matrix, labels = block["confusion_matrix"], block["labels"]
-        top = max(max(row) for row in matrix) or 1
-        ax.imshow(matrix, cmap="Blues", vmin=0, vmax=top)
-        for i, row in enumerate(matrix):
-            for j, value in enumerate(row):
-                ax.text(j, i, str(value), ha="center", va="center", fontsize=11, color="white" if value > top / 2 else "#222222")
-        ax.set_xticks(range(len(labels)))
-        ax.set_xticklabels(labels, rotation=30, ha="right", fontsize=8)
-        ax.set_yticks(range(len(labels)))
-        ax.set_yticklabels(labels, fontsize=8)
-        ax.set_xlabel(_t("예측", "Predicted"), fontsize=9)
-        ax.set_ylabel(_t("실제", "Actual"), fontsize=9)
-        ax.set_title(f"{_label(dataset)}\n({model})", fontsize=9)
-    for k in range(len(items), rows * cols):
-        axes[k // cols][k % cols].axis("off")
-    fig.suptitle(_t("공식 모델의 test 혼동행렬 (행 = 실제, 열 = 예측)", "Official model test confusion matrices (row = actual, column = predicted)"),
-                 fontsize=12)
-    fig.tight_layout()
-    return _save(plt, fig, path)
-
-
 # ═════════════════════════ 실행 ═════════════════════════
 def run(include_total_merge=False):
     """main.json 을 읽어 그래프를 만든다. 만든 파일 목록을 돌려 준다."""
@@ -309,8 +342,7 @@ def run(include_total_merge=False):
             ("02_heatmap_validation.png", lambda p: chart_heatmap(plt, idx, datasets, models, "validation", p)),
             ("03_baseline_vs_official.png", lambda p: chart_baseline_vs_official(plt, idx, datasets, p)),
             ("04_learning_curves.png", lambda p: chart_learning_curves(plt, idx, datasets, models, p)),
-            ("05_cost_vs_accuracy.png", lambda p: chart_cost_vs_accuracy(plt, idx, datasets, models, p)),
-            ("06_confusion_official.png", lambda p: chart_confusion(plt, idx, datasets, p))]
+            ("05_cost_vs_accuracy.png", lambda p: chart_cost_vs_accuracy(plt, idx, datasets, models, p))]
     made = []
     for name, job in jobs:
         try:

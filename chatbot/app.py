@@ -6,6 +6,8 @@ import uuid
 import httpx
 import streamlit as st
 
+import tracing_page
+
 
 # ==========================================
 # 1. 기본 설정
@@ -363,14 +365,7 @@ def change_dataset():
 def chat_page():
     apply_chat_style()
 
-    title_col, button_col = st.columns([4, 1])
-
-    with title_col:
-        st.title("분류 챗봇")
-
-    with button_col:
-        if st.button("⚙️ 설정"):
-            st.switch_page(settings_route)
+    st.title("분류 챗봇")
 
     st.caption(
         "새 질문을 보내면 이전 질문과 답변이 교체됩니다."
@@ -629,12 +624,6 @@ def settings_page():
 # 9. Streamlit 실행 및 초기화
 # ==========================================
 
-st.set_page_config(
-    page_title="분류 챗봇",
-    page_icon="💬",
-    layout="centered",
-)
-
 initialize_session()
 
 # 임시: FastAPI 연결 테스트
@@ -651,18 +640,36 @@ st.session_state.app_settings.update({
 chat_route = st.Page(
     chat_page,
     title="채팅",
+    icon="💬",
     default=True,
 )
 
 settings_route = st.Page(
     settings_page,
     title="설정",
+    icon="⚙️",
     url_path="settings",
 )
 
+tracing_route = st.Page(
+    tracing_page.render,
+    title="트레이싱",
+    icon="📊",
+    url_path="tracing",
+)
+
+# 페이지 이동은 사이드바에서 한다.
 current_page = st.navigation(
-    [chat_route, settings_route],
-    position="hidden",
+    [chat_route, tracing_route, settings_route],
+    position="sidebar",
+)
+
+# 조회 표가 넓게 보이도록 트레이싱 페이지만 넓은 레이아웃을 쓴다.
+st.set_page_config(
+    page_title="분류 챗봇",
+    page_icon="💬",
+    layout="wide" if current_page is tracing_route else "centered",
+    initial_sidebar_state="expanded",
 )
 
 current_page.run()

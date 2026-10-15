@@ -2,9 +2,9 @@
   "topic": "inquiries",
   "dataset": "total_merge",
   "split": "test",
-  "selected_model": null,
+  "selected_model": "roberta",
   "evaluated_model": "koelectra",
-  "official": null,
+  "official": false,
   "selected_run": "20261013_162118",
   "model_id": "monologg/koelectra-small-v3-discriminator",
   "classifier": {

@@ -1095,69 +1095,99 @@ def read_candidate(model_key, topic, dataset):
     return info["best"] if info is not None else None
 
 
+def rank_key_test(summary):
+    """test 기준 순위: test Macro-F1 높은 순 -> 동점이면 validation loss 낮은 순 -> 학습 시간 짧은 순.
+    (test 는 loss 를 저장하지 않아 동점일 때만 validation loss 를 쓴다)"""
+    loss, seconds = summary.get("validation_loss"), summary.get("train_seconds")
+    return (-round(summary["test_macro_f1"], 6), float("inf") if loss is None else loss,
+            float("inf") if seconds is None else seconds)
+
+
+def read_test_candidate(model_key, topic, dataset):
+    """read_candidate 의 요약에 main.json 의 test 칸(Macro-F1, 정확도, 정답 수)을 붙인다. test 결과가 없으면 None."""
+    summary = read_candidate(model_key, topic, dataset)
+    path = best_dir(model_key, topic, dataset) / "main.json"
+    if summary is None or not path.exists():
+        return None
+    test = load_json(path).get("test")
+    if not test:
+        return None
+    return {**summary, "test_macro_f1": test["macro_f1"], "test_accuracy": test["accuracy"],
+            "test_correct": test["correct"], "test_rows": test["n"]}
+
+
+def _print_test_table(rows):
+    print(f"  {'model':<14}{'best run':<17}{'test_f1':>9}{'test_acc':>10}{'test_ok':>10}{'val_f1':>9}{'val_loss':>10}")
+    for row in rows:
+        name = row["model_key"] + ("(ref)" if row.get("reference") else "") + ("(외부)" if row.get("external") else "")
+        print(f"  {name:<14}{row['run_name']:<17}{row['test_macro_f1']:>9.4f}{row['test_accuracy']:>10.4f}"
+              f"{str(row['test_correct']) + '/' + str(row['test_rows']):>10}"
+              f"{row['validation_macro_f1']:>9.4f}{_fmt(row['validation_loss'], '.4f'):>10}")
+
+
 def recommend_model(topic, dataset):
-    """bert / roberta / koelectra 의 best_model 중 validation 결과가 가장 좋은 모델 1개를 추천한다. test 는 보지 않는다."""
+    """bert / roberta / koelectra (+ 외부 모델) 의 best_model 중 **test** 점수가 가장 좋은 모델 1개를 공식 모델로 정한다.
+    그래서 test 평가(4번)를 먼저 해야 한다. baseline 과 참고용 모델(jev)은 후보가 아니다."""
     if is_recommend_excluded(dataset):
         print(f"\n=== {topic}/{dataset} · 모델 추천 제외 (서버용 데이터셋이라 추천 대상이 아닙니다) ===")
         return None
-    print(f"\n=== {topic}/{dataset} · 모델 추천 (각 모델 best_model 의 validation 결과만 사용) ===")
-    candidates = []
+    print(f"\n=== {topic}/{dataset} · 모델 추천 (각 모델 best_model 의 test 결과로 정함) ===")
+    candidates, validation_only = [], []
     for key in TRANSFORMER_KEYS + EXTERNAL_KEYS:
         if key in REFERENCE_ONLY_KEYS:
             continue                       # jev 처럼 참고용으로만 두는 모델은 순위에 넣지 않는다
-        summary = read_candidate(key, topic, dataset)
-        if summary is None:
-            if is_external(key):
-                print(f"  [참고] {key}(외부): 결과 파일이 없어 비교에서 제외합니다.")
-            else:
-                print(f"  [주의] {key}: best_model 이 없어(학습 전) 비교에서 제외합니다.")
-        else:
+        summary = read_test_candidate(key, topic, dataset)
+        if summary is not None:
             candidates.append({**summary, "external": is_external(key)})
+        elif read_candidate(key, topic, dataset) is None:
+            print(f"  [참고] {key}{'(외부)' if is_external(key) else ''}: 결과 파일이 없어 비교에서 제외합니다.")
+        else:
+            validation_only.append(key)
+            print(f"  [주의] {key}{'(외부)' if is_external(key) else ''}: test 결과가 없어 비교에서 제외합니다. "
+                  f"({'팀원에게 main.json 의 test 칸을 요청하세요' if is_external(key) else '4번(test 평가)을 먼저 실행하세요'})")
     own = [c for c in candidates if not c["external"]]
-    for c in [c for c in candidates if c["external"]]:   # 외부 모델은 우리와 같은 validation 문장 수일 때만 비교한다
-        if own and c.get("validation_rows") != own[0].get("validation_rows"):
-            print(f"  [주의] {c['model_key']}(외부): validation 문장 수({c.get('validation_rows')})가 "
-                  f"우리({own[0].get('validation_rows')})와 달라 비교에서 제외합니다.")
+    for c in [c for c in candidates if c["external"]]:   # 외부 모델은 우리와 같은 test 문장 수일 때만 비교한다
+        if own and c.get("test_rows") != own[0].get("test_rows"):
+            print(f"  [주의] {c['model_key']}(외부): test 문장 수({c.get('test_rows')})가 "
+                  f"우리({own[0].get('test_rows')})와 달라 비교에서 제외합니다.")
             candidates.remove(c)
     if not candidates:
-        print("  추천할 결과가 없습니다. 먼저 1번(학습)을 실행하세요.")
+        print("  추천할 결과가 없습니다. 먼저 4번(test 평가)을 실행하세요.")
         return None
 
-    ranked = sorted(candidates, key=rank_key)
+    ranked = sorted(candidates, key=rank_key_test)
     best = ranked[0]
-    baseline_summary = read_candidate(BASELINE_KEY, topic, dataset)
+    validation_best = sorted(candidates, key=rank_key)[0]
+    baseline_summary = read_test_candidate(BASELINE_KEY, topic, dataset)
     reference = {**baseline_summary, "reference": True} if baseline_summary else None
     extra_refs = []
-    for key in REFERENCE_ONLY_KEYS:        # 선정에서 빼고 표에 참고용으로만 보여 주는 외부 모델 (validation 결과가 있고 문장 수가 같을 때만)
-        ref_summary = read_candidate(key, topic, dataset)
-        if ref_summary is not None and ref_summary.get("validation_rows") == best.get("validation_rows"):
+    for key in REFERENCE_ONLY_KEYS:        # 선정에서 빼고 표에 참고용으로만 보여 주는 외부 모델
+        ref_summary = read_test_candidate(key, topic, dataset)
+        if ref_summary is not None and ref_summary.get("test_rows") == best.get("test_rows"):
             extra_refs.append({**ref_summary, "reference": True, "external": True})
-    _print_table(ranked + ([reference] if reference else []) + extra_refs)
+    _print_test_table(ranked + ([reference] if reference else []) + extra_refs)
 
     if len(ranked) == 1:
-        reason = f"완료된 후보가 {best['model_key']} 하나뿐입니다."
+        reason = f"test 결과가 있는 후보가 {best['model_key']} 하나뿐입니다."
     else:
         second = ranked[1]
-        if abs(best["validation_macro_f1"] - second["validation_macro_f1"]) < 1e-6:
-            reason = (f"validation Macro-F1 이 {best['validation_macro_f1']:.4f}로 {second['model_key']}와 동점이라 "
+        if abs(best["test_macro_f1"] - second["test_macro_f1"]) < 1e-6:
+            reason = (f"test Macro-F1 이 {best['test_macro_f1']:.4f}로 {second['model_key']}와 동점이라 "
                       f"validation loss({_fmt(best['validation_loss'], '.4f')} vs {_fmt(second['validation_loss'], '.4f')})로 결정했습니다.")
         else:
-            gap = round((best["validation_accuracy"] - second["validation_accuracy"]) * best["validation_rows"])
-            reason = (f"validation Macro-F1 {best['validation_macro_f1']:.4f}로 1위 "
-                      f"({second['model_key']} {second['validation_macro_f1']:.4f}, 정확히 맞힌 문장 약 {gap}건 차이 / "
-                      f"validation {best['validation_rows']}건).")
-    print(f"\n  >> 추천: {best['model_key']} ({best['model_id']}), best_model = {best['run_name']}")
+            gap = best["test_correct"] - second["test_correct"]
+            reason = (f"test Macro-F1 {best['test_macro_f1']:.4f}로 1위 "
+                      f"({second['model_key']} {second['test_macro_f1']:.4f}, 정확히 맞힌 문장 {gap}건 차이 / test {best['test_rows']}건).")
+    print(f"\n  >> 공식 모델(test 기준): {best['model_key']} ({best['model_id']}), best_model = {best['run_name']}")
     print(f"     이유: {reason}")
-    notes = []
+    notes = ["이 공식 모델은 test 점수로 골랐습니다. 이 test 점수는 모델 선택에 쓰였으므로 처음 보는 데이터에서의 성능보다 높게 나올 수 있습니다."]
+    if validation_best["model_key"] != best["model_key"]:
+        notes.append(f"validation 기준 1위는 {validation_best['model_key']} 입니다. (test 기준 공식 모델과 다름)")
     if len(own) < len(TRANSFORMER_KEYS):
-        notes.append(f"{len(own)}개 모델만 비교했습니다. 나머지 모델은 아직 학습 결과가 없습니다.")
-    if reference and reference["validation_macro_f1"] >= best["validation_macro_f1"] - 1e-6:
-        notes.append(f"TF-IDF baseline(val_f1 {reference['validation_macro_f1']:.4f})이 같거나 더 높습니다. "
+        notes.append(f"{len(own)}개 모델만 비교했습니다. 나머지 모델은 test 결과가 없습니다.")
+    if reference and reference["test_macro_f1"] >= best["test_macro_f1"] - 1e-6:
+        notes.append(f"TF-IDF baseline(test_f1 {reference['test_macro_f1']:.4f})이 같거나 더 높습니다. "
                      "사전학습 모델이 꼭 이겨야 하는 것은 아니니 이 사실을 보고서에 그대로 기록하세요.")
-    tested = [k for k in TRANSFORMER_KEYS if (best_dir(k, topic, dataset) / "test_metrics.json").exists()]
-    if tested and best["model_key"] not in tested:
-        notes.append(f"이미 {tested} 의 test 평가가 끝나 있습니다. 추천이 바뀌었다면 test 이후에 모델을 다시 "
-                     "고른 셈이므로 기존 test 결과와 추가 실험을 구분해 기록하세요.")
     for note in notes:
         print(f"     [참고] {note}")
 
@@ -1165,16 +1195,40 @@ def recommend_model(topic, dataset):
     save_json(result_dir / "recommendation.json", {
         "topic": topic, "dataset": dataset, "recommended_model": best["model_key"],
         "model_id": best["model_id"], "run_name": best["run_name"], "learning_rate": best["learning_rate"],
-        "selection_rule": "각 모델 best_model 의 validation Macro-F1 (동점: validation loss, 그다음 학습 시간). "
-                          "test 점수는 사용하지 않음.",
-        "reason": reason, "notes": notes, "validation_macro_f1": best["validation_macro_f1"],
+        "selection_rule": "각 모델 best_model 의 test Macro-F1 (동점: validation loss, 그다음 학습 시간). "
+                          "baseline 과 참고용 모델(jev)은 후보에서 제외.",
+        "reason": reason, "notes": notes, "test_macro_f1": best["test_macro_f1"],
+        "validation_macro_f1": best["validation_macro_f1"], "validation_best_model": validation_best["model_key"],
         "compared_models": [c["model_key"] for c in ranked],
-        "baseline_reference_validation_macro_f1": reference["validation_macro_f1"] if reference else None,
+        "baseline_reference_test_macro_f1": reference["test_macro_f1"] if reference else None,
         "external_models": [c["model_key"] for c in ranked if c.get("external")],
         "reference_only_models": [BASELINE_KEY] + list(REFERENCE_ONLY_KEYS),
         "created_at": time.strftime("%Y-%m-%d %H:%M:%S")})
     print(f"     저장: {result_dir / 'recommendation.json'}")
+    mark_official(topic, dataset, best["model_key"])
     return best
+
+
+def mark_official(topic, dataset, selected):
+    """공식 모델이 정해진 뒤, 우리가 평가한 모델(baseline, bert, roberta, koelectra)의 test_metrics.json 과
+    main.json 의 test_meta 에 공식 여부를 적는다. (selected_model = 공식 모델, official = 이 모델이 공식인지)
+    외부 모델(laya, jev, clm)의 폴더는 건드리지 않는다."""
+    for key in ALL_MODEL_KEYS:
+        best = best_dir(key, topic, dataset)
+        official = key == selected
+        report_path, main_path = best / "test_metrics.json", best / "main.json"
+        if report_path.exists():
+            report = load_json(report_path)
+            if report.get("selected_model") != selected or report.get("official") != official:
+                report["selected_model"], report["official"] = selected, official
+                save_json(report_path, report)
+        if main_path.exists():
+            main = load_json(main_path)
+            if main.get("test"):
+                meta = main.get("test_meta") or {}
+                if meta.get("official") != official:
+                    main["test_meta"] = {"official": official, "evaluated_at": meta.get("evaluated_at")}
+                    save_json(main_path, main)
 
 
 # ═════════════════════════ 7. test 평가 · 초기화 ═════════════════════════
@@ -1215,11 +1269,9 @@ def predict_with_model_dir(model_path, rows, labels, device, batch_size=16):
     return predictions, probabilities, seconds, truncated
 
 
-def evaluate_final(topic, dataset, mode="recommended"):
-    """test 최종 평가. 본체는 test_eval.py 에 있다.
-
-    mode: 'recommended' = 추천 모델 1개(+ baseline), 'all' = baseline + 3개 모델 모두(비교용).
-    """
+def evaluate_final(topic, dataset, mode="all"):
+    """test 평가. 본체는 test_eval.py 에 있다. baseline + 3개 모델을 각 best_model 로 모두 평가한다.
+    (공식 모델은 이 test 점수로 recommend_model 이 정하므로 test 평가를 먼저 한다)"""
     from test_eval import evaluate_test
     return evaluate_test(topic, dataset, mode)
 

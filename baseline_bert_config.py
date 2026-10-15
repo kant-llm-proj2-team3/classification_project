@@ -29,7 +29,7 @@ LOG_DIR = PROJECT_ROOT / "logs"
 
 # ───────────────────────── 데이터셋 ON/OFF ─────────────────────────
 # True = 사용, False = 메뉴/학습에서 제외. (데이터 폴더가 비어 있으면 자동으로 건너뜀)
-# total_merge 는 서버에 줄 최종 모델을 만드는 데이터입니다. 학습·test 평가·시각화 표에는 포함되지만 모델 추천에서는 빠집니다. (아래 RECOMMEND_EXCLUDED)
+# total_merge 는 basic_merge + advanced_merge 를 합친 데이터(서버에 줄 최종 모델 후보)입니다. 학습·test 평가·모델 추천·시각화 모두에 포함됩니다. (추천에서 빼려면 아래 RECOMMEND_EXCLUDED 에 적습니다)
 TOPICS = ("inquiries", "documents")                  # 고객 문의 / 문서
 DATASET_NAMES = ("basic", "basic_merge", "advanced", "advanced_merge", "total_merge")
 DATASET_SWITCH = {
@@ -45,7 +45,7 @@ EXTERNAL_MODELS = {"laya": True, "jev": True, "clm": True}
 # 모델 추천(최종 모델 선정)에서 빼고 baseline 처럼 표에 참고용으로만 넣는 외부 모델. (baseline 은 항상 참고용)
 # 여기 적힌 모델은 validation 결과가 없어도 되고, test 결과만 있어도 표와 그래프에 들어갑니다.
 RECOMMEND_REFERENCE_ONLY = ("jev",)
-RECOMMEND_EXCLUDED = ("total_merge",)               # 모델 추천(메뉴 3번·8번)에서 빠지는 데이터셋. 이런 데이터셋은 test 를 4개 모델 모두 평가합니다.
+RECOMMEND_EXCLUDED = ()                             # 모델 추천(메뉴 3번·8번)에서 빠지는 데이터셋. 비어 있으면 모든 데이터셋을 추천합니다. (예전 값: ("total_merge",)) 여기에 적은 데이터셋은 test 를 4개 모델 모두 평가하고 그래프에서도 빠집니다.
 
 # ───────────────────────── 데이터 파일 ─────────────────────────
 # 모든 파일은 <DATA_ROOT>/<topic>/<폴더>/ 에 있고, 폴더마다 train.csv, validation.csv, test.csv, labels.json 이 같은 이름으로 들어 있습니다.
