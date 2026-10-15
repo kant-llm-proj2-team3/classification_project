@@ -1,0 +1,161 @@
+﻿item_id,reviewer,topic,origin,case_id,repeat,provider,model,policy_correct_0_2,required_points_0_2,no_unsupported_claims_0_2,clarity_0_2,total_0_8,notes
+item-0001,최선영,documents,advanced_add,advanced_add/c-c8394d249832,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0002,최선영,documents,basic,basic/documents-v2-manual-test-007-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0003,최선영,inquiries,advanced,advanced/c-dcd21f8fcf7c,1,openai,gpt-5.6-luna,1,1,2,2,6,환급 기준이 없음
+item-0004,최선영,documents,basic_add,basic_add/documents-v2-minutes-test-022-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0005,최선영,inquiries,advanced,advanced/c-9af624947503,1,openai,gpt-5.6-luna,2,2,1,1,6,원문에 없는 /account/reset 경로를 안내함
+item-0006,최선영,inquiries,advanced,advanced/c-a9907cb652b3,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,0,2,0,4,환불답변이 필요한데 계정 복구답변을 함
+item-0007,최선영,inquiries,basic,basic/inquiries-v2-refund-test-016-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0008,최선영,documents,advanced_add,advanced_add/c-75a7a0ecb97b,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0009,최선영,inquiries,basic,basic/inquiries-v2-account-test-008-v1,1,openai,gpt-5.6-luna,2,1,2,2,7,대안이 부족함
+item-0010,최선영,documents,basic,basic/documents-v2-announcement-test-008-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0011,최선영,inquiries,advanced_add,advanced_add/c-eb1dd2c89227,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0012,최선영,inquiries,advanced,advanced/c-1d53f9fdc972,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0013,최선영,documents,basic,basic/documents-v2-manual-test-020-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0014,최선영,inquiries,advanced_add,advanced_add/c-ea3dfc2ad759,1,openai,gpt-5.6-luna,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0015,최선영,documents,advanced_add,advanced_add/c-cdd8c6989fa9,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0016,최선영,inquiries,advanced,advanced/c-a9907cb652b3,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0017,최선영,documents,basic_add,basic_add/documents-v2-announcement-test-029-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,2,2,7,주의사항 미기재
+item-0018,최선영,inquiries,basic,basic/inquiries-v2-refund-test-020-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,0,1,1,2,4,방문 서비스에 상품 환불 기준을 설명한 듯
+item-0019,최선영,documents,advanced_add,advanced_add/c-637c83818465,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0020,최선영,inquiries,advanced,advanced/c-b026084b7f3e,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0021,최선영,documents,basic,basic/documents-v2-manual-test-020-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0022,최선영,documents,basic_add,basic_add/documents-v2-manual-test-035-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0023,최선영,documents,advanced_add,advanced_add/c-4749df936e64,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0024,최선영,inquiries,basic_add,basic_add/inquiries-v2-shipping-test-023-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,공식 보안 문의창 보다는 주문조회 창에서 조회가 더 자연스러움
+item-0025,최선영,inquiries,basic,basic/inquiries-v2-account-test-001-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0026,최선영,documents,advanced,advanced/c-d04c82ca82ec,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0027,최선영,documents,basic_add,basic_add/documents-v2-announcement-test-031-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0028,최선영,inquiries,basic_add,basic_add/inquiries-v2-account-test-029-v2,1,openai,gpt-5.6-luna,2,2,1,1,6,원문에 없는 /account/reset 경로를 안내함
+item-0029,최선영,documents,advanced_add,advanced_add/c-29ae10dec8ce,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0030,최선영,inquiries,basic_add,basic_add/inquiries-v2-shipping-test-034-v1,1,openai,gpt-5.6-luna,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0031,최선영,inquiries,advanced,advanced/c-6e98fa629042,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0032,최선영,inquiries,advanced,advanced/c-aca67270fd6f,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0033,최선영,inquiries,basic,basic/inquiries-v2-shipping-test-012-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0034,최선영,inquiries,basic_add,basic_add/inquiries-v2-account-test-035-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0035,최선영,inquiries,advanced_add,advanced_add/c-55e9aad1ace8,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,1,1,5,본인 계정에 연결 상태 확인에 필요한 준비 상태 확인에 필요한 내용이 빠짐
+item-0036,최선영,documents,advanced_add,advanced_add/c-cdd8c6989fa9,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0037,최선영,inquiries,basic,basic/inquiries-v2-account-test-009-v2,1,openai,gpt-5.6-luna,2,2,1,1,6,원문에 없는 /account/reset 경로를 안내함
+item-0038,최선영,documents,advanced,advanced/c-a6f3dbd986a2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0039,최선영,inquiries,basic_add,basic_add/inquiries-v2-shipping-test-034-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0040,최선영,inquiries,advanced,advanced/c-6e98fa629042,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0041,최선영,documents,advanced,advanced/c-4631519d569c,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0042,최선영,documents,basic,basic/documents-v2-minutes-test-018-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0043,최선영,documents,basic_add,basic_add/documents-v2-minutes-test-022-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0044,최선영,inquiries,basic_add,basic_add/inquiries-v2-account-test-029-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,1,6,원문에 없는 /account/reset 경로를 안내함
+item-0045,최선영,inquiries,basic,basic/inquiries-v2-account-test-008-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,2,1,6,핵심적인 장애는 해결을 못함
+item-0046,최선영,documents,advanced_add,advanced_add/c-75a7a0ecb97b,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0047,최선영,inquiries,basic_add,basic_add/inquiries-v2-refund-test-035-v2,1,openai,gpt-5.6-luna,1,2,1,2,6,환급액의 항목별 정산 문의와 환불 신청 절차를 혼동함
+item-0048,최선영,inquiries,basic_add,basic_add/inquiries-v2-account-test-036-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,0,1,0,1,2,공개 회원 정보 정정 문의를 물품 수령 문제로 잘못 해석하였으며 비밀번호 재설정으로 유도함 심지어 원문에 없는 /account/reset 경로를 안내함
+item-0049,최선영,documents,advanced,advanced/c-03c42cce3d38,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0050,최선영,documents,basic,basic/documents-v2-manual-test-016-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0051,최선영,inquiries,basic,basic/inquiries-v2-shipping-test-008-v2,1,openai,gpt-5.6-luna,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0052,최선영,documents,basic,basic/documents-v2-minutes-test-012-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0053,최선영,inquiries,basic,basic/inquiries-v2-refund-test-020-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0054,최선영,inquiries,basic,basic/inquiries-v2-account-test-001-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,0,2,6,탈퇴 후 기존 작성자 데이터가 유지된다고 단정함
+item-0055,최선영,inquiries,advanced_add,advanced_add/c-85a793813d6f,1,ollama,qwen3:4b-instruct-2507-q4_K_M,1,1,0,2,4,용기 보증금 정산에 조건을 근거 없이 추가함 또한 기관의 연락처가 아닌 본인 접순기록을 기준으로 지급 대상과 미처리 항목 반영 경로를 확인하도록 안내함
+item-0056,최선영,inquiries,advanced_add,advanced_add/c-ea3dfc2ad759,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0057,최선영,documents,basic_add,basic_add/documents-v2-announcement-test-032-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0058,최선영,inquiries,basic_add,basic_add/inquiries-v2-account-test-028-v1,1,openai,gpt-5.6-luna,2,2,1,1,6,원문에 없는 /account/reset 경로를 안내함
+item-0059,최선영,documents,advanced,advanced/c-10c5ead5f6f4,1,ollama,qwen3:4b-instruct-2507-q4_K_M,1,1,1,2,5,과거 보관 자료의 신청 절차와 결제 이력을 이번 절차에 합침 현재 본문의 마감 이후 수정금지와 교환 처리 안내가 일부 누락이 되었고 착용 흔적이 있는 경우 조치가 다르게 요약이 됨
+item-0060,최선영,inquiries,basic,basic/inquiries-v2-shipping-test-011-v2,1,openai,gpt-5.6-luna,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0061,최선영,documents,basic_add,basic_add/documents-v2-announcement-test-032-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0062,최선영,inquiries,basic_add,basic_add/inquiries-v2-refund-test-028-v2,1,openai,gpt-5.6-luna,2,2,1,2,7,정산 근거 확인 요청에 불필요한 상품 상태 제출관 근거 없는 수령 후 7일 환불 접수 안내가 있음
+item-0063,최선영,inquiries,advanced,advanced/c-953bd54d8229,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,1,6,원문에 없는 /account/reset 경로를 안내하였고 휴대전화 번호 입력이 필수라고 단정함 또한 번호 수신 후 진행되지 않는 문제에 대해 안내가 부족하고 종료된 배송 문의를 다시 추가함
+item-0064,최선영,inquiries,basic_add,basic_add/inquiries-v2-shipping-test-030-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0065,최선영,documents,basic_add,basic_add/documents-v2-minutes-test-035-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0066,최선영,inquiries,advanced_add,advanced_add/c-527352987505,1,openai,gpt-5.6-luna,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0067,최선영,documents,basic_add,basic_add/documents-v2-minutes-test-021-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0068,최선영,documents,advanced_add,advanced_add/c-be6c96868beb,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0069,최선영,documents,advanced_add,advanced_add/c-4749df936e64,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,2,2,7,중요 조건이 빠짐
+item-0070,최선영,documents,advanced,advanced/c-c696b4db1bdc,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,2,2,7,신청표에 가능한 시간과 이용수준 우천시 실내 코트가 남을 때만 별도로 연락한다는 조건이 빠짐
+item-0071,최선영,documents,basic_add,basic_add/documents-v2-minutes-test-035-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,2,2,7,수정 항목을 모두 확정 문장으로 바꾸지 않는다 라는 결정이 빠짐
+item-0072,최선영,inquiries,basic,basic/inquiries-v2-shipping-test-013-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0073,최선영,documents,basic_add,basic_add/documents-v2-announcement-test-028-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0074,최선영,documents,basic,basic/documents-v2-announcement-test-013-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0075,최선영,documents,advanced_add,advanced_add/c-c8394d249832,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0076,최선영,documents,advanced,advanced/c-a1a8a87c5ae2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,1,1,2,2,6,이번 작업 절차보다는 과거 회의 내용을 중심으로 요약이 되었으며 발견 장소 시각과 기록 수령자 확인 기록 불일치 시 인계 중단 재확인 절차가 빠짐 ]
+item-0077,최선영,documents,advanced_add,advanced_add/c-637c83818465,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0078,최선영,documents,advanced,advanced/c-a1a8a87c5ae2,1,openai,gpt-5.6-luna,1,1,2,2,6,과거 회의의 미확정 사항이 섞여 있으며 보관 기간이 지난 일반 물품은 관리자에게 폐기 별도 보관여부를 확인 받아야 한다는 현재 절차가 빠짐
+item-0079,최선영,documents,advanced,advanced/c-4631519d569c,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,박 담당자는 제안한 사람이지 시범 운영 담당자로 지정이 된 것이 아님
+item-0080,최선영,inquiries,advanced_add,advanced_add/c-eb1dd2c89227,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0081,최선영,inquiries,advanced_add,advanced_add/c-8bd61da12d87,1,openai,gpt-5.6-luna,1,1,1,1,4,원문에 없는 /account/reset 경로를 안내함
+item-0082,최선영,documents,basic,basic/documents-v2-announcement-test-004-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0083,최선영,inquiries,basic,basic/inquiries-v2-shipping-test-013-v1,1,openai,gpt-5.6-luna,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0084,최선영,documents,basic,basic/documents-v2-minutes-test-007-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0085,최선영,inquiries,advanced_add,advanced_add/c-55e9aad1ace8,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0086,최선영,documents,advanced_add,advanced_add/c-29ae10dec8ce,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,2,2,7,이전 기록만 제출한 이용자는 대상 확인을 다시 받아야 한다는 조건이 빠짐
+item-0087,최선영,documents,basic_add,basic_add/documents-v2-announcement-test-029-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0088,최선영,documents,advanced,advanced/c-10c5ead5f6f4,1,openai,gpt-5.6-luna,1,1,1,2,5,과거 자료의 신청 일정을 이번 절차에 섞음 담당자 확인이 필요한 착용 흔적과 사이즈 선택 오류를 교환 제외로 하나로 뭉쳤으며 정보 누락 시 교환품 발송 전 이름표 수량  재대조가 빠짐
+item-0089,최선영,documents,basic_add,basic_add/documents-v2-manual-test-024-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0090,최선영,inquiries,basic_add,basic_add/inquiries-v2-account-test-036-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0091,최선영,inquiries,basic,basic/inquiries-v2-refund-test-014-v1,1,openai,gpt-5.6-luna,2,2,1,2,7,이미 환불 심사 중인 상황에 근거 없는 수령 후 7일 접수 기한과 환불 심사 조건을 추가함
+item-0092,최선영,documents,advanced_add,advanced_add/c-98923b2af950,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0093,최선영,documents,basic_add,basic_add/documents-v2-manual-test-035-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,1,2,2,1,6,원문과 달ㄹ이 이전 대상의 승인 없이로 바뀌어 의미가 달라짐
+item-0094,최선영,inquiries,advanced,advanced/c-e48993eb4abe,1,openai,gpt-5.6-luna,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0095,최선영,inquiries,advanced_add,advanced_add/c-2ee5a5b525c7,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,확정 안내를 받지 못한 상황을 실제 처리 상태가 미확정인 것으로 단정하였고 정산표의 회수 범위와 계산근거를 확인하는 대신 근거 없는 개봉 여부 확인 절차를 넣음
+item-0096,최선영,documents,basic,basic/documents-v2-announcement-test-004-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0097,최선영,inquiries,advanced,advanced/c-85abc48ae3a6,1,openai,gpt-5.6-luna,2,2,1,1,6,원문에 없는 /account/reset 경로를 안내함
+item-0098,최선영,inquiries,basic_add,basic_add/inquiries-v2-refund-test-028-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,1,1,1,2,5,할인 조정의 계산 근거 명세 요청에 반품 접수 절차를 중심으로 답함 또한 근거 없는 현재 정책상 7일 조건을 제시하였으며 확인된 사실과 검토 중인 사항ㄴ의 구분도 부족함
+item-0099,최선영,documents,basic_add,basic_add/documents-v2-announcement-test-031-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0100,최선영,inquiries,basic,basic/inquiries-v2-refund-test-016-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0101,최선영,documents,advanced_add,advanced_add/c-be6c96868beb,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0102,최선영,documents,basic_add,basic_add/documents-v2-manual-test-026-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0103,최선영,inquiries,advanced,advanced/c-1d53f9fdc972,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,근거 없이 수령 후 7일 환급 시점은 정책상 보장되지 않음을 단정함
+item-0104,최선영,inquiries,basic,basic/inquiries-v2-shipping-test-011-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0105,최선영,inquiries,basic_add,basic_add/inquiries-v2-refund-test-035-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,1,1,1,2,5,근거 없는 수령 후 7일 조건과 고객센터 환불 취소 문의 메뉴에서 제시하였으나 영수증과 환급 계산표를 함께 제출핸 대조받는 안내가 부족함
+item-0106,최선영,inquiries,advanced_add,advanced_add/c-b5e7cc8aaba0,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,기관 연락처를 정산 문의 창구로 단정을 함
+item-0107,최선영,documents,basic,basic/documents-v2-announcement-test-014-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0108,최선영,documents,basic,basic/documents-v2-manual-test-016-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0109,최선영,inquiries,advanced,advanced/c-953bd54d8229,1,openai,gpt-5.6-luna,2,2,1,1,6,원문에 없는 /account/reset 경로를 안내함
+item-0110,최선영,inquiries,basic_add,basic_add/inquiries-v2-shipping-test-023-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0111,최선영,inquiries,advanced_add,advanced_add/c-8bd61da12d87,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,확인하지 않은 회원관리 개인정보 확인 페이지를 제시함
+item-0112,최선영,inquiries,advanced,advanced/c-dcd21f8fcf7c,1,ollama,qwen3:4b-instruct-2507-q4_K_M,1,1,0,1,3,기간 경과만으로 반품 불가를 단정을 하고 근거없는 다음 가능 기간을 기다리고 안내함
+item-0113,최선영,documents,advanced,advanced/c-c696b4db1bdc,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0114,최선영,inquiries,advanced_add,advanced_add/c-a618d645a641,1,openai,gpt-5.6-luna,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0115,최선영,documents,advanced,advanced/c-50a01817249f,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0116,최선영,documents,advanced_add,advanced_add/c-a05a58626599,1,openai,gpt-5.6-luna,2,2,1,2,7,확인담당을 접수 담당의 업무로 잘못함
+item-0117,최선영,documents,advanced,advanced/c-5cc1f7bd6d95,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0118,최선영,documents,basic_add,basic_add/documents-v2-manual-test-026-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0119,최선영,inquiries,basic,basic/inquiries-v2-shipping-test-012-v1,1,openai,gpt-5.6-luna,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0120,최선영,documents,advanced_add,advanced_add/c-698ebae28862,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0121,최선영,inquiries,advanced,advanced/c-85abc48ae3a6,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,1,6,원문에 없는 /account/reset 경로를 안내함
+item-0122,최선영,inquiries,basic_add,basic_add/inquiries-v2-shipping-test-030-v1,1,openai,gpt-5.6-luna,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0123,최선영,documents,advanced,advanced/c-a6f3dbd986a2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,2,2,7,이상이 없을 시 보관하는 조건이 없음
+item-0124,최선영,documents,basic,basic/documents-v2-minutes-test-018-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0125,최선영,inquiries,basic,basic/inquiries-v2-account-test-009-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,1,6,메일 보관 기능에 대한 설명이 부족하며 원문에 없는 /account/reset 경로를 안내함
+item-0126,최선영,inquiries,advanced,advanced/c-aca67270fd6f,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0127,최선영,documents,basic_add,basic_add/documents-v2-announcement-test-028-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0128,최선영,documents,basic_add,basic_add/documents-v2-manual-test-024-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0129,최선영,inquiries,advanced,advanced/c-b026084b7f3e,1,openai,gpt-5.6-luna,2,2,1,2,7,도착 여부와 현재 위치를 확인 하지 않고 경로를 안정함 공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0130,최선영,inquiries,advanced_add,advanced_add/c-85a793813d6f,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0131,최선영,inquiries,advanced_add,advanced_add/c-0c2bca10bd7c,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0132,최선영,inquiries,basic,basic/inquiries-v2-shipping-test-008-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0133,최선영,inquiries,basic_add,basic_add/inquiries-v2-account-test-028-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,1,6,원문에 없는 /account/reset 경로를 안내함
+item-0134,최선영,documents,basic,basic/documents-v2-announcement-test-014-v2,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0135,최선영,documents,advanced,advanced/c-03c42cce3d38,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,2,2,7,기존 접수 건은 현재 합의된 일정대로 진행한다는 조건이 빠짐
+item-0136,최선영,inquiries,advanced_add,advanced_add/c-0c2bca10bd7c,1,openai,gpt-5.6-luna,1,1,1,1,4,원문에 없는 /account/reset 경로를 안내함
+item-0137,최선영,documents,advanced,advanced/c-13560b0594ee,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,실제 우천과 연기가 확정된 것처럼 안내함
+item-0138,최선영,documents,basic,basic/documents-v2-manual-test-007-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,1,7,의미가 불명확함
+item-0139,최선영,inquiries,basic_add,basic_add/inquiries-v2-refund-test-032-v1,1,openai,gpt-5.6-luna,2,2,1,2,7,근거가 없는 수령 후 7일 접수 기한과 상품 상태에 따른 환불 심사 조건을 추가함
+item-0140,최선영,inquiries,basic_add,basic_add/inquiries-v2-refund-test-032-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,1,7,정액 비율을 확인 할 대상이 반품 수수료인데 일부 분장에서 물품 대금과 부가 서비스의 계산 방식을 확인을 하여 대상이 혼동됨
+item-0141,최선영,documents,basic,basic/documents-v2-announcement-test-013-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0142,최선영,documents,basic,basic/documents-v2-announcement-test-008-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0143,최선영,documents,advanced,advanced/c-5cc1f7bd6d95,1,ollama,qwen3:4b-instruct-2507-q4_K_M,1,1,2,2,6,이번 회의 요약과 과거 보관 자료의 시점과 사례가 섞임
+item-0144,최선영,inquiries,advanced,advanced/c-e48993eb4abe,1,ollama,qwen3:4b-instruct-2507-q4_K_M,0,0,0,2,2,현재 배송 설치 가족 대리 수령 문의 대신 종료된 반품 상담에 답함 또한 근거없는 검수 7일 이내 등의 조건도 추가됨
+item-0145,최선영,documents,advanced,advanced/c-13560b0594ee,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0146,최선영,inquiries,advanced_add,advanced_add/c-b5e7cc8aaba0,1,openai,gpt-5.6-luna,2,2,1,2,7,근거 없는 수령 후 7일 기한과 상품 상태 개봉 여부 제출 조건을 추가함
+item-0147,최선영,inquiries,basic_add,basic_add/inquiries-v2-account-test-035-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0148,최선영,documents,advanced,advanced/c-d04c82ca82ec,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0149,최선영,inquiries,advanced_add,advanced_add/c-527352987505,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,1,2,7,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0150,최선영,inquiries,advanced_add,advanced_add/c-2ee5a5b525c7,1,openai,gpt-5.6-luna,2,2,1,2,7,원문에 없는 상품 개봉 사용 여부 확인을 정산 확인의 선행 절차처럼 추가함
+item-0151,최선영,inquiries,advanced,advanced/c-9af624947503,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,1,1,5,원문에 없는 /account/reset 경로를 안내함
+item-0152,최선영,documents,advanced_add,advanced_add/c-98923b2af950,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0153,최선영,documents,basic_add,basic_add/documents-v2-minutes-test-021-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,2,2,7,같은 이름의 다른 대상의 하나로 집계한 사례와 조건의 근거를ㅇ 문서로 남기기로 한 결정이 전체 답볒에서 누락됨
+item-0154,최선영,inquiries,advanced_add,advanced_add/c-a618d645a641,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,1,2,6,공식 보안 문의창 보다는 상세 주문 조회 창이 자연스러움
+item-0155,최선영,documents,basic,basic/documents-v2-minutes-test-012-v2,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0156,최선영,documents,advanced,advanced/c-50a01817249f,1,openai,gpt-5.6-luna,2,2,2,2,8,
+item-0157,최선영,documents,advanced_add,advanced_add/c-698ebae28862,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,1,2,2,7,처리 결과를 대상 번호와 함께 남기는 기록 절차가 누락됨
+item-0158,최선영,inquiries,basic,basic/inquiries-v2-refund-test-014-v1,1,ollama,qwen3:4b-instruct-2507-q4_K_M,1,1,1,1,4,"이미 발송한 상자의 내부를 촬영하라고 안내해 실행하기 어려움. 개인 물품 분리 확인과 구매 취소 진행 여부를 담당자에게 문의하도록 해야 하는데, 근거 없이 ‘확인 후에만 취소 가능’이라는 조건을 추가함."
+item-0159,최선영,documents,advanced_add,advanced_add/c-a05a58626599,1,ollama,qwen3:4b-instruct-2507-q4_K_M,2,2,2,2,8,
+item-0160,최선영,documents,basic,basic/documents-v2-minutes-test-007-v1,1,openai,gpt-5.6-luna,2,2,2,2,8,
