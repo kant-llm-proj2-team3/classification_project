@@ -17,6 +17,7 @@ from pathlib import Path
 import httpx
 from dotenv import load_dotenv
 from openai import APITimeoutError, AsyncOpenAI, OpenAIError
+from policy import output_field
 
 load_dotenv(Path(__file__).resolve().parent.parent / ".env", override=False)
 
@@ -25,20 +26,30 @@ logger = logging.getLogger("uvicorn.error")
 PROVIDERS = ("openai", "ollama")
 
 
-def parse_answer(raw: str) -> tuple[str, list[str]]:
-    """모델 출력에서 answer와 next_steps를 읽는다. 형식이 맞지 않으면 ValueError."""
+def parse_answer(raw: str, field: str = "next_steps") -> tuple[str, list[str]]:
+    """모델 출력에서 answer와 목록 필드(문의는 next_steps, 문서는 summary_items)를 읽는다. 형식이 맞지 않으면 ValueError."""
     text = raw.strip()
     if text.startswith("```"):          # Markdown 없이 달라고 했지만 코드 블록으로 감싸 오는 경우가 있다.
         text = text.strip("`").removeprefix("json").strip()
     data = json.loads(text)
     if not isinstance(data, dict):
         raise ValueError("JSON 객체가 아닙니다.")
-    answer, steps = data.get("answer"), data.get("next_steps", [])
+    answer, steps = data.get("answer"), data.get(field, [] if field == "next_steps" else None)
     if not isinstance(answer, str) or not answer.strip():
         raise ValueError("answer가 비어 있습니다.")
     if not isinstance(steps, list) or any(not isinstance(step, str) for step in steps):
-        raise ValueError("next_steps가 문자열 배열이 아닙니다.")
+        raise ValueError(f"{field}가 문자열 배열이 아닙니다.")
+    if field == "summary_items" and not any(step.strip() for step in steps):
+        raise ValueError("summary_items가 비어 있습니다.")       # 요약 문서의 핵심이라 비어 있으면 실패로 본다.
     return answer.strip(), steps
+
+
+def success_result(answer: str, items: list[str], field: str, metrics: dict) -> dict:
+    """성공 결과. 문의는 {answer, next_steps}로 예전 그대로이고, 문서는 next_steps를 비우고 summary_items를 더한다."""
+    result = {"status": "success", "answer": answer, "next_steps": items if field == "next_steps" else [], "metrics": metrics}
+    if field == "summary_items":
+        result["summary_items"] = items
+    return result
 
 
 def with_raw(result: dict, raw: str | None) -> dict:
@@ -78,7 +89,7 @@ class OpenAIGenerator:
             self._client = AsyncOpenAI(timeout=self.timeout, max_retries=0)
         return self._client
 
-    async def generate(self, prompt: str, keep_raw: bool = False) -> dict:
+    async def generate(self, prompt: str, keep_raw: bool = False, topic: str = "inquiries") -> dict:
         metrics = {"provider": "openai", "model": self.model, "max_output_tokens": self.max_output_tokens,
                    "timeout_s": self.timeout, "reasoning_effort": self.reasoning_effort,
                    "temperature": self.temperature, "prompt_chars": len(prompt)}
@@ -106,11 +117,12 @@ class OpenAIGenerator:
         if response.status != "completed":
             reason = response.incomplete_details.reason if response.incomplete_details else response.status
             return with_raw(self._failure("error", f"생성이 끝나지 않았습니다: {reason}", metrics, started), raw)
+        field = output_field(topic)
         try:
-            answer, next_steps = parse_answer(response.output_text)
+            answer, items = parse_answer(response.output_text, field)
         except ValueError as error:           # json.JSONDecodeError도 ValueError다.
             return with_raw(self._failure("error", f"생성 결과의 형식이 올바르지 않습니다: {error}", metrics, started), raw)
-        return with_raw({"status": "success", "answer": answer, "next_steps": next_steps, "metrics": metrics}, raw)
+        return with_raw(success_result(answer, items, field, metrics), raw)
 
     @staticmethod
     def _failure(status: str, message: str, metrics: dict, started: float) -> dict:
@@ -160,7 +172,7 @@ class OllamaGenerator:
             logger.warning("[generator] Ollama 모델을 미리 올리지 못했습니다(%s). 첫 호출이 느릴 수 있습니다.", type(error).__name__)
             return False
 
-    async def generate(self, prompt: str, keep_raw: bool = False) -> dict:
+    async def generate(self, prompt: str, keep_raw: bool = False, topic: str = "inquiries") -> dict:
         metrics = {"provider": "ollama", "model": self.model, "max_output_tokens": self.max_output_tokens,
                    "timeout_s": self.timeout, "temperature": self.temperature, "num_ctx": self.num_ctx,
                    "prompt_chars": len(prompt)}
@@ -209,12 +221,13 @@ class OllamaGenerator:
         if not data.get("done") or data.get("done_reason") == "length":
             return with_raw(OpenAIGenerator._failure(
                 "error", f"생성이 끝나지 않았습니다: {data.get('done_reason') or 'incomplete'}", metrics, started), raw)
+        field = output_field(topic)
         try:
-            answer, next_steps = parse_answer(data.get("response", ""))
+            answer, items = parse_answer(data.get("response", ""), field)
         except ValueError as error:
             return with_raw(OpenAIGenerator._failure(
                 "error", f"생성 결과의 형식이 올바르지 않습니다: {error}", metrics, started), raw)
-        return with_raw({"status": "success", "answer": answer, "next_steps": next_steps, "metrics": metrics}, raw)
+        return with_raw(success_result(answer, items, field, metrics), raw)
 
     async def aclose(self) -> None:
         if self._client is not None:

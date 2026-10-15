@@ -204,6 +204,7 @@ def provider_stats(runs: list[dict]) -> dict:
     result = {}
     for provider, items in by_provider.items():
         ok = [run for run in items if run["status"] == "success"]
+        checked = [run for run in items if run["summary_structure_ok"] is not None]
         result[provider] = {
             "models": sorted({run["model"] for run in items if run["model"]}),
             "count": len(items), "success": len(ok), "statuses": count_by(items, "status"),
@@ -216,6 +217,8 @@ def provider_stats(runs: list[dict]) -> dict:
             # 로컬 모델이 메모리에 올라와 있지 않아 모델을 새로 읽은 호출(1초 넘게 로딩). 지연이 길어진 이유를 가린다.
             "cold_starts": sum(1 for run in items if (run["load_ms"] or 0) > 1000),
             "context_full": sum(1 for run in items if run["context_full"]),
+            # documents 요약이 항목 구성(수와 순서, 항목 이름)을 지킨 비율. 문의 호출은 해당 없어서 빠진다.
+            "summary_structure_ok": {"checked": len(checked), "ok": sum(1 for run in checked if run["summary_structure_ok"])},
             "errors": count_by([run for run in items if run["error"]], "error"),
         }
     return result
@@ -370,6 +373,7 @@ def request_row(row: dict, include_text: bool) -> dict:
             for generation in [row["output"].get("generation") or {}, *(row["output"].get("generations") or [])]:
                 generation.pop("answer", None)
                 generation.pop("next_steps", None)
+                generation.pop("summary_items", None)
     return row
 
 
@@ -394,6 +398,7 @@ def generation_rows(connection, ids: list[str], include_text: bool) -> list[dict
             generation = generation_answers(outputs.get(run["request_id"])).get(run["provider"], {})
             run["answer"] = generation.get("answer")
             run["next_steps"] = generation.get("next_steps")
+            run["summary_items"] = generation.get("summary_items")
     return runs
 
 
@@ -402,7 +407,8 @@ def collect_rows(connection, body: ExportRequest) -> list[dict]:
     order = {request_id: index for index, request_id in enumerate(ids)}
     if body.scope == "summary":
         extra = (", r.input_text, json_extract(r.output, '$.generation.answer') AS answer,"
-                 " json_extract(r.output, '$.generation.next_steps') AS next_steps") if body.include_text else ""
+                 " json_extract(r.output, '$.generation.next_steps') AS next_steps,"
+                 " json_extract(r.output, '$.generation.summary_items') AS summary_items") if body.include_text else ""
         sql = (f"SELECT {', '.join('s.' + column for column in SUMMARY_COLUMNS)}, r.input_len{extra} "
                f"{FROM_SUMMARY} WHERE s.request_id IN ({{marks}})")
         rows = fetch_by_ids(connection, sql, ids)

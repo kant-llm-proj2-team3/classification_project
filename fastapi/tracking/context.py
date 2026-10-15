@@ -59,6 +59,8 @@ class RequestRecord:
             summary = {"status": generation["status"], "error": generation.get("error")}
             if STORE_TEXT:
                 summary.update(answer=generation.get("answer"), next_steps=generation.get("next_steps"))
+                if generation.get("summary_items") is not None:      # 문서 요약(documents)
+                    summary["summary_items"] = generation["summary_items"]
             return summary
 
         if "results" in result:

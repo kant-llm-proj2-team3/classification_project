@@ -20,7 +20,7 @@ import os
 from classifier import predict_text
 from generator import PROVIDERS, create_generators
 from langchain_core.runnables import Runnable, RunnableConfig, RunnableLambda
-from policy import build_prompt
+from policy import build_prompt, check_summary_items
 
 # 생성 모델에 보낼 원문의 최대 글자 수. 분류에는 전체 원문을 쓴다.
 MAX_INPUT_CHARS = int(os.getenv("MAX_INPUT_CHARS") or 4000)
@@ -34,6 +34,16 @@ def as_generators(generators) -> dict:
     if isinstance(generators, dict):
         return generators
     return {DEFAULT_PROVIDER: generators}
+
+
+def note_summary_structure(label: str, generation: dict) -> None:
+    """documents 요약이 항목 구성을 지켰는지 지표로 남긴다. (추적과 평가의 객관 지표. 생성 성공 여부는 바꾸지 않는다.)
+    추적은 각 단계가 끝날 때의 결과를 기록하므로, 생성 호출이 끝나기 전(호출 직후)에 불러서 span에 남게 한다."""
+    if generation.get("status") == "success" and "summary_items" in generation:
+        problems = check_summary_items(label, generation["summary_items"])
+        generation["metrics"]["summary_structure_ok"] = not problems
+        if problems:
+            generation["metrics"]["summary_structure_issues"] = problems
 
 
 def failed_generation(provider: str, status: str, message: str) -> dict:
@@ -53,7 +63,7 @@ def common_steps(classifiers: dict) -> tuple[RunnableLambda, RunnableLambda]:
         if classification["status"] != "success":
             return {**item, "prompt": None, "skip_reason": "분류에 성공하지 못해 생성을 건너뜁니다."}
         text = item["text"][:MAX_INPUT_CHARS]
-        prompt = build_prompt(classification["label"], text)
+        prompt = build_prompt(classification["label"], text, item["dataset"])
         if prompt is None:
             return {**item, "prompt": None, "skip_reason": f"'{classification['label']}' 라벨의 정책이 없습니다."}
         return {**item, "prompt": prompt, "text_truncated": len(item["text"]) > MAX_INPUT_CHARS}
@@ -75,8 +85,9 @@ def create_chain(classifiers: dict, generators=None) -> Runnable:
         if generator is None:
             generation = failed_generation(provider, "error", f"사용할 수 없는 생성 모델입니다: {provider}")
         else:
-            generation = await generator.generate(item["prompt"])
+            generation = await generator.generate(item["prompt"], topic=item["dataset"])
         generation["metrics"]["text_truncated"] = item["text_truncated"]
+        note_summary_structure(item["classification"]["label"], generation)
         return {**item, "generation": generation}
 
     def respond(item: dict) -> dict:
@@ -97,8 +108,10 @@ def create_compare_chain(classifiers: dict, generators=None, providers: tuple = 
     classify, apply_policy = common_steps(classifiers)
 
     def make_call(provider: str) -> Runnable:
-        async def call(prompt: str) -> dict:
-            return await generators[provider].generate(prompt)
+        async def call(payload: dict) -> dict:
+            result = await generators[provider].generate(payload["prompt"], topic=payload["topic"])
+            note_summary_structure(payload["label"], result)     # 이 호출의 span이 끝나기 전에 붙여야 span 지표에 남는다.
+            return result
         # 제공자마다 span이 하나씩 생긴다. (generate_openai, generate_ollama)
         return RunnableLambda(call).with_config(run_name=f"generate_{provider}")
 
@@ -109,7 +122,8 @@ def create_compare_chain(classifiers: dict, generators=None, providers: tuple = 
         if item["prompt"] is None:
             results = [{"provider": name, **failed_generation(name, "skipped", item["skip_reason"])} for name in providers]
             return {**item, "generations": results}
-        outcomes = await asyncio.gather(*(calls[name].ainvoke(item["prompt"], config=config) for name in providers),
+        outcomes = await asyncio.gather(*(calls[name].ainvoke({"prompt": item["prompt"], "topic": item["dataset"],
+                                                       "label": item["classification"]["label"]}, config=config) for name in providers),
                                         return_exceptions=True)
         results = []
         for name, outcome in zip(providers, outcomes, strict=True):

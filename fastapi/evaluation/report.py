@@ -263,6 +263,9 @@ def render_markdown(report: dict) -> str:
                    f"{fmt(s['mean_latency_seconds_success_only'])} | {fmt(s['median_latency_seconds_success_only'])} | "
                    f"{fmt(s['p95_latency_seconds_success_only'])} | {fmt(s['mean_output_tokens_success_only'], 0)} |")
 
+    structure = {p: s["summary_structure_ok_rate"] for p, s in report["objective"]["providers"].items() if s.get("summary_structure_ok_rate") is not None}
+    if structure:
+        out += ["", "문서(documents) 요약의 항목 구성 준수율(항목 수·순서·항목 이름): " + ", ".join(f"{p} {v:.3f}" for p, v in structure.items())]
     human = report["human"]
     if not human["human_quality_scored"]:
         out += ["", "## 사람 평가", "아직 채점된 항목이 없습니다. human_scores.csv를 채운 뒤 다시 실행하세요."]

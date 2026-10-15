@@ -164,6 +164,7 @@ def make_record(case: dict, item: dict, repeat: int, provider: str, result: dict
         "finish_reason": metrics.get("done_reason") or metrics.get("response_status"),
         "output_format_valid": result["status"] == "success",
         "response_text": result.get("raw_text") or "", "answer": result.get("answer"), "next_steps": result.get("next_steps"),
+        "summary_items": result.get("summary_items"),
         "metrics": metrics,
     }
 
@@ -171,7 +172,7 @@ def make_record(case: dict, item: dict, repeat: int, provider: str, result: dict
 async def run_comparison(args, generators: dict | None = None, bundles: dict | None = None) -> dict:
     cases_by_topic = build_cases(args)
     providers = [name.strip() for name in args.providers.split(",") if name.strip()]
-    from chain import MAX_INPUT_CHARS
+    from chain import MAX_INPUT_CHARS, note_summary_structure
     from generator import PROVIDERS
 
     unknown = set(providers) - set(PROVIDERS)
@@ -236,7 +237,8 @@ async def run_comparison(args, generators: dict | None = None, bundles: dict | N
                         # 호출 순서가 응답 시간에 영향을 주지 않도록 입력과 반복마다 시작하는 모델을 돌려 가며 호출한다.
                         shift = (number + repeat) % len(providers)
                         for provider in providers[shift:] + providers[:shift]:
-                            result = await generators[provider].generate(item["prompt"], keep_raw=True)
+                            result = await generators[provider].generate(item["prompt"], keep_raw=True, topic=case["topic"])
+                            note_summary_structure(item["classification"]["label"], result)      # 문서 요약이 항목 구성을 지켰는지 (서비스와 같은 검사)
                             record = make_record(case, item, repeat, provider, result)
                             stream.write(json.dumps(record, ensure_ascii=False) + "\n")
                             stream.flush()

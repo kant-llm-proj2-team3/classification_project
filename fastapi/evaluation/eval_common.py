@@ -26,11 +26,12 @@ TOPICS = ("documents", "inquiries")
 KINDS = ("basic", "basic_add", "advanced", "advanced_add")
 
 # 사람 평가 항목 (0점: 중요한 오류나 미충족, 1점: 일부 충족하나 수정 필요, 2점: 충족). 채점하지 않은 칸은 0점이 아니라 빈칸이다.
+# 문의(inquiries)는 답변과 다음 행동을, 문서(documents)는 요약 항목을 본다. (열 이름은 같고, 문서는 괄호 안의 뜻으로 읽는다.)
 CRITERIA = {
-    "policy_correct_0_2": "정책과 원문에 맞는가?",
-    "required_points_0_2": "필요한 안내를 담았는가?",
-    "no_unsupported_claims_0_2": "없는 날짜, 메뉴, 담당자, 완료 사실을 만들지 않았는가?",
-    "clarity_0_2": "설명과 다음 행동이 분명한가?",
+    "policy_correct_0_2": "정책과 원문에 맞는가? (문서: 요약이 원문과 정책의 항목 구성에 맞는가)",
+    "required_points_0_2": "필요한 안내를 담았는가? (문서: 원문의 핵심을 빠뜨리지 않았는가)",
+    "no_unsupported_claims_0_2": "없는 날짜, 메뉴, 담당자, 완료 사실을 만들지 않았는가? (문서: 원문에 없는 내용을 더하지 않았는가)",
+    "clarity_0_2": "설명과 다음 행동이 분명한가? (문서: 요약이 분명하고 행동을 지시하지 않았는가)",
 }
 SCORE_VALUES = (0, 1, 2)
 
@@ -170,7 +171,10 @@ def summarize_provider(records: list[dict], provider: str) -> dict:
     latencies = [record["latency_seconds"] for record in success if record["latency_seconds"] is not None]
     speeds = [record["tokens_per_sec"] for record in success if record.get("tokens_per_sec")]
     outputs = [record["output_tokens"] for record in success if record["output_tokens"] is not None]
+    structure = [record["metrics"]["summary_structure_ok"] for record in subset
+                 if record.get("metrics", {}).get("summary_structure_ok") is not None]
     return {
+        "summary_structure_ok_rate": sum(structure) / len(structure) if structure else None,   # documents 요약만 해당
         "cases": len({record["case_id"] for record in subset}),
         "calls": calls,
         "errors": calls - len(success),
@@ -188,6 +192,8 @@ def summarize_provider(records: list[dict], provider: str) -> dict:
 def format_response(record: dict) -> str:
     """사람이 읽을 답변. 성공이면 answer와 next_steps를 보기 좋게, 형식이 깨졌으면 모델이 낸 원문을, 호출 실패면 표시만 한다."""
     if record["status"] == "success":
+        if record.get("summary_items") is not None:       # 문서 요약
+            return json.dumps({"answer": record["answer"], "summary_items": record["summary_items"]}, ensure_ascii=False, indent=2)
         return json.dumps({"answer": record["answer"], "next_steps": record["next_steps"]}, ensure_ascii=False, indent=2)
     if record.get("response_text"):
         return record["response_text"]
