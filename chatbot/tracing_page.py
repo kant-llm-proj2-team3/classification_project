@@ -23,13 +23,15 @@ SORTS = {"시작 시각": "started_at", "총 시간": "total_ms", "분류 시간
 SCOPES = {
     "요약 (요청 1건 = 1행)": "summary",
     "요청 (저장된 요청 기록 그대로)": "requests",
+    "생성 호출별 (생성 모델 비교용, 호출 1번 = 1행)": "generations",
     "단계(span) (호출 단계 1개 = 1행)": "spans",
     "상세 (요청 + 호출 흐름)": "trace",
 }
 SCOPE_HELP = {
     "summary": "요청별 총 시간, 분류·생성 시간, 라벨, 신뢰도, 모델, 토큰 수를 한 줄로 모은 표입니다. 분석에 가장 편합니다.",
     "requests": "요청 기록 원본입니다. 상태코드, 오류, 입력 길이와 해시, 결과 요약이 들어 있습니다.",
-    "spans": "호출 단계(chat, classify, apply_policy, generate, respond)마다 한 행입니다. 단계별 지표는 attrs.* 열로 펼쳐집니다.",
+    "generations": "생성 모델 호출 1번이 한 행입니다. /chat은 호출 하나, /compare는 제공자마다 한 행이라 같은 요청의 두 모델을 나란히 비교할 수 있습니다. 지연, 토큰, 토큰/초, 오류가 들어 있습니다.",
+    "spans": "호출 단계(chat, compare, classify, apply_policy, generate, generate_<제공자>, respond)마다 한 행입니다. 단계별 지표는 attrs.* 열로 펼쳐집니다.",
     "trace": "요청과 그 호출 흐름을 함께 담습니다. json/jsonl은 요청 1건이 1개 객체(spans 포함)이고, csv는 span마다 요청 정보를 반복해서 한 줄씩 씁니다.",
 }
 FORMATS = {
@@ -198,6 +200,11 @@ def filter_panel():
         generation_status = row2[2].selectbox("생성 상태", ["전체", "success", "error", "timeout", "skipped"], key="f_gen")
         min_total = row2[3].number_input("총 시간 최소값 (ms, 0이면 제한 없음)", min_value=0, step=500, key="f_slow")
 
+        row2b = st.columns(4)
+        provider = row2b[0].selectbox("생성 모델", ["전체", "openai", "ollama"], key="f_provider",
+                                      help="이 생성 모델을 호출한 요청. 비교(/compare) 요청은 어느 쪽이든 해당됩니다.")
+        endpoint = row2b[1].selectbox("엔드포인트", ["전체", "/chat", "/compare"], key="f_endpoint")
+
         row3 = st.columns([2, 1, 1, 1])
         keyword = row3[0].text_input("입력 원문 키워드", key="f_q", placeholder="원문에 포함된 글자")
         sort_label = row3[1].selectbox("정렬", list(SORTS), key="f_sort")
@@ -211,6 +218,7 @@ def filter_panel():
         "since": since, "until": until, "dataset": pick(dataset), "outcome": pick(outcome), "label": pick(label),
         "status_code": pick(status_code), "classification_status": pick(classification_status),
         "generation_status": pick(generation_status), "min_total_ms": min_total or None, "q": keyword.strip() or None,
+        "provider": pick(provider), "endpoint": pick(endpoint),
     }
     filters = {key: value for key, value in filters.items() if value is not None}
 
@@ -234,6 +242,77 @@ def latency_table(latency):
                          "p90": stat["p90"], "p95": stat["p95"], "p99": stat["p99"], "최대": stat["max"]})
 
     return pd.DataFrame(rows)
+
+
+def provider_table(providers):
+    rows = []
+
+    for name, item in providers.items():
+        latency, speed = item["latency_ms"] or {}, item["tokens_per_sec"] or {}
+        rows.append({
+            "생성 모델": name, "모델": ", ".join(item["models"]), "호출 수": item["count"],
+            "성공률": item["success"] / item["count"] if item["count"] else None,
+            "지연 p50(ms)": latency.get("p50"), "지연 p95(ms)": latency.get("p95"),
+            "출력 토큰 평균": (item["output_tokens"] or {}).get("mean"), "토큰/초 p50": speed.get("p50"),
+            "입력 토큰 합": item["tokens"]["input"], "출력 토큰 합": item["tokens"]["output"],
+            "콜드 스타트": item["cold_starts"], "문맥 초과": item["context_full"],
+        })
+
+    return pd.DataFrame(rows)
+
+
+def provider_section(stats):
+    """생성 모델(OpenAI, 로컬 Ollama)별 비교. 지연·토큰 분포는 성공한 호출만으로 계산한 값이다."""
+    providers = stats.get("providers") or {}
+
+    if not providers:
+        return
+
+    st.markdown("**생성 모델 비교**")
+    table = provider_table(providers)
+    st.dataframe(table, hide_index=True, width="stretch", column_config={
+        "성공률": st.column_config.NumberColumn(format="percent"),
+        "지연 p50(ms)": st.column_config.NumberColumn(format="%.0f"),
+        "지연 p95(ms)": st.column_config.NumberColumn(format="%.0f"),
+        "출력 토큰 평균": st.column_config.NumberColumn(format="%.0f"),
+        "토큰/초 p50": st.column_config.NumberColumn(format="%.1f"),
+    })
+
+    chart = table.dropna(subset=["지연 p50(ms)"])
+
+    if not chart.empty and len(chart) > 1:
+        left, right = st.columns(2)
+
+        with left:
+            st.caption("지연 p50 / p95 (ms, 성공한 호출)")
+            data = chart.melt(id_vars="생성 모델", value_vars=["지연 p50(ms)", "지연 p95(ms)"], var_name="구분", value_name="ms")
+            st.altair_chart(
+                alt.Chart(data).mark_bar().encode(
+                    x=alt.X("생성 모델:N", title=None), xOffset="구분:N", y=alt.Y("ms:Q", title=None),
+                    color=alt.Color("구분:N", legend=alt.Legend(orient="top", title=None)),
+                    tooltip=["생성 모델", "구분", alt.Tooltip("ms:Q", format=",.0f")]),
+                width="stretch")
+
+        with right:
+            st.caption("성공률")
+            st.altair_chart(
+                alt.Chart(table).mark_bar().encode(
+                    x=alt.X("생성 모델:N", title=None), y=alt.Y("성공률:Q", axis=alt.Axis(format="%"), scale=alt.Scale(domain=[0, 1]), title=None),
+                    tooltip=["생성 모델", alt.Tooltip("성공률:Q", format=".1%")]),
+                width="stretch")
+
+    comparison = stats.get("comparison") or {}
+
+    if comparison.get("requests"):
+        faster = ", ".join(f"{name} {count}건" for name, count in comparison["faster"].items()) or "-"
+        st.caption(f"비교(/compare) 요청 {comparison['requests']}건 중 모든 모델이 성공한 요청 {comparison['all_success']}건 · "
+                   f"더 빨랐던 쪽: {faster}")
+
+    failures = {name: item["errors"] for name, item in providers.items() if item["errors"]}
+
+    for name, errors in failures.items():
+        with st.expander(f"{name} 오류 ({sum(errors.values())}건)"):
+            st.dataframe(pd.DataFrame({"사유": list(errors), "건수": list(errors.values())}), hide_index=True, width="stretch")
 
 
 def overview_tab(stats):
@@ -314,6 +393,8 @@ def overview_tab(stats):
         st.dataframe(table, hide_index=True, width="stretch", column_config={
             name: st.column_config.NumberColumn(format="%.0f") for name in ["평균", "p50", "p90", "p95", "p99", "최대"]})
 
+    provider_section(stats)
+
     note = []
     confidence = stats.get("confidence")
 
@@ -334,6 +415,20 @@ def overview_tab(stats):
 # 5. 목록 탭
 # ==========================================
 
+def provider_text(item):
+    """목록에 보여줄 생성 모델. /compare는 여러 모델이라 '비교(openai+ollama)'로 표시한다."""
+    if item.get("llm_provider"):
+        return item["llm_provider"]
+
+    if item.get("llm_providers"):
+        try:
+            return "비교(" + "+".join(json.loads(item["llm_providers"])) + ")"
+        except ValueError:
+            return "비교"
+
+    return None
+
+
 def list_dataframe(items):
     rows = []
 
@@ -342,6 +437,7 @@ def list_dataframe(items):
             "시작": to_local(item["started_at"]),
             "데이터셋": item["dataset"],
             "결과": item["outcome"],
+            "생성 모델": provider_text(item),
             "상태": item["status_code"],
             "총 시간(ms)": item["total_ms"],
             "분류(ms)": item["classify_ms"],
@@ -406,6 +502,51 @@ def span_offsets(spans):
     return pd.DataFrame(rows)
 
 
+def answer_block(generation, key):
+    """답변과 다음 단계를 보여준다. 원문 저장이 꺼져 있었다면 답변은 비어 있다."""
+    if generation.get("answer"):
+        st.text_area("답변", generation["answer"], height=140, disabled=True, label_visibility="collapsed", key=f"answer_{key}")
+
+        for step in generation.get("next_steps") or []:
+            st.markdown(f"- {step}")
+
+    if generation.get("error"):
+        st.warning(generation["error"])
+
+
+def comparison_block(generations, spans):
+    """/compare 요청: 같은 프롬프트에 대한 생성 모델별 답변과 지표를 나란히 보여준다."""
+    st.markdown("**생성 모델 비교**")
+    metrics = {span["name"].removeprefix("generate_"): span["attrs"] for span in spans if span["name"].startswith("generate_")}
+    columns = st.columns(len(generations))
+
+    for column, generation in zip(columns, generations):
+        provider = generation["provider"]
+        attrs = metrics.get(provider, {})
+
+        with column:
+            st.markdown(f"##### {provider} · {generation['status']}")
+            facts = [f"모델 {attrs['model']}"] if attrs.get("model") else []
+
+            if attrs.get("latency_ms") is not None:
+                facts.append(f"지연 {attrs['latency_ms']:,.0f} ms")
+
+            if attrs.get("input_tokens") is not None:
+                facts.append(f"토큰 입력 {attrs['input_tokens']:,} / 출력 {attrs.get('output_tokens') or 0:,}")
+
+            if attrs.get("tokens_per_sec"):
+                facts.append(f"{attrs['tokens_per_sec']:.1f} 토큰/초")
+
+            if attrs.get("load_ms") and attrs["load_ms"] > 1000:
+                facts.append(f"모델 로딩 {attrs['load_ms'] / 1000:.1f}초 (콜드 스타트)")
+
+            if attrs.get("context_full"):
+                facts.append("⚠️ 문맥 길이 한도에 도달")
+
+            st.caption(" · ".join(facts))
+            answer_block(generation, provider)
+
+
 def detail_tab(api_url):
     selected = st.session_state.get("selected_ids", [])
     request_id = None
@@ -463,20 +604,21 @@ def detail_tab(api_url):
         output = request["output"]
 
         if output:
-            classification, generation = output["classification"], output["generation"]
+            classification = output["classification"]
             st.write(f"분류: **{classification['label']}** (신뢰도 {classification['confidence']}) · 상태 {classification['status']}")
-            st.write(f"생성 상태: {generation['status']}")
 
-            if generation.get("answer"):
-                st.text_area("답변", generation["answer"], height=140, disabled=True, label_visibility="collapsed")
+            if classification.get("error"):
+                st.warning(classification["error"])
 
-                for step in generation.get("next_steps") or []:
-                    st.markdown(f"- {step}")
-
-            if generation.get("error") or classification.get("error"):
-                st.warning(generation.get("error") or classification.get("error"))
+            if "generation" in output:
+                generation = output["generation"]
+                st.write(f"생성 상태: {generation['status']}" + (f" · {generation['provider']}" if generation.get("provider") else ""))
+                answer_block(generation, "single")
         else:
             st.caption("결과 기록이 없습니다. (검증 실패나 서버 오류)")
+
+    if output and "generations" in output:
+        comparison_block(output["generations"], spans)
 
     if not spans:
         st.info("이 요청에는 호출 흐름(span) 기록이 없습니다.")

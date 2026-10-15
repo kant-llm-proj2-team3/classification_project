@@ -18,6 +18,18 @@ DATASETS = {
     "고객 요청": "inquiries",
 }
 
+# 답변을 만들 생성 모델. 비교는 같은 입력을 두 모델에 동시에 보내 답변을 나란히 보여준다.
+GENERATION_MODES = {
+    "OpenAI": "openai",
+    "로컬 모델 (Ollama)": "ollama",
+    "비교 (둘 다)": "compare",
+}
+
+PROVIDER_NAMES = {
+    "openai": "OpenAI",
+    "ollama": "로컬 모델 (Ollama)",
+}
+
 MAX_CHARS = 10000
 
 API_TIMEOUT = httpx.Timeout(
@@ -41,6 +53,9 @@ def initialize_session():
 
     if "selected_dataset" not in st.session_state:
         st.session_state.selected_dataset = "문서"
+
+    if "generation_mode" not in st.session_state:
+        st.session_state.generation_mode = "OpenAI"
 
     if "app_settings" not in st.session_state:
         st.session_state.app_settings = {
@@ -133,7 +148,58 @@ def check_api_connection(api_url):
     return data
 
 
-def get_reply(text, dataset):
+ALLOWED_STATUSES = {
+    "success",
+    "skipped",
+    "error",
+    "timeout",
+}
+
+
+def validate_comparison(data):
+    """/compare 응답(분류 결과 하나 + 생성 모델별 결과 목록)을 확인한다."""
+    if not isinstance(data, dict):
+        raise ValueError("API 응답 형식이 올바르지 않습니다.")
+
+    if data.get("status") not in ("success", "partial_success"):
+        raise ValueError("API 처리 상태를 확인할 수 없습니다.")
+
+    classification = data.get("classification")
+
+    if (
+        not isinstance(classification, dict)
+        or classification.get("status") not in ALLOWED_STATUSES
+    ):
+        raise ValueError("분류 결과가 올바르지 않습니다.")
+
+    results = data.get("results")
+
+    if not isinstance(results, list) or not results:
+        raise ValueError("답변 생성 결과가 없습니다.")
+
+    for result in results:
+        if (
+            not isinstance(result, dict)
+            or not isinstance(result.get("provider"), str)
+            or result.get("status") not in ALLOWED_STATUSES
+        ):
+            raise ValueError("API 답변 생성 결과의 형식이 올바르지 않습니다.")
+
+        if result["status"] == "success":
+            steps = result.get("next_steps", [])
+
+            if (
+                not isinstance(result.get("answer"), str)
+                or not result["answer"].strip()
+                or not isinstance(steps, list)
+                or any(not isinstance(step, str) for step in steps)
+            ):
+                raise ValueError("API 답변 내용이 올바르지 않습니다.")
+
+    return data
+
+
+def get_reply(text, dataset, mode="openai"):
     settings = st.session_state.app_settings
 
     # API 미연결 시에는 화면 테스트용 응답을 반환
@@ -160,12 +226,24 @@ def get_reply(text, dataset):
     request_id = str(uuid.uuid4())
 
     # 선택한 데이터셋과 입력 내용을 FastAPI에 전송
+    # 기본(OpenAI)은 예전과 같은 요청 형식이라 이전 버전 서버에서도 동작한다.
+    payload = {
+        "text": text,
+        "dataset": dataset,
+    }
+
+    if mode == "compare":
+        path = "/compare"
+
+    else:
+        path = "/chat"
+
+        if mode != "openai":
+            payload["provider"] = mode
+
     response = httpx.post(
-        f"{settings['api_url'].rstrip('/')}/chat",
-        json={
-            "text": text,
-            "dataset": dataset,
-        },
+        f"{settings['api_url'].rstrip('/')}{path}",
+        json=payload,
         headers={
             "X-Request-ID": request_id,
         },
@@ -174,6 +252,9 @@ def get_reply(text, dataset):
 
     response.raise_for_status()
     data = response.json()
+
+    if mode == "compare":
+        return validate_comparison(data)
 
     # 응답 형식 검증
     if not isinstance(data, dict):
@@ -345,6 +426,93 @@ def show_reply(data):
             )
 
 
+def show_comparison(data):
+    """같은 입력과 프롬프트로 만든 생성 모델별 답변을 나란히 보여준다."""
+    if data.get("status") == "partial_success":
+        st.warning(
+            "일부 처리 과정에서 문제가 발생했습니다."
+        )
+
+    classification = data["classification"]
+
+    if classification["status"] == "success":
+        label = classification.get("label")
+        confidence = classification.get("confidence")
+
+        if isinstance(label, str):
+            st.markdown(
+                f"**분류 결과:** {label}"
+            )
+
+        if (
+            isinstance(confidence, (int, float))
+            and not isinstance(confidence, bool)
+            and 0 <= confidence <= 1
+        ):
+            st.markdown(
+                f"**신뢰도:** {confidence:.1%}"
+            )
+
+    elif classification["status"] == "timeout":
+        st.warning("분류 모델 응답 시간이 초과되었습니다.")
+
+    else:
+        st.warning("분류 모델 처리에 실패했습니다.")
+
+    results = data["results"]
+
+    for column, result in zip(st.columns(len(results)), results):
+        provider = result["provider"]
+        metrics = result.get("metrics")
+        metrics = metrics if isinstance(metrics, dict) else {}
+
+        with column:
+            st.markdown(
+                f"**{PROVIDER_NAMES.get(provider, provider)}**"
+            )
+
+            facts = []
+
+            if isinstance(metrics.get("model"), str):
+                facts.append(metrics["model"])
+
+            if isinstance(metrics.get("latency_ms"), (int, float)):
+                facts.append(f"{metrics['latency_ms'] / 1000:.1f}초")
+
+            if isinstance(metrics.get("output_tokens"), int):
+                facts.append(f"출력 {metrics['output_tokens']:,}토큰")
+
+            if facts:
+                st.caption(" · ".join(facts))
+
+            if result["status"] == "success":
+                st.write(result["answer"])
+
+                steps = result.get("next_steps") or []
+
+                if steps:
+                    st.markdown("**다음 단계**")
+
+                    for step in steps:
+                        st.markdown(f"- {step}")
+
+            elif result["status"] == "timeout":
+                st.warning(
+                    "AI 답변 생성 시간이 초과되었습니다."
+                )
+
+            elif result["status"] == "skipped":
+                st.info(
+                    "분류를 수행하지 못해 AI 답변 생성을 "
+                    "진행하지 않았습니다."
+                )
+
+            else:
+                st.warning(
+                    "AI 답변 생성에 실패했습니다."
+                )
+
+
 # ==========================================
 # 6. 데이터셋 변경
 # ==========================================
@@ -355,6 +523,15 @@ def change_dataset():
     )
 
     # 데이터셋 변경 시 이전 결과 초기화
+    st.session_state.last_exchange = None
+
+
+def change_generation_mode():
+    st.session_state.generation_mode = (
+        st.session_state._generation_mode
+    )
+
+    # 생성 모델 변경 시 이전 결과 초기화
     st.session_state.last_exchange = None
 
 
@@ -385,6 +562,23 @@ def chat_page():
         on_change=change_dataset,
     )
 
+    mode_name = st.radio(
+        "답변 생성 모델",
+        list(GENERATION_MODES),
+        horizontal=True,
+        index=list(GENERATION_MODES).index(
+            st.session_state.generation_mode
+        ),
+        key="_generation_mode",
+        on_change=change_generation_mode,
+    )
+
+    if mode_name == "비교 (둘 다)":
+        st.caption(
+            "같은 입력을 OpenAI와 로컬 모델에 동시에 보내 "
+            "답변을 나란히 보여줍니다."
+        )
+
     if not st.session_state.app_settings["use_api"]:
         st.caption(
             "현재는 모델 없이 화면을 확인하는 "
@@ -411,6 +605,7 @@ def chat_page():
                 "question": prompt,
                 "answer": None,
                 "dataset_name": dataset_name,
+                "mode_name": mode_name,
             }
 
             with st.spinner(
@@ -422,6 +617,7 @@ def chat_page():
                     result = get_reply(
                         prompt,
                         DATASETS[dataset_name],
+                        GENERATION_MODES[mode_name],
                     )
 
                 except httpx.ConnectTimeout:
@@ -490,7 +686,8 @@ def chat_page():
         ):
             st.caption(
                 f"🤖 답변 · 데이터셋: "
-                f"{exchange['dataset_name']}"
+                f"{exchange['dataset_name']} · "
+                f"{exchange.get('mode_name', 'OpenAI')}"
             )
 
             result = exchange["answer"]
@@ -498,6 +695,8 @@ def chat_page():
             if isinstance(result, dict):
                 if "error" in result:
                     st.error(result["error"])
+                elif "results" in result:
+                    show_comparison(result)
                 else:
                     show_reply(result)
 
