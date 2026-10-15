@@ -49,13 +49,25 @@ class RequestRecord:
         self.input_text = text if STORE_TEXT else None
 
     def set_output(self, result: dict) -> None:
-        """/chat 응답을 요약해 둔다. (확률·지표는 span에 있으므로 넣지 않는다)"""
-        classification, generation = result["classification"], result["generation"]
+        """/chat, /compare 응답을 요약해 둔다. (확률·지표는 span에 있으므로 넣지 않는다)
+        /chat은 generation 하나, /compare는 제공자별 결과 목록(generations)을 담는다."""
+        classification = result["classification"]
         output = {"status": result["status"],
-                  "classification": {key: classification.get(key) for key in ("status", "label", "confidence", "error")},
-                  "generation": {"status": generation["status"], "error": generation.get("error")}}
-        if STORE_TEXT:
-            output["generation"].update(answer=generation.get("answer"), next_steps=generation.get("next_steps"))
+                  "classification": {key: classification.get(key) for key in ("status", "label", "confidence", "error")}}
+
+        def summarize(generation: dict) -> dict:
+            summary = {"status": generation["status"], "error": generation.get("error")}
+            if STORE_TEXT:
+                summary.update(answer=generation.get("answer"), next_steps=generation.get("next_steps"))
+            return summary
+
+        if "results" in result:
+            output["generations"] = [{"provider": item["provider"], **summarize(item)} for item in result["results"]]
+        else:
+            output["generation"] = summarize(result["generation"])
+            provider = result["generation"].get("metrics", {}).get("provider")
+            if provider:
+                output["generation"]["provider"] = provider
         self.output = output
 
     def set_error(self, error: BaseException) -> None:
