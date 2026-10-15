@@ -3,7 +3,9 @@
 Default request budget is 40 for one local Locust process. No response bodies or
 API keys are written to test artifacts. Each request has a unique tracking ID.
 """
+import csv
 import json
+import logging
 import math
 import time
 import uuid
@@ -15,23 +17,48 @@ from gevent.event import Event
 from locust import HttpUser, between, events, task
 from locust.exception import StopUser
 from locust.runners import MasterRunner, WorkerRunner
+from locust.stats import CSV_STATS_INTERVAL_SEC, StatsCSVFileWriter
 
 LABELS = {
     "inquiries": {"shipping", "refund", "account"},
     "documents": {"announcement", "manual", "minutes"},
 }
-CASES = [
-    ("inquiries", "short", "배송 예정일이 비어 있습니다. 배송 상태를 확인하는 방법을 알려주세요."),
-    ("documents", "short", "공지: 다음 주 월요일 오후 2시에 시스템 점검을 진행합니다. 작업을 미리 저장하세요."),
-    ("inquiries", "long", "환불 접수 방법과 필요한 확인 절차를 알려주세요. " + "상품을 수령한 지 이틀 됐고 사용하지 않았습니다. 포장은 보관 중이며 주문 내역을 확인할 수 있습니다. " * 20),
-    ("documents", "long", "회의록: 서비스 응답 지연 개선을 논의했습니다. " + "분류 시간과 외부 답변 생성 시간을 나눠 측정하기로 결정했습니다. 담당자와 완료일은 미정입니다. " * 20),
-]
+QUESTIONS_CSV = Path(__file__).resolve().parent / "advanced_merge_100.csv"
+
+
+def load_questions(path):
+    """Read dataset/text rows once per run; no model or API calls."""
+    cases = []
+    seen_ids = set()
+    with Path(path).open(encoding="utf-8-sig", newline="") as stream:
+        reader = csv.DictReader(stream)
+        required = {"dataset", "text", "label", "id"}
+        if not required.issubset(reader.fieldnames or []):
+            raise ValueError("questions CSV requires dataset, text, label, id columns")
+        for line, row in enumerate(reader, 2):
+            topic, label = row["dataset"], row["label"]
+            text, sample_id = row["text"], row["id"]
+            if topic not in LABELS or label not in LABELS[topic]:
+                raise ValueError(f"Invalid dataset/label in CSV record {line}")
+            if not sample_id or sample_id in seen_ids or not text.strip() or len(text) > 10_000:
+                raise ValueError(f"Invalid or duplicate sample in CSV record {line}")
+            seen_ids.add(sample_id)
+            cases.append((topic, label, text, sample_id))
+    if not cases:
+        raise ValueError("questions CSV is empty")
+    return cases
+
+
 _ready = Event()
 _state = {}
 
 
-def error_kind(error):
+def error_kind(error, status=None):
     value = str(error or "")
+    if status == "timeout" or "APITimeoutError" in value:
+        return "generation_timeout"
+    if "max_output_tokens" in value:
+        return "max_output_tokens"
     for token in ("insufficient_quota", "rate_limit_exceeded", "slow_down", "server_is_overloaded"):
         if token in value:
             return token
@@ -51,7 +78,7 @@ def validate_result(data, topic):
     if classification.get("status") != "success":
         return "classification_" + str(classification.get("status", "missing"))
     if generation.get("status") != "success":
-        return error_kind(generation.get("error"))
+        return error_kind(generation.get("error"), generation.get("status"))
     if data.get("status") != "success":
         return "overall_status_not_success"
     if classification.get("label") not in LABELS[topic]:
@@ -64,11 +91,19 @@ def validate_result(data, topic):
     steps = generation.get("next_steps")
     if not isinstance(steps, list) or any(not isinstance(step, str) for step in steps):
         return "invalid_next_steps"
+    # The earlier API returns document next_steps; the summary API leaves them empty.
+    if topic == "documents" and ("summary_items" in generation or not steps):
+        items = generation.get("summary_items")
+        if not isinstance(items, list) or any(not isinstance(item, str) for item in items):
+            return "invalid_summary_items"
+        if not any(item.strip() for item in items):
+            return "empty_summary_items"
     return None
 
 
 @events.init_command_line_parser.add_listener
 def add_options(parser):
+    parser.add_argument("--questions-csv", default=str(QUESTIONS_CSV), help="Input dataset/text CSV")
     parser.add_argument("--max-requests", type=int, default=40, help="Maximum requests in this local run")
     parser.add_argument("--run-id", default="", help="Tracking prefix, ASCII letters/digits/colon/hyphen only")
     parser.add_argument("--request-records", default="", help="Sanitized per-request JSONL destination")
@@ -79,28 +114,72 @@ def add_options(parser):
 
 @events.test_start.add_listener
 def start_test(environment, **kwargs):
-    if isinstance(environment.runner, (MasterRunner, WorkerRunner)):
-        raise RuntimeError("Request budget is local-process only; distributed execution is disabled")
-    options = environment.parsed_options
-    if options.max_requests <= 0 or not 0 <= options.think_min <= options.think_max:
-        raise ValueError("Use a positive request budget and valid think-time range")
-    prefix = options.run_id or "lt-" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S")
-    if len(prefix) > 40 or any(ch not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789:-" for ch in prefix):
-        raise ValueError("run-id must be at most 40 ASCII letters/digits/colon/hyphen")
+    # Locust logs listener exceptions and continues spawning, so invalidate the old run first.
+    if _state.get("start_error") and environment.process_exit_code == 2:
+        environment.process_exit_code = None
     _ready.clear()
     _state.clear()
-    _state.update(reserved=0, completed=0, quitting=False, limit=options.max_requests, run_id=prefix, record_path=options.request_records)
+    _state.update(active=False, reserved=0, completed=0, quitting=False, limit=0)
+    try:
+        if isinstance(environment.runner, (MasterRunner, WorkerRunner)):
+            raise RuntimeError("Request budget is local-process only; distributed execution is disabled")
+        options = environment.parsed_options
+        if options.max_requests <= 0 or not 0 <= options.think_min <= options.think_max:
+            raise ValueError("Use a positive request budget and valid think-time range")
+        prefix = options.run_id or "lt-" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S")
+        if len(prefix) > 40 or any(ch not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789:-" for ch in prefix):
+            raise ValueError("run-id must be at most 40 ASCII letters/digits/colon/hyphen")
+        cases = load_questions(options.questions_csv)
+        if options.request_records:
+            path = Path(options.request_records)
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text("", encoding="utf-8")
+    except Exception as error:
+        _state.update(start_error=True, quitting=True)
+        _ready.set()
+        environment.process_exit_code = 2
+        logging.getLogger(__name__).error("Load test did not start: %s", error)
+        gevent.spawn_later(0, environment.runner.quit)
+        return
+    _state.update(active=True, limit=options.max_requests, run_id=prefix, record_path=options.request_records)
+    _state["cases"] = cases
     if not options.wait_for_users:
         _ready.set()
-    if options.request_records:
-        path = Path(options.request_records)
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text("", encoding="utf-8")
+
+
+@events.test_stop.add_listener
+def save_reports_on_test_stop(environment, **kwargs):
+    if getattr(environment.parsed_options, "csv_prefix", None):
+        writer = getattr(getattr(environment, "web_ui", None), "stats_csv_writer", None)
+        if isinstance(writer, StatsCSVFileWriter):
+            # Reuse Locust's handles without yielding, so a UI restart cannot clear these counts.
+            for stream, csv_writer, save in (
+                (writer.requests_csv_filehandle, writer.requests_csv_writer, writer.requests_csv),
+                (writer.failures_csv_filehandle, writer.failures_csv_writer, writer.failures_csv),
+                (writer.exceptions_csv_filehandle, writer.exceptions_csv_writer, writer.exceptions_csv),
+            ):
+                stream.seek(0)
+                save(csv_writer)
+                stream.truncate()
+                stream.flush()
+            writer.stats_history_flush()
+        else:
+            # Headless Locust closes/flushed its handles on exit; allow its final write first.
+            gevent.sleep(CSV_STATS_INTERVAL_SEC + 0.1)
+    # Web UI stays open after runner.quit(); save when the test stops as well.
+    filename = getattr(environment.parsed_options, "html_file", None)
+    if not filename:
+        return
+    from locust.html import get_html_report
+    path = Path(filename)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(get_html_report(environment, show_download_link=False), encoding="utf-8")
 
 
 @events.spawning_complete.add_listener
 def spawning_done(user_count, **kwargs):
-    _ready.set()
+    if _state.get("active"):
+        _ready.set()
 
 
 class ChatUser(HttpUser):
@@ -111,14 +190,16 @@ class ChatUser(HttpUser):
     @task
     def chat(self):
         _ready.wait()
-        if _state.get("reserved", 0) >= _state.get("limit", 0):
+        if not _state.get("active") or _state.get("reserved", 0) >= _state.get("limit", 0):
             raise StopUser()
         sequence = _state["reserved"]
         _state["reserved"] += 1  # No yield occurs between budget check and reservation.
-        topic, case_name, text = CASES[sequence % len(CASES)]
+        cases = _state["cases"]
+        topic, case_name, text, sample_id = cases[sequence % len(cases)]
         client_id = _state["run_id"] + ":" + uuid.uuid4().hex[:16]
         started = time.perf_counter()
         record = {"sequence": sequence + 1, "client_request_id": client_id, "topic": topic, "case_name": case_name,
+                  "sample_id": sample_id, "expected_label": case_name,
                   "input_chars": len(text), "started_at": datetime.now(timezone.utc).isoformat()}
         try:
             with self.client.post("/chat", json={"text": text, "dataset": topic},

@@ -27,6 +27,28 @@ def mean(values):
     return statistics.mean(values) if values else None
 
 
+def check_tracking_db(db):
+    """Validate the existing read-only DB before sending any load requests."""
+    if not db.is_file():
+        raise RuntimeError(
+            f"Tracking DB file not found: {db}. "
+            "Use --tracking-db to select the server's existing DB; no DB is created."
+        )
+    conn = None
+    try:
+        conn = sqlite3.connect(db.as_uri() + "?mode=ro", uri=True, timeout=5)
+        conn.execute("PRAGMA query_only=ON")
+        conn.execute(
+            "SELECT r.client_request_id,v.* FROM requests r "
+            "LEFT JOIN v_request_summary v ON r.request_id=v.request_id WHERE 0"
+        ).fetchall()
+    except (sqlite3.Error, OSError) as error:
+        raise RuntimeError(f"Cannot read tracking DB {db}: {error}") from error
+    finally:
+        if conn is not None:
+            conn.close()
+
+
 def join_tracking(db, rows):
     ids = [r["client_request_id"] for r in rows]
     if not db.exists() or not ids:
@@ -73,13 +95,24 @@ def summarize(rows, tracked):
 
 
 def main():
+    repo = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser()
     parser.add_argument("--host", default="http://127.0.0.1:8000")
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument(
+        "--tracking-db", type=Path, default=repo / "logs" / "tracking.db",
+        help="Existing server tracking DB, read-only (default: %(default)s). "
+             "Relative paths use the caller's working directory.",
+    )
     parser.add_argument("--historical-json", type=Path)
     parser.add_argument("--smoke-only", action="store_true")
     args = parser.parse_args()
-    repo = Path(__file__).resolve().parents[1]
+    args.output_dir = args.output_dir.expanduser().resolve()
+    args.tracking_db = args.tracking_db.expanduser().resolve()
+    try:
+        check_tracking_db(args.tracking_db)
+    except RuntimeError as error:
+        parser.error(str(error))
     args.output_dir.mkdir(parents=True, exist_ok=True)
     with urllib.request.urlopen(args.host + "/health", timeout=5) as response:
         health = json.load(response)
@@ -93,7 +126,7 @@ def main():
         {"label": "Locust response validation", "url": "https://docs.locust.io/en/stable/writing-a-locustfile.html#validating-responses"},
         {"label": "OpenAI latency optimization", "url": "https://developers.openai.com/api/docs/guides/latency-optimization"},
         {"label": "OpenAI rate limits", "url": "https://developers.openai.com/api/docs/guides/rate-limits"}],
-        "scope_notes": ["새 호출 최대 40건. 실패 요청 자동 재시도 없음.", "문서/문의 × 짧은/긴 합성 입력. 정답률을 측정하는 테스트는 아님.", "새 단계당 4~12건으로 탐색 결과이며 P95/P99·수용 인원 확정에 불충분.", "프론트 UI·WebSocket과 1,000/2,000명 수용 능력은 검증하지 않음.", "테스트 종료 후 남은 서버 작업과 기록 수를 점검. 분류 비추론 시간은 토큰화/스레드/락 대기가 섞인 지표."]}
+        "scope_notes": ["새 호출 최대 40건. 실패 요청 자동 재시도 없음.", "locust/advanced_merge_100.csv의 문서·문의 질문을 사용하며, 각 단계는 같은 파일의 처음 4~12개를 순서대로 사용합니다. 정답률을 측정하는 테스트는 아닙니다.", "새 단계당 4~12건으로 탐색 결과이며 P95/P99·수용 인원 확정에 불충분.", "프론트 UI·WebSocket과 1,000/2,000명 수용 능력은 검증하지 않음.", "테스트 종료 후 남은 서버 작업과 기록 수를 점검. 분류 비추론 시간은 토큰화/스레드/락 대기가 섞인 지표."]}
     scenarios = [("연결·응답 검증", "smoke", 1, 1, 4, 0, 0), ("1명 기준", "baseline", 1, 1, 12, 1, 2), ("5명 동시", "concurrent5", 5, 5, 12, 1, 2), ("10명 동시", "concurrent10", 10, 10, 12, 1, 2)]
     if args.smoke_only:
         scenarios = scenarios[:1]
@@ -103,7 +136,7 @@ def main():
         folder = args.output_dir / suffix
         folder.mkdir(exist_ok=True)
         raw = folder / "requests.jsonl"
-        command = [sys.executable, "-X", "utf8", "-m", "locust", "-f", str(repo / "locustfile.py"), "--host", args.host,
+        command = [sys.executable, "-X", "utf8", "-m", "locust", "-f", str(repo / "locust" / "locust.py"), "--host", args.host,
                    "--headless", "--users", str(users), "--spawn-rate", str(ramp), "--run-time", "3m", "--stop-timeout", "95",
                    "--max-requests", str(budget), "--run-id", run_id, "--request-records", str(raw),
                    "--think-min", str(wait_min), "--think-max", str(wait_max), "--csv", str(folder / "locust"),
@@ -115,7 +148,7 @@ def main():
         rows = [json.loads(line) for line in raw.read_text(encoding="utf-8").splitlines() if line.strip()] if raw.exists() else []
         if len(rows) > budget:
             raise RuntimeError("Request budget exceeded")
-        tracked = join_tracking(repo / "logs" / "tracking.db", rows)
+        tracked = join_tracking(args.tracking_db, rows)
         summary = summarize(rows, tracked)
         run = {"label": label, "run_id": run_id, "users": users, "spawn_rate": ramp, "request_limit": budget,
                "started_at": started, "ended_at": datetime.now(timezone.utc).isoformat(), "summary": summary,
