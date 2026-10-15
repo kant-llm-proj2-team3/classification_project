@@ -2,6 +2,7 @@
 ## KANT 프로젝트2 - 3조(좋은 팀 이름 제안해 조)
 ## 팀원
 - 권오륜
+- [https://github.com/Riddlerio](https://github.com/Riddlerio)
 - 송찬영
   - [https://github.com/scy0416](https://github.com/scy0416)
 - 이정원
