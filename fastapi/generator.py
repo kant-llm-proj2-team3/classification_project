@@ -41,6 +41,13 @@ def parse_answer(raw: str) -> tuple[str, list[str]]:
     return answer.strip(), steps
 
 
+def with_raw(result: dict, raw: str | None) -> dict:
+    """평가 도구(evaluation)가 요청했을 때만 모델이 돌려준 원문을 결과 맨 위에 붙인다. 서비스는 요청하지 않으므로 응답과 추적에는 남지 않는다."""
+    if raw is not None:
+        result["raw_text"] = raw
+    return result
+
+
 def generation_temperature() -> float | None:
     """모든 생성기가 같은 온도로 비교되도록 .env의 GENERATION_TEMPERATURE를 읽는다. 비어 있으면 None(제공자 기본값)."""
     value = (os.getenv("GENERATION_TEMPERATURE") or "").strip()
@@ -71,7 +78,7 @@ class OpenAIGenerator:
             self._client = AsyncOpenAI(timeout=self.timeout, max_retries=0)
         return self._client
 
-    async def generate(self, prompt: str) -> dict:
+    async def generate(self, prompt: str, keep_raw: bool = False) -> dict:
         metrics = {"provider": "openai", "model": self.model, "max_output_tokens": self.max_output_tokens,
                    "timeout_s": self.timeout, "reasoning_effort": self.reasoning_effort,
                    "temperature": self.temperature, "prompt_chars": len(prompt)}
@@ -95,14 +102,15 @@ class OpenAIGenerator:
                        input_tokens=usage.input_tokens if usage else None,
                        output_tokens=usage.output_tokens if usage else None,
                        reasoning_tokens=usage.output_tokens_details.reasoning_tokens if usage else None)
+        raw = response.output_text if keep_raw else None
         if response.status != "completed":
             reason = response.incomplete_details.reason if response.incomplete_details else response.status
-            return self._failure("error", f"생성이 끝나지 않았습니다: {reason}", metrics, started)
+            return with_raw(self._failure("error", f"생성이 끝나지 않았습니다: {reason}", metrics, started), raw)
         try:
             answer, next_steps = parse_answer(response.output_text)
         except ValueError as error:           # json.JSONDecodeError도 ValueError다.
-            return self._failure("error", f"생성 결과의 형식이 올바르지 않습니다: {error}", metrics, started)
-        return {"status": "success", "answer": answer, "next_steps": next_steps, "metrics": metrics}
+            return with_raw(self._failure("error", f"생성 결과의 형식이 올바르지 않습니다: {error}", metrics, started), raw)
+        return with_raw({"status": "success", "answer": answer, "next_steps": next_steps, "metrics": metrics}, raw)
 
     @staticmethod
     def _failure(status: str, message: str, metrics: dict, started: float) -> dict:
@@ -152,7 +160,7 @@ class OllamaGenerator:
             logger.warning("[generator] Ollama 모델을 미리 올리지 못했습니다(%s). 첫 호출이 느릴 수 있습니다.", type(error).__name__)
             return False
 
-    async def generate(self, prompt: str) -> dict:
+    async def generate(self, prompt: str, keep_raw: bool = False) -> dict:
         metrics = {"provider": "ollama", "model": self.model, "max_output_tokens": self.max_output_tokens,
                    "timeout_s": self.timeout, "temperature": self.temperature, "num_ctx": self.num_ctx,
                    "prompt_chars": len(prompt)}
@@ -183,6 +191,7 @@ class OllamaGenerator:
             return OpenAIGenerator._failure("error", f"HTTP {response.status_code}: {detail[:200]}", metrics, started)
 
         data = response.json()
+        raw = data.get("response", "") if keep_raw else None
 
         def ms(key):      # Ollama의 시간 단위는 나노초다.
             return data[key] / 1e6 if data.get(key) is not None else None
@@ -198,13 +207,14 @@ class OllamaGenerator:
             context_full=bool(data.get("prompt_eval_count") and eval_count
                               and data["prompt_eval_count"] + eval_count >= self.num_ctx))
         if not data.get("done") or data.get("done_reason") == "length":
-            return OpenAIGenerator._failure("error", f"생성이 끝나지 않았습니다: {data.get('done_reason') or 'incomplete'}",
-                                            metrics, started)
+            return with_raw(OpenAIGenerator._failure(
+                "error", f"생성이 끝나지 않았습니다: {data.get('done_reason') or 'incomplete'}", metrics, started), raw)
         try:
             answer, next_steps = parse_answer(data.get("response", ""))
         except ValueError as error:
-            return OpenAIGenerator._failure("error", f"생성 결과의 형식이 올바르지 않습니다: {error}", metrics, started)
-        return {"status": "success", "answer": answer, "next_steps": next_steps, "metrics": metrics}
+            return with_raw(OpenAIGenerator._failure(
+                "error", f"생성 결과의 형식이 올바르지 않습니다: {error}", metrics, started), raw)
+        return with_raw({"status": "success", "answer": answer, "next_steps": next_steps, "metrics": metrics}, raw)
 
     async def aclose(self) -> None:
         if self._client is not None:
