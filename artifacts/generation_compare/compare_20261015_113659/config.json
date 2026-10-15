@@ -1,7 +1,7 @@
 {
-  "name": "compare_20261015_101053",
-  "started_at": "2026-10-15 10:11:00",
-  "finished_at": "2026-10-15 10:19:05",
+  "name": "compare_20261015_113659",
+  "started_at": "2026-10-15 11:37:06",
+  "finished_at": "2026-10-15 11:44:28",
   "args": {
     "per_kind": 10,
     "topic": "both",
@@ -15,9 +15,9 @@
     "unblind": false
   },
   "data": "dataset/<토픽>/<종류>/test.csv (test만 사용)",
-  "policy_fingerprint": "a9218a3010b565d1",
+  "policy_fingerprint": "c1cbe934e3dc7ed8",
   "prompt_changed_since": [],
-  "git_commit": "6c6a5c823fd98bb61184241644ef755c3f5c63fd",
+  "git_commit": "c2cba6d549a4e61c167c9d7c23c1835348c6ed7c",
   "classifiers": {
     "documents": {
       "model": "bert",

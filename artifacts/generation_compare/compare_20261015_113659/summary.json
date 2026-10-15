@@ -1,0 +1,92 @@
+{
+  "cases": 80,
+  "repeats": 1,
+  "calls": 160,
+  "human_quality_scored": false,
+  "providers": {
+    "openai": {
+      "summary_structure_ok_rate": 1.0,
+      "cases": 80,
+      "calls": 80,
+      "errors": 0,
+      "error_rate_all_calls": 0.0,
+      "format_valid_rate_all_calls": 1.0,
+      "mean_latency_seconds_success_only": 2.564315888750025,
+      "median_latency_seconds_success_only": 2.4562621499999295,
+      "p95_latency_seconds_success_only": 3.3413843699993766,
+      "mean_output_tokens_success_only": 183.6375,
+      "median_tokens_per_sec_success_only": null
+    },
+    "ollama": {
+      "summary_structure_ok_rate": 0.9743589743589743,
+      "cases": 80,
+      "calls": 80,
+      "errors": 1,
+      "error_rate_all_calls": 0.0125,
+      "format_valid_rate_all_calls": 0.9875,
+      "mean_latency_seconds_success_only": 2.9844937784810903,
+      "median_latency_seconds_success_only": 2.6681103999999323,
+      "p95_latency_seconds_success_only": 5.680262119999679,
+      "mean_output_tokens_success_only": 219.51898734177215,
+      "median_tokens_per_sec_success_only": 89.66781077540709
+    }
+  },
+  "by_topic": {
+    "documents": {
+      "openai": {
+        "summary_structure_ok_rate": 1.0,
+        "cases": 40,
+        "calls": 40,
+        "errors": 0,
+        "error_rate_all_calls": 0.0,
+        "format_valid_rate_all_calls": 1.0,
+        "mean_latency_seconds_success_only": 2.469282817499925,
+        "median_latency_seconds_success_only": 2.352166650000072,
+        "p95_latency_seconds_success_only": 3.359457744999416,
+        "mean_output_tokens_success_only": 182.95,
+        "median_tokens_per_sec_success_only": null
+      },
+      "ollama": {
+        "summary_structure_ok_rate": 0.9743589743589743,
+        "cases": 40,
+        "calls": 40,
+        "errors": 1,
+        "error_rate_all_calls": 0.025,
+        "format_valid_rate_all_calls": 0.975,
+        "mean_latency_seconds_success_only": 2.027642492307654,
+        "median_latency_seconds_success_only": 1.8696154000008391,
+        "p95_latency_seconds_success_only": 3.6216210400001736,
+        "mean_output_tokens_success_only": 167.25641025641025,
+        "median_tokens_per_sec_success_only": 101.11041514394095
+      }
+    },
+    "inquiries": {
+      "openai": {
+        "summary_structure_ok_rate": null,
+        "cases": 40,
+        "calls": 40,
+        "errors": 0,
+        "error_rate_all_calls": 0.0,
+        "format_valid_rate_all_calls": 1.0,
+        "mean_latency_seconds_success_only": 2.6593489600001248,
+        "median_latency_seconds_success_only": 2.5994543500000873,
+        "p95_latency_seconds_success_only": 3.317685669999809,
+        "mean_output_tokens_success_only": 184.325,
+        "median_tokens_per_sec_success_only": null
+      },
+      "ollama": {
+        "summary_structure_ok_rate": null,
+        "cases": 40,
+        "calls": 40,
+        "errors": 0,
+        "error_rate_all_calls": 0.0,
+        "format_valid_rate_all_calls": 1.0,
+        "mean_latency_seconds_success_only": 3.917423782500191,
+        "median_latency_seconds_success_only": 3.9072463000002244,
+        "p95_latency_seconds_success_only": 6.031277205000054,
+        "mean_output_tokens_success_only": 270.475,
+        "median_tokens_per_sec_success_only": 68.39649669311001
+      }
+    }
+  }
+}
