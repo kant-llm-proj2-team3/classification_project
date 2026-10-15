@@ -21,3 +21,5 @@ jev/tmp/
 logs/*.db
 logs/*.db-wal
 logs/*.db-shm
+locust/result_*.csv
+locust/report_*.html
