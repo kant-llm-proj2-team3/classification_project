@@ -1,6 +1,6 @@
-## bert/steps
+# BERT 계열 (bert / roberta / koelectra)
 
-
+BERT 계열 사전학습 모델의 학습 스크립트입니다. (`bert/steps`)
 
 | 파일 | 모델 | 설정 키 |
 |---|---|---|

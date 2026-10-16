@@ -1,7 +1,7 @@
 # 분류 모델 비교 실험 (baseline vs BERT / RoBERTa / KoELECTRA)
 
 TF-IDF + 로지스틱 회귀(baseline)와 사전학습 모델 3종을 같은 데이터로 학습하고,
-validation 결과로 서비스에 쓸 분류기 후보를 추천합니다. 이후 추천 모델만 test 로 한 번 평가합니다.
+결과로 서비스에 쓸 분류기 후보를 추천합니다. (laya, CLM, jev 같은 외부 모델 결과도 같은 표에 합칩니다)
 
 ## 파일 구성
 
@@ -13,11 +13,11 @@ validation 결과로 서비스에 쓸 분류기 후보를 추천합니다. 이�
 | `baseline/steps/train_tfidf.py` | TF-IDF + 로지스틱 회귀 학습 |
 | `baseline/steps/check_lengths.py` | CSV 파일별 입력 길이(토큰 수) 점검 (메뉴 5번) |
 | `bert/steps/train_bert.py`, `train_roberta.py`, `train_koelectra.py` | 모델별 학습 파일 |
-| `baseline/_old/` | 이전 임시 코드 (사용하지 않음, 필요 없으면 폴더째 삭제) |
+| `baseline/steps/make_charts.py`, `result_files.py` | 그래프(메뉴 7번), `main.json`/`sub.json`/예측 CSV 생성 (메뉴 6번) |
 
 ## 실행
 
-프로젝트 루트(`project_2`)에서 실행합니다.
+프로젝트 루트에서 실행합니다.
 
 ```bash
 uv run python baseline/steps/run_menu.py
@@ -27,9 +27,12 @@ uv run python baseline/steps/run_menu.py
 |---|---|
 | 1 학습 | baseline + bert + roberta + koelectra 학습. **누를 때마다 항상 새로 학습**하고, 그 모델의 best_model 보다 좋을 때만 best_model 을 교체 |
 | 2 초기화 | 학습 결과(`artifacts`)만 삭제. 범위(전체/모델별) 선택, `yes` 입력 필요. CSV 와 `logs/` 는 삭제되지 않음 |
-| 3 추천 | 각 모델 best_model 의 validation 결과로 bert·roberta·koelectra 중 1개 추천 (`recommendation.json`) |
+| 3 추천 | 각 모델 best_model 로 1개 추천 (`recommendation.json`). 현재 규칙은 아래 "모델 추천 규칙" 참고 |
 | 4 test 평가 | 추천 모델의 best_model 을 test 로 **1회만** 평가. baseline 의 test 점수도 같이 기록 |
 | 5 길이 점검 | CSV 파일별로 192/512토큰을 넘는 행 수 확인 (`artifacts/input_length_report.csv`) |
+| 6 결과 파일 보강 | 이미 있는 학습 결과에 `main.json` / `sub.json` / 문장별 예측 파일 생성 (다시 학습하지 않음) |
+| 7 그래프 | 모든 `best_model/main.json`으로 비교 그래프 PNG 생성 |
+| 8 한 번에 마무리 | 6 → 3 → 4(4개 모델) → 7 순서로 실행 |
 
 모델 하나만 따로 돌리려면 다음처럼 실행할 수 있습니다.
 
@@ -41,7 +44,7 @@ uv run python baseline/steps/train_tfidf.py --topic inquiries --dataset basic
 ## 결과 폴더 구조
 
 ```
-project_2/artifacts/
+artifacts/
 ├── inquiries/  documents/                       주제
 │   ├── basic/  basic_merge/  advanced/  advanced_merge/  total_merge/   데이터셋
 │   │   ├── baseline/  bert/  roberta/  koelectra/         모델
@@ -66,6 +69,14 @@ project_2/artifacts/
 날짜 폴더에는 `best_model` 과 같은 파일이 **가중치 없이** 들어 있습니다.
 Hugging Face 가 모델 설정을 `config.json` 으로 저장하기 때문에, 우리의 학습 조건 기록은 `run_config.json` 입니다.
 
+## 모델 추천 규칙 (현재 코드 기준)
+
+- 추천 순위는 각 모델 `best_model` 의 **test Macro-F1** 이 높은 순이고, 동점이면 validation loss 가 낮은 쪽, 그다음 학습 시간이 짧은 쪽입니다. (`common.py` 의 `recommend_model`)
+- 따라서 추천 전에 test 평가(메뉴 4번)가 끝나 있어야 하고, **이 test 점수는 모델 선택에 쓰이므로** 처음 보는 데이터에서의 성능보다 높게 나올 수 있다는 점이 `recommendation.json` 의 `notes` 에 기록됩니다.
+- baseline 과 `RECOMMEND_REFERENCE_ONLY`(jev) 는 후보에서 제외되고 참고용으로만 표시됩니다.
+- 서비스(FastAPI)는 `advanced_merge` 의 `recommendation.json` 을 읽어 서비스 모델을 정합니다.
+- 아래 "4. test 평가" 와 "평가 규칙" 에 적힌 validation 중심 설명은 학습·best_model 교체 기준입니다.
+
 ## best_model 규칙
 
 - 학습이 끝날 때마다 새 날짜 폴더가 생기고, 그 모델의 best_model 과 비교합니다.
@@ -75,13 +86,13 @@ Hugging Face 가 모델 설정을 `config.json` 으로 저장하기 때문에, �
 - 이미 test 평가를 마친 best 가 교체되면 경고를 출력하고, 이전 test 결과는 그 run 의 날짜 폴더로 옮겨 보관합니다.
 - 학습 중 실패하거나 중단(Ctrl+C)한 run 은 폴더가 남지 않습니다. (끊긴 폴더가 있으면 다음 학습 때 지움)
 
-## 자주 바꾸는 설정 (`project_2/baseline_bert_config.py`)
+## 자주 바꾸는 설정 (`baseline_bert_config.py`)
 
 - **데이터셋 켜기/끄기**: `DATASET_SWITCH` 에서 해당 줄을 `True`/`False` 로 변경 (데이터 폴더가 비어 있으면 자동으로 건너뜀)
 - **데이터셋 구성**: `basic`, `advanced`(원본), `basic_merge`, `advanced_merge`(원본 + 추가본), `total_merge`(basic_merge + advanced_merge).
   폴더 위치는 `DATASET_FOLDERS`. 예전 이름 `basic_plus`, `advanced_plus` 는 `basic_merge`, `advanced_merge` 로 바뀌었습니다.
-- **모델 추천에서 빼기**: `RECOMMEND_EXCLUDED` (기본 `total_merge`). 서버에 줄 최종 모델을 만드는 데이터셋이라 학습, test 평가에는 포함되지만 그래프에서는 기본으로 빠지고(`--with-total-merge` 로 포함)
-  추천(메뉴 3번·8번)에서는 빠집니다. 이 데이터셋의 test 는 4개 모델을 모두 평가하고 공식 모델 표시는 하지 않습니다.
+- **모델 추천에서 빼기**: `RECOMMEND_EXCLUDED` (현재 기본값 `()` = 모든 데이터셋을 추천). `total_merge` 는 서버에 줄 최종 모델을 만드는 데이터셋이라 학습, test 평가, 추천, 그래프에 모두 포함됩니다.
+  예전처럼 빼려면 `("total_merge",)` 를 적습니다. 여기 적은 데이터셋은 4개 모델을 모두 test 평가하고 공식 모델 표시는 하지 않으며 그래프에서도 빠집니다(`--with-total-merge` 로 포함).
 - **Learning Rate**: `LEARNING_RATES` 에 모델별 숫자 하나. `[2e-5, 5e-5]` 처럼 리스트로 적으면 값마다 run 이 하나씩 돌고 best 가 선택됨(튜닝)
 - **배치**: `batch_size`(한 번에 넣는 문장 수) x `gradient_accumulation_steps`(몇 묶음마다 가중치를 고칠지) = 실질 배치. 기본 4 x 2 = 8
 - **에폭·중단 조건**: `epochs`(최대 15), `early_stopping_patience`(Macro-F1 이 N에폭 연속 안 오르면 중단, 기본 3, 0 이면 끔), `target_macro_f1`(숫자를 적으면 그 점수에 닿는 순간 중단, 기본 None=끔)
@@ -138,7 +149,7 @@ Hugging Face 가 모델 설정을 `config.json` 으로 저장하기 때문에, �
 다른 팀원이 직접 학습해서 결과만 넘겨 주는 모델을 우리 모델과 같은 표에 넣습니다. 우리 코드는 이 모델을 학습하거나 test 를 직접 평가하지 않고,
 결과 파일만 읽습니다.
 
-- **켜고 끄기**: `baseline_bert_config.py` 의 `EXTERNAL_MODELS` (기본값 `{"laya": False, "jev": False, "clm": False}`, 쓰려면 해당 모델을 `True` 로). `False` 면 무시합니다.
+- **켜고 끄기**: `baseline_bert_config.py` 의 `EXTERNAL_MODELS` (현재 `{"laya": True, "jev": True, "clm": True}`, 끄려면 해당 모델을 `False` 로). `False` 면 무시합니다.
 - **폴더 위치**: `artifacts/<주제>/<데이터셋>/<모델 소문자 이름>/best_model/main.json` (예: `artifacts/documents/advanced/laya/best_model/main.json`).
   폴더가 없는 데이터셋은 오류 없이 건너뜁니다.
 - **모델 추천(3번·8번)**: `main.json` 의 **validation** 결과로 우리 모델과 같이 순위를 매깁니다. (`main.json` 이 없는 예전 결과만 `best_info.json` 으로 대신 읽음) validation 결과가 없거나
