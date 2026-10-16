@@ -2,7 +2,7 @@
   "topic": "documents",
   "dataset": "basic",
   "split": "test",
-  "selected_model": "bert",
+  "selected_model": "laya",
   "evaluated_model": "roberta",
   "official": false,
   "selected_run": "20261013_162547",

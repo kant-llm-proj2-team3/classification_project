@@ -2,9 +2,9 @@
   "topic": "documents",
   "dataset": "advanced",
   "split": "test",
-  "selected_model": "bert",
+  "selected_model": "roberta",
   "evaluated_model": "bert",
-  "official": true,
+  "official": false,
   "selected_run": "20261013_163057",
   "model_id": "klue/bert-base",
   "classifier": {

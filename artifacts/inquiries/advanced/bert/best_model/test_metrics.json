@@ -2,9 +2,9 @@
   "topic": "inquiries",
   "dataset": "advanced",
   "split": "test",
-  "selected_model": "bert",
+  "selected_model": "laya",
   "evaluated_model": "bert",
-  "official": true,
+  "official": false,
   "selected_run": "20261013_161215",
   "model_id": "klue/bert-base",
   "classifier": {

@@ -1,34 +1,30 @@
 {
   "topic": "inquiries",
   "dataset": "basic",
-  "recommended_model": "roberta",
-  "model_id": "klue/roberta-base",
+  "recommended_model": "laya",
+  "model_id": "convaiinnovations/laya (multilingual)",
   "run_name": "20261013_160634",
-  "learning_rate": 3e-05,
-  "selection_rule": "각 모델 best_model 의 test Macro-F1 (동점: validation loss, 그다음 학습 시간). baseline 과 참고용 모델(jev)은 후보에서 제외.",
-  "reason": "test Macro-F1 이 1.0000로 koelectra와 동점이라 validation loss(0.0008 vs 0.0063)로 결정했습니다.",
-  "notes": [
-    "이 공식 모델은 test 점수로 골랐습니다. 이 test 점수는 모델 선택에 쓰였으므로 처음 보는 데이터에서의 성능보다 높게 나올 수 있습니다.",
-    "validation 기준 1위는 laya 입니다. (test 기준 공식 모델과 다름)"
-  ],
-  "test_macro_f1": 1.0,
+  "learning_rate": 2.5e-05,
+  "selection_rule": "각 모델 best_model 의 validation Macro-F1 (동점: validation loss, 그다음 학습 시간). test 점수는 사용하지 않음. baseline 과 참고용 모델(jev)은 후보에서 제외.",
+  "reason": "validation Macro-F1 이 1.0000로 roberta와 동점이라 validation loss(0.0002 vs 0.0008)로 결정했습니다.",
+  "notes": [],
   "validation_macro_f1": 1.0,
   "validation_best_model": "laya",
   "compared_models": [
+    "laya",
     "roberta",
     "koelectra",
     "bert",
-    "clm",
-    "laya"
+    "clm"
   ],
-  "baseline_reference_test_macro_f1": 0.991665364379851,
+  "baseline_reference_validation_macro_f1": 0.9833229101521784,
   "external_models": [
-    "clm",
-    "laya"
+    "laya",
+    "clm"
   ],
   "reference_only_models": [
     "baseline",
     "jev"
   ],
-  "created_at": "2026-10-14 17:29:40"
+  "created_at": "2026-10-16 12:25:03"
 }

@@ -2,7 +2,7 @@
   "topic": "documents",
   "dataset": "advanced",
   "split": "test",
-  "selected_model": "bert",
+  "selected_model": "roberta",
   "evaluated_model": "koelectra",
   "official": false,
   "selected_run": "20261013_163232",

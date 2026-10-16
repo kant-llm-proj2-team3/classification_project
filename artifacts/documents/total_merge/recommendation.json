@@ -1,27 +1,23 @@
 {
   "topic": "documents",
   "dataset": "total_merge",
-  "recommended_model": "roberta",
-  "model_id": "klue/roberta-base",
-  "run_name": "20261013_163902",
+  "recommended_model": "bert",
+  "model_id": "klue/bert-base",
+  "run_name": "20261013_163552",
   "learning_rate": 3e-05,
-  "selection_rule": "각 모델 best_model 의 test Macro-F1 (동점: validation loss, 그다음 학습 시간). baseline 과 참고용 모델(jev)은 후보에서 제외.",
-  "reason": "test Macro-F1 0.9970로 1위 (bert 0.9909, 정확히 맞힌 문장 2건 차이 / test 331건).",
-  "notes": [
-    "이 공식 모델은 test 점수로 골랐습니다. 이 test 점수는 모델 선택에 쓰였으므로 처음 보는 데이터에서의 성능보다 높게 나올 수 있습니다.",
-    "validation 기준 1위는 bert 입니다. (test 기준 공식 모델과 다름)"
-  ],
-  "test_macro_f1": 0.9969696343588366,
-  "validation_macro_f1": 0.98497736454252,
+  "selection_rule": "각 모델 best_model 의 validation Macro-F1 (동점: validation loss, 그다음 학습 시간). test 점수는 사용하지 않음. baseline 과 참고용 모델(jev)은 후보에서 제외.",
+  "reason": "validation Macro-F1 0.9940로 1위 (laya 0.9940, 정확히 맞힌 문장 약 0건 차이 / validation 331건).",
+  "notes": [],
+  "validation_macro_f1": 0.9939935064935065,
   "validation_best_model": "bert",
   "compared_models": [
-    "roberta",
     "bert",
     "laya",
+    "roberta",
     "koelectra",
     "clm"
   ],
-  "baseline_reference_test_macro_f1": 0.9032271044583936,
+  "baseline_reference_validation_macro_f1": 0.9030092018763954,
   "external_models": [
     "laya",
     "clm"
@@ -30,5 +26,5 @@
     "baseline",
     "jev"
   ],
-  "created_at": "2026-10-14 17:29:42"
+  "created_at": "2026-10-16 12:25:05"
 }

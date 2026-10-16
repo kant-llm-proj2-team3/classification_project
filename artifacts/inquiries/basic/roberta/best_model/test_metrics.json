@@ -2,9 +2,9 @@
   "topic": "inquiries",
   "dataset": "basic",
   "split": "test",
-  "selected_model": "roberta",
+  "selected_model": "laya",
   "evaluated_model": "roberta",
-  "official": true,
+  "official": false,
   "selected_run": "20261013_160634",
   "model_id": "klue/roberta-base",
   "classifier": {
