@@ -45,6 +45,9 @@ EXTERNAL_MODELS = {"laya": True, "jev": True, "clm": True}
 # 모델 추천(최종 모델 선정)에서 빼고 baseline 처럼 표에 참고용으로만 넣는 외부 모델. (baseline 은 항상 참고용)
 # 여기 적힌 모델은 validation 결과가 없어도 되고, test 결과만 있어도 표와 그래프에 들어갑니다.
 RECOMMEND_REFERENCE_ONLY = ("jev",)
+# 모델 추천에서 validation Macro-F1 1위가 동점일 때, 동점 모델 중 팀이 지정한 모델을 공식 모델로 정하는 데이터셋. ("주제/데이터셋": "모델")
+# 지정한 모델이 1위 동점 묶음에 없으면 적용하지 않고 기본 순위(validation Macro-F1 -> validation loss -> 학습 시간)를 따릅니다.
+TIE_OVERRIDES = {"documents/advanced_merge": "bert"}
 RECOMMEND_EXCLUDED = ()                             # 모델 추천(메뉴 3번·8번)에서 빠지는 데이터셋. 비어 있으면 모든 데이터셋을 추천합니다. (예전 값: ("total_merge",)) 여기에 적은 데이터셋은 test 를 4개 모델 모두 평가하고 그래프에서도 빠집니다.
 
 # ───────────────────────── 데이터 파일 ─────────────────────────
