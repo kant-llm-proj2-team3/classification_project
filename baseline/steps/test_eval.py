@@ -1,7 +1,7 @@
 """test 최종 평가 (baseline/steps/test_eval.py).
 
-baseline + bert + roberta + koelectra 를 각 best_model 로 모두 평가한다. 공식 모델은 이 test 점수로 정하므로
-(recommend_model, 메뉴 3번) test 평가를 먼저 한다. 그래서 여기서는 공식(official) 표시를 하지 않는다. (test_meta.official = None)
+baseline + bert + roberta + koelectra 를 각 best_model 로 모두 평가한다. 공식 모델은 validation 으로 정한 추천 모델이고
+(recommend_model, 메뉴 3번), test 점수는 모델을 다시 고르는 데 쓰지 않는다. 평가 뒤에 공식 표시(official)를 남긴다.
 
 저장되는 것 (각 모델의 best_model 폴더)
   test_metrics.json       : test 점수와 혼동행렬 (kit 의 test_metrics.json 과 같은 구조 + official 표시)
@@ -72,7 +72,7 @@ def write_test_comparison(topic, dataset):
 
 def evaluate_test(topic, dataset, mode="all"):
     """test 평가: baseline + 3개 모델을 각 best_model 로 모두 평가한다. 각 모델은 한 번만 평가한다. (mode 는 예전 호출과 맞추려고 남겨 둔 값)
-    공식 모델은 이 점수로 정한다 -> 평가가 끝나면 3번(모델 추천)을 실행한다."""
+    공식 모델은 validation 으로 정한 추천 모델이다(recommendation.json). 평가가 끝나면 공식 표시를 남긴다."""
     print(f"\n=== {topic}/{dataset} · test 평가: 4개 모델 모두 ===")
     data = common.load_data(topic, dataset, with_test=True)   # train/validation/test 분할 겹침까지 검사
     labels, test_rows = data["labels"], data["test"]
@@ -119,5 +119,12 @@ def evaluate_test(topic, dataset, mode="all"):
 
     write_test_comparison(topic, dataset)
     external_status(topic, dataset)
-    print("\n  [다음] 공식 모델은 이 test 점수로 정합니다. 3번(모델 추천)을 실행하세요. (8번은 자동으로 이어서 실행)")
+    recommendation_path = common.dataset_result_dir(topic, dataset) / "recommendation.json"
+    if recommendation_path.exists():
+        selected = common.load_json(recommendation_path)["recommended_model"]
+        common.mark_official(topic, dataset, selected)          # test_metrics.json 과 main.json 의 test_meta 에 공식 여부를 남긴다
+        print(f"\n  [중요] 공식 모델은 validation 으로 정한 {selected} 입니다. 다른 모델의 test 점수는 참고용이며,")
+        print("         이 점수를 보고 모델이나 설정을 다시 고르지 마세요. 바꾸면 추가 실험으로 구분해 기록해야 합니다.")
+    else:
+        print("\n  [참고] 공식 모델이 아직 없습니다. 3번(모델 추천)을 실행하면 validation 으로 정하고 공식 표시를 남깁니다.")
     return scores

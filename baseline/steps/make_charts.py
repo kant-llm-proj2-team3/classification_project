@@ -10,14 +10,14 @@ artifacts/<주제>/<데이터셋>/<모델>/best_model/main.json 을 읽어서 PN
 처음 한 번 matplotlib 설치가 필요하다:  uv add matplotlib
 
 만드는 그래프
-  01_heatmap_test.png          데이터셋 x 모델 test 정확도 히트맵 (정답 수 표시, 줄당 1개 굵은 주황 테두리 = test 점수가 가장 높은 모델,
+  01_heatmap_test.png          데이터셋 x 모델 test 정확도 히트맵 (정답 수 표시, TEST_MARK_DATASETS 줄에만 굵은 주황 테두리 = 공식 모델,
                                RED_BOX_DATASETS 줄은 빨간 네모, 주제가 바뀌는 곳에는 빈 칸)
-  02_heatmap_validation.png    같은 표의 validation 버전 (주황 테두리 = validation 점수가 가장 높은 모델)
-  03_baseline_vs_official.png  baseline_1(TF-IDF)·baseline_2(JEV) 대비 공식 모델의 test 정확도 막대 (막대 아래에 공식 모델 이름)
+  02_heatmap_validation.png    같은 표의 validation 버전 (줄마다 주황 테두리 = validation 으로 정한 공식 모델)
+  03_baseline_vs_official.png  baseline_1(TF-IDF)·baseline_2(JEV) 대비 공식 모델의 validation 정확도 막대 (막대 아래에 공식 모델 이름)
   04_learning_curves.png       데이터셋별 validation Macro-F1 학습 곡선 (별표 = 저장된 best 에폭, 왼쪽에 주제 이름)
   05_cost_vs_accuracy.png      모델 크기·추론 속도와 평균 test 정확도
-베스트(공식) 모델은 줄마다 그 그림의 점수가 가장 높은 모델이다. baseline 과 jev 는 후보에서 뺀다. 동점이면 validation loss -> 학습 시간 순.
-03 번의 공식 모델도 test 점수가 가장 높은 모델이다. (recommendation.json 은 쓰지 않는다)
+공식 모델은 recommendation.json 의 recommended_model 이다. (validation 으로 정함. 동점 지정(TIE_OVERRIDES)도 이미 반영됨. baseline 과 jev 는 후보가 아님)
+그래프는 공식 모델을 따로 계산하지 않는다. 추천(메뉴 3번)을 먼저 해야 주황 테두리가 그려진다.
 외부 모델(laya, jev, clm)은 설정에서 켜져 있고 main.json 이 있으면 같은 그래프에 함께 들어간다.
 main.json 에 없는 값(test, curve, 파라미터 수 등)은 그 그래프에서만 빠지고 오류는 나지 않는다.
 """
@@ -40,6 +40,7 @@ MODEL_COLORS = {"baseline": "#8a8a8a", "bert": "#2a78d6", "roberta": "#eb6834", 
 KOREAN = True            # 한글 글꼴을 찾으면 True. 못 찾으면 영어 제목을 쓴다.
 GAP_HEIGHT = 0.5                         # 히트맵에서 inquiries / documents 사이 빈 칸 높이 (1 = 한 줄)
 RED_BOX_DATASETS = ("advanced_merge",)   # 히트맵에서 줄 전체를 빨간 네모로 감쌀 데이터셋 (total_merge 와 비교할 줄)
+TEST_MARK_DATASETS = ("advanced_merge",)  # 01 test 히트맵에서 공식 모델에 주황 테두리를 그릴 데이터셋 (나머지 줄은 테두리 없음)
 JEV_BAR_COLOR = "#c4c4c4"                # 03번 그래프 baseline_2 (JEV) 막대 색 (baseline 회색보다 밝은 회색)
 
 
@@ -80,21 +81,14 @@ def _models(results):
     return [m for m in common.RESULT_MODEL_KEYS if m in present]
 
 
-def _best_model(idx, dataset, split):
-    """한 데이터셋에서 split("test" / "validation") 점수가 가장 높은 모델 이름. 줄마다 1개.
-    후보는 baseline 과 참고용 모델(jev)을 뺀 나머지. 순위 규칙은 모델 추천(common.rank_key)과 같다:
-    Macro-F1 높은 순 -> 동점이면 validation loss 낮은 순 -> 학습 시간 짧은 순. (test 는 loss 를 저장하지 않아 validation loss 를 쓴다)"""
-    skip = {common.BASELINE_KEY, *cfg.RECOMMEND_REFERENCE_ONLY}
-    ranked = []
-    for (d, model), main in idx.items():
-        block = main.get(split)
-        if d != dataset or model in skip or not block:
-            continue
-        loss = (main.get("validation") or {}).get("loss")
-        seconds = (main.get("cost") or {}).get("train_seconds")
-        ranked.append(((-round(block["macro_f1"], 6), float("inf") if loss is None else loss,
-                        float("inf") if seconds is None else seconds), model))
-    return min(ranked)[1] if ranked else None
+def _official_model(dataset_id):
+    """한 데이터셋의 공식 모델 이름 = recommendation.json 의 recommended_model. (validation 으로 정한 모델, 동점 지정도 반영됨)
+    추천을 아직 안 했으면 None."""
+    topic, dataset = dataset_id.split("/", 1)
+    path = common.dataset_result_dir(topic, dataset) / "recommendation.json"
+    if not path.exists():
+        return None
+    return common.load_json(path).get("recommended_model")
 
 
 def _save(plt, fig, path):
@@ -126,7 +120,9 @@ def chart_heatmap(plt, idx, datasets, models, split, path):
     if np.isnan(values).all():
         print(f"  [건너뜀] {path.name}: {split} 결과가 하나도 없습니다.")
         return None
-    best_models = {d: _best_model(idx, d, split) for d in layout if d}      # 줄마다 이 그림의 점수(test / validation)가 가장 높은 모델
+    best_models = {d: _official_model(d) for d in layout if d}              # 줄마다 공식 모델 (recommendation.json)
+    if not any(best_models.values()):
+        print("  [참고] recommendation.json 이 없어 공식 모델 테두리를 그리지 않습니다. (3번 모델 추천을 먼저 실행하세요)")
     fig, ax = plt.subplots(figsize=(1.9 * len(models) + 3.6, 0.66 * sum(heights) + 2.0))
     cmap = plt.get_cmap("Blues").copy()
     cmap.set_bad("#eeeeee")
@@ -144,7 +140,8 @@ def chart_heatmap(plt, idx, datasets, models, split, path):
             dark = (block["accuracy"] - 0.6) / 0.4 > 0.55
             ax.text(j, centers[i], f"{block['accuracy']:.1%}\n{block['correct']}/{block['n']}", ha="center", va="center",
                     fontsize=10, color="white" if dark else "#222222")
-            if model == best_models[dataset]:
+            mark = split != "test" or dataset.split("/", 1)[1] in TEST_MARK_DATASETS     # test 히트맵은 TEST_MARK_DATASETS 줄에만 테두리
+            if mark and model == best_models[dataset]:
                 ax.add_patch(plt.Rectangle((j - 0.46, centers[i] - 0.46), 0.92, 0.92, fill=False, edgecolor="#ff8c00", linewidth=3.2))
     ax.set_xticks(range(len(models)))
     ax.set_xticklabels(models, fontsize=11)
@@ -170,7 +167,7 @@ def chart_heatmap(plt, idx, datasets, models, split, path):
             x_left = inverse.transform((label_boxes[i].x0, label_boxes[i].y0))[0] - 0.12
             ax.add_patch(plt.Rectangle((x_left, edges[i]), x_right - x_left, heights[i], fill=False, edgecolor="#e02020",
                                        linewidth=3.0, clip_on=False, zorder=10))
-    name = _t("test 정확도", "Test accuracy") if split == "test" else _t("validation 정확도 (모델 선정에 사용)", "Validation accuracy (used for selection)")
+    name = _t("test 정확도", "Test accuracy") if split == "test" else _t("validation 정확도", "Validation accuracy")
     fig.suptitle(f"{name}  ({_t('정답 수/전체', 'correct/total')})", fontsize=13, y=0.995)
     fig.text(0.5, 0.0, _t("굵은 주황 테두리 = 공식 모델    회색 = 결과 없음",
                           "Orange border = official model    Gray = no result"),
@@ -181,14 +178,15 @@ def chart_heatmap(plt, idx, datasets, models, split, path):
 def chart_baseline_vs_official(plt, idx, datasets, path):
     rows = []          # (데이터셋, baseline_1 TF-IDF 정확도, 공식 모델 이름, 공식 모델 정확도, baseline_2 JEV 정확도 또는 None)
     for dataset in datasets:
-        base = (idx.get((dataset, "baseline")) or {}).get("test")
-        jev = (idx.get((dataset, "jev")) or {}).get("test")
-        best = _best_model(idx, dataset, "test")          # test 점수가 가장 높은 모델 (baseline·jev 제외)
-        if base and best:
-            rows.append((dataset, base["accuracy"], best, idx[(dataset, best)]["test"]["accuracy"],
+        base = (idx.get((dataset, "baseline")) or {}).get("validation")
+        jev = (idx.get((dataset, "jev")) or {}).get("validation")
+        best = _official_model(dataset)                   # validation 으로 정한 공식 모델 (recommendation.json)
+        best_block = (idx.get((dataset, best)) or {}).get("validation") if best else None
+        if base and best_block:
+            rows.append((dataset, base["accuracy"], best, best_block["accuracy"],
                          jev["accuracy"] if jev else None))
     if not rows:
-        print(f"  [건너뜀] {path.name}: baseline 과 공식 모델의 test 결과가 함께 있는 데이터셋이 없습니다. (3번·8번을 먼저 실행하세요)")
+        print(f"  [건너뜀] {path.name}: baseline 과 공식 모델의 validation 결과가 함께 있는 데이터셋이 없습니다. (3번·8번을 먼저 실행하세요)")
         return None
     fig, ax = plt.subplots(figsize=(max(8.5, 1.7 * len(rows) + 2), 5.4))
     xs = list(range(len(rows)))
@@ -210,8 +208,8 @@ def chart_baseline_vs_official(plt, idx, datasets, path):
             tick.set_fontweight("bold")
             tick.set_color("#e02020")
     ax.set_ylim(0, 118)
-    ax.set_ylabel(_t("test 정확도 (%)", "Test accuracy (%)"))
-    ax.set_title(_t("baseline 대비 공식 모델 (test 정확도)", "Official model vs baselines (test accuracy)"), fontsize=13)
+    ax.set_ylabel(_t("validation 정확도 (%)", "Validation accuracy (%)"))
+    ax.set_title(_t("baseline 대비 공식 모델 (validation 정확도)", "Official model vs baselines (validation accuracy)"), fontsize=13)
     ax.grid(axis="y", alpha=0.3)
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, 1.0), ncol=3, frameon=False)
     for side in ("top", "right"):
